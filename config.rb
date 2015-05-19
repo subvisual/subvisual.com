@@ -1,13 +1,4 @@
 ###
-# Compass
-###
-
-# Change Compass configuration
-# compass_config do |config|
-#   config.output_style = :compact
-# end
-
-###
 # Page options, layouts, aliases and proxies
 ###
 
@@ -65,7 +56,9 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
   activate :asset_hash
-  activate :smusher
+  activate :imageoptim do |options|
+    options.pngout = false
+  end
 
   # Use relative URLs
   # activate :relative_assets
