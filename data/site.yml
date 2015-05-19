@@ -1,0 +1,14 @@
+# Required
+language: 'en-us'
+url: 'http://www.subvisual.co'
+human_url: 'subvisual.co'
+name: 'Subvisual Website'
+description: 'Website for Subvisual'
+title: 'Subvisual'
+
+# Optional
+logo_image_name: ''
+logo_image_path: ''
+twitter_handle: ''
+# facebook_app_id: ''
+
