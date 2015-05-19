@@ -1,0 +1,24 @@
+// Theme
+//
+// Global styles that should be applied to the whole system.
+// Usually applied to the <html> and <body> tags.
+// Also if using `shadow-root` apply it to its root element.
+//
+// markup:
+// <div class="Theme">Some text</div>
+//
+// Styleguide 1.1
+
+@import '../reset';
+@import '../theme_vars';
+
+.Theme {
+  @include font-properties(bodyText, base);
+  background-color: $Theme-color-white;
+  color: $Theme-palette-text-body-default;
+  font-family: $Theme-typography-fontFamily-serif-organic;
+  font-weight: $Theme-typography-fontWeight-regular;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

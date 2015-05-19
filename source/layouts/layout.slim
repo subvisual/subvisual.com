@@ -1,5 +1,5 @@
 doctype 5
-html itemscope='' itemtype='http://schema.org/WebPage' lang=data.site.language
+html.Theme itemscope='' itemtype='http://schema.org/WebPage' lang=data.site.language
   head
     meta charset='utf-8'
     meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'
@@ -40,8 +40,10 @@ html itemscope='' itemtype='http://schema.org/WebPage' lang=data.site.language
     = favicon_tag 'images/favicon.ico', rel: 'apple-touch-icon', type: 'image/png'
 
   body class=page_classes
-    /![if lt IE 8]
-      | <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p
+    /[if lt IE 8]
+      p.browsehappy
+        | You are using an <strong>outdated</strong> browser. Please
+        | <a href="http://browsehappy.com/">Upgrade your browser to improve your experience!</a>
 
     main role='main'
       = yield
@@ -52,6 +54,6 @@ html itemscope='' itemtype='http://schema.org/WebPage' lang=data.site.language
     = javascript_include_tag 'all'
     script src="//use.typekit.net/wbx6iwp.js"
     javascript:
-      | try{Typekit.load();}catch(e){}
+      try{Typekit.load();}catch(e){}
     - if build?
       = javascript_include_tag 'segment'

@@ -1,0 +1,111 @@
+// Theme
+//
+// Theme variables, functions and mixins only.
+// No rule definitions in here.
+//
+// Styleguide 1
+
+// Points of reassembly
+@import 'include-media/dist/include-media';
+
+// Brand Colors
+$Theme-color-brightTurquoise: #0dc0f2;
+$Theme-color-horizon: #5889a2;
+$Theme-color-poloBlue: #8db6cb;
+$Theme-color-white: #fff;
+$Theme-color-yellowOrange: #fab23c;
+
+// Color Usage
+$Theme-palette-text-body-default: $Theme-color-poloBlue;
+
+// Spacing
+$Theme-spacing-default: 50px;
+$Theme-spacing-large: 100px;
+$Theme-spacing-small: 25px;
+$Theme-spacing-xSmall: 10px;
+
+// Typography
+$Theme-typography-fontWeight-bold: 700;
+$Theme-typography-fontWeight-medium: 500;
+$Theme-typography-fontWeight-regular: 400;
+$Theme-typography-fontFamily-subvisual: "futura-pt", sans-serif;
+$Theme-typography-fontFamily-serif-geometric: "merriweather", serif;
+$Theme-typography-fontFamily-serif-organic: "pt-serif", serif;
+$Theme-font-sizes: (
+  mobile: (
+    // TODO: add mobile measurements
+    subvisual: (
+      base: (
+        font-size: 16px,
+        line-height: 28px
+      ),
+      large: (
+        font-size: 24px,
+        line-height: 36px
+      ),
+      veryLarge: (
+        font-size: 40px,
+        line-height: 52px
+      )
+    ),
+    heading: (
+      base: (
+        font-size: 20px,
+        line-height: 32px
+      ),
+      large: (
+        font-size: 24px,
+        line-height: 36px
+      )
+    ),
+    bodyText: (
+      base: (
+        font-size: 20px,
+        line-height: 32px
+      )
+    )
+  ),
+  desktop: (
+    subvisual: (
+      base: (
+        font-size: 16px,
+        line-height: 28px
+      ),
+      large: (
+        font-size: 24px,
+        line-height: 36px
+      ),
+      veryLarge: (
+        font-size: 40px,
+        line-height: 52px
+      )
+    ),
+    heading: (
+      base: (
+        font-size: 20px,
+        line-height: 32px
+      ),
+      large: (
+        font-size: 24px,
+        line-height: 36px
+      )
+    ),
+    bodyText: (
+      base: (
+        font-size: 20px,
+        line-height: 32px
+      )
+    )
+  )
+);
+
+// font-size and line-height styles
+@mixin font-properties($family, $size: "base") {
+  font-size: map-get(map-get(map-get(map-get($Theme-font-sizes, "mobile"), $family), $size), 'font-size');
+  line-height: map-get(map-get(map-get(map-get($Theme-font-sizes, "mobile"), $family), $size), 'line-height');
+
+  @include media(">=tablet") {
+    font-size: map-get(map-get(map-get(map-get($Theme-font-sizes, "desktop"), $family), $size), 'font-size');
+    line-height: map-get(map-get(map-get(map-get($Theme-font-sizes, "desktop"), $family), $size), 'line-height');
+  }
+}
