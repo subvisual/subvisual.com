@@ -1,0 +1,24 @@
+// Link
+//
+// Link style
+//
+// default - Default link
+//
+// markup:
+// <div class="Link {$modifiers}">Lorem Ipsum</div>
+//
+// Styleguide 1.6
+
+@import '../reset';
+@import '../theme_vars';
+
+.Link {
+  color: inherit;
+  font-weight: $Theme-typography-fontWeight-bold;
+  text-decoration: underline;
+
+  &:hover {
+    //TODO don't know what the hover should be
+    text-decoration: underline;
+  }
+}

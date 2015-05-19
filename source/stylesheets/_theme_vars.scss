@@ -29,31 +29,31 @@ $Theme-typography-fontWeight-bold: 700;
 $Theme-typography-fontWeight-medium: 500;
 $Theme-typography-fontWeight-regular: 400;
 $Theme-typography-fontFamily-subvisual: "futura-pt", sans-serif;
-$Theme-typography-fontFamily-serif-geometric: "merriweather", serif;
-$Theme-typography-fontFamily-serif-organic: "pt-serif", serif;
+$Theme-typography-fontFamily-heading: "merriweather", serif;
+$Theme-typography-fontFamily-bodyText: "pt-serif", serif;
 $Theme-font-sizes: (
   mobile: (
     // TODO: add mobile measurements
     subvisual: (
-      base: (
+      small: (
         font-size: 16px,
         line-height: 28px
       ),
-      large: (
+      base: (
         font-size: 24px,
         line-height: 36px
       ),
-      veryLarge: (
+      large: (
         font-size: 40px,
         line-height: 52px
       )
     ),
     heading: (
-      base: (
+      small: (
         font-size: 20px,
         line-height: 32px
       ),
-      large: (
+      base: (
         font-size: 24px,
         line-height: 36px
       )
@@ -67,25 +67,25 @@ $Theme-font-sizes: (
   ),
   desktop: (
     subvisual: (
-      base: (
+      small: (
         font-size: 16px,
         line-height: 28px
       ),
-      large: (
+      base: (
         font-size: 24px,
         line-height: 36px
       ),
-      veryLarge: (
+      large: (
         font-size: 40px,
         line-height: 52px
       )
     ),
     heading: (
-      base: (
+      small: (
         font-size: 20px,
         line-height: 32px
       ),
-      large: (
+      base: (
         font-size: 24px,
         line-height: 36px
       )

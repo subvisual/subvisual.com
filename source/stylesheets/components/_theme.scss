@@ -16,7 +16,7 @@
   @include font-properties(bodyText, base);
   background-color: $Theme-color-white;
   color: $Theme-palette-text-body-default;
-  font-family: $Theme-typography-fontFamily-serif-organic;
+  font-family: $Theme-typography-fontFamily-bodyText;
   font-weight: $Theme-typography-fontWeight-regular;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

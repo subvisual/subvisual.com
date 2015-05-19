@@ -9,7 +9,7 @@
 // markup:
 // <div class="ButtonSecondary {$modifiers}">Some text</div>
 //
-// Styleguide 2.3
+// Styleguide 1.3
 
 @import '../reset';
 @import '../theme_vars';
@@ -22,7 +22,7 @@ $ButtonSecondary-inverted-color: $Theme-color-white;
 $ButtonSecondary-inverted-hover: $Theme-color-brightTurquoise;
 
 .ButtonSecondary {
-  @include font-properties(subvisual, base);
+  @include font-properties(subvisual, small);
   display: flex;
   justify-content: center;
   align-items: center;

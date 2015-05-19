@@ -21,7 +21,7 @@ $ButtonPrimary-inverted-color: $Theme-color-brightTurquoise;
 $ButtonPrimary-inverted-hover: darken($ButtonPrimary-inverted-background, 10);
 
 .ButtonPrimary {
-  @include font-properties(subvisual, base);
+  @include font-properties(subvisual, small);
   display: flex;
   justify-content: center;
   align-items: center;

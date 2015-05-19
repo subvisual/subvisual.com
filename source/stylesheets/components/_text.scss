@@ -1,0 +1,22 @@
+// Text
+//
+// Styles body text's font and color properties.
+//
+// default - Most commonly used text
+//
+// markup:
+// <div class="Text {$modifiers}">
+//   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+// </div>
+//
+// Styleguide 1.4
+
+@import '../reset';
+@import '../theme_vars';
+
+.Text {
+  @include font-properties(bodyText, base);
+  color: $Theme-palette-text-body-default;
+  font-family: $Theme-typography-fontFamily-bodyText;
+  font-weight: $Theme-typography-fontWeight-regular;
+}
