@@ -36,14 +36,22 @@ html itemscope='' itemtype='http://schema.org/WebPage' lang=data.site.language
       link rel='canonical' href=current_page.data.preferred_url
 
     = stylesheet_link_tag 'all'
-    = javascript_include_tag 'all'
     = favicon_tag 'images/favicon.ico'
     = favicon_tag 'images/favicon.ico', rel: 'apple-touch-icon', type: 'image/png'
 
   body class=page_classes
+    /![if lt IE 8]
+      | <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p
+
     main role='main'
       = yield
 
-    / Footer
     footer
       = link_to 'Sitemap', 'sitemap'
+
+    = javascript_include_tag 'all'
+    script src="//use.typekit.net/wbx6iwp.js"
+    javascript:
+      | try{Typekit.load();}catch(e){}
+    - if build?
+      = javascript_include_tag 'segment'
