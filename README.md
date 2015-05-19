@@ -1,46 +1,23 @@
-# middleman-seo
-A SEO-optimized project template for [Middleman](http://middlemanapp.com), the amazing static site building tool.
+# We are Subvisual
 
-Confused about what it means to SEO-optimize your site from a technical perspective? [Read this](http://secretsaucehq.com/blog/seo/the-technical-seo-and-social-media-optimization-checklist/).
+We are subvisual and this is our website.
 
-## Design goals
-- Simple
-- Grokkable
-- Out of the box search engine and social media optimizations
+## Development
 
-## Features
-__SEO Features__
-- Comprehensive [meta tags](http://secretsaucehq.com/blog/social-media/the-ultimate-guide-to-social-media-meta-tags/) for search engines and social media platforms
-- Easily manage critical site-wide information in `data/site.yml`
-- Customizable page-level title, description, and image via [Frontmatter](https://middlemanapp.com/basics/frontmatter/)
-- Sitemaps generated in both `HTML` and `XML`
-- Accurate social share URL template helpers
-- Customizable `robots.txt` generation via [middleman-robots](http://github.com/yterajima/middleman-robots)
-- Preferred URL (`rel="canonical"`) for any page by setting the `preferred_url` key in the page's frontmatter
-  - Example: `preferred_url: http://medium.com/article-name` will produce `<link href="http://medium.com/article-name" rel="canonical">`
+Run the setup to get started:
 
-__Other Features__
-- Optionally manage frontend dependencies via [Bower](http://bower.io)
-  1. Install package: `bower install package-name -S`
-  2. The bower package is automatically imported into asset pipeline
-  3. Include them directly in your javascript or Sass file
+```bash
+bin/setup
+```
 
-## Dependencies
+This is built on top of [middleman](https://middlemanapp.com/) with the
+[middleman-seo template](https://github.com/secretsaucehq/middleman-seo), you
+might want to check out the docs for these projects.
 
-- [Middleman](http://middlemanapp.com)
-- [Slim](http://slim-lang.com/) templates
-- [Sass](http://sass-lang.com/) with [Bourbon](http://bourbon.io/)
+Here's some of the other things we are using:
 
-## Usage
-Clone this repo into your `~/.middleman` directory as "seo"
-
-`git clone git@github.com:secretsaucehq/middleman-seo.git ~/.middleman/seo`
-
-Now you can simply init new projects with the "seo" template:
-
-`middleman init my-project --template=seo `
-
-Just don't forget to update `~/.middleman/seo` every now and then.
-
-## TODO's
-- SEO optimize the Middleman blog extension.
+* [Slim](http://slim-lang.com/) - The template engine
+* [Sass](http://sass-lang.com/) - For CSS preprocessing (using the Scss syntax)
+* [Babel](https://babeljs.io/) - A transpiler for ES6
+* [Autoprefixer](https://github.com/middleman/middleman-autoprefixer) -
+Autoprefix CSS
