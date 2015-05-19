@@ -1,4 +1,14 @@
 GIT
+  remote: git://github.com/groupbuddies/capistrano-middleman.git
+  revision: a81d6ad9c74695d4b66ce82e5003f0d440fccbbb
+  ref: a81d6ad9c74695d4b66ce82e5003f0d440fccbbb
+  specs:
+    capistrano-middleman (0.1.4)
+      capistrano (~> 3)
+      middleman (~> 3.3)
+      rubyzip (~> 1.1.7)
+
+GIT
   remote: git://github.com/vast/middleman-es6.git
   revision: a3f63cb33f0c6df923abbc9f03f3bda1c018a622
   specs:
@@ -24,6 +34,10 @@ GEM
       babel-source (>= 4.0, < 6)
       execjs (~> 2.0)
     builder (3.2.2)
+    capistrano (3.2.1)
+      i18n
+      rake (>= 10.0.0)
+      sshkit (~> 1.3)
     celluloid (0.16.0)
       timers (~> 4.0.0)
     chunky_png (1.3.4)
@@ -32,6 +46,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.9.1.1)
+    colorize (0.7.7)
     compass (1.0.3)
       chunky_png (~> 1.2)
       compass-core (~> 1.0.2)
@@ -126,6 +141,9 @@ GEM
       sprockets-sass (~> 1.3.0)
     minitest (5.6.1)
     multi_json (1.11.0)
+    net-scp (1.2.1)
+      net-ssh (>= 2.6.5)
+    net-ssh (2.9.2)
     padrino-helpers (0.12.5)
       i18n (~> 0.6, >= 0.6.7)
       padrino-support (= 0.12.5)
@@ -147,6 +165,7 @@ GEM
     rb-fsevent (0.9.4)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
+    rubyzip (1.1.7)
     sass (3.4.13)
     scss_lint (0.38.0)
       rainbow (~> 2.0)
@@ -165,6 +184,10 @@ GEM
     sprockets-sass (1.3.1)
       sprockets (~> 2.0)
       tilt (~> 1.1)
+    sshkit (1.7.1)
+      colorize (>= 0.7.0)
+      net-scp (>= 1.1.2)
+      net-ssh (>= 2.8.0)
     temple (0.7.5)
     thor (0.19.1)
     thread_safe (0.3.5)
@@ -183,6 +206,8 @@ PLATFORMS
 
 DEPENDENCIES
   builder
+  capistrano (~> 3.2.1)
+  capistrano-middleman!
   dotenv
   font-awesome-sass
   middleman (~> 3.3.12)
