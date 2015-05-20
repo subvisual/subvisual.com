@@ -1,4 +1,4 @@
-# require 'scss_lint/rake_task'
+require 'scss_lint/rake_task'
 
 task default: %w[lint build]
 
@@ -13,11 +13,11 @@ task :server do
   sh 'middleman server -p 3000'
 end
 
-# SCSSLint::RakeTask.new do |t|
-#   t.config = '.scss-lint.yml'
-# end
-#
-# desc 'Lint code'
-# task :lint do
-#   exec "rake 'scss_lint'"
-# end
+SCSSLint::RakeTask.new do |t|
+  t.config = '.scss-lint.yml'
+end
+
+desc 'Lint code'
+task :lint do
+  exec "rake 'scss_lint'"
+end

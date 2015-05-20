@@ -1,4 +1,4 @@
-exclude: 'bower_components/**'
+exclude: ['bower_components/**', 'build/**']
 
 linters:
   Compass::*:
