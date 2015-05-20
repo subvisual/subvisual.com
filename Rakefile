@@ -1,4 +1,4 @@
-task default: %w[lint build]
+task default: %i[lint build]
 
 desc 'Build the app'
 task :build do
@@ -19,5 +19,5 @@ end
 desc 'Lint code'
 task :lint do
   require 'scss_lint'
-  exec "rake 'scss_lint'"
+  system "rake 'scss_lint'"
 end
