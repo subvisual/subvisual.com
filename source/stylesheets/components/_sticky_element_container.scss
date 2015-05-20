@@ -1,0 +1,25 @@
+// StickyElementContainer
+//
+// Fixes an element to the top of the container. Hides it downwards and shows it upwards.
+//
+// default - Shows the element
+// .is-hidden - Hides the element
+//
+// markup:
+// <div class="StickyElementContainer styleguide-grid-unit" style="height: 100px;">
+//   <div class="StickyElementContainer-element styleguide-grid-unit" style="height: 50px;">Bruno</div>
+// </div>
+//
+// Styleguide 1.8
+
+@import '../reset';
+@import '../theme_vars';
+
+.StickyElementContainer-element {
+  position: fixed;
+  top: 0;
+
+  width: 100%;
+
+  transition: top .2s ease-in-out;
+}

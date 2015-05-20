@@ -1,0 +1,73 @@
+// Nav
+//
+// Navigation element.
+// Shows only the first item and aligns it to the right when on a mobile resolution.
+// Lays out every element except the first (which is hidden) from right to left with equal spacing when on a desktop resolution.
+//
+// markup:
+// <div class="Nav">
+//   <div class="Nav-item">Mobile item</div>
+//   <div class="Nav-item">Desktop Item 1</div>
+//   <div class="Nav-item">Desktop Item 2</div>
+// </div>
+//
+// Styleguide 1.9
+
+@import '../reset';
+@import '../theme_vars';
+
+$Nav-item-color-hover: $Theme-color-yellowOrange;
+
+.Nav {
+  width: 100%;
+  padding: 0 $Theme-spacing-small;
+
+  background: transparent;
+}
+
+.Nav-items {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Nav-item {
+  display: flex;
+  align-items: center;
+
+  padding: $Theme-spacing-small 0;
+
+  border-bottom: 5px solid transparent;
+  cursor: pointer;
+
+  transition: border-color 0.2s ease-in-out;
+
+  &:not(:first-child) {
+    display: none;
+    margin-left: $Theme-spacing-default;
+  }
+
+  &:hover {
+    border-bottom: 5px solid $Nav-item-color-hover;
+
+    .Nav-link {
+      color: $Nav-item-color-hover;
+    }
+  }
+}
+
+.Nav-link {
+  @include font-properties(heading, small);
+  color: $Theme-color-white;
+
+  font-family: $Theme-typography-fontFamily-heading;
+  font-weight: $Theme-typography-fontWeight-bold;
+  text-decoration: none;
+
+  transition: color 0.2s ease-in-out;
+}
+
+@include media('>=tablet') {
+  .Nav-item:not(:first-child) {
+    display: flex;
+  }
+}

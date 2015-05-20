@@ -2,34 +2,33 @@
 title: Subvisual
 ---
 
-h1.Heading.Heading--large
-  span Sub
-  span.Heading-highlight visual
+.StickyElementContainer
+  .StickyElementContainer-element
+    = partial 'nav'
+  .Panel
+    .Layout
+      .Layout-largeMargin
 
-.Panel
-  .Layout
-    .Layout-largeMargin
+      .Container.Container--twoColumn
+        .Container-column.Container-column--main
+          .Heading
+            | We know the secret behind excellence
 
-    .Container.Container--twoColumn
-      .Container-column.Container-column--main
-        .Heading
-          | We know the secret behind excellence
+          .Layout-smallMargin
 
-        .Layout-smallMargin
+          .Text
+            | It takes thought, focus and passion.
+            | It requires a culture of continuous learning and exploration.
+            | It’s about sweating the details and not settling for ‘good’ but
+            | rather strive for excellent. It’s about craftsmanship.
 
-        .Text
-          | It takes thought, focus and passion.
-          | It requires a culture of continuous learning and exploration.
-          | It’s about sweating the details and not settling for ‘good’ but
-          | rather strive for excellent. It’s about craftsmanship.
+          .Layout-smallMargin
 
-        .Layout-smallMargin
+          = link_to 'Our Services', '#', class: 'EngagementLink'
+          .Layout-smallMargin
+          = link_to 'Read our case studies', '#', class: 'EngagementLink'
 
-        = link_to 'Our Services', '#', class: 'EngagementLink'
-        .Layout-smallMargin
-        = link_to 'Read our case studies', '#', class: 'EngagementLink'
+        .Container-column.Container-column--secondary
+          = image_tag 'logo-design.png', alt: 'The subvisual logo with a grid', height: 250
 
-      .Container-column.Container-column--secondary
-        = image_tag 'logo-design.png', alt: 'The subvisual logo with a grid', height: 250
-
-    .Layout-largeMargin
+      .Layout-largeMargin

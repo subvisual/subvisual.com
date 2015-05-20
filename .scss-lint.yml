@@ -5,8 +5,7 @@ linters:
     enabled: false
 
   LeadingZero:
-    enabled: true
-    style: include_zero
+    enabled: false
 
   MergeableSelector:
     enabled: false
@@ -46,7 +45,6 @@ linters:
       - justify-content
       - align-items
       - align-content
-      -
       - box-sizing
       - visibility
       - float
