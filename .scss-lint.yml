@@ -67,7 +67,8 @@ linters:
       - margin-bottom
       - margin-left
       - overflow
-      - overflow-*
+      - overflow-x
+      - overflow-x
       - resize
       -
       - background
@@ -124,7 +125,7 @@ linters:
       - marker-side
       - opacity
       - outline
-      - outline-*
+      - outline-offset
       -
       - alignment-adjust
       - alignment-baseline
@@ -193,9 +194,18 @@ linters:
       - transform-style
       -
       - animation
-      - animation-*
+      - animation-delay
+      - animation-duration
+      - animation-iteration-count
+      - animation-name
+      - animation-play-state
+      - animation-timing-function
+      - animation-fill-mode
       - transition
-      - transition-*
+      - transition-delay
+      - transition-duration
+      - transition-property
+      - transition-timing-function
     separate_groups: true
 
   SelectorFormat:
