@@ -2,6 +2,8 @@
 # Page options, layouts, aliases and proxies
 ###
 
+require 'font-awesome-sass'
+
 # Per-page layout changes:
 #
 # With no layout

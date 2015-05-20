@@ -16,6 +16,10 @@
 //   <div class="Container-column">Content 1</div>
 //   <div class="Container-column">Content 2</div>
 // </div>
+// <div class="Container Container--twoColumn">
+//   <div class="Container-column Container-column--main">Content 1</div>
+//   <div class="Container-column Container-column--secondary">Content 2</div>
+// </div>
 //
 // Styleguide 1.7
 
@@ -50,9 +54,19 @@
 
 @include media('>=tablet') {
   .Container.Container--twoColumn {
+    $Container-twoColumn-main-width: 50%;
+
     .Container-column {
       flex: 1 0 50%;
       align-items: flex-start;
+
+      &.Container-column--main {
+        flex: 1 0 $Container-twoColumn-main-width;
+      }
+
+      &.Container-column--secondary {
+        flex: 1 0 calc(100% - #{$Container-twoColumn-main-width});
+      }
     }
 
     .Container-column + .Container-column {

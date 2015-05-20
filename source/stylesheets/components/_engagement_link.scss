@@ -1,0 +1,37 @@
+// EngagementLink
+//
+// Links that stand out and usually link to other parts of our site we wish the
+// users to see.
+// It has an icon to better achieve its goal.
+//
+// default - The link with an icon
+//
+// markup:
+// <a href="/link" class="EngagementLink">Learn more</a>
+//
+// Styleguide 1.9
+
+@import '../reset';
+@import '../theme_vars';
+@import 'font-awesome-compass';
+@import 'font-awesome';
+
+.EngagementLink {
+  color: $Theme-color-yellowOrange;
+
+  font-family: $Theme-typography-fontFamily-subvisual;
+  font-weight: $Theme-typography-fontWeight-bold;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:before {
+    @include fa-icon();
+    padding-right: $Theme-spacing-small;
+
+    content: $fa-var-arrow-circle-right;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
