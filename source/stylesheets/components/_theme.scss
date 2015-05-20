@@ -16,9 +16,10 @@
   @include font-properties(bodyText, base);
   background-color: $Theme-color-white;
   color: $Theme-palette-text-body-default;
+
   font-family: $Theme-typography-fontFamily-bodyText;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
   font-weight: $Theme-typography-fontWeight-regular;
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }

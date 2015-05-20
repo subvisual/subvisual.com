@@ -42,12 +42,14 @@ $imported-modules: () !default;
   ol {
     padding: 0;
     margin: 0;
+
     list-style: none;
   }
 
   button {
     padding: 0;
+
     background: none;
-    border: none;
+    border: 0;
   }
 }

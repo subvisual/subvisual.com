@@ -20,7 +20,9 @@
 .Heading {
   @include font-properties(heading, base);
   width: 100%;
+
   color: $Theme-color-horizon;
+
   font-family: $Theme-typography-fontFamily-heading;
   font-weight: $Theme-typography-fontWeight-bold;
 }

@@ -26,6 +26,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
@@ -36,6 +37,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
   max-width: 600px;
   padding: 0 $Theme-spacing-default;
 }
@@ -46,7 +48,7 @@
   }
 }
 
-@include media(">=tablet") {
+@include media('>=tablet') {
   .Container.Container--twoColumn {
     .Container-column {
       flex: 1 0 50%;

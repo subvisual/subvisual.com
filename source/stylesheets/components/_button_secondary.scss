@@ -26,13 +26,17 @@ $ButtonSecondary-inverted-hover: $Theme-color-brightTurquoise;
   display: flex;
   justify-content: center;
   align-items: center;
+
   width: 100%;
   padding: $Theme-spacing-xSmall $Theme-spacing-small;
-  text-decoration: none;
+
   background-color: $ButtonSecondary-default-background;
   border: 4px solid $ButtonSecondary-default-color;
   color: $ButtonSecondary-default-color;
+
   font-weight: $Theme-typography-fontWeight-bold;
+  text-decoration: none;
+
   transition: all 0.3s ease-in-out;
 
   &:hover {

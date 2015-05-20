@@ -17,6 +17,7 @@
 .Text {
   @include font-properties(bodyText, base);
   color: $Theme-palette-text-body-default;
+
   font-family: $Theme-typography-fontFamily-bodyText;
   font-weight: $Theme-typography-fontWeight-regular;
 }

@@ -25,13 +25,17 @@ $ButtonPrimary-inverted-hover: darken($ButtonPrimary-inverted-background, 10);
   display: flex;
   justify-content: center;
   align-items: center;
+
   width: 100%;
   padding: $Theme-spacing-xSmall $Theme-spacing-small;
-  text-decoration: none;
+
   background-color: $ButtonPrimary-default-background;
   border: 4px solid $ButtonPrimary-default-background;
   color: $ButtonPrimary-default-color;
+
   font-weight: $Theme-typography-fontWeight-bold;
+  text-decoration: none;
+
   transition: all 0.3s ease-in-out;
 
   &:hover {
