@@ -11,4 +11,4 @@ gem 'middleman-robots'
 gem 'pry'
 gem 'rake'
 gem 'slim'
-gem 'scss_lint'
+gem 'scss_lint', require: false
