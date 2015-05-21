@@ -23,7 +23,6 @@
 
   color: $Theme-color-horizon;
 
-  font-family: $Theme-typography-fontFamily-heading;
   font-weight: $Theme-typography-fontWeight-bold;
 }
 
@@ -33,13 +32,11 @@
 
 .Heading.Heading--small {
   @include font-properties(heading, small);
-  font-family: $Theme-typography-fontFamily-heading;
   font-weight: $Theme-typography-fontWeight-bold;
 }
 
 .Heading.Heading--large {
   @include font-properties(subvisual, large);
-  font-family: $Theme-typography-fontFamily-subvisual;
   font-weight: $Theme-typography-fontWeight-bold;
   text-transform: uppercase;
 }

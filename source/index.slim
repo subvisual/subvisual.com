@@ -8,27 +8,11 @@ title: Subvisual
   .Panel
     .Layout
       .Layout-largeMargin
+= partial 'homepage/secret'
+= partial 'homepage/transparency'
+= partial 'homepage/team'
+= partial 'work_with_us'
+= partial 'homepage/contact'
+= partial 'subvisual_separator'
+= partial 'footer'
 
-      .Container.Container--twoColumn
-        .Container-column.Container-column--main
-          .Heading
-            | We know the secret behind excellence
-
-          .Layout-smallMargin
-
-          .Text
-            | It takes thought, focus and passion.
-            | It requires a culture of continuous learning and exploration.
-            | It’s about sweating the details and not settling for ‘good’ but
-            | rather strive for excellent. It’s about craftsmanship.
-
-          .Layout-smallMargin
-
-          = link_to 'Our Services', '#', class: 'EngagementLink'
-          .Layout-smallMargin
-          = link_to 'Read our case studies', '#', class: 'EngagementLink'
-
-        .Container-column.Container-column--secondary
-          = image_tag 'logo-design.png', alt: 'The subvisual logo with a grid', height: 250
-
-      .Layout-largeMargin

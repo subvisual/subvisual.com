@@ -1,0 +1,39 @@
+// Sitemap
+//
+// The site's sitemap
+//
+// default - The sitemap with four columns
+//
+// markup:
+// <div class="Sitemap">
+//   <div class="Sitemap-topic">
+//     <h1 class="Sitemap-heading">Topic Title</h1>
+//     <ul>
+//       <li>Item</li>
+//     </ul>
+//   </div>
+//   &hellip;
+// </div>
+//
+// Styleguide 1.11
+
+@import '../reset';
+@import '../theme_vars';
+
+.Sitemap {
+  @include container(4, 'Sitemap-topic') {
+    margin-bottom: $Theme-spacing-large;
+
+    .Sitemap-topic {
+      align-items: flex-start;
+    }
+  }
+}
+
+.Sitemap-heading {
+  @include font-properties(subvisual, small);
+  color: $Theme-color-horizon;
+
+  font-weight: $Theme-typography-fontWeight-bold;
+  text-transform: uppercase;
+}

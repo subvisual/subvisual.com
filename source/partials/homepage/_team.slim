@@ -1,0 +1,24 @@
+.Panel
+  .Layout
+    .Layout-largeMargin
+    .Container.Container--twoColumn
+      .Container-column
+        .Heading
+          | We are a small, powerful team
+        .Layout-smallMargin
+        .Text
+          ' We don't deceive you by overstating our abilites.
+          ' We are a team of expert digital handcrafters and therefore we are
+          ' responsible for our code and our design.
+          | We don't waste your time with excuses.
+        .Layout-smallMargin
+
+        = link_to 'Meet our craftsmen', '#', class: 'EngagementLink'
+        .Layout-smallMargin
+        = link_to 'Read our blog', '#', class: 'EngagementLink'
+        .Layout-smallMargin
+        = link_to 'Show up for coffee', '#', class: 'EngagementLink'
+
+      .Container-column.Container-column--centered
+        = image_tag 'nucleus.png', alt: 'The subvisual logo with a grid', height: 250
+    .Layout-largeMargin

@@ -4,6 +4,7 @@
 //
 // default - Default panel
 // .Panel--alternative - Alternate panel
+// .Panel--action - A panel with a CTA
 //
 // markup:
 // <div class="Panel {$modifiers}"></div>
@@ -21,4 +22,12 @@
   overflow: hidden;
 
   background-color: $Theme-color-polar;
+}
+
+.Panel--alternative {
+  background-color: $Theme-color-white;
+}
+
+.Panel--action {
+  background-color: $Theme-color-horizon;
 }

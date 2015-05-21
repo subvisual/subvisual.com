@@ -3,6 +3,8 @@
 ###
 
 require 'font-awesome-sass'
+require 'slim'
+Slim::Engine.disable_option_validator!
 
 # Per-page layout changes:
 #

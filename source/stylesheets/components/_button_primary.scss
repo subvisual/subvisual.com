@@ -4,7 +4,8 @@
 // A button with a filled background.
 //
 // default - The default primary button
-// .ButtonPrimary--inverted - Same button with a different color supposed to be used when the background issues it
+// .ButtonPrimary--inverted - Same button with a different color supposed to be
+// used when the background issues it
 //
 // markup:
 // <div class="ButtonPrimary {$modifiers}">Some text</div>
@@ -14,7 +15,7 @@
 @import '../reset';
 @import '../theme_vars';
 
-$ButtonPrimary-default-background: $Theme-color-brightTurquoise;
+$ButtonPrimary-default-background: $Theme-color-yellowOrange;
 $ButtonPrimary-default-color: $Theme-color-white;
 $ButtonPrimary-default-hover: darken($ButtonPrimary-default-background, 10);
 $ButtonPrimary-inverted-background: $Theme-color-white;
@@ -27,7 +28,6 @@ $ButtonPrimary-inverted-hover: darken($ButtonPrimary-inverted-background, 10);
   justify-content: center;
   align-items: center;
 
-  width: 100%;
   padding: $Theme-spacing-xSmall $Theme-spacing-small;
 
   background-color: $ButtonPrimary-default-background;
@@ -36,6 +36,7 @@ $ButtonPrimary-inverted-hover: darken($ButtonPrimary-inverted-background, 10);
 
   font-weight: $Theme-typography-fontWeight-bold;
   text-decoration: none;
+  text-transform: uppercase;
 
   transition: all 0.3s ease-in-out;
 

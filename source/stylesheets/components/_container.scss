@@ -27,50 +27,14 @@
 @import '../theme_vars';
 
 .Container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-}
-
-.Container-column {
-  flex: 1 0 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  max-width: 600px;
-  padding: 0 $Theme-spacing-default;
+  @include container();
 }
 
 .Container.Container--twoColumn {
-  .Container-column + .Container-column {
-    margin-top: $Theme-spacing-default;
-  }
-}
-
-@include media('>=tablet') {
-  .Container.Container--twoColumn {
-    $Container-twoColumn-main-width: 50%;
-
-    .Container-column {
-      flex: 1 0 50%;
-      align-items: flex-start;
-
-      &.Container-column--main {
-        flex: 1 0 $Container-twoColumn-main-width;
-      }
-
-      &.Container-column--secondary {
-        flex: 1 0 calc(100% - #{$Container-twoColumn-main-width});
-      }
-    }
-
-    .Container-column + .Container-column {
-      margin-top: 0;
+  @include container(2) {
+    .Container-column--centered {
+      align-items: center;
     }
   }
 }
+

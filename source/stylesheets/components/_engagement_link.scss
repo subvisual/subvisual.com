@@ -17,18 +17,19 @@
 @import 'font-awesome';
 
 .EngagementLink {
+  @include font-properties(subvisual, small);
+  width: 100%;
+
   color: $Theme-color-yellowOrange;
 
-  font-family: $Theme-typography-fontFamily-subvisual;
   font-weight: $Theme-typography-fontWeight-bold;
   text-decoration: none;
   text-transform: uppercase;
 
   &:before {
-    @include fa-icon();
-    padding-right: $Theme-spacing-small;
+    @include right-arrow();
 
-    content: $fa-var-arrow-circle-right;
+    padding-right: $Theme-spacing-small;
   }
 
   &:hover {
