@@ -1,0 +1,17 @@
+---
+title: Subvisual
+page: work
+---
+
+.StickyElementContainer
+  .Layout
+    .Panel.Panel--alternative
+        .StickyElementContainer-element
+          = partial 'nav'
+        .Layout-navPlaceholder
+        = partial 'work/hero'
+    = partial 'work/services'
+    = partial 'work/highlighted_work'
+    .Layout-smallMargin
+    = partial 'subvisual_separator'
+    = partial 'footer'

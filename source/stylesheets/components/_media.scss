@@ -1,0 +1,31 @@
+// Media
+//
+// The media object is an image to the left, with descriptive content to the right.
+//
+// markup:
+// <div class="Media">
+//   <div class="Media-image">
+//     <img />
+//   </div>
+//   <div class="Media-content">
+//     Lorem Ipsum ...
+//   </div>
+// </div>
+//
+// Styleguide 1.3
+
+.Media {
+  display: flex;
+}
+
+.Media-image {
+  padding: 0 $Theme-spacing-small;
+}
+
+.Media-content {
+  flex: 1 0 0;
+  display: flex;
+  flex-direction: column;
+
+  padding: 0 $Theme-spacing-small;
+}

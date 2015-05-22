@@ -2,8 +2,9 @@
   .Layout
     .Layout-largeMargin
     .Container.Container--twoColumn
-      .Container-column.Container-column--centered
-        = image_tag 'transparency.png', alt: 'A transparent bubble', height: 250
+      .Container-column
+        .ContentFormatter.ContentFormatter--centerHorizontally
+          = image_tag 'transparency.png', alt: 'A transparent bubble', height: 250
       .Container-column
         .Heading
           | We default to transparency

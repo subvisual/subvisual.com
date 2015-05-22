@@ -16,6 +16,13 @@ module CustomTemplateHelpers
     "#{data.site.url}#{page.url}"
   end
 
+  def nav_item(link_text, page_url, page_name = '', options = {})
+    options[:class] ||= "Nav-item"
+    page_name = page_url[1..-1] if page_name.empty?
+    options[:class] << " is-selected" if current_page.data.page == page_name
+    content_tag(:li, link_to(link_text, page_url, class: 'Nav-link'), options)
+  end
+
   def page_twitter_card_type
     current_page.data.twitter_card_type || 'summary'
   end

@@ -11,4 +11,18 @@
 
 .Panel.Panel--home {
   background-image: image-url('homepage-hero.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Panel.Panel--subvisualCaseStudy {
+  background-image: image-url('subvisual_case_study.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Panel.Panel--creatorsSchoolCaseStudy {
+  background-image: image-url('creators_school_case_study.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }

@@ -1,0 +1,20 @@
+// HorizontalGrid
+//
+// Lays out components side by side all in one row and each cell with equal width.
+//
+// markup:
+// <div class="HorizontalGrid styleguide-grid-unit">
+//   <div class="HorizontalGrid-cell styleguide-grid-unit">
+//     <div>Something</div>
+//   </div>
+// </div>
+//
+// Styleguide 1.2
+
+.HorizontalGrid {
+  display: flex;
+}
+
+.HorizontalGrid-cell {
+  flex: 1;
+}

@@ -1,0 +1,73 @@
+.Panel
+  .Container
+    .Container-column
+      .Layout-largeMargin
+      .ContentFormatter.ContentFormatter--centerHorizontally
+        h1.Heading.Heading--brand.Heading--large
+          span> Our
+          span.Heading-highlight Services
+  .Layout-largeMargin
+  .Container
+    .Container-column
+      .ContentFormatter.ContentFormatter--centerHorizontally
+        .Heading
+          | We’ve mastered a set of services based on years of learning and practice.
+        .Layout-smallMargin
+        .Text
+          ' If you’re not sure your problem is within our expertise,
+          = mail_to 'core@subvisual.co', 'we should talk', class: 'Link Link--highlight'
+          |. If we’re not a perfect match, we’ll recommend you another team that’s a better fit.
+  .Layout-defaultMargin
+  .Container
+    .FramedContainer
+      .FramedContainer-cell
+        .Layout-defaultMargin
+        .ContentFormatter.ContentFormatter--centerHorizontally
+          = partial 'work/product_development.svg'
+        .Layout-defaultMargin
+        .Heading.Heading--brand
+          .Heading-highlight
+            | Product Development
+        .Layout-smallMargin
+        .Text
+          | If you want to create a product or take your current one to a new level
+        .Layout-smallMargin
+        = link_to 'Learn more', '#', class: 'EngagementLink'
+        .Layout-largeMargin
+      .FramedContainer-cell
+        .Layout-defaultMargin
+        .ContentFormatter.ContentFormatter--centerHorizontally
+          = partial 'work/consulting.svg'
+        .Layout-defaultMargin
+        .Heading.Heading--brand
+          .Heading-highlight
+            | Consulting
+        .Layout-smallMargin
+        .Text
+          | Build your own software following our principles and process
+        .Layout-smallMargin
+        = link_to 'Learn more', '#', class: 'EngagementLink'
+        .Layout-largeMargin
+      .FramedContainer-cell
+        .Layout-defaultMargin
+        .ContentFormatter.ContentFormatter--centerHorizontally
+          = partial 'work/training.svg'
+        .Layout-defaultMargin
+        .Heading.Heading--brand
+          .Heading-highlight
+            | Training
+        .Layout-smallMargin
+        .Text
+          | Build your own software following our principles and process
+        .Layout-smallMargin
+        = link_to 'Learn more', '#', class: 'EngagementLink'
+        .Layout-largeMargin
+  .Layout-largeMargin
+  .Container
+    .Container-column
+      .ContentFormatter.ContentFormatter--centerHorizontally
+        .Heading
+          | You can use our project planner to specify your project’s singularities
+      .Layout-smallMargin
+      = link_to 'Ready to Start', '#', class: 'ButtonPrimary'
+  .Layout-largeMargin
