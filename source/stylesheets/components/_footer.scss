@@ -2,10 +2,16 @@
 //
 // The site's footer bar
 //
-// default - The footer
-//
 // markup:
 // <div class="Footer">
+//   <div class="Footer-credits">
+//     <span class="Footer-handcrafted">Handcrafted by</span>
+//     <span class="Footer-subvisual">SUBVISUAL</span>
+//   </div>
+//   <div class="Footer-work">
+//   <span class="Footer-interested">Interested in our services?</span>
+//   <a class="Footer-work-text" href="#">Let's get to work</a>
+//   </div>
 // </div>
 //
 // Styleguide 1.10

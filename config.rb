@@ -46,6 +46,12 @@ after_configuration do
   sprockets.append_path File.join "#{root}", @bower_config["directory"]
 end
 
+after_configuration do
+  if File.exist? "blue"
+    sprockets.append_path File.join "#{root}", "blue"
+  end
+end
+
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'

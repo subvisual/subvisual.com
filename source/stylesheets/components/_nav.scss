@@ -59,7 +59,6 @@ $Nav-item-color-hover: $Theme-color-yellowOrange;
   @include font-properties(heading, small);
   color: $Theme-color-white;
 
-  font-family: $Theme-typography-fontFamily-heading;
   font-weight: $Theme-typography-fontWeight-bold;
   text-decoration: none;
 

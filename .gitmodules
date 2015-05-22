@@ -1,0 +1,3 @@
+[submodule "blue"]
+	path = blue
+	url = git@github.com:groupbuddies/blue.git
