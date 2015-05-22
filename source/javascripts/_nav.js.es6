@@ -1,6 +1,6 @@
 $(function() {
   window.subvisual = window.subvisual || {};
-  window.subvisual.nav = (function() {
+  window.subvisual.nav = (function(stickyElement) {
     let lastScrollTop = 0;
     let delta = 5;
     let $element = $('.Nav');
@@ -13,9 +13,10 @@ $(function() {
       if(Math.abs(lastScrollTop - currentScrollTop) <= delta)
         return;
 
-      // If the scroll down and are past the element, add class .is-hidden.
-      if (currentScrollTop > elementHeight){
-        $element.addClass('Nav--filled');
+      if (currentScrollTop > elementHeight) {
+        setTimeout(function() {
+          $element.addClass('Nav--filled');
+        }, stickyElement.hideTransitionDuration);
       } else {
         $element.removeClass('Nav--filled');
       }
@@ -24,5 +25,5 @@ $(function() {
     }
 
     return { manageBackground };
-  })();
+  })(window.subvisual.stickyElement);
 });

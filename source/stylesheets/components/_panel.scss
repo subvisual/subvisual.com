@@ -1,0 +1,14 @@
+// Panel
+//
+// Full width container with a unique background
+//
+// .Panel--home - A panel with a background to be used in the homepage
+//
+// markup:
+// <div class="Panel {$modifiers}"></div>
+//
+// Styleguide 1.1
+
+.Panel.Panel--home {
+  background-image: image-url('homepage-hero.png');
+}

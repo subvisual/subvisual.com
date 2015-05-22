@@ -6,6 +6,7 @@ $(function() {
     let $element = $('.StickyElementContainer-element');
     let $elementContainer = $element.closest('.StickyElementContainer');
     let elementHeight = $element.outerHeight();
+    let hideTransitionDuration = 200;
 
     function manageVisibility() {
       let currentScrollTop = $(document).scrollTop();
@@ -30,8 +31,11 @@ $(function() {
       lastScrollTop = currentScrollTop;
     }
 
-    $elementContainer.css('padding-top', elementHeight);
+    $element.css('transition', `top ${hideTransitionDuration}ms ease-in-out`);
 
-    return { manageVisibility };
+    return {
+      manageVisibility,
+      hideTransitionDuration
+    };
   })();
 });

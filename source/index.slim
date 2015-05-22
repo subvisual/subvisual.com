@@ -4,16 +4,15 @@ nav_class: Nav--dark
 ---
 
 .StickyElementContainer
-  .StickyElementContainer-element
-    = partial 'nav'
-  .Panel
+  .Panel.Panel--home
     .Layout
-      .Layout-largeMargin
-= partial 'homepage/secret'
-= partial 'homepage/transparency'
-= partial 'homepage/team'
-= partial 'work_with_us'
-= partial 'homepage/contact'
-= partial 'subvisual_separator'
-= partial 'footer'
-
+      .StickyElementContainer-element
+        = partial 'nav'
+      = partial 'homepage/hero'
+  = partial 'homepage/secret'
+  = partial 'homepage/transparency'
+  = partial 'homepage/team'
+  = partial 'work_with_us'
+  = partial 'homepage/contact'
+  = partial 'subvisual_separator'
+  = partial 'footer'
