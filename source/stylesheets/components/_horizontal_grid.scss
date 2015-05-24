@@ -5,11 +5,17 @@
 // markup:
 // <div class="HorizontalGrid styleguide-grid-unit">
 //   <div class="HorizontalGrid-cell styleguide-grid-unit">
-//     <div>Something</div>
+//     <div>Cell 1</div>
+//   </div>
+//   <div class="HorizontalGrid-cell styleguide-grid-unit">
+//     <div>Cell 2</div>
+//   </div>
+//   <div class="HorizontalGrid-cell styleguide-grid-unit">
+//     <div>Cell 3</div>
 //   </div>
 // </div>
 //
-// Styleguide 1.2
+// Styleguide 5.2
 
 .HorizontalGrid {
   display: flex;

@@ -3,25 +3,34 @@
 // Full width container with a unique background
 //
 // .Panel--home - A panel with a background to be used in the homepage
+// .Panel--subvisualCaseStudy - A panel with a background to be used as the subvisual case study
+// .Panel--creatorsSchoolCaseStudy - A panel with a background to be used as the creators school case study
 //
 // markup:
-// <div class="Panel {$modifiers}"></div>
+// <div class="Panel {$modifiers}">
+//   The content defines the Panel's height<br>
+// </div>
 //
-// Styleguide 1.1
+// Styleguide 5.1
 
 .Panel.Panel--home {
+  // FIXME: temporary workaround for having these assets available to the styleguide;
+  // TODO: find a way of being able to keep using Sprocket's helpers
+  background-image: url('/homepage-hero.png');
   background-image: image-url('homepage-hero.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .Panel.Panel--subvisualCaseStudy {
+  background-image: url('/subvisual_case_study.png');
   background-image: image-url('subvisual_case_study.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .Panel.Panel--creatorsSchoolCaseStudy {
+  background-image: url('/creators_school_case_study.png');
   background-image: image-url('creators_school_case_study.png');
   background-repeat: no-repeat;
   background-size: cover;
