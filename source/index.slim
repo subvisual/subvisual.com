@@ -1,6 +1,6 @@
 ---
 title: Subvisual
-nav_class: Nav--dark
+nav_class: Nav--light
 page: home
 ---
 
@@ -10,10 +10,10 @@ page: home
       = partial 'nav'
     .Layout-navPlaceholder
     = partial 'homepage/hero'
-= partial 'homepage/secret'
-= partial 'homepage/transparency'
+= partial 'homepage/services'
+= partial 'homepage/principles'
 = partial 'homepage/team'
-= partial 'work_with_us'
+= partial 'work_with_us', locals: { text: 'Have an exciting project in mind?<br>We are ready to start', buttonText: "Let's work together" }
 = partial 'homepage/contact'
 = partial 'subvisual_separator'
 = partial 'footer'

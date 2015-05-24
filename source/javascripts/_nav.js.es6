@@ -7,7 +7,7 @@ $(function() {
     let elementHeight = $element.outerHeight();
 
     function chooseAdequateLogo() {
-      if ($element.hasClass('Nav--dark') && !$element.hasClass('Nav--filled')) {
+      if ($element.hasClass('Nav--light') && !$element.hasClass('Nav--filled')) {
         showMonoLogo();
       } else {
         showColoredLogo();
