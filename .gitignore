@@ -15,4 +15,5 @@
 
 # Ignore bower components
 /bower_components
+/styleguide
 /node_modules

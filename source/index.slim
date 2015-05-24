@@ -4,17 +4,16 @@ nav_class: Nav--dark
 page: home
 ---
 
-.StickyElementContainer
-  .Panel.Panel--home
-    .Layout
-      .StickyElementContainer-element
-        = partial 'nav'
-      .Layout-navPlaceholder
-      = partial 'homepage/hero'
-  = partial 'homepage/secret'
-  = partial 'homepage/transparency'
-  = partial 'homepage/team'
-  = partial 'work_with_us'
-  = partial 'homepage/contact'
-  = partial 'subvisual_separator'
-  = partial 'footer'
+.Panel.Panel--home
+  .Layout
+    .StickyElement
+      = partial 'nav'
+    .Layout-navPlaceholder
+    = partial 'homepage/hero'
+= partial 'homepage/secret'
+= partial 'homepage/transparency'
+= partial 'homepage/team'
+= partial 'work_with_us'
+= partial 'homepage/contact'
+= partial 'subvisual_separator'
+= partial 'footer'
