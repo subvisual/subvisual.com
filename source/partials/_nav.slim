@@ -1,5 +1,8 @@
 nav#main-nav.Nav class="#{current_page.data.nav_class}" aria-label=('Main navigation')
-  /logo
+  = link_to '/', class: 'Nav-logo', data: { mono: true }
+    object type="image/svg+xml" data="#{image_path('subvisual_logo_mono_with_name.svg')}"
+  = link_to '/', class: 'Nav-logo'
+    object type="image/svg+xml" data="#{image_path('subvisual_logo_with_name.svg')}"
   ul.Nav-items
     li.Nav-item
       /Hamburger
