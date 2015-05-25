@@ -1,3 +1,5 @@
+git submodule update
+
 if ! hash bundle 2>/dev/null; then
   gem install bundler
 fi
