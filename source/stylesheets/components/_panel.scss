@@ -5,11 +5,14 @@
 // .Panel--home - A panel with a background to be used in the homepage
 //
 // markup:
-// <div class="Panel {$modifiers}"></div>
+// <div class="Panel {$modifiers}">The content defines the Panel's height</div>
 //
-// Styleguide 1.1
+// Styleguide 5.1
 
 .Panel.Panel--home {
+  // FIXME: temporary workaround for having these assets available to the styleguide;
+  // TODO: find a way of being able to keep using Sprocket's helpers
+  background-image: url('/homepage-hero.png');
   background-image: image-url('homepage-hero.png');
   background-repeat: no-repeat;
   background-size: cover;

@@ -8,3 +8,4 @@ fi
 
 (bundle check &>/dev/null) || bundle install
 bower install
+npm install
