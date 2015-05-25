@@ -55,7 +55,7 @@ namespace :styleguide do
   def styleguide_command(style_source, output_folder, watch)
     kss_sources = ['source/stylesheets/**/*.scss', 'blue/blue/**/*.scss']
     options = [
-      'styleguide',
+      './node_modules/.bin/styleguide',
       '--server',
       "#{watch ? '--watch' : ''}",
       '--title "Blue Styleguide"',
