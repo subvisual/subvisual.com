@@ -1,0 +1,32 @@
+// RatioEnforcer
+//
+// Forces the image to adapt to its container's dimensions but maintaing its natural ratio.
+// Supposed to be applied to an image
+//
+// default - Natural growth
+// .RatioEnforcer--creatorsSchoolLogo - Custom ratio for Creator's School logo
+// .RatioEnforcer--rubyconfptLogo - Custom ratio for Creator's School logo
+// .RatioEnforcer--roundedLogo - Custom ratio for rounded logo like meetups
+//
+// markup:
+// <img src="/placeholder.png" class="RatioEnforcer {$modifiers}">
+//
+// Styleguide 5.4
+
+.RatioEnforcer {
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.RatioEnforcer.RatioEnforcer--creatorsSchoolLogo {
+  max-width: 387px;
+}
+
+.RatioEnforcer.RatioEnforcer--rubyconfptLogo {
+  max-width: 311px;
+}
+
+.RatioEnforcer.RatioEnforcer--roundedLogo {
+  max-width: 150px;
+}
