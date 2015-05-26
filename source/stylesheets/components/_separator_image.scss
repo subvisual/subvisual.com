@@ -1,0 +1,28 @@
+// SeparatorImage
+//
+// Centers an image between two panels.
+// Used on services pages
+//
+// markup:
+// <div class="SeparatorImage">
+//   <div class="SeparatorImage-image>
+//     <img src="/placeholder.png">
+//   </div>
+//   <div class="SeparatorImage-marginFixer"></div>
+// </div>
+//
+// Styleguide 5.5
+
+$ImageSize: 129px;
+
+.SeparatorImage {
+  position: absolute;
+
+  width: 100%;
+}
+
+.SeparatorImage-image {
+  position: relative;
+  top: -#{$ImageSize};
+  left: calc(50% - #{$ImageSize});
+}
