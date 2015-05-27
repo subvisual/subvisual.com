@@ -1,19 +1,17 @@
 .Panel
   .Layout
     .Layout-largeMargin
-    .Container.Container--twoColumn
-      .Container-column
+    .HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--withGutters
+      .HorizontalGrid-cell
         .Heading.Heading--brandLarge
-          span> Responsible Responsive
+          ' Responsible Responsive
           span.Heading-highlight Design
         .Layout-smallMargin
         .Text.Text--large
           ' We are aware of the challenges of designing and building products
           | that perform efficiently across every device possible.
         .Layout-smallMargin
-
-      .Container-column
+      .HorizontalGrid-cell
         .ContentFormatter.ContentFormatter--centerHorizontally
           = partial 'practices/responsive-design.svg'
-
     .Layout-largeMargin

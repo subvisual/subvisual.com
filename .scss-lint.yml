@@ -1,7 +1,10 @@
-exclude: ['bower_components/**', 'build/**']
+exclude: ['bower_components/**', 'build/**', 'node_modules/**', 'styleguide/**']
 
 linters:
   Compass::*:
+    enabled: false
+
+  DuplicateProperty:
     enabled: false
 
   LeadingZero:
@@ -42,9 +45,9 @@ linters:
       - flex-flow
       - flex-direction
       - flex-wrap
-      - justify-content
-      - align-items
       - align-content
+      - align-items
+      - justify-content
       - box-sizing
       - visibility
       - float

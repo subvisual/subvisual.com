@@ -1,10 +1,13 @@
 .Panel.Panel--action
-  .Layout
-    .Layout-largeMargin
-    .Container
-      .Container-column
-        .Text.Text--engagement.u-textAlignCenter
-          = text
-        .Layout-defaultMargin
-        = link_to "#{buttonText}", '#', class: 'ButtonPrimary'
-    .Layout-largeMargin
+  .HorizontalGrid.HorizontalGrid--limited
+    .HorizontalGrid-cell
+      .GridCell.GridCell--alignCenter
+        .GridCell-content
+          .Layout
+            .Layout-largeMargin
+            .ContentFormatter.ContentFormatter--centerHorizontally
+              .Text.Text--engagement
+                = text
+              .Layout-defaultMargin
+              = link_to "#{buttonText}", '#', class: 'ButtonPrimary'
+            .Layout-largeMargin

@@ -1,8 +1,8 @@
 .Panel
   .Layout
     .Layout-largeMargin
-    .Container.Container--twoColumn
-      .Container-column
+    .HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--withGutters
+      .HorizontalGrid-cell
         .Heading
           | We know the secret behind excellence
         .Layout-smallMargin
@@ -12,12 +12,10 @@
           ' It’s about sweating the details and not settling for ‘good’ but
           | rather strive for excellent. It’s about craftsmanship.
         .Layout-smallMargin
-
         = link_to 'Our Services', '/work', class: 'EngagementLink'
         .Layout-smallMargin
         = link_to 'Read our case studies', '/work#case-studies', class: 'EngagementLink'
-
-      .Container-column
+      .HorizontalGrid-cell
         .ContentFormatter.ContentFormatter--centerHorizontally
           = image_tag 'logo-design.png', alt: 'The subvisual logo with a grid', height: 250
     .Layout-largeMargin

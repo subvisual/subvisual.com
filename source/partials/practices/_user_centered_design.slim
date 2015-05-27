@@ -1,19 +1,17 @@
 .Panel.Panel--alternative
   .Layout
     .Layout-largeMargin
-    .Container.Container--twoColumn
-      .Container-column
+    .HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--withGutters
+      .HorizontalGrid-cell
         .ContentFormatter.ContentFormatter--centerHorizontally
           = partial 'practices/user-centered.svg'
-
-      .Container-column
+      .HorizontalGrid-cell
         .Heading.Heading--brandLarge
-          span> User-centered
+          ' User-centered
           span.Heading-highlight Design
         .Layout-smallMargin
         .Text.Text--large
           ' We are aware of the challenges of designing and building products
           | that perform efficiently across every device possible.
         .Layout-smallMargin
-
     .Layout-largeMargin

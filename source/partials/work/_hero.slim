@@ -1,10 +1,12 @@
-.Container
-  .Container-column
-    .Layout-largeMargin
-    .ContentFormatter.ContentFormatter--centerHorizontally
-      h1.Heading.Heading--brandLarge
-        span> Thoughtful, handcrafted
-        span.Heading-highlight Work
-      .Layout-largeMargin
-      = partial 'work/origami_swan.svg'
-    .Layout-largeMargin
+.Layout-largeMargin
+.HorizontalGrid.HorizontalGrid--limited
+  .HorizontalGrid-cell
+    .GridCell.GridCell--alignCenter
+      .GridCell-content
+        .ContentFormatter.ContentFormatter--centerHorizontally
+          h1.Heading.Heading--brandLarge
+            ' Thoughtful, handcrafted
+            span.Heading-highlight Work
+        .Layout-largeMargin
+        = partial 'work/origami_swan.svg'
+.Layout-largeMargin

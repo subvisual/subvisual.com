@@ -1,18 +1,22 @@
 #case-studies.Panel.Panel--alternative
-  .Container
-    .Container-column
-      .Layout-largeMargin
-      h1.Heading.Heading--brandLarge
-        span> Highlighted
-        span.Heading-highlight Work
-      .Layout-largeMargin
+  .Layout
+    .Layout-largeMargin
+    .HorizontalGrid.HorizontalGrid--limited
+      .HorizontalGrid-cell
+        .GridCell.GridCell--alignCenter
+          .GridCell-content
+            h1.Heading.Heading--brandLarge
+              ' Highlighted
+              span.Heading-highlight Work
+    .Layout-largeMargin
+
 .Panel.Panel--subvisualCaseStudy
   .Layout
-    .Container.Container--twoColumn
-      .Container-column
+    .HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--withGutters
+      .HorizontalGrid-cell
         .ContentFormatter.ContentFormatter--center
           object type="image/svg+xml" data="#{image_path('subvisual_logo_mono.svg')}"
-      .Container-column
+      .HorizontalGrid-cell
         .Layout-largeMargin
         .Heading.Heading--brand
           .Heading-light
@@ -22,12 +26,14 @@
           | Design, Development
         .Layout-smallMargin
         .Text.Text--light
-          | Rebranding your own company is the most painful, soul-crushing challenge you can face. We did it successfully and we’ll show you how.
+          ' Rebranding your own company is the most painful, soul-crushing
+          | challenge you can face. We did it successfully and we’ll show you how.
         .Layout-largeMargin
-.Layout
-  .HorizontalGrid
-    .HorizontalGrid-cell
-      .Panel.Panel--creatorsSchoolCaseStudy
+
+.HorizontalGrid
+  .HorizontalGrid-cell
+    .Panel.Panel--creatorsSchoolCaseStudy
+      .Layout
         .Layout-largeMargin
         .Media
           .Media-image
@@ -42,10 +48,12 @@
               | Design, Development, Business Partners
             .Layout-smallMargin
             .Text.Text--light
-              | An highly-intensive 9 week program that teaches people how to program and helps them find a job in the tech industry.
+              ' An highly-intensive 9 week program that teaches people how to
+              | program and helps them find a job in the tech industry.
         .Layout-largeMargin
-    .HorizontalGrid-cell
-      .Panel.Panel--creatorsSchoolCaseStudy
+  .HorizontalGrid-cell
+    .Panel.Panel--creatorsSchoolCaseStudy
+      .Layout
         .Layout-largeMargin
         .Media
           .Media-image

@@ -1,12 +1,11 @@
 .Panel.Panel--alternative
   .Layout
     .Layout-largeMargin
-    .Container.Container--twoColumn
-      .Container-column
+    .HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--withGutters
+      .HorizontalGrid-cell
         .ContentFormatter.ContentFormatter--centerHorizontally
           = partial 'practices/brain.svg'
-
-      .Container-column
+      .HorizontalGrid-cell
         .Heading.Heading--brandLarge
           span> Continuous
           span.Heading-highlight Learning
@@ -16,5 +15,4 @@
           ' We dedicate one day per week to explore the unknown and
           | step out of our comfort zone.
         .Layout-smallMargin
-
     .Layout-largeMargin
