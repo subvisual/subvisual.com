@@ -47,9 +47,7 @@ after_configuration do
 end
 
 after_configuration do
-  if File.exist? "blue"
-    sprockets.append_path File.join "#{root}", "blue"
-  end
+  sprockets.append_path File.join "#{root}", "vendor"
 end
 
 set :css_dir, 'stylesheets'
