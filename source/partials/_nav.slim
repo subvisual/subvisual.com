@@ -1,8 +1,7 @@
-nav#main-nav.Nav class="#{current_page.data.nav_class}" aria-label=('Main navigation')
-  = link_to '/', class: 'Nav-logo', data: { mono: true }
-    object type="image/svg+xml" data="#{image_path('subvisual_logo_mono_with_name.svg')}"
-  = link_to '/', class: 'Nav-logo'
-    object type="image/svg+xml" data="#{image_path('subvisual_logo_with_name.svg')}"
+nav#main-nav.Nav.Nav--topPositioned class="#{current_page.data.nav_class}" aria-label=('Main navigation')
+  = link_to '/', class: 'Nav-logoWrapper'
+    object type="image/svg+xml" data="#{image_path('subvisual_logo_mono_with_name.svg')}" data-mono='true' class="Nav-logo"
+    object type="image/svg+xml" data="#{image_path('subvisual_logo_with_name.svg')}" class="Nav-logo"
   ul.Nav-items
     li.Nav-item
       /Hamburger
@@ -11,3 +10,4 @@ nav#main-nav.Nav class="#{current_page.data.nav_class}" aria-label=('Main naviga
     = nav_item('Community', '/community')
     = nav_item('Apprenticeship', '/apprenticeship')
     = nav_item('Blog', '/blog')
+.Layout-navPlaceholder

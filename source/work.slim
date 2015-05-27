@@ -4,11 +4,8 @@ page: work
 ---
 
 .Panel.Panel--alternative
-  .Layout
-    .StickyElement
-      = partial 'nav'
-    .Layout-navPlaceholder
-    = partial 'work/hero'
+  = partial 'nav'
+  = partial 'work/hero'
 = partial 'work/services'
 = partial 'work/highlighted_work'
 = partial 'work_with_us', locals: { text: "These are just some highlights of what we've done so far. Do you feel ready to start?", buttonText: "Let's work together" }

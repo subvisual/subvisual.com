@@ -4,12 +4,8 @@ page: work
 ---
 
 .Panel
-  .Layout
-    .StickyElement
-      = partial 'nav'
-    .Layout-navPlaceholder
-    = partial 'consulting/hero'
-
+  = partial 'nav'
+  = partial 'consulting/hero'
 = partial 'consulting/professional_team'
 = partial 'consulting/values_and_quotes'
 = partial 'work_with_us', locals: { text: "Have an exciting project in mind?<br>We are ready to start", buttonText: "Let's work together" }
