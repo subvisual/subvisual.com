@@ -49,11 +49,11 @@ namespace :styleguide do
   end
 
   def compile_stylesheets
-    `bundle exec sass --load-path blue --load-path bower_components --require font-awesome-sass source/stylesheets/all.scss`
+    `bundle exec sass --load-path vendor --load-path bower_components --require font-awesome-sass source/stylesheets/all.scss`
   end
 
   def styleguide_command(style_source, output_folder, watch)
-    kss_sources = ['source/stylesheets/**/*.scss', 'blue/blue/**/*.scss']
+    kss_sources = ['source/stylesheets/**/*.scss', 'vendor/blue/stylesheets/**/*.scss']
     options = [
       './node_modules/.bin/styleguide',
       '--server',
