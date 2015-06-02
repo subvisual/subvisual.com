@@ -1,0 +1,17 @@
+.Panel.Panel--alternative.u-largeMargin
+  .HorizontalGrid.HorizontalGrid--limited.u-defaultMargin
+    .HorizontalGrid-cell
+      .GridCell.GridCell--alignCenter
+        .GridCell-content
+          .u-largeMargin
+          .ContentFormatter.ContentFormatter--centerHorizontally
+            .Text.Text--extraInfo
+              ' These are the principles we stand by. If you feel good about
+              | them, learn more about our services or read our case studies.
+  .GridCell.GridCell--alignCenter
+    .GridCell-content
+      .HorizontalGrid.HorizontalGrid--centered.HorizontalGrid--withGutters
+        .HorizontalGrid-cell
+          = link_to "About our services", '#', class: 'ButtonSecondary ButtonSecondary--fullWidth'
+        .HorizontalGrid-cell
+          = link_to "Our case studies", '#', class: 'ButtonSecondary ButtonSecondary--fullWidth'

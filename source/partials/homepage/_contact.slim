@@ -1,12 +1,21 @@
-.Panel.Panel--alternative
+.Panel.Panel--fishTank
   .u-largeMargin
-  .HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--withGutters
-    .HorizontalGrid-cell
-      .Heading.u-smallMargin
-        | We're always looking for exciting projects and fantastic people
-      .Text
-        ' If you're in Portugal, more specifically in the North, make sure to
-        ' stop by to meet us.
-        ' We'll always make time for you.
-        | The coffee's on us.
-    .HorizontalGrid-cell
+  .GridCell.GridCell--alignCenter.u-largeMargin
+    .GridCell-content
+      .ContentFormatter.ContentFormatter--centerHorizontally
+        h2.Heading.Heading--brandLarge
+          ' Based in a dynamic and young little city in portugal called
+          span.Heading-light Braga
+  .ContentFormatter.ContentFormatter--center
+    .HorizontalGrid.HorizontalGrid--variableWidth.HorizontalGrid--centered.HorizontalGrid--withGutters.u-largeMargin
+      .HorizontalGrid-cell
+        .ContentFormatter.ContentFormatter--right
+          p.Text.Text--large.Text--light.Text--strong hello@subvisual.com
+          p.Text.Text--large.Text--light +351 914 676 907
+      .HorizontalGrid-cell
+        = partial 'homepage/logo_map.svg'
+      .HorizontalGrid-cell
+        p.Text.Text--large.Text--light.Text--strong
+          ' Centro Empresarial de
+          br
+          | Ferreiros, Braga
