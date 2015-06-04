@@ -1,21 +1,17 @@
 .Panel
-  .Layout
-    .Layout-largeMargin
-    .HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--withGutters
-      .HorizontalGrid-cell
-        .Heading
-          | We know the secret behind excellence
-        .Layout-smallMargin
-        .Text
-          ' It takes thought, focus and passion.
-          ' It requires a culture of continuous learning and exploration.
-          ' It’s about sweating the details and not settling for ‘good’ but
-          | rather strive for excellent. It’s about craftsmanship.
-        .Layout-smallMargin
-        = link_to 'Our Services', '/work', class: 'EngagementLink'
-        .Layout-smallMargin
-        = link_to 'Read our case studies', '/work#case-studies', class: 'EngagementLink'
-      .HorizontalGrid-cell
-        .ContentFormatter.ContentFormatter--centerHorizontally
-          /= image_tag 'logo-design.png', alt: 'The subvisual logo with a grid', height: 250
-    .Layout-largeMargin
+  .u-largeMargin
+  .HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--withGutters.u-largeMargin
+    .HorizontalGrid-cell
+      .Heading.u-smallMargin
+        | We know the secret behind excellence
+      .Text.u-smallMargin
+        ' It takes thought, focus and passion.
+        ' It requires a culture of continuous learning and exploration.
+        ' It’s about sweating the details and not settling for ‘good’ but
+        | rather strive for excellent. It’s about craftsmanship.
+
+      = link_to 'Our Services', '/work', class: 'EngagementLink u-smallMargin'
+      = link_to 'Read our case studies', '/work#case-studies', class: 'EngagementLink'
+    .HorizontalGrid-cell
+      .ContentFormatter.ContentFormatter--centerHorizontally
+        /= image_tag 'logo-design.png', alt: 'The subvisual logo with a grid', height: 250

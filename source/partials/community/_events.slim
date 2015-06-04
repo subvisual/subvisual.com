@@ -1,92 +1,74 @@
 .Panel
-  .Layout
-    .Layout-largeMargin
-    .HorizontalGrid.HorizontalGrid--limited
-      .HorizontalGrid-cell
-        .GridCell.GridCell--alignCenter
-          .GridCell-content
-            .ContentFormatter.ContentFormatter--centerHorizontally
-              .Heading
-                | We create and support all sorts of community events
-              .Layout-smallMargin
-              .Text
-                ' We aim to do our part and give back to the community, in an attempt
-                ' to inspire people and contribute for a better ecosystem. From small
-                | meetups to international events, we keep ourselves pretty busy.
-    .Layout-largeMargin
+  .u-largeMargin
+  .HorizontalGrid.HorizontalGrid--limited
+    .HorizontalGrid-cell
+      .GridCell.GridCell--alignCenter
+        .GridCell-content
+          .ContentFormatter.ContentFormatter--centerHorizontally
+            .Heading.u-smallMargin
+              | We create and support all sorts of community events
+            .Text.u-largeMargin
+              ' We aim to do our part and give back to the community, in an attempt
+              ' to inspire people and contribute for a better ecosystem. From small
+              | meetups to international events, we keep ourselves pretty busy.
 
 .Panel.Panel--alternative
   .HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--darkFrame.HorizontalGrid--noTopFrame
     .HorizontalGrid-cell
       .GridCell
         .GridCell-content
-          .Layout
-            .Layout-largeMargin
-            img.RatioEnforcer.RatioEnforcer--creatorsSchoolLogo(
-              src="#{image_path('creators_school_logo.png')}"
-              srcset="#{image_path('creators_school_logo.png')} 387w, #{image_path('creators_school_logo@2x.png')} 774w"
-              sizes="calc(0.65 * (1280px / 2))"
-              alt='The Creators School logo'
-            )
-            .Layout-defaultMargin
-            .Heading
-              | Teaching others is our favourite way of learning
-            .Layout-smallMargin
-            .Text
-              ' We strongly believe that education is the most noble and humbling
-              ' practice. The only way to reach the top and stay there, is to adopt a
-              ' culture of continuous learning and healthy competition. It motivates
-              ' us to explore better ways to spark interest in others and inspire them
-              | to pursue excellence.
-            .Layout-defaultMargin
-            = link_to 'Visit the website', 'http://creatorsschool.com/', class: 'ButtonSecondary'
-            .Layout-largeMargin
+          .u-largeMargin
+          img.RatioEnforcer.RatioEnforcer--creatorsSchoolLogo.u-defaultMargin(
+            src="#{image_path('creators_school_logo.png')}"
+            srcset="#{image_path('creators_school_logo.png')} 387w, #{image_path('creators_school_logo@2x.png')} 774w"
+            sizes="calc(0.65 * (1280px / 2))"
+            alt='The Creators School logo'
+          )
+          .Heading.u-smallMargin
+            | Teaching others is our favourite way of learning
+          .Text.u-defaultMargin
+            ' We strongly believe that education is the most noble and humbling
+            ' practice. The only way to reach the top and stay there, is to adopt a
+            ' culture of continuous learning and healthy competition. It motivates
+            ' us to explore better ways to spark interest in others and inspire them
+            | to pursue excellence.
+          = link_to 'Visit the website', 'http://creatorsschool.com/', class: 'ButtonSecondary u-largeMargin'
     .HorizontalGrid-cell
       .GridCell
         .GridCell-content
-          .Layout
-            .Layout-largeMargin
-            img.RatioEnforcer.RatioEnforcer--rubyconfptLogo(
-              src="#{image_path('rubyconfpt_logo.png')}"
-              srcset="#{image_path('rubyconfpt_logo.png')} 311w, #{image_path('rubyconfpt_logo@2x.png')} 622w"
-              sizes="calc(0.65 * (1280px / 2))"
-              alt='The Rubyconf PT logo'
-            )
-            .Layout-defaultMargin
-            .Heading
-              | Teaching others is our favourite way of learning
-            .Layout-smallMargin
-            .Text
-              ' We strongly believe that education is the most noble and humbling
-              ' practice. The only way to reach the top and stay there, is to adopt a
-              ' culture of continuous learning and healthy competition. It motivates
-              ' us to explore better ways to spark interest in others and inspire them
-              | to pursue excellence.
-            .Layout-defaultMargin
-            = link_to 'Visit the website', 'http://rubyconf.pt/', class: 'ButtonSecondary'
-            .Layout-largeMargin
+          .u-largeMargin
+          img.RatioEnforcer.RatioEnforcer--rubyconfptLogo.u-defaultMargin(
+            src="#{image_path('rubyconfpt_logo.png')}"
+            srcset="#{image_path('rubyconfpt_logo.png')} 311w, #{image_path('rubyconfpt_logo@2x.png')} 622w"
+            sizes="calc(0.65 * (1280px / 2))"
+            alt='The Rubyconf PT logo'
+          )
+          .Heading.u-smallMargin
+            | Teaching others is our favourite way of learning
+          .Text.u-defaultMargin
+            ' We strongly believe that education is the most noble and humbling
+            ' practice. The only way to reach the top and stay there, is to adopt a
+            ' culture of continuous learning and healthy competition. It motivates
+            ' us to explore better ways to spark interest in others and inspire them
+            | to pursue excellence.
+          = link_to 'Visit the website', 'http://rubyconf.pt/', class: 'ButtonSecondary u-largeMargin'
   .HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--darkFrame.HorizontalGrid--noTopFrame
     .HorizontalGrid-cell
       .GridCell
         .GridCell-content
-          .Layout
-            .Layout-largeMargin
-            img.RatioEnforcer.RatioEnforcer--roundedLogo(
-              src="#{image_path('webx_day.png')}"
-              srcset="#{image_path('webx_day.png')} 145w, #{image_path('webx_day@2x.png')} 290w"
-              sizes="150px"
-              alt='The Webx Day logo'
-            )
-            .Layout-defaultMargin
-            .Heading
-              | Test, experiment and iterate
-            .Layout-smallMargin
-            .Text
-              ' A day for those who design and build for web to test their work to
-              ' the limits, passing it through user testing, responiveness and many
-              | other avaliations.
-            .Layout-defaultMargin
-            = link_to 'Visit the website', '#', class: 'ButtonSecondary'
-            .Layout-largeMargin
+          .u-largeMargin
+          img.RatioEnforcer.RatioEnforcer--roundedLogo.u-defaultMargin(
+            src="#{image_path('webx_day.png')}"
+            srcset="#{image_path('webx_day.png')} 145w, #{image_path('webx_day@2x.png')} 290w"
+            sizes="150px"
+            alt='The Webx Day logo'
+          )
+          .Heading.u-smallMargin
+            | Test, experiment and iterate
+          .Text.u-defaultMargin
+            ' A day for those who design and build for web to test their work to
+            ' the limits, passing it through user testing, responiveness and many
+            | other avaliations.
+          = link_to 'Visit the website', '#', class: 'ButtonSecondary u-largeMargin'
     .HorizontalGrid-cell
     .HorizontalGrid-cell

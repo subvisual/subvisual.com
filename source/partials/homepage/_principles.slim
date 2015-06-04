@@ -1,22 +1,17 @@
 .Panel.Panel--alternative
-  .Layout
-    .Layout-largeMargin
-    .HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--withGutters
-      .HorizontalGrid-cell
-        .ContentFormatter.ContentFormatter--centerHorizontally
-          /= image_tag 'transparency.png', alt: 'A transparent bubble', height: 250
-      .HorizontalGrid-cell
-        .Heading
-          | We default to transparency
-        .Layout-smallMargin
-        .Text
-          ' We establish business partnerships by understanding your market,
-          ' exploring your problems and standing in your shoes.
-          ' We believe that respect and transparency are the key factors for
-          | a productive partnership.
-        .Layout-smallMargin
+  .u-largeMargin
+  .HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--withGutters.u-largeMargin
+    .HorizontalGrid-cell
+      .ContentFormatter.ContentFormatter--centerHorizontally
+        /= image_tag 'transparency.png', alt: 'A transparent bubble', height: 250
+    .HorizontalGrid-cell
+      .Heading.u-smallMargin
+        | We default to transparency
+      .Text.u-smallMargin
+        ' We establish business partnerships by understanding your market,
+        ' exploring your problems and standing in your shoes.
+        ' We believe that respect and transparency are the key factors for
+        | a productive partnership.
 
-        = link_to 'Our Principles', '/practices', class: 'EngagementLink'
-        .Layout-smallMargin
-        = link_to 'Learn about our process', '#', class: 'EngagementLink'
-    .Layout-largeMargin
+      = link_to 'Our Principles', '/practices', class: 'EngagementLink u-smallMargin'
+      = link_to 'Learn about our process', '#', class: 'EngagementLink'

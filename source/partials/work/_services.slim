@@ -1,80 +1,63 @@
 .Panel
-  .Layout
-    .Layout-largeMargin
-    .HorizontalGrid.HorizontalGrid--limited
-      .HorizontalGrid-cell
-        .GridCell.GridCell--alignCenter
-          .GridCell-content
-            .ContentFormatter.ContentFormatter--centerHorizontally
-              h1.Heading.Heading--brandLarge
-                span> Our
-                span.Heading-highlight Services
-              .Layout-largeMargin
-              .Heading
-                | We’ve mastered a set of services based on years of learning and practice.
-              .Layout-smallMargin
-              .Text
-                ' If you’re not sure your problem is within our expertise,
-                = mail_to 'core@subvisual.co', 'we should talk', class: 'Link Link--highlight'
-                |. If we’re not a perfect match, we’ll recommend you another team that’s a better fit.
-    .Layout-largeMargin
-    .HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--lightFrame
-      .HorizontalGrid-cell
-        .GridCell
-          .GridCell-content
-            .Layout-defaultMargin
-            .ContentFormatter.ContentFormatter--centerHorizontally
-              = partial 'work/product_development.svg'
-            .Layout-defaultMargin
-            .Heading.Heading--brand
-              .Heading-highlight
-                | Product Development
-            .Layout-smallMargin
+  .u-largeMargin
+  .HorizontalGrid.HorizontalGrid--limited.u-largeMargin
+    .HorizontalGrid-cell
+      .GridCell.GridCell--alignCenter
+        .GridCell-content
+          .ContentFormatter.ContentFormatter--centerHorizontally
+            h1.Heading.Heading--brandLarge.u-largeMargin
+              span> Our
+              span.Heading-highlight Services
+            .Heading.u-smallMargin
+              | We’ve mastered a set of services based on years of learning and practice.
             .Text
-              | If you want to create a product or take your current one to a new level
-            .Layout-smallMargin
-            = link_to 'Learn more', '#', class: 'EngagementLink'
-            .Layout-largeMargin
-      .HorizontalGrid-cell
-        .GridCell
-          .GridCell-content
-            .Layout-defaultMargin
-            .ContentFormatter.ContentFormatter--centerHorizontally
-              = partial 'work/consulting.svg'
-            .Layout-defaultMargin
-            .Heading.Heading--brand
-              .Heading-highlight
-                | Consulting
-            .Layout-smallMargin
-            .Text
-              | Build your own software following our principles and process
-            .Layout-smallMargin
-            = link_to 'Learn more', '/consulting', class: 'EngagementLink'
-            .Layout-largeMargin
-      .HorizontalGrid-cell
-        .GridCell
-          .GridCell-content
-            .Layout-defaultMargin
-            .ContentFormatter.ContentFormatter--centerHorizontally
-              = partial 'work/training.svg'
-            .Layout-defaultMargin
-            .Heading.Heading--brand
-              .Heading-highlight
-                | Training
-            .Layout-smallMargin
-            .Text
-              | Build your own software following our principles and process
-            .Layout-smallMargin
-            = link_to 'Learn more', '#', class: 'EngagementLink'
-            .Layout-largeMargin
-    .Layout-largeMargin
-    .HorizontalGrid.HorizontalGrid--limited
-      .HorizontalGrid-cell
-        .GridCell.GridCell--alignCenter
-          .GridCell-content
-            .ContentFormatter.ContentFormatter--centerHorizontally
-              .Heading
-                | You can use our project planner to specify your project’s singularities
-              .Layout-smallMargin
-              = link_to 'Ready to Start', '#', class: 'ButtonPrimary'
-    .Layout-largeMargin
+              ' If you’re not sure your problem is within our expertise,
+              = mail_to 'core@subvisual.co', 'we should talk', class: 'Link Link--highlight'
+              |. If we’re not a perfect match, we’ll recommend you another team that’s a better fit.
+
+  .HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--lightFrame.u-largeMargin
+    .HorizontalGrid-cell
+      .GridCell.u-largeMargin
+        .GridCell-content
+          .u-defaultMargin
+          .ContentFormatter.ContentFormatter--centerHorizontally.u-defaultMargin
+            = partial 'work/product_development.svg'
+          .Heading.Heading--brand.u-smallMargin
+            .Heading-highlight
+              | Product Development
+          .Text.u-smallMargin
+            | If you want to create a product or take your current one to a new level
+          = link_to 'Learn more', '#', class: 'EngagementLink'
+    .HorizontalGrid-cell
+      .GridCell.u-largeMargin
+        .GridCell-content
+          .u-defaultMargin
+          .ContentFormatter.ContentFormatter--centerHorizontally.u-defaultMargin
+            = partial 'work/consulting.svg'
+          .Heading.Heading--brand.u-smallMargin
+            .Heading-highlight
+              | Consulting
+          .Text.u-smallMargin
+            | Build your own software following our principles and process
+          = link_to 'Learn more', '/consulting', class: 'EngagementLink'
+    .HorizontalGrid-cell
+      .GridCell.u-largeMargin
+        .GridCell-content
+          .u-defaultMargin
+          .ContentFormatter.ContentFormatter--centerHorizontally.u-defaultMargin
+            = partial 'work/training.svg'
+          .Heading.Heading--brand.u-smallMargin
+            .Heading-highlight
+              | Training
+          .Text.u-smallMargin
+            | Build your own software following our principles and process
+          = link_to 'Learn more', '#', class: 'EngagementLink'
+
+  .HorizontalGrid.HorizontalGrid--limited.u-largeMargin
+    .HorizontalGrid-cell
+      .GridCell.GridCell--alignCenter
+        .GridCell-content
+          .ContentFormatter.ContentFormatter--centerHorizontally
+            .Heading.u-smallMargin
+              | You can use our project planner to specify your project’s singularities
+            = link_to 'Ready to Start', '#', class: 'ButtonPrimary'

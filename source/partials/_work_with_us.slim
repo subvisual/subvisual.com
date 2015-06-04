@@ -3,11 +3,8 @@
     .HorizontalGrid-cell
       .GridCell.GridCell--alignCenter
         .GridCell-content
-          .Layout
-            .Layout-largeMargin
+            .u-largeMargin
             .ContentFormatter.ContentFormatter--centerHorizontally
-              .Text.Text--engagement
+              .Text.Text--engagement.u-defaultMargin
                 = text
-              .Layout-defaultMargin
-              = link_to "#{buttonText}", '#', class: 'ButtonPrimary'
-            .Layout-largeMargin
+              = link_to "#{buttonText}", '#', class: 'ButtonPrimary u-largeMargin'
