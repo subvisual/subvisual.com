@@ -11,8 +11,9 @@ gem 'middleman-livereload', '~> 3.1.0'
 gem 'middleman-robots'
 gem 'pry'
 gem 'rake'
-gem 'slim'
 gem 'scss_lint', require: false
+gem 'slim'
+gem 'susy'
 
 group :deploy do
   gem 'capistrano', '~> 3.2.1', require: false

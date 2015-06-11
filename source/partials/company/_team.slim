@@ -1,0 +1,27 @@
+.GridCell.GridCell--alignCenter.u-largeMargin
+  .GridCell-content
+    .u-defaultMargin
+    .ContentFormatter.ContentFormatter--centerHorizontally
+      h2.Heading.Heading--brandLarge.u-smallMargin
+        ' Our
+        span.Heading-highlight> team
+        | of craftsmen
+      p.Text
+        ' Our strongest bond as a team is having fun while doing what we love
+        ' together: crafting delightful experiences. We are a small team with
+        | boundless ambitions.
+
+.TeamGrid
+  - data.team.members.each do |member|
+    .TeamGrid-cell
+      .TeamMember
+        = image_tag "team/#{member.picture}.jpg", class: "TeamMember-picture"
+        h3.TeamMember-name = member.name
+        p.TeamMember-position = member.position
+        hr.TeamMember-separator
+        p.TeamMember-bio = member.bio
+        - if member.social
+          .TeamMember-social
+            - member.social.each_pair do |site, link|
+              = link_to link do
+                = image_tag "icons/#{site}.png", class: "TeamMember-socialLink"

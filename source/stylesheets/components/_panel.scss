@@ -43,3 +43,24 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.Panel.Panel--company {
+  background-image: url('/company_hero.jpg');
+  background-image: image-url('company_hero.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Panel.Panel--team {
+  background-image: url('/company_join_us.jpg');
+  background-image: image-url('company_join_us.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Panel.Panel--clients {
+  background-image: url('/company_clients.png');
+  background-image: image-url('company_clients.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}

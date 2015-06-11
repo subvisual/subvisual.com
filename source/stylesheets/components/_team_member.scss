@@ -1,0 +1,94 @@
+// TeamMember
+//
+// Displays information about a team member, such as picture, name, position, etc...
+//
+// Uses Suzy to help with the grid.
+//
+// markup:
+// <div class="TeamMember">
+//   <div class="TeamMember-picture">
+//     <img src="img.png">
+//   </div>
+//   <h2 class="TeamMember-name">
+//     Person Name
+//   </h2>
+//   <p class="TeamMember-position">
+//     Developer
+//   </p>
+//   <hr class="TeamMember-separator">
+//   <p.class="TeamMember-social">
+//     <a href="twitter.com/person">
+//       <img src="icons/twitter.png" class="TeamMember-socialLink">
+//     </a>
+//   </p>
+// </div>
+//
+// Styleguide 5.5
+
+@import 'blue/theme_vars';
+
+$TeamMember-max-width: 300px;
+$TeamMember-max-width-small: 150px;
+
+.TeamMember {
+  display: flex;
+  flex-direction: column;
+  max-width: $TeamMember-max-width-small;
+
+  @include media('>=700px') {
+    max-width: $TeamMember-max-width;
+  }
+}
+
+.TeamMember-picture {
+  width: 100%;
+  max-width: $TeamMember-max-width-small;
+  margin-bottom: $Theme-spacing-small;
+
+  @include media('>=700px') {
+    max-width: $TeamMember-max-width;
+  }
+}
+
+.TeamMember-name {
+  @include font-properties(subvisual, base);
+
+  margin-bottom: $Theme-spacing-xSmall;
+
+  color: $Theme-color-brightTurquoise;
+
+  font-weight: $Theme-typography-fontWeight-bold;
+  text-transform: uppercase;
+}
+
+.TeamMember-position {
+  @include font-properties(heading, small);
+
+  margin-bottom: $Theme-spacing-xSmall;
+
+  color: $Theme-color-horizon;
+
+  font-weight: $Theme-typography-fontWeight-bold;
+}
+
+.TeamMember-separator {
+  width: 50px;
+  margin: 0;
+  margin-bottom: $Theme-spacing-small;
+
+  border: 2px solid $Theme-color-polar;
+}
+
+.TeamMember-bio {
+  @include font-properties(bodyText, base);
+}
+
+.TeamMember-social {
+  margin-top: $Theme-spacing-small;
+  margin-bottom: $Theme-spacing-default;
+}
+
+.TeamMember-socialLink {
+  max-width: $Theme-spacing-small;
+  margin-right: $Theme-spacing-small;
+}

@@ -11,7 +11,7 @@
 // markup:
 // <img src="/placeholder.png" class="RatioEnforcer {$modifiers}">
 //
-// Styleguide 5.4
+// Styleguide 5.2
 
 .RatioEnforcer {
   width: 100%;
@@ -29,4 +29,9 @@
 
 .RatioEnforcer.RatioEnforcer--roundedLogo {
   max-width: 150px;
+}
+
+.RatioEnforcer.RatioEnforcer--clients {
+  width: auto;
+  max-height: 100px;
 }
