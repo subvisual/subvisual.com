@@ -47,7 +47,9 @@ after_configuration do
 end
 
 after_configuration do
-  sprockets.append_path File.join "#{root}", "vendor"
+ %w(javascripts stylesheets images).each do |dir|
+    sprockets.append_path File.join "#{root}", "vendor/blue/#{dir}"
+  end
 end
 
 set :css_dir, 'stylesheets'

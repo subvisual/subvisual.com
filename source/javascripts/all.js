@@ -1,3 +1,3 @@
 //= require jquery
 //= require picturefill
-//= require blue/javascripts
+//= require blue
