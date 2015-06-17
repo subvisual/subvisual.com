@@ -1,0 +1,18 @@
+---
+title: Subvisual - Training
+page: work
+---
+
+.Panel
+  = partial 'nav'
+  = partial 'training/hero'
+.SeparatorImage
+  .SeparatorImage-image
+    = partial 'work/training.svg'
+= partial 'training/intro'
+= partial 'testimony', locals: { quote: '“Passionate and incredibly dedicated guys. They have become a valuable asset of our University.”', author: 'João Miguel Fernandes', job: 'Full Professor at University of Minho' }
+= partial 'training/skills'
+= partial 'testimony', locals: { quote: '“Passionate and incredibly dedicated guys. They have become a valuable asset of our University.” ', author: 'Vasco Silva', job: 'Developer at Tekzenit' }
+= partial 'work_with_us', locals: { text: "Looking for expert help in a specific project?", buttonText: "Let's talk" }
+= partial 'subvisual_separator'
+= partial 'footer'

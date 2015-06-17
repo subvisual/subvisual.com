@@ -14,34 +14,48 @@
 //
 // Styleguide 5.1
 
+.Panel.Panel--home,
+.Panel.Panel--subvisualCaseStudy,
+.Panel.Panel--creatorsSchoolCaseStudy,
+.Panel.Panel--fishTank,
+.Panel.Panel--sam,
+.Panel.Panel--rob {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .Panel.Panel--home {
   // FIXME: temporary workaround for having these assets available to the styleguide;
   // TODO: find a way of being able to keep using Sprocket's helpers
   background-image: url('/homepage_hero.png');
   background-image: image-url('homepage_hero.png');
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .Panel.Panel--subvisualCaseStudy {
   background-image: url('/subvisual_case_study.png');
   background-image: image-url('subvisual_case_study.png');
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .Panel.Panel--creatorsSchoolCaseStudy {
   background-image: url('/creators_school_case_study.png');
   background-image: image-url('creators_school_case_study.png');
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .Panel.Panel--fishTank {
   background-image: url('/homepage_map.png');
   background-image: image-url('homepage_map.png');
-  background-repeat: no-repeat;
-  background-size: cover;
+}
+
+.Panel.Panel--sam {
+  // TODO add Sam image
+  background-image: url('/sam.png');
+  background-image: image-url('sam.png');
+}
+
+.Panel.Panel--rob {
+  // TODO add Rob image
+  background-image: url('/rob.png');
+  background-image: image-url('rob.png');
 }
 
 .Panel.Panel--company {

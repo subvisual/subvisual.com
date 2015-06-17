@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 545 400">
+  <title>
+    Agile process
+  </title>
+  <desc>
+    A description of our agile process
+  </desc>
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#3BD6F9" d="M259.2 199.3c-2-7 2-12.4 9.2-12.4h9.3c7.2 0 11.3 5.4 9.2 12.3l-3 9.7c-.8 2-3 4-5.3 4h-11.3c-2.2 0-4.5-1.8-5.2-4l-3-9.7z"/>
+    <path fill="#F1DEB1" d="M266 181.5c-.4-3.7 2.4-6.6 6-6.6h.7c3.7 0 6.6 2.8 6.4 6.5v4.8c-.2 3.6-3 7.6-5.6 8.6l-.3-.2c-3.4-1-6.5-5-6.8-8.5l-.3-4.8z"/>
+    <path fill="#EBD7A9" d="M266 183.2c0-3.5 3-6.3 6.4-6.3h.6c3.5 0 6 2.7 5.8 6.2l-.2 2.7c-.3 3.4-3.2 7.3-5.2 8.2l-1.2-.3c-3.4-1-6.2-4.6-6.2-8V183z"/>
+    <path fill="#FAE6B8" d="M266.3 182c0-3.6 2.6-6.5 6-6.5h.7c3.5 0 6.2 3 6 6.3l-.4 4c-.3 3.6-3.4 6.4-7 6.4h1.4c-3.5 0-6.4-2.8-6.5-6.3l-.2-4z"/>
+    <path fill="#000" d="M266 187s4.4 7 7 7.2c2.6-.2 5.8-7.3 5.8-7.3l2 .5S275.2 199 273 199c-2.5 0-9-11.5-9-11.5l2-.6z" opacity=".1"/>
+    <circle cx="272" cy="199" r="125" stroke="#FFF" stroke-width="4"/>
+    <circle cx="272" cy="199" r="80.1" stroke="#FFF" stroke-width="4"/>
+    <circle cx="272" cy="199" r="39.4" stroke="#FFF" stroke-width="4"/>
+    <text fill="#5A89A1">
+      <tspan x="17.7" y="205.3" class="Heading Heading--brandSmall">Evaluate</tspan>
+    </text>
+    <circle cx="144.5" cy="200" r="12.5" fill="#5A89A1" stroke="#FFF" stroke-width="2"/>
+    <text fill="#FAB23C">
+      <tspan x="233.8" y="381" class="Heading Heading--brandSmall">Develop</tspan>
+    </text>
+    <circle cx="275" cy="326.5" r="12.5" fill="#FAB23C" stroke="#FFF" stroke-width="2"/>
+    <text fill="#FAB23C">
+      <tspan x="435.9" y="205.9" class="Heading Heading--brandSmall">Define</tspan>
+    </text>
+    <circle cx="397.9" cy="200.4" r="12.5" fill="#FAB23C" stroke="#FFF" stroke-width="2"/>
+    <text fill="#FAB23C">
+      <tspan x="245.6" y="26.1" class="Heading Heading--brandSmall">Scope</Tspan>
+    </text>
+    <circle cx="275" cy="74.2" r="12.5" fill="#FAB23C" stroke="#FFF" stroke-width="2"/>
+    <path fill="#FFF" d="M383 114.6v22h-22l22-22zM177.3 306.8l1.5-22 22 1.6-23.5 20.4z"/>
+  </g>
+</svg>

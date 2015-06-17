@@ -1,0 +1,45 @@
+.Panel.Panel--alternative
+  .u-largeMargin
+  .HorizontalGrid.HorizontalGrid--limited.u-largeMargin
+    .HorizontalGrid-cell
+      .GridCell.GridCell--alignCenter
+        .GridCell-content
+          .ContentFormatter.ContentFormatter--centerHorizontally
+            h2.Heading.Heading--brand
+              ' Turn ideas into testable
+              span.Heading-highlight prototypes
+
+  .HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--darkFrame
+    .HorizontalGrid-cell
+      .GridCell.u-largeMargin
+        .GridCell-content
+          .u-largeMargin
+          h3.Heading.Heading--brand.u-smallMargin
+            ' Minimum
+            span.Heading-highlight> Delightful
+            | Product
+          .Text.u-defaultMargin
+            ' In 4 weeks, we’ll find what job your product needs to do and we
+            ' make it delightful. We strongly believe that it all comes down to
+            | the way it feels and works for the user.
+          = link_to 'Learn more', 'mdp', class: 'ButtonSecondary'
+    .HorizontalGrid-cell
+      .GridCell.u-largeMargin
+        .GridCell-content
+          .u-largeMargin
+          h3.Heading.Heading--brand.u-smallMargin
+            ' Design
+            span.Heading-highlight Sprint
+          .Text.u-defaultMargin
+            ' We work to solve user-centered problems, so we begin by
+            | understanding and defining it as thoroughly as possible.
+          = link_to 'Learn more', '/design_sprint', class: 'ButtonSecondary'
+  .u-largeMargin
+  .HorizontalGrid.HorizontalGrid--limited.u-largeMargin
+    .HorizontalGrid-cell
+      .GridCell.GridCell--alignCenter
+        .GridCell-content
+          .ContentFormatter.ContentFormatter--centerHorizontally
+            p.Heading.u-defaultMargin
+              | We’re always keen to new, disruptive ideas.
+            = link_to 'Tell us about your product', '#', class: 'ButtonPrimary'

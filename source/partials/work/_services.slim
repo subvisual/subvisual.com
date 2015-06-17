@@ -5,8 +5,8 @@
       .GridCell.GridCell--alignCenter
         .GridCell-content
           .ContentFormatter.ContentFormatter--centerHorizontally
-            h1.Heading.Heading--brandLarge.u-largeMargin
-              span> Our
+            h2.Heading.Heading--brand.u-largeMargin
+              ' Our
               span.Heading-highlight Services
             .Heading.u-smallMargin
               | We’ve mastered a set of services based on years of learning and practice.
@@ -15,26 +15,26 @@
               = mail_to 'core@subvisual.co', 'we should talk', class: 'Link Link--highlight'
               |. If we’re not a perfect match, we’ll recommend you another team that’s a better fit.
 
-  .HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--lightFrame.u-largeMargin
+  .HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--lightFrame.HorizontalGrid--noBottomFrame
     .HorizontalGrid-cell
       .GridCell.u-largeMargin
         .GridCell-content
           .u-defaultMargin
           .ContentFormatter.ContentFormatter--centerHorizontally.u-defaultMargin
             = partial 'work/product_development.svg'
-          .Heading.Heading--brand.u-smallMargin
+          h3.Heading.Heading--brand.u-smallMargin
             .Heading-highlight
               | Product Development
           .Text.u-smallMargin
             | If you want to create a product or take your current one to a new level
-          = link_to 'Learn more', '#', class: 'EngagementLink'
+          = link_to 'Learn more', '/product_development', class: 'EngagementLink'
     .HorizontalGrid-cell
       .GridCell.u-largeMargin
         .GridCell-content
           .u-defaultMargin
           .ContentFormatter.ContentFormatter--centerHorizontally.u-defaultMargin
             = partial 'work/consulting.svg'
-          .Heading.Heading--brand.u-smallMargin
+          h3.Heading.Heading--brand.u-smallMargin
             .Heading-highlight
               | Consulting
           .Text.u-smallMargin
@@ -46,18 +46,25 @@
           .u-defaultMargin
           .ContentFormatter.ContentFormatter--centerHorizontally.u-defaultMargin
             = partial 'work/training.svg'
-          .Heading.Heading--brand.u-smallMargin
+          h3.Heading.Heading--brand.u-smallMargin
             .Heading-highlight
               | Training
           .Text.u-smallMargin
             | Build your own software following our principles and process
-          = link_to 'Learn more', '#', class: 'EngagementLink'
+          = link_to 'Learn more', '/training', class: 'EngagementLink'
 
-  .HorizontalGrid.HorizontalGrid--limited.u-largeMargin
+.Panel.Panel--alternative
+  .u-largeMargin
+  .HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--withGutters.u-largeMargin
     .HorizontalGrid-cell
-      .GridCell.GridCell--alignCenter
-        .GridCell-content
-          .ContentFormatter.ContentFormatter--centerHorizontally
-            .Heading.u-smallMargin
-              | You can use our project planner to specify your project’s singularities
-            = link_to 'Ready to Start', '#', class: 'ButtonPrimary'
+      h2.Heading.Heading--brand.u-smallMargin
+        ' Our
+        span.Heading-highlight> Technologies
+        | of choice
+      .Text
+        ' When it comes to deciding which technologies to use, we handpick what
+        ' best suits you and your project. Having said that, it’s fair to say that
+        | Rails, Node.js and Angular.Js are between our favourites.
+    .HorizontalGrid-cell
+      .ContentFormatter.ContentFormatter--center
+        = image_tag 'technologies.png', alt: "Our technologies' logos", class: 'RatioEnforcer RatioEnforcer--technologies'

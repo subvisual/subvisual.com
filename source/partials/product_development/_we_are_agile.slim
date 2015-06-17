@@ -1,0 +1,60 @@
+.Panel
+  .u-largeMargin
+  .HorizontalGrid.HorizontalGrid--limited.u-largeMargin
+    .HorizontalGrid-cell
+      .GridCell.GridCell--alignCenter
+        .GridCell-content
+          .ContentFormatter.ContentFormatter--centerHorizontally
+            h2.Heading.Heading--brand.u-smallMargin
+              ' We are
+              span.Heading-highlight agile
+            .Text.u-defaultMargin
+              => link_to 'Our practices', '/#practices', class: 'Link Link--highlight'
+              ' are a clear statement of our agile process. We work with fast
+              | release cycles and field-tested iterations.
+            = partial 'product_development/agile.svg'
+  .HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--lightFrame.HorizontalGrid--noBottomFrame
+    .HorizontalGrid-cell
+      .GridCell.u-largeMargin
+        .GridCell-content
+          .u-largeMargin
+          h3.Heading.Heading--brand.u-smallMargin
+            .Heading-highlight
+              | Scope
+          .Text.Text--large
+            ' Products are born out of a necessity. By finding out exactly what
+            ' the user needs to get done, we unfold the core of the problem we
+            | need to solve.
+    .HorizontalGrid-cell
+      .GridCell.u-largeMargin
+        .GridCell-content
+          .u-largeMargin
+          h3.Heading.Heading--brand.u-smallMargin
+            .Heading-highlight
+              | Define
+          .Text.Text--large
+            ' We deploy new features immediately after the code review, which
+            | makes it easier to test and learn as fast as possible.
+  .HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--lightFrame.HorizontalGrid--noBottomFrame
+    .HorizontalGrid-cell
+      .GridCell.u-largeMargin
+        .GridCell-content
+          .u-largeMargin
+          h3.Heading.Heading--brand.u-smallMargin
+            .Heading-highlight
+              | Develop
+          .Text.Text--large
+            ' The only way to know if your product is working, is by putting it
+            ' out in the world and learning from that experience. We are skeptical
+            | until we see field-tested results.
+    .HorizontalGrid-cell
+      .GridCell.u-largeMargin
+        .GridCell-content
+          .u-largeMargin
+          h3.Heading.Heading--brand.u-smallMargin
+            .Heading-highlight
+              | Evaluate
+          .Text.Text--large
+            ' We pick the most efficient tools, without hazarding the quality of
+            ' our code. That way, we get to be productive without compromising our
+            | values.

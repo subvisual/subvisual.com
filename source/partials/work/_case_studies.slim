@@ -5,25 +5,11 @@
       .GridCell.GridCell--alignCenter
         .GridCell-content
           .ContentFormatter.ContentFormatter--centerHorizontally
-            h1.Heading.Heading--brandLarge
-              ' Highlighted
-              span.Heading-highlight Work
+            h2.Heading.Heading--brand
+              ' Our
+              span.Heading-highlight Case Studies
 
-.Panel.Panel--subvisualCaseStudy
-  .HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--withGutters
-    .HorizontalGrid-cell
-      .ContentFormatter.ContentFormatter--center
-        object type="image/svg+xml" data="#{image_path('subvisual_logo_mono.svg')}"
-    .HorizontalGrid-cell.u-largeMargin
-      .u-largeMargin
-      .Heading.Heading--brand
-        .Heading-light
-          | Subvisual
-      .Text.Text--brand.u-smallMargin
-        | Design, Development
-      .Text.Text--light
-        ' Rebranding your own company is the most painful, soul-crushing
-        | challenge you can face. We did it successfully and we’ll show you how.
+= partial 'work/subvisual_case_study', locals: { title: false }
 
 .HorizontalGrid
   .HorizontalGrid-cell

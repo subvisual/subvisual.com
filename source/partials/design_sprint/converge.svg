@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <ellipse id="path-1" cx="99.9" cy="100.3" rx="99.9" ry="99.6"/>
+    <linearGradient id="linearGradient-3" x1="37.6%" x2="37.6%" y1="-6.3%" y2="118.9%">
+      <stop stop-color="#09DFF3" offset="0%"/>
+      <stop stop-color="#44BEFF" offset="100%"/>
+    </linearGradient>
+    <linearGradient id="linearGradient-4" x1="37.6%" x2="37.6%" y1="-6.3%" y2="118.9%">
+      <stop stop-color="#09DFF3" offset="0%"/>
+      <stop stop-color="#2FEAE9" offset="100%"/>
+    </linearGradient>
+    <linearGradient id="linearGradient-5" x1="0%" x2="46.1%" y1="88.4%" y2="38.3%">
+      <stop stop-color="#09DFF3" offset="0%"/>
+      <stop stop-color="#44BEFF" offset="100%"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <g transform="translate(0 -.445)">
+      <mask id="mask-2" fill="#fff">
+        <use xlink:href="#path-1"/>
+      </mask>
+      <use fill="#EBF5FA" xlink:href="#path-1"/>
+      <path fill="#555" d="M-.3 173.2h200V200H-.4z" mask="url(#mask-2)"/>
+    </g>
+    <g transform="translate(60.487 20.755)">
+      <g transform="rotate(-240 19.595 24.216) translate(14.551 4.711)">
+        <path fill="#FFF" d="M1.7 2h6.7v37H1.7z"/>
+        <path fill="url(#linearGradient-3)" d="M8.4 2v34c0 1.6-1.4 3-3 3h-.6c-1.7 0-3-1.4-2.6-3L8.4 2z"/>
+        <rect width="10.1" height="2" fill="#FFF" rx="40"/>
+      </g>
+      <g transform="matrix(.5 .866 .866 -.5 40.109 19.508)">
+        <path fill="#FFF" d="M1.7 2h6.7v37H1.7z"/>
+        <path fill="url(#linearGradient-4)" d="M8.4 2v34c0 1.6-1.4 3-3 3h-.6c-1.7 0-3-1.4-2.6-3L8.4 2z"/>
+        <rect width="10.1" height="2" fill="#FFF" rx="40"/>
+      </g>
+      <path fill="url(#linearGradient-5)" d="M34.7 40l.8 21.5s0 1-.8 1c-1 0-1-1-1-1l1-21.5z"/>
+      <path fill="#FFF" d="M31.6 69h16.8v28H31.6zM31.6 97.2c-9.5 3.5-16 12.8-16 23.8 0 14 11 25.3 24.4 25.3 13.6 0 24.6-11.3 24.6-25.3 0-11-7-20.3-16.2-23.8H31.6z"/>
+      <path fill="#000" fill-opacity=".1" d="M40 97.2v49c13.6 0 24.6-11.2 24.6-25.2 0-11-7-20.3-16.2-23.8H40z"/>
+      <rect width="53.8" height="3.4" x="13.1" y="128.5" fill="#454545" rx="4"/>
+      <path fill="#454545" d="M38.3 131.8h3.4V152h-3.4zM18.2 131.8h3.3l-10 20.2H8l10.2-20.2zM62 131.8h-3.5l10 20.2H72l-10-20.2z"/>
+      <rect width="20.2" height="2" x="29.9" y="66.9" fill="#FFF" rx="40"/>
+      <rect width="10.1" height="2" x="40" y="66.9" fill="#000" fill-opacity=".1" rx="40"/>
+      <path fill="#000" fill-opacity=".1" d="M40 69h8.4v28H40z"/>
+      <path fill="url(#linearGradient-4)" d="M44.7 30l1 21.4s0 1-1 1-.8-1-.8-1l.7-21.5z" transform="matrix(-1 0 0 1 89.452 0)"/>
+    </g>
+  </g>
+</svg>

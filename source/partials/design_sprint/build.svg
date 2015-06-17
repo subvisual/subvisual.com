@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <ellipse id="path-1" cx="99.94" cy="100.27" rx="99.94" ry="99.6"/>
+    <linearGradient id="linearGradient-3" x1="37.58%" x2="37.58%" y1="-6.25%" y2="118.85%">
+      <stop stop-color="#09DFF3" offset="0%"/>
+      <stop stop-color="#44BEFF" offset="100%"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <g transform="translate(0 -.223)">
+      <mask id="mask-2" fill="#fff">
+        <use xlink:href="#path-1"/>
+      </mask>
+      <use fill="#EBF5FA" xlink:href="#path-1"/>
+      <path fill="#555" d="M-.33 173.2h199.87v26.68H-.33z" mask="url(#mask-2)"/>
+    </g>
+    <g transform="translate(73.492 37.377)">
+      <path fill="#555" d="M32.44 128.76v6.9H20.9v-6.9h11.54z"/>
+      <path fill="#444" d="M32.44 128.76v6.9h-5.77v-6.9h5.77z"/>
+      <path fill="#E1A732" d="M26.82 126.55c2 0 3.6-.98 3.6-4.3 0-3.3-4-8.1-4-8.1s.48 1.23-.3 2.44c-1 1.57-2.9 3.8-2.9 5.66 0 3.3 1.6 4.3 3.6 4.3z"/>
+      <path fill="#F9BA37" d="M26.85 125.88c.95 0 1.72-.46 1.72-2.04s-1.6-3.92-1.6-3.92.2.8-.23 1.52c-.42.72-1.6 1.62-1.6 2.4 0 1.58.76 2.04 1.7 2.04z"/>
+      <path fill="#DCDCDC" d="M22.45 125.7h8.45v3.06h-8.45z"/>
+      <path fill="#C9C9C9" d="M26.67 125.7h4.23v3.06h-4.23z"/>
+      <path fill="#FFF" d="M18.44 36.55H34.9V64.2H18.44zM18.44 64.2c-9.3 3.4-15.8 12.57-15.8 23.35 0 13.66 10.76 24.74 24.03 24.74 13.28 0 24.04-11.1 24.04-24.75 0-10.78-6.68-19.94-15.8-23.34H18.45z"/>
+      <path fill="url(#linearGradient-3)" d="M21.27 56.3c.94 0 1.9-1.97 2.84-1.97 1.5 0 1.26 1.32 2.76 1.32 1.13 0 2.36-1.65 3.48-1.65.43 0 1.35 1.06 2.25 1.13 1.16.1 2.3-.8 2.3-.8v9.88H18.45v-9.87s1.88 1.98 2.83 1.98zm-2.83 7.9c-9.3 3.4-15.8 12.57-15.8 23.35 0 13.66 10.76 24.74 24.03 24.74 13.28 0 24.04-11.1 24.04-24.75 0-10.78-6.68-19.94-15.8-23.34H18.45z"/>
+      <path fill="#000" fill-opacity=".1" d="M26.67 64.2v48.1c13.28 0 24.04-11.1 24.04-24.75 0-10.78-6.68-19.94-15.8-23.34h-8.23z"/>
+      <rect width="52.69" height="3.29" x=".33" y="94.84" fill="#454545" rx="4"/>
+      <path fill="#454545" d="M1.98 98.13h3.3v37.54h-3.3zM48.08 98.13h3.3v37.54h-3.3z"/>
+      <rect width="19.76" height="1.98" x="16.79" y="34.58" fill="#FFF" rx="40"/>
+      <rect width="9.88" height="1.98" x="26.67" y="34.58" fill="#000" fill-opacity=".1" rx="40"/>
+      <path fill="#000" fill-opacity=".1" d="M26.67 36.55h8.23V64.2h-8.23z"/>
+      <g fill="#FFF" transform="translate(17.535)">
+        <ellipse cx="3.17" cy="15.56" rx="3.11" ry="3.11"/>
+        <ellipse cx="16" cy="19.84" rx="1.94" ry="1.94"/>
+        <ellipse cx="9.78" cy="27.61" rx="1.94" ry="1.94"/>
+        <circle cx="12.5" cy="4.67" r="4.67"/>
+      </g>
+    </g>
+  </g>
+</svg>

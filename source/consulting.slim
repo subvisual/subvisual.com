@@ -6,8 +6,12 @@ page: work
 .Panel
   = partial 'nav'
   = partial 'consulting/hero'
-= partial 'consulting/professional_team'
+.SeparatorImage
+  .SeparatorImage-image
+    = partial 'work/consulting.svg'
+= partial 'consulting/intro'
 = partial 'consulting/values_and_quotes'
-= partial 'work_with_us', locals: { text: "Have an exciting project in mind?<br>We are ready to start", buttonText: "Let's work together" }
+= partial 'consulting/technologies'
+= partial 'work_with_us', locals: { text: "Looking for expert help in a specific project?", buttonText: "Let's talk" }
 = partial 'subvisual_separator'
 = partial 'footer'

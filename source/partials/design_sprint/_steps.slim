@@ -1,0 +1,64 @@
+.Panel.Panel--alternative
+  .HorizontalGrid.HorizontalGrid--limited
+    .HorizontalGrid-cell
+      .ContentFormatter.ContentFormatter--centerHorizontally
+        ul.NumberedSteps
+          li.NumberedSteps-step
+            .NumberedSteps-stepImageWrapper
+              .NumberedSteps-stepImage
+                = partial 'design_sprint/learn.svg'
+            .NumberedSteps-stepContent
+              p.Heading.Heading--brand.u-xSmallMargin
+                span.Heading-highlight Learn & Understand
+              p.Text
+                ' If you can’t explain your problem simply to someone on the
+                ' outside, you don’t understand it well enough. Understanding why is
+                | the kickstart for everything we do.
+
+          li.NumberedSteps-step
+            .NumberedSteps-stepImageWrapper
+              .NumberedSteps-stepImage
+                = partial 'design_sprint/explore.svg'
+            .NumberedSteps-stepContent
+              p.Heading.Heading--brand.u-xSmallMargin
+                span.Heading-highlight Explore relentlessly
+              p.Text
+                ' No rules, everything goes. We hunt for all the possible ways we
+                ' could solve the problem, providing the best possible experience,
+                | excluding any unfeasability.
+
+          li.NumberedSteps-step
+            .NumberedSteps-stepImageWrapper
+              .NumberedSteps-stepImage
+                = partial 'design_sprint/converge.svg'
+            .NumberedSteps-stepContent
+              p.Heading.Heading--brand.u-xSmallMargin
+                span.Heading-highlight Converge to a solution
+              p.Text
+                ' Start from the best possible experience and try to carve it down
+                ' and explore ways to overcome technical challenges or other sorts
+                | of obstacles.
+
+          li.NumberedSteps-step
+            .NumberedSteps-stepImageWrapper
+              .NumberedSteps-stepImage
+                = partial 'design_sprint/build.svg'
+            .NumberedSteps-stepContent
+              p.Heading.Heading--brand.u-xSmallMargin
+                span.Heading-highlight Build a prototype
+              p.Text
+                ' Breathe life into your solution, setting it up for user testing.
+                ' It’s all about  functionality and the experience, not so much
+                | about the aesthetics.
+
+          li.NumberedSteps-step
+            .NumberedSteps-stepImageWrapper
+              .NumberedSteps-stepImage
+                = partial 'design_sprint/test.svg'
+            .NumberedSteps-stepContent
+              p.Heading.Heading--brand.u-xSmallMargin
+                span.Heading-highlight Live User Testing
+              p.Text
+                ' Time to validate your assumptions in the wild, with real users
+                ' trying to solve real problems. There’s no better way of proving a
+                | concept than to witness people testing out your product.

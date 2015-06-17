@@ -49,7 +49,7 @@ namespace :styleguide do
   end
 
   def compile_stylesheets
-    `bundle exec sass --load-path vendor --load-path bower_components --require font-awesome-sass source/stylesheets/all.scss`
+    `bundle exec sass --load-path vendor/blue/stylesheets --load-path vendor/blue/images --load-path bower_components --require font-awesome-sass source/stylesheets/all.scss`
   end
 
   def styleguide_command(style_source, output_folder, watch)
