@@ -17,10 +17,11 @@ module CustomTemplateHelpers
   end
 
   def nav_item(link_text, page_url, page_name = '', options = {})
+    link_class = options.delete(:link_class) || "Nav-link"
     options[:class] ||= "Nav-item"
     page_name = page_url[1..-1] if page_name.empty?
     options[:class] << " is-selected" if current_page.data.page == page_name
-    content_tag(:li, link_to(link_text, page_url, class: 'Nav-link'), options)
+    content_tag(:li, link_to(link_text, page_url, class: link_class), options)
   end
 
   def nav_overlay_item(link_text, page_url, page_name = '')
