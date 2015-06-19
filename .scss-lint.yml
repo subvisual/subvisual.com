@@ -1,4 +1,4 @@
-exclude: ['bower_components/**', 'build/**', 'node_modules/**', 'styleguide/**']
+exclude: ['bower_components/**', 'build/**', 'node_modules/**', 'styleguide/**', 'coverage/**', 'vendor/**']
 
 linters:
   Compass::*:
@@ -16,7 +16,7 @@ linters:
   NameFormat:
     enabled: true
     convention: ^(([A-Z][a-z]*)+$|(([A-Z][a-z]*)+|u|is|js)(-|--)([a-z]+([a-z]|[A-Z])*)+|(([A-Z][a-z]*)+|u|is|js)(-|--)([a-z]+([a-z]|[A-Z])*)+(--[a-z]+([a-z]|[A-Z])*)+)|[ng]-(\w)+(-(\w)*)*$
-    convention_explanation: Use SuitCSS components' naming convention
+    convention_explanation: Use SuitCSS components' naming convention (https://github.com/suitcss/suit/blob/master/doc/README.md)
     variable_convention: ^.+$
     mixin_convention: ^.+$
     placeholder_convention: ^.+$
@@ -24,6 +24,12 @@ linters:
 
   PropertySortOrder:
     order:
+      - content
+      - counter-increment
+      - counter-reset
+      - counter-set
+      - quotes
+      -
       - position
       - top
       - right
@@ -115,10 +121,8 @@ linters:
       - caret-color
       - clip
       - color
-      - counter-increment
-      - counter-reset
-      - counter-set
       - cursor
+      - fill
       - list-style
       - list-style-image
       - list-style-position
@@ -127,6 +131,8 @@ linters:
       - opacity
       - outline
       - outline-offset
+      - pointer-events
+      - stroke
       -
       - alignment-adjust
       - alignment-baseline
@@ -212,7 +218,7 @@ linters:
   SelectorFormat:
     enabled: true
     convention: ^(([A-Z][a-z]*)+$|(([A-Z][a-z]*)+|u|is|js)(-|--)([a-z]+([a-z]|[A-Z])*)+|(([A-Z][a-z]*)+|u|is|js)(-|--)([a-z]+([a-z]|[A-Z])*)+(--[a-z]+([a-z]|[A-Z])*)+)|[ng]-(\w)+(-(\w)*)*$
-    convention_explanation: Use SuitCSS components' naming convention
+    convention_explanation: Use SuitCSS components' naming convention (https://github.com/suitcss/suit/blob/master/doc/README.md)
     ignored_types: ["attribute", "element", "pseudo-selector"]
 
   SingleLinePerProperty:
