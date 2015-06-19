@@ -17,6 +17,9 @@
 //   <div class="TeamGrid-cell">
 //     <div>Cell 3</div>
 //   </div>
+//   <div class="TeamGrid-cell">
+//     <div>Cell 4</div>
+//   </div>
 // </div>
 //
 // sg-wrapper:
@@ -32,6 +35,9 @@ $susy: (
 );
 
 .TeamGrid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
   max-width: $Theme-grid-maxWidth;
   margin-right: auto;
   margin-left: auto;

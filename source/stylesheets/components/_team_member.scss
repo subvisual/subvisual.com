@@ -81,6 +81,8 @@ $TeamMember-max-width-small: 150px;
 
 .TeamMember-bio {
   @include font-properties(bodyText, base);
+
+  flex-grow: 1;
 }
 
 .TeamMember-social {
