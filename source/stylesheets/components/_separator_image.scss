@@ -1,15 +1,19 @@
 // SeparatorImage
 //
-// Centers an image between two panels.
+// Centers an image between two visual containers (e.g. Panel).
 // Used on services pages
 //
 // markup:
 // <div class="SeparatorImage">
-//   <div class="SeparatorImage-image>
-//     <img src="/placeholder.png">
+//   <div class="SeparatorImage-image">
+//     <img src="/placeholder.png" style="width: 100px">
 //   </div>
-//   <div class="SeparatorImage-marginFixer"></div>
 // </div>
+//
+// sg-wrapper:
+// <div style="min-height: 100px; background-color: rebeccapurple;"></div>
+// <sg-wrapper-content/>
+// <div style="min-height: 100px; background-color: lightblue;"></div>
 //
 // Styleguide 5.3
 

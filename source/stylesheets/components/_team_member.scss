@@ -6,9 +6,7 @@
 //
 // markup:
 // <div class="TeamMember">
-//   <div class="TeamMember-picture">
-//     <img src="img.png">
-//   </div>
+//   <img src="/team/zamith.jpg" class="TeamMember-picture"/>
 //   <h2 class="TeamMember-name">
 //     Person Name
 //   </h2>
@@ -16,7 +14,10 @@
 //     Developer
 //   </p>
 //   <hr class="TeamMember-separator">
-//   <p.class="TeamMember-social">
+//   <p class="TeamMember-bio">
+//     I am a member of Subvisual.
+//   </p>
+//   <p class="TeamMember-social">
 //     <a href="twitter.com/person">
 //       <img src="icons/twitter.png" class="TeamMember-socialLink">
 //     </a>

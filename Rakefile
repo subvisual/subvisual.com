@@ -43,18 +43,18 @@ namespace :styleguide do
     Tempfile.open(['all', '.css']) do |f|
       f.write compile_stylesheets
       f.flush
-      sh "rm -rf #{output_folder}; mkdir #{output_folder}; cp source/images/* #{output_folder}"
+      sh "rm -rf #{output_folder}; mkdir #{output_folder}; cp -R source/images/* #{output_folder}"
       sh styleguide_command(f.path, output_folder, watch)
     end
   end
 
   def compile_stylesheets
-    `bundle exec sass --load-path vendor/blue/stylesheets --load-path vendor/blue/images --load-path bower_components --require font-awesome-sass source/stylesheets/all.scss`
+    `bundle exec sass --load-path vendor/blue/stylesheets --load-path vendor/blue/images --load-path bower_components --require susy --require font-awesome-sass source/stylesheets/all.scss`
   end
 
   def styleguide_command(style_source, output_folder, watch)
     kss_sources = ['source/stylesheets/**/*.scss', 'vendor/blue/stylesheets/**/*.scss']
-    options = [
+    [
       './node_modules/.bin/styleguide',
       '--server',
       "#{watch ? '--watch' : ''}",

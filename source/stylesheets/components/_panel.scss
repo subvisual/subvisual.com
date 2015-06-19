@@ -1,16 +1,19 @@
 // Panel
 //
-// Full width container with a unique background
+// Full width container with a unique background. The height is defined by the content.
 //
 // .Panel--home - A panel with a background to be used in the homepage
 // .Panel--subvisualCaseStudy - A panel with a background to be used as the subvisual case study
 // .Panel--creatorsSchoolCaseStudy - A panel with a background to be used as the creators school case study
 // .Panel--fishTank - A panel with a background that is a map of our HQ
+// .Panel--sam - A panel with a background that is a picture of a client (Sam)
+// .Panel--rob - A panel with a background that is a picture of a client (Rob)
+// .Panel--company - A panel with a background to be used in the company page
+// .Panel--team - A panel with a background to be used in the team's page
+// .Panel--clients - A panel with a background that is a world map with all of our clients
 //
 // markup:
-// <div class="Panel {$modifiers}">
-//   The content defines the Panel's height<br>
-// </div>
+// <div class="Panel {$modifiers}" style="height: 500px"></div>
 //
 // Styleguide 5.1
 
