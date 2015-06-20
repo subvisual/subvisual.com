@@ -1,0 +1,50 @@
+.Panel.Panel--alternative
+  .u-doubleLargeMargin
+  .GridCell.GridCell--alignCenter.u-largeMargin
+    .GridCell-content
+      .ContentFormatter.ContentFormatter--centerHorizontally
+        h2.Heading.Heading--brand.u-smallMargin
+          ' What's your
+          span.Heading-highlight craft
+          | ?
+
+        p.Text
+          ' Take a look at our requirements and if you think you are a perfect
+          ' fit, send us your application. We'll get back to you as soon as
+          | possible.
+
+.HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--darkFrame
+  .HorizontalGrid-cell.Panel.Panel--alternative
+    .u-largeMargin
+    .GridCell.u-largeMargin
+      .GridCell-content
+        h2.Heading.Heading--brand.u-smallMargin
+          span.Heading-highlight Developer
+        p.Text.u-smallMargin
+          ' A qualified candidate to the development apprenticeship is able to find her way
+          ' around the web. She can easily edit HTML and CSS files, play around with
+          | JavaScript and is able to create a backend using a web framework.
+
+        p.Text.u-defaultMargin
+          ' Development apprentices will learn and work with Ruby on Rails, JavaScript,
+          | HTML5, Sass, Git, Unix, TDD and agile software development.
+
+        = link_to 'Apply for developer', '#', class: 'ButtonPrimary'
+
+  .HorizontalGrid-cell.Panel
+    .u-largeMargin
+    .GridCell.u-largeMargin
+      .GridCell-content
+        h2.Heading.Heading--brand.u-smallMargin
+          span.Heading-highlight Designer
+        p.Text.u-smallMargin
+          ' A qualified design apprentice will have experience with graphical
+          ' design for the web or iOS/Android as well as HTML and CSS. Design
+          ' apprentices will learn to work with a focus on User Experience, by
+          | designing for the other side of the screen.
+
+        p.Text.u-defaultMargin
+          ' We'll get them through our design process and give them experience
+          | with real projects, solving real problems.
+
+        = link_to 'Apply for designer', '#', class: 'ButtonPrimary'
