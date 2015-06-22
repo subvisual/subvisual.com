@@ -68,8 +68,6 @@ GEM
     execjs (2.5.2)
     exifr (1.2.2)
     ffi (1.9.8)
-    font-awesome-sass (4.3.2.1)
-      sass (~> 3.2)
     fspath (2.1.1)
     haml (4.0.6)
       tilt
@@ -211,7 +209,6 @@ DEPENDENCIES
   capistrano (~> 3.2.1)
   capistrano-middleman!
   dotenv
-  font-awesome-sass
   middleman (~> 3.3.12)
   middleman-autoprefixer
   middleman-es6!

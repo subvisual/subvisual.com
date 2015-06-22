@@ -10,8 +10,10 @@
         ' It’s about sweating the details and not settling for ‘good’ but
         | rather strive for excellent. It’s about craftsmanship.
 
-      = link_to 'Our Services', '/work', class: 'EngagementLink u-smallMargin'
-      = link_to 'Read our case studies', '/work#case-studies', class: 'EngagementLink'
+      .ContentFormatter
+        = link_to 'Our Services', '/work', class: 'EngagementLink u-smallMargin'
+      .ContentFormatter
+        = link_to 'Read our case studies', '/work#case-studies', class: 'EngagementLink'
     .HorizontalGrid-cell
       .ContentFormatter.ContentFormatter--centerHorizontally
         = partial 'homepage/excellence.svg'

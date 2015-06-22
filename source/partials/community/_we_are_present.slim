@@ -1,0 +1,98 @@
+.Panel.Panel--alternative
+  .u-defaultThenLargeMargin
+  .HorizontalGrid.HorizontalGrid--limited
+    .HorizontalGrid-cell
+      .GridCell.GridCell--alignCenter
+        .GridCell-content
+          .ContentFormatter.ContentFormatter--centerHorizontally.u-smallThenDefaultMargin
+            h2.Heading.Heading--brand
+              ' We are
+              span.Heading-highlight present
+          .ContentFormatter.ContentFormatter--centerHorizontally.u-smallMargin
+            h3.Heading
+              | Caring a lot for our community is not enough, we are part of it.
+          .ContentFormatter.ContentFormatter--centerHorizontally.u-defaultThenLargeMargin
+            p.Text
+              ' As we organize our own events we love to participate in other
+              | ones, here in Portugal and across borders.
+
+  .HorizontalGrid.HorizontalGrid--limited.u-defaultThenLargeMargin
+    .HorizontalGrid-cell
+      .ContentFormatter.ContentFormatter--centerHorizontally
+        .RatioEnforcer.RatioEnforcer--weArePresentIcons
+          = partial "community/speakers.svg"
+    .HorizontalGrid-cell
+      .GridCell
+        .GridCell-content
+          .u-smallThenNoneMargin
+          .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft.u-smallMargin
+            h3.Heading.Heading--brand
+              ' We are
+              span.Heading-highlight
+                | speakers
+          .ContentFormatter
+            p.Text
+              ' Talk about what you know helps to consolidate your knowledge.
+              ' Recently we have spoken at
+              = link_to 'Codebits', 'https://codebits.eu/', class: 'Link'
+              ', in Lisbon, at
+              => link_to 'Eurucamp', 'http://eurucamp.org', class: 'Link'
+              ' in Potsdam and in meetups like
+              => link_to 'Coimbra.rb', 'http://www.meetup.com/Coimbra-rb/', class: 'Link'
+              ' and
+              = link_to 'Porto.rb', 'http://www.meetup.com/porto-rb/', class: 'Link'
+              | .
+
+  .HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--inverted.u-defaultThenLargeMargin
+    .HorizontalGrid-cell
+      .ContentFormatter.ContentFormatter--centerHorizontally
+        .RatioEnforcer.RatioEnforcer--weArePresentIcons
+          = partial "community/educators.svg"
+    .HorizontalGrid-cell
+      .GridCell
+        .GridCell-content
+          .u-smallThenNoneMargin
+          .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft.u-smallMargin
+            h3.Heading.Heading--brand
+              ' We are
+              span.Heading-highlight
+                | educators
+          .ContentFormatter
+            p.Text
+              ' Educating is our favorite way of learning. We have been invited
+              ' to give classes at
+              => link_to 'University of Minho', 'http://www.uminho.pt/en/', class: 'Link'
+              ' and
+              = link_to 'Polytechnic Institute of Cavado and Ave', 'http://www.ipca.pt/en/', class: 'Link'
+              ' . We also give a lot of workshops and recently we have been at
+              => link_to 'Semana da Lei', '', class: 'Link'
+              ' and
+              = link_to 'JOIN', 'http://join.di.uminho.pt/', class: 'Link'
+              ' s, in Braga and we have been mentors in
+              = link_to 'Shift Appens', 'http://shiftappens.com/', class: 'Link'
+              | , in Coimbra.
+
+  .HorizontalGrid.HorizontalGrid--limited.u-defaultThenLargeMargin
+    .HorizontalGrid-cell
+      .ContentFormatter.ContentFormatter--centerHorizontally
+        .RatioEnforcer.RatioEnforcer--weArePresentIcons
+          = partial "community/attendees.svg"
+    .HorizontalGrid-cell
+      .GridCell
+        .GridCell-content
+          .u-smallThenNoneMargin
+          .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft.u-smallMargin
+            h3.Heading.Heading--brand
+              ' We are
+              span.Heading-highlight
+                | attendees
+          .ContentFormatter
+            p.Text
+              ' We love to attend events and learn from the best in the
+              ' industry. Recently we attended
+              = link_to 'Craft Conf', 'http://www.craft-conf.com/', class: 'Link'
+              ' , in Budapest,
+              = link_to 'Front-Trends', 'http://front-trends.com/', class: 'Link'
+              ' , in Warsaw and
+              = link_to 'Railsberry', 'http://www.railsberry.com/', class: 'Link'
+              | , in Krakow.
