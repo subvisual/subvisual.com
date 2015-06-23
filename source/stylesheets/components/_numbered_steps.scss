@@ -47,20 +47,20 @@ $NumberedSteps-step-color: $Theme-color-white;
 $NumberedStepsline-layer: 1;
 
 .NumberedSteps {
+  counter-reset: step;
+
   position: relative;
 
   padding-top: $Theme-spacing-default;
   padding-bottom: $Theme-spacing-default;
-
-  counter-reset: step;
 
   &:after {
     content: '';
 
     position: absolute;
     top: 0;
-    left: $Theme-spacing-small;
     bottom: 0;
+    left: $Theme-spacing-small;
     z-index: $NumberedStepsline-layer;
 
     width: 1px;
@@ -84,6 +84,7 @@ $NumberedStepsline-layer: 1;
     @include font-properties(subvisual, base);
 
     content: counter(step);
+    counter-increment: step;
 
     position: absolute;
     top: $NumberedSteps-imageSize-mobile + $NumberedSteps-verticalSpacing-mobile;
@@ -100,7 +101,6 @@ $NumberedStepsline-layer: 1;
     background-color: $NumberedSteps-step-backgroundColor;
     border-radius: 50%;
     color: $NumberedSteps-step-color;
-    counter-increment: step;
 
     font-weight: $Theme-typography-fontWeight-bold;
 
@@ -180,8 +180,8 @@ $NumberedStepsline-layer: 1;
     .NumberedSteps-stepContent {
       order: 1;
 
-      margin-left: 0;
       margin-right: $NumberedSteps-stepContent-padding;
+      margin-left: 0;
 
       text-align: right;
     }

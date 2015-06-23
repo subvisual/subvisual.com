@@ -15,6 +15,8 @@
 // .Panel--rubyconf - A panel for the specific case of Rubyconf event
 // .Panel--careers - A panel with a background to be used on the careers page hero
 // .Panel--secondHome - A panel with a background to be used on the careers page
+// .Panel--easymoney - A panel with an easy.money gradient as background
+// .Panel--techCrunch - A panel with TechCrunch's color as background
 //
 // markup:
 // <div class="Panel {$modifiers}" style="height: 500px"></div>
@@ -37,52 +39,39 @@
 }
 
 .Panel.Panel--home {
-  // FIXME: temporary workaround for having these assets available to the styleguide;
-  // TODO: find a way of being able to keep using Sprocket's helpers
-  background-image: url('/homepage_hero.png');
-  background-image: image-url('homepage_hero.png');
+  @include background-image('homepage_hero.png');
 }
 
 .Panel.Panel--subvisualCaseStudy {
-  background-image: url('/subvisual_case_study.png');
-  background-image: image-url('subvisual_case_study.png');
+  @include background-image('subvisual_case_study.png');
 }
 
 .Panel.Panel--creatorsSchoolCaseStudy {
-  background-image: url('/creators_school_case_study.png');
-  background-image: image-url('creators_school_case_study.png');
+  @include background-image('creators_school_case_study.png');
 }
 
 .Panel.Panel--fishTank {
-  background-image: url('/homepage_map.png');
-  background-image: image-url('homepage_map.png');
+  @include background-image('homepage_map.png');
 }
 
 .Panel.Panel--sam {
-  // TODO add Sam image
-  background-image: url('/sam.png');
-  background-image: image-url('sam.png');
+  @include background-image('sam.png');
 }
 
 .Panel.Panel--rob {
-  // TODO add Rob image
-  background-image: url('/rob.png');
-  background-image: image-url('rob.png');
+  @include background-image('rob.png');
 }
 
 .Panel.Panel--company {
-  background-image: url('/company_hero.jpg');
-  background-image: image-url('company_hero.jpg');
+  @include background-image('company_hero.jpg');
 }
 
 .Panel.Panel--team {
-  background-image: url('/company_join_us.jpg');
-  background-image: image-url('company_join_us.jpg');
+  @include background-image('company_join_us.jpg');
 }
 
 .Panel.Panel--clients {
-  background-image: url('/company_clients.png');
-  background-image: image-url('company_clients.png');
+  @include background-image('company_clients.png');
 }
 
 .Panel.Panel--creatorsSchool {
@@ -106,6 +95,7 @@
     display: none;
   }
 
+  // scss-lint:disable DeclarationOrder
   @include media('>650px') {
     .Panel-leftFigure {
       max-width: 150px;
@@ -150,11 +140,11 @@
       max-width: 420px;
     }
   }
+  // scss-lint:enable DeclarationOrder
 }
 
 .Panel.Panel--rubyconf {
-  background-image: url('/community/rubytown.svg');
-  background-image: image-url('community/rubytown.svg');
+  @include background-image('community/rubytown.svg');
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: contain;
@@ -169,11 +159,46 @@
 }
 
 .Panel.Panel--careers {
-  background-image: url('/careers_team.jpg');
-  background-image: image-url('careers_team.jpg');
+  @include background-image('careers_team.jpg');
 }
 
 .Panel.Panel--secondHome {
-  background-image: url('/careers_second_home.jpg');
-  background-image: image-url('careers_second_home.jpg');
+  @include background-image('careers_second_home.jpg');
+}
+
+.Panel.Panel--easymoneyGradient {
+  // scss-lint:disable ColorVariable
+  background: linear-gradient(to bottom right, #372468 0%, #d056a4 100%);
+  // scss-lint:enable ColorVariable
+}
+
+.Panel.Panel--easymoney {
+  // scss-lint:disable ColorVariable
+  background-color: #a53b68;
+  // scss-lint:enable ColorVariable
+}
+
+.Panel.Panel--easymoneyMapaMundi {
+  @include background-image('case-studies/easy-money/easymoney-header.png');
+
+  justify-content: center;
+
+  // the background-image's height achieved by dividing the ratio between the top and bottom padding, thus centering the content
+  padding-top: 22.935%;
+  padding-bottom: 22.935%;
+
+  background-color: transparent;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (-o-min-device-pixel-ratio:5/4), (-webkit-min-device-pixel-ratio:1.2), (min-resolution:120dpi) {
+    @include background-image('case-studies/easy-money/easymoney-header@2x.png');
+  }
+}
+
+.Panel.Panel--techCrunch {
+  // scss-lint:disable ColorVariable
+  background-color: #47b340;
+  // scss-lint:enable ColorVariable
 }

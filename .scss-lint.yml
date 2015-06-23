@@ -1,4 +1,4 @@
-exclude: ['bower_components/**', 'build/**', 'node_modules/**', 'styleguide/**', 'coverage/**', 'vendor/**']
+exclude: ['bower_components/**', 'build/**', 'node_modules/**', 'styleguide/**', 'coverage/**']
 
 linters:
   Compass::*:
@@ -63,6 +63,7 @@ linters:
       - max-width
       - max-height
       - min-width
+      - min-height
       - padding
       - padding-top
       - padding-right

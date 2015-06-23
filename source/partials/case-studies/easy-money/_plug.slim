@@ -1,0 +1,13 @@
+.Panel.Panel--alternative
+  .u-defaultThenLargeMargin
+  .GridCell.GridCell--alignCenter
+    .GridCell-content
+      .ContentFormatter.ContentFormatter--centerHorizontally
+        h1.Heading.Heading--brandLarge.u-defaultMargin
+          ' Creating
+          span.Heading-highlight
+            | Super Heroes
+        = link_to "See Making Of Creators School", '/case-studies/creators-school', class: 'ButtonPrimary u-defaultThenLargeMargin'
+  .easy-Footer
+    object.easy-Footer-figure type="image/svg+xml" data="#{image_path('case-studies/easy-money/batman-robin.svg')}"
+    object.easy-Footer-ribbon type="image/svg+xml" data="#{image_path('case-studies/easy-money/footer-ribbon.svg')}"

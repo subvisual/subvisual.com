@@ -1,0 +1,26 @@
+// Divider
+//
+// Horizontal divider
+//
+// markup:
+// <hr class="Divider">
+//
+// Styleguide 5.7
+
+@import 'blue/theme_vars';
+
+$Divider-color: $Theme-color-polar;
+
+.Divider {
+  display: inline-block;
+  width: 100px;
+  margin: 0;
+
+  border: 0;
+  border-bottom: 2px solid $Divider-color;
+  opacity: 0.25;
+}
+
+.Divider.Divider--dark {
+  border-color: $Theme-color-poloBlue;
+}
