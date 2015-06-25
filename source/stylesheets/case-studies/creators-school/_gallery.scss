@@ -1,0 +1,59 @@
+$susy: (
+  columns: 12,
+  gutters: 1/4
+);
+
+.cs-Gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.cs-Gallery-cell {
+  margin-bottom: $Theme-spacing-default;
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+
+  @include media('<=680px') {
+    &:nth-child(n+5) {
+      display: none;
+    }
+  }
+
+  @include media('>680px', '<1100px') {
+    width: span(6);
+    margin-right: gutter();
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  @include media('>=1100px', '<1400px') {
+    width: span(4);
+    margin-right: gutter();
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+    &:nth-child(n+7) {
+      display: none;
+    }
+  }
+
+  @include media('>=1400px') {
+    width: span(3);
+    margin-right: gutter();
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+}
+
+.u-galleryShadow {
+  box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.05);
+}

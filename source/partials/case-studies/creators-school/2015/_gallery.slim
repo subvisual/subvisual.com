@@ -1,0 +1,10 @@
+.Panel
+  .u-defaultThenLargeMargin
+  .cs-Gallery
+    - %w(america html jobs programadores zuckerberg ironman trabalho ruby).each do |name|
+      .cs-Gallery-cell
+        img.RatioEnforcer.RatioEnforcer--galleryItem.u-galleryShadow(
+          src="#{image_path("case-studies/creators-school/gallery/#{name}.png")}"
+          srcset="#{image_path("case-studies/creators-school/gallery/#{name}.png")} 300w, #{image_path("case-studies/creators-school/gallery/#{name}@2x.png")} 600w"
+          sizes="300px"
+        )

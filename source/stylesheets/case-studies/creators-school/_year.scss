@@ -1,0 +1,25 @@
+.cs-Year {
+  position: relative;
+
+  &:before,
+  &:after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: rgba($Theme-color-white, 0.5);
+    width: $Theme-spacing-default;
+  }
+
+  &:before {
+    left: 0;
+    transform: translateX(-150%);
+  }
+
+  &:after {
+    right: 0;
+    transform: translateX(150%);
+  }
+}

@@ -1,0 +1,68 @@
+$cs-Stripe-triangleHeight-desktop: 180px;
+$cs-Stripe-triangleHeight-mobile: 90px;
+
+@mixin cs-triangleClip($color, $vertical: top, $horizontal: left, $color: $Theme-color-white) {
+  $points: '';
+  @if ($vertical == top) {
+    @if ($horizontal == left) {
+      $points: '0,0 1,0 1,1';
+    } @else {
+      $points: '0,0 0,1 1,0';
+    }
+  } @else {
+    @if ($horizontal == right) {
+      $points: '0,0 0,1 1,1';
+    } @else {
+      $points: '0,1 1,1 1,0';
+    }
+  }
+
+  $triangle: '<polygon points="#{$points}" style="fill:rgb(255, 255, 255);"></polygon>';
+  $svg: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" width="1" height="1" viewBox="0 0 1 1" version="1.1">#{$triangle}</svg>';
+
+  background-image: url($svg);
+  background-size: 100% 100%;
+}
+
+.cs-Stripe {
+  &:before,
+  &:after {
+    content: '';
+
+    display: block;
+
+    @include media('>=desktop') {
+      height: $cs-Stripe-triangleHeight-desktop;
+    }
+
+    @include media('<desktop') {
+      height: $cs-Stripe-triangleHeight-mobile;
+    }
+  }
+
+  &:before {
+    @include cs-triangleClip($Theme-color-white, top, left);
+  }
+
+  &:after {
+    @include cs-triangleClip($Theme-color-white, bottom, right);
+  }
+
+  &.cs-Stripe--inverted {
+    &:before {
+      @include cs-triangleClip($Theme-color-white, top, right);
+    }
+
+    &:after {
+      @include cs-triangleClip($Theme-color-white, bottom, left);
+    }
+  }
+}
+
+.cs-Stripe.cs-Stripe--orange {
+  background-color: $CS-color-tango;
+}
+
+.cs-Stripe.cs-Stripe--blue {
+  background-color: $CS-color-pictonBlue;
+}

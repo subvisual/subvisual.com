@@ -1,0 +1,28 @@
+.Panel.cs-Panel--white
+  .u-smallThenDefaultMargin
+  .GridCell.GridCell--alignCenter.GridCell--small
+    .GridCell-content
+      .ContentFormatter.ContentFormatter--centerHorizontally
+        p.Text.Text--italic.Text--extraLarge.Text--green "Everyone in this country should learn how to code because it teaches you how to think."
+
+        .u-smallMargin
+        hr.cs-Divider.cs-Divider--alt
+        .u-smallMargin
+
+        .HorizontalGrid.HorizontalGrid--centered
+          .HorizontalGrid-cell
+            .GridCell.GridCell--alignRight.GridCell--small
+              .GridCell-content
+                .ContentFormatter.ContentFormatter--centerHorizontallyThenRight
+                  img.RatioEnforcer.RatioEnforcer--csPicture(
+                    src="#{image_path('case-studies/creators-school/steve-jobs.png')}"
+                    srcset="#{image_path('case-studies/creators-school/steve-jobs.png')} 120w, #{image_path('case-studies/creators-school/steve-jobs@2x.png')} 240w"
+                    sizes="(min-width: 650px) 120, 80"
+                    alt="Steve Jobs"
+                  )
+          .HorizontalGrid-cell
+            .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft
+              p.Text.Text--strong.Text--blog Steve Jobs
+              p.Text.Text--italic.Text--blog.Text--transparent Founder of Apple
+
+  .u-smallThenDefaultMargin
