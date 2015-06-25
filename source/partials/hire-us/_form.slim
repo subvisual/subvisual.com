@@ -1,0 +1,158 @@
+.Panel.Panel--alternative
+  .u-defaultThenLargeMargin
+  .ContentFormatter.ContentFormatter--center
+    .HireUsGrid.u-defaultThenLargeMargin
+      .HireUsGrid-greetings
+        .Media.Media--noImageSpace.Media--flag.u-smallMargin
+          .Media-image
+            img.RatioEnforcer(
+              src="#{image_path('hire-us/roberto.png')}"
+              srcset="#{image_path('hire-us/roberto.png')} 121w, #{image_path('hire-us/roberto@2x.png')} 242w"
+              sizes="(min-width: 650px) 120px, 60px"
+              alt="Subvisual CEO's photo"
+            )
+          .Media-content
+            h2.Heading.Heading--brandSubBase
+              span.Heading-highlight
+                | Roberto Machado
+        p.Text.Text--italic
+          ' “I’m the CEO at Subvisual and we’ll most likely be talking if you fill
+          ' out this form. If you’d prefer, you can contact me directly through
+          = link_to 'core@subvisual.co', 'roberto@subvisual.co', class: 'Link Link--highlight Link--thin'
+          | ”
+      .HireUsGrid-form
+        form accept-charset="UTF-8" action="https://formkeep.com/f/c729965ef840" method="POST"
+          input type="hidden" name="utf8" value="✓"
+          h2.Heading.Heading--brandSubBase.u-smallMargin
+            ' About
+            span.Heading-highlight you
+
+          .InputText
+            label.InputText-label for="form-name"
+              | What's your name
+            input#form-name.InputText-input type="text" name="name"
+          .u-smallMargin
+          .HorizontalGrid.HorizontalGrid--withExtraSmallGutters.HorizontalGrid--noOuterGutters
+            .HorizontalGrid-cell
+              .InputText
+                label.InputText-label for="form-email"
+                  | What's your email
+                input#gform-email.InputText-input type="email" name="email"
+            .HorizontalGrid-cell
+              .InputText
+                label.InputText-label for="form-phone"
+                  | What's your phone number
+                input#form-phone.InputText-input type="text" name="phone"
+
+          .u-defaultThenLargeMargin
+
+          h2.Heading.Heading--brandSubBase.u-smallMargin
+            ' About
+            span.Heading-highlight your project
+
+          fieldset.u-smallMargin
+            legend.Text.Text--brand.Text--dark.u-smallMargin
+              | Where do you need our expertise?
+            .HorizontalGrid
+              .HorizontalGrid-cell
+                .Radio.u-smallMargin
+                  input.Radio-input(
+                    type="radio"
+                    name="work_area"
+                    value="design_sprint"
+                    id="form-design-sprint"
+                  )
+                  label.Radio-label for="form-design-sprint" Design Sprint
+                .Radio.u-smallMargin
+                  input.Radio-input(
+                    type="radio"
+                    name="work_area"
+                    value="new_product"
+                    id="form-new-product"
+                  )
+                  label.Radio-label for="form-new-product" Develop a New Product
+                .Radio.u-smallMargin
+                  input.Radio-input(
+                    type="radio"
+                    name="work_area"
+                    value="training"
+                    id="form-training"
+                  )
+                  label.Radio-label for="form-training" Training
+              .HorizontalGrid-cell
+                .Radio.u-smallMargin
+                  input.Radio-input(
+                    type="radio"
+                    name="work_area"
+                    value="design_consultancy"
+                    id="form-design-consultancy"
+                  )
+                  label.Radio-label for="form-design-consultancy" Design Consultancy
+                .Radio.u-smallMargin
+                  input.Radio-input(
+                    type="radio"
+                    name="work_area"
+                    value="development_consultancy"
+                    id="form-development-consultancy"
+                  )
+                  label.Radio-label for="form-development-consultancy" Development Consultancy
+                .Radio.u-smallMargin
+                  input.Radio-input(
+                    type="radio"
+                    name="work_area"
+                    value="other"
+                    id="form-other"
+                  )
+                  label.Radio-label for="form-other" Other
+
+          fieldset.u-smallMargin
+            legend.Text.Text--brand.Text--dark.u-smallMargin
+              | What's your budget?
+            .HorizontalGrid
+              .HorizontalGrid-cell
+                .Radio.u-smallMargin
+                  input.Radio-input(
+                    type="radio"
+                    name="budget"
+                    value="10000-25000"
+                    id="form-budget-10to25"
+                  )
+                  label.Radio-label for="form-budget-10to25" 10,000€ - 25,000€
+              .HorizontalGrid-cell
+                .Radio.u-smallMargin
+                  input.Radio-input(
+                    type="radio"
+                    name="budget"
+                    value="25000-50000"
+                    id="form-budget-25to50"
+                  )
+                  label.Radio-label for="form-budget-25to50" 25,000€ - 50,000€
+
+            .HorizontalGrid
+              .HorizontalGrid-cell
+                .Radio.u-smallMargin
+                  input.Radio-input(
+                    type="radio"
+                    name="budget"
+                    value="over-50000"
+                    id="form-budget-over50"
+                  )
+                  label.Radio-label for="form-budget-over50" Over 50,000€
+              .HorizontalGrid-cell
+                .Radio.u-smallMargin
+                  input.Radio-input(
+                    type="radio"
+                    name="budget"
+                    value="unknown"
+                    id="form-budget-unknown"
+                  )
+                  label.Radio-label for="form-budget-unknown" I don't know my budget
+
+          .InputText.InputText--large.u-defaultMargin
+            label.InputText-label for="form-project-description"
+              | Tell us a bit more about your project
+            textarea#form-project-description.InputText-input name="project_description"
+
+          .ContentFormatter.ContentFormatter--right
+            button.ButtonPrimary type="submit"
+              | Submit your project

@@ -1,0 +1,184 @@
+$InputText-horizontalPadding: $Theme-spacing-xSmall;
+$InputText-color-label: $Theme-color-brightTurquoise;
+$InputText-backgroundColor-label: $Theme-color-polar;
+$InputText-color-input: $Theme-color-horizon;
+
+@mixin placeholderToLabelAnimation($animationName, $labelPosition) {
+  animation-name: $animationName;
+
+  @keyframes #{$animationName} {
+    0% {
+      opacity: 1;
+    }
+
+    20% {
+      opacity: 0;
+    }
+
+    84% {
+      opacity: 0;
+    }
+
+    90% {
+      opacity: 1;
+
+      transform: translate3D(0, calc(#{$labelPosition} + 15%), 0);
+    }
+
+    100% {
+      @include font-properties(subvisual, extraSmall);
+
+      // hack for forcing the final color to remain after the animation ends
+      color: $InputText-color-label;
+      color: $InputText-color-label;
+
+      transform: translate3D(0, #{$labelPosition}, 0);
+    }
+  }
+}
+
+@mixin labelToPlaceholderAnimation($animationName, $labelPosition) {
+  animation-name: $animationName;
+
+  @keyframes #{$animationName} {
+    0% {
+      transform: translate3D(0, #{$labelPosition}, 0);
+    }
+
+    10% {
+      opacity: 1;
+
+      transform: translate3D(0, calc(#{$labelPosition} + 15%), 0);
+    }
+
+    16% {
+      opacity: 0;
+    }
+
+    99% {
+      @include font-properties(subvisual, small);
+
+      color: $Theme-color-poloBlue;
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+.InputText {
+  position: relative;
+
+  background-color: $InputText-backgroundColor-label;
+  border: 1px solid $InputText-backgroundColor-label;
+
+  transition: background-color 0.1s linear, border-color 0.1s linear;
+}
+
+.InputText-label {
+  @include font-properties(subvisual, small);
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  width: calc(100% - #{$InputText-horizontalPadding});
+  padding-left: $InputText-horizontalPadding;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  transform: translate3D(0, -50%, 0);
+}
+
+.InputText-input {
+  @include font-properties(subvisual, small);
+
+  position: relative;
+  z-index: 2; // it justs needs to be on top of .InputText-label
+
+  width: 100%;
+  padding: 20px $InputText-horizontalPadding 4px;
+
+  background: transparent;
+  border: 0;
+  color: $InputText-color-input;
+  outline: 0;
+
+  font-weight: $Theme-typography-fontWeight-bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  @include media('>tablet') {
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+}
+
+.InputText.InputText--active.InputText--filled {
+  border-color: transparent;
+
+  &:hover {
+    border-color: $InputText-color-input;
+  }
+}
+
+.InputText.InputText--active {
+  background-color: transparent;
+  border-color: $InputText-color-input;
+
+  transition: background-color 0.1s ease, border-color 0.1s ease;
+
+  .InputText-label {
+    @include placeholderToLabelAnimation('placeholderToLabel', -90%);
+
+    z-index: 5;
+
+    background-color: $Theme-color-white;
+
+    @include media('>tablet') {
+      @include placeholderToLabelAnimation('placeholderToLabel', -120%);
+    }
+  }
+}
+
+.InputText.InputText--active.InputText--animateOut {
+  .InputText-label {
+    @include font-properties(subvisual, extraSmall);
+
+    color: $InputText-color-label;
+
+    @include labelToPlaceholderAnimation('labelToPlaceholder', -90%);
+
+    @include media('>tablet') {
+      @include labelToPlaceholderAnimation('labelToPlaceholder', -120%);
+    }
+  }
+}
+
+.InputText.InputText--large {
+  .InputText-label {
+    top: 40px;
+  }
+
+  .InputText-input {
+    padding-top: 30px;
+    padding-bottom: 25px;
+  }
+
+  &.InputText--active {
+    .InputText-label {
+      @include placeholderToLabelAnimation('placeholderToLabelLarge', -140%);
+    }
+  }
+
+  &.InputText--active.InputText--animateOut {
+    .InputText-label {
+      @include labelToPlaceholderAnimation('labelToPlaceholderLarge', -140%);
+    }
+  }
+}
