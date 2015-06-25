@@ -1,0 +1,29 @@
+.Panel
+  .u-largeMargin
+  .GridCell.GridCell--alignCenter
+    .GridCell-content
+      .ContentFormatter.ContentFormatter--centerHorizontally
+        h1.Heading.Heading--brandLarge
+          | Great!
+          br
+          ' Application was
+          span.Heading-highlight sent
+      .u-doubleLargeMargin
+
+.SeparatorImage
+  .SeparatorImage-image
+    = partial "email.svg"
+.u-largeThenDoubleLargeMargin
+
+.Panel.Panel--alternative
+  .GridCell.GridCell--alignCenter
+    .GridCell-content
+      .u-defaultThenNoneMargin
+      .ContentFormatter.ContentFormatter--centerHorizontally
+        p.Text.Text--large.Text--dark.Text--strong
+          | We will review your application and get back to you as soon as possible
+        .u-defaultMargin
+        a.ButtonPrimary.u-defaultMargin href="/" Back to the homepage
+
+= partial 'subvisual_separator'
+= partial 'footer'

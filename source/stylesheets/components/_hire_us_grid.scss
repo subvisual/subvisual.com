@@ -1,0 +1,65 @@
+// HireUsGrid
+//
+// Custom grid for the Hire Us page
+//
+// markup:
+// <div class="HireUsGrid">
+//   <div class="HireUsGrid-greetings">
+//     <div>Cell 1</div>
+//   </div>
+//   <div class="HireUsGrid-form">
+//     <div>Cell 2</div>
+//   </div>
+//
+// Styleguide 5.11
+
+@import 'blue/theme_vars';
+
+.HireUsGrid {
+  display: flex;
+  flex-direction: column;
+
+  max-width: $Theme-grid-maxWidth;
+  padding-left: $Theme-spacing-small;
+  padding-right: $Theme-spacing-small;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.HireUsGrid-greetings {
+  flex: 1;
+}
+
+.HireUsGrid-form {
+  flex: 2;
+
+  margin-top: $Theme-spacing-default;
+}
+
+@include media('<=desktop') {
+  .HireUsGrid {
+    align-items: stretch;
+  }
+
+  .HireUsGrid-greetings,
+  .HireUsGrid-form {
+    max-width: $Theme-grid-singleColumn-maxWidth;
+  }
+}
+
+@include media('>tablet') {
+  .HireUsGrid-form {
+    margin-top: $Theme-spacing-large;
+  }
+}
+
+@include media('>desktop') {
+  .HireUsGrid {
+    flex-direction: row;
+  }
+
+  .HireUsGrid-form {
+    margin-top: 0;
+    margin-left: $Theme-spacing-large;
+  }
+}

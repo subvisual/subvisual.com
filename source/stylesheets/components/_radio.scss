@@ -1,0 +1,79 @@
+// Radio
+//
+// Radio button
+//
+// markup:
+// <div class="Radio">
+//   <input class="Radio-input" id="form-design-sprint" name="work_area" type="radio" value="design_sprint">
+//   <label class="Radio-label" for="form-design-sprint">Design Sprint</label>
+// </div>
+//
+// Styleguide 5.13
+
+$Radio-input-size: 25px;
+
+.Radio {
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.Radio-input {
+  position: relative;
+
+  width: $Radio-input-size;
+  height: $Radio-input-size;
+
+  cursor: pointer;
+  outline: 0;
+
+  &:before {
+    content: '';
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    border: 1px solid $Theme-color-poloBlue;
+    border-radius: 50%;
+  }
+}
+
+.Radio-label {
+  @include font-properties(bodyText, small);
+
+  padding-left: $Theme-spacing-xSmall;
+
+  cursor: pointer;
+}
+
+.Radio-input:checked + .Radio-label {
+  color: $Theme-color-horizon;
+
+  font-weight: $Theme-typography-fontWeight-bold;
+}
+
+.Radio-input:checked {
+  &:before {
+    border: 1px solid $Theme-color-polar;
+  }
+
+  &:after {
+    $inner-border: 3px;
+    content: '';
+
+    position: absolute;
+    top: $inner-border;
+    left: $inner-border;
+
+    width: calc(100% - #{$inner-border * 2});
+    height: calc(100% - #{$inner-border * 2});
+
+    background-color: $Theme-color-yellowOrange;
+    border-radius: 50%;
+  }
+}
