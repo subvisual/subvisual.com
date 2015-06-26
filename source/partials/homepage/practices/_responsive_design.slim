@@ -1,12 +1,17 @@
-.Panel
-  .GridCell
-    .GridCell-content
-      .u-largeMargin
-      .ContentFormatter.ContentFormatter--centerHorizontally.u-largeMargin
-        = partial 'homepage/practices/responsive.svg'
-      .Heading.Heading--brand.u-smallMargin
+.GridCell
+  .GridCell-content
+    .u-defaultThenLargeMargin
+    .ContentFormatter.ContentFormatter--centerHorizontally
+      img(
+        src="#{image_path('homepage/practices/responsive.png')}"
+        srcset="#{image_path('homepage/practices/responsive.png')} 407w, #{image_path('homepage/practices/responsive@2x.png')} 814w"
+        sizes="(min-width: 650px) 416px, 208px"
+        alt="Devices with different resolutions"
+      )
+      .u-smallThenDefaultMargin
+      .Heading.Heading--brand.u-xSmallThenSmallMargin
         ' Responsible Responsive
         span.Heading-highlight Design
-      .Text.u-largeMargin
-        ' We are aware of the challenges of designing and building products
-        | that perform efficiently across every device possible.
+      .Text.u-defaultThenLargeMargin
+        ' We are experienced in dealing with the challenges of designing and
+        | building products that perform efficiently across every device possible.

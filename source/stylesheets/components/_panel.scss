@@ -35,7 +35,26 @@
 }
 
 .Panel.Panel--home {
-  @include background-image('homepage_hero.png');
+  @include background-image('homepage/hero-mobile.png');
+
+  padding-bottom: 79.06%;
+
+  background-color: transparent;
+  background-size: contain;
+
+  @media (-o-min-device-pixel-ratio:5/4), (-webkit-min-device-pixel-ratio:1.2), (min-resolution:120dpi) {
+    @include background-image('homepage/hero-mobile@2x.png');
+  }
+
+  @include media('>=tablet') {
+    @include background-image('homepage/hero-image.png');
+
+    padding-bottom: 33.88%;
+
+    @media (-o-min-device-pixel-ratio:5/4), (-webkit-min-device-pixel-ratio:1.2), (min-resolution:120dpi) {
+      @include background-image('homepage/hero-image@2x.png');
+    }
+  }
 }
 
 .Panel.Panel--subvisualCaseStudy {

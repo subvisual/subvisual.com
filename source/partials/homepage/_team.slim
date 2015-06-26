@@ -1,19 +1,24 @@
 .Panel
-  .u-largeMargin
-  .HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--withGutters.u-largeMargin
-    .HorizontalGrid-cell
-      .Heading.u-smallMargin
-        | We are a small, powerful team
-      .Text.u-smallMargin
-        ' We don't deceive you by overstating our abilites.
-        ' We are a team of expert digital handcrafters and therefore we are
-        ' responsible for our code and our design.
-        | We don't waste your time with excuses.
-
-      = link_to 'Meet our craftsmen', '#', class: 'EngagementLink u-smallMargin'
-      = link_to 'Read our blog', '#', class: 'EngagementLink u-smallMargin'
-      = link_to 'Show up for coffee', '#', class: 'EngagementLink'
-
+  .u-defaultThenDoubleLargeMargin
+  .HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--withGutters.HorizontalGrid--inverted.u-defaultThenDoubleLargeMargin
     .HorizontalGrid-cell
       .ContentFormatter.ContentFormatter--centerHorizontally
-        = partial 'homepage/team.svg'
+        img.RatioEnforcer.RatioEnforcer--homepageIcons(
+          src="#{image_path('homepage/atoms.png')}"
+          srcset="#{image_path('homepage/atoms.png')} 301w, #{image_path('homepage/atoms@2x.png')} 602w"
+          sizes="(min-width: 650px) 200px, (min-width: 1024px) 300px, 150px"
+          alt="Atom"
+        )
+    .HorizontalGrid-cell
+      .u-smallThenNoneMargin
+      .Heading.u-xSmallThenSmallMargin
+        | We are a small, powerful team
+      .Text.u-smallThenDefaultMargin
+        ' We don’t elude you by overstating our abilites. We are a team of
+        ' expert digital handcrafters and therefore we are responsible for our
+        | code and our design. We don’t waste your time with excuses.
+
+      .ContentFormatter
+        = link_to 'Meet our craftsmen', '/company#team', class: 'EngagementLink u-smallMargin'
+      .ContentFormatter
+        = link_to 'Learn more about us', '/company', class: 'EngagementLink'

@@ -1,0 +1,25 @@
+.Panel
+  .u-defaultThenDoubleLargeMargin
+  .HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--withGutters.HorizontalGrid--inverted.u-defaultThenDoubleLargeMargin
+    .HorizontalGrid-cell
+      .ContentFormatter.ContentFormatter--centerHorizontally
+        img.RatioEnforcer.RatioEnforcer--homepageIcons(
+          src="#{image_path('homepage/transparency.png')}"
+          srcset="#{image_path('homepage/transparency.png')} 302w, #{image_path('homepage/transparency@2x.png')} 604w"
+          sizes="(min-width: 650px) 200px, (min-width: 1024px) 300px, 150px"
+          alt="Subvisual logo"
+        )
+    .HorizontalGrid-cell
+      .u-smallThenNoneMargin
+      .Heading.u-xSmallThenSmallMargin
+        | We default to transparency
+      .Text.u-smallThenDefaultMargin
+        ' We establish business partnerships by understanding your market,
+        ' exploring your problems and standing in your shoes. We believe that
+        ' respect and transparency are the key factors for a productive
+        | partnership.
+
+      .ContentFormatter
+        = link_to 'Learn about our values', '/company#values', class: 'EngagementLink u-smallMargin'
+      .ContentFormatter
+        = link_to 'Read our blog', '/blog', class: 'EngagementLink'

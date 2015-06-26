@@ -1,0 +1,80 @@
+// ContactsGrid
+//
+// A custom grid for the contacts section.
+//
+// markup:
+// <div class="ContactsGrid">
+//   <div class="ContactsGrid-contact">
+//     +351 123 123 123
+//   </div>
+//   <div class="ContactsGrid-contact">
+//     Centro Empresarial de Braga
+//   </div>
+//   <div class="ContactsGrid-image">
+//     <img src="/placeholder.png" style="max-height: 100%;"/>
+//   </div>
+// </div>
+//
+// Styleguide 5.9
+
+@import 'blue/theme_vars';
+
+$ContactsGrid-image-width-mobile: 75px;
+$ContactsGrid-image-width-desktop: 150px;
+$ContactsGrid-gutter-mobile: $Theme-spacing-xSmall;
+$ContactsGrid-gutter-desktop: $Theme-spacing-default;
+
+.ContactsGrid {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  margin-top: -$ContactsGrid-gutter-mobile;
+  margin-left: -$ContactsGrid-gutter-mobile;
+}
+
+.ContactsGrid-image {
+  width: 100%;
+  max-width: $ContactsGrid-image-width-mobile;
+}
+
+.ContactsGrid-contact {
+  flex: 1;
+}
+
+.ContactsGrid-image,
+.ContactsGrid-contact {
+  margin-top: $ContactsGrid-gutter-mobile;
+  margin-left: $ContactsGrid-gutter-mobile;
+}
+
+@include media('<tablet') {
+  .ContactsGrid {
+    flex-direction: column;
+  }
+
+  .ContactsGrid-image {
+    order: 1;
+  }
+
+  .ContactsGrid-contact {
+    order: 2;
+  }
+}
+
+@include media('>=tablet') {
+  .ContactsGrid {
+    margin-top: -$ContactsGrid-gutter-desktop;
+    margin-left: -$ContactsGrid-gutter-desktop;
+  }
+
+  .ContactsGrid-image {
+    max-width: $ContactsGrid-image-width-desktop;
+  }
+
+  .ContactsGrid-image,
+  .ContactsGrid-contact {
+    margin-top: $ContactsGrid-gutter-desktop;
+    margin-left: $ContactsGrid-gutter-desktop;
+  }
+}

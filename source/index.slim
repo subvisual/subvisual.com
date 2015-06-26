@@ -1,18 +1,16 @@
 ---
 title: Subvisual
-nav_class: Nav--light
 page: home
 ---
 
-.Panel.Panel--home
+.Panel.Panel--alternative
   = partial 'nav'
   = partial 'homepage/hero'
-= partial 'homepage/services'
-= partial 'homepage/principles'
 = partial 'homepage/team'
-= partial 'work_with_us', locals: { text: 'Have an exciting project in mind?<br>We are ready to start', buttonText: "Let's work together" }
+= partial 'homepage/services'
+= partial 'homepage/values'
+= partial 'work_with_us', locals: { text: 'Do you have an exciting project in mind?<br>We are ready to start.', buttonText: "Let's work together" }
 = partial 'homepage/practices'
-= partial 'work_with_us', locals: { text: "You look ready to start.<br>We’ve prepared a project planner for you to fill in so we can start working.", buttonText: "Open project planner" }
 = partial 'homepage/contact'
 = partial 'subvisual_separator'
 = partial 'footer'

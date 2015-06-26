@@ -1,19 +1,25 @@
-.Panel
-  .u-largeMargin
-  .HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--withGutters.u-largeMargin
+.Panel.Panel--alternative
+  .u-defaultThenDoubleLargeMargin
+  .HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--withGutters.u-defaultThenDoubleLargeMargin
     .HorizontalGrid-cell
-      .Heading.u-smallMargin
+      .ContentFormatter.ContentFormatter--centerHorizontally
+        img.RatioEnforcer.RatioEnforcer--homepageIcons(
+          src="#{image_path('homepage/tools.png')}"
+          srcset="#{image_path('homepage/tools.png')} 302w, #{image_path('homepage/tools@2x.png')} 604w"
+          sizes="(min-width: 650px) 200px, (min-width: 1024px) 300px, 150px"
+          alt="Toolkit"
+        )
+    .HorizontalGrid-cell
+      .u-smallThenNoneMargin
+      .Heading.u-xSmallThenSmallMargin
         | We know the secret behind excellence
-      .Text.u-smallMargin
-        ' It takes thought, focus and passion.
-        ' It requires a culture of continuous learning and exploration.
-        ' It’s about sweating the details and not settling for ‘good’ but
-        | rather strive for excellent. It’s about craftsmanship.
+      .Text.u-smallThenDefaultMargin
+        ' It takes reasoning, focus and passion. It requires a culture of
+        ' continuous learning and exploration. It’s about sweating the details and
+        ' not settling for ‘good’, but rather strive for excellent. It’s about
+        | craftsmanship.
 
       .ContentFormatter
         = link_to 'Our Services', '/work', class: 'EngagementLink u-smallMargin'
       .ContentFormatter
         = link_to 'Read our case studies', '/work#case-studies', class: 'EngagementLink'
-    .HorizontalGrid-cell
-      .ContentFormatter.ContentFormatter--centerHorizontally
-        = partial 'homepage/excellence.svg'

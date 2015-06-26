@@ -220,6 +220,3 @@ DEPENDENCIES
   scss_lint
   slim
   susy
-
-BUNDLED WITH
-   1.10.3

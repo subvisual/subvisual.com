@@ -1,21 +1,21 @@
 .Panel.Panel--fishTank
-  .u-largeMargin
-  .GridCell.GridCell--alignCenter.u-largeMargin
+  .u-defaultThenDoubleLargeMargin
+  .GridCell.GridCell--alignCenter.u-smallThenDefaultMargin
     .GridCell-content
       .ContentFormatter.ContentFormatter--centerHorizontally
         h2.Heading.Heading--brandLarge
-          ' Based in a dynamic and young little city in portugal called
+          ' Based in a dynamic little city in Portugal called
           span.Heading-light Braga
-  .ContentFormatter.ContentFormatter--center
-    .HorizontalGrid.HorizontalGrid--variableWidth.HorizontalGrid--centered.HorizontalGrid--withGutters.u-largeMargin
-      .HorizontalGrid-cell
-        .ContentFormatter.ContentFormatter--right
-          p.Text.Text--large.Text--light.Text--strong hello@subvisual.com
-          p.Text.Text--large.Text--light +351 914 676 907
-      .HorizontalGrid-cell
+  .ContentFormatter.ContentFormatter--center.u-defaultThenDoubleLargeMargin
+    .ContactsGrid
+      .ContactsGrid-contact
+        .ContentFormatter.ContentFormatter--centerHorizontallyThenRight
+          p.Text.Text--light.Text--strong.u-xSmallMargin hello@subvisual.com
+          p.Text.Text--light
+            ' +351
+            span.Text--light.Text.Text--strong 916 748 994
+      .ContactsGrid-image
         = partial 'homepage/logo_map.svg'
-      .HorizontalGrid-cell
-        p.Text.Text--large.Text--light.Text--strong
-          ' Centro Empresarial de
-          br
-          | Ferreiros, Braga
+      .ContactsGrid-contact
+        p.Text.Text--light.Text--strong
+          ' Centro Empresarial de Braga

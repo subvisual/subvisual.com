@@ -1,12 +1,17 @@
-.Panel.Panel--alternative
-  .GridCell
-    .GridCell-content
-      .u-largeMargin
-      .ContentFormatter.ContentFormatter--centerHorizontally.u-largeMargin
-        = partial 'homepage/practices/user-centered.svg'
-      .Heading.Heading--brand.u-smallMargin
+.GridCell
+  .GridCell-content
+    .u-defaultThenLargeMargin
+    .ContentFormatter.ContentFormatter--centerHorizontally
+      img(
+        src="#{image_path('homepage/practices/user-centered.png')}"
+        srcset="#{image_path('homepage/practices/user-centered.png')} 201w, #{image_path('homepage/practices/user-centered@2x.png')} 402w"
+        sizes="(min-width: 650px) 200px, 100px"
+        alt="A human user-centered"
+      )
+      .u-smallThenDefaultMargin
+      .Heading.Heading--brand.u-xSmallThenSmallMargin
         ' User-centered
         span.Heading-highlight Design
-      .Text.u-largeMargin
-        ' We are aware of the challenges of designing and building products
-        | that perform efficiently across every device possible.
+      .Text.u-defaultThenLargeMargin
+        ' Every product that we make is entirely dependent on the needs of the
+        | user. This is our focus and objective from day one to delivery.
