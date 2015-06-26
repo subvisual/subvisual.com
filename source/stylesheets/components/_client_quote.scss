@@ -1,0 +1,28 @@
+.ClientQuote {
+  display: flex;
+  flex-direction: column;
+}
+
+.ClientQuote-author {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ClientQuote-author {
+  @include media('>=tablet') {
+    order: -1;
+
+    flex-direction: row;
+
+    .ClientQuote-authorInfo {
+      padding-left: $Theme-spacing-small;
+    }
+  }
+}
+
+.ClientQuote-quote {
+  @include media('>=tablet') {
+    order: 1;
+  }
+}

@@ -27,9 +27,13 @@
   }
 }
 
-.RatioEnforcer.RatioEnforcer--clients {
+.RatioEnforcer.RatioEnforcer--companies {
   width: auto;
   max-height: 100px;
+}
+
+.RatioEnforcer.RatioEnforcer--clients {
+  max-width: 120px;
 }
 
 .RatioEnforcer.RatioEnforcer--technologies {

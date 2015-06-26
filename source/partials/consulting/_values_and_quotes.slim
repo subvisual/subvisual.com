@@ -1,68 +1,91 @@
-.HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--darkFrame.HorizontalGrid--bottomFrame
-  .HorizontalGrid-cell.Panel.Panel--alternative
-    .u-largeMargin
-    .GridCell
-      .GridCell-content
+.Panel
+  .u-defaultThenLargeMargin
+  .GridCell.GridCell--alignCenter
+    .GridCell-smallContent
+      .ContentFormatter.ContentFormatter--centerHorizontally
         h2.Heading.Heading--brand.u-smallMargin
           ' Transparent
           span.Heading-highlight Communication
-        p.Text.u-largeMargin
+        p.Text.u-defaultThenLargeMargin
           ' You talk directly with the craftsmen you’re working with. No middle
           ' man redirecting your mails or video calls. While we’re working
           | together, our team blends seamlessly with yours.
-  .HorizontalGrid-cell.Panel
-    .u-largeMargin
-    .GridCell
-      .GridCell-content
-        h2.Heading.Heading--brand
-          span.Heading-highlight Sam Aojfalosu
-        h3.Heading.Heading--small.u-smallMargin
-          | Casper
-        p.Text.u-largeMargin
-          | "I hate working with consulting agencies, but I loved working with you guys"
 
-.HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--darkFrame
-  .HorizontalGrid-cell.Panel
-    .u-largeMargin
-    .GridCell
-      .GridCell-content
-        h2.Heading.Heading--brand
-          span.Heading-highlight Rob Morgan
-        h3.Heading.Heading--small.u-smallMargin
-          | Locafox
-        p.Text.u-largeMargin
-          | "Having worked with a plethora of consulting agencies, I can say you guys are my favourite"
+.HorizontalGrid.HorizontalGrid--darkFrame.HorizontalGrid--bottomFrame
   .HorizontalGrid-cell.Panel.Panel--alternative
-    .u-largeMargin
-    .GridCell
-      .GridCell-content
-        h2.Heading.Heading--brand.u-smallMargin
-          ' Flawless Work
-          span.Heading-highlight Culture
-        p.Text.u-largeMargin
+    .u-defaultThenLargeMargin
+    .GridCell.GridCell--alignCenter.GridCell--smallContent
+      .GridCell-smallContent
+        .ClientQuote
+          .ClientQuote-quote
+            .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft
+              p.Text
+                | "Having worked with a plethora of consulting agencies, I can say you guys are my favourite"
+          .u-smallMargin
+          .ClientQuote-author
+            .ClientQuote-authorPicture
+              img.RatioEnforcer.RatioEnforcer--clients(
+                src="#{image_path('clients/rob-morgan.png')}"
+                srcset="#{image_path('clients/rob-morgan.png')} 120w, #{image_path('clients/rob-morgan@2x.png')} 240w"
+                sizes="(min-width: 650px) 120px, 60px"
+                alt="Sam Aofolaju"
+              )
+            .ClientQuote-authorInfo
+              .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft
+                h2.Heading.Heading--brand.u-xSmallMargin
+                  span.Heading-highlight Rob Morgan
+                h3.Heading.Heading--small
+                  | Locafox
+    .u-defaultThenLargeMargin
+  .HorizontalGrid-cell.Panel.Panel--alternative
+    .u-defaultThenLargeMargin
+    .GridCell.GridCell--alignCenter
+      .GridCell-smallContent
+        .ClientQuote
+          .ClientQuote-quote
+            .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft
+              p.Text
+                | "I hate working with consulting agencies, but I loved working with you guys"
+          .u-smallMargin
+          .ClientQuote-author
+            .ClientQuote-authorPicture
+              img.RatioEnforcer.RatioEnforcer--clients(
+                src="#{image_path('clients/sam-aofolaju.png')}"
+                srcset="#{image_path('clients/sam-aofolaju.png')} 120w, #{image_path('clients/sam-aofolaju@2x.png')} 240w"
+                sizes="(min-width: 650px) 120px, 60px"
+                alt="Sam Aofolaju"
+              )
+            .ClientQuote-authorInfo
+              .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft
+                h2.Heading.Heading--brand.u-xSmallMargin
+                  span.Heading-highlight Sam Aofolaju
+                h3.Heading.Heading--small
+                  | Casper
+    .u-defaultThenLargeMargin
+
+.HorizontalGrid.HorizontalGrid--darkFrame
+  .HorizontalGrid-cell.Panel.Panel--alternative
+    .u-defaultThenLargeMargin
+    .GridCell.GridCell--alignCenter
+      .GridCell-smallContent
+        .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft
+          h2.Heading.Heading--brand.u-smallMargin
+            ' Flawless Work
+            span.Heading-highlight Culture
+        p.Text.u-defaultThenLargeMargin
           ' We bring our values and practices with us, helping you to take
           ' your process to a whole new level.
           | We don't back down from our standards and our work always conveys our craftsmanship.
 
-.HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--darkFrame
   .HorizontalGrid-cell.Panel.Panel--alternative
-    .u-largeMargin
-    .GridCell
-      .GridCell-content
-        h2.Heading.Heading--brand.u-smallMargin
-          ' Only top-class
-          span.Heading-highlight Craftsmen
-        p.Text.u-largeMargin
+    .u-defaultThenLargeMargin
+    .GridCell.GridCell--alignCenter
+      .GridCell-smallContent
+        .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft
+          h2.Heading.Heading--brand.u-smallMargin
+            ' Only top-class
+            span.Heading-highlight Craftsmen
+        p.Text.u-defaultThenLargeMargin
           ' We are a small team for a reason. Every person we hire needs to show
           ' unique potential and full compromise to our values and principles,
           | therefore we only have excellent craftsmen.
-  .HorizontalGrid-cell.Panel
-    .u-largeMargin
-    .GridCell
-      .GridCell-content
-        h2.Heading.Heading--brand
-          span.Heading-highlight John Doe
-        h3.Heading.Heading--small.u-smallMargin
-          | Blip
-        p.Text.u-largeMargin
-          | "I hate working with consulting agencies, but I loved working with you guys"
