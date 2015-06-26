@@ -7,10 +7,10 @@
 
 nav#main-nav.Nav.Nav--topPositioned class="#{current_page.data.nav_class}" aria-label=('Main navigation')
   = link_to '/', class: 'Nav-logo'
-    .NavLogo class="#{'NavLogo--mono' if current_page.data.nav_class == 'Nav--light'}"
+    .NavLogo class=nav_logo_class
 
   .Nav-menu
-    .Burger
+    .Burger class=nav_burger_class
       span.Burger-line
       span.Burger-line
       span.Burger-line

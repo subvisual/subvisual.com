@@ -29,6 +29,18 @@ module CustomTemplateHelpers
              class: 'NavOverlay-item', link_class: 'NavOverlay-link')
   end
 
+  def nav_burger_class
+    if light_or_transparent_nav?
+      'Burger--light'
+    end
+  end
+
+  def nav_logo_class
+    if light_or_transparent_nav?
+      'NavLogo--mono'
+    end
+  end
+
   def page_twitter_card_type
     current_page.data.twitter_card_type || 'summary'
   end
@@ -65,5 +77,11 @@ module CustomTemplateHelpers
                                           "&title=#{page_title}" +
                                           "&summary=#{page_description}" +
                                           "&source=#{data.site.url}"
+  end
+
+  private
+
+  def light_or_transparent_nav?
+    current_page.data.nav_class.match(/Nav--(light|transparent)/)
   end
 end
