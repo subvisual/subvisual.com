@@ -1,5 +1,5 @@
 #services.Panel
-  .u-largeMargin
+  .u-defaultThenLargeMargin
   .HorizontalGrid.HorizontalGrid--limited.u-largeMargin
     .HorizontalGrid-cell
       .GridCell.GridCell--alignCenter
@@ -9,11 +9,13 @@
               ' Our
               span.Heading-highlight Services
             .Heading.u-smallMargin
-              | We’ve mastered a set of services based on years of learning and practice.
+              ' We’ve mastered a set of services based
+              | on years of learning and practice.
             .Text
               ' If you’re not sure your problem is within our expertise,
-              = mail_to 'core@subvisual.co', 'we should talk', class: 'Link Link--highlight'
-              |. If we’re not a perfect match, we’ll recommend you another team that’s a better fit.
+              = mail_to 'core@subvisual.co', 'we should talk', class: 'Link Link--highlight Link--noWrap'
+              '. If we’re not a perfect match, we’ll
+              | recommend you another team that’s a better fit.
 
   .HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--lightFrame
     .HorizontalGrid-cell
@@ -27,8 +29,8 @@
               .Heading-highlight
                 | Product Development
             .Text.u-defaultMargin
-              | If you want to create a product or take your current one to a new level
-            = link_to 'Learn more', '/product-development', class: 'ButtonPrimary'
+              | We turn your bright idea into a delightful product.
+            = link_to 'Learn more', '/work/product-development', class: 'ButtonPrimary'
     .HorizontalGrid-cell
       .GridCell.u-largeMargin
         .GridCell-content
@@ -40,8 +42,8 @@
               .Heading-highlight
                 | Consulting
             .Text.u-defaultMargin
-              | Build your own software following our principles and process
-            = link_to 'Learn more', '/consulting', class: 'ButtonPrimary'
+              | We stand alongside your team producing excellent work while carrying our disciplined practices with us.
+            = link_to 'Learn more', '/work/consulting', class: 'ButtonPrimary'
     .HorizontalGrid-cell
       .GridCell.u-largeMargin
         .GridCell-content
@@ -53,8 +55,9 @@
               .Heading-highlight
                 | Training
             .Text.u-defaultMargin
-              | Build your own software following our principles and process
-            = link_to 'Learn more', '/training', class: 'ButtonPrimary'
+              | Steer your team's standards towards a sense of craftsmanship.
+            = link_to 'Learn more', '/work/training', class: 'ButtonPrimary'
+  .u-defaultThenLargeMargin
 
 .Panel.Panel--alternative
   .u-largeMargin

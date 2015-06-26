@@ -1,21 +1,20 @@
 .Panel.Panel--alternative
-  .u-doubleLargeMargin
+  .u-largeThenDoubleLargeMargin
   .GridCell.GridCell--alignCenter.u-largeMargin
     .GridCell-content
       .ContentFormatter.ContentFormatter--centerHorizontally
         h2.Heading.Heading--brand.u-smallMargin
-          ' What's your
-          span.Heading-highlight craft
+          ' What about
+          span.Heading-highlight you
           | ?
 
         p.Text
-          ' Take a look at our requirements and if you think you are a perfect
-          ' fit, send us your application. We'll get back to you as soon as
-          | possible.
+          ' Read our crafts’ requirements, and if you think you fit, get in touch with us.
+          | We’ll get back to you as soon as possible.
 
 .HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--darkFrame
   .HorizontalGrid-cell.Panel.Panel--alternative
-    .u-largeMargin
+    .u-defaultThenLargeMargin
     .GridCell.u-largeMargin
       .GridCell-content
         h2.Heading.Heading--brand.u-smallMargin
@@ -32,15 +31,15 @@
         = link_to 'Apply for developer', '#', class: 'ButtonPrimary'
 
   .HorizontalGrid-cell.Panel
-    .u-largeMargin
+    .u-defaultThenLargeMargin
     .GridCell.u-largeMargin
       .GridCell-content
         h2.Heading.Heading--brand.u-smallMargin
           span.Heading-highlight Designer
         p.Text.u-smallMargin
           ' A qualified design apprentice will have experience with graphical
-          ' design for the web or iOS/Android as well as HTML and CSS. Design
-          ' apprentices will learn to work with a focus on User Experience, by
+          ' design for the web and mobile, as well as basic knowledge of HTML and CSS.
+          ' Design apprentices will learn to work with a focus on User Experience, by
           | designing for the other side of the screen.
 
         p.Text.u-defaultMargin
@@ -48,3 +47,4 @@
           | with real projects, solving real problems.
 
         = link_to 'Apply for designer', '#', class: 'ButtonPrimary'
+.u-defaultThenLargeMargin

@@ -1,12 +1,13 @@
 ---
-title: Subvisual - Minimum Delightful Product
+title: Subvisual - Design Sprint
 page: work
 ---
 
 .Panel
   = partial 'nav'
-  = partial 'mdp/hero'
-= partial 'mdp/steps'
+  = partial 'work/product_development/design_sprint/hero'
+= partial 'work/product_development/design_sprint/steps'
 = partial 'work_with_us', locals: { text: "Do you have something exciting for us to start working on?", buttonText: "Let's get to work" }
+= partial 'work/subvisual_case_study', locals: { title: true }
 = partial 'subvisual_separator'
 = partial 'footer'

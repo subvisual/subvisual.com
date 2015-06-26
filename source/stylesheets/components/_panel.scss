@@ -11,7 +11,7 @@
 // .Panel--clients - A panel with a background that is a world map with all of our clients
 // .Panel--creatorsSchool - A panel for the specific case of Creators School event
 // .Panel--rubyconf - A panel for the specific case of Rubyconf event
-// .Panel--careers - A panel with a background to be used on the careers page hero
+// .Panel--joinUs - A panel with a background to be used on the careers page hero
 // .Panel--secondHome - A panel with a background to be used on the careers page
 // .Panel--easymoney - A panel with an easy.money gradient as background
 // .Panel--techCrunch - A panel with TechCrunch's color as background
@@ -29,7 +29,7 @@
 .Panel.Panel--team,
 .Panel.Panel--company,
 .Panel.Panel--secondHome,
-.Panel.Panel--careers {
+.Panel.Panel--joinUs {
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -83,6 +83,7 @@
 
 .Panel.Panel--creatorsSchool {
   position: relative;
+  overflow: hidden;
 
   .Panel-leftFigure,
   .Panel-rightFigure {
@@ -165,12 +166,12 @@
   }
 }
 
-.Panel.Panel--careers {
-  @include background-image('careers_team.jpg');
+.Panel.Panel--joinUs {
+  @include background-image('join-us_team.jpg');
 }
 
 .Panel.Panel--secondHome {
-  @include background-image('careers_second_home.jpg');
+  @include background-image('join-us_second_home.jpg');
 }
 
 .Panel.Panel--easymoneyGradient {

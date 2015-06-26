@@ -1,17 +1,16 @@
 #team.GridCell.GridCell--alignCenter.u-largeMargin
   .GridCell-content
-    .u-defaultMargin
+    .u-defaultThenLargeMargin
     .ContentFormatter.ContentFormatter--centerHorizontally
-      h2.Heading.Heading--brandLarge.u-smallMargin
+      h2.Heading.Heading--brand.u-smallMargin
         ' Our
         span.Heading-highlight> team
         | of craftsmen
       p.Text
-        ' Our strongest bond as a team is having fun while doing what we love
-        ' together: crafting delightful experiences. We are a small team with
-        | boundless ambitions.
+        ' Our bond as a team stems from having fun while doing what we love together: crafting delightful experiences.
+        | We are a small team with boundless ambitions.
 
-.TeamGrid
+.TeamGrid.u-largeThenDoubleLargeMargin
   - data.team.members.each do |member|
     .TeamGrid-cell
       .TeamMember

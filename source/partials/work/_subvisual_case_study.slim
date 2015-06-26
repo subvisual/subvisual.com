@@ -1,15 +1,16 @@
-.Panel.Panel--subvisualCaseStudy
-  - if title
-    .HorizontalGrid.HorizontalGrid--limited.u-smallMargin
+- if title
+  .Panel
+    .HorizontalGrid.HorizontalGrid--limited.u-defaultThenLargeMargin
       .HorizontalGrid-cell
         .GridCell.GridCell--alignCenter
           .GridCell-content
-            .u-largeMargin
+            .u-defaultThenLargeMargin
             .ContentFormatter.ContentFormatter--centerHorizontally
               h2.Heading.Heading--brand
-                span.Heading-light> Featured
+                span> Featured
                 span.Heading-highlight Project
 
+.Panel.Panel--subvisualCaseStudy
   .HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--withGutters
     .HorizontalGrid-cell
       .ContentFormatter.ContentFormatter--center

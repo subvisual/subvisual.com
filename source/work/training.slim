@@ -5,14 +5,14 @@ page: work
 
 .Panel
   = partial 'nav'
-  = partial 'training/hero'
+  = partial 'work/training/hero'
 .SeparatorImage
   .SeparatorImage-image
     = partial 'work/training.svg'
-= partial 'training/intro'
+= partial 'work/training/intro'
 = partial 'testimony', locals: { quote: '“Passionate and incredibly dedicated guys. They have become a valuable asset of our University.”', author: 'João Miguel Fernandes', job: 'Full Professor at University of Minho' }
-= partial 'training/skills'
-= partial 'testimony', locals: { quote: '“Passionate and incredibly dedicated guys. They have become a valuable asset of our University.” ', author: 'Vasco Silva', job: 'Developer at Tekzenit' }
+= partial 'work/training/skills'
+= partial 'testimony', locals: { quote: '“The Rails course was not only about programming. Understanding the web development process and its best practices was enlightening”', author: 'Vasco Silva', job: 'Developer at Tekzenit' }
 = partial 'work_with_us', locals: { text: "Looking for expert help in a specific project?", buttonText: "Let's talk" }
 = partial 'subvisual_separator'
 = partial 'footer'
