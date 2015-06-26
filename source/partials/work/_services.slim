@@ -15,43 +15,46 @@
               = mail_to 'core@subvisual.co', 'we should talk', class: 'Link Link--highlight'
               |. If we’re not a perfect match, we’ll recommend you another team that’s a better fit.
 
-  .HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--lightFrame.HorizontalGrid--noBottomFrame
+  .HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--lightFrame
     .HorizontalGrid-cell
       .GridCell.u-largeMargin
         .GridCell-content
           .u-defaultMargin
           .ContentFormatter.ContentFormatter--centerHorizontally.u-defaultMargin
             = partial 'work/product_development.svg'
-          h3.Heading.Heading--brand.u-smallMargin
-            .Heading-highlight
-              | Product Development
-          .Text.u-smallMargin
-            | If you want to create a product or take your current one to a new level
-          = link_to 'Learn more', '/product-development', class: 'EngagementLink'
+          .ContentFormatter.ContentFormatter--centerHorizontally
+            h3.Heading.Heading--brand.u-smallMargin
+              .Heading-highlight
+                | Product Development
+            .Text.u-defaultMargin
+              | If you want to create a product or take your current one to a new level
+            = link_to 'Learn more', '/product-development', class: 'ButtonPrimary'
     .HorizontalGrid-cell
       .GridCell.u-largeMargin
         .GridCell-content
           .u-defaultMargin
           .ContentFormatter.ContentFormatter--centerHorizontally.u-defaultMargin
             = partial 'work/consulting.svg'
-          h3.Heading.Heading--brand.u-smallMargin
-            .Heading-highlight
-              | Consulting
-          .Text.u-smallMargin
-            | Build your own software following our principles and process
-          = link_to 'Learn more', '/consulting', class: 'EngagementLink'
+          .ContentFormatter.ContentFormatter--centerHorizontally
+            h3.Heading.Heading--brand.u-smallMargin
+              .Heading-highlight
+                | Consulting
+            .Text.u-defaultMargin
+              | Build your own software following our principles and process
+            = link_to 'Learn more', '/consulting', class: 'ButtonPrimary'
     .HorizontalGrid-cell
       .GridCell.u-largeMargin
         .GridCell-content
           .u-defaultMargin
           .ContentFormatter.ContentFormatter--centerHorizontally.u-defaultMargin
             = partial 'work/training.svg'
-          h3.Heading.Heading--brand.u-smallMargin
-            .Heading-highlight
-              | Training
-          .Text.u-smallMargin
-            | Build your own software following our principles and process
-          = link_to 'Learn more', '/training', class: 'EngagementLink'
+          .ContentFormatter.ContentFormatter--centerHorizontally
+            h3.Heading.Heading--brand.u-smallMargin
+              .Heading-highlight
+                | Training
+            .Text.u-defaultMargin
+              | Build your own software following our principles and process
+            = link_to 'Learn more', '/training', class: 'ButtonPrimary'
 
 .Panel.Panel--alternative
   .u-largeMargin

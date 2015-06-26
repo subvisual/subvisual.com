@@ -82,6 +82,6 @@ module CustomTemplateHelpers
   private
 
   def light_or_transparent_nav?
-    current_page.data.nav_class.match(/Nav--(light|transparent)/)
+    (current_page.data.nav_class || '').match(/Nav--(light|transparent)/)
   end
 end
