@@ -1,3 +1,25 @@
-h2 The page you are looking for was not found.
+.Panel
+  .u-largeMargin
+  .ContentFormatter.ContentFormatter--centerHorizontally
+    h1.Heading.Heading--brandLarge
+      ' 404
+      br
+      span.Heading-highlight oops!
+  .u-doubleLargeMargin
 
-= link_to 'Home', '/'
+.SeparatorImage
+  .SeparatorImage-image
+    /* = partial 'work/error.svg' */
+
+.u-doubleLargeMargin
+.GridCell.GridCell--alignCenter
+  .GridCell-content
+    .ContentFormatter.ContentFormatter--centerHorizontally
+      p.Text.Text--large
+        ' This link may be corrupt or perhaps you typed it
+        br
+        ' incorrectly. Follow this link to get back on track.
+
+      .u-defaultMargin
+
+      a.ButtonPrimary href="/" Back to the homepage
