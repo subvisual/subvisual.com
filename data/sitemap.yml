@@ -1,0 +1,7 @@
+extra:
+  - url: '/blog/'
+    changefreq: 'weekly'
+    title: 'Subvisual - Blog'
+  - url: '/apprenticeship/'
+    changefreq: 'monthly'
+    title: 'Subvisual - Apprenticeship'

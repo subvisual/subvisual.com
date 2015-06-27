@@ -12,3 +12,7 @@ html
             a href = page.url
               = page.data.title || page_title
 
+      - data.sitemap.extra.each do |page|
+        li
+          a href=page.url
+            = page.title || page_title

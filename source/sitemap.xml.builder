@@ -8,4 +8,13 @@ xml.urlset 'xmlns' => 'http://www.sitemaps.org/schemas/sitemap/0.9' do
       xml.priority page.data.priority || '0.5'
     end
   end
+
+  data.sitemap.extra.each do |page|
+    xml.url do
+      xml.loc page_url(page)
+      xml.lastmod Date.today.to_time.iso8601
+      xml.changefreq page.changefreq || 'weekly'
+      xml.priority page.priority || '0.5'
+    end
+  end
 end
