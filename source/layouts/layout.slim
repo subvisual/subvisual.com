@@ -57,3 +57,4 @@ html.Theme itemscope='' itemtype='http://schema.org/WebPage' lang=data.site.lang
     - if build?
       = javascript_include_tag 'segment'
       = javascript_include_tag 'bugherd'
+    = yield_content :javascripts

@@ -5,7 +5,10 @@ page: work
 ---
 
 - content_for :stylesheets
-  = stylesheet_link_tag 'case-studies/easymoney'
+  = stylesheet_link_tag 'case-studies/easy-money'
+
+- content_for :javascripts
+  = javascript_include_tag 'case-studies/easy-money/all'
 
 .Panel.Panel--easymoneyGradient
   = partial 'nav'
