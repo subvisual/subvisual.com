@@ -1,17 +1,9 @@
-= partial 'error_page', locals: { code: 500, message: 'Something went wrong' }
+= partial 'error_page', locals: { code: 500, message: "Something went wrong but we're working on it. Follow one of these links to get updated", title: 'Something went wrong' }
 
-/* .u-doubleLargeMargin */
 .GridCell.GridCell--alignCenter
   .GridCell-content
     .ContentFormatter.ContentFormatter--centerHorizontally
-      p.Text.Text--large
-        ' Somethign went wrong but we're on it
-        br
-        ' Follow one of these links to get updated
-
-      .u-smallThenDefaultMargin
-
-      .HorizontalGrid.HorizontalGrid--withGutters
+      .HorizontalGrid.HorizontalGrid--withInnerGutters
         .HorizontalGrid-cell
           a.ButtonPrimary href="https://twitter.com/subvisual" Check our twitter
           .u-smallMargin
