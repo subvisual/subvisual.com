@@ -1,25 +1,20 @@
-.Panel
-  .u-largeMargin
-  .ContentFormatter.ContentFormatter--centerHorizontally
-    h1.Heading.Heading--brandLarge
-      span.Heading-highlight 500
-      br
-      | Something went wrong
-  .u-doubleLargeMargin
+= partial 'error_page', locals: { code: 500, message: 'Something went wrong' }
 
-.SeparatorImage
-  .SeparatorImage-image
-    = partial '500.svg'
-
-.u-doubleLargeMargin
+/* .u-doubleLargeMargin */
 .GridCell.GridCell--alignCenter
   .GridCell-content
     .ContentFormatter.ContentFormatter--centerHorizontally
       p.Text.Text--large
-        ' This link may be corrupt or perhaps you typed it
+        ' Somethign went wrong but we're on it
         br
-        ' incorrectly. Follow this link to get back on track.
+        ' Follow one of these links to get updated
 
-      .u-defaultMargin
+      .u-smallThenDefaultMargin
 
-      a.ButtonPrimary href="/" Back to the homepage
+      .HorizontalGrid.HorizontalGrid--withGutters
+        .HorizontalGrid-cell
+          a.ButtonPrimary href="https://twitter.com/subvisual" Check our twitter
+          .u-smallMargin
+        .HorizontalGrid-cell
+          a.ButtonPrimary href="mailto:contact@subvisual.co" Contact us
+          .u-smallMargin

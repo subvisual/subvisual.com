@@ -1,17 +1,6 @@
-.Panel
-  .u-largeMargin
-  .ContentFormatter.ContentFormatter--centerHorizontally
-    h1.Heading.Heading--brandLarge
-      ' 404
-      br
-      span.Heading-highlight oops!
-  .u-doubleLargeMargin
+= partial 'error_page', locals: { code: 404, message: 'Page not found' }
 
-.SeparatorImage
-  .SeparatorImage-image
-    = partial '404.svg'
-
-.u-doubleLargeMargin
+/* .u-largeThenDoubleLargeMargin */
 .GridCell.GridCell--alignCenter
   .GridCell-content
     .ContentFormatter.ContentFormatter--centerHorizontally
@@ -20,6 +9,6 @@
         br
         ' incorrectly. Follow this link to get back on track.
 
-      .u-defaultMargin
+      .u-smallThenDefaultMargin
 
       a.ButtonPrimary href="/" Back to the homepage
