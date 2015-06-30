@@ -65,7 +65,10 @@ set :js_dir, 'javascripts'
 set :images_dir, 'images'
 set :partials_dir, 'partials'
 
-activate :autoprefixer
+activate :autoprefixer do |config|
+  config.browsers = ['last 2 version']
+end
+
 activate :directory_indexes
 activate :es6
 
