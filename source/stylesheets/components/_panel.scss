@@ -96,6 +96,14 @@
 
 .Panel.Panel--clients {
   @include background-image('company_clients.png');
+
+  // the background-image's height achieved by dividing the ratio between the top and bottom padding, thus centering the content
+  padding-top: 22.935%;
+  padding-bottom: 22.935%;
+
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .Panel.Panel--creatorsSchool {
