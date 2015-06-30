@@ -3,7 +3,7 @@ $InputText-color-label: $Theme-color-brightTurquoise;
 $InputText-backgroundColor-label: $Theme-color-polar;
 $InputText-color-input: $Theme-color-horizon;
 
-@mixin placeholderToLabelAnimation($animationName, $labelPosition) {
+@mixin placeholderToLabelAnimation($animationName, $labelPosition, $resolution) {
   animation-name: $animationName;
 
   @keyframes #{$animationName} {
@@ -26,7 +26,7 @@ $InputText-color-input: $Theme-color-horizon;
     }
 
     100% {
-      @include font-properties(subvisual, extraSmall);
+      @include font-properties-on-resolution(subvisual, extraSmall, $resolution);
 
       // hack for forcing the final color to remain after the animation ends
       color: $InputText-color-label;
@@ -37,7 +37,7 @@ $InputText-color-input: $Theme-color-horizon;
   }
 }
 
-@mixin labelToPlaceholderAnimation($animationName, $labelPosition) {
+@mixin labelToPlaceholderAnimation($animationName, $labelPosition, $resolution) {
   animation-name: $animationName;
 
   @keyframes #{$animationName} {
@@ -56,7 +56,7 @@ $InputText-color-input: $Theme-color-horizon;
     }
 
     99% {
-      @include font-properties(subvisual, small);
+      @include font-properties-on-resolution(subvisual, small, $resolution);
 
       color: $Theme-color-poloBlue;
       opacity: 0;
@@ -134,14 +134,14 @@ $InputText-color-input: $Theme-color-horizon;
   transition: background-color 0.1s ease, border-color 0.1s ease;
 
   .InputText-label {
-    @include placeholderToLabelAnimation('placeholderToLabel', -90%);
+    @include placeholderToLabelAnimation('placeholderToLabel', -90%, mobile);
 
     z-index: 5;
 
     background-color: $Theme-color-white;
 
     @include media('>tablet') {
-      @include placeholderToLabelAnimation('placeholderToLabel', -120%);
+      @include placeholderToLabelAnimation('placeholderToLabel', -120%, desktop);
     }
   }
 }
@@ -152,10 +152,10 @@ $InputText-color-input: $Theme-color-horizon;
 
     color: $InputText-color-label;
 
-    @include labelToPlaceholderAnimation('labelToPlaceholder', -90%);
+    @include labelToPlaceholderAnimation('labelToPlaceholder', -90%, mobile);
 
     @include media('>tablet') {
-      @include labelToPlaceholderAnimation('labelToPlaceholder', -120%);
+      @include labelToPlaceholderAnimation('labelToPlaceholder', -120%, desktop);
     }
   }
 }
@@ -172,13 +172,21 @@ $InputText-color-input: $Theme-color-horizon;
 
   &.InputText--active {
     .InputText-label {
-      @include placeholderToLabelAnimation('placeholderToLabelLarge', -140%);
+      @include placeholderToLabelAnimation('placeholderToLabelLarge', -140%, mobile);
+
+      @include media('>tablet') {
+        @include placeholderToLabelAnimation('placeholderToLabelLarge', -140%, desktop);
+      }
     }
   }
 
   &.InputText--active.InputText--animateOut {
     .InputText-label {
-      @include labelToPlaceholderAnimation('labelToPlaceholderLarge', -140%);
+      @include labelToPlaceholderAnimation('labelToPlaceholderLarge', -140%, mobile);
+
+      @include media('>tablet') {
+        @include labelToPlaceholderAnimation('labelToPlaceholderLarge', -140%, desktop);
+      }
     }
   }
 }
