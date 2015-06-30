@@ -8,55 +8,75 @@
 
   .HorizontalGrid.HorizontalGrid--limited.u-largeMargin
     .HorizontalGrid-cell
-      .GridCell.GridCell--alignRight
-        = partial "company/motto1.svg"
+      .ContentFormatter.ContentFormatter--centerHorizontallyThenRight
+        .GridCell
+          .GridCell-content
+            = partial "company/motto1.svg"
+            .u-defaultThenLargeMargin
     .HorizontalGrid-cell
-      .GridCell
+      .GridCell.GridCell--small.GridCell--alignCenter
         .GridCell-content
-          h3.Heading.Heading--small.u-smallMargin
-            | Don't just wait for your chance to talk. Listen and think.
-          p.Text
-            ' We value everyone's opinion at Subvisual, which is why we take everything
-            | up to discussion and let everyone speak their minds.
+          .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft
+            h3.Heading.Heading--small.u-smallMargin
+              | Don't just wait for your chance to talk. Listen and think.
+          .ContentFormatter
+            p.Text
+              ' We value everyone's opinion at Subvisual, which is why we take everything
+              | up to discussion and let everyone speak their minds.
 
-  .HorizontalGrid.HorizontalGrid--limited.u-largeMargin
+  .HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--inverted.u-largeMargin
     .HorizontalGrid-cell
-      .GridCell
+      .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft
+        .GridCell
+          .GridCell-content
+            = partial "company/motto2.svg"
+            .u-defaultThenLargeMargin
+    .HorizontalGrid-cell
+      .GridCell.GridCell--small.GridCell--alignCenter
         .GridCell-content
           .ContentFormatter.ContentFormatter--right
-            h3.Heading.Heading--small.u-smallMargin
-              | He who stops getting better, stops being good.
+            .ContentFormatter.ContentFormatter--centerHorizontallyThenRight
+              h3.Heading.Heading--small.u-smallMargin
+                | He who stops getting better, stops being good.
+          .ContentFormatter.ContentFormatter--leftThenRight
             p.Text
               ' We reinforce a culture of continuous learning, taking time to
               ' explore and experiment and allow our craftsmen to aim higher, dig
               | deeper and think bolder.
-    .HorizontalGrid-cell
-      .GridCell
-        = partial "company/motto2.svg"
 
   .HorizontalGrid.HorizontalGrid--limited.u-largeMargin
     .HorizontalGrid-cell
-      .GridCell.GridCell--alignRight
-        = partial "company/motto3.svg"
+      .ContentFormatter.ContentFormatter--centerHorizontallyThenRight
+        .GridCell
+          .GridCell-content
+            = partial "company/motto3.svg"
+            .u-defaultThenLargeMargin
     .HorizontalGrid-cell
-      .GridCell
+      .GridCell.GridCell--small.GridCell--alignCenter
         .GridCell-content
-          h3.Heading.Heading--small.u-smallMargin
-            | Design is a method of solving problems.
-          p.Text
-            ' Design isn’t just about making things look good.
-            | We want to design the user’s experience, and make products that are tailored to perfection.
+          .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft
+            h3.Heading.Heading--small.u-smallMargin
+              | Design is a method of solving problems.
+          .ContentFormatter
+            p.Text
+              ' Design isn’t just about making things look good.
+              | We want to design the user’s experience, and make products that are tailored to perfection.
 
-  .HorizontalGrid.HorizontalGrid--limited.u-largeThenDoubleLargeMargin
+  .HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--inverted.u-largeThenDoubleLargeMargin
     .HorizontalGrid-cell
-      .GridCell
+      .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft
+        .GridCell
+          .GridCell-content
+            = partial "company/motto4.svg"
+            .u-defaultThenLargeMargin
+    .HorizontalGrid-cell
+      .GridCell.GridCell--small.GridCell--alignCenter
         .GridCell-content
           .ContentFormatter.ContentFormatter--right
-            h3.Heading.Heading--small.u-smallMargin
-              | Restlessly pursue excellence.
+            .ContentFormatter.ContentFormatter--centerHorizontallyThenRight
+              h3.Heading.Heading--small.u-smallMargin
+                | Restlessly pursue excellence.
+          .ContentFormatter.ContentFormatter--leftThenRight
             p.Text
               ' We believe the old adage that says good is the enemy of great.
               | We will not stop until all the work we do has reached its full potencial.
-    .HorizontalGrid-cell
-      .GridCell
-        = partial "company/motto4.svg"
