@@ -3,44 +3,51 @@ footer
     .HorizontalGrid-cell
       .SitemapTopic
         h1.SitemapTopic-heading
-          | Services
+          | Work
+        .u-xSmallMargin
+        ul
+          li = link_to 'Product Development', '/work/product-development', class: 'SitemapTopic-link'
+          li = link_to 'Consulting', '/work/consulting', class: 'SitemapTopic-link'
+          li = link_to 'Training', '/work/training', class: 'SitemapTopic-link'
+          li = link_to 'Design Sprint', '/work/design-sprint', class: 'SitemapTopic-link'
+          li = link_to 'MDP', '/work/mdp', class: 'SitemapTopic-link'
+
+    .HorizontalGrid-cell
+      .SitemapTopic
+        h1.SitemapTopic-heading
+          | Company
         ul.SitemapTopic-links
-          li Consulting
-          li Product Development
-          li Training
-          li Hire us
+          li = link_to 'History', '/company/history', class: 'SitemapTopic-link'
+          li = link_to 'Values', '/company/values', class: 'SitemapTopic-link'
+          li = link_to 'Team', '/company/team', class: 'SitemapTopic-link'
+          li = link_to 'Join Us', '/company/join-us', class: 'SitemapTopic-link'
 
     .HorizontalGrid-cell
-      h1.SitemapTopic-heading
-        | Open Source
-      ul.SitemapTopic-links
-        li Tetrominos
-        li The Shelf
-        li Tripl.it
+      .SitemapTopic
+        h1.SitemapTopic-heading
+          | Community
+        ul.SitemapTopic-links
+          li = link_to 'Join Us', '/community#creators-school', class: 'SitemapTopic-link'
+          li = link_to 'RubyConf Portugal', '/community#rubyconfpt', class: 'SitemapTopic-link'
+          li = link_to 'BragaRB', '/community#bragarb', class: 'SitemapTopic-link'
+          li = link_to 'BragaJS', '/community#bragajs', class: 'SitemapTopic-link'
 
     .HorizontalGrid-cell
-      h1.SitemapTopic-heading
-        | Events
-      ul.SitemapTopic-links
-        li RubyConf Portugal
-        li Creators School
-        li Braga.js
-        li Coder Dojo
-        li Apprenticeship Program
-
-    .HorizontalGrid-cell
-      h1.SitemapTopic-heading
-        | Case Studies
-      ul.SitemapTopic-links
-        li Rebrading
-        li The Shelf
-        li OncoStats
+      .SitemapTopic
+        h1.SitemapTopic-heading
+          | Follow Us
+        ul.SitemapTopic-links
+          li = link_to 'Blog', '/blog', class: 'SitemapTopic-link'
+          li = link_to 'Twitter', 'https://twitter.com/subvisual', target: :blank, class: 'SitemapTopic-link'
+          li = link_to 'Facebook', 'https://www.facebook.com/subvisual.co', target: :blank, class: 'SitemapTopic-link'
+          li = link_to 'Github', 'https://github.com/subvisual', target: :blank, class: 'SitemapTopic-link'
+          li = link_to 'Dribble', 'https://dribbble.com/subvisual', target: :blank, class: 'SitemapTopic-link'
 
   .Footer
     .Footer-credits
       span.Footer-handcrafted Handcrafted by
       span.Footer-subvisual SUBVISUAL
-    .Footer-work
+    = link_to '#', class: 'Footer-work'
       span.Footer-interested Interested in our services?
       .Footer-workText
-        = link_to "Let's get to work", '#', class: 'EngagementLink EngagementLink--iconRight EngagementLink--light'
+        .EngagementLink.EngagementLink--iconRight.EngagementLink--light Let's get to work
