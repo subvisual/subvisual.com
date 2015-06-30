@@ -1,0 +1,24 @@
+.HorizontalGrid
+  .HorizontalGrid-cell
+    = link_to '/case-studies/easy-money', class: 'Panel Panel--creatorsSchoolCaseStudy'
+      .Panel-contentWithBackground
+        .u-largeThenDoubleLargeMargin
+        .HorizontalGrid.HorizontalGrid--withGutters.u-largeThenDoubleLargeMargin
+          .HorizontalGrid-cell
+            .ContentFormatter.ContentFormatter--centerHorizontally
+              img.RatioEnforcer.RatioEnforcer--caseStudiesLogos(
+                src="#{image_path('case-studies/creators-school/logo.png')}"
+                srcset="#{image_path('case-studies/creators-school/logo.png')} 200w, #{image_path('case-studies/creators-school/logo.png')} 400w"
+                sizes="(min-width: 650px) 250px, 200px"
+                alt="easy.money logo"
+              )
+
+          .HorizontalGrid-cell
+            .Heading.Heading--brand
+              .Heading-light
+                | Creators School
+            .Text.Text--brand.u-smallMargin
+              | Design, Development, Business Partners
+            .Text.Text--light
+              ' An highly-intensive 9 week program that teaches people how to
+              | program and helps them find a job in the tech industry.

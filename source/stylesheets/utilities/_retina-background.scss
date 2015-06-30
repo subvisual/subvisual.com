@@ -1,0 +1,7 @@
+@mixin retina-background($filename, $extension: 'png') {
+  @include background-image("#{$filename}.#{$extension}");
+
+  @media (-o-min-device-pixel-ratio:5/4), (-webkit-min-device-pixel-ratio:1.2), (min-resolution:120dpi) {
+    @include background-image("#{$filename}@2x.#{$extension}");
+  }
+}

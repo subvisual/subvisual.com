@@ -35,25 +35,17 @@
 }
 
 .Panel.Panel--home {
-  @include background-image('homepage/hero-mobile.png');
+  @include retina-background('homepage/hero-mobile');
 
   padding-bottom: 84.38%;
 
   background-color: transparent;
   background-size: contain;
 
-  @media (-o-min-device-pixel-ratio:5/4), (-webkit-min-device-pixel-ratio:1.2), (min-resolution:120dpi) {
-    @include background-image('homepage/hero-mobile@2x.png');
-  }
-
   @include media('>=tablet') {
-    @include background-image('homepage/hero-image.png');
+    @include retina-background('homepage/hero-image');
 
     padding-bottom: 37.54%;
-
-    @media (-o-min-device-pixel-ratio:5/4), (-webkit-min-device-pixel-ratio:1.2), (min-resolution:120dpi) {
-      @include background-image('homepage/hero-image@2x.png');
-    }
   }
 }
 
@@ -71,7 +63,7 @@
 }
 
 .Panel.Panel--easyMoneyCaseStudy {
-  @include background-image('case-studies/easy-money/banner@2x.png');
+  @include retina-background('case-studies/easy-money/banner');
 
   &:hover {
     .Panel-contentWithBackground {
@@ -81,7 +73,7 @@
 }
 
 .Panel.Panel--creatorsSchoolCaseStudy {
-  @include background-image('case-studies/creators-school/banner@2x.png');
+  @include retina-background('case-studies/creators-school/banner');
 
   &:hover {
     .Panel-contentWithBackground {
@@ -212,7 +204,7 @@
 }
 
 .Panel.Panel--easymoneyMapaMundi {
-  @include background-image('case-studies/easy-money/easymoney-header.png');
+  @include retina-background('case-studies/easy-money/easymoney-header');
 
   justify-content: center;
 
@@ -224,10 +216,6 @@
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
-
-  @media (-o-min-device-pixel-ratio:5/4), (-webkit-min-device-pixel-ratio:1.2), (min-resolution:120dpi) {
-    @include background-image('case-studies/easy-money/easymoney-header@2x.png');
-  }
 }
 
 .Panel.Panel--techCrunch {

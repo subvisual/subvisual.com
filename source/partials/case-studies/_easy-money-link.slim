@@ -1,0 +1,24 @@
+.HorizontalGrid
+  .HorizontalGrid-cell
+    = link_to '/case-studies/easy-money', class: 'Panel Panel--easyMoneyCaseStudy'
+      .Panel-contentWithBackground
+        .u-largeThenDoubleLargeMargin
+        .HorizontalGrid.HorizontalGrid--withGutters.u-largeThenDoubleLargeMargin
+          .HorizontalGrid-cell
+            .ContentFormatter.ContentFormatter--centerHorizontally
+              img.RatioEnforcer.RatioEnforcer--caseStudiesLogos(
+                src="#{image_path('case-studies/easy-money/logo.png')}"
+                srcset="#{image_path('case-studies/easy-money/logo.png')} 200w, #{image_path('case-studies/easy-money/logo.png')} 400w"
+                sizes="(min-width: 650px) 250px, 200px"
+                alt="easy.money logo"
+              )
+
+          .HorizontalGrid-cell
+            .Heading.Heading--brand
+              .Heading-light
+                | Easy Money
+            .Text.Text--brand.u-smallMargin
+              | Design, Development, Business Partners
+            .Text.Text--light
+              ' A platform that allows people to send and receive money
+              | to anywhere in the world in a matter of seconds, for free.
