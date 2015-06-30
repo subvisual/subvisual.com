@@ -59,18 +59,4 @@
             = link_to 'Learn more', '/work/training', class: 'ButtonPrimary'
   .u-defaultThenLargeMargin
 
-.Panel.Panel--alternative
-  .u-largeMargin
-  .HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--withGutters.u-largeMargin
-    .HorizontalGrid-cell
-      h2.Heading.Heading--brand.u-smallMargin
-        ' Our
-        span.Heading-highlight> Technologies
-        | of choice
-      .Text
-        ' When it comes to deciding which technologies to use, we handpick what
-        ' best suits you and your project. Having said that, it’s fair to say that
-        | Rails, Node.js and Angular.Js are between our favourites.
-    .HorizontalGrid-cell
-      .ContentFormatter.ContentFormatter--center
-        = image_tag 'technologies.png', alt: "Our technologies' logos", class: 'RatioEnforcer RatioEnforcer--technologies'
+= partial 'technologies'
