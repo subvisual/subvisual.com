@@ -1,3 +1,6 @@
-h2 The page you are looking for was not found.
+= partial 'error_page', locals: { code: 404, message: 'This link may be corrupted or perhaps you typed it incorrectly. Follow this link to get back on track.', title: 'Page not found' }
 
-= link_to 'Home', '/'
+.GridCell.GridCell--alignCenter
+  .GridCell-content
+    .ContentFormatter.ContentFormatter--centerHorizontally
+      a.ButtonPrimary href="/" Back to the homepage
