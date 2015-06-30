@@ -1,14 +1,14 @@
 # Required
 language: 'en-us'
-url: 'http://www.subvisual.co'
+url: 'https://subvisual.co'
 human_url: 'subvisual.co'
 name: 'Subvisual Website'
-description: 'Website for Subvisual'
+description: 'Since 2011, Subvisual has helped companies transform ideas into successful products. We are a small, powerful team of professionals who understand how to create, build, and grow digital products.'
 title: 'Subvisual'
 
 # Optional
 logo_image_name: ''
 logo_image_path: ''
-twitter_handle: ''
-# facebook_app_id: ''
-
+twitter_handle: '@subvisual'
+facebook_app_id: '169112516473978'
+facebook_admins: '169112516473978,100000633932565,1448175923'
