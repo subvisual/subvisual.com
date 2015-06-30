@@ -1,25 +1,28 @@
-.GridCell.GridCell--alignCenter.u-largeMargin
-  .GridCell-content
-    .ContentFormatter.ContentFormatter--centerHorizontally
-      h2.Heading.Heading--brand.u-smallMargin
-        ' It started out of
-        span.Heading-highlight friendship
-        | ...
-      p.Text
-        ' Our company was born out of friendship between a group of very
-        ' ambitious and talented people.
-        | That friendship moulded our team culture and it is part of who we are today.
+#history.Panel.Panel--alternative
+  .u-largeThenDoubleLargeMargin
+  .GridCell.GridCell--alignCenter
+    .GridCell-content
+      .ContentFormatter.ContentFormatter--centerHorizontally
+        h2.Heading.Heading--brand.u-smallMargin
+          ' It started out of
+          span.Heading-highlight friendship
+          | ...
+        p.Text
+          ' Our company was born out of friendship between a group of very
+          ' ambitious and talented people.
+          | That friendship moulded our team culture and it is part of who we are today.
+      .u-defaultThenLargeMargin
 
-.GridCell.GridCell--alignCenter.u-defaultMargin
-  .GridCell-content
-    .ContentFormatter.ContentFormatter--centerHorizontally
-      h2.Heading.Heading--brand.u-smallMargin
-        ' ...and grew with
-        span.Heading-highlight talent
-      p.Text
-        ' Over the following years, we hired and trained craftsmen that showed
-        ' distinct potential and proved to fit our culture. We make sure everyone
-        | that joins our team lives our values and principles the same way we do.
+  .GridCell.GridCell--alignCenter.u-smallThenDefaultMargin
+    .GridCell-content
+      .ContentFormatter.ContentFormatter--centerHorizontally
+        h2.Heading.Heading--brand.u-smallMargin
+          ' ...and grew with
+          span.Heading-highlight talent
+        p.Text
+          ' Over the following years, we hired and trained craftsmen that showed
+          ' distinct potential and proved to fit our culture. We make sure everyone
+          | that joins our team lives our values and principles the same way we do.
 
 .ContentFormatter.ContentFormatter--center.u-largeMargin
   = link_to "Learn about our values", "#values", class: "ButtonSecondary"

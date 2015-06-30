@@ -1,5 +1,5 @@
 .Panel
-  .u-defaultThenLargeMargin
+  .u-largeThenDoubleLargeMargin
   .HorizontalGrid.HorizontalGrid--limited
     .HorizontalGrid-cell
       .GridCell.GridCell--alignCenter
@@ -8,13 +8,13 @@
             h2.Heading.u-smallMargin
               ' Giving back to the community through events and Open Source
               | projects
-            p.Text.u-defaultThenLargeMargin
+            p.Text.u-largeThenDoubleLargeMargin
               ' We aim to do our part and give back to the community, in an
               ' attempt to inspire people and contribute for a better ecosystem.
               ' From international events to an active contribution to Open Source
               | projects, we keep ourselves pretty busy.
 
-.Panel.Panel--alternative.Panel--creatorsSchool
+#creatorsschool.Panel.Panel--alternative.Panel--creatorsSchool
   .HorizontalGrid.HorizontalGrid--limited
     .HorizontalGrid-cell
       .GridCell.GridCell--alignCenter
@@ -29,14 +29,14 @@
             ' Creators School is definitely our crown jewel.
             ' It’s an intensive learning program that teaches people how to code for the web.
             | The purpose of this program is to qualify people and open new opportunities for their careers.
-          .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft.u-largeMargin
+          .ContentFormatter.ContentFormatter--center.u-largeMargin
             = link_to 'Visit the website', 'http://creatorsschool.com/', class: 'ButtonSecondary'
   .Panel-leftFigure
     = partial 'community/batman.svg'
   .Panel-rightFigure
     = partial 'community/ironman.svg'
 
-.Panel.Panel--rubyconf
+#rubyconfpt.Panel.Panel--rubyconf
   .HorizontalGrid.HorizontalGrid--limited
     .HorizontalGrid-cell
       .GridCell.GridCell--alignCenter
@@ -50,12 +50,12 @@
             ' Our team has a deep connection with Ruby and that was one of the things that brought us together when we created Subvisual.
             ' Having the opportunity to organize such an event and to continue fostering the portuguese ruby community is something we’re proud of.
             ' The second edition will take place on September 14 and 15.
-          .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft.u-largeMargin
+          .ContentFormatter.ContentFormatter--center.u-largeMargin
             = link_to 'Visit the website', 'http://rubyconf.pt/', class: 'ButtonSecondary'
 
 .Panel.Panel--alternative
   .HorizontalGrid.HorizontalGrid--limited
-    .HorizontalGrid-cell
+    #bragajs.HorizontalGrid-cell
       .GridCell
         .GridCell-content
           .u-defaultThenLargeMargin
@@ -69,7 +69,7 @@
             | It’s also a place to talk about the Web and Mobile worlds.
           .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft.u-noneThenLargeMargin
             = link_to 'Visit the website', '#', class: 'ButtonSecondary'
-    .HorizontalGrid-cell
+    #bragarb.HorizontalGrid-cell
       .GridCell
         .GridCell-content
           .u-defaultThenLargeMargin

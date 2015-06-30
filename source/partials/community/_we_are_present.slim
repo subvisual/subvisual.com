@@ -1,5 +1,5 @@
 .Panel.Panel--alternative
-  .u-defaultThenLargeMargin
+  .u-largeThenDoubleLargeMargin
   .HorizontalGrid.HorizontalGrid--limited
     .HorizontalGrid-cell
       .GridCell.GridCell--alignCenter
@@ -9,16 +9,16 @@
               ' We are
               span.Heading-highlight there
           .ContentFormatter.ContentFormatter--centerHorizontally.u-smallMargin
-            h3.Heading
-              | Caring a lot for our community is not enough, we are part of it.
-          .ContentFormatter.ContentFormatter--centerHorizontally.u-defaultThenLargeMargin
+            h3.Heading.Heading--small
+              | Caring a lot for our community means being a part of it.
+          .ContentFormatter.ContentFormatter--centerHorizontally.u-largeThenDoubleLargeMargin
             p.Text
               ' As we organize our own events we love to participate in other
               | ones, here in Portugal and across borders.
 
   .HorizontalGrid.HorizontalGrid--limited.u-defaultThenLargeMargin
     .HorizontalGrid-cell
-      .ContentFormatter.ContentFormatter--centerHorizontally
+      .GridCell.GridCell--alignRight
         .RatioEnforcer.RatioEnforcer--weArePresentIcons
           = partial "community/speakers.svg"
     .HorizontalGrid-cell
@@ -45,7 +45,7 @@
 
   .HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--inverted.u-defaultThenLargeMargin
     .HorizontalGrid-cell
-      .ContentFormatter.ContentFormatter--centerHorizontally
+      .GridCell
         .RatioEnforcer.RatioEnforcer--weArePresentIcons
           = partial "community/educators.svg"
     .HorizontalGrid-cell
@@ -72,9 +72,9 @@
               = link_to 'Shift Appens', 'http://shiftappens.com/', class: 'Link'
               | , in Coimbra.
 
-  .HorizontalGrid.HorizontalGrid--limited.u-defaultThenLargeMargin
+  .HorizontalGrid.HorizontalGrid--limited.u-largeThenDoubleLargeMargin
     .HorizontalGrid-cell
-      .ContentFormatter.ContentFormatter--centerHorizontally
+      .GridCell.GridCell--alignRight
         .RatioEnforcer.RatioEnforcer--weArePresentIcons
           = partial "community/attendees.svg"
     .HorizontalGrid-cell

@@ -1,14 +1,14 @@
 #services.Panel
-  .u-defaultThenLargeMargin
+  .u-largeThenDoubleLargeMargin
   .HorizontalGrid.HorizontalGrid--limited.u-largeMargin
     .HorizontalGrid-cell
       .GridCell.GridCell--alignCenter
         .GridCell-content
           .ContentFormatter.ContentFormatter--centerHorizontally
-            h2.Heading.Heading--brand.u-largeMargin
+            h2.Heading.Heading--brand.u-smallThenDefaultMargin
               ' Our
               span.Heading-highlight Services
-            .Heading.u-smallMargin
+            .Heading.Heading--small.u-smallMargin
               ' We’ve mastered a set of services based
               | on years of learning and practice.
             .Text
@@ -57,6 +57,6 @@
             .Text.u-defaultMargin
               | Steer your team's standards towards a sense of craftsmanship.
             = link_to 'Learn more', '/work/training', class: 'ButtonPrimary'
-  .u-defaultThenLargeMargin
+  .u-largeThenDoubleLargeMargin
 
 = partial 'technologies'

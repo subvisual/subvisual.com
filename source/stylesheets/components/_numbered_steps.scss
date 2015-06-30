@@ -51,8 +51,8 @@ $NumberedStepsline-layer: 1;
 
   position: relative;
 
-  padding-top: $Theme-spacing-default;
-  padding-bottom: $Theme-spacing-default;
+  padding-top: $Theme-spacing-large;
+  padding-bottom: $Theme-spacing-large;
 
   &:after {
     content: '';
@@ -134,8 +134,8 @@ $NumberedStepsline-layer: 1;
 
 @include media('>=tablet') {
   .NumberedSteps {
-    padding-top: $Theme-spacing-large;
-    padding-bottom: $Theme-spacing-large;
+    padding-top: $Theme-spacing-large * 2;
+    padding-bottom: $Theme-spacing-large * 2;
 
     &:after {
       left: 50%;

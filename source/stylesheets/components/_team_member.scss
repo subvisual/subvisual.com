@@ -67,8 +67,6 @@ $TeamMember-max-width-small: 200px;
 .TeamMember-position {
   @include font-properties(heading, small);
 
-  margin-bottom: $Theme-spacing-xSmall;
-
   color: $Theme-color-horizon;
 
   font-weight: $Theme-typography-fontWeight-bold;
@@ -77,7 +75,6 @@ $TeamMember-max-width-small: 200px;
 .TeamMember-separator {
   width: 50px;
   margin: 0;
-  margin-bottom: $Theme-spacing-small;
 
   border: 2px solid $Theme-color-polar;
 }
@@ -88,7 +85,6 @@ $TeamMember-max-width-small: 200px;
 
 .TeamMember-social {
   margin-top: $Theme-spacing-small;
-  margin-bottom: $Theme-spacing-default;
 }
 
 .TeamMember-socialLink {

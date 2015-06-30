@@ -1,6 +1,6 @@
-#team.GridCell.GridCell--alignCenter.u-largeMargin
+#team.GridCell.GridCell--alignCenter.u-defaultThenLargeMargin
   .GridCell-content
-    .u-defaultThenLargeMargin
+    .u-largeThenDoubleLargeMargin
     .ContentFormatter.ContentFormatter--centerHorizontally
       h2.Heading.Heading--brand.u-smallMargin
         ' Our
@@ -17,7 +17,9 @@
         = image_tag "team/#{member.picture}.png", class: "TeamMember-picture"
         h3.TeamMember-name = member.name
         p.TeamMember-position = member.position
+        .u-xSmallThenSmallMargin
         hr.TeamMember-separator
+        .u-xSmallThenSmallMargin
         .TeamMember-bio
           p.Text.Text--small = member.bio
         - if member.social
@@ -25,3 +27,4 @@
             - member.social.each_pair do |site, link|
               = link_to link do
                 = image_tag "icons/#{site}.png", class: "TeamMember-socialLink"
+        .u-defaultThenLargeMargin
