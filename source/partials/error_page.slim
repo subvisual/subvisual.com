@@ -1,21 +1,21 @@
-.ErrorPage
-  .Panel
-    .u-defaultThenLargeMargin
-    .ContentFormatter.ContentFormatter--centerHorizontally
-      h1.Heading.Heading--brandLarge
-        span.Heading-highlight = code
-        br
-        = title
-    .u-largeThenDoubleLargeMargin
-
-  .SeparatorImage
-    .SeparatorImage-image
-      = partial "#{code}.svg"
+.Panel
+  .u-defaultThenLargeMargin
+  .ContentFormatter.ContentFormatter--centerHorizontally
+    h1.Heading.Heading--brandLarge
+      span.Heading-highlight = code
+      br
+      = title
   .u-largeThenDoubleLargeMargin
 
-  .GridCell.GridCell--alignCenter
-    .GridCell-content
-      .ContentFormatter.ContentFormatter--centerHorizontally
-        p.Text.Text--large
-          .ErrorPage-message = message
-        .u-smallThenDefaultMargin
+.SeparatorImage
+  .SeparatorImage-image
+    = partial "#{code}.svg"
+.u-largeThenDoubleLargeMargin
+
+.GridCell.GridCell--alignCenter
+  .GridCell-content
+    .u-smallMargin
+    .ContentFormatter.ContentFormatter--centerHorizontally
+      p.Text
+        = message
+      .u-smallThenDefaultMargin
