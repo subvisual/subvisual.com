@@ -63,7 +63,7 @@
 }
 
 .Panel.Panel--easyMoneyCaseStudy {
-  @include retina-background('case-studies/easy-money/banner');
+  @include retina-background('case-studies/easy-money/banner', 'jpg');
 
   &:hover {
     .Panel-contentWithBackground {
@@ -73,7 +73,7 @@
 }
 
 .Panel.Panel--creatorsSchoolCaseStudy {
-  @include retina-background('case-studies/creators-school/banner');
+  @include retina-background('case-studies/creators-school/banner', 'jpg');
 
   &:hover {
     .Panel-contentWithBackground {
