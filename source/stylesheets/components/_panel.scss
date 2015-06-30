@@ -57,12 +57,37 @@
   }
 }
 
-.Panel.Panel--subvisualCaseStudy {
-  @include background-image('subvisual_case_study.png');
+.Panel.Panel--easyMoneyCaseStudy,
+.Panel.Panel--creatorsSchoolCaseStudy {
+  background-size: cover;
+
+  text-decoration: none;
+
+  transition: background 0.2s;
+
+  .Panel-contentWithBackground {
+    background: rgba(#0b2633, 0.85);
+  }
+}
+
+.Panel.Panel--easyMoneyCaseStudy {
+  @include background-image('case-studies/easy-money/banner@2x.png');
+
+  &:hover {
+    .Panel-contentWithBackground {
+      background: linear-gradient(to left, rgba(#d056a4, 0.85), rgba(#372468, 0.85));
+    }
+  }
 }
 
 .Panel.Panel--creatorsSchoolCaseStudy {
-  @include background-image('creators_school_case_study.png');
+  @include background-image('case-studies/creators-school/banner@2x.png');
+
+  &:hover {
+    .Panel-contentWithBackground {
+      background: rgba(#f06f2a, 0.85);
+    }
+  }
 }
 
 .Panel.Panel--fishTank {

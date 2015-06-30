@@ -67,3 +67,11 @@
     max-width: 300px;
   }
 }
+
+.RatioEnforcer.RatioEnforcer--caseStudiesLogos {
+  max-width: 200px;
+
+  @include media('>tablet') {
+    max-width: 250px;
+  }
+}
