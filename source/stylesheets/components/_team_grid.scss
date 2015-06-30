@@ -57,11 +57,20 @@ $susy: (
     }
   }
 
-  @include media('>=700px') {
+  @include media('>=700px', '<1000px') {
     width: span(4);
     margin-right: gutter();
 
     &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+
+  @include media('>=1000px') {
+    width: span(3);
+    margin-right: gutter();
+
+    &:nth-child(4n) {
       margin-right: 0;
     }
   }

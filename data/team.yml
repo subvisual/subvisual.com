@@ -1,39 +1,93 @@
 members:
-  - name: "Luis Ferreira"
-    picture: "zamith"
-    position: "Developer"
-    bio: "Has worked on the web for a while now, mainly using Ruby and Ruby on
-      Rails. Enjoys open source and giving back to the community, having taught
-      Rails to hundreds of people."
+  - name: "Roberto Machado"
+    picture: "roberto-machado"
+    position: "Founder & CEO"
+    bio: "Breathes technology and deeply believes, hence the creation of Subvisual, 
+    that it is the medium for a better future. Always has 5 minutes to listen to you."
     social:
-      twitter: "https://twitter.com/zamith"
-      github: "https://github.com/zamith"
+      twitter: "https://twitter.com/rmdgb"
+      github: "https://github.com/rmdmachado"
+
+  - name: "Laura Esteves"
+    picture: "laura-esteves"
+    position: "Head of Operations"
+    bio: "Multitasking. Purpose: Making life easier. Sidekicks: Minions. 
+    This smiley girl can mislead you to think she is all niceness. Give her a 
+    challenge and see the workforce she becomes."
+    social:
+      twitter: "https://twitter.com/lauraeesteves"
 
   - name: "Bruno Azevedo"
-    picture: "zamith"
+    picture: "bruno-azevedo"
+    position: "Developer"
+    bio: "Likes to make a difference in everything he does. Music lover and practitioner. 
+    Healthy Hacker wannabe."
+    social:
+      twitter: "https://twitter.com/azevedo-252"
+      github: "https://github.com/azevedo_252"
+
+  - name: "Francisco Baila"
+    picture: "francisco-baila"
     position: "Designer"
-    bio: "Has worked on the web for a while now, mainly using Ruby and Ruby on
-      Rails."
+    bio: "Cares about overcoming self limitations. Working to turn technology into a friend."
     social:
-      twitter: "https://twitter.com/zamith"
-      dribbble: "https://github.com/zamith"
+      twitter: "https://twitter.com/fcBaila"
+      dribbble: "https://dribbble.com/franciscobaila"
 
-  - name: "Luis Ferreira"
-    picture: "zamith"
+  - name: "Gabriel Poça"
+    picture: "gabriel-poca"
+    position: "Developer"
+    bio: "There is no time for introductions, but if there was, you would instantly understand that this guy is a developer and he loves every aspect of it."
+    social:
+      twitter: "https://twitter.com/gabrielgpoca"
+      github: "https://github.com/gabrielpoca"
+
+  - name: "João Ferreira"
+    picture: "joao-ferreira"
+    position: "Designer"
+    bio: "Believes Design is not about mastering tools but about mastering people. 
+    Passionate about music, movies and whisky."
+    social:
+      twitter: "https://twitter.com/jferreiradzn"
+      dribbble: "https://dribbble.com/jferreiradzn"
+
+  - name: "João Justo"
+    picture: "joao-justo"
     position: "Developer"
     bio: "Has worked on the web for a while now, mainly using Ruby and Ruby on
       Rails. Enjoys open source and giving back to the community, having taught
       Rails to hundreds of people."
     social:
+      twitter: "https://twitter.com/jpjustonunes"
+      github: "https://github.com/joaojusto"
+
+  - name: "Luis Ferreira"
+    picture: "luis-ferreira"
+    position: "Developer"
+    bio: "Has worked on the web for a while now, mainly using Ruby and Ruby on 
+    Rails. Enjoys open source and giving back to the community, having taught 
+    Rails to hundreds of people."
+    social:
       twitter: "https://twitter.com/zamith"
       github: "https://github.com/zamith"
 
-  - name: "Luis Ferreira"
-    picture: "zamith"
+  - name: "Miguel Palhas"
+    picture: "miguel-palhas"
+    position: "Developer & SysAdmin"
+    bio: "All-round developer with a background in High Performance Computing 
+    and a passion for the Open Source world. Still dreams about becoming a real 
+    game developer someday."
+    social:
+      twitter: "https://twitter.com/naps62"
+      github: "https://github.com/naps62"
+
+
+  - name: "Ronaldo Sousa"
+    picture: "ronaldo-sousa"
     position: "Developer"
     bio: "Has worked on the web for a while now, mainly using Ruby and Ruby on
       Rails. Enjoys open source and giving back to the community, having taught
       Rails to hundreds of people."
     social:
-      twitter: "https://twitter.com/zamith"
-      github: "https://github.com/zamith"
+      twitter: "https://twitter.com/ronaldofsousa"
+      github: "https://github.com/ronaldofs"

@@ -28,8 +28,8 @@
 
 @import 'blue/theme_vars';
 
-$TeamMember-max-width: 300px;
-$TeamMember-max-width-small: 150px;
+$TeamMember-max-width: 200px;
+$TeamMember-max-width-small: 200px;
 
 .TeamMember {
   display: flex;
@@ -60,6 +60,8 @@ $TeamMember-max-width-small: 150px;
 
   font-weight: $Theme-typography-fontWeight-bold;
   text-transform: uppercase;
+
+  white-space: nowrap;
 }
 
 .TeamMember-position {
@@ -81,8 +83,6 @@ $TeamMember-max-width-small: 150px;
 }
 
 .TeamMember-bio {
-  @include font-properties(bodyText, base);
-
   flex-grow: 1;
 }
 
