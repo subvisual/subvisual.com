@@ -75,3 +75,11 @@
     max-width: 250px;
   }
 }
+
+.RatioEnforcer.RatioEnforcer--services {
+  max-width: 150px;
+
+  @include media('>tablet') {
+    max-width: 250px;
+  }
+}
