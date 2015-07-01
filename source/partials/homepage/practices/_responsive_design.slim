@@ -2,10 +2,22 @@
   .GridCell-content
     .u-defaultThenLargeMargin
     .ContentFormatter.ContentFormatter--centerHorizontally
-      img(
+      img.u-onlySmall(
+        src="#{image_path('homepage/practices/mobile-responsive.png')}"
+        srcset="#{image_path('homepage/practices/mobile-responsive.png')} 150w, #{image_path('homepage/practices/mobile-responsive@2x.png')} 300w"
+        sizes="150px"
+        alt="Devices with different resolutions"
+      )
+      img.u-onlyResponsibleResponsiveDesignPicture(
+        src="#{image_path('homepage/practices/intermediate-responsive.png')}"
+        srcset="#{image_path('homepage/practices/intermediate-responsive.png')} 226w, #{image_path('homepage/practices/intermediate-responsive@2x.png')} 452w"
+        sizes="225px"
+        alt="Devices with different resolutions"
+      )
+      img.u-onlyAboveResponsibleResponsiveDesignPicture(
         src="#{image_path('homepage/practices/responsive.png')}"
         srcset="#{image_path('homepage/practices/responsive.png')} 407w, #{image_path('homepage/practices/responsive@2x.png')} 814w"
-        sizes="(min-width: 650px) 416px, 208px"
+        sizes="416px"
         alt="Devices with different resolutions"
       )
       .u-smallThenDefaultMargin
