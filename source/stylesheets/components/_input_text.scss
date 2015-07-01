@@ -117,6 +117,11 @@ $InputText-color-input: $Theme-color-horizon;
     padding-top: 30px;
     padding-bottom: 10px;
   }
+
+  &:-webkit-autofill {
+    -webkit-text-fill-color: $InputText-color-input;
+    box-shadow: 0 0 0 1000px white inset;
+  }
 }
 
 .InputText.InputText--active.InputText--filled {
