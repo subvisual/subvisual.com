@@ -36,10 +36,10 @@
 
   text-decoration: none;
 
-  transition: background 0.2s;
-
   .Panel-contentWithBackground {
     background: rgba(#0b2633, 0.85);
+
+    transition: background 0.25s linear;
   }
 }
 
@@ -48,7 +48,7 @@
 
   &:hover {
     .Panel-contentWithBackground {
-      background: linear-gradient(to left, rgba(#d056a4, 0.85), rgba(#372468, 0.85));
+      background: rgba(#372468, 0.85);
     }
   }
 }
