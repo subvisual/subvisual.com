@@ -83,19 +83,24 @@
 }
 
 .Panel.Panel--fishTank {
-  @include background-image('homepage_map.jpg');
+  @include retina-background('homepage_map.jpg');
 }
 
 .Panel.Panel--company {
-  @include background-image('company_hero.jpg');
+  @include retina-background('company/hero.jpg');
 }
 
 .Panel.Panel--team {
-  @include background-image('company_join_us.jpg');
+  @include retina-background('company/join_us_mobile', 'jpg');
+  background-position: center;
+
+  @include media('>=tablet') {
+    @include retina-background('company/join_us', 'jpg');
+  }
 }
 
 .Panel.Panel--clients {
-  @include background-image('company_clients.png');
+  @include retina-background('company/clients.png');
 
   // the background-image's height achieved by dividing the ratio between the top and bottom padding, thus centering the content
   padding-top: 22.935%;

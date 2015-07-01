@@ -26,5 +26,10 @@
           .TeamMember-social
             - member.social.each_pair do |site, link|
               = link_to link do
-                = image_tag "icons/#{site}.png", class: "TeamMember-socialLink"
+                img.TeamMember-socialLink(
+                  src="#{image_path("icons/#{site}.png")}"
+                  srcset="#{image_path("icons/#{site}.png")} 25w, #{image_path("icons/#{site}@2x.png")} 50w"
+                  sizes="25px"
+                  alt="#{site} icon"
+                )
         .u-defaultThenLargeMargin
