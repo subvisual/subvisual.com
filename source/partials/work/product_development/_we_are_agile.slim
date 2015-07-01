@@ -1,26 +1,32 @@
 .Panel
-  .u-largeThenDoubleLargeMargin
-  .HorizontalGrid.HorizontalGrid--limited.u-largeMargin
-    .HorizontalGrid-cell
-      .GridCell.GridCell--alignCenter
-        .GridCell-content
-          .ContentFormatter.ContentFormatter--centerHorizontally
-            h2.Heading.Heading--brand.u-smallMargin
-              ' We are
-              span.Heading-highlight agile
-            .Text.u-defaultThenLargeMargin
-              => link_to 'Our practices', '/#practices', class: 'Link Link--highlight'
-              ' are a clear statement of our agile process.
-              | We work with fast release cycles and field-tested iterations.
-            = partial 'work/product_development/agile.svg'
-  .HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--lightFrame.HorizontalGrid--bottomFrame
+  .u-defaultThenLargeMargin
+  .GridCell.GridCell--alignCenter.u-defaultThenLargeMargin
+    .GridCell-content
+      .ContentFormatter.ContentFormatter--centerHorizontally
+        h2.Heading.Heading--brand.u-smallMargin
+          ' We are
+          span.Heading-highlight agile
+        .Text.u-smallThenDefaultMargin
+          => link_to 'Our practices', '/#practices', class: 'Link Link--highlight'
+          ' are a clear statement of our agile process.
+          | We work with fast release cycles and field-tested iterations.
+        img(
+          src="#{image_path('product_development/agile-desktop@2x.png')}"
+          srcset="#{image_path('product_development/agile-desktop.png')} 571w, #{image_path('product_development/agile-desktop@2x.png')} 1142w, #{image_path('product_development/agile-mobile.png')} 273w, #{image_path('product_development/agile-mobile@2x.png')} 546w"
+          sizes="(min-width: 650px) 571px, 273px"
+          alt="Our agile practices depicted"
+        )
+
+.Panel.Panel--alternative
+  .HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--darkFrame.HorizontalGrid--bottomFrame
     .HorizontalGrid-cell
       .GridCell.u-defaultThenLargeMargin
         .GridCell-content
           .u-defaultThenLargeMargin
-          h3.Heading.Heading--brand.u-smallMargin
-            .Heading-highlight
-              | Discover value
+          .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft
+            h3.Heading.Heading--brand.u-smallMargin
+              .Heading-highlight
+                | Discover value
           .Text
             ' Each project starts with a robust discovery phase where we define and specify what concentrates more value.
             | This remains true in the beginning of each sprint.
@@ -28,28 +34,31 @@
       .GridCell.u-defaultThenLargeMargin
         .GridCell-content
           .u-defaultThenLargeMargin
-          h3.Heading.Heading--brand.u-smallMargin
-            .Heading-highlight
-              | Design & Development
+          .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft
+            h3.Heading.Heading--brand.u-smallMargin
+              .Heading-highlight
+                | Design & Development
           .Text
             ' Our developers are involved in design decisions and vice-versa.
             | We believe this collaborative process is essential to build a successful product.
-  .HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--lightFrame.u-largeThenDoubleLargeMargin
+  .HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--darkFrame
     .HorizontalGrid-cell
       .GridCell.u-defaultThenLargeMargin
         .GridCell-content
           .u-defaultThenLargeMargin
-          h3.Heading.Heading--brand.u-smallMargin
-            .Heading-highlight
-              | Test & Learn
+          .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft
+            h3.Heading.Heading--brand.u-smallMargin
+              .Heading-highlight
+                | Test & Learn
           .Text
             ' We are constantly deploying new material for testing with real users, which allows quick iterations and profound understanding of the experience.'
     .HorizontalGrid-cell
       .GridCell.u-defaultThenLargeMargin
         .GridCell-content
           .u-defaultThenLargeMargin
-          h3.Heading.Heading--brand.u-smallMargin
-            .Heading-highlight
-              | Deliver value & Iterate
+          .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft
+            h3.Heading.Heading--brand.u-smallMargin
+              .Heading-highlight
+                | Deliver value & Iterate
           .Text
             ' By the end of each sprint we deliver a thouroughly tested version of your product with new learnings and iterations.
