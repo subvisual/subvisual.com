@@ -178,7 +178,26 @@
 
 .Panel.Panel--joinUs {
   @include background-image('company/join-us/team.jpg');
-  background-position: center;
+
+  height: 0;
+
+  background-position: top center;
+  background-size: cover;
+
+  @include media('<tablet') {
+    padding-top: calc(44% - #{$Theme-nav-height-desktop});
+    padding-bottom: calc(44% + #{$Theme-nav-height-desktop});
+  }
+
+  @include media('>=tablet') {
+    padding-top: calc(32% - #{$Theme-nav-height-desktop});
+    padding-bottom: calc(35% + #{$Theme-nav-height-desktop});
+  }
+
+  @include media('>=desktop') {
+    padding-top: calc(22% - #{$Theme-nav-height-desktop});
+    padding-bottom: calc(22% + #{$Theme-nav-height-desktop});
+  }
 }
 
 .Panel.Panel--secondHome {
