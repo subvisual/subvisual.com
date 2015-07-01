@@ -2,6 +2,7 @@ $InputText-horizontalPadding: $Theme-spacing-xSmall;
 $InputText-color-label: $Theme-color-brightTurquoise;
 $InputText-backgroundColor-label: $Theme-color-polar;
 $InputText-color-input: $Theme-color-horizon;
+$InputText-label-layer: $Theme-layer-stickyElement - 1;
 
 @mixin placeholderToLabelAnimation($animationName, $labelPosition, $resolution) {
   animation-name: $animationName;
@@ -99,7 +100,7 @@ $InputText-color-input: $Theme-color-horizon;
   @include font-properties(subvisual, small);
 
   position: relative;
-  z-index: 2; // it justs needs to be on top of .InputText-label
+  z-index: $InputText-label-layer - 1; // it justs needs to be on top of .InputText-label
 
   width: 100%;
   padding: 20px $InputText-horizontalPadding 4px;
@@ -141,7 +142,7 @@ $InputText-color-input: $Theme-color-horizon;
   .InputText-label {
     @include placeholderToLabelAnimation('placeholderToLabel', -90%, mobile);
 
-    z-index: 5;
+    z-index: $InputText-label-layer;
 
     background-color: $Theme-color-white;
 

@@ -5,7 +5,7 @@
   = nav_overlay_item('Apprenticeship', '/apprenticeship')
   = nav_overlay_item('Blog', '/blog')
 
-nav#main-nav.Nav.Nav--topPositioned class="#{current_page.data.nav_class}" aria-label=('Main navigation')
+nav#main-nav.Nav--fixed.Nav.Nav--topPositioned class="#{current_page.data.nav_class}" aria-label=('Main navigation')
   = link_to '/', class: 'Nav-logo'
     .NavLogo class=nav_logo_class
 
