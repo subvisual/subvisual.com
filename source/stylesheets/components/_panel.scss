@@ -84,6 +84,10 @@
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @include media('>=desktop') {
+    background-size: contain;
+  }
 }
 
 .Panel.Panel--creatorsSchool {
