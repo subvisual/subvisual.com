@@ -1,0 +1,39 @@
+$susy: (
+  columns: 12,
+  gutters: 1/4
+);
+
+.ClientsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.ClientsGrid-cell {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+
+  @include media('<1000px') {
+    width: span(4);
+    margin-right: gutter();
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+
+  @include media('>=1000px') {
+    width: span(2);
+    margin-right: gutter();
+
+    &:nth-child(6n) {
+      margin-right: 0;
+    }
+  }
+}

@@ -1,6 +1,6 @@
 #services.Panel
   .u-largeThenDoubleLargeMargin
-  .HorizontalGrid.HorizontalGrid--limited.u-largeMargin
+  .HorizontalGrid.HorizontalGrid--limited.u-defaultThenLargeMargin
     .HorizontalGrid-cell
       .GridCell.GridCell--alignCenter
         .GridCell-content
@@ -19,24 +19,24 @@
 
   .HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--lightFrame
     .HorizontalGrid-cell
-      .GridCell.u-largeMargin
+      .GridCell.u-defaultThenLargeMargin
         .GridCell-content
-          .u-defaultMargin
-          .ContentFormatter.ContentFormatter--centerHorizontally.u-defaultMargin
+          .u-defaultThenLargeMargin
+          .ContentFormatter.ContentFormatter--centerHorizontally.u-smallThenDefaultMargin
             .RatioEnforcer.RatioEnforcer--services
               = partial 'work/product_development.svg'
           .ContentFormatter.ContentFormatter--centerHorizontally
             h3.Heading.Heading--brand.u-smallMargin
               .Heading-highlight
                 | Product Development
-            .Text.u-defaultMargin
+            .Text.u-smallThenDefaultMargin
               | We turn your bright idea into a delightful product.
             = link_to 'Learn more', '/work/product-development', class: 'ButtonPrimary'
     .HorizontalGrid-cell
-      .GridCell.u-largeMargin
+      .GridCell.u-defaultThenLargeMargin
         .GridCell-content
-          .u-defaultMargin
-          .ContentFormatter.ContentFormatter--centerHorizontally.u-defaultMargin
+          .u-defaultThenLargeMargin
+          .ContentFormatter.ContentFormatter--centerHorizontally.u-smallThenDefaultMargin
             .RatioEnforcer.RatioEnforcer--services
               = partial 'work/consulting.svg'
           .ContentFormatter.ContentFormatter--centerHorizontally
@@ -47,10 +47,10 @@
               | We stand alongside your team producing excellent work while carrying our disciplined practices with us.
             = link_to 'Learn more', '/work/consulting', class: 'ButtonPrimary'
     .HorizontalGrid-cell
-      .GridCell.u-largeMargin
+      .GridCell.u-defaultThenLargeMargin
         .GridCell-content
-          .u-defaultMargin
-          .ContentFormatter.ContentFormatter--centerHorizontally.u-defaultMargin
+          .u-defaultThenLargeMargin
+          .ContentFormatter.ContentFormatter--centerHorizontally.u-smallThenDefaultMargin
             .RatioEnforcer.RatioEnforcer--services
               = partial 'work/training.svg'
           .ContentFormatter.ContentFormatter--centerHorizontally
@@ -61,5 +61,3 @@
               | Steer your team's standards towards a sense of craftsmanship.
             = link_to 'Learn more', '/work/training', class: 'ButtonPrimary'
   .u-largeThenDoubleLargeMargin
-
-= partial 'technologies'

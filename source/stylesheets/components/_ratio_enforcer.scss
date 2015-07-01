@@ -28,8 +28,13 @@
 }
 
 .RatioEnforcer.RatioEnforcer--companies {
-  width: auto;
-  max-height: 100px;
+  width: 50px;
+  max-height: 50px;
+
+  @include media('>=tablet') {
+    width: 100px;
+    max-height: 100px;
+  }
 }
 
 .RatioEnforcer.RatioEnforcer--clients {

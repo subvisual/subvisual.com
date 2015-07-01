@@ -1,7 +1,7 @@
-.HorizontalGrid.HorizontalGrid--centered.HorizontalGrid--limited.HorizontalGrid--variableWidth.HorizontalGrid--withGutters
+.ClientsGrid
   - data.companies.each do |company|
-    .HorizontalGrid-cell
+    .ClientsGrid-cell
       = image_tag "companies/#{company.name.downcase}.png", class: 'RatioEnforcer RatioEnforcer--companies u-smallMargin'
-      .ContentFormatter.ContentFormatter--centerHorizontally.u-defaultThenLargeMargin
+      .ContentFormatter.ContentFormatter--centerHorizontally.u-smallThenDefaultMargin
         .Text.Text--brand.Text--caption.Text--strong
           = company.name
