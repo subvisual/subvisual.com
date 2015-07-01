@@ -1,24 +1,23 @@
-.HorizontalGrid
-  .HorizontalGrid-cell
-    = link_to '/case-studies/creators-school', class: 'Panel Panel--creatorsSchoolCaseStudy'
-      .Panel-contentWithBackground
-        .u-defaultThenDoubleLargeMargin
-        .HorizontalGrid.HorizontalGrid--withGutters.u-defaultThenDoubleLargeMargin
-          .HorizontalGrid-cell.u-justifyCenter
-            .ContentFormatter.ContentFormatter--centerHorizontally
-              img.RatioEnforcer.RatioEnforcer--caseStudiesLogos(
-                src="#{image_path('case-studies/creators-school/logo.png')}"
-                srcset="#{image_path('case-studies/creators-school/logo.png')} 200w, #{image_path('case-studies/creators-school/logo.png')} 400w"
-                sizes="(min-width: 650px) 250px, 200px"
-                alt="easy.money logo"
-              )
+= link_to '/case-studies/creators-school', class: 'Panel Panel--creatorsSchoolCaseStudy'
+  .Panel-contentWithBackground
+    .u-defaultThenLargeMargin
+    .HorizontalGrid.HorizontalGrid--withGutters.u-defaultThenLargeMargin
+      .HorizontalGrid-cell
+        .ContentFormatter.ContentFormatter--center.u-smallThenNoneMargin
+          img(
+            src="#{image_path('case-studies/creators-school/logo.png')}"
+            srcset="#{image_path('case-studies/creators-school/logo.png')} 200w, #{image_path('case-studies/creators-school/logo@2x.png')} 400w"
+            sizes="(min-width: 650px) 200px, 150px"
+            alt="CreatorsSchool logo"
+          )
 
-          .HorizontalGrid-cell
-            .Heading.Heading--brand
-              .Heading-light
-                | Creators School
-            .Text.Text--brand.Text--highlight.u-xSmallThenSmallMargin
-              | Design, Development, Business Partners
-            .Text.Text--light
-              ' An highly-intensive 9 week program that teaches people how to
-              | program and helps them find a job in the tech industry.
+      .HorizontalGrid-cell.u-justifyCenter
+        .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft
+          .Heading.Heading--brand.u-xSmallMargin
+            .Heading-light
+              | Creators School
+          .Text.Text--brand.Text--highlight.u-smallMargin
+            | Design, Development, Business Partners
+        .Text.Text--light
+          ' An highly-intensive 9 week program that teaches people how to
+          | program and helps them find a job in the tech industry.

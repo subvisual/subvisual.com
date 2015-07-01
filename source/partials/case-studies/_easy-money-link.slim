@@ -1,19 +1,19 @@
 = link_to '/case-studies/easy-money', class: 'Panel Panel--easyMoneyCaseStudy'
   .Panel-contentWithBackground
-    .u-largeThenDoubleLargeMargin
-    .HorizontalGrid.HorizontalGrid--withGutters.u-largeThenDoubleLargeMargin
+    .u-defaultThenLargeMargin
+    .HorizontalGrid.HorizontalGrid--withGutters.u-defaultThenLargeMargin
       .HorizontalGrid-cell
-        .ContentFormatter.ContentFormatter--center.u-largeThenNoneMargin
+        .ContentFormatter.ContentFormatter--center.u-smallThenNoneMargin
           img(
             src="#{image_path('case-studies/easy-money/logo.png')}"
             srcset="#{image_path('case-studies/easy-money/logo.png')} 200w, #{image_path('case-studies/easy-money/logo@2x.png')} 400w"
-            sizes="(min-width: 650px) 250px, 150px"
+            sizes="(min-width: 650px) 200px, 150px"
             alt="easy.money logo"
           )
 
-      .HorizontalGrid-cell
+      .HorizontalGrid-cell.u-justifyCenter
         .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft
-          .Heading.Heading--brand
+          .Heading.Heading--brand.u-xSmallMargin
             .Heading-light
               | Easy Money
           .Text.Text--brand.Text--highlight.u-smallMargin
