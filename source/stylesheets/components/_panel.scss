@@ -2,11 +2,9 @@
 //
 // Full width container with a unique background. The height is defined by the content.
 //
-// .Panel--home - A panel with a background to be used in the homepage
 // .Panel--subvisualCaseStudy - A panel with a background to be used as the subvisual case study
 // .Panel--creatorsSchoolCaseStudy - A panel with a background to be used as the creators school case study
 // .Panel--fishTank - A panel with a background that is a map of our HQ
-// .Panel--company - A panel with a background to be used in the company page
 // .Panel--team - A panel with a background to be used in the team's page
 // .Panel--clients - A panel with a background that is a world map with all of our clients
 // .Panel--creatorsSchool - A panel for the specific case of Creators School event
@@ -21,32 +19,15 @@
 //
 // Styleguide 5.1
 
-.Panel.Panel--home,
 .Panel.Panel--subvisualCaseStudy,
 .Panel.Panel--creatorsSchoolCaseStudy,
 .Panel.Panel--fishTank,
 .Panel.Panel--clients,
 .Panel.Panel--team,
-.Panel.Panel--company,
 .Panel.Panel--secondHome,
 .Panel.Panel--joinUs {
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.Panel.Panel--home {
-  @include retina-background('homepage/hero-mobile');
-
-  padding-bottom: 84.38%;
-
-  background-color: transparent;
-  background-size: contain;
-
-  @include media('>=tablet') {
-    @include retina-background('homepage/hero-image');
-
-    padding-bottom: 37.54%;
-  }
 }
 
 .Panel.Panel--easyMoneyCaseStudy,
@@ -84,10 +65,6 @@
 
 .Panel.Panel--fishTank {
   @include retina-background('homepage_map.jpg');
-}
-
-.Panel.Panel--company {
-  @include retina-background('company/hero.jpg');
 }
 
 .Panel.Panel--team {

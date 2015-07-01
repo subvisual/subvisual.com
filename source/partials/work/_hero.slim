@@ -1,12 +1,15 @@
-.u-largeMargin
-.HorizontalGrid.HorizontalGrid--limited.u-largeThenDoubleLargeMargin
-  .HorizontalGrid-cell
-    .GridCell.GridCell--alignCenter
-      .GridCell-content
-        .ContentFormatter.ContentFormatter--centerHorizontally
-          h1.Heading.Heading--brandLarge.u-defaultThenLargeMargin
-            ' Thoughtful,
-            br
-            ' handcrafted
-            span.Heading-highlight Work
-        = partial 'work/origami_swan.svg'
+.u-defaultThenLargeMargin
+.GridCell.GridCell--alignCenter.u-largeThenDoubleLargeMargin
+  .GridCell-content
+    .ContentFormatter.ContentFormatter--centerHorizontally
+      h1.Heading.Heading--brandLarge.u-defaultMargin
+        ' Thoughtful,
+        br
+        ' handcrafted
+        span.Heading-highlight Work
+      img(
+        src="#{image_path('work/origami.png')}"
+        srcset="#{image_path('work/origami.png')} 481w, #{image_path('work/origami@2x.png')} 962w"
+        sizes="(min-width: 650px) 480px, 220px"
+        alt="Origami swan"
+      )

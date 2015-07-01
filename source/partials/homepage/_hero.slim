@@ -1,10 +1,21 @@
-.u-smallThenDefaultMargin
-div
-  .Panel.Panel--home
-.u-defaultMargin
-.GridCell.GridCell--alignCenter.u-defaultThenLargeMargin
+.u-smallMargin
+.ContentFormatter.ContentFormatter--centerHorizontally
+  img.u-onlySmall(
+    src="#{image_path('homepage/hero-mobile.png')}"
+    srcset="#{image_path('homepage/hero-mobile.png')} 320w, #{image_path('homepage/hero-mobile@2x.png')} 640w"
+    sizes="100vw"
+    alt="Another galaxy"
+  )
+  img.u-exceptSmall(
+    src="#{image_path('homepage/hero-image@1x.png')}"
+    srcset="#{image_path('homepage/hero-image@1x.png')} 1441w, #{image_path('homepage/hero-image@2x.png')} 2882w, #{image_path('homepage/hero-image@3x.png')} 4223w"
+    sizes="(min-width: 1280px) 80vw, 100vw"
+    alt="Another galaxy"
+  )
+.u-smallMargin
+.GridCell.GridCell--alignCenter.u-defaultThenDoubleLargeMargin
   .GridCell-content
     .ContentFormatter.ContentFormatter--centerHorizontally
       .u-smallThenDefaultMargin
-      p.Text
+      p.Text.Text--dark
         | We handcraft thoughtful digital experiences that empower individuals, institutions and communities
