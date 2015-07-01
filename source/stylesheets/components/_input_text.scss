@@ -140,14 +140,14 @@ $InputText-label-layer: $Theme-layer-stickyElement - 1;
   transition: background-color 0.1s ease, border-color 0.1s ease;
 
   .InputText-label {
-    @include placeholderToLabelAnimation('placeholderToLabel', -90%, mobile);
+    @include placeholderToLabelAnimation(placeholderToLabel, -90%, mobile);
 
     z-index: $InputText-label-layer;
 
     background-color: $Theme-color-white;
 
     @include media('>tablet') {
-      @include placeholderToLabelAnimation('placeholderToLabel', -120%, desktop);
+      @include placeholderToLabelAnimation(placeholderToLabel, -120%, desktop);
     }
   }
 }
@@ -158,10 +158,10 @@ $InputText-label-layer: $Theme-layer-stickyElement - 1;
 
     color: $InputText-color-label;
 
-    @include labelToPlaceholderAnimation('labelToPlaceholder', -90%, mobile);
+    @include labelToPlaceholderAnimation(labelToPlaceholder, -90%, mobile);
 
     @include media('>tablet') {
-      @include labelToPlaceholderAnimation('labelToPlaceholder', -120%, desktop);
+      @include labelToPlaceholderAnimation(labelToPlaceholder, -120%, desktop);
     }
   }
 }
@@ -178,20 +178,20 @@ $InputText-label-layer: $Theme-layer-stickyElement - 1;
 
   &.InputText--active {
     .InputText-label {
-      @include placeholderToLabelAnimation('placeholderToLabelLarge', -140%, mobile);
+      @include placeholderToLabelAnimation(placeholderToLabelLarge, -140%, mobile);
 
       @include media('>tablet') {
-        @include placeholderToLabelAnimation('placeholderToLabelLarge', -140%, desktop);
+        @include placeholderToLabelAnimation(placeholderToLabelLarge, -140%, desktop);
       }
     }
   }
 
   &.InputText--active.InputText--animateOut {
     .InputText-label {
-      @include labelToPlaceholderAnimation('labelToPlaceholderLarge', -140%, mobile);
+      @include labelToPlaceholderAnimation(labelToPlaceholderLarge, -140%, mobile);
 
       @include media('>tablet') {
-        @include labelToPlaceholderAnimation('labelToPlaceholderLarge', -140%, desktop);
+        @include labelToPlaceholderAnimation(labelToPlaceholderLarge, -140%, desktop);
       }
     }
   }
