@@ -88,3 +88,11 @@
     max-width: 250px;
   }
 }
+
+.RatioEnforcer.RatioEnforcer--perk {
+  max-width: 100px;
+
+  @include media('>tablet') {
+    max-width: 200px;
+  }
+}

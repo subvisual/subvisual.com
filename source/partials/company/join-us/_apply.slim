@@ -4,8 +4,8 @@
     .GridCell-content
       .ContentFormatter.ContentFormatter--centerHorizontally
         h2.Heading.Heading--brand.u-smallMargin
-          ' What about
-          span.Heading-highlight you
+          ' What's your
+          span.Heading-highlight craft
           | ?
 
         p.Text
@@ -15,36 +15,40 @@
 .HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--darkFrame
   .HorizontalGrid-cell
     .u-defaultThenLargeMargin
-    .GridCell.u-largeMargin
+    .GridCell.u-defaultThenLargeMargin
       .GridCell-content
-        h2.Heading.Heading--brand.u-smallMargin
-          span.Heading-highlight Developer
+        .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft
+          h2.Heading.Heading--brand.u-smallMargin
+            span.Heading-highlight Developer
         p.Text.u-smallMargin
           ' A qualified candidate to the development apprenticeship is able to find her way
           ' around the web. She can easily edit HTML and CSS files, play around with
           | JavaScript and is able to create a backend using a web framework.
 
-        p.Text.u-defaultMargin
+        p.Text.u-smallThenDefaultMargin
           ' Development apprentices will learn and work with Ruby on Rails, JavaScript,
           | HTML5, Sass, Git, Unix, TDD and agile software development.
 
-        = link_to 'Apply for developer', '#', class: 'ButtonPrimary'
+        .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft
+          = link_to 'Apply for developer', '#', class: 'ButtonPrimary'
 
   .HorizontalGrid-cell
     .u-defaultThenLargeMargin
-    .GridCell.u-largeMargin
+    .GridCell
       .GridCell-content
-        h2.Heading.Heading--brand.u-smallMargin
-          span.Heading-highlight Designer
+        .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft
+          h2.Heading.Heading--brand.u-smallMargin
+            span.Heading-highlight Designer
         p.Text.u-smallMargin
           ' A qualified design apprentice will have experience with graphical
           ' design for the web and mobile, as well as basic knowledge of HTML and CSS.
           ' Design apprentices will learn to work with a focus on User Experience, by
           | designing for the other side of the screen.
 
-        p.Text.u-defaultMargin
+        p.Text.u-smallThenDefaultMargin
           ' We'll get them through our design process and give them experience
           | with real projects, solving real problems.
 
-        = link_to 'Apply for designer', '#', class: 'ButtonPrimary'
+        .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft
+          = link_to 'Apply for designer', '#', class: 'ButtonPrimary'
 .u-defaultThenLargeMargin

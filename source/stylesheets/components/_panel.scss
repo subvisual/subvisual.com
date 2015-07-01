@@ -175,6 +175,7 @@
 
 .Panel.Panel--joinUs {
   @include background-image('join-us_team.jpg');
+  background-position: center;
 }
 
 .Panel.Panel--secondHome {
