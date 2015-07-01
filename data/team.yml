@@ -1,22 +1,4 @@
 members:
-  - name: "Roberto Machado"
-    picture: "roberto-machado"
-    position: "Founder & CEO"
-    bio: "Breathes technology and deeply believes, hence the creation of Subvisual, 
-    that it is the medium for a better future. Always has 5 minutes to listen to you."
-    social:
-      twitter: "https://twitter.com/rmdgb"
-      github: "https://github.com/rmdmachado"
-
-  - name: "Laura Esteves"
-    picture: "laura-esteves"
-    position: "Head of Operations"
-    bio: "Multitasking. Purpose: Making life easier. Sidekicks: Minions. 
-    This smiley girl can mislead you to think she is all niceness. Give her a 
-    challenge and see the workforce she becomes."
-    social:
-      twitter: "https://twitter.com/lauraeesteves"
-
   - name: "Bruno Azevedo"
     picture: "bruno-azevedo"
     position: "Developer"
@@ -61,6 +43,15 @@ members:
       twitter: "https://twitter.com/jpjustonunes"
       github: "https://github.com/joaojusto"
 
+  - name: "Laura Esteves"
+    picture: "laura-esteves"
+    position: "Head of Operations"
+    bio: "Multitasking. Purpose: Making life easier. Sidekicks: Minions. 
+    This smiley girl can mislead you to think she is all niceness. Give her a 
+    challenge and see the workforce she becomes."
+    social:
+      twitter: "https://twitter.com/lauraeesteves"
+
   - name: "Luis Ferreira"
     picture: "luis-ferreira"
     position: "Developer"
@@ -81,6 +72,14 @@ members:
       twitter: "https://twitter.com/naps62"
       github: "https://github.com/naps62"
 
+  - name: "Roberto Machado"
+    picture: "roberto-machado"
+    position: "Founder & CEO"
+    bio: "Breathes technology and deeply believes, hence the creation of Subvisual, 
+    that it is the medium for a better future. Always has 5 minutes to listen to you."
+    social:
+      twitter: "https://twitter.com/rmdgb"
+      github: "https://github.com/rmdmachado"
 
   - name: "Ronaldo Sousa"
     picture: "ronaldo-sousa"
