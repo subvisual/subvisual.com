@@ -174,12 +174,12 @@
 }
 
 .Panel.Panel--joinUs {
-  @include background-image('join-us_team.jpg');
+  @include background-image('company/join-us/team.jpg');
   background-position: center;
 }
 
 .Panel.Panel--secondHome {
-  @include background-image('join-us_second_home.jpg');
+  @include background-image('company/join-us/second_home.jpg');
 }
 
 .Panel.Panel--easymoneyGradient {

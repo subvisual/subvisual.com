@@ -9,8 +9,8 @@
               = quote
             - if img_path && alt_text
               img.u-xSmallMargin(
-                src="#{image_path(img_path + '.png')}"
-                srcset="#{image_path(img_path + '.png')} 100w, #{image_path(img_path + '@2x.png')} 200w"
+                src="#{image_path('testimonies/' + img_path + '.png')}"
+                srcset="#{image_path('testimonies/' + img_path + '.png')} 100w, #{image_path('testimonies/' + img_path + '@2x.png')} 200w"
                 sizes="100px"
                 alt="#{alt_text}"
               )
