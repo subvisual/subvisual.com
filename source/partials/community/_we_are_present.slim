@@ -18,19 +18,20 @@
 
   .HorizontalGrid.HorizontalGrid--limited.u-defaultThenLargeMargin
     .HorizontalGrid-cell
-      .GridCell.GridCell--alignRight
-        .RatioEnforcer.RatioEnforcer--weArePresentIcons
-          = partial "community/speakers.svg"
+      .ContentFormatter.ContentFormatter--centerHorizontallyThenRight
+        .GridCell
+          .GridCell-content
+            .RatioEnforcer.RatioEnforcer--weArePresentIcons
+              = partial "community/speakers.svg"
     .HorizontalGrid-cell
       .GridCell
         .GridCell-content
           .u-smallThenNoneMargin
           .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft.u-smallMargin
-            h3.Heading.Heading--brand
+            h3.Heading.Heading--brand.u-smallMargin
               ' We are
               span.Heading-highlight
                 | speakers
-          .ContentFormatter
             p.Text
               ' Talking about what you know helps to consolidate your knowledge.
               ' Recently we have spoken at
@@ -45,19 +46,20 @@
 
   .HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--inverted.u-defaultThenLargeMargin
     .HorizontalGrid-cell
-      .GridCell
-        .RatioEnforcer.RatioEnforcer--weArePresentIcons
-          = partial "community/educators.svg"
+      .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft
+        .GridCell
+          .GridCell-content
+            .RatioEnforcer.RatioEnforcer--weArePresentIcons
+              = partial "community/educators.svg"
     .HorizontalGrid-cell
       .GridCell
         .GridCell-content
           .u-smallThenNoneMargin
-          .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft.u-smallMargin
-            h3.Heading.Heading--brand
+          .ContentFormatter.ContentFormatter--centerHorizontallyThenRight.u-smallMargin
+            h3.Heading.Heading--brand.u-smallMargin
               ' We are
               span.Heading-highlight
                 | educators
-          .ContentFormatter
             p.Text
               ' Educating is our favorite way of learning. We have been invited
               ' to teach classes at
@@ -74,19 +76,20 @@
 
   .HorizontalGrid.HorizontalGrid--limited.u-largeThenDoubleLargeMargin
     .HorizontalGrid-cell
-      .GridCell.GridCell--alignRight
-        .RatioEnforcer.RatioEnforcer--weArePresentIcons
-          = partial "community/attendees.svg"
+      .ContentFormatter.ContentFormatter--centerHorizontallyThenRight
+        .GridCell
+          .GridCell-content
+            .RatioEnforcer.RatioEnforcer--weArePresentIcons
+              = partial "community/attendees.svg"
     .HorizontalGrid-cell
       .GridCell
         .GridCell-content
           .u-smallThenNoneMargin
           .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft.u-smallMargin
-            h3.Heading.Heading--brand
+            h3.Heading.Heading--brand.u-smallMargin
               ' We are
               span.Heading-highlight
                 | attendees
-          .ContentFormatter
             p.Text
               ' We love to attend events and learn from the best in the
               ' industry. Recently we attended
