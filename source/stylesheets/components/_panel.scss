@@ -78,15 +78,15 @@
   @include retina-background('company/clients');
 
   // the background-image's height achieved by dividing the ratio between the top and bottom padding, thus centering the content
-  padding-top: 22.935%;
-  padding-bottom: 22.935%;
+  padding-top: 18.935%;
+  padding-bottom: 18.935%;
 
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
 
   @include media('>=desktop') {
-    background-size: contain;
+    background-size: 80%;
   }
 }
 

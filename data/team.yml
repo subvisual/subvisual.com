@@ -36,9 +36,9 @@ members:
   - name: "João Justo"
     picture: "joao-justo"
     position: "Developer"
-    bio: "Has worked on the web for a while now, mainly using Ruby and Ruby on
-      Rails. Enjoys open source and giving back to the community, having taught
-      Rails to hundreds of people."
+    bio: "Always gets way too excited about a new idea. Downhill amateur and
+    Android fanboy. Avoid talking to him about Game of Thrones unless you have
+    serious time to spend."
     social:
       twitter: "https://twitter.com/jpjustonunes"
       github: "https://github.com/joaojusto"
@@ -84,9 +84,9 @@ members:
   - name: "Ronaldo Sousa"
     picture: "ronaldo-sousa"
     position: "Developer"
-    bio: "Has worked on the web for a while now, mainly using Ruby and Ruby on
-      Rails. Enjoys open source and giving back to the community, having taught
-      Rails to hundreds of people."
+    bio: "Restless tech, design and music lover that likes to build software
+    for people. Usually you can find him in front of a computer, behind a
+    guitar or lying on a couch. Or you can’t."
     social:
       twitter: "https://twitter.com/ronaldofsousa"
       github: "https://github.com/ronaldofs"
