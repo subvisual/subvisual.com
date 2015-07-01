@@ -64,7 +64,7 @@
 }
 
 .Panel.Panel--fishTank {
-  @include retina-background('homepage_map.jpg');
+  @include retina-background('homepage_map', 'jpg');
 }
 
 .Panel.Panel--team {
