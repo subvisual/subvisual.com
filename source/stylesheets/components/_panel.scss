@@ -77,7 +77,7 @@
 }
 
 .Panel.Panel--clients {
-  @include retina-background('company/clients.png');
+  @include retina-background('company/clients');
 
   // the background-image's height achieved by dividing the ratio between the top and bottom padding, thus centering the content
   padding-top: 22.935%;
