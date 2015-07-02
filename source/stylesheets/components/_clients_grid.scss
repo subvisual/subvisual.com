@@ -1,39 +1,47 @@
-$susy: (
-  columns: 12,
-  gutters: 1/4
-);
-
 .ClientsGrid {
   display: flex;
   flex-wrap: wrap;
-  align-items: stretch;
+  justify-content: center;
+
   width: 100%;
-  margin-right: auto;
-  margin-left: auto;
+  margin-top: -$Theme-spacing-small;
+  margin-left: -$Theme-spacing-small;
 }
 
 .ClientsGrid-cell {
-  display: inline-flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+  display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   align-items: center;
-  width: 100%;
+  justify-content: flex-end;
 
-  @include media('<1000px') {
-    width: span(4);
-    margin-right: gutter();
+  min-width: 100px;
+  margin-top: $Theme-spacing-small;
+  margin-left: $Theme-spacing-small;
+}
 
-    &:nth-child(3n) {
-      margin-right: 0;
-    }
+@include media('>=500px') {
+  .ClientsGrid-cell {
+    min-width: 25%;
+  }
+}
+
+@include media('>=900px') {
+  .ClientsGrid {
+    margin-top: -$Theme-spacing-default;
+    margin-left: -$Theme-spacing-default;
   }
 
-  @include media('>=1000px') {
-    width: span(2);
-    margin-right: gutter();
+  .ClientsGrid-cell {
+    margin-top: $Theme-spacing-default;
+    margin-left: $Theme-spacing-default;
+  }
+}
 
-    &:nth-child(6n) {
-      margin-right: 0;
-    }
+@include media('>=1250px') {
+  .ClientsGrid-cell {
+    min-width: 200px;
   }
 }
