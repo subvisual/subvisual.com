@@ -1,0 +1,6 @@
+.u-fontSizeHugeOnWideScreen {
+  @include media('>=1920px') {
+    font-size: 60px !important;
+    line-height: 72px !important;
+  }
+}
