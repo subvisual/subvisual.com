@@ -30,19 +30,19 @@
           .InputText
             label.InputText-label for="form-name"
               | What's your name
-            input#form-name.InputText-input type="text" name="name"
+            input#form-name.InputText-input type="text" name="name" required=''
           .u-smallMargin
           .HorizontalGrid.HorizontalGrid--withExtraSmallGutters.HorizontalGrid--noOuterGutters
             .HorizontalGrid-cell
               .InputText
                 label.InputText-label for="form-email"
                   | What's your email
-                input#gform-email.InputText-input type="email" name="email"
+                input#gform-email.InputText-input type="email" name="email" required=''
             .HorizontalGrid-cell
               .InputText
                 label.InputText-label for="form-phone"
                   | What's your phone number
-                input#form-phone.InputText-input type="text" name="phone"
+                input#form-phone.InputText-input type="text" name="phone" required=''
 
           .u-defaultThenLargeMargin
 
@@ -61,6 +61,7 @@
                     name="work_area"
                     value="design_sprint"
                     id="form-design-sprint"
+                    required=''
                   )
                   label.Radio-label for="form-design-sprint" Design Sprint
                 .Radio.u-smallMargin
@@ -116,6 +117,7 @@
                     name="budget"
                     value="10000-25000"
                     id="form-budget-10to25"
+                    required=''
                   )
                   label.Radio-label for="form-budget-10to25" 10,000€ - 25,000€
               .HorizontalGrid-cell
@@ -151,7 +153,7 @@
           .InputText.InputText--large.u-defaultMargin
             label.InputText-label for="form-project-description"
               | Tell us a bit more about your project
-            textarea#form-project-description.InputText-input name="project_description"
+            textarea#form-project-description.InputText-input name="project_description" required=''
 
           .ContentFormatter.ContentFormatter--centerHorizontallyThenRight
             button.ButtonPrimary type="submit"

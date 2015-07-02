@@ -3,14 +3,15 @@ $(function() {
     let $elements = $(this);
 
     $elements.on('focusin', function(e) {
-      $target = $(e.target);
-      $(this).addClass('InputText--active');
+      $(this).removeClass('InputText--animateOut');
+      $(this).addClass('is-active');
     });
 
     $elements.on('focusout', function() {
       if ($(this).find('.InputText-input').val() == "") {
         $(this).addClass('InputText--animateOut');
       } else {
+        $(this).removeClass('is-active');
         $(this).addClass('InputText--filled');
       }
     });
@@ -18,7 +19,7 @@ $(function() {
     $elements.each(function() {
       this.addEventListener("animationend", function(e) {
         if (e.animationName == 'labelToPlaceholder' || e.animationName == 'labelToPlaceholderLarge') {
-          $(this).removeClass('InputText--active');
+          $(this).removeClass('is-active');
           $(this).removeClass('InputText--filled');
           $(this).removeClass('InputText--animateOut');
         }

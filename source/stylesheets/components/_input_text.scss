@@ -43,27 +43,25 @@ $InputText-label-layer: $Theme-layer-stickyElement - 1;
 
   @keyframes #{$animationName} {
     0% {
+      opacity: 1;
+
       transform: translate3D(0, #{$labelPosition}, 0);
     }
 
-    10% {
-      opacity: 1;
-
-      transform: translate3D(0, calc(#{$labelPosition} + 15%), 0);
-    }
-
-    16% {
+    20% {
       opacity: 0;
+
+      transform: translate3D(0, calc(#{$labelPosition} + 25%), 0);
     }
 
     99% {
-      @include font-properties-on-resolution(subvisual, small, $resolution);
-
-      color: $Theme-color-poloBlue;
       opacity: 0;
     }
 
     100% {
+      @include font-properties-on-resolution(subvisual, small, $resolution);
+
+      color: $Theme-color-poloBlue;
       opacity: 1;
     }
   }
@@ -75,7 +73,7 @@ $InputText-label-layer: $Theme-layer-stickyElement - 1;
   background-color: $InputText-backgroundColor-label;
   border: 1px solid $InputText-backgroundColor-label;
 
-  transition: background-color 0.1s linear, border-color 0.1s linear;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .InputText-label {
@@ -121,30 +119,22 @@ $InputText-label-layer: $Theme-layer-stickyElement - 1;
 
   &:-webkit-autofill {
     -webkit-text-fill-color: $InputText-color-input;
-    box-shadow: 0 0 0 1000px white inset;
+    box-shadow: 0 0 0 1000px $Theme-color-white inset;
   }
 }
 
-.InputText.InputText--active.InputText--filled {
-  border-color: transparent;
-
-  &:hover {
-    border-color: $InputText-color-input;
-  }
-}
-
-.InputText.InputText--active {
+.InputText.is-active,
+.InputText.InputText--filled,
+.InputText.is-active.InputText--filled {
   background-color: transparent;
   border-color: $InputText-color-input;
 
-  transition: background-color 0.1s ease, border-color 0.1s ease;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 
   .InputText-label {
     @include placeholderToLabelAnimation(placeholderToLabel, -90%, mobile);
 
     z-index: $InputText-label-layer;
-
-    background-color: $Theme-color-white;
 
     @include media('>tablet') {
       @include placeholderToLabelAnimation(placeholderToLabel, -120%, desktop);
@@ -152,12 +142,21 @@ $InputText-label-layer: $Theme-layer-stickyElement - 1;
   }
 }
 
-.InputText.InputText--active.InputText--animateOut {
+.InputText.InputText--filled {
+  border-color: transparent;
+
+  &:hover {
+    border-color: $InputText-color-input;
+  }
+}
+
+
+.InputText.is-active.InputText--animateOut {
+  background-color: $InputText-backgroundColor-label;
+  border-color: $InputText-backgroundColor-label;
+
   .InputText-label {
     @include font-properties(subvisual, extraSmall);
-
-    color: $InputText-color-label;
-
     @include labelToPlaceholderAnimation(labelToPlaceholder, -90%, mobile);
 
     @include media('>tablet') {
@@ -176,7 +175,7 @@ $InputText-label-layer: $Theme-layer-stickyElement - 1;
     padding-bottom: 25px;
   }
 
-  &.InputText--active {
+  &.is-active {
     .InputText-label {
       @include placeholderToLabelAnimation(placeholderToLabelLarge, -140%, mobile);
 
@@ -186,7 +185,7 @@ $InputText-label-layer: $Theme-layer-stickyElement - 1;
     }
   }
 
-  &.InputText--active.InputText--animateOut {
+  &.is-active.InputText--animateOut {
     .InputText-label {
       @include labelToPlaceholderAnimation(labelToPlaceholderLarge, -140%, mobile);
 
