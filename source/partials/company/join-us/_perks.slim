@@ -5,7 +5,12 @@
       .GridCell
         .GridCell-content
           .ContentFormatter.ContentFormatter--centerHorizontallyThenRight
-            object.RatioEnforcer.RatioEnforcer--perk type="image/svg+xml" data="#{image_path('company/join-us/table-tennis.svg')}"
+            img(
+              src="#{image_path('company/join-us/table-tennis.png')}"
+              srcset="#{image_path('company/join-us/table-tennis.png')} 200w, #{image_path('company/join-us/table-tennis@2x.png')} 400w"
+              sizes="(min-width: 650px) 200px, 100px"
+              alt="Table tennis"
+            )
             .u-smallThenNoneMargin
     .HorizontalGrid-cell
       .GridCell
