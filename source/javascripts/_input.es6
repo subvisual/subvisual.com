@@ -27,5 +27,17 @@ $(function() {
     });
   }
 
+  $.fn.radioify = function() {
+    let $elements = $(this);
+
+    $elements.on('focusin', function(e) {
+      let $radioButton = $(e.target);
+      if (!$radioButton.filter(':checked').val()) {
+        $radioButton.prop("checked", true);
+      }
+    });
+  }
+
   $('.InputText').inputify();
+  $('.Radio').radioify();
 });
