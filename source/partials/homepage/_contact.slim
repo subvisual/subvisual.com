@@ -15,7 +15,12 @@
             ' +351
             span.Text--light.Text.Text--strong 916 748 994
       .ContactsGrid-image
-        = partial 'homepage/logo_map.svg'
+        img(
+          src="#{image_path('footer-logo.png')}"
+          srcset="#{image_path('footer-logo.png')} 150w, #{image_path('footer-logo@2x.png')} 300w"
+          sizes="(min-width: 650px) 150px, 75px"
+          alt="Subvisual logo"
+        )
       .ContactsGrid-contact
         p.Text.Text--light.Text--strong
           ' Centro Empresarial de Braga
