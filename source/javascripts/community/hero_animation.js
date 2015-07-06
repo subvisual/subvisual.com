@@ -1,5 +1,7 @@
 (function() {
-  var scene = Snap('#town');
+  var element = $('.Buildings');
+
+  var scene = Snap('#Page-1');
   var background = Snap('#background');
 
   var buildings = new Snap.set();
@@ -11,15 +13,15 @@
   var buildingsShowMatrix = 's1 1 0 563';
   var buildingsHideMatrix = 's1 0 0 563';
 
-  var timeBeteweenBuldings = 250;
-  var timeBeforeBackgorund = 2000;
+  var timeBeteweenBuldings = 175;
+  var timeBeforeBackgorund = 1500;
   var backgroundAnimationTime = 1000;
 
   var buildingAnimationMaxTime = 400;
   var buildingAnimationMinTime = 300;
 
-  var timeBetweenWindows = 50;
-  var windowAnimationTime = 300;
+  var timeBetweenWindows = 20;
+  var windowAnimationTime = 120;
 
   var buildingsNames = [
     {
@@ -105,6 +107,7 @@
   }
 
   function startAnimation() {
+    element.css('visibility', 'visible');
     buildings.forEach(showBuildings);
     setTimeout(showBackground, timeBeforeBackgorund);
   }
