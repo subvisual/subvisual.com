@@ -10,36 +10,66 @@
   background-color: $CS-color-tradewind;
 }
 
-.Panel.cs-Panel--hero {
-}
-
 .Panel.cs-Panel--hero1 {
-  background: $CS-color-tradewind image-url('case-studies/creators-school/hero.png');
+  background-color: $CS-color-tradewind;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 200%;
   background-position: center top;
-  @include media('<tablet') {
-    background-size: 200%;
+
+  @include media('<=tablet') {
+    @include retina-background('case-studies/creators-school/header-green-650', 'jpg');
+  }
+
+  @include media('>tablet', '<=1440px') {
+    @include retina-background('case-studies/creators-school/header-green-1440', 'jpg');
+    background-size: contain;
+  }
+
+  @include media('>1440px') {
+    @include retina-background('case-studies/creators-school/header-green-2880', 'jpg');
+    background-size: contain;
   }
 }
 
 .Panel.cs-Panel--hero2 {
-  background: $CS-color-curiousBlue image-url('case-studies/creators-school/evolving-hero.png');
+  background-color: $CS-color-curiousBlue;
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: top center;
-  @include media('<tablet') {
-    background-size: 130%;
+  background-size: 130%;
+  background-position: center top;
+
+  @include media('<=tablet') {
+    @include retina-background('case-studies/creators-school/evolving-hero-650', 'jpg');
+  }
+
+  @include media('>tablet', '<=1440px') {
+    @include retina-background('case-studies/creators-school/evolving-hero-1440', 'jpg');
+    background-size: contain;
+  }
+
+  @include media('>1440px') {
+    @include retina-background('case-studies/creators-school/evolving-hero-2880', 'jpg');
+    background-size: contain;
   }
 }
 
 .Panel.cs-Panel--hero3 {
-  background: $CS-color-curiousBlue image-url('case-studies/creators-school/end-hero.png');
+  background-color: $CS-color-curiousBlue;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 200%;
   background-position: bottom center;
-  @include media('<tablet') {
-    background-size: 200%;
+
+  @include media('<=tablet') {
+    @include retina-background('case-studies/creators-school/end-hero-650', 'jpg');
+  }
+
+  @include media('>tablet', '<=1440px') {
+    @include retina-background('case-studies/creators-school/end-hero-1440', 'jpg');
+    background-size: contain;
+  }
+
+  @include media('>1440px') {
+    @include retina-background('case-studies/creators-school/end-hero-2880', 'jpg');
+    background-size: contain;
   }
 }
 
