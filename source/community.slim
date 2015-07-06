@@ -3,6 +3,10 @@ title: Subvisual - Community
 page: community
 ---
 
+- content_for :javascripts
+  = javascript_include_tag 'snap'
+  = javascript_include_tag 'community/all'
+
 .Panel.Panel--alternative
   .u-navPlaceholder
   = partial 'community/hero'
