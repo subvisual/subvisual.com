@@ -5,8 +5,8 @@
   = nav_overlay_item('Apprenticeship', '/apprenticeship')
   = nav_overlay_item('Blog', '/blog')
 
-nav#main-nav.Nav.Nav--topPositioned class="#{current_page.data.nav_class}" aria-label=('Main navigation')
-  = link_to '/', class: 'Nav-logo'
+header#main-nav.Nav.Nav--topPositioned class="#{current_page.data.nav_class}"
+  = link_to '/', "aria-label" => "Homepage", class: 'Nav-logo'
     .NavLogo class=nav_logo_class
 
   .Nav-menu
@@ -15,10 +15,10 @@ nav#main-nav.Nav.Nav--topPositioned class="#{current_page.data.nav_class}" aria-
       span.Burger-line
       span.Burger-line
 
-  ul.Nav-items
-    = nav_item('Work', '/work')
-    = nav_item('Company', '/company')
-    = nav_item('Community', '/community')
-    = nav_item('Apprenticeship', '/apprenticeship')
-    = nav_item('Blog', '/blog')
-.u-navPlaceholder
+  nav aria-label='Main navigation'
+    ul.Nav-items
+      = nav_item('Work', '/work')
+      = nav_item('Company', '/company')
+      = nav_item('Community', '/community')
+      = nav_item('Apprenticeship', '/apprenticeship')
+      = nav_item('Blog', '/blog')
