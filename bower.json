@@ -17,6 +17,7 @@
     "include-media": "~1.1.2",
     "picturefill": "~2.3.1",
     "fastclick": "~1.0.6",
+    "snap.svg": "~0.4.1",
     "gsap": "~1.17.0"
   }
 }

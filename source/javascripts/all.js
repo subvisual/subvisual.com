@@ -1,6 +1,10 @@
 //= require jquery
 //= require picturefill
 //= require fastclick
+//= require gsap/src/minified/TweenMax.min
+//= require snap.svg.js
 //= require blue
 //= require _fastclick_init
 //= require _input
+//= require homepage/_lines
+//= require homepage/_planets

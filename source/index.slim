@@ -15,3 +15,9 @@ page: home
 = partial 'homepage/contact'
 = partial 'subvisual_separator'
 = partial 'footer'
+
+javascript:
+  window.onload = function() {
+    window.homepage.animateLines();
+    window.homepage.animatePlanets();
+  };
