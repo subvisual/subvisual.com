@@ -11,6 +11,16 @@
   var buildingsShowMatrix = 's1 1 0 563';
   var buildingsHideMatrix = 's1 0 0 563';
 
+  var timeBeteweenBuldings = 250;
+  var timeBeforeBackgorund = 2000;
+  var backgroundAnimationTime = 1000;
+
+  var buildingAnimationMaxTime = 400;
+  var buildingAnimationMinTime = 300;
+
+  var timeBetweenWindows = 50;
+  var windowAnimationTime = 300;
+
   var buildingsNames = [
     {
       name: '#building1',
@@ -47,7 +57,7 @@
   function init() {
     initBuildings();
     hideAllElements();
-    setTimeout(startAnimation(), 2000);
+    startAnimation();
   }
 
   function initBuildings() {
@@ -67,7 +77,7 @@
 
   function populateWindows(building, index) {
     var buildingWindow = building.select(buildingsNames[index].windows);
-    buildingWindow = buildingWindow.selectAll('path');
+    buildingWindow = buildingWindow.selectAll('*');
     buildingWindow.items.reverse();
     buildingWindows.push(buildingWindow);
   }
@@ -96,35 +106,46 @@
 
   function startAnimation() {
     buildings.forEach(showBuildings);
-    setTimeout(showBackground, 3000);
+    setTimeout(showBackground, timeBeforeBackgorund);
   }
 
   function showBuildings(building, index) {
-    var diff = 700;
     setTimeout(function() {
-      animateElement(building, buildingsShowMatrix, getRandomInt(500, 1000), mina.backout, windowsAnimation(index));
-    }, diff + index * 300);
+      animateElement(
+        building,
+        buildingsShowMatrix,
+        getRandomInt(buildingAnimationMinTime, buildingAnimationMaxTime),
+        mina.backout,
+        windowsAnimation(index)
+      );
+    }, timeBeteweenBuldings + timeBeteweenBuldings * index);
   }
 
   function windowsAnimation(windowsIndex) {
     var windowGroup = buildingWindows.items[windowsIndex];
     return function showWindows() {
-      windowGroup.forEach(showWindow);
+      windowGroup.forEach(animateWindow);
     };
   }
 
-  function showWindow(buildingWindow, index) {
-    setTimeout(animateWindow(buildingWindow), 100 * index);
-  }
-
-  function animateWindow(buildingWindow) {
-    return function() {
-      animateElement(buildingWindow, windowsShowMatrix, 450, mina.backout);
-    };
+  function animateWindow(buildingWindow, index) {
+    setTimeout(function() {
+      animateElement(
+        buildingWindow,
+        windowsShowMatrix,
+        windowAnimationTime,
+        mina.backout
+      );
+    }, timeBetweenWindows * index);
   }
 
   function showBackground() {
-    animateElement(background, buildingsShowMatrix, 1000, mina.backout);
+    animateElement(
+      background,
+      buildingsShowMatrix,
+      backgroundAnimationTime,
+      mina.backout
+    );
   }
 
   function animateElement(element, matrix, duration, easing, callback) {
@@ -143,4 +164,4 @@
     for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
     return 0;
   }
- })();
+})();

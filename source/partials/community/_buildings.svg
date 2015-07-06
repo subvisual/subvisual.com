@@ -87,18 +87,20 @@
           <path id="Rectangle-371-Copy-16" fill="#000" fill-opacity=".05" d="M542 268h136v5.5H542z"/>
           <path id="Rectangle-371-Copy-19" fill="#fcbc57" d="M536 242h147v26.5H536z"/>
           <g id="windows5">
-            <path id="Rectangle-372-Copy-46" fill="#000" fill-opacity=".05" d="M556.5 331.5H662V358H556.5z"/>
-            <path id="Rectangle-372-Copy-47" fill="#000" fill-opacity=".05" d="M556.5 371H662v26.5H556.5z"/>
-            <path id="Rectangle-372-Copy-48" fill="#e1f4fa" stroke="#fff" stroke-width="6" d="M556.5 326H662v26.5H556.5z"/>
-            <path id="Rectangle-372-Copy-90" fill="#000" fill-opacity=".05" d="M556.5 291.5H662V318H556.5z"/>
             <path id="Rectangle-372-Copy-88" fill="#e1f4fa" stroke="#fff" stroke-width="6" d="M556.5 286H662v26.5H556.5z"/>
-            <path id="Rectangle-372-Copy-101" fill="#000" fill-opacity=".05" d="M557.85 289.25h102.5v4.25h-99v15.25h-3.5v-19.5z"/>
-            <path id="Rectangle-372-Copy-102" fill="#000" fill-opacity=".05" d="M557.85 329.25h102.5v4.25h-99v15.25h-3.5v-19.5z"/>
-            <path id="Rectangle-372-Copy-50" fill="#000" fill-opacity=".05" d="M559.5 431.5h105V481h-105z"/>
+            <path id="Rectangle-372-Copy-48" fill="#e1f4fa" stroke="#fff" stroke-width="6" d="M556.5 326H662v26.5H556.5z"/>
             <path id="Rectangle-372-Copy-52" fill="#e1f4fa" stroke="#fff" stroke-width="6" d="M558 425.5h105V475H558z"/>
             <path id="Rectangle-372-Copy-53" fill="#e1f4fa" stroke="#fff" stroke-width="6" d="M556.5 365.5H662V392H556.5z"/>
-            <path id="Rectangle-372-Copy-103" fill="#000" fill-opacity=".05" d="M557.85 368.75h102.5V373h-99v15.25h-3.5v-19.5z"/>
-            <path id="Rectangle-484-Copy-13" fill="#000" fill-opacity=".05" d="M553.5 420.5h114V434h-114z"/>
+            <g>
+              <path id="Rectangle-372-Copy-46" fill="#000" fill-opacity=".05" d="M556.5 331.5H662V358H556.5z"/>
+              <path id="Rectangle-372-Copy-47" fill="#000" fill-opacity=".05" d="M556.5 371H662v26.5H556.5z"/>
+              <path id="Rectangle-372-Copy-90" fill="#000" fill-opacity=".05" d="M556.5 291.5H662V318H556.5z"/>
+              <path id="Rectangle-372-Copy-101" fill="#000" fill-opacity=".05" d="M557.85 289.25h102.5v4.25h-99v15.25h-3.5v-19.5z"/>
+              <path id="Rectangle-372-Copy-102" fill="#000" fill-opacity=".05" d="M557.85 329.25h102.5v4.25h-99v15.25h-3.5v-19.5z"/>
+              <path id="Rectangle-372-Copy-50" fill="#000" fill-opacity=".05" d="M559.5 431.5h105V481h-105z"/>
+              <path id="Rectangle-372-Copy-103" fill="#000" fill-opacity=".05" d="M557.85 368.75h102.5V373h-99v15.25h-3.5v-19.5z"/>
+              <path id="Rectangle-484-Copy-13" fill="#000" fill-opacity=".05" d="M553.5 420.5h114V434h-114z"/>
+            </g>
           </g>
           <path id="Rectangle-484-Copy-14" fill="url(#linearGradient3297)" d="M-1.5 126h114v13.5h-114z" transform="translate(555 290)"/>
         </g>
@@ -107,27 +109,35 @@
           <path id="rect115" fill="#000" fill-opacity=".05" d="M802.45 276.1h130.9v5.44h-130.9z"/>
           <path id="rect117" fill="#C16565" d="M797 263h141.82v13.1H797z"/>
           <g id="windows6">
-            <path id="rect121" fill="#000" fill-opacity=".05" d="M813.9 324.68H863v34.9h-49.1z"/>
-            <path id="rect123" fill="#e1f4fa" stroke="#fff" stroke-width="6" d="M813.36 319.36h49.1v34.9h-49.1z"/>
-            <path id="Rectangle-372-Copy-77" fill="#000" fill-opacity=".05" d="M816.5 322.5h43v6H822V351h-5.5v-28.5z"/>
-            <path id="rect126" fill="#000" fill-opacity=".05" d="M813.9 384.68H863v34.9h-49.1z"/>
-            <path id="rect128" fill="#e1f4fa" stroke="#fff" stroke-width="6" d="M813.36 379.36h49.1v34.9h-49.1z"/>
-            <path id="rect130" fill="#000" fill-opacity=".05" d="M813.9 444.68H863v34.9h-49.1z"/>
-            <path id="rect132" fill="#e1f4fa" stroke="#fff" stroke-width="6" d="M813.36 439.36h49.1v34.9h-49.1z"/>
-            <path id="Rectangle-372-Copy-91" fill="#000" fill-opacity=".05" d="M873.9 324.68H923v34.9h-49.1z"/>
-            <path id="Rectangle-372-Copy-83" fill="#e1f4fa" stroke="#fff" stroke-width="6" d="M873.36 319.36h49.1v34.9h-49.1z"/>
-            <path id="Rectangle-372-Copy-84" fill="#000" fill-opacity=".05" d="M873.9 384.68H923v34.9h-49.1z"/>
-            <path id="Rectangle-372-Copy-85" fill="#e1f4fa" stroke="#fff" stroke-width="6" d="M873.36 379.36h49.1v34.9h-49.1z"/>
-            <path id="Rectangle-372-Copy-86" fill="#000" fill-opacity=".05" d="M873.9 444.68H923v34.9h-49.1z"/>
-            <path id="Rectangle-372-Copy-87" fill="#e1f4fa" stroke="#fff" stroke-width="6" d="M873.36 439.36h49.1v34.9h-49.1z"/>
+            <g>
+              <path id="rect123" fill="#e1f4fa" stroke="#fff" stroke-width="6" d="M813.36 319.36h49.1v34.9h-49.1z"/>
+              <path id="Rectangle-372-Copy-83" fill="#e1f4fa" stroke="#fff" stroke-width="6" d="M873.36 319.36h49.1v34.9h-49.1z"/>
+            </g>
+            <g>
+              <path id="rect128" fill="#e1f4fa" stroke="#fff" stroke-width="6" d="M813.36 379.36h49.1v34.9h-49.1z"/>
+              <path id="Rectangle-372-Copy-85" fill="#e1f4fa" stroke="#fff" stroke-width="6" d="M873.36 379.36h49.1v34.9h-49.1z"/>
+            </g>
+            <g>
+              <path id="rect132" fill="#e1f4fa" stroke="#fff" stroke-width="6" d="M813.36 439.36h49.1v34.9h-49.1z"/>
+              <path id="Rectangle-372-Copy-87" fill="#e1f4fa" stroke="#fff" stroke-width="6" d="M873.36 439.36h49.1v34.9h-49.1z"/>
+            </g>
             <path id="rect140" fill="#2C4B56" stroke="#FFF" stroke-width="6" d="M843.36 497.55h49.1V563h-49.1z"/>
-            <path id="path142" fill="#000" fill-opacity=".05" d="M846.64 499.18h41.45v5.46h-34.92v52.9h-6.54V499.2z"/>
             <path id="rect144" fill="#123340" d="M879.9 526.56h4.37v8.3h-4.36z"/>
-            <path id="Rectangle-372-Copy-78" fill="#000" fill-opacity=".05" d="M876.5 322.5h43v6H882V351h-5.5v-28.5z"/>
-            <path id="Rectangle-372-Copy-93" fill="#000" fill-opacity=".05" d="M816.5 382.5h43v6H822V411h-5.5v-28.5z"/>
-            <path id="Rectangle-372-Copy-92" fill="#000" fill-opacity=".05" d="M876.5 382.5h43v6H882V411h-5.5v-28.5z"/>
-            <path id="Rectangle-372-Copy-95" fill="#000" fill-opacity=".05" d="M816.5 442.5h43v6H822V471h-5.5v-28.5z"/>
-            <path id="Rectangle-372-Copy-94" fill="#000" fill-opacity=".05" d="M876.5 442.5h43v6H882V471h-5.5v-28.5z"/>
+            <g>
+              <path id="path142" fill="#000" fill-opacity=".05" d="M846.64 499.18h41.45v5.46h-34.92v52.9h-6.54V499.2z"/>
+              <path id="rect121" fill="#000" fill-opacity=".05" d="M813.9 324.68H863v34.9h-49.1z"/>
+              <path id="rect126" fill="#000" fill-opacity=".05" d="M813.9 384.68H863v34.9h-49.1z"/>
+              <path id="rect130" fill="#000" fill-opacity=".05" d="M813.9 444.68H863v34.9h-49.1z"/>
+              <path id="Rectangle-372-Copy-77" fill="#000" fill-opacity=".05" d="M816.5 322.5h43v6H822V351h-5.5v-28.5z"/>
+              <path id="Rectangle-372-Copy-91" fill="#000" fill-opacity=".05" d="M873.9 324.68H923v34.9h-49.1z"/>
+              <path id="Rectangle-372-Copy-84" fill="#000" fill-opacity=".05" d="M873.9 384.68H923v34.9h-49.1z"/>
+              <path id="Rectangle-372-Copy-86" fill="#000" fill-opacity=".05" d="M873.9 444.68H923v34.9h-49.1z"/>
+              <path id="Rectangle-372-Copy-78" fill="#000" fill-opacity=".05" d="M876.5 322.5h43v6H882V351h-5.5v-28.5z"/>
+              <path id="Rectangle-372-Copy-93" fill="#000" fill-opacity=".05" d="M816.5 382.5h43v6H822V411h-5.5v-28.5z"/>
+              <path id="Rectangle-372-Copy-92" fill="#000" fill-opacity=".05" d="M876.5 382.5h43v6H882V411h-5.5v-28.5z"/>
+              <path id="Rectangle-372-Copy-95" fill="#000" fill-opacity=".05" d="M816.5 442.5h43v6H822V471h-5.5v-28.5z"/>
+              <path id="Rectangle-372-Copy-94" fill="#000" fill-opacity=".05" d="M876.5 442.5h43v6H882V471h-5.5v-28.5z"/>
+            </g>
           </g>
         </g>
         <g id="building3">
