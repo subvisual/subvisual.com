@@ -217,7 +217,7 @@
 }
 
 .Panel.Panel--easymoneyMapaMundi {
-  @include retina-background('case-studies/easy-money/easymoney-header');
+  @include retina-background('case-studies/easy-money/easymoney-header-650');
 
   justify-content: center;
 
@@ -229,6 +229,10 @@
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @include media('>tablet') {
+    @include retina-background('case-studies/easy-money/easymoney-header');
+  }
 }
 
 .Panel.Panel--techCrunch {
