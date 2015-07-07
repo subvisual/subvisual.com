@@ -49,12 +49,12 @@
     windows: '#windows7'
   }];
 
-  init();
+  $(document).ready(init);
+  $(window).load(startAnimation);
 
   function init() {
     initBuildings();
     hideAllElements();
-    startAnimation();
   }
 
   function initBuildings() {
