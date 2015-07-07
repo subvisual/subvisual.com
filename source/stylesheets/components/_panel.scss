@@ -177,31 +177,66 @@
 }
 
 .Panel.Panel--joinUs {
-  @include background-image('company/join-us/team.jpg');
-
   height: 0;
 
   background-position: top center;
   background-size: cover;
 
-  @include media('<tablet') {
+  @include media('<=tablet') {
     padding-top: calc(44% - #{$Theme-nav-height-desktop});
     padding-bottom: calc(44% + #{$Theme-nav-height-desktop});
+
+    @include retina-background('company/join-us/team-650', 'jpg');
   }
 
-  @include media('>=tablet') {
+  @include media('>=tablet', '<desktop') {
     padding-top: calc(32% - #{$Theme-nav-height-desktop});
     padding-bottom: calc(35% + #{$Theme-nav-height-desktop});
+  }
+
+  @include media('>tablet', '<=1440px') {
+    @include retina-background('company/join-us/team-1440', 'jpg');
   }
 
   @include media('>=desktop') {
     padding-top: calc(22% - #{$Theme-nav-height-desktop});
     padding-bottom: calc(22% + #{$Theme-nav-height-desktop});
   }
+
+  @include media('>1440px') {
+    @include retina-background('company/join-us/team-1920', 'jpg');
+  }
 }
 
 .Panel.Panel--secondHome {
-  @include background-image('company/join-us/second_home.jpg');
+  @include media('<=tablet') {
+    @include retina-background('company/join-us/second-home-650', 'jpg');
+
+    padding-top: 15%;
+    padding-bottom: 15%;
+
+    background-position: 27%;
+  }
+
+  @include media('>tablet', '<=1440px') {
+    @include retina-background('company/join-us/second-home-1440', 'jpg');
+  }
+
+  @include media('>tablet') {
+    padding-top: 10%;
+    padding-bottom: 10%;
+
+    background-position: center;
+  }
+
+  @include media('>1440px') {
+    @include retina-background('company/join-us/second-home-1920', 'jpg');
+  }
+
+  @include media('>desktop') {
+    padding-top: 7%;
+    padding-bottom: 7%;
+  }
 }
 
 .Panel.Panel--easymoneyGradient {
