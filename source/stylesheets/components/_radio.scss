@@ -70,8 +70,10 @@ $Radio-input-size: 25px;
     top: $inner-border;
     left: $inner-border;
 
+    // styleguide:ignore:start
     width: calc(100% - #{$inner-border * 2});
     height: calc(100% - #{$inner-border * 2});
+    // styleguide:ignore:end
 
     background-color: $Theme-color-yellowOrange;
     border-radius: 50%;
