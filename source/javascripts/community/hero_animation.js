@@ -13,11 +13,11 @@
   var buildingsShowMatrix = 's1 1 0 563';
   var buildingsHideMatrix = 's1 0 0 563';
 
-  var windowAnimationTime = 100;
+  var windowAnimationTime = 0.170;
 
-  var timeBeteweenBuldings = 175;
-  var timeBeforeBackgorund = 1500;
-  var backgroundAnimationTime = 1000;
+  var timeBeteweenBuldings = 0.175;
+  var timeBeforeBackgorund = 1.5;
+  var backgroundAnimationTime = 1;
 
   var buildingAnimationMaxTime = 400;
   var buildingAnimationMinTime = 300;
@@ -86,7 +86,7 @@
   }
 
   function hideBuilding(building) {
-    transformElement(building, buildingsHideMatrix);
+    TweenLite.set($(building.node), { scaleY: 0, transformOrigin: '100% 100%' });
   }
 
   function hideWindows(windowsGroup) {
@@ -94,11 +94,11 @@
   }
 
   function hideWindow(buildingWindow) {
-    transformElement(buildingWindow, windowsHideMatrix);
+      TweenLite.set($(buildingWindow.node), { scaleY: 0, scaleX: 0, transformOrigin: '50% 50%' });
   }
 
   function hideBackground() {
-    transformElement(background, buildingsHideMatrix);
+    TweenLite.set($(background.node), { scaleY: 0, transformOrigin: '100% 100%' });
   }
 
   function startAnimation() {
@@ -108,15 +108,20 @@
   }
 
   function showBuildings(building, index) {
-    setTimeout(function() {
-      animateElement(
-        building,
-        buildingsShowMatrix,
-        getRandomInt(buildingAnimationMinTime, buildingAnimationMaxTime),
-        buildingEasing,
-        windowsAnimation(index)
-      );
-    }, timeBeteweenBuldings + timeBeteweenBuldings * index);
+    TweenLite.to(
+      $(building.node),
+      getRandomInt(buildingAnimationMinTime, buildingAnimationMaxTime) / 1000,
+      {
+        delay: buildingDelay(index),
+        scaleY: 1,
+        onComplete: windowsAnimation(index),
+        ease: Back.easeOut.config(1.7)
+      }
+    );
+  }
+
+  function buildingDelay(index) {
+    return timeBeteweenBuldings + timeBeteweenBuldings * index;
   }
 
   function windowsAnimation(windowsIndex) {
@@ -127,12 +132,15 @@
   }
 
   function animateWindow(buildingWindow, index, windowGroup) {
-    animateElement(
-      buildingWindow,
-      windowsShowMatrix,
+    TweenLite.to(
+      $(buildingWindow.node),
       windowAnimationTime,
-      windowsEasing,
-      nextWindowAnimation(index, windowGroup)
+      {
+        scaleX: 1,
+        scaleY: 1,
+        onComplete: nextWindowAnimation(index, windowGroup),
+        ease: Back.easeOut.config(1.7)
+      }
     );
   }
 
@@ -153,22 +161,15 @@
   }
 
   function showBackground()  {
-    animateElement(
-      background,
-      buildingsShowMatrix,
+    TweenLite.to(
+      $(background.node),
       backgroundAnimationTime,
-      backgroundEasing
+      {
+        delay: timeBeforeBackgorund,
+        scaleY: 1,
+        ease: Back.easeOut.config(1.7)
+      }
     );
-  }
-
-  function animateElement(element, matrix, duration, easing, callback) {
-    element.animate({
-      transform: matrix
-    }, duration, easing, callback);
-  }
-
-  function transformElement(element, matrix) {
-    element.transform(matrix);
   }
 
   function getRandomInt(min, max) {
