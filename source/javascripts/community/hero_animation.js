@@ -7,12 +7,6 @@
   var buildings = [];
   var buildingWindows = new Snap.set();
 
-  var windowsShowMatrix = 's1 1';
-  var windowsHideMatrix = 's0 0';
-
-  var buildingsShowMatrix = 's1 1 0 563';
-  var buildingsHideMatrix = 's1 0 0 563';
-
   var windowAnimationTime = 0.170;
 
   var timeBeteweenBuldings = 0.175;
@@ -21,10 +15,6 @@
 
   var buildingAnimationMaxTime = 400;
   var buildingAnimationMinTime = 300;
-
-  var windowsEasing = mina.backout;
-  var buildingEasing = mina.backout;
-  var backgroundEasing = mina.backout;
 
   var buildingsNames = [{
     name: '#building1',
@@ -94,7 +84,7 @@
   }
 
   function hideWindow(buildingWindow) {
-      TweenLite.set($(buildingWindow.node), { scaleY: 0, scaleX: 0, transformOrigin: '50% 50%' });
+    TweenLite.set($(buildingWindow.node), { scaleY: 0, scaleX: 0, transformOrigin: '50% 50%' });
   }
 
   function hideBackground() {
@@ -110,18 +100,14 @@
   function showBuildings(building, index) {
     TweenLite.to(
       building,
-      getRandomInt(buildingAnimationMinTime, buildingAnimationMaxTime) / 1000,
+      getRandomAnimationTime(buildingAnimationMinTime, buildingAnimationMaxTime),
       {
-        delay: buildingDelay(index),
+        delay: timeBeteweenBuldings + timeBeteweenBuldings * index,
         scaleY: 1,
         onComplete: windowsAnimation(index),
         ease: Back.easeOut.config(1.7)
       }
     );
-  }
-
-  function buildingDelay(index) {
-    return timeBeteweenBuldings + timeBeteweenBuldings * index;
   }
 
   function windowsAnimation(windowsIndex) {
@@ -172,8 +158,8 @@
     );
   }
 
-  function getRandomInt(min, max) {
-    return Math.floor(Math.random() * (max - min)) + min;
+  function getRandomAnimationTime(min, max) {
+    return (Math.floor(Math.random() * (max - min)) + min) / 1000;
   }
 
   function shuffle(o) {
