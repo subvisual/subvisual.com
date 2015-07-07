@@ -4,7 +4,7 @@
   var scene = Snap('#Page-1');
   var background = Snap('#background');
 
-  var buildings = new Snap.set();
+  var buildings = [];
   var buildingWindows = new Snap.set();
 
   var windowsShowMatrix = 's1 1';
@@ -68,7 +68,7 @@
   }
 
   function populateBuildings(building, index) {
-    buildings.push(building);
+    buildings.push($(building.node));
     populateWindows(building, index);
   }
 
@@ -86,7 +86,7 @@
   }
 
   function hideBuilding(building) {
-    TweenLite.set($(building.node), { scaleY: 0, transformOrigin: '100% 100%' });
+    TweenLite.set(building, { scaleY: 0, transformOrigin: '100% 100%' });
   }
 
   function hideWindows(windowsGroup) {
@@ -104,12 +104,12 @@
   function startAnimation() {
     element.css('visibility', 'visible');
     buildings.forEach(showBuildings);
-    setTimeout(showBackground, timeBeforeBackgorund);
+    showBackground();
   }
 
   function showBuildings(building, index) {
     TweenLite.to(
-      $(building.node),
+      building,
       getRandomInt(buildingAnimationMinTime, buildingAnimationMaxTime) / 1000,
       {
         delay: buildingDelay(index),
