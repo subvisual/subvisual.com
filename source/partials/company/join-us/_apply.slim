@@ -15,8 +15,8 @@
 .HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--darkFrame
   .HorizontalGrid-cell
     .u-defaultThenLargeMargin
-    .GridCell.u-defaultThenLargeMargin
-      .GridCell-content
+    .GridCell.u-defaultThenLargeMargin.u-flexGrow
+      .GridCell-content.StickToBottom.u-defaultThenLargeMargin
         .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft
           h2.Heading.Heading--brand.u-smallMargin
             span.Heading-highlight Developer
@@ -26,20 +26,19 @@
           ' Well-qualified candidates have an excellent knowledge of HTML, CSS,
           ' JavaScript, SQL, Unix, deployment, performance, debugging,
           | refactoring, design patterns, and other programming practices.
-
         p.Text.u-smallThenDefaultMargin
           ' Our team works in a relaxed and educational environment. We use the
           ' latest technologies and embrace agile philosophies. Everything we do
           ' is predicated on having a great team and a culture of continuous
           | learning.
-
-        .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft
-          = link_to 'Apply for developer', 'https://groupbuddies.typeform.com/to/ayVm3E', class: 'ButtonPrimary'
+        .StickToBottom-target
+          .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft
+            = link_to 'Apply for developer', 'https://groupbuddies.typeform.com/to/ayVm3E', class: 'ButtonPrimary'
 
   .HorizontalGrid-cell
     .u-defaultThenLargeMargin
-    .GridCell
-      .GridCell-content
+    .GridCell.u-defaultThenLargeMargin.u-flexGrow
+      .GridCell-content.StickToBottom.u-defaultThenLargeMargin
         .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft
           h2.Heading.Heading--brand.u-smallMargin
             span.Heading-highlight Designer
@@ -47,13 +46,12 @@
           ' We focus on designing products for the other side of the screen,
           ' aiming for an intuitive and delightful experience for the users.
           ' You’ll find a fun, engaging and welcoming environment, where
-          | knowledge is fostered and your limitations are challenged. 
-
+          | knowledge is fostered and your limitations are challenged.
         p.Text.u-smallThenDefaultMargin
           ' If you're deeply passionate about everything related to design and
           ' the idea of investing time trying out new techniques and innovative
           | processes excites you, you might be exactly who we're looking for.
-
-        .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft
-          = link_to 'Apply for designer', 'https://groupbuddies.typeform.com/to/ayVm3E', class: 'ButtonPrimary'
+        .StickToBottom-target
+          .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft
+            = link_to 'Apply for designer', 'https://groupbuddies.typeform.com/to/ayVm3E', class: 'ButtonPrimary'
 .u-defaultThenLargeMargin
