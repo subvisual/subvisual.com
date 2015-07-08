@@ -1,11 +1,11 @@
 (function() {
   var element = $('.Buildings');
 
-  var scene = Snap('#Page-1');
-  var background = Snap('#background');
+  var scene = $('#Page-1');
+  var background = $('#background');
 
   var buildings = [];
-  var buildingWindows = new Snap.set();
+  var buildingWindows = [];
 
   var windowAnimationTime = 0.170;
 
@@ -47,32 +47,32 @@
     hideAllElements();
   }
 
-  function initBuildings() {
-    shuffle(buildingsNames);
-    buildingsNames.forEach(findBuildings);
-  }
-
-  function findBuildings(building, index) {
-    var object = scene.select(building.name);
-    populateBuildings(object, index);
-  }
-
-  function populateBuildings(building, index) {
-    buildings.push($(building.node));
-    populateWindows(building, index);
-  }
-
-  function populateWindows(building, index) {
-    var buildingWindow = building.select(buildingsNames[index].windows);
-    buildingWindow = buildingWindow.selectAll('g');
-    buildingWindow.items.reverse();
-    buildingWindows.push(buildingWindow);
-  }
-
   function hideAllElements() {
     buildings.forEach(hideBuilding);
     buildingWindows.forEach(hideWindows);
     hideBackground();
+  }
+
+  function initBuildings() {
+    buildingsNames = shuffle(buildingsNames);
+    buildingsNames.forEach(findBuildings);
+  }
+
+  function findBuildings(building, index) {
+    var object = scene.find(building.name);
+    populateBuildings(object, index);
+  }
+
+  function populateBuildings(building, index) {
+    buildings.push($(building));
+    populateWindows(building, index);
+  }
+
+  function populateWindows(building, index) {
+    var windowsGroup = building.find(buildingsNames[index].windows);
+    windowsGroup = windowsGroup.find('g');
+    windowsGroup = windowsGroup.toArray().reverse();
+    buildingWindows.push(windowsGroup);
   }
 
   function hideBuilding(building) {
@@ -84,11 +84,11 @@
   }
 
   function hideWindow(buildingWindow) {
-    TweenLite.set($(buildingWindow.node), { scaleY: 0, scaleX: 0, transformOrigin: '50% 50%' });
+    TweenLite.set($(buildingWindow), { scaleY: 0, scaleX: 0, transformOrigin: '50% 50%' });
   }
 
   function hideBackground() {
-    TweenLite.set($(background.node), { scaleY: 0, transformOrigin: '100% 100%' });
+    TweenLite.set(background, { scaleY: 0, transformOrigin: '100% 100%' });
   }
 
   function startAnimation() {
@@ -111,7 +111,7 @@
   }
 
   function windowsAnimation(windowsIndex) {
-    var windowGroup = buildingWindows.items[windowsIndex];
+    var windowGroup = buildingWindows[windowsIndex];
     return function showWindows() {
       animateWindow(windowGroup[0], 0, windowGroup);
     };
@@ -119,7 +119,7 @@
 
   function animateWindow(buildingWindow, index, windowGroup) {
     TweenLite.to(
-      $(buildingWindow.node),
+      $(buildingWindow),
       windowAnimationTime,
       {
         scaleX: 1,
@@ -148,7 +148,7 @@
 
   function showBackground()  {
     TweenLite.to(
-      $(background.node),
+      background,
       backgroundAnimationTime,
       {
         delay: timeBeforeBackgorund,
@@ -162,8 +162,15 @@
     return (Math.floor(Math.random() * (max - min)) + min) / 1000;
   }
 
-  function shuffle(o) {
-    for (var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
-    return 0;
+  function shuffle(array) {
+    shuffledArray = array;
+    for (
+      var j, x, i = shuffledArray.length; i;
+      j = Math.floor(Math.random() * i),
+      x = shuffledArray[--i],
+      shuffledArray[i] = shuffledArray[j],
+      shuffledArray[j] = x
+    );
+    return shuffledArray;
   }
 })();
