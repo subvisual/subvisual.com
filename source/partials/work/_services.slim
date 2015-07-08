@@ -19,8 +19,8 @@
 
   .HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--lightFrame
     .HorizontalGrid-cell
-      .GridCell.u-defaultThenLargeMargin
-        .GridCell-content
+      .GridCell.u-defaultMargin.u-flexGrow
+        .GridCell-content.StickToBottom.u-defaultThenLargeMargin
           .u-defaultThenLargeMargin
           .ContentFormatter.ContentFormatter--centerHorizontally.u-smallThenDefaultMargin
             .RatioEnforcer.RatioEnforcer--services
@@ -31,10 +31,12 @@
                 | Product Development
             .Text.u-smallThenDefaultMargin
               | We turn your bright idea into a delightful product.
-            = link_to 'Learn more', '/work/product-development', class: 'ButtonPrimary'
+          .StickToBottom-target
+            .ContentFormatter.ContentFormatter--centerHorizontally
+              = link_to 'Learn more', '/work/product-development', class: 'ButtonPrimary'
     .HorizontalGrid-cell
-      .GridCell.u-defaultThenLargeMargin
-        .GridCell-content
+      .GridCell.u-defaultMargin.u-flexGrow
+        .GridCell-content.StickToBottom.u-defaultThenLargeMargin
           .u-defaultThenLargeMargin
           .ContentFormatter.ContentFormatter--centerHorizontally.u-smallThenDefaultMargin
             .RatioEnforcer.RatioEnforcer--services
@@ -45,10 +47,12 @@
                 | Consulting
             .Text.u-defaultMargin
               | We stand alongside your team producing excellent work while carrying our disciplined practices with us.
-            = link_to 'Learn more', '/work/consulting', class: 'ButtonPrimary'
+          .StickToBottom-target
+            .ContentFormatter.ContentFormatter--centerHorizontally
+              = link_to 'Learn more', '/work/consulting', class: 'ButtonPrimary'
     .HorizontalGrid-cell
-      .GridCell.u-defaultThenLargeMargin
-        .GridCell-content
+      .GridCell.u-defaultMargin.u-flexGrow
+        .GridCell-content.StickToBottom.u-defaultThenLargeMargin
           .u-defaultThenLargeMargin
           .ContentFormatter.ContentFormatter--centerHorizontally.u-smallThenDefaultMargin
             .RatioEnforcer.RatioEnforcer--services
@@ -59,5 +63,7 @@
                 | Training
             .Text.u-defaultMargin
               | Steer your team's standards towards a sense of craftsmanship.
-            = link_to 'Learn more', '/work/training', class: 'ButtonPrimary'
+          .StickToBottom-target
+            .ContentFormatter.ContentFormatter--centerHorizontally
+              = link_to 'Learn more', '/work/training', class: 'ButtonPrimary'
   .u-largeThenDoubleLargeMargin

@@ -9,8 +9,8 @@
 
   .HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--darkFrame
     .HorizontalGrid-cell
-      .GridCell.u-defaultThenLargeMargin
-        .GridCell-content
+      .GridCell.u-defaultThenLargeMargin.u-flexGrow
+        .GridCell-content.StickToBottom.u-defaultMargin
           .u-defaultThenLargeMargin
           .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft
             h3.Heading.Heading--brand.u-smallMargin
@@ -21,11 +21,12 @@
             ' In 4 weeks, we’ll find what job your product needs to do and we
             ' make it delightful. We strongly believe that it all comes down to
             | the way it feels and works for the user.
-          .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft
-            = link_to 'Learn more', '/work/product-development/mdp', class: 'ButtonSecondary'
+          .StickToBottom-target
+            .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft
+              = link_to 'Learn more', '/work/product-development/mdp', class: 'ButtonSecondary'
     .HorizontalGrid-cell
-      .GridCell.u-defaultThenLargeMargin
-        .GridCell-content
+      .GridCell.u-defaultThenLargeMargin.u-flexGrow
+        .GridCell-content.StickToBottom.u-defaultMargin
           .u-defaultThenLargeMargin
           .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft
             h3.Heading.Heading--brand.u-smallMargin
@@ -34,8 +35,9 @@
           .Text.u-smallThenDefaultMargin
             ' We work to solve user-centered problems, so we begin by
             | understanding and defining it as thoroughly as possible.
-          .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft
-            = link_to 'Learn more', '/work/product-development/design-sprint', class: 'ButtonSecondary'
+          .StickToBottom-target
+            .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft
+              = link_to 'Learn more', '/work/product-development/design-sprint', class: 'ButtonSecondary'
   .u-defaultThenLargeMargin
   .GridCell.GridCell--alignCenter.u-defaultThenLargeMargin
     .GridCell-content

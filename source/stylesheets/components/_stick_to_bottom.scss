@@ -1,0 +1,28 @@
+// StickToBottom
+//
+// Positions a target element absolutely at the bottom of the component.<br>
+// The target element is below the bottom edge (outside the component) in order to not overlap any existing content.<br>
+// Also, naturally the component does not take the parent's full height.
+//
+// markup:
+// <div class="StickToBottom">
+//   <div class="StickToBottom-target">
+//     +351 123 123 123
+//   </div>
+// </div>
+//
+// Styleguide 5.16
+
+.StickToBottom {
+  position: relative;
+}
+
+.StickToBottom-target {
+  position: absolute;
+
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  transform: translateY(100%);
+}
