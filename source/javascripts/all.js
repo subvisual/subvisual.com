@@ -9,3 +9,4 @@
 //= require homepage/_lines
 //= require homepage/_planets
 //= require work/_origami
+//= require company/_planets

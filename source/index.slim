@@ -18,6 +18,7 @@ page: home
 
 javascript:
   window.onload = function() {
-    window.homepage.animateLines();
-    window.homepage.animatePlanets();
+    var svg = document.querySelector('#homepage-hero');
+    window.homepage.animateLines(svg);
+    window.homepage.animatePlanets(svg);
   };

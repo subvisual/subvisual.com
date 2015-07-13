@@ -15,9 +15,7 @@
     });
   }
 
-  function animatePlanets() {
-    let svg = document.querySelector('#hero');
-
+  function animatePlanets(svg) {
     // group-planets-1
     animateAlongPath(
       svg.querySelector('#group-planets-1'),

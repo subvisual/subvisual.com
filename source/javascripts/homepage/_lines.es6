@@ -4,6 +4,7 @@
   const lineMinWidth = 100;
   const lineMaxWidth = 500;
   const colors = ['#0ADCF2', '#EC7376', '#FCD380', '#E1EAF6', '#8DC8DC', '#4DEBC3'];
+  let lines;
   let speedTable = {
     get 1() {
       return getRandomInt(65, 70);
@@ -97,9 +98,9 @@
     );
   }
 
-  let lines = document.querySelectorAll('#svg .Line');
+  function animateLines(svg) {
+    lines = svg.querySelectorAll('.Line');
 
-  function animateLines() {
     for(let i = 0; i < lines.length; i++) {
       setTimeout(function() {
         animateLine(lines[i], i);
