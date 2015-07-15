@@ -252,21 +252,43 @@
 }
 
 .Panel.Panel--easymoneyMapaMundi {
-  @include retina-background('case-studies/easy-money/easymoney-header-650');
+  position: relative;
 
-  justify-content: center;
-
-  // the background-image's height achieved by dividing the ratio between the top and bottom padding, thus centering the content
-  padding-top: 22.935%;
-  padding-bottom: 22.935%;
+  height: 0;
+  padding-bottom: 45.87%;
 
   background-color: transparent;
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
 
-  @include media('>tablet') {
-    @include retina-background('case-studies/easy-money/easymoney-header');
+  .Panel-backgroundImage{
+    @include retina-background('case-studies/easy-money/easymoney-header-650');
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @include media('>tablet') {
+      @include retina-background('case-studies/easy-money/easymoney-header');
+    }
+  }
+
+  .Panel-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: $Theme-layer-overlay + 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
   }
 }
 

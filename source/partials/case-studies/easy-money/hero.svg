@@ -1,0 +1,49 @@
+<svg id="easymoney-hero" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 298">
+  <title>
+    Map locations
+  </title>
+  <defs>
+    <linearGradient id="linearGradient-1" x1="50%" x2="50%" y1="0%" y2="100%">
+      <stop stop-color="#09DFF3" offset="0%"/>
+      <stop stop-color="#44BEFF" offset="100%"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .Point {
+      stroke: url(#linearGradient-1);
+      stroke-width: 0.5;
+      opacity: 0;
+    }
+    .Path {
+      stroke: url(#linearGradient-1);
+      stroke-width: 0.5;
+      fill: none;
+      opacity: 0;
+    }
+  </style>
+  <g fill="none" fill-rule="evenodd">
+    <g class="JourneyPath">
+      <path class="Path" d="M177.1 65s17-21 63.4-21c46.6 0 63.5 21 63.5 21" />
+      <ellipse class="Point" cx="175.6" cy="66.2" rx="1.8" ry="1.8"/>
+      <ellipse class="Point" cx="304.6" cy="66.2" rx="1.8" ry="1.8"/>
+    </g>
+
+    <g class="JourneyPath">
+      <path class="Path" d="M188.8,164.8s51.4,-37.2,167.3,-19.4C472,163.2,534.4,218,534.4,218" />
+      <ellipse class="Point" cx="187.2" cy="165.6" rx="1.8" ry="1.8"/>
+      <ellipse class="Point" cx="535.9" cy="219.4" rx="1.8" ry="1.8"/>
+    </g>
+
+    <g class="JourneyPath">
+      <path class="Path" d="M290,77.6S312,47,360.2,38c48.2,-9,77.4,18.7,77.4,18.7" />
+      <ellipse class="Point" cx="289" cy="78.9" rx="1.8" ry="1.8"/>
+      <ellipse class="Point" cx="438.6" cy="58.3" rx="1.8" ry="1.8"/>
+    </g>
+
+    <g class="JourneyPath">
+      <path class="Path" d="M322,38.7s13,25.7,14,62.6c1,37,-9,68,-9,68" />
+      <ellipse class="Point" cx="321" cy="36.8" rx="1.8" ry="1.8"/>
+      <ellipse class="Point" cx="327" cy="171" rx="1.8" ry="1.8"/>
+    </g>
+  </g>
+</svg>
