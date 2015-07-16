@@ -49,8 +49,10 @@
   function resetLine(direction, width, i) {
     let color = randomColor();
     return {
-      width: width,
-      height: lineHeight(width),
+      attr: {
+        width: width,
+        height: lineHeight(width)
+      },
       stroke: color,
       fill: color,
       x: initialPosition(width, direction),
