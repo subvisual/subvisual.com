@@ -7,7 +7,7 @@
 
 header#main-nav.Nav.Nav--topPositioned class="#{current_page.data.nav_class}"
   = link_to '/', "aria-label" => "Homepage", class: 'Nav-logo'
-    .NavLogo class=nav_logo_class
+    = partial 'nav/logo_color.svg'
 
   .Nav-menu
     .Burger class=nav_burger_class
