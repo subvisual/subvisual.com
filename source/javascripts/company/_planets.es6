@@ -8,7 +8,7 @@
       delay: delay,
       onUpdate: function() {
         let coords = path.getPointAtLength(counter.value);
-        TweenLite.set(object, { x: coords.x, y: coords.y });
+        TweenLite.set(object, { x: coords.x, y: coords.y, rotationZ: 0.01 });
       },
       onComplete: animateAlongPath,
       onCompleteParams: [object, path, duration, delay]

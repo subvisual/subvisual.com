@@ -122,8 +122,7 @@
       $(buildingWindow),
       windowAnimationTime,
       {
-        scaleX: 1,
-        scaleY: 1,
+        scale: 1,
         onComplete: nextWindowAnimation(index, windowGroup),
         ease: Back.easeOut.config(1.7)
       }
