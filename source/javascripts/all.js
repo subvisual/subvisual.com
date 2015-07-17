@@ -6,6 +6,7 @@
 //= require blue
 //= require _fastclick_init
 //= require _input
+//= require _animation_helpers
 //= require homepage/_lines
 //= require homepage/_planets
 //= require work/_origami

@@ -78,28 +78,28 @@
       <rect class="Line" />
     </g>
     <g id="planet-half-hidden">
-      <use id="planet-green-1" xlink:href="#planet-green" transform="translate(280.164 230.54) scale(1.66)" />
+      <use id="planet-green-1" xlink:href="#planet-green" transform="translate(180.164 230.54) scale(1.66)" />
     </g>
     <g id="big-planet">
-      <use id="planet-orange-1" xlink:href="#planet-orange" transform="translate(341.135 75.665) scale(4.87)" />
+      <use id="planet-orange-1" xlink:href="#planet-orange" transform="translate(241.135 75.665) scale(4.87)" />
     </g>
     <g id="group-planets-1">
-      <use id="planet-light-grey-1" xlink:href="#planet-light-grey" transform="translate(550.712 119.734) scale(0.416)" />
-      <use id="planet-dark-grey-1" xlink:href="#planet-dark-grey" transform="translate(490.56 145.977) scale(0.3)" />
+      <use id="planet-light-grey-1" xlink:href="#planet-light-grey" transform="translate(450.712 119.734) scale(0.416)" />
+      <use id="planet-dark-grey-1" xlink:href="#planet-dark-grey" transform="translate(390.56 145.977) scale(0.3)" />
     </g>
     <g id="planet-blue-with-ring">
-      <use id="planet-blue-1" xlink:href="#planet-blue" transform="translate(837.1 20) scale(3.32)" />
+      <use id="planet-blue-1" xlink:href="#planet-blue" transform="translate(737.1 20) scale(3.32)" />
       <path stroke="#FFCD6F" stroke-width="3" d="M803.92 124.78h271.55" stroke-linecap="round" stroke-linejoin="round" />
       <path stroke="#0B9DE7" stroke-width="2" d="M842 128.27h195" stroke-linecap="square" />
     </g>
     <g id="moon-1">
-      <use id="planet-light-grey-2" xlink:href="#planet-light-grey" transform="translate(891.237 61.913) scale(0.34)" />
+      <use id="planet-light-grey-2" xlink:href="#planet-light-grey" transform="translate(791.237 61.913) scale(0.34)" />
     </g>
     <g id="moon-2">
-      <use id="planet-orange-2" xlink:href="#planet-orange" transform="translate(995.003 95.093) scale(0.27)" />
+      <use id="planet-orange-2" xlink:href="#planet-orange" transform="translate(895.003 95.093) scale(0.27)" />
     </g>
     <g id="moon-3">
-      <use id="planet-orange-3" xlink:href="#planet-orange" transform="translate(1050 230) scale(0.27)" />
+      <use id="planet-orange-3" xlink:href="#planet-orange" transform="translate(950 230) scale(0.27)" />
     </g>
     <path id="orbit-moons-1" d="M0 0a2,1 0 1,0 4,0a2,1 0 1,0 -4,0" fill="none" />
     <path id="orbit-big-planet" d="M0 0v10z" fill="none" />
