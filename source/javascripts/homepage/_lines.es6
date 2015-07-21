@@ -21,9 +21,6 @@
     get 5() {
       return getRandomInt(30, 35);
     },
-    get 6() {
-      return getRandomInt(1, 2);
-    }
   };
 
   function getRandomInt(min, max) {
@@ -94,6 +91,7 @@
       el, getSpeed(width),
       {
         x: translateX(direction, width),
+        delay: 0.8 * i,
         onComplete: animateLine,
         onCompleteParams: [el, i]
       }
@@ -104,9 +102,7 @@
     lines = svg.querySelectorAll('.Line');
 
     for(let i = 0; i < lines.length; i++) {
-      setTimeout(function() {
-        animateLine(lines[i], i);
-      }, 800 * i);
+      animateLine(lines[i], i);
     };
   }
 

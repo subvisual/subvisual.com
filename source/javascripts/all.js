@@ -9,6 +9,7 @@
 //= require _animation_helpers
 //= require homepage/_lines
 //= require homepage/_planets
+//= require homepage/_hero_parallax
 //= require homepage/_logo_tools
 //= require homepage/_logo_transparency
 //= require work/_origami

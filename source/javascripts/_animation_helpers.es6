@@ -17,6 +17,11 @@
 
   function onScrollToElement(elem, visibility, callback) {
     var $elem = $(elem);
+
+    if ($elem.length == 0) {
+      return;
+    }
+
     var checkVisibility = function() {
       var $viewport = $(this);
       if ($elem.data('scrolled')) {
