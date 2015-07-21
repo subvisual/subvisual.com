@@ -10,7 +10,7 @@
   var windowAnimationTime = 0.170;
 
   var timeBeteweenBuldings = 0.175;
-  var timeBeforeBackgorund = 1.5;
+  var timeBeforeBackgorund = 1;
   var backgroundAnimationTime = 1;
 
   var buildingAnimationMaxTime = 400;
@@ -102,7 +102,7 @@
       building,
       getRandomAnimationTime(buildingAnimationMinTime, buildingAnimationMaxTime),
       {
-        delay: timeBeteweenBuldings + timeBeteweenBuldings * index,
+        delay: timeBeteweenBuldings * index,
         scaleY: 1,
         onComplete: windowsAnimation(index),
         ease: Back.easeOut.config(1.7)
