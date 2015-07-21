@@ -1,0 +1,53 @@
+<svg id="LogoTransparency" class="LogoTransparency" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 302 302" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>
+    transparency
+  </title>
+  <defs>
+    <linearGradient id="linearGradient-1" x1="50%" x2="50%" y1="0%" y2="100%">
+      <stop stop-color="#09DFF3" offset="0%"/>
+      <stop stop-color="#44BEFF" offset="100%"/>
+    </linearGradient>
+    <circle id="path-2" cx="150" cy="150" r="150"/>
+    <circle id="path-4" cx="150" cy="150" r="150"/>
+    <linearGradient id="linearGradient-6" x1="50%" x2="50%" y1="0%" y2="62.304%">
+      <stop stop-color="#09DFF3" offset="0%"/>
+      <stop stop-color="#44BEFF" offset="100%"/>
+    </linearGradient>
+  </defs>
+  <g id="Page-1" fill="none" fill-rule="evenodd">
+    <g id="Values">
+      <g id="transparency" transform="translate(1 1)">
+        <mask id="mask-3" fill="#fff">
+          <use xlink:href="#path-2"/>
+        </mask>
+        <use id="Mask-Copy-15" fill="#EBF5FA" stroke="url(#linearGradient-1)" xlink:href="#path-2"/>
+        <g id="Group-+-Rectangle-165-Copy-+-Rectangle-165-+-Rectangle-165-Copy-5-Mask" mask="url(#mask-3)">
+          <mask id="mask-5" fill="#fff">
+            <use xlink:href="#path-4"/>
+          </mask>
+          <use id="Mask" fill="#EBF5FA" xlink:href="#path-4"/>
+          <g id="Group" stroke="#FFF" mask="url(#mask-5)">
+            <path id="Line" d="M-20.342 153.15L261.44-15.88" stroke-linecap="square"/>
+            <path id="Line-Copy-80" d="M-20.342 187.15L261.44 18.12" stroke-linecap="square"/>
+            <path id="Line-Copy-75" d="M320.44 153.15L38.658-15.88" stroke-linecap="square"/>
+            <path id="Line-Copy-78" d="M297.44 221.15L15.658 52.12" stroke-linecap="square"/>
+            <path id="Line-Copy-82" d="M290.44 251.15L8.658 82.12" stroke-linecap="square"/>
+            <path id="Line-Copy-79" d="M297.44 173.15L15.658 4.12" stroke-linecap="square"/>
+            <path id="Line-Copy-76" d="M320.44 147.12L38.658 316.15" stroke-linecap="square"/>
+            <path id="Line-Copy-81" d="M320.44 113.12L38.658 282.15" stroke-linecap="square"/>
+            <path id="Line-Copy-77" d="M-19.342 147.12L262.44 316.15" stroke-linecap="square"/>
+            <path id="Line-Copy-83" d="M-19.342 113.12L262.44 282.15" stroke-linecap="square"/>
+            <path id="Path-2317" d="M150.06 309.144v-334.47"/>
+            <path id="Path-2317-Copy" d="M217.06 309.144v-334.47"/>
+            <path id="Path-2317-Copy-5" d="M83.06 309.144v-334.47"/>
+          </g>
+          <g id="Rectangle-165-Copy-+-Rectangle-165-+-Rectangle-165-Copy-5" stroke="url(#linearGradient-6)" stroke-width="2" mask="url(#mask-5)">
+            <path class="LogoTransparency-piece TransparencyIcon-pieceTop" id="Rectangle-165-Copy" d="M82 209.092l68.182 40.91 68.182-40.91v-36.364l-68.182 40.91L82 172.728v36.363z"/>
+            <path class="LogoTransparency-piece TransparencyIcon-pieceTop" id="Rectangle-165" d="M82 90.91L150.182 50l68.182 40.91v36.363l-68.182-40.91L82 127.273V90.91z"/>
+            <path class="LogoTransparency-piece TransparencyIcon-pieceTop" id="Rectangle-165-Copy-5" d="M82 90.91l68.182 40.908 68.182 40.91v36.363l-68.182-40.907L82 127.273V90.91z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

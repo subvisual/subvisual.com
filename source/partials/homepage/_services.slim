@@ -3,12 +3,8 @@
   .HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--withGutters.u-defaultThenDoubleLargeMargin
     .HorizontalGrid-cell
       .ContentFormatter.ContentFormatter--centerHorizontally
-        img.RatioEnforcer.RatioEnforcer--homepageIcons(
-          src="#{image_path('homepage/tools.png')}"
-          srcset="#{image_path('homepage/tools.png')} 302w, #{image_path('homepage/tools@2x.png')} 604w"
-          sizes="(min-width: 1024px) 300px, (min-width: 650px) 200px, 150px"
-          alt="Toolkit"
-        )
+        .RatioEnforcer.RatioEnforcer--homepageIcons
+          = partial 'homepage/tools.svg'
     .HorizontalGrid-cell
       .u-smallThenNoneMargin
       .Heading.u-xSmallThenSmallMargin

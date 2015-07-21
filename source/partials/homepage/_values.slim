@@ -3,12 +3,8 @@
   .HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--withGutters.HorizontalGrid--inverted.u-defaultThenDoubleLargeMargin
     .HorizontalGrid-cell
       .ContentFormatter.ContentFormatter--centerHorizontally
-        img.RatioEnforcer.RatioEnforcer--homepageIcons(
-          src="#{image_path('homepage/transparency.png')}"
-          srcset="#{image_path('homepage/transparency.png')} 302w, #{image_path('homepage/transparency@2x.png')} 604w"
-          sizes="(min-width: 1024px) 300px, (min-width: 650px) 200px, 150px"
-          alt="Subvisual logo"
-        )
+        .RatioEnforcer.RatioEnforcer--homepageIcons
+          = partial 'homepage/transparency.svg'
     .HorizontalGrid-cell
       .u-smallThenNoneMargin
       .Heading.u-xSmallThenSmallMargin

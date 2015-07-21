@@ -1,0 +1,32 @@
+<svg id="LogoTools" class="LogoTools" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 301 301" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>
+    tools
+  </title>
+  <defs>
+    <linearGradient id="a" x1="50%" x2="50%" y1="0%" y2="100%">
+      <stop stop-color="#09DFF3" offset="0%"/>
+      <stop stop-color="#44BEFF" offset="100%"/>
+    </linearGradient>
+    <circle id="b" cx="149.148" cy="149.148" r="149.148"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <use stroke="url(#a)" xlink:href="#b" transform="translate(-3107.000000, -9171.000000) translate(3108.000000, 9172.000000) translate(0.283804, 0.000000)"/>
+    <g id="LogoTools-ruler" class="LogoTools-tool" fill="transparent">
+      <path class="Logo-piece" stroke="url(#a)" stroke-width="2" d="M0 0h200v25H0z" transform="translate(-3107.000000, -9171.000000) translate(3108.000000, 9172.000000) translate(50.000000, 203.000000)"/>
+      <path class="Logo-piece" class="Tools-tool" fill="url(#a)" d="M9 1.5v11h2V.5H9v1zm4 0V7h1V1h-1v.5zm3 0V7h1V1h-1v.5zm3 0V7h1V1h-1v.5zm3 0V7h1V1h-1v.5zm3 0V7h1V1h-1v.5zm8 0V7h1V1h-1v.5zm3 0V7h1V1h-1v.5zm3 0V7h1V1h-1v.5zm3 0V7h1V1h-1v.5zm3 0V7h1V1h-1v.5zm8 0V7h1V1h-1v.5zm3 0V7h1V1h-1v.5zm3 0V7h1V1h-1v.5zm3 0V7h1V1h-1v.5zm3 0V7h1V1h-1v.5zm8 0V7h1V1h-1v.5zm3 0V7h1V1h-1v.5zm3 0V7h1V1h-1v.5zm3 0V7h1V1h-1v.5zm3 0V7h1V1h-1v.5zm8 0V7h1V1h-1v.5zm3 0V7h1V1h-1v.5zm3 0V7h1V1h-1v.5zm3 0V7h1V1h-1v.5zm3 0V7h1V1h-1v.5zm8 0V7h1V1h-1v.5zm3 0V7h1V1h-1v.5zm3 0V7h1V1h-1v.5zm3 0V7h1V1h-1v.5zm3 0V7h1V1h-1v.5zm8 0V7h1V1h-1v.5zm3 0V7h1V1h-1v.5zm3 0V7h1V1h-1v.5zm3 0V7h1V1h-1v.5zm3 0V7h1V1h-1v.5zm8 0V7h1V1h-1v.5zm3 0V7h1V1h-1v.5zm3 0V7h1V1h-1v.5zm3 0V7h1V1h-1v.5zm3 0V7h1V1h-1v.5zm8 0V7h1V1h-1v.5zm3 0V7h1V1h-1v.5zm3 0V7h1V1h-1v.5zm3 0V7h1V1h-1v.5zm3 0V7h1V1h-1v.5zm-156 0v11h2V.5h-2v1zm20 0v11h2V.5h-2v1zm20 0v11h2V.5h-2v1zm20 0v11h2V.5h-2v1zm20 0v11h2V.5h-2v1zm20 0v11h2V.5h-2v1zm20 0v11h2V.5h-2v1zm20 0v11h2V.5h-2v1zm20 0v11h2V.5h-2v1z" transform="translate(-3107.000000, -9171.000000) translate(3108.000000, 9172.000000) translate(50.000000, 203.000000)"/>
+    </g>
+    <g id="LogoTools-wrench" class="LogoTools-tool" fill="transparent">
+      <path class="LogoTools-hammer" stroke="url(#a)" stroke-width="2" d="M277.5 127.648C277.42 133.932 272.302 139 266 139c-3.314 0-6.3-1.4-8.4-3.645l-43.503-2.175c-1.52 2.302-4.13 3.82-7.097 3.82-4.694 0-8.5-3.805-8.5-8.5 0-4.694 3.806-8.5 8.5-8.5 2.966 0 5.576 1.52 7.097 3.82l41.958-2.097c1.992-3.422 5.7-5.723 9.945-5.723 3.534 0 6.695 1.594 8.805 4.1l-9.31 3.954 3.125 7.364 8.88-3.77z" transform="translate(-3107.000000, -9171.000000) translate(3108.000000, 9172.000000) translate(238.000000, 127.500466) rotate(-90.000000) translate(-238.000000, -127.500466)"/>
+      <path fill="url(#a)" d="M239 160c.828 0 1.5-.672 1.5-1.5s-.672-1.5-1.5-1.5-1.5.672-1.5 1.5.672 1.5 1.5 1.5zm0 2c-1.933 0-3.5-1.567-3.5-3.5s1.567-3.5 3.5-3.5 3.5 1.567 3.5 3.5-1.567 3.5-3.5 3.5z" transform="translate(-3107.000000, -9171.000000) translate(3108.000000, 9172.000000)"/>
+    </g>
+    <g id="LogoTools-hammer" class="LogoTools-tool" fill="transparent">
+      <path stroke="url(#a)" stroke-width="2" d="M86 97.516V166H69v-65.344c-1.745-.515-3.26-1.41-4.333-2.168-.506.476-1.204 1.137-2.167 2.057-3.423 3.273-10.5 0-10.5 0v-13.09s7-3.273 10.5 0l2.34 2.187C66.644 87.83 71.36 84 78.99 84c26.653 0 24.987 18.07 24.987 23-6.855-7.726-13.59-9.775-17.98-9.484z" transform="translate(-3107.000000, -9171.000000) translate(3108.000000, 9172.000000)"/>
+    </g>
+    <g id="LogoTools-brush" class="LogoTools-tool" fill="transparent">
+      <path stroke="url(#a)" stroke-width="2" d="M0 0h35v32H0z" transform="translate(-3107.000000, -9171.000000) translate(3108.000000, 9172.000000) translate(142.000000, 85.000000)"/>
+      <path fill="url(#a)" d="M7 1.5v30h2V.5H7v1zm6 0v30h2V.5h-2v1zm7 0v30h2V.5h-2v1zm6 0v30h2V.5h-2v1z" transform="translate(-3107.000000, -9171.000000) translate(3108.000000, 9172.000000) translate(142.000000, 85.000000)"/>
+      <path stroke="url(#a)" stroke-width="2" d="M10 50.637C4.36 49.56 0 47.057 0 43V30h35v13c0 3.707-4.363 6.23-10.01 7.437C24.82 53.56 25 69.894 25 75c0 8-15 9-15 0V50.637z" transform="translate(-3107.000000, -9171.000000) translate(3108.000000, 9172.000000) translate(142.000000, 87.000000)"/>
+      <path fill="url(#a)" d="M17.5 74c.828 0 1.5-.672 1.5-1.5s-.672-1.5-1.5-1.5-1.5.672-1.5 1.5.672 1.5 1.5 1.5zm0 2c-1.933 0-3.5-1.567-3.5-3.5s1.567-3.5 3.5-3.5 3.5 1.567 3.5 3.5-1.567 3.5-3.5 3.5z" transform="translate(-3107.000000, -9171.000000) translate(3108.000000, 9172.000000) translate(142.000000, 87.000000)"/>
+    </g>
+  </g>
+</svg>

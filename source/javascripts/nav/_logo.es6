@@ -1,17 +1,13 @@
 $(function() {
   var isOverLogo = false;
 
-  function pathLength() {
-    return this.getTotalLength();
-  }
-
   function onLoadAnimation() {
     $context = $('.NavLogo.is-animated')
     if ($context.length == 0) {
       return;
     }
 
-    $context = $('NavLogo.is-animated').show();
+    $context = $('.NavLogo.is-animated').show();
     logoAnimation();
     nameAnimation();
   }
