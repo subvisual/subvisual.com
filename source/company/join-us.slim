@@ -1,11 +1,12 @@
 ---
 title: Subvisual - Join Us
 nav_class: Nav--light
+nav_logo_class: NavLogo--mono
 page: company
 ---
 
 .Panel.Panel--joinUs
-  = partial 'nav'
+  .u-navPlaceholder
   = partial 'company/join-us/hero'
 = partial 'company/join-us/culture'
 = partial 'testimony', locals: { quote: '“It\'s quite hard to explain in plain words what life at Subvisual is like. I think thrilling comes close.”', author: 'João Ferreira', job: 'Designer at Subvisual', img_path: 'joao-ferreira', alt_text: "João Ferreira's picture" }
