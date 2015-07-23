@@ -44,5 +44,4 @@ $(function() {
 
   $('.NavLogo').on('mouseenter', mouseOverAnimation);
   $('.NavLogo').on('mouseleave', mouseLeave);
-  // setTimeout(onLoadAnimation, 500);
 });
