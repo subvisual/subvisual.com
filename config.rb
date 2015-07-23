@@ -50,11 +50,6 @@ after_configuration do
     sprockets.append_path File.join "#{root}", "vendor/blue/#{dir}"
   end
 
-  sprockets.import_asset "blue/subvisual_logo_mono.svg"
-  sprockets.import_asset "blue/subvisual_logo_mono_no_name.svg"
-  sprockets.import_asset "blue/subvisual_logo_mono_with_name.svg"
-  sprockets.import_asset "blue/subvisual_logo_no_name.svg"
-  sprockets.import_asset "blue/subvisual_logo_with_name.svg"
   sprockets.import_asset "blue/subvisual_separator.svg"
   sprockets.import_asset "blue/link-arrow.svg"
   sprockets.import_asset "blue/link-arrow-white.svg"
