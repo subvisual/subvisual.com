@@ -48,12 +48,30 @@
 
 .easy-ImageShowcase-main {
   z-index: 2;
+
+  @include media('<desktop') {
+    width: 50%;
+
+    margin: 0 auto;
+  }
 }
 
 .easy-ImageShowcase-left {
   transform: translateX(-5%);
+
+  @include media('<desktop') {
+    left: 25%;
+
+    width: 50%;
+  }
 }
 
 .easy-ImageShowcase-right {
   transform: translateX(5%);
+
+  @include media('<desktop') {
+    right: 25%;
+
+    width: 50%;
+  }
 }
