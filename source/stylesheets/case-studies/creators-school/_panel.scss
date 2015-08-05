@@ -122,7 +122,10 @@
 }
 
 .Panel.cs-Panel--easymoneyPlug {
-  padding: 0;
+  padding-bottom: 45.8%;
   background-position: top center;
-}
 
+  @include media('<tablet') {
+    padding-bottom: 82%;
+  }
+}
