@@ -283,7 +283,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: $Theme-layer-overlay + 1;
+    z-index: $Theme-layer-stickyElement;
 
     display: flex;
     align-items: center;
