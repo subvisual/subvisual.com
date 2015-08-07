@@ -22,11 +22,12 @@
 $ContactsGrid-image-width-mobile: 75px;
 $ContactsGrid-image-width-desktop: 150px;
 $ContactsGrid-gutter-mobile: $Theme-spacing-xSmall;
-$ContactsGrid-gutter-desktop: $Theme-spacing-default;
+$ContactsGrid-gutter-desktop: $Theme-spacing-small;
 
 .ContactsGrid {
   display: flex;
   align-items: center;
+  justify-content: center;
 
   width: 100%;
   margin-top: -$ContactsGrid-gutter-mobile;
@@ -40,6 +41,11 @@ $ContactsGrid-gutter-desktop: $Theme-spacing-default;
 
 .ContactsGrid-contact {
   flex: 1;
+}
+
+.ContactsGrid-address {
+  flex: 1;
+  text-align: left;
 }
 
 .ContactsGrid-image,
@@ -57,7 +63,8 @@ $ContactsGrid-gutter-desktop: $Theme-spacing-default;
     order: 1;
   }
 
-  .ContactsGrid-contact {
+  .ContactsGrid-contact,
+  .ContactsGrid-address {
     order: 2;
   }
 }
@@ -73,8 +80,9 @@ $ContactsGrid-gutter-desktop: $Theme-spacing-default;
   }
 
   .ContactsGrid-image,
-  .ContactsGrid-contact {
+  .ContactsGrid-contact,
+  .ContactsGrid-address {
     margin-top: $ContactsGrid-gutter-desktop;
-    margin-left: $ContactsGrid-gutter-desktop;
+    margin-left: $ContactsGrid-gutter-desktop * 2;
   }
 }
