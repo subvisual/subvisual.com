@@ -1,4 +1,4 @@
-.ClientsGrid {
+  .ClientsGrid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -9,9 +9,7 @@
 }
 
 .ClientsGrid-cell {
-  flex-grow: 0;
-  flex-shrink: 0;
-  flex-basis: auto;
+  flex: 1 0 100px; //this is workaround for safari and iOS, https://bugs.webkit.org/show_bug.cgi?id=136041
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,6 +22,7 @@
 
 @include media('>=500px') {
   .ClientsGrid-cell {
+    flex: 1 0 25%; //this is workaround for safari and iOS, https://bugs.webkit.org/show_bug.cgi?id=136041
     min-width: 25%;
   }
 }
@@ -42,6 +41,7 @@
 
 @include media('>=1250px') {
   .ClientsGrid-cell {
+    flex: 1 0 200px; //this is workaround for safari and iOS, https://bugs.webkit.org/show_bug.cgi?id=136041
     min-width: 200px;
   }
 }
