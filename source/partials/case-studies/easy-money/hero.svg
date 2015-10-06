@@ -3,19 +3,19 @@
     Map locations
   </title>
   <defs>
-    <linearGradient id="linearGradient-1" x1="50%" x2="50%" y1="0%" y2="100%">
+    <linearGradient id="easy-money-hero-linearGradient-1" x1="50%" x2="50%" y1="0%" y2="100%">
       <stop stop-color="#09DFF3" offset="0%"/>
       <stop stop-color="#44BEFF" offset="100%"/>
     </linearGradient>
   </defs>
   <style>
     .Point {
-      stroke: url(#linearGradient-1);
+      stroke: url(#easy-money-hero-linearGradient-1);
       stroke-width: 0.5;
       opacity: 0;
     }
     .Path {
-      stroke: url(#linearGradient-1);
+      stroke: url(#easy-money-hero-linearGradient-1);
       stroke-width: 0.5;
       fill: none;
       opacity: 0;

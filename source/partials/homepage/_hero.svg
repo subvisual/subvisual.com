@@ -10,7 +10,7 @@
       }
   </style>
   <defs>
-    <linearGradient id="linearGradient-1" x1="52.9%" x2="40.18%" y1="32.87%" y2="56.72%">
+    <linearGradient id="hero-linearGradient-1" x1="52.9%" x2="40.18%" y1="32.87%" y2="56.72%">
       <stop stop-color="#09DFF3" offset="0%" />
       <stop stop-color="#44BEFF" offset="100%" />
     </linearGradient>
@@ -26,7 +26,7 @@
     <path id="planet-section-5" d="M0 41h62v12H0z" mask="url(#planet-mask)" />
     <path id="planet-section-6" d="M0 51h62v12H0z" mask="url(#planet-mask)" />
 
-    <circle id="path-4" cx="159.05" cy="159.05" r="159.05" />
+    <circle id="hero-circle" cx="159.05" cy="159.05" r="159.05" />
 
     <symbol id="planet-dark-grey">
       <use fill="#5E9CCC" xlink:href="#planet-shape" />
@@ -76,15 +76,15 @@
   </defs>
   <g id="hero" fill="none" fill-rule="evenodd">
     <g id="lines">
-      <rect class="Line" />
-      <rect class="Line" />
-      <rect class="Line" />
-      <rect class="Line" />
-      <rect class="Line" />
-      <rect class="Line" />
-      <rect class="Line" />
-      <rect class="Line" />
-      <rect class="Line" />
+      <rect width="" height="" class="Line" />
+      <rect width="" height="" class="Line" />
+      <rect width="" height="" class="Line" />
+      <rect width="" height="" class="Line" />
+      <rect width="" height="" class="Line" />
+      <rect width="" height="" class="Line" />
+      <rect width="" height="" class="Line" />
+      <rect width="" height="" class="Line" />
+      <rect width="" height="" class="Line" />
     </g>
     <g id="distance-1x">
       <g id="big-planet">
@@ -153,23 +153,23 @@
       </g>
     </g>
     <g id="we-are-sbvsl">
-      <path id="we-are-sbvsl-stripe" fill="url(#linearGradient-1)" d="M922.4 595.26l-396.5-246V233.03l396.5 246v116.22z" transform="translate(0 -131)" />
+      <path id="we-are-sbvsl-stripe" fill="url(#hero-linearGradient-1)" d="M922.4 595.26l-396.5-246V233.03l396.5 246v116.22z" transform="translate(0 -131)" />
       <g id="we-are-sbvsl-rings" transform="translate(494.103 43.607)">
         <ellipse cx="229.5" cy="229.5" fill="#FFF" opacity=".1" rx="229.5" ry="229.5" />
         <ellipse cx="229.42" cy="229.42" fill="#FFF" opacity=".2" rx="182.14" ry="182.14" />
         <ellipse cx="229.19" cy="229.19" fill="#FFF" opacity=".15" rx="207.37" ry="207.37" />
       </g>
       <g id="we-are-sbvsl-circle" transform="translate(565.012 115.425)">
-        <mask id="mask-5" fill="#fff">
-          <use xlink:href="#path-4" />
+        <mask id="hero-circle-mask" fill="#fff">
+          <use xlink:href="#hero-circle" />
         </mask>
-        <use xlink:href="#path-4" />
-        <path fill="#FAFEFF" d="M-25.1 0h385.05v58.6H-25.1z" mask="url(#mask-5)" />
-        <path fill="#F3FBFD" d="M-25.1 58.6h385.05v58.6H-25.1z" mask="url(#mask-5)" />
-        <path fill="#EBF5FA" d="M-25.1 108.82h385.05v58.6H-25.1z" mask="url(#mask-5)" />
-        <path fill="#DBEDF6" d="M-25.1 167.42h385.05v58.6H-25.1z" mask="url(#mask-5)" />
-        <path fill="#CBE6F3" d="M-25.1 220.37h385.05v58.6H-25.1z" mask="url(#mask-5)" />
-        <path fill="#C1E1F1" d="M-25.1 266.24h385.05v58.6H-25.1z" mask="url(#mask-5)" />
+        <use xlink:href="#hero-circle" />
+        <path fill="#FAFEFF" d="M-25.1 0h385.05v58.6H-25.1z" mask="url(#hero-circle-mask" />
+        <path fill="#F3FBFD" d="M-25.1 58.6h385.05v58.6H-25.1z" mask="url(#hero-circle-mask" />
+        <path fill="#EBF5FA" d="M-25.1 108.82h385.05v58.6H-25.1z" mask="url(#hero-circle-mask" />
+        <path fill="#DBEDF6" d="M-25.1 167.42h385.05v58.6H-25.1z" mask="url(#hero-circle-mask" />
+        <path fill="#CBE6F3" d="M-25.1 220.37h385.05v58.6H-25.1z" mask="url(#hero-circle-mask" />
+        <path fill="#C1E1F1" d="M-25.1 266.24h385.05v58.6H-25.1z" mask="url(#hero-circle-mask" />
       </g>
       <path id="we-are" fill="#5889A2" d="M646 239l5 19h1l6-19h6l6 19 6-19h8l-10 30h-8l-5-17-6 17h-8l-9-30h8zm58 7h-9v5h9v6h-9v5h9v7h-17v-30h17v7zm40 18h-11l-2 5h-8l11-30h9l11 30h-8l-2-5zm-2-6l-3-10h-1l-3 10h7zm32-1l9 12h-10l-7-12v12h-8v-30h12c2.82 0 5.34.77 7 2 2.17 1.85 3.13 4.15 3 7 .13 2.38-.45 4.24-2 6-.76 1.37-2.38 2.33-4 3zm-8-12v7h1c3.25 0 5-1.17 5-3 0-2.83-1.75-4-5-4h-1zm38 1h-9v5h9v6h-9v5h9v7h-17v-30h17v7z"
       />

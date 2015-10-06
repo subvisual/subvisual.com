@@ -3,45 +3,45 @@
     town-sketch
   </title>
   <defs id="defs6">
-    <linearGradient id="linearGradient-1" x1="50%" x2="50%" y1="0%" y2="100%">
+    <linearGradient id="buildings-linearGradient-1" x1="50%" x2="50%" y1="0%" y2="100%">
       <stop id="stop9" stop-color="#EEE7D5" offset="0%"/>
       <stop id="stop11" stop-color="#E1D9C8" offset="100%"/>
     </linearGradient>
-    <path id="path-2" d="M0 0h106.13v9.8H0z"/>
-    <linearGradient id="linearGradient-3" x1="50%" x2="50%" y1="0%" y2="97.9%">
+    <path id="buildings-path-2" d="M0 0h106.13v9.8H0z"/>
+    <linearGradient id="buildings-linearGradient-3" x1="50%" x2="50%" y1="0%" y2="97.9%">
       <stop id="stop15" stop-color="#7DB6BE" offset="0%"/>
       <stop id="stop17" stop-color="#68A5AD" offset="100%"/>
     </linearGradient>
-    <linearGradient id="linearGradient-4" x1="50%" x2="50%" y1="0%" y2="100%">
+    <linearGradient id="buildings-linearGradient-4" x1="50%" x2="50%" y1="0%" y2="100%">
       <stop id="stop20" stop-color="#18D7F6" offset="0%"/>
       <stop id="stop22" stop-color="#45BFFF" offset="100%"/>
     </linearGradient>
-    <linearGradient id="linearGradient-5" x1="50%" x2="50%" y1="0%" y2="100%">
+    <linearGradient id="buildings-linearGradient-5" x1="50%" x2="50%" y1="0%" y2="100%">
       <stop id="stop25" stop-color="#768A93" offset="0%"/>
       <stop id="stop27" stop-color="#44616E" offset="100%"/>
     </linearGradient>
-    <linearGradient id="linearGradient-6" x1="50%" x2="50%" y1="0%" y2="100%">
+    <linearGradient id="buildings-linearGradient-6" x1="50%" x2="50%" y1="0%" y2="100%">
       <stop id="stop30" stop-color="#608490" offset="0%"/>
       <stop id="stop32" stop-color="#395B63" offset="100%"/>
     </linearGradient>
-    <linearGradient id="linearGradient-7" x1="50%" x2="50%" y1="0%" y2="100%">
+    <linearGradient id="buildings-linearGradient-7" x1="50%" x2="50%" y1="0%" y2="100%">
       <stop id="stop35" stop-color="#8BD8E5" offset="0%"/>
       <stop id="stop37" stop-color="#57C4D7" offset="100%"/>
     </linearGradient>
-    <linearGradient id="linearGradient-8" x1="50%" x2="50%" y1="0%" y2="100%">
+    <linearGradient id="buildings-linearGradient-8" x1="50%" x2="50%" y1="0%" y2="100%">
       <stop id="stop40" stop-color="#4391B4" offset="0%"/>
       <stop id="stop42" stop-color="#2E6882" offset="100%"/>
     </linearGradient>
-    <linearGradient id="linearGradient-9" x1="50%" x2="50%" y1="0%" y2="100%">
+    <linearGradient id="buildings-linearGradient-9" x1="50%" x2="50%" y1="0%" y2="100%">
       <stop id="stop45" stop-color="#F9F9F9" offset="0%"/>
       <stop id="stop47" stop-color="#E6E6E6" offset="100%"/>
     </linearGradient>
-    <path id="path-10" d="M0 0h106.13v9.8H0z"/>
-    <linearGradient id="linearGradient3337" x1="18.67" x2="18.67" y2="37.34" xlink:href="#linearGradient-4" gradientTransform="matrix(2.397 0 0 .417 0 -3.463)" gradientUnits="userSpaceOnUse"/>
-    <linearGradient id="linearGradient3339" x1="25.64" x2="25.64" y1="511.44" y2="550.67" xlink:href="#linearGradient-4" gradientTransform="matrix(2.906 0 0 .344 0 -2)" gradientUnits="userSpaceOnUse"/>
+    <path id="buildings-path-10" d="M0 0h106.13v9.8H0z"/>
+    <linearGradient id="linearGradient3337" x1="18.67" x2="18.67" y2="37.34" xlink:href="#buildings-linearGradient-4" gradientTransform="matrix(2.397 0 0 .417 0 -3.463)" gradientUnits="userSpaceOnUse"/>
+    <linearGradient id="linearGradient3339" x1="25.64" x2="25.64" y1="511.44" y2="550.67" xlink:href="#buildings-linearGradient-4" gradientTransform="matrix(2.906 0 0 .344 0 -2)" gradientUnits="userSpaceOnUse"/>
   </defs>
   <g id="Page-1" fill="none" fill-rule="evenodd">
-    <g id="Artboard-13-Copy">
+    <g>
       <g id="town-sketch">
         <g id="background">
           <path id="Rectangle-673-Copy-10" fill="#f4f9f9" d="M746.64 136.84l55.76-33.5 6.77-58V99.9l38.47-22.56v484.43h-101V136.84z"/>
@@ -56,11 +56,11 @@
           <path id="Rectangle-673-Copy-26" fill="#e3f0f4" d="M157.64 257.96h12.54V245.5H59.64v12.46h11v303.82h87V257.96z"/>
         </g>
         <g id="building7">
-          <path id="Rectangle-371-Copy-31" fill="url(#linearGradient-1)" d="M4.08 0h97.96v222.87H4.08z" transform="translate(689 339)"/>
+          <path id="Rectangle-371-Copy-31" fill="url(#buildings-linearGradient-1)" d="M4.08 0h97.96v222.87H4.08z" transform="translate(689 339)"/>
           <path id="Rectangle-371-Copy-23" fill="#000" fill-opacity=".05" d="M693.08 348.8h97.96v4.08h-97.96z"/>
           <g id="Rectangle-371-Copy-24" transform="translate(689 339)">
-            <use id="use68" fill="#5E8FA5" xlink:href="#path-2"/>
-            <use id="use70" xlink:href="#path-2"/>
+            <use id="use68" fill="#5E8FA5" xlink:href="#buildings-path-2"/>
+            <use id="use70" xlink:href="#buildings-path-2"/>
           </g>
           <path id="Rectangle-371-Copy-25" fill="#BF6363" d="M693.08 523.1h97.96v39.18h-97.96z"/>
           <path id="Rectangle-371-Copy-26" fill="#C34400" d="M693.08 523.5h97.96v-.82h-97.96z"/>
@@ -92,25 +92,25 @@
           </g>
         </g>
         <g id="building5">
-          <path id="Rectangle-371-Copy-20" fill="url(#linearGradient-3)" d="M6.5 18.5h136v301H6.5z" transform="translate(538 242)"/>
+          <path id="Rectangle-371-Copy-20" fill="url(#buildings-linearGradient-3)" d="M6.5 18.5h136v301H6.5z" transform="translate(538 242)"/>
           <path id="Rectangle-371-Copy-16" fill="#000" fill-opacity=".05" d="M544 268h136v5.5H544z"/>
           <path id="Rectangle-371-Copy-19" fill="#FCBC57" d="M538 242h147v26.5H538z"/>
           <g id="windows5">
-            <g id="Group">
+            <g>
               <path id="Rectangle-372-Copy-50" fill="#000" fill-opacity=".05" d="M559.5 431.5h105V481h-105z"/>
               <path id="Rectangle-372-Copy-52" fill="#e1f4fa" stroke="#fff" stroke-width="6" d="M560 425.5h105V475H560z"/>
             </g>
-            <g id="Rectangle-372-Copy-47-+-Rectangle-372-Copy-53-+-Rectangle-372-Copy-103">
+            <g>
               <path id="Rectangle-372-Copy-47" fill="#000" fill-opacity=".05" d="M558.5 371H664v26.5H558.5z"/>
               <path id="Rectangle-372-Copy-53" fill="#e1f4fa" stroke="#fff" stroke-width="6" d="M558.5 365.5H664V392H558.5z"/>
               <path id="Rectangle-372-Copy-103" fill="#000" fill-opacity=".05" d="M561.85 368.75h97.5V373h-94v15.25h-3.5v-19.5z"/>
             </g>
-            <g id="Rectangle-372-Copy-46-+-Rectangle-372-Copy-48-+-Rectangle-372-Copy-102">
+            <g>
               <path id="Rectangle-372-Copy-46" fill="#000" fill-opacity=".05" d="M558.5 331.5H664V358H558.5z"/>
               <path id="Rectangle-372-Copy-48" fill="#e1f4fa" stroke="#fff" stroke-width="6" d="M558.5 326H664v26.5H558.5z"/>
               <path id="Rectangle-372-Copy-102" fill="#000" fill-opacity=".05" d="M561.85 329.25h97.5v4.25h-94v15.25h-3.5v-19.5z"/>
             </g>
-            <g id="Rectangle-372-Copy-90-+-Rectangle-372-Copy-88-+-Rectangle-372-Copy-101">
+            <g>
               <path id="Rectangle-372-Copy-90" fill="#000" fill-opacity=".05" d="M558.5 291.5H664V318H558.5z"/>
               <path id="Rectangle-372-Copy-88" fill="#e1f4fa" stroke="#fff" stroke-width="6" d="M558.5 286H664v26.5H558.5z"/>
               <path id="Rectangle-372-Copy-101" fill="#000" fill-opacity=".05" d="M561.85 289.25h97.5v4.25h-94v15.25h-3.5v-19.5z"/>
@@ -120,7 +120,7 @@
           <path id="Rectangle-484-Copy-14" fill="url(#linearGradient3339)" d="M17.5 174h114v13.5h-114z" transform="translate(538 242)"/>
         </g>
         <g id="building6">
-          <path id="rect118" fill="url(#linearGradient-5)" d="M5.45 0h130.9v297.82H5.45z" transform="translate(797 265)"/>
+          <path id="rect118" fill="url(#buildings-linearGradient-5)" d="M5.45 0h130.9v297.82H5.45z" transform="translate(797 265)"/>
           <path id="rect120" fill="#000" fill-opacity=".05" d="M802.45 278.1h130.9v5.44h-130.9z"/>
           <path id="rect122" fill="#C16565" d="M797 265h141.82v13.1H797z"/>
           <g id="windows6">
@@ -156,7 +156,7 @@
           </g>
         </g>
         <g id="building3">
-          <path id="rect164" fill="url(#linearGradient-6)" d="M6.5 18.5h136v301H6.5z" transform="translate(266 242)"/>
+          <path id="rect164" fill="url(#buildings-linearGradient-6)" d="M6.5 18.5h136v301H6.5z" transform="translate(266 242)"/>
           <path id="rect166" fill="#000" fill-opacity=".1" d="M272 268h136v5.5H272z"/>
           <path id="rect168" fill="#1FA7C8" d="M266 242h147v26.5H266z"/>
           <g id="windows3">
@@ -191,7 +191,7 @@
         </g>
         <g id="building4">
           <path id="Rectangle-603" fill="#000" fill-opacity=".05" d="M383.5 241.5h167v320h-167z"/>
-          <path id="Rectangle-371-Copy-18" fill="url(#linearGradient-7)" d="M12.75 27.25h154.5V467.5H12.75z" transform="translate(377 94)"/>
+          <path id="Rectangle-371-Copy-18" fill="url(#buildings-linearGradient-7)" d="M12.75 27.25h154.5V467.5H12.75z" transform="translate(377 94)"/>
           <path id="Rectangle-371-Copy-14" fill="#000" fill-opacity=".05" d="M389.75 124.25h154.5v6.44h-154.5z"/>
           <path id="Rectangle-371-Copy-13" fill="#2E7EAA" d="M383.3 94.47h167.37v30H383.3z"/>
           <path id="Rectangle-484-Copy-12" fill="#000" fill-opacity=".05" d="M389.5 205H545v22.5H389.5z"/>
@@ -234,7 +234,7 @@
           <path id="Rectangle-484-Copy-6" stroke="#FFF" stroke-width="4" d="M464 199h45v-20h-45z"/>
         </g>
         <g id="building2">
-          <path id="rect244" fill="url(#linearGradient-8)" d="M5.45 2h130.9v297.82H5.45z" transform="translate(113 262)"/>
+          <path id="rect244" fill="url(#buildings-linearGradient-8)" d="M5.45 2h130.9v297.82H5.45z" transform="translate(113 262)"/>
           <path id="rect246" fill="#000" fill-opacity=".05" d="M118.45 275.1h130.9v5.44h-130.9z"/>
           <path id="rect248" fill="#3DE6D3" d="M113 262h141.82v13.1H113z"/>
           <g id="windows2">
@@ -251,7 +251,7 @@
               <path id="path269" fill="#000" fill-opacity=".05" d="M132.5 441.5h43v6H138V470h-5.5v-28.5z"/>
               <path id="path271" fill="#000" fill-opacity=".05" d="M192.5 441.5h43v6H198V470h-5.5v-28.5z"/>
             </g>
-            <g id="Group-+-Rectangle-372-Copy-92">
+            <g>
               <g id="g274">
                 <path id="rect276" fill="#000" fill-opacity=".05" d="M129.9 383.68H179v34.9h-49.1z"/>
                 <path id="rect278" fill="#000" fill-opacity=".05" d="M189.9 383.68H239v34.9h-49.1z"/>
@@ -272,11 +272,11 @@
           </g>
         </g>
         <g id="building1">
-          <path id="rect303" fill="url(#linearGradient-9)" d="M4.08 0h97.96v222.87H4.08z" transform="translate(0 338)"/>
+          <path id="rect303" fill="url(#buildings-linearGradient-9)" d="M4.08 0h97.96v222.87H4.08z" transform="translate(0 338)"/>
           <path id="rect305" fill="#DADADA" d="M4.08 347.8h97.96v4.08H4.08z"/>
           <g id="g307" transform="translate(0 338)">
-            <use id="use309" fill="#5E8FA5" xlink:href="#path-10"/>
-            <use id="use311" xlink:href="#path-10"/>
+            <use id="use309" fill="#5E8FA5" xlink:href="#buildings-path-10"/>
+            <use id="use311" xlink:href="#buildings-path-10"/>
           </g>
           <path id="rect313" fill="#F06F2A" d="M4.08 522.1h97.96v39.18H4.08z"/>
           <path id="rect315" fill="#C34400" d="M4.08 522.5h97.96v-.82H4.08z"/>
