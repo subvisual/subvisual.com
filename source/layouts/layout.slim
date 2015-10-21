@@ -3,8 +3,14 @@ html.Theme itemscope='' itemtype='http://schema.org/WebPage' lang=data.site.lang
   head
     meta charset='utf-8'
     meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'
+    // Mobile Specific Metas
+    meta name='viewport' content='width=device-width, initial-scale=1'
+
+    = stylesheet_link_tag 'all'
+    = yield_content :stylesheets
 
     title=page_title
+
     meta name='description' content=page_description
     meta name='robots' content='index,follow'
 
@@ -29,16 +35,9 @@ html.Theme itemscope='' itemtype='http://schema.org/WebPage' lang=data.site.lang
     meta itemprop='description' content=page_description
     meta itemprop='image' content=data.site.image
 
-    // Mobile Specific Metas
-    meta name='viewport' content='width=device-width, initial-scale=1'
-
     // Preferred URL (rel="canonical")
     - if current_page.data.preferred_url
       link rel='canonical' href=current_page.data.preferred_url
-
-    = yield_content :prefetch
-    = stylesheet_link_tag 'all'
-    = yield_content :stylesheets
 
     = favicon_tag 'favicon.ico'
     = favicon_tag 'favicon.ico', rel: 'apple-touch-icon', type: 'image/x-icon'
