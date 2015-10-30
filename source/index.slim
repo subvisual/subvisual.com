@@ -18,9 +18,9 @@ nav_logo_class: 'is-animated'
 = partial 'newsletter'
 = partial 'footer'
 
-javascript:
-  window.onload = function() {
-    var svg = document.querySelector('#HomepageHero');
-    window.homepage.animateLines(svg);
-    /* window.homepage.animatePlanets(svg); */
-  };
+- content_for :javascripts
+  javascript:
+    $('#HomepageHero').load(function() {
+      var svg = $('#HomepageHero').contents().find('svg')[0];
+      window.homepage.animateLines(svg);
+    })

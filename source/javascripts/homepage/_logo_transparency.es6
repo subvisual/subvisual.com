@@ -1,13 +1,15 @@
-$(function() {
+$('#LogoTransparency').load(function() {
   var animating = false;
+
+  var svg = $('#LogoTransparency').contents();
 
   function onAnimationFinished() {
     animating = false;
   }
 
   function logoSetup() {
-    $('.LogoTransparency-piece').each(function() {
-      TweenLite.set('.LogoTransparency-piece', { strokeDasharray: this.getTotalLength(), strokeDashoffset: this.getTotalLength()  });
+    svg.find('.LogoTransparency-piece').each(function() {
+      TweenLite.set(svg.find('.LogoTransparency-piece'), { strokeDasharray: this.getTotalLength(), strokeDashoffset: this.getTotalLength()  });
     });
   }
 
@@ -17,8 +19,8 @@ $(function() {
     }
     animating = true;
     logoSetup();
-    $('.LogoTransparency-piece').each(function() {
-      TweenLite.to('.LogoTransparency-piece', 0.8, { strokeDashoffset: 0, onComplete: onAnimationFinished });
+    svg.find('.LogoTransparency-piece').each(function() {
+      TweenLite.to(svg.find('.LogoTransparency-piece'), 0.8, { strokeDashoffset: 0, onComplete: onAnimationFinished });
     });
   }
 

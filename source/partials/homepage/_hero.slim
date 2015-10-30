@@ -8,14 +8,7 @@ h1.u-visuallyHidden We are Subvisual
     alt="Another galaxy"
   )
 .u-exceptSmall
-  = partial 'homepage/hero.svg'
-  /.u-exceptSmall
-  /  img.RatioEnforcer(
-  /    src="#{image_path('homepage/hero-image@1x.png')}"
-  /    srcset="#{image_path('homepage/hero-image@1x.png')} 1441w, #{image_path('homepage/hero-image@2x.png')} 2882w, #{image_path('homepage/hero-image@3x.png')} 4223w"
-  /    sizes="(min-width: 1280px) 80vw, 100vw"
-  /    alt="Another galaxy"
-  /  )
+  object#HomepageHero.HoverAnimation data="/images/homepage/hero.svg" type="image/svg+xml"
 .u-smallMargin
 .GridCell.GridCell--alignCenter.u-defaultThenDoubleLargeMargin
   .GridCell-content

@@ -1,4 +1,4 @@
-<svg id="LogoTransparency" class="LogoTransparency" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 302 302" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg class="LogoTransparency" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 302 302" xmlns:xlink="http://www.w3.org/1999/xlink">
   <title>
     transparency
   </title>
@@ -42,9 +42,9 @@
             <path d="M83.06 309.144v-334.47"/>
           </g>
           <g stroke="url(#transparency-linearGradient-6)" stroke-width="2" mask="url(#transparency-mask-5)">
-            <path class="LogoTransparency-piece TransparencyIcon-pieceTop" d="M82 209.092l68.182 40.91 68.182-40.91v-36.364l-68.182 40.91L82 172.728v36.363z"/>
-            <path class="LogoTransparency-piece TransparencyIcon-pieceTop" d="M82 90.91L150.182 50l68.182 40.91v36.363l-68.182-40.91L82 127.273V90.91z"/>
-            <path class="LogoTransparency-piece TransparencyIcon-pieceTop" d="M82 90.91l68.182 40.908 68.182 40.91v36.363l-68.182-40.907L82 127.273V90.91z"/>
+            <path class="LogoTransparency-piece" d="M82 209.092l68.182 40.91 68.182-40.91v-36.364l-68.182 40.91L82 172.728v36.363z"/>
+            <path class="LogoTransparency-piece" d="M82 90.91L150.182 50l68.182 40.91v36.363l-68.182-40.91L82 127.273V90.91z"/>
+            <path class="LogoTransparency-piece" d="M82 90.91l68.182 40.908 68.182 40.91v36.363l-68.182-40.907L82 127.273V90.91z"/>
           </g>
         </g>
       </g>

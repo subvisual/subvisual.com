@@ -1,6 +1,6 @@
-$(function() {
+$('#HomepageHero').load(function() {
   var translations = {};
-  var svg = document.getElementById('HomepageHero');
+  var svg = $('#HomepageHero').contents();
 
   function translateLayer(id, hDistance, vDistance, factor) {
     var hDistanceScaled = hDistance / factor;
@@ -23,7 +23,7 @@ $(function() {
       onUpdate: function() {
         var currentX = x + stepX * counter.value;
         var currentY = y + stepY * counter.value;
-        svg.getElementById(id).setAttribute('transform', 'translate(' + currentX + ', ' + currentY + ')');
+        svg.find(id)[0].setAttribute('transform', 'translate(' + currentX + ', ' + currentY + ')');
         translations[id] = { x: currentX, y: currentY };
       }
     });
@@ -35,13 +35,13 @@ $(function() {
     var hDistance = (window.innerWidth/2) - amountMovedX;
     var vDistance = (window.innerHeight/2) - amountMovedY;
 
-    translateLayer("lines", hDistance, vDistance, 85);
-    translateLayer("distance-3x", hDistance, vDistance, 45);
-    translateLayer("distance-2x", hDistance, vDistance, -65);
-    translateLayer("distance-1x", hDistance, vDistance, 85);
+    translateLayer("#lines", hDistance, vDistance, 85);
+    translateLayer("#distance-3x", hDistance, vDistance, 45);
+    translateLayer("#distance-2x", hDistance, vDistance, -65);
+    translateLayer("#distance-1x", hDistance, vDistance, 85);
   }
 
   if (svg) {
-    svg.addEventListener("mousemove", parallax, false);
+    $(svg.find('svg'))[0].addEventListener("mousemove", parallax, false);
   }
 });

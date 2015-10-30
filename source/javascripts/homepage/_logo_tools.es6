@@ -1,5 +1,7 @@
-$(function() {
+$('#LogoTools').load(function() {
   var isOverLogo = false;
+  var svg = $('#LogoTools').contents();
+  var svgName = svg.find('.Logo-name');
 
   function pathLength() {
     return this.getTotalLength();
@@ -25,7 +27,7 @@ $(function() {
   }
 
   function animation(tool, options) {
-    var $tool = $(tool);
+    var $tool = svg.find(tool);
     if ($tool.data('animating')) {
       return;
     }
@@ -37,19 +39,19 @@ $(function() {
     var direction = options.direction || 1;
     var angle = options.angle || 10;
 
-    TweenLite.set(tool, { rotation: 0, transformOrigin: 'center' });
-    TweenLite.to(tool, 0.2, { rotation:  angle * direction, delay: delay });
-    TweenLite.to(tool, 0.4, { rotation: -angle * direction, delay: delay + 0.2 });
-    TweenLite.to(tool, 0.2, { rotation:      0,             delay: delay + 0.6, onComplete: callback });
+    TweenLite.set($tool, { rotation: 0, transformOrigin: 'center' });
+    TweenLite.to($tool, 0.2, { rotation:  angle * direction, delay: delay });
+    TweenLite.to($tool, 0.4, { rotation: -angle * direction, delay: delay + 0.2 });
+    TweenLite.to($tool, 0.2, { rotation:      0,             delay: delay + 0.6, onComplete: callback });
   }
 
   function nameAnimation() {
-    TweenLite.set('.Logo-name', { fillOpacity: 0, x: 100 });
-    TweenLite.to('.Logo-name', 0.8, { x: 0, delay: 0.5 });
-    TweenLite.to('.Logo-name', 0.8, { fillOpacity: 1, delay: 0.5 });
+    TweenLite.set(svgName, { fillOpacity: 0, x: 100 });
+    TweenLite.to(svgName, 0.8, { x: 0, delay: 0.5 });
+    TweenLite.to(svgName, 0.8, { fillOpacity: 1, delay: 0.5 });
   }
 
-  $('.LogoTools-tool').on('mouseenter', function() {
+  $(svg.find('.LogoTools-tool')).on('mouseenter', function() {
     animateSingleTool('#' + this.id);
   });
 
