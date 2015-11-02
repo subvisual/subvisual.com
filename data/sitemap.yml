@@ -5,3 +5,6 @@ extra:
   - url: '/apprenticeship/'
     changefreq: 'monthly'
     title: 'Subvisual - Apprenticeship'
+  - url: '/newsletter/'
+    changefreq: 'monthly'
+    title: 'Subvisual - Newsletter'
