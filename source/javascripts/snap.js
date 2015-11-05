@@ -1,1 +1,0 @@
-//= require 'snap.svg.js'

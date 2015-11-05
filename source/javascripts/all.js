@@ -15,3 +15,4 @@
 //= require work/_origami
 //= require company/_planets
 //= require nav/_logo
+//= require _segment
