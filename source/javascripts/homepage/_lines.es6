@@ -5,6 +5,8 @@
   const lineMaxWidth = 500;
   const colors = ['#0ADCF2', '#EC7376', '#FCD380', '#E1EAF6', '#8DC8DC', '#4DEBC3'];
   let lines;
+  let trails;
+  let xwings;
   let speedTable = {
     get 1() {
       return getRandomInt(65, 70);
@@ -58,7 +60,7 @@
   }
 
   function getY(i) {
-    let sectionHeight = viewportHeight / lines.length;
+    let sectionHeight = viewportHeight / groups.length;
     let vPadding = 20;
     return getRandomInt((sectionHeight * i) + vPadding, (sectionHeight * i + sectionHeight) - vPadding);
   }
@@ -82,27 +84,43 @@
     return `${sign}=${viewportWidth + elementWidth}`;
   }
 
-  function animateLine(el, i) {
+  function animateLine(group, i, trail, xwing) {
     let width = getRandomInt(lineMinWidth, lineMaxWidth);
     let direction = randomDirection();
+    let settings = resetLine(direction, width, i);
 
-    TweenLite.set(el, resetLine(direction, width, i));
-    TweenLite.to(
-      el, getSpeed(width),
-      {
-        x: translateX(direction, width),
-        delay: 0.8 * i,
-        onComplete: animateLine,
-        onCompleteParams: [el, i]
-      }
-    );
+    if (direction > 0) {
+      TweenLite.set(group, { rotation: 180, transformOrigin: '50% 50%' });
+    } else {
+      TweenLite.set(group, { rotation: 0, transformOrigin: '50% 50%' });
+    }
+
+    TweenLite.set(trail, {
+      attr: settings.attr,
+      stroke: settings.stroke,
+      fill: settings.fill,
+    });
+
+    TweenLite.set(group, {
+      x: settings.x,
+      y: settings.y
+    });
+
+    TweenLite.to(group, getSpeed(width), {
+      x: translateX(direction, width),
+      delay: 0.8 * i,
+      onComplete: animateLine,
+      onCompleteParams: [group, i, trail, xwing]
+    });
   }
 
   function animateLines(svg) {
-    lines = svg.querySelectorAll('.Line');
+    groups = svg.querySelectorAll('.Xwings');
+    trails = svg.querySelectorAll('.Trail');
+    xwings = svg.querySelectorAll('.x-wing');
 
-    for(let i = 0; i < lines.length; i++) {
-      animateLine(lines[i], i);
+    for(let i = 0; i < groups.length; i++) {
+      animateLine(groups[i], i, trails[i], xwings[i]);
     };
   }
 
