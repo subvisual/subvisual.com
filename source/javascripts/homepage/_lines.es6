@@ -5,8 +5,8 @@
   const lineMaxWidth = 500;
   const colors = ['#0ADCF2', '#EC7376', '#FCD380', '#E1EAF6', '#8DC8DC', '#4DEBC3'];
   let lines;
-  let trails;
   let xwings;
+  let destroyers;
   let speedTable = {
     get 1() {
       return getRandomInt(65, 70);
@@ -31,15 +31,15 @@
 
   function initialPosition(width, direction) {
     if (direction === 1) {
-      return -width;
+      return -width * 1.2;
     } else {
-      return viewportWidth;
+      return viewportWidth * 1.2;
     }
   }
 
   function lineHeight(width) {
     if (width < lineMaxWidth/2) {
-      return 1;
+      return 1;0
     } else {
       return 2;
     }
@@ -84,44 +84,51 @@
     return `${sign}=${viewportWidth + elementWidth}`;
   }
 
-  function animateLine(group, i, trail, xwing) {
+  function animateLine(group, i, xwing) {
     let width = getRandomInt(lineMinWidth, lineMaxWidth);
     let direction = randomDirection();
     let settings = resetLine(direction, width, i);
 
     if (direction > 0) {
-      TweenLite.set(group, { rotation: 180, transformOrigin: '50% 50%' });
+      TweenLite.set(group, { rotation: 180, scaleY: 1, transformOrigin: '50% 50%' });
     } else {
-      TweenLite.set(group, { rotation: 0, transformOrigin: '50% 50%' });
+      TweenLite.set(group, { rotation: 0, scaleY: -1, transformOrigin: '50% 50%' });
     }
-
-    TweenLite.set(trail, {
-      attr: settings.attr,
-      stroke: settings.stroke,
-      fill: settings.fill,
-    });
 
     TweenLite.set(group, {
       x: settings.x,
       y: settings.y
     });
 
-    TweenLite.to(group, getSpeed(width), {
-      x: translateX(direction, width),
+    TweenLite.to(group, getSpeed(width) * 0.4, {
+      x: translateX(direction, width * 1.4),
       delay: 0.8 * i,
       onComplete: animateLine,
-      onCompleteParams: [group, i, trail, xwing]
+      onCompleteParams: [group, i, xwing]
+    });
+  }
+
+  function animateStarDestroyer(starDestroyer, i) {
+    let direction = (i == 0) ? -1 : -1;
+
+    TweenLite.to(starDestroyer, 500, {
+      x: translateX(-1, 10),
+      delay: 0.8 * i,
     });
   }
 
   function animateLines(svg) {
-    groups = svg.querySelectorAll('.Xwings');
-    trails = svg.querySelectorAll('.Trail');
-    xwings = svg.querySelectorAll('.x-wing');
+    groups = svg.querySelectorAll('.X-Wings');
+    xwings = svg.querySelectorAll('.X-Wing');
+    starDestroyers = svg.querySelectorAll('.StarDestroyer');
 
     for(let i = 0; i < groups.length; i++) {
-      animateLine(groups[i], i, trails[i], xwings[i]);
+      animateLine(groups[i], i, xwings[i]);
     };
+
+    for(let i = 0; i < starDestroyers.length; i++) {
+      animateStarDestroyer(starDestroyers[i], i);
+    }
   }
 
   window.homepage = window.homepage || {};

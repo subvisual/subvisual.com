@@ -1,0 +1,1011 @@
+<svg width="668" height="173" viewBox="0 0 668 173" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <path id="path-1" d="M0 12L622.71.16V14L0 26.46V12z"/>
+    <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-3">
+      <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0.314369351 0 0 0 0 0.788645996 0 0 0 0 0.8883757 0 0 0 0.7 0" in="shadowBlurOuter1" result="shadowMatrixOuter1"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-4">
+      <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.212389606 0" in="shadowBlurOuter1" result="shadowMatrixOuter1"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-5">
+      <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.212389606 0" in="shadowBlurOuter1" result="shadowMatrixOuter1"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-6">
+      <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.212389606 0" in="shadowBlurOuter1" result="shadowMatrixOuter1"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-7">
+      <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.212389606 0" in="shadowBlurOuter1" result="shadowMatrixOuter1"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-8">
+      <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.212389606 0" in="shadowBlurOuter1" result="shadowMatrixOuter1"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <path id="path-9" d="M.63 5.54V3.67L48.32 5.54l-.824 2L12.42 10 .63 5.54z"/>
+    <path id="path-10" d="M.35 3.096V2.05L27 3.097l-.46 1.117-19.6 1.374-6.59-2.49z"/>
+    <path id="path-11" d="M.35 3.096V2.05L27 3.097l-.46 1.117-19.6 1.374-6.59-2.49z"/>
+    <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-12">
+      <feOffset dy="-2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0835767663 0" in="shadowBlurOuter1" result="shadowMatrixOuter1"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-13">
+      <feOffset dy="-2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.212389606 0" in="shadowBlurOuter1" result="shadowMatrixOuter1"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <g id="Star-Destroyer" fill="none" fill-rule="evenodd">
+      <g id="Destroyer">
+        <g id="Group-+-Group-Mask" transform="translate(35 112)">
+          <mask id="mask-2" fill="#fff">
+            <use xlink:href="#path-1"/>
+          </mask>
+          <use id="Mask" fill="#3C3C3C" xlink:href="#path-1"/>
+          <g id="Group" mask="url(#mask-2)">
+            <g id="Rectangle-2039">
+              <path fill="#A0E1E1" d="M26.863 16h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M27.608 17.118h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M28.725 17.118h.745v.745h-.745zM29.843 16.745h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M27.98 16.373h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M26.49 17.49h.745v.745h-.745zM30.96 16h.745v.745h-.745zM31.705 17.118h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M32.823 17.118h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M33.94 16.745h.745v.745h-.745zM32.078 16.373h.745v.745h-.745zM30.588 17.49h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M34.685 16.373h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M35.43 17.49h.745v.745h-.745zM36.548 17.49h.745v.745h-.745zM37.666 17.118h.745v.745h-.744z"/>
+              <path fill="#A0E1E1" d="M35.803 16.745h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M34.313 17.863h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M38.783 16.373h.745v.745h-.745zM39.528 17.49h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M40.646 17.49h.745v.745h-.744z"/>
+              <path fill="#A0E1E1" d="M41.763 17.118h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M39.9 16.745h.746v.745H39.9z"/>
+              <path fill="#A0E1E1" d="M38.41 17.863h.746v.745h-.745z"/>
+            </g>
+          </g>
+          <g id="Group" mask="url(#mask-2)">
+            <g id="Rectangle-2039">
+              <path fill="#A0E1E1" d="M163.725 6h1.49v1.49h-1.49z"/>
+              <path fill="#D0AFFF" d="M165.215 8.235h1.49v1.49h-1.49z"/>
+              <path fill="#A0E1E1" d="M167.45 8.235h1.49v1.49h-1.49zM169.685 7.49h1.49v1.49h-1.49z"/>
+              <path fill="#D0AFFF" d="M165.96 6.745h1.49v1.49h-1.49z"/>
+              <path fill="#A0E1E1" d="M162.98 8.98h1.49v1.49h-1.49zM171.92 6h1.49v1.49h-1.49zM173.41 8.235h1.49v1.49h-1.49z"/>
+              <path fill="#D0AFFF" d="M175.646 8.235h1.49v1.49h-1.49z"/>
+              <path fill="#A0E1E1" d="M177.88 7.49h1.49v1.49h-1.49zM174.156 6.745h1.49v1.49h-1.49zM171.175 8.98h1.49v1.49h-1.49z"/>
+              <path fill="#D0AFFF" d="M179.37 6.745h1.49v1.49h-1.49z"/>
+              <path fill="#A0E1E1" d="M180.86 8.98h1.49v1.49h-1.49zM183.096 8.98h1.49v1.49h-1.49zM185.33 8.235h1.49v1.49h-1.49zM181.606 7.49h1.49v1.49h-1.49z"/>
+              <path fill="#D0AFFF" d="M178.626 9.725h1.49v1.49h-1.49z"/>
+              <path fill="#A0E1E1" d="M187.566 6.745h1.49v1.49h-1.49zM189.056 8.98h1.49v1.49h-1.49z"/>
+              <path fill="#D0AFFF" d="M191.29 8.98h1.49v1.49h-1.49z"/>
+              <path fill="#A0E1E1" d="M193.526 8.235h1.49v1.49h-1.49z"/>
+              <path fill="#D0AFFF" d="M189.8 7.49h1.49v1.49h-1.49z"/>
+              <path fill="#A0E1E1" d="M186.82 9.725h1.49v1.49h-1.49z"/>
+            </g>
+          </g>
+          <g id="Group" mask="url(#mask-2)">
+            <g id="Rectangle-2039">
+              <path fill="#A0E1E1" d="M131.725 21h1.49v1.49h-1.49z"/>
+              <path fill="#D0AFFF" d="M133.215 23.235h1.49v1.49h-1.49z"/>
+              <path fill="#A0E1E1" d="M135.45 23.235h1.49v1.49h-1.49zM137.685 22.49h1.49v1.49h-1.49z"/>
+              <path fill="#D0AFFF" d="M133.96 21.745h1.49v1.49h-1.49z"/>
+              <path fill="#A0E1E1" d="M130.98 23.98h1.49v1.49h-1.49zM139.92 21h1.49v1.49h-1.49zM141.41 23.235h1.49v1.49h-1.49z"/>
+              <path fill="#D0AFFF" d="M143.646 23.235h1.49v1.49h-1.49z"/>
+              <path fill="#A0E1E1" d="M145.88 22.49h1.49v1.49h-1.49zM142.156 21.745h1.49v1.49h-1.49zM139.175 23.98h1.49v1.49h-1.49z"/>
+              <path fill="#D0AFFF" d="M147.37 21.745h1.49v1.49h-1.49z"/>
+              <path fill="#A0E1E1" d="M148.86 23.98h1.49v1.49h-1.49zM151.096 23.98h1.49v1.49h-1.49zM153.33 23.235h1.49v1.49h-1.49zM149.606 22.49h1.49v1.49h-1.49z"/>
+              <path fill="#D0AFFF" d="M146.626 24.725h1.49v1.49h-1.49z"/>
+              <path fill="#A0E1E1" d="M155.566 21.745h1.49v1.49h-1.49zM157.056 23.98h1.49v1.49h-1.49z"/>
+              <path fill="#D0AFFF" d="M159.29 23.98h1.49v1.49h-1.49z"/>
+              <path fill="#A0E1E1" d="M161.526 23.235h1.49v1.49h-1.49z"/>
+              <path fill="#D0AFFF" d="M157.8 22.49h1.49v1.49h-1.49z"/>
+              <path fill="#A0E1E1" d="M154.82 24.725h1.49v1.49h-1.49z"/>
+            </g>
+          </g>
+          <g id="Group" mask="url(#mask-2)">
+            <g id="Rectangle-2039">
+              <path fill="#A0E1E1" d="M261.15 10h.993v.993h-.993z"/>
+              <path fill="#D0AFFF" d="M262.143 11.49h.993v.993h-.993z"/>
+              <path fill="#A0E1E1" d="M263.634 11.49h.993v.993h-.993zM265.124 10.993h.993v.993h-.993z"/>
+              <path fill="#D0AFFF" d="M262.64 10.497h.993v.993h-.993z"/>
+              <path fill="#A0E1E1" d="M260.653 11.987h.993v.993h-.993zM266.614 10h.993v.993h-.993zM267.607 11.49h.993v.993h-.993z"/>
+              <path fill="#D0AFFF" d="M269.097 11.49h.993v.993h-.993z"/>
+              <path fill="#A0E1E1" d="M270.587 10.993h.993v.993h-.993zM268.104 10.497h.993v.993h-.993zM266.117 11.987h.993v.993h-.993z"/>
+              <path fill="#D0AFFF" d="M271.58 10.497h.994v.993h-.993z"/>
+              <path fill="#A0E1E1" d="M272.574 11.987h.993v.993h-.993zM274.064 11.987h.993v.993h-.993zM275.554 11.49h.993v.993h-.993zM273.07 10.993h.994v.993h-.993z"/>
+              <path fill="#D0AFFF" d="M271.084 12.483h.993v.993h-.993z"/>
+              <path fill="#A0E1E1" d="M277.044 10.497h.993v.993h-.993zM278.038 11.987h.993v.993h-.992z"/>
+              <path fill="#D0AFFF" d="M279.528 11.987h.993v.993h-.992z"/>
+              <path fill="#A0E1E1" d="M281.018 11.49h.993v.993h-.992z"/>
+              <path fill="#D0AFFF" d="M278.534 10.993h.993v.993h-.993z"/>
+              <path fill="#A0E1E1" d="M276.547 12.483h.993v.993h-.993z"/>
+            </g>
+          </g>
+          <g id="Group" mask="url(#mask-2)">
+            <g id="Rectangle-2039">
+              <path fill="#A0E1E1" d="M268.863 13h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M269.608 14.118h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M270.725 14.118h.745v.745h-.745zM271.843 13.745h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M269.98 13.373h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M268.49 14.49h.745v.745h-.745zM272.96 13h.745v.745h-.745zM273.705 14.118h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M274.823 14.118h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M275.94 13.745h.745v.745h-.745zM274.078 13.373h.745v.745h-.745zM272.588 14.49h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M276.685 13.373h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M277.43 14.49h.745v.745h-.745zM278.548 14.49h.745v.745h-.745zM279.666 14.118h.745v.745h-.744zM277.803 13.745h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M276.313 14.863h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M280.783 13.373h.745v.745h-.745zM281.528 14.49h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M282.646 14.49h.745v.745h-.744z"/>
+              <path fill="#A0E1E1" d="M283.763 14.118h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M281.9 13.745h.746v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M280.41 14.863h.746v.745h-.745z"/>
+            </g>
+          </g>
+          <g id="Group" mask="url(#mask-2)">
+            <g id="Rectangle-2039">
+              <path fill="#A0E1E1" d="M230.863 14h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M231.608 15.118h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M232.725 15.118h.745v.745h-.745zM233.843 14.745h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M231.98 14.373h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M230.49 15.49h.745v.745h-.745zM234.96 14h.745v.745h-.745zM235.705 15.118h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M236.823 15.118h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M237.94 14.745h.745v.745h-.745zM236.078 14.373h.745v.745h-.745zM234.588 15.49h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M238.685 14.373h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M239.43 15.49h.745v.745h-.745zM240.548 15.49h.745v.745h-.745zM241.666 15.118h.745v.745h-.744zM239.803 14.745h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M238.313 15.863h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M242.783 14.373h.745v.745h-.745zM243.528 15.49h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M244.646 15.49h.745v.745h-.744z"/>
+              <path fill="#A0E1E1" d="M245.763 15.118h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M243.9 14.745h.746v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M242.41 15.863h.746v.745h-.745z"/>
+            </g>
+          </g>
+          <g id="Group" mask="url(#mask-2)">
+            <g id="Rectangle-2039">
+              <path fill="#A0E1E1" d="M303.15 19h.993v.993h-.993z"/>
+              <path fill="#D0AFFF" d="M304.143 20.49h.993v.993h-.993z"/>
+              <path fill="#A0E1E1" d="M305.634 20.49h.993v.993h-.993zM307.124 19.993h.993v.993h-.993z"/>
+              <path fill="#D0AFFF" d="M304.64 19.497h.993v.993h-.993z"/>
+              <path fill="#A0E1E1" d="M302.653 20.987h.993v.993h-.993zM308.614 19h.993v.993h-.993zM309.607 20.49h.993v.993h-.993z"/>
+              <path fill="#D0AFFF" d="M311.097 20.49h.993v.993h-.993z"/>
+              <path fill="#A0E1E1" d="M312.587 19.993h.993v.993h-.993zM310.104 19.497h.993v.993h-.993zM308.117 20.987h.993v.993h-.993z"/>
+              <path fill="#D0AFFF" d="M313.58 19.497h.994v.993h-.993z"/>
+              <path fill="#A0E1E1" d="M314.574 20.987h.993v.993h-.993zM316.064 20.987h.993v.993h-.993zM317.554 20.49h.993v.993h-.993zM315.07 19.993h.994v.993h-.993z"/>
+              <path fill="#D0AFFF" d="M313.084 21.483h.993v.993h-.993z"/>
+              <path fill="#A0E1E1" d="M319.044 19.497h.993v.993h-.993zM320.038 20.987h.993v.993h-.992z"/>
+              <path fill="#D0AFFF" d="M321.528 20.987h.993v.993h-.992z"/>
+              <path fill="#A0E1E1" d="M323.018 20.49h.993v.993h-.992z"/>
+              <path fill="#D0AFFF" d="M320.534 19.993h.993v.993h-.993z"/>
+              <path fill="#A0E1E1" d="M318.547 21.483h.993v.993h-.993z"/>
+            </g>
+          </g>
+          <g id="Group" mask="url(#mask-2)">
+            <g id="Rectangle-2039">
+              <path fill="#A0E1E1" d="M468.863 11h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M469.608 12.118h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M470.725 12.118h.745v.745h-.745zM471.843 11.745h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M469.98 11.373h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M468.49 12.49h.745v.745h-.745zM472.96 11h.745v.745h-.745zM473.705 12.118h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M474.823 12.118h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M475.94 11.745h.745v.745h-.745zM474.078 11.373h.745v.745h-.745zM472.588 12.49h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M476.685 11.373h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M477.43 12.49h.745v.745h-.745zM478.548 12.49h.745v.745h-.745zM479.666 12.118h.745v.745h-.744zM477.803 11.745h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M476.313 12.863h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M480.783 11.373h.745v.745h-.745zM481.528 12.49h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M482.646 12.49h.745v.745h-.744z"/>
+              <path fill="#A0E1E1" d="M483.763 12.118h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M481.9 11.745h.746v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M480.41 12.863h.746v.745h-.745z"/>
+            </g>
+          </g>
+          <g id="Group" mask="url(#mask-2)">
+            <g id="Rectangle-2039">
+              <path fill="#A0E1E1" d="M80.575 20h.497v.497h-.497z"/>
+              <path fill="#D0AFFF" d="M81.072 20.745h.497v.497h-.498z"/>
+              <path fill="#A0E1E1" d="M81.817 20.745h.497v.497h-.497zM82.562 20.497h.497v.497h-.498z"/>
+              <path fill="#D0AFFF" d="M81.32 20.248h.497v.497h-.497z"/>
+              <path fill="#A0E1E1" d="M80.327 20.993h.497v.497h-.497zM83.307 20h.497v.497h-.497zM83.804 20.745h.497v.497h-.496z"/>
+              <path fill="#D0AFFF" d="M84.55 20.745h.496v.497h-.497z"/>
+              <path fill="#A0E1E1" d="M85.294 20.497h.497v.497h-.496zM84.052 20.248h.497v.497h-.498zM83.058 20.993h.497v.497h-.497z"/>
+              <path fill="#D0AFFF" d="M85.79 20.248h.497v.497h-.497z"/>
+              <path fill="#A0E1E1" d="M86.287 20.993h.497v.497h-.497zM87.032 20.993h.497v.497h-.498zM87.777 20.745h.497v.497h-.497z"/>
+              <path fill="#A0E1E1" d="M86.535 20.497h.497v.497h-.497z"/>
+              <path fill="#D0AFFF" d="M85.542 21.242h.497v.497h-.498z"/>
+              <path fill="#A0E1E1" d="M88.522 20.248h.497v.497h-.498zM89.02 20.993h.496v.497h-.497z"/>
+              <path fill="#D0AFFF" d="M89.764 20.993h.497v.497h-.496z"/>
+              <path fill="#A0E1E1" d="M90.51 20.745h.496v.497h-.497z"/>
+              <path fill="#D0AFFF" d="M89.267 20.497h.497v.497h-.497z"/>
+              <path fill="#A0E1E1" d="M88.274 21.242h.497v.497h-.496z"/>
+            </g>
+          </g>
+          <g id="Group" mask="url(#mask-2)">
+            <g id="Rectangle-2039">
+              <path fill="#A0E1E1" d="M95.863 12h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M96.608 13.118h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M97.725 13.118h.745v.745h-.745zM98.843 12.745h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M96.98 12.373h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M95.49 13.49h.745v.745h-.745zM99.96 12h.745v.745h-.745zM100.705 13.118h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M101.823 13.118h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M102.94 12.745h.745v.745h-.745zM101.078 12.373h.745v.745h-.745zM99.588 13.49h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M103.685 12.373h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M104.43 13.49h.745v.745h-.745zM105.548 13.49h.745v.745h-.745zM106.666 13.118h.745v.745h-.744zM104.803 12.745h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M103.313 13.863h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M107.783 12.373h.745v.745h-.745zM108.528 13.49h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M109.646 13.49h.745v.745h-.744z"/>
+              <path fill="#A0E1E1" d="M110.763 13.118h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M108.9 12.745h.746v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M107.41 13.863h.746v.745h-.745z"/>
+            </g>
+          </g>
+          <g id="Group" mask="url(#mask-2)">
+            <g id="Rectangle-2039">
+              <path fill="#A0E1E1" d="M376.725 12h1.49v1.49h-1.49z"/>
+              <path fill="#D0AFFF" d="M378.215 14.235h1.49v1.49h-1.49z"/>
+              <path fill="#A0E1E1" d="M380.45 14.235h1.49v1.49h-1.49zM382.685 13.49h1.49v1.49h-1.49z"/>
+              <path fill="#D0AFFF" d="M378.96 12.745h1.49v1.49h-1.49z"/>
+              <path fill="#A0E1E1" d="M375.98 14.98h1.49v1.49h-1.49zM384.92 12h1.49v1.49h-1.49zM386.41 14.235h1.49v1.49h-1.49z"/>
+              <path fill="#D0AFFF" d="M388.646 14.235h1.49v1.49h-1.49z"/>
+              <path fill="#A0E1E1" d="M390.88 13.49h1.49v1.49h-1.49zM387.156 12.745h1.49v1.49h-1.49zM384.175 14.98h1.49v1.49h-1.49z"/>
+              <path fill="#D0AFFF" d="M392.37 12.745h1.49v1.49h-1.49z"/>
+              <path fill="#A0E1E1" d="M393.86 14.98h1.49v1.49h-1.49zM396.096 14.98h1.49v1.49h-1.49zM398.33 14.235h1.49v1.49h-1.49zM394.606 13.49h1.49v1.49h-1.49z"/>
+              <path fill="#D0AFFF" d="M391.626 15.725h1.49v1.49h-1.49z"/>
+              <path fill="#A0E1E1" d="M400.566 12.745h1.49v1.49h-1.49zM402.056 14.98h1.49v1.49h-1.49z"/>
+              <path fill="#D0AFFF" d="M404.29 14.98h1.49v1.49h-1.49z"/>
+              <path fill="#A0E1E1" d="M406.526 14.235h1.49v1.49h-1.49z"/>
+              <path fill="#D0AFFF" d="M402.8 13.49h1.49v1.49h-1.49z"/>
+              <path fill="#A0E1E1" d="M399.82 15.725h1.49v1.49h-1.49z"/>
+            </g>
+          </g>
+          <g id="Group" mask="url(#mask-2)">
+            <g id="Rectangle-2039">
+              <path fill="#A0E1E1" d="M335.674 4h1.446v1.49h-1.446z"/>
+              <path fill="#D0AFFF" d="M337.12 6.235h1.447v1.49h-1.446z"/>
+              <path fill="#A0E1E1" d="M339.29 6.235h1.446v1.49h-1.446zM341.46 5.49h1.445v1.49h-1.446z"/>
+              <path fill="#D0AFFF" d="M337.844 4.745h1.446v1.49h-1.446z"/>
+              <path fill="#A0E1E1" d="M334.95 6.98h1.447v1.49h-1.446zM343.63 4h1.445v1.49h-1.446zM345.075 6.235h1.446v1.49h-1.445z"/>
+              <path fill="#D0AFFF" d="M347.244 6.235h1.446v1.49h-1.446z"/>
+              <path fill="#A0E1E1" d="M349.414 5.49h1.446v1.49h-1.446zM345.798 4.745h1.446v1.49h-1.446zM342.906 6.98h1.446v1.49h-1.446z"/>
+              <path fill="#D0AFFF" d="M350.86 4.745h1.446v1.49h-1.446z"/>
+              <path fill="#A0E1E1" d="M352.306 6.98h1.446v1.49h-1.446zM354.476 6.98h1.446v1.49h-1.446zM356.645 6.235h1.446v1.49h-1.445zM353.03 5.49h1.445v1.49h-1.446z"/>
+              <path fill="#D0AFFF" d="M350.137 7.725h1.446v1.49h-1.446z"/>
+              <path fill="#A0E1E1" d="M358.814 4.745h1.446v1.49h-1.446zM360.26 6.98h1.447v1.49h-1.446z"/>
+              <path fill="#D0AFFF" d="M362.43 6.98h1.446v1.49h-1.446z"/>
+              <path fill="#A0E1E1" d="M364.6 6.235h1.445v1.49H364.6z"/>
+              <path fill="#D0AFFF" d="M360.984 5.49h1.446v1.49h-1.446z"/>
+              <path fill="#A0E1E1" d="M358.09 7.725h1.447v1.49h-1.446z"/>
+            </g>
+          </g>
+          <g id="Group" mask="url(#mask-2)">
+            <g id="Rectangle-2039">
+              <path fill="#A0E1E1" d="M320.837 9h.723v.745h-.723z"/>
+              <path fill="#D0AFFF" d="M321.56 10.118h.723v.745h-.723z"/>
+              <path fill="#A0E1E1" d="M322.645 10.118h.723v.745h-.723zM323.73 9.745h.723v.745h-.723z"/>
+              <path fill="#D0AFFF" d="M321.922 9.373h.723v.745h-.723z"/>
+              <path fill="#A0E1E1" d="M320.476 10.49h.723v.745h-.724zM324.814 9h.723v.745h-.723zM325.537 10.118h.723v.745h-.723z"/>
+              <path fill="#D0AFFF" d="M326.622 10.118h.723v.745h-.723z"/>
+              <path fill="#A0E1E1" d="M327.707 9.745h.723v.745h-.723zM325.9 9.373h.722v.745h-.723zM324.453 10.49h.723v.745h-.723z"/>
+              <path fill="#D0AFFF" d="M328.43 9.373h.723v.745h-.723z"/>
+              <path fill="#A0E1E1" d="M329.153 10.49h.723v.745h-.723zM330.238 10.49h.723v.745h-.722zM331.322 10.118h.723v.745h-.723zM329.515 9.745h.723v.745h-.723z"/>
+              <path fill="#D0AFFF" d="M328.068 10.863h.723v.745h-.722z"/>
+              <path fill="#A0E1E1" d="M332.407 9.373h.723v.745h-.723zM333.13 10.49h.723v.745h-.723z"/>
+              <path fill="#D0AFFF" d="M334.215 10.49h.723v.745h-.723z"/>
+              <path fill="#A0E1E1" d="M335.3 10.118h.723v.745h-.723z"/>
+              <path fill="#D0AFFF" d="M333.492 9.745h.723v.745h-.723z"/>
+              <path fill="#A0E1E1" d="M332.046 10.863h.723v.745h-.724z"/>
+            </g>
+          </g>
+          <g id="Group" mask="url(#mask-2)">
+            <g id="Rectangle-2039">
+              <path fill="#A0E1E1" d="M190.837 12h.723v.745h-.723z"/>
+              <path fill="#D0AFFF" d="M191.56 13.118h.723v.745h-.723z"/>
+              <path fill="#A0E1E1" d="M192.645 13.118h.723v.745h-.723zM193.73 12.745h.723v.745h-.723z"/>
+              <path fill="#D0AFFF" d="M191.922 12.373h.723v.745h-.723z"/>
+              <path fill="#A0E1E1" d="M190.476 13.49h.723v.745h-.724zM194.814 12h.723v.745h-.723zM195.537 13.118h.723v.745h-.723z"/>
+              <path fill="#D0AFFF" d="M196.622 13.118h.723v.745h-.723z"/>
+              <path fill="#A0E1E1" d="M197.707 12.745h.723v.745h-.723zM195.9 12.373h.722v.745h-.723zM194.453 13.49h.723v.745h-.723z"/>
+              <path fill="#D0AFFF" d="M198.43 12.373h.723v.745h-.723z"/>
+              <path fill="#A0E1E1" d="M199.153 13.49h.723v.745h-.723zM200.238 13.49h.723v.745h-.722zM201.322 13.118h.723v.745h-.723zM199.515 12.745h.723v.745h-.723z"/>
+              <path fill="#D0AFFF" d="M198.068 13.863h.723v.745h-.722z"/>
+              <path fill="#A0E1E1" d="M202.407 12.373h.723v.745h-.723zM203.13 13.49h.723v.745h-.723z"/>
+              <path fill="#D0AFFF" d="M204.215 13.49h.723v.745h-.723z"/>
+              <path fill="#A0E1E1" d="M205.3 13.118h.723v.745h-.723z"/>
+              <path fill="#D0AFFF" d="M203.492 12.745h.723v.745h-.723z"/>
+              <path fill="#A0E1E1" d="M202.046 13.863h.723v.745h-.724z"/>
+            </g>
+          </g>
+          <g id="Group" mask="url(#mask-2)">
+            <g id="Rectangle-2039">
+              <path fill="#A0E1E1" d="M549.15 3h.993v.993h-.993z"/>
+              <path fill="#D0AFFF" d="M550.143 4.49h.993v.993h-.993z"/>
+              <path fill="#A0E1E1" d="M551.634 4.49h.993v.993h-.993zM553.124 3.993h.993v.993h-.993z"/>
+              <path fill="#D0AFFF" d="M550.64 3.497h.993v.993h-.993z"/>
+              <path fill="#A0E1E1" d="M548.653 4.987h.993v.993h-.993zM554.614 3h.993v.993h-.993zM555.607 4.49h.993v.993h-.993z"/>
+              <path fill="#D0AFFF" d="M557.097 4.49h.993v.993h-.993z"/>
+              <path fill="#A0E1E1" d="M558.587 3.993h.993v.993h-.993zM556.104 3.497h.993v.993h-.993zM554.117 4.987h.993v.993h-.993z"/>
+              <path fill="#D0AFFF" d="M559.58 3.497h.994v.993h-.993z"/>
+              <path fill="#A0E1E1" d="M560.574 4.987h.993v.993h-.993zM562.064 4.987h.993v.993h-.993zM563.554 4.49h.993v.993h-.993zM561.07 3.993h.994v.993h-.993z"/>
+              <path fill="#D0AFFF" d="M559.084 5.483h.993v.993h-.993z"/>
+              <path fill="#A0E1E1" d="M565.044 3.497h.993v.993h-.993zM566.038 4.987h.993v.993h-.992z"/>
+              <path fill="#D0AFFF" d="M567.528 4.987h.993v.993h-.992z"/>
+              <path fill="#A0E1E1" d="M569.018 4.49h.993v.993h-.992z"/>
+              <path fill="#D0AFFF" d="M566.534 3.993h.993v.993h-.993z"/>
+              <path fill="#A0E1E1" d="M564.547 5.483h.993v.993h-.993z"/>
+            </g>
+          </g>
+          <g id="Group" mask="url(#mask-2)">
+            <g id="Rectangle-2039">
+              <path fill="#A0E1E1" d="M593.15 10h.993v.993h-.993z"/>
+              <path fill="#D0AFFF" d="M594.143 11.49h.993v.993h-.993z"/>
+              <path fill="#A0E1E1" d="M595.634 11.49h.993v.993h-.993zM597.124 10.993h.993v.993h-.993z"/>
+              <path fill="#D0AFFF" d="M594.64 10.497h.993v.993h-.993z"/>
+              <path fill="#A0E1E1" d="M592.653 11.987h.993v.993h-.993zM598.614 10h.993v.993h-.993zM599.607 11.49h.993v.993h-.993z"/>
+              <path fill="#D0AFFF" d="M601.097 11.49h.993v.993h-.993z"/>
+              <path fill="#A0E1E1" d="M602.587 10.993h.993v.993h-.993zM600.104 10.497h.993v.993h-.993zM598.117 11.987h.993v.993h-.993z"/>
+              <path fill="#D0AFFF" d="M603.58 10.497h.994v.993h-.993z"/>
+              <path fill="#A0E1E1" d="M604.574 11.987h.993v.993h-.993zM606.064 11.987h.993v.993h-.993zM607.554 11.49h.993v.993h-.993zM605.07 10.993h.994v.993h-.993z"/>
+              <path fill="#D0AFFF" d="M603.084 12.483h.993v.993h-.993z"/>
+              <path fill="#A0E1E1" d="M609.044 10.497h.993v.993h-.993zM610.038 11.987h.993v.993h-.992z"/>
+              <path fill="#D0AFFF" d="M611.528 11.987h.993v.993h-.992z"/>
+              <path fill="#A0E1E1" d="M613.018 11.49h.993v.993h-.992z"/>
+              <path fill="#D0AFFF" d="M610.534 10.993h.993v.993h-.993z"/>
+              <path fill="#A0E1E1" d="M608.547 12.483h.993v.993h-.993z"/>
+            </g>
+          </g>
+          <g id="Group" mask="url(#mask-2)">
+            <g id="Rectangle-2039">
+              <path fill="#A0E1E1" d="M508.643 10h.555v.555h-.555z"/>
+              <path fill="#D0AFFF" d="M509.198 10.833h.555v.555h-.555z"/>
+              <path fill="#A0E1E1" d="M510.03 10.833h.556v.555h-.555zM510.863 10.555h.555v.555h-.555z"/>
+              <path fill="#D0AFFF" d="M509.475 10.278h.555v.555h-.555z"/>
+              <path fill="#A0E1E1" d="M508.365 11.11h.555v.555h-.555zM511.696 10h.555v.555h-.554zM512.25 10.833h.556v.555h-.555z"/>
+              <path fill="#D0AFFF" d="M513.084 10.833h.555v.555h-.556z"/>
+              <path fill="#A0E1E1" d="M513.916 10.555h.555v.555h-.554zM512.53 10.278h.554v.555h-.555zM511.418 11.11h.555v.555h-.555z"/>
+              <path fill="#D0AFFF" d="M514.47 10.278h.556v.555h-.555z"/>
+              <path fill="#A0E1E1" d="M515.027 11.11h.555v.555h-.555zM515.86 11.11h.554v.555h-.555zM516.692 10.833h.555v.555h-.555zM515.304 10.555h.555v.555h-.556z"/>
+              <path fill="#D0AFFF" d="M514.194 11.388h.555v.555h-.556z"/>
+              <path fill="#A0E1E1" d="M517.525 10.278h.555v.555h-.555zM518.08 11.11h.555v.555h-.555z"/>
+              <path fill="#D0AFFF" d="M518.912 11.11h.555v.555h-.555z"/>
+              <path fill="#A0E1E1" d="M519.745 10.833h.555v.555h-.555z"/>
+              <path fill="#D0AFFF" d="M518.357 10.555h.555v.555h-.555z"/>
+              <path fill="#A0E1E1" d="M517.247 11.388h.555v.555h-.555z"/>
+            </g>
+          </g>
+          <g id="Group" mask="url(#mask-2)">
+            <g id="Rectangle-2039">
+              <path fill="#A0E1E1" d="M20.863 18h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M21.608 19.118h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M22.725 19.118h.745v.745h-.745zM23.843 18.745h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M21.98 18.373h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M20.49 19.49h.745v.745h-.745zM24.96 18h.745v.745h-.745zM25.705 19.118h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M26.823 19.118h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M27.94 18.745h.745v.745h-.745zM26.078 18.373h.745v.745h-.745zM24.588 19.49h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M28.685 18.373h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M29.43 19.49h.745v.745h-.745zM30.548 19.49h.745v.745h-.745zM31.666 19.118h.745v.745h-.744z"/>
+              <path fill="#A0E1E1" d="M29.803 18.745h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M28.313 19.863h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M32.783 18.373h.745v.745h-.745zM33.528 19.49h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M34.646 19.49h.745v.745h-.744z"/>
+              <path fill="#A0E1E1" d="M35.763 19.118h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M33.9 18.745h.746v.745H33.9z"/>
+              <path fill="#A0E1E1" d="M32.41 19.863h.746v.745h-.745z"/>
+            </g>
+          </g>
+          <g id="Group" mask="url(#mask-2)">
+            <g id="Rectangle-2039">
+              <path fill="#A0E1E1" d="M140.863 16h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M141.608 17.118h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M142.725 17.118h.745v.745h-.745zM143.843 16.745h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M141.98 16.373h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M140.49 17.49h.745v.745h-.745zM144.96 16h.745v.745h-.745zM145.705 17.118h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M146.823 17.118h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M147.94 16.745h.745v.745h-.745zM146.078 16.373h.745v.745h-.745zM144.588 17.49h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M148.685 16.373h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M149.43 17.49h.745v.745h-.745zM150.548 17.49h.745v.745h-.745zM151.666 17.118h.745v.745h-.744z"/>
+              <path fill="#A0E1E1" d="M149.803 16.745h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M148.313 17.863h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M152.783 16.373h.745v.745h-.745zM153.528 17.49h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M154.646 17.49h.745v.745h-.744z"/>
+              <path fill="#A0E1E1" d="M155.763 17.118h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M153.9 16.745h.746v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M152.41 17.863h.746v.745h-.745z"/>
+            </g>
+          </g>
+          <g id="Group" mask="url(#mask-2)">
+            <g id="Rectangle-2039">
+              <path fill="#A0E1E1" d="M190.863 14h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M191.608 15.118h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M192.725 15.118h.745v.745h-.745z"/>
+              <path fill="#F8E81C" d="M193.843 14.745h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M191.98 14.373h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M190.49 15.49h.745v.745h-.745z"/>
+              <path fill="#F8E81C" d="M194.96 14h.745v.745h-.745zM195.705 15.118h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M196.823 15.118h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M197.94 14.745h.745v.745h-.745zM196.078 14.373h.745v.745h-.745zM194.588 15.49h.745v.745h-.745z"/>
+              <path fill="#F8E81C" d="M198.685 14.373h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M199.43 15.49h.745v.745h-.745zM200.548 15.49h.745v.745h-.745zM201.666 15.118h.745v.745h-.744zM199.803 14.745h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M198.313 15.863h.745v.745h-.745z"/>
+              <path fill="#F8E81C" d="M202.783 14.373h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M203.528 15.49h.745v.745h-.745z"/>
+              <path fill="#F8E81C" d="M204.646 15.49h.745v.745h-.744z"/>
+              <path fill="#A0E1E1" d="M205.763 15.118h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M203.9 14.745h.746v.745h-.745z"/>
+              <path fill="#F8E81C" d="M202.41 15.863h.746v.745h-.745z"/>
+            </g>
+          </g>
+          <g id="Group" mask="url(#mask-2)">
+            <g id="Rectangle-2039">
+              <path fill="#A0E1E1" d="M332.863 11h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M333.608 12.118h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M334.725 12.118h.745v.745h-.745z"/>
+              <path fill="#F8E81C" d="M335.843 11.745h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M333.98 11.373h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M332.49 12.49h.745v.745h-.745z"/>
+              <path fill="#F8E81C" d="M336.96 11h.745v.745h-.745zM337.705 12.118h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M338.823 12.118h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M339.94 11.745h.745v.745h-.745zM338.078 11.373h.745v.745h-.745zM336.588 12.49h.745v.745h-.745z"/>
+              <path fill="#F8E81C" d="M340.685 11.373h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M341.43 12.49h.745v.745h-.745zM342.548 12.49h.745v.745h-.745zM343.666 12.118h.745v.745h-.744zM341.803 11.745h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M340.313 12.863h.745v.745h-.745z"/>
+              <path fill="#F8E81C" d="M344.783 11.373h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M345.528 12.49h.745v.745h-.745z"/>
+              <path fill="#F8E81C" d="M346.646 12.49h.745v.745h-.744z"/>
+              <path fill="#A0E1E1" d="M347.763 12.118h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M345.9 11.745h.746v.745h-.745z"/>
+              <path fill="#F8E81C" d="M344.41 12.863h.746v.745h-.745z"/>
+            </g>
+          </g>
+          <g id="Group" mask="url(#mask-2)">
+            <g id="Rectangle-2039">
+              <path fill="#A0E1E1" d="M392.863 10h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M393.608 11.118h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M394.725 11.118h.745v.745h-.745z"/>
+              <path fill="#F8E81C" d="M395.843 10.745h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M393.98 10.373h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M392.49 11.49h.745v.745h-.745z"/>
+              <path fill="#F8E81C" d="M396.96 10h.745v.745h-.745zM397.705 11.118h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M398.823 11.118h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M399.94 10.745h.745v.745h-.745zM398.078 10.373h.745v.745h-.745zM396.588 11.49h.745v.745h-.745z"/>
+              <path fill="#F8E81C" d="M400.685 10.373h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M401.43 11.49h.745v.745h-.745zM402.548 11.49h.745v.745h-.745zM403.666 11.118h.745v.745h-.744zM401.803 10.745h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M400.313 11.863h.745v.745h-.745z"/>
+              <path fill="#F8E81C" d="M404.783 10.373h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M405.528 11.49h.745v.745h-.745z"/>
+              <path fill="#F8E81C" d="M406.646 11.49h.745v.745h-.744z"/>
+              <path fill="#A0E1E1" d="M407.763 11.118h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M405.9 10.745h.746v.745h-.745z"/>
+              <path fill="#F8E81C" d="M404.41 11.863h.746v.745h-.745z"/>
+            </g>
+          </g>
+          <g id="Group" mask="url(#mask-2)">
+            <g id="Rectangle-2039">
+              <path fill="#A0E1E1" d="M453.863 7h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M454.608 8.118h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M455.725 8.118h.745v.745h-.745z"/>
+              <path fill="#F8E81C" d="M456.843 7.745h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M454.98 7.373h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M453.49 8.49h.745v.745h-.745z"/>
+              <path fill="#F8E81C" d="M457.96 7h.745v.745h-.745zM458.705 8.118h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M459.823 8.118h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M460.94 7.745h.745v.745h-.745zM459.078 7.373h.745v.745h-.745zM457.588 8.49h.745v.745h-.745z"/>
+              <path fill="#F8E81C" d="M461.685 7.373h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M462.43 8.49h.745v.745h-.745zM463.548 8.49h.745v.745h-.745zM464.666 8.118h.745v.745h-.744zM462.803 7.745h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M461.313 8.863h.745v.745h-.745z"/>
+              <path fill="#F8E81C" d="M465.783 7.373h.745v.745h-.745z"/>
+              <path fill="#A0E1E1" d="M466.528 8.49h.745v.745h-.745z"/>
+              <path fill="#F8E81C" d="M467.646 8.49h.745v.745h-.744z"/>
+              <path fill="#A0E1E1" d="M468.763 8.118h.745v.745h-.745z"/>
+              <path fill="#D0AFFF" d="M466.9 7.745h.746v.745h-.745z"/>
+              <path fill="#F8E81C" d="M465.41 8.863h.746v.745h-.745z"/>
+            </g>
+          </g>
+        </g>
+        <path d="M.162 137.516L667.942 124 531.02 159.102l-179.356-5.758-24.224-8.508-23.973 6.742L.162 141.55v-4.034z" id="Rectangle-5506" fill="#5F5F5F"/>
+        <path d="M327 145l48.953 1.396L353.42 154 327 145z" id="Rectangle-5508" fill="#E9F9FA" filter="url(#filter-3)"/>
+        <path d="M404 149h56l-5.72 13.023-10.034 7.403-12.158 2.794-12.81-2.242-12.03-7.955L404 149z" id="Rectangle-5507" fill="#585858"/>
+        <path d="M.162 125.586l667.78-11.484L531.02 79 319.283 99.53.163 123.55v2.036z" id="Rectangle-5506" fill="#C9C9C9"/>
+        <g id="Group">
+          <path d="M364.168 79.184l41.485-13.577 53.464 16.55v21.185l-44.533-7.3-50.416-3.294V79.184z" id="Rectangle-5508" fill="#292929"/>
+          <path d="M458 103.938V82.73h111.396V97.3L458 103.936z" id="Rectangle-5508" fill="#3C3C3C"/>
+          <path d="M38.494 4.57L95 26.51l115.05-4.46L148.655.68 38.494 4.57z" id="Rectangle-5508" fill="#E8E8E8" filter="url(#filter-4)" transform="translate(362 61)"/>
+          <path d="M362.168 79.184l41.485-12.577-2.635-1.18-38.85 13.757z" id="Rectangle-5508" fill="#A7A7A7"/>
+          <g id="Rectangle-2039">
+            <path fill="#A0E1E1" d="M503.863 93h.745v.745h-.745z"/>
+            <path fill="#D0AFFF" d="M504.608 94.118h.745v.745h-.745z"/>
+            <path fill="#A0E1E1" d="M505.725 94.118h.745v.745h-.745zM506.843 93.745h.745v.745h-.745z"/>
+            <path fill="#D0AFFF" d="M504.98 93.373h.745v.745h-.745z"/>
+            <path fill="#A0E1E1" d="M503.49 94.49h.745v.745h-.745zM507.96 93h.745v.745h-.745zM508.705 94.118h.745v.745h-.745z"/>
+            <path fill="#D0AFFF" d="M509.823 94.118h.745v.745h-.745z"/>
+            <path fill="#A0E1E1" d="M510.94 93.745h.745v.745h-.745zM509.078 93.373h.745v.745h-.745zM507.588 94.49h.745v.745h-.745z"/>
+            <path fill="#D0AFFF" d="M511.685 93.373h.745v.745h-.745z"/>
+            <path fill="#A0E1E1" d="M512.43 94.49h.745v.745h-.745zM513.548 94.49h.745v.745h-.745zM514.666 94.118h.745v.745h-.744z"/>
+            <path fill="#A0E1E1" d="M512.803 93.745h.745v.745h-.745z"/>
+            <path fill="#D0AFFF" d="M511.313 94.863h.745v.745h-.745z"/>
+            <path fill="#A0E1E1" d="M515.783 93.373h.745v.745h-.745zM516.528 94.49h.745v.745h-.745z"/>
+            <path fill="#D0AFFF" d="M517.646 94.49h.745v.745h-.744z"/>
+            <path fill="#A0E1E1" d="M518.763 94.118h.745v.745h-.745z"/>
+            <path fill="#D0AFFF" d="M516.9 93.745h.746v.745h-.745z"/>
+            <path fill="#A0E1E1" d="M515.41 94.863h.746v.745h-.745z"/>
+          </g>
+          <g id="Rectangle-2039">
+            <path fill="#A0E1E1" d="M488.863 89h.745v.745h-.745z"/>
+            <path fill="#D0AFFF" d="M489.608 90.118h.745v.745h-.745z"/>
+            <path fill="#A0E1E1" d="M490.725 90.118h.745v.745h-.745z"/>
+            <path fill="#F8E81C" d="M491.843 89.745h.745v.745h-.745z"/>
+            <path fill="#D0AFFF" d="M489.98 89.373h.745v.745h-.745z"/>
+            <path fill="#A0E1E1" d="M488.49 90.49h.745v.745h-.745z"/>
+            <path fill="#F8E81C" d="M492.96 89h.745v.745h-.745zM493.705 90.118h.745v.745h-.745z"/>
+            <path fill="#D0AFFF" d="M494.823 90.118h.745v.745h-.745z"/>
+            <path fill="#A0E1E1" d="M495.94 89.745h.745v.745h-.745zM494.078 89.373h.745v.745h-.745zM492.588 90.49h.745v.745h-.745z"/>
+            <path fill="#F8E81C" d="M496.685 89.373h.745v.745h-.745z"/>
+            <path fill="#A0E1E1" d="M497.43 90.49h.745v.745h-.745zM498.548 90.49h.745v.745h-.745zM499.666 90.118h.745v.745h-.744z"/>
+            <path fill="#A0E1E1" d="M497.803 89.745h.745v.745h-.745z"/>
+            <path fill="#D0AFFF" d="M496.313 90.863h.745v.745h-.745z"/>
+            <path fill="#F8E81C" d="M500.783 89.373h.745v.745h-.745z"/>
+            <path fill="#A0E1E1" d="M501.528 90.49h.745v.745h-.745z"/>
+            <path fill="#F8E81C" d="M502.646 90.49h.745v.745h-.744z"/>
+            <path fill="#A0E1E1" d="M503.763 90.118h.745v.745h-.745z"/>
+            <path fill="#D0AFFF" d="M501.9 89.745h.746v.745h-.745z"/>
+            <path fill="#F8E81C" d="M500.41 90.863h.746v.745h-.745z"/>
+          </g>
+          <g id="Rectangle-2039">
+            <path fill="#A0E1E1" d="M549.863 93h.745v.745h-.745z"/>
+            <path fill="#D0AFFF" d="M550.608 94.118h.745v.745h-.745z"/>
+            <path fill="#A0E1E1" d="M551.725 94.118h.745v.745h-.745zM552.843 93.745h.745v.745h-.745z"/>
+            <path fill="#D0AFFF" d="M550.98 93.373h.745v.745h-.745z"/>
+            <path fill="#A0E1E1" d="M549.49 94.49h.745v.745h-.745zM553.96 93h.745v.745h-.745zM554.705 94.118h.745v.745h-.745z"/>
+            <path fill="#D0AFFF" d="M555.823 94.118h.745v.745h-.745z"/>
+            <path fill="#A0E1E1" d="M556.94 93.745h.745v.745h-.745zM555.078 93.373h.745v.745h-.745zM553.588 94.49h.745v.745h-.745z"/>
+            <path fill="#D0AFFF" d="M557.685 93.373h.745v.745h-.745z"/>
+            <path fill="#A0E1E1" d="M558.43 94.49h.745v.745h-.745zM559.548 94.49h.745v.745h-.745zM560.666 94.118h.745v.745h-.744z"/>
+            <path fill="#A0E1E1" d="M558.803 93.745h.745v.745h-.745z"/>
+            <path fill="#D0AFFF" d="M557.313 94.863h.745v.745h-.745z"/>
+            <path fill="#A0E1E1" d="M561.783 93.373h.745v.745h-.745zM562.528 94.49h.745v.745h-.745z"/>
+            <path fill="#D0AFFF" d="M563.646 94.49h.745v.745h-.744z"/>
+            <path fill="#A0E1E1" d="M564.763 94.118h.745v.745h-.745z"/>
+            <path fill="#D0AFFF" d="M562.9 93.745h.746v.745h-.745z"/>
+            <path fill="#A0E1E1" d="M561.41 94.863h.746v.745h-.745z"/>
+          </g>
+          <g id="Rectangle-2039">
+            <path fill="#A0E1E1" d="M533.863 86h.745v.745h-.745z"/>
+            <path fill="#D0AFFF" d="M534.608 87.118h.745v.745h-.745z"/>
+            <path fill="#A0E1E1" d="M535.725 87.118h.745v.745h-.745z"/>
+            <path fill="#F8E81C" d="M536.843 86.745h.745v.745h-.745z"/>
+            <path fill="#D0AFFF" d="M534.98 86.373h.745v.745h-.745z"/>
+            <path fill="#A0E1E1" d="M533.49 87.49h.745v.745h-.745z"/>
+            <path fill="#F8E81C" d="M537.96 86h.745v.745h-.745zM538.705 87.118h.745v.745h-.745z"/>
+            <path fill="#D0AFFF" d="M539.823 87.118h.745v.745h-.745z"/>
+            <path fill="#A0E1E1" d="M540.94 86.745h.745v.745h-.745zM539.078 86.373h.745v.745h-.745zM537.588 87.49h.745v.745h-.745z"/>
+            <path fill="#F8E81C" d="M541.685 86.373h.745v.745h-.745z"/>
+            <path fill="#A0E1E1" d="M542.43 87.49h.745v.745h-.745zM543.548 87.49h.745v.745h-.745zM544.666 87.118h.745v.745h-.744z"/>
+            <path fill="#A0E1E1" d="M542.803 86.745h.745v.745h-.745z"/>
+            <path fill="#D0AFFF" d="M541.313 87.863h.745v.745h-.745z"/>
+            <path fill="#F8E81C" d="M545.783 86.373h.745v.745h-.745z"/>
+            <path fill="#A0E1E1" d="M546.528 87.49h.745v.745h-.745z"/>
+            <path fill="#F8E81C" d="M547.646 87.49h.745v.745h-.744z"/>
+            <path fill="#A0E1E1" d="M548.763 87.118h.745v.745h-.745z"/>
+            <path fill="#D0AFFF" d="M546.9 86.745h.746v.745h-.745z"/>
+            <path fill="#F8E81C" d="M545.41 87.863h.746v.745h-.745z"/>
+          </g>
+          <g id="Rectangle-2039">
+            <path fill="#A0E1E1" d="M473.863 93h.745v.745h-.745z"/>
+            <path fill="#D0AFFF" d="M474.608 94.118h.745v.745h-.745z"/>
+            <path fill="#A0E1E1" d="M475.725 94.118h.745v.745h-.745zM476.843 93.745h.745v.745h-.745z"/>
+            <path fill="#D0AFFF" d="M474.98 93.373h.745v.745h-.745z"/>
+            <path fill="#A0E1E1" d="M473.49 94.49h.745v.745h-.745zM477.96 93h.745v.745h-.745zM478.705 94.118h.745v.745h-.745z"/>
+            <path fill="#D0AFFF" d="M479.823 94.118h.745v.745h-.745z"/>
+            <path fill="#A0E1E1" d="M480.94 93.745h.745v.745h-.745zM479.078 93.373h.745v.745h-.745zM477.588 94.49h.745v.745h-.745z"/>
+            <path fill="#D0AFFF" d="M481.685 93.373h.745v.745h-.745z"/>
+            <path fill="#A0E1E1" d="M482.43 94.49h.745v.745h-.745zM483.548 94.49h.745v.745h-.745zM484.666 94.118h.745v.745h-.744z"/>
+            <path fill="#A0E1E1" d="M482.803 93.745h.745v.745h-.745z"/>
+            <path fill="#D0AFFF" d="M481.313 94.863h.745v.745h-.745z"/>
+            <path fill="#A0E1E1" d="M485.783 93.373h.745v.745h-.745zM486.528 94.49h.745v.745h-.745z"/>
+            <path fill="#D0AFFF" d="M487.646 94.49h.745v.745h-.744z"/>
+            <path fill="#A0E1E1" d="M488.763 94.118h.745v.745h-.745z"/>
+            <path fill="#D0AFFF" d="M486.9 93.745h.746v.745h-.745z"/>
+            <path fill="#A0E1E1" d="M485.41 94.863h.746v.745h-.745z"/>
+          </g>
+        </g>
+        <path d="M237.934 105.87v-2.29l103.03 3.29-1 2-79.173 2.46-22.856-5.46z" id="Rectangle-5508" fill="#9F9F9F"/>
+        <path d="M337.215 92.003l27.37-9.935 42.532 8.47 1 12.804-43.533-7.3-27.37 1.964v-6.003z" id="Rectangle-5508" fill="#292929"/>
+        <path d="M407.117 103.938v-13.4h43.516v12.4l-43.516 1z" id="Rectangle-5508" fill="#3C3C3C"/>
+        <g id="Rectangle-5508-+-Rectangle-5508">
+          <path d="M114.63 114.54v-1.87l47.692 1.87-.824 2L126.42 119l-11.79-4.46z" id="Rectangle-5508" fill="#9F9F9F"/>
+          <path d="M.63 3.54L39.3.67l9.198 4.87L12.42 8 .63 3.54z" id="Rectangle-5508" fill="#E8E8E8" filter="url(#filter-5)" transform="translate(114 109)"/>
+        </g>
+        <path d="M237.934 103.87l74.127-4.028 28.905 7.03-80.174 2.458-22.856-5.46z" id="Rectangle-5508" fill="#E8E8E8" filter="url(#filter-6)"/>
+        <g id="Group">
+          <path d="M490 11.452l5 2.597 4.835-2.598L502 7.05l-2.165-4.196L495 0l-5 2.854-2 4.195 2 4.402z" id="Oval-981" fill="#848484"/>
+          <path d="M499.5 5.05l.335 6.402L502 7.05l-2.165-4.196L495 0l4.5 5.05z" id="Oval-981" fill="#B0B0B0"/>
+          <path id="Rectangle-5535" fill="#727272" d="M488 2h1v15h-1zM497 0h1v17h-1zM492 0h1v17h-1zM501 2h1v15h-1z"/>
+        </g>
+        <path d="M361.584 82.068l45.533 10.47 45.516-1-44.516-14.048-46.533 4.578z" id="Rectangle-5508" fill="#E8E8E8" filter="url(#filter-7)"/>
+        <g id="Group">
+          <path d="M427.276 18.877l5.208 2.15 4.59-3.007 1.773-4.576-2.523-3.99-5.065-2.422-4.733 3.28-1.627 4.352 2.376 4.213z" id="Oval-981" fill="#848484"/>
+          <path d="M436.182 11.67l.892 6.35 1.773-4.576-2.523-3.99-5.065-2.422 4.922 4.638z" id="Oval-981" fill="#B0B0B0"/>
+          <path id="Rectangle-5535" fill="#727272" d="M424.46 9.635l.996-.087 1.308 14.943-.997.088zM433.252 6.858l.996-.087 1.48 16.936-.995.087zM428.27 7.294l.997-.087 1.48 16.935-.995.087zM437.41 8.502l.997-.087 1.307 14.943-.996.087z"/>
+        </g>
+        <path d="M335.215 93.003l29.37-10.935h-2.505l-26.865 10.935z" id="Rectangle-5508" fill="#A7A7A7"/>
+        <g id="Group">
+          <path d="M450.533 38.66L467.646 37v19.404L447 54.31l3.533-15.65z" id="Rectangle-5528" fill="#656565"/>
+          <path d="M497.324 34.2L467.646 37v19.404l38.3-2-8.622-20.205z" id="Rectangle-5528" fill="#7E7E7E"/>
+          <path d="M421 25.87L440.02 16l37.42-4 18.845 4 2.078 13.654-28.73 6.785-29.613 2-19.02-4v-8.57z" id="Rectangle-5517" fill="#505050"/>
+          <path d="M515.318 20.525L496 16l2.078 12.654 17.24 1v-9.13z" id="Rectangle-5517" fill="#818181"/>
+          <path d="M491.53 37.516l-49.577 1.568v-.11l22.932-2.458 33.193-7.862 17.24 1-23.787 7.862z" id="Rectangle-5517" fill="#2E2E2E"/>
+          <path d="M450.533 38.66l42.153-1-14.31 16.65H447l3.533-15.65z" id="Rectangle-5528" opacity=".2" fill-opacity=".4" fill="#000"/>
+        </g>
+        <g id="Group">
+          <path d="M416.315 62.995l25.167-8.21 32.433 10.008v12.81l-32.433-12.81-25.167-1.798z" id="Rectangle-5508" fill="#292929"/>
+          <path d="M473.237 77.358V65.14h67.577v8.808l-67.577 3.41z" id="Rectangle-5508" fill="#3C3C3C"/>
+          <path d="M23.352 2.764L57.63 16.028l69.793-2.697L90.18.413 23.352 2.764z" id="Rectangle-5508" fill="#E8E8E8" filter="url(#filter-8)" transform="translate(415 52)"/>
+          <path d="M415.102 62.995l25.166-7.604-1.6-.713-23.566 8.318z" id="Rectangle-5508" fill="#A7A7A7"/>
+        </g>
+        <g id="Rectangle-5508-+-Rectangle-5508">
+          <path d="M474.63 108.54v-1.87l47.692 1.87-.824 2L486.42 113l-11.79-4.46z" id="Rectangle-5508" fill="#9F9F9F"/>
+          <path d="M474.63 106.54l38.67-2.87 9.198 4.87L486.42 111l-11.79-4.46z" id="Rectangle-5508" fill="#F2F2F2"/>
+        </g>
+        <g id="Rectangle-5508-+-Rectangle-5508">
+          <path d="M529.63 104.54v-1.87l47.692 1.87-.824 2L541.42 109l-11.79-4.46z" id="Rectangle-5508" fill="#9F9F9F"/>
+          <path d="M529.63 102.54l38.67-2.87 9.198 4.87L541.42 107l-11.79-4.46z" id="Rectangle-5508" fill="#F2F2F2"/>
+        </g>
+        <g id="Group">
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M412.863 96h.745v.745h-.745z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M413.608 97.118h.745v.745h-.745z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M414.725 97.118h.745v.745h-.745z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M415.843 96.745h.745v.745h-.745z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M413.98 96.373h.745v.745h-.745z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M412.49 97.49h.745v.745h-.745z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M416.96 96h.745v.745h-.745zM417.705 97.118h.745v.745h-.745z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M418.823 97.118h.745v.745h-.745z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M419.94 96.745h.745v.745h-.745zM418.078 96.373h.745v.745h-.745zM416.588 97.49h.745v.745h-.745z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M420.685 96.373h.745v.745h-.745z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M421.43 97.49h.745v.745h-.745zM422.548 97.49h.745v.745h-.745zM423.666 97.118h.745v.745h-.744z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M421.803 96.745h.745v.745h-.745z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M420.313 97.863h.745v.745h-.745z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M424.783 96.373h.745v.745h-.745z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M425.528 97.49h.745v.745h-.745z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M426.646 97.49h.745v.745h-.744z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M427.763 97.118h.745v.745h-.745z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M425.9 96.745h.746v.745h-.745z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M424.41 97.863h.746v.745h-.745z"/>
+        </g>
+        <g id="Group">
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M383.453 90.197l.723.18-.18.723-.723-.18z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M383.905 91.462l.723.18-.18.723-.723-.18z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M384.99 91.732l.722.18-.18.723-.723-.18z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M386.164 91.64l.723.18-.18.724-.723-.18z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M384.446 90.83l.723.18-.18.722-.724-.18z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M382.73 91.553l.723.18-.18.723-.723-.18z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M387.428 91.188l.723.18-.18.723-.722-.18zM387.88 92.453l.723.18-.18.723-.723-.18z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M388.965 92.724l.723.18-.18.723-.723-.18z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M390.14 92.632l.722.18-.18.723-.723-.18zM388.423 91.82l.722.18-.18.724-.723-.18zM386.707 92.544l.722.18-.18.723-.724-.18z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M390.952 92.45l.723.18-.18.724-.723-.18z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M391.405 93.715l.723.18-.18.723-.723-.18zM392.49 93.986l.722.18-.18.723-.723-.18zM393.664 93.895l.723.18-.18.723-.723-.18z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M391.947 93.083l.723.18-.18.723-.723-.18z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M390.23 93.807l.724.18-.18.723-.723-.18z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M394.928 93.443l.723.18-.18.723-.722-.18z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M395.38 94.707l.724.18-.18.723-.723-.18z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M396.466 94.977l.723.18-.182.723-.722-.18z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M397.64 94.886l.723.18-.18.724-.724-.18z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M395.923 94.074l.723.18-.18.723-.723-.18z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M394.207 94.798l.723.18-.18.723-.723-.18z"/>
+        </g>
+        <g id="Group">
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M345.72 91.35l.732-.13.13.733-.734.13z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M346.646 92.32l.734-.13.13.735-.734.13z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M347.746 92.127l.734-.13.13.734-.734.13z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M348.783 91.565l.733-.13.13.734-.734.13z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M346.883 91.522l.734-.13.13.735-.734.13z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M345.61 92.88l.734-.128.13.733-.735.13z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M349.753 90.638l.734-.13.13.734-.734.13zM350.68 91.61l.735-.13.13.733-.735.13z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M351.782 91.415l.734-.13.13.734-.734.13z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M352.817 90.854l.734-.13.13.734-.733.13zM350.92 90.81l.733-.13.13.735-.735.13zM349.646 92.17l.733-.13.13.734-.735.13z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M353.486 90.358l.734-.13.13.734-.734.13z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M354.414 91.33l.734-.13.13.733-.734.13zM355.515 91.135l.734-.13.128.734-.733.128zM356.552 90.574l.733-.13.13.734-.734.13z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M354.652 90.53l.734-.13.13.735-.735.13z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M353.38 91.89l.733-.13.13.734-.735.13z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M357.522 89.646l.734-.13.13.735-.734.13z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M358.45 90.617l.734-.13.13.734-.735.13z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M359.55 90.423l.735-.13.13.734-.735.13z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M360.586 89.863l.734-.13.13.734-.734.13z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M358.688 89.82l.734-.13.13.733-.735.13z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M357.415 91.178l.733-.13.13.735-.734.13z"/>
+        </g>
+        <g id="Group">
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M384.72 75.35l.732-.13.13.733-.734.13z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M385.646 76.32l.734-.13.13.735-.734.13z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M386.746 76.127l.734-.13.13.734-.734.13z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M387.783 75.565l.733-.13.13.734-.734.13z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M385.883 75.522l.734-.13.13.735-.734.13z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M384.61 76.88l.734-.128.13.733-.735.13z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M388.753 74.638l.734-.13.13.734-.734.13zM389.68 75.61l.735-.13.13.733-.735.13z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M390.782 75.415l.734-.13.13.734-.734.13z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M391.817 74.854l.734-.13.13.734-.733.13zM389.92 74.81l.733-.13.13.735-.735.13zM388.646 76.17l.733-.13.13.734-.735.13z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M392.486 74.358l.734-.13.13.734-.734.13z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M393.414 75.33l.734-.13.13.733-.734.13zM394.515 75.135l.734-.13.128.734-.733.128zM395.552 74.574l.733-.13.13.734-.734.13z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M393.652 74.53l.734-.13.13.735-.735.13z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M392.38 75.89l.733-.13.13.734-.735.13z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M396.522 73.646l.734-.13.13.735-.734.13z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M397.45 74.617l.734-.13.13.734-.735.13z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M398.55 74.423l.735-.13.13.734-.735.13z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M399.586 73.863l.734-.13.13.734-.734.13z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M397.688 73.82l.734-.13.13.733-.735.13z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M396.415 75.178l.733-.13.13.735-.734.13z"/>
+        </g>
+        <g id="Group">
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M423.453 78.197l.723.18-.18.723-.723-.18z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M423.905 79.462l.723.18-.18.723-.723-.18z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M424.99 79.732l.722.18-.18.723-.723-.18z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M426.164 79.64l.723.18-.18.724-.723-.18z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M424.446 78.83l.723.18-.18.722-.724-.18z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M422.73 79.553l.723.18-.18.723-.723-.18z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M427.428 79.188l.723.18-.18.723-.722-.18zM427.88 80.453l.723.18-.18.723-.723-.18z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M428.965 80.724l.723.18-.18.723-.723-.18z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M430.14 80.632l.722.18-.18.723-.723-.18zM428.423 79.82l.722.18-.18.724-.723-.18zM426.707 80.544l.722.18-.18.723-.724-.18z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M430.952 80.45l.723.18-.18.724-.723-.18z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M431.405 81.715l.723.18-.18.723-.723-.18zM432.49 81.986l.722.18-.18.723-.723-.18zM433.664 81.895l.723.18-.18.723-.723-.18z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M431.947 81.083l.723.18-.18.723-.723-.18z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M430.23 81.807l.724.18-.18.723-.723-.18z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M434.928 81.443l.723.18-.18.723-.722-.18z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M435.38 82.707l.724.18-.18.723-.723-.18z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M436.466 82.977l.723.18-.182.723-.722-.18z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M437.64 82.886l.723.18-.18.724-.724-.18z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M435.923 82.074l.723.18-.18.723-.723-.18z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M434.207 82.798l.723.18-.18.723-.723-.18z"/>
+        </g>
+        <g id="Group">
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M479.863 71h.745v.745h-.745z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M480.608 72.118h.745v.745h-.745z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M481.725 72.118h.745v.745h-.745z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M482.843 71.745h.745v.745h-.745z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M480.98 71.373h.745v.745h-.745z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M479.49 72.49h.745v.745h-.745z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M483.96 71h.745v.745h-.745zM484.705 72.118h.745v.745h-.745z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M485.823 72.118h.745v.745h-.745z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M486.94 71.745h.745v.745h-.745zM485.078 71.373h.745v.745h-.745zM483.588 72.49h.745v.745h-.745z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M487.685 71.373h.745v.745h-.745z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M488.43 72.49h.745v.745h-.745zM489.548 72.49h.745v.745h-.745zM490.666 72.118h.745v.745h-.744z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M488.803 71.745h.745v.745h-.745z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M487.313 72.863h.745v.745h-.745z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M491.783 71.373h.745v.745h-.745z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M492.528 72.49h.745v.745h-.745z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M493.646 72.49h.745v.745h-.744z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M494.763 72.118h.745v.745h-.745z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M492.9 71.745h.746v.745h-.745z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M491.41 72.863h.746v.745h-.745z"/>
+        </g>
+        <g id="Group">
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M513.863 67h.745v.745h-.745z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M514.608 68.118h.745v.745h-.745z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M515.725 68.118h.745v.745h-.745z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M516.843 67.745h.745v.745h-.745z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M514.98 67.373h.745v.745h-.745z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M513.49 68.49h.745v.745h-.745z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M517.96 67h.745v.745h-.745zM518.705 68.118h.745v.745h-.745z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M519.823 68.118h.745v.745h-.745z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M520.94 67.745h.745v.745h-.745zM519.078 67.373h.745v.745h-.745zM517.588 68.49h.745v.745h-.745z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M521.685 67.373h.745v.745h-.745z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M522.43 68.49h.745v.745h-.745zM523.548 68.49h.745v.745h-.745zM524.666 68.118h.745v.745h-.744z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M522.803 67.745h.745v.745h-.745z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M521.313 68.863h.745v.745h-.745z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M525.783 67.373h.745v.745h-.745z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M526.528 68.49h.745v.745h-.745z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M527.646 68.49h.745v.745h-.744z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M528.763 68.118h.745v.745h-.745z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M526.9 67.745h.746v.745h-.745z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M525.41 68.863h.746v.745h-.745z"/>
+        </g>
+        <g id="Group">
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M442.453 61.197l.723.18-.18.723-.723-.18z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M442.905 62.462l.723.18-.18.723-.723-.18z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M443.99 62.732l.722.18-.18.723-.723-.18z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M445.164 62.64l.723.18-.18.724-.723-.18z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M443.446 61.83l.723.18-.18.722-.724-.18z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M441.73 62.553l.723.18-.18.723-.723-.18z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M446.428 62.188l.723.18-.18.723-.722-.18zM446.88 63.453l.723.18-.18.723-.723-.18z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M447.965 63.724l.723.18-.18.723-.723-.18z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M449.14 63.632l.722.18-.18.723-.723-.18zM447.423 62.82l.722.18-.18.724-.723-.18zM445.707 63.544l.722.18-.18.723-.724-.18z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M449.952 63.45l.723.18-.18.724-.723-.18z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M450.405 64.715l.723.18-.18.723-.723-.18zM451.49 64.986l.722.18-.18.723-.723-.18zM452.664 64.895l.723.18-.18.723-.723-.18z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M450.947 64.083l.723.18-.18.723-.723-.18z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M449.23 64.807l.724.18-.18.723-.723-.18z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M453.928 64.443l.723.18-.18.723-.722-.18z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M454.38 65.707l.724.18-.18.723-.723-.18z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M455.466 65.977l.723.18-.182.723-.722-.18z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M456.64 65.886l.723.18-.18.724-.724-.18z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M454.923 65.074l.723.18-.18.723-.723-.18z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M453.207 65.798l.723.18-.18.723-.723-.18z"/>
+        </g>
+        <g id="Rectangle-5508-+-Rectangle-5508">
+          <g id="Rectangle-5508" transform="rotate(-9 1198.2 -3140.817)">
+            <use fill="#4E4E4E" xlink:href="#path-9"/>
+            <use xlink:href="#path-9"/>
+          </g>
+          <path d="M507.26 152.17l37.744-8.885 9.848 3.372-35.25 8.073-12.343-2.56z" id="Rectangle-5508" fill="#6D6D6D"/>
+        </g>
+        <g id="Rectangle-5508-+-Rectangle-5508">
+          <g id="Rectangle-5508" transform="rotate(-9 1033.778 -1365.996)">
+            <use fill="#4E4E4E" xlink:href="#path-10"/>
+            <use xlink:href="#path-10"/>
+          </g>
+          <path d="M227.073 146.8l21.09-4.964 5.502 1.884-19.695 4.51-6.897-1.43z" id="Rectangle-5508" fill="#6D6D6D"/>
+        </g>
+        <g id="Rectangle-5508-+-Rectangle-5508">
+          <g id="Rectangle-5508" transform="rotate(-9 1100.75 -1648.386)">
+            <use fill="#4E4E4E" xlink:href="#path-11"/>
+            <use xlink:href="#path-11"/>
+          </g>
+          <path d="M272.073 153.8l21.09-4.964 5.502 1.884-19.695 4.51-6.897-1.43z" id="Rectangle-5508" fill="#6D6D6D"/>
+        </g>
+        <path d="M.162 137.516L667.942 124l-9.735 2L.162 141.55v-4.034z" id="Rectangle-5506" fill="#737373" filter="url(#filter-12)"/>
+        <path d="M.162 112.01l667.78 11.484-6.936 2.092L.162 114.046v-2.036z" id="Rectangle-5506" fill="#E8E8E8" filter="url(#filter-13)" transform="matrix(1 0 0 -1 0 237.596)"/>
+        <g id="Group">
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M470.748 17.807l.74-.078.08.74-.742.077z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M471.606 18.84l.74-.077.08.74-.742.078z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M472.717 18.724l.74-.078.078.74-.74.08z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M473.79 18.236l.74-.078.078.74-.74.08z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M471.898 18.06l.74-.077.08.74-.742.08z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M470.533 19.327l.74-.078.08.74-.742.078z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M474.823 17.378l.74-.078.078.74-.74.08zM475.68 18.412l.74-.078.08.74-.742.08z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M476.792 18.295l.74-.077.08.74-.742.078z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M477.864 17.808l.74-.078.08.74-.742.08zM475.973 17.632l.74-.078.08.74-.742.08zM474.608 18.9l.74-.08.08.742-.742.078z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M478.566 17.36l.74-.078.08.74-.742.08z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M479.424 18.393l.74-.078.08.74-.742.08zM480.536 18.276l.74-.078.08.74-.742.08zM481.61 17.79l.74-.08.078.742-.74.078z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M479.717 17.613l.74-.078.08.74-.742.08z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M478.352 18.88l.74-.077.08.74-.742.078z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M482.642 16.93l.74-.076.08.74-.742.078z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M483.5 17.964l.74-.077.078.74-.74.078z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M484.61 17.848l.742-.078.078.74-.74.08z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M485.683 17.36l.74-.077.08.74-.742.08z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M483.792 17.185l.74-.078.08.74-.742.078z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M482.428 18.452l.74-.078.078.74-.74.08z"/>
+        </g>
+        <g id="Group">
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M455.748 20.807l.74-.078.08.74-.742.077z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M456.606 21.84l.74-.077.08.74-.742.078z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M457.717 21.724l.74-.078.078.74-.74.08z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M458.79 21.236l.74-.078.078.74-.74.08z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M456.898 21.06l.74-.077.08.74-.742.08z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M455.533 22.327l.74-.078.08.74-.742.078z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M459.823 20.378l.74-.078.078.74-.74.08zM460.68 21.412l.74-.078.08.74-.742.08z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M461.792 21.295l.74-.077.08.74-.742.078z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M462.864 20.808l.74-.078.08.74-.742.08zM460.973 20.632l.74-.078.08.74-.742.08zM459.608 21.9l.74-.08.08.742-.742.078z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M463.566 20.36l.74-.078.08.74-.742.08z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M464.424 21.393l.74-.078.08.74-.742.08zM465.536 21.276l.74-.078.08.74-.742.08zM466.61 20.79l.74-.08.078.742-.74.078z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M464.717 20.613l.74-.078.08.74-.742.08z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M463.352 21.88l.74-.077.08.74-.742.078z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M467.642 19.93l.74-.076.08.74-.742.078z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M468.5 20.964l.74-.077.078.74-.74.078z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M469.61 20.848l.742-.078.078.74-.74.08z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M470.683 20.36l.74-.077.08.74-.742.08z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M468.792 20.185l.74-.078.08.74-.742.078z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M467.428 21.452l.74-.078.078.74-.74.08z"/>
+        </g>
+        <g id="Group">
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M430.748 31.807l.74-.078.08.74-.742.077z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M431.606 32.84l.74-.077.08.74-.742.078z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M432.717 32.724l.74-.078.078.74-.74.08z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M433.79 32.236l.74-.078.078.74-.74.08z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M431.898 32.06l.74-.077.08.74-.742.08z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M430.533 33.327l.74-.078.08.74-.742.078z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M434.823 31.378l.74-.078.078.74-.74.08zM435.68 32.412l.74-.078.08.74-.742.08z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M436.792 32.295l.74-.077.08.74-.742.078z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M437.864 31.808l.74-.078.08.74-.742.08zM435.973 31.632l.74-.078.08.74-.742.08zM434.608 32.9l.74-.08.08.742-.742.078z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M438.566 31.36l.74-.078.08.74-.742.08z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M439.424 32.393l.74-.078.08.74-.742.08zM440.536 32.276l.74-.078.08.74-.742.08zM441.61 31.79l.74-.08.078.742-.74.078z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M439.717 31.613l.74-.078.08.74-.742.08z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M438.352 32.88l.74-.077.08.74-.742.078z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M442.642 30.93l.74-.076.08.74-.742.078z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M443.5 31.964l.74-.077.078.74-.74.078z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M444.61 31.848l.742-.078.078.74-.74.08z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M445.683 31.36l.74-.077.08.74-.742.08z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M443.792 31.185l.74-.078.08.74-.742.078z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M442.428 32.452l.74-.078.078.74-.74.08z"/>
+        </g>
+        <g id="Group">
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M436.748 27.807l.74-.078.08.74-.742.077z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M437.606 28.84l.74-.077.08.74-.742.078z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M438.717 28.724l.74-.078.078.74-.74.08z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M439.79 28.236l.74-.078.078.74-.74.08z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M437.898 28.06l.74-.077.08.74-.742.08z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M436.533 29.327l.74-.078.08.74-.742.078z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M440.823 27.378l.74-.078.078.74-.74.08zM441.68 28.412l.74-.078.08.74-.742.08z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M442.792 28.295l.74-.077.08.74-.742.078z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M443.864 27.808l.74-.078.08.74-.742.08zM441.973 27.632l.74-.078.08.74-.742.08zM440.608 28.9l.74-.08.08.742-.742.078z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M444.566 27.36l.74-.078.08.74-.742.08z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M445.424 28.393l.74-.078.08.74-.742.08zM446.536 28.276l.74-.078.08.74-.742.08zM447.61 27.79l.74-.08.078.742-.74.078z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M445.717 27.613l.74-.078.08.74-.742.08z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M444.352 28.88l.74-.077.08.74-.742.078z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M448.642 26.93l.74-.076.08.74-.742.078z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M449.5 27.964l.74-.077.078.74-.74.078z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M450.61 27.848l.742-.078.078.74-.74.08z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M451.683 27.36l.74-.077.08.74-.742.08z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M449.792 27.185l.74-.078.08.74-.742.078z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M448.428 28.452l.74-.078.078.74-.74.08z"/>
+        </g>
+        <g id="Group">
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M467.748 27.807l.74-.078.08.74-.742.077z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M468.606 28.84l.74-.077.08.74-.742.078z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M469.717 28.724l.74-.078.078.74-.74.08z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M470.79 28.236l.74-.078.078.74-.74.08z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M468.898 28.06l.74-.077.08.74-.742.08z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M467.533 29.327l.74-.078.08.74-.742.078z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M471.823 27.378l.74-.078.078.74-.74.08zM472.68 28.412l.74-.078.08.74-.742.08z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M473.792 28.295l.74-.077.08.74-.742.078z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M474.864 27.808l.74-.078.08.74-.742.08zM472.973 27.632l.74-.078.08.74-.742.08zM471.608 28.9l.74-.08.08.742-.742.078z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M475.566 27.36l.74-.078.08.74-.742.08z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M476.424 28.393l.74-.078.08.74-.742.08zM477.536 28.276l.74-.078.08.74-.742.08zM478.61 27.79l.74-.08.078.742-.74.078z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M476.717 27.613l.74-.078.08.74-.742.08z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M475.352 28.88l.74-.077.08.74-.742.078z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M479.642 26.93l.74-.076.08.74-.742.078z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M480.5 27.964l.74-.077.078.74-.74.078z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M481.61 27.848l.742-.078.078.74-.74.08z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M482.683 27.36l.74-.077.08.74-.742.08z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M480.792 27.185l.74-.078.08.74-.742.078z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M479.428 28.452l.74-.078.078.74-.74.08z"/>
+        </g>
+        <g id="Group">
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M449.697 19.812l.697-.073.078.74-.697.073z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M450.51 20.85l.7-.073.076.74-.697.074z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M451.558 20.74l.697-.073.078.74-.698.074z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M452.565 20.26l.697-.074.078.74-.697.074z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M450.783 20.073l.697-.073.078.74-.698.074z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M449.504 21.33l.697-.073.08.74-.698.074z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M453.532 19.41l.697-.075.077.74-.697.075zM454.347 20.447l.697-.073.078.74-.697.074z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M455.393 20.337l.698-.073.078.74-.697.074z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M456.4 19.856l.697-.073.078.74-.697.074zM454.617 19.67l.698-.074.077.74-.697.075zM453.34 20.927l.697-.073.078.74-.697.074z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M457.06 19.413l.696-.073.078.74-.697.074z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M457.873 20.45l.697-.073.078.74-.697.075zM458.92 20.34l.696-.072.078.74-.697.074zM459.925 19.86l.698-.072.078.74-.697.074z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M458.143 19.673l.697-.073.078.74-.697.074z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M456.866 20.932l.697-.074.078.74-.696.075z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M460.894 19.01l.697-.073.08.74-.698.074z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M461.708 20.048l.697-.074.078.74-.697.075z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M462.754 19.938l.697-.074.08.74-.698.075z"/>
+          <path id="Rectangle-2039" fill="#A0E1E1" d="M463.76 19.458l.7-.073.076.74-.697.074z"/>
+          <path id="Rectangle-2039" fill="#D0AFFF" d="M461.98 19.27l.696-.073.078.74-.697.074z"/>
+          <path id="Rectangle-2039" fill="#F8E81C" d="M460.702 20.53l.697-.075.077.74-.698.074z"/>
+        </g>
+      </g>
+    </g>
+  </defs>
+  <g>
+    <use xlink:href="#Star-Destroyer" />
+  </g>
+</svg>

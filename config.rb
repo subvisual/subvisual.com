@@ -47,7 +47,7 @@ end
 
 after_configuration do
  %w(javascripts stylesheets images).each do |dir|
-    sprockets.append_path File.join "#{root}", "vendor/blue/#{dir}"
+    sprockets.append_path File.join "#{root}", "../blue/#{dir}"
   end
 
   sprockets.import_asset "blue/subvisual_separator.svg"

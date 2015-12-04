@@ -1,0 +1,44 @@
+// lightsaber underline on nav items
+.StarWars.StarWars.StarWars {
+  .Nav-item {
+    position: relative;
+
+    &,
+    &:hover,
+    &.is-selected {
+      border-bottom: 0;
+      .Nav-link {
+        color: $Theme-color-white;
+      }
+    }
+
+    &:after {
+      position: absolute;
+      bottom: 0;
+      display: block;
+      content: '';
+      height: 3px;
+      margin: auto;
+      width: 0;
+      transition: width 0.2s linear;
+      background: #ffe9f2;
+      box-shadow: 2px 2px 10px 0 #ff3b8a, -2px -2px 10px 0 #ff3b8a;
+      border-radius: 2px;
+    }
+
+    &:hover,
+    &.is-selected {
+      &:after {
+        width: 100%;
+      }
+    }
+  }
+
+  .Panel--deathStar {
+    background-color: #1d1d1d;
+
+    .Text {
+      color: rgba($Theme-color-white, 0.5);
+    }
+  }
+}

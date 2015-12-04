@@ -1,0 +1,65 @@
+<svg width="548" height="185" viewBox="0 0 548 185" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <g id="X-Wing" class="X-Wing" fill="none" fill-rule="evenodd">
+    <g id="Group">
+      <path d="M195 49c0-7.18-5.596-13-12.5-13S170 41.82 170 49h25z" id="Oval-306" fill="#9C98A7"/>
+      <path id="Rectangle-402" fill="#F6F5F3" d="M170 49h25v11h-25z"/>
+      <path d="M189.165 38c-1.93-1.267-4.215-2-6.665-2s-4.736.733-6.665 2h13.33z" id="Oval-306" fill="#0044E7"/>
+      <path d="M186.926 42.104l1.24 5.877h5.955l-2.417-5.876h-4.777zM178.12 42.104l-1.24 5.877h-5.954l2.417-5.876h4.778z" id="Path-111" fill="#0162E6"/>
+      <path d="M179.267 48.04l1.19-5.986h5.094l1.017 5.987h-7.3z" id="Path-113" fill="#0053E6"/>
+      <path id="Rectangle-400" fill="#FFF" d="M179 45h8v14h-8z"/>
+      <path id="Rectangle-400" fill="#74737D" d="M181 49h4v10h-4z"/>
+      <path d="M311 10l11-4v16l-11-5v-7z" id="Rectangle-371" fill="#FFF"/>
+      <path id="Rectangle-99" fill="#9C9499" d="M77 133v-20H29v20z"/>
+      <path d="M25 136l4-3v-20l-4-3-18 3v20l18 3z" id="Rectangle-101" fill="#9C9499"/>
+      <path id="Rectangle-153" fill="#333" d="M76 133v-2H29v2z"/>
+      <path id="Rectangle-155" fill="#333" d="M37 131v-18h-2v18z"/>
+      <path d="M25 136l4-3v-3l-4 3-18-3v3l18 3z" id="Rectangle-101" fill="#333"/>
+      <path id="Rectangle-99" fill="#9C9499" d="M70 82V62H22v20z"/>
+      <path d="M18 85l4-3V62l-4-3-18 3v20l18 3z" id="Rectangle-101" fill="#9C9499"/>
+      <path id="Rectangle-153" fill="#333" d="M69 82v-2H22v2z"/>
+      <path id="Rectangle-155" fill="#333" d="M30 80V62h-2v18z"/>
+      <path d="M18 85l4-3v-3l-4 3-18-3v3l18 3z" id="Rectangle-101" fill="#333"/>
+      <path id="Rectangle-372" fill="#FFF" d="M58 4h8v18h-8z"/>
+      <path id="Rectangle-373" fill="#FFF" d="M66 9h11v9H66z"/>
+      <path d="M70.85 133l-27.868-17.88V80.153l18.444-27.22L172 53l37.53-.068 24.018 12.543 81.063-7.877L491 69l-2.727 30.14L320 113H214.46L172 133H70.85z" id="Rectangle-258" fill="#FFF"/>
+      <path d="M70.85 133l-27.868-17.88V88.405h445.29V99.14L320 113H214.46L172 133H70.85z" id="Rectangle-258-Copy" fill-opacity=".1" fill="#000"/>
+      <path id="Rectangle-259" fill="#FE724A" d="M197 76h289v13H197z"/>
+      <path d="M486.126 66.622s17.465 1.02 28.895 4.823c11.43 3.8 32.905 16.472 32.905 16.472s-25.022 12.753-43.727 14.63c-18.706 1.877-36.022 0-36.022 0l-.524-14.63s8.715-1.944 13.125-7.762c4.41-5.82 5.35-13.533 5.35-13.533z" id="Path-104" fill="#F6F5F3"/>
+      <path d="M208.665 52.912l8.697-8.697h16.713v21.7l-25.41-13.003z" id="Path-105" stroke="#FFF" fill="#333"/>
+      <path d="M234 44v22.43l80.956-8.81L234 44z" id="Path-106" stroke="#FFF" fill="#333"/>
+      <path d="M70.85 133l-27.868-17.88V80.153l18.444-27.22L172 53v80H70.85z" id="Rectangle-258" fill-opacity=".1" fill="#000"/>
+      <path d="M168 67h28.18L205 78v25l-8.82 11H168V67z" id="Rectangle-362" fill-opacity=".1" fill="#000"/>
+      <path d="M168 70h28.18l7.82 8v25l-7.82 8H168V70z" id="Rectangle-362" fill="#FFF"/>
+      <path id="Rectangle-360" fill="#F6F5F3" d="M133 104h39v37h-39z"/>
+      <path id="Rectangle-361" fill="#F6F5F3" d="M100 44h72v37h-72z"/>
+      <path d="M81.53 23h29.17v57.87L42.92 80.2 81.53 23z" id="Path-109" fill="#C0B7BC"/>
+      <path id="Rectangle-365" fill="#C0B7BC" d="M104 76h68v5h-68z"/>
+      <path id="Rectangle-363" fill="#E2DFDB" d="M166 44h1v37h-1z"/>
+      <path id="Rectangle-393" fill="#FFF" d="M153 104h19v5h-19z"/>
+      <path id="Rectangle-366" fill="#FFF" d="M77 3h78v20H77z"/>
+      <path id="Rectangle-367" fill="#FFF" d="M155 0h8v26h-8z"/>
+      <path id="Rectangle-368" fill="#FFF" d="M163 7h81v12h-81z"/>
+      <path id="Rectangle-369" fill="#FFF" d="M244 10h67v7h-67z"/>
+      <path id="Rectangle-370" fill="#FFF" d="M318 12h45v3h-45z"/>
+      <path id="Rectangle-363" fill="#E2DFDB" d="M166 104h1v37h-1z"/>
+      <path id="Rectangle-394" fill="#DAD7D3" d="M43 104h66v1H43z"/>
+      <path id="Rectangle-395" fill="#DAD7D3" d="M79 104h1v29h-1z"/>
+      <path d="M108.287 103.728v59h43.655l3.156-58.64-46.81-.36z" id="Path-110" fill="#FFF"/>
+      <path id="Rectangle-396" fill-opacity=".1" fill="#000" d="M58 12h305v3H58z"/>
+      <path d="M338 169l11-4v16l-11-5v-7z" id="Rectangle-371" fill="#FFF"/>
+      <path id="Rectangle-372" fill="#FFF" d="M85 163h8v18h-8z"/>
+      <path id="Rectangle-373" fill="#FFF" d="M93 168h11v9H93z"/>
+      <path id="Rectangle-366" fill="#FFF" d="M104 162h78v20h-78z"/>
+      <path id="Rectangle-367" fill="#FFF" d="M182 159h8v26h-8z"/>
+      <path id="Rectangle-368" fill="#FFF" d="M190 166h81v12h-81z"/>
+      <path id="Rectangle-369" fill="#FFF" d="M271 169h67v7h-67z"/>
+      <path id="Rectangle-370" fill="#FFF" d="M345 171h45v3h-45z"/>
+      <path id="Rectangle-396" fill-opacity=".1" fill="#000" d="M85 171h305v3H85z"/>
+    </g>
+  </g>
+</defs>
+<g>
+  <use xlink:href="#X-Wing" />
+</g>
+</svg>
