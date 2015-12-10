@@ -2,7 +2,7 @@ members:
   - name: "Bruno Azevedo"
     picture: "bruno-azevedo"
     position: "Developer"
-    bio: "Likes to make a difference in everything he does. Music lover and practitioner. 
+    bio: "Likes to make a difference in everything he does. Music lover and practitioner.
     Healthy Hacker wannabe."
     social:
       twitter: "https://twitter.com/azevedo_252"
@@ -27,7 +27,7 @@ members:
   - name: "João Ferreira"
     picture: "joao-ferreira"
     position: "Designer"
-    bio: "Believes Design is not about mastering tools but about mastering people. 
+    bio: "Believes Design is not about mastering tools but about mastering people.
     Passionate about music, movies and whisky."
     social:
       twitter: "https://twitter.com/jferreiradzn"
@@ -46,8 +46,8 @@ members:
   - name: "Laura Esteves"
     picture: "laura-esteves"
     position: "Head of Operations"
-    bio: "Multitasking. Purpose: Making life easier. Sidekicks: Minions. 
-    This smiley girl can mislead you to think she is all niceness. Give her a 
+    bio: "Multitasking. Purpose: Making life easier. Sidekicks: Minions.
+    This smiley girl can mislead you to think she is all niceness. Give her a
     challenge and see the workforce she becomes."
     social:
       twitter: "https://twitter.com/lauraeesteves"
@@ -55,8 +55,8 @@ members:
   - name: "Luis Ferreira"
     picture: "luis-ferreira"
     position: "Founder & Developer"
-    bio: "Has worked on the web for a while now, mainly using Ruby and Ruby on 
-    Rails. Enjoys open source and giving back to the community, having taught 
+    bio: "Has worked on the web for a while now, mainly using Ruby and Ruby on
+    Rails. Enjoys open source and giving back to the community, having taught
     Rails to hundreds of people."
     social:
       twitter: "https://twitter.com/zamith"
@@ -65,17 +65,27 @@ members:
   - name: "Miguel Palhas"
     picture: "miguel-palhas"
     position: "Developer & SysAdmin"
-    bio: "All-round developer with a background in High Performance Computing 
-    and a passion for the Open Source world. Still dreams about becoming a real 
+    bio: "All-round developer with a background in High Performance Computing
+    and a passion for the Open Source world. Still dreams about becoming a real
     game developer someday."
     social:
       twitter: "https://twitter.com/naps62"
       github: "https://github.com/naps62"
 
+  - name: "Pedro Costa"
+    picture: "pedro-costa"
+    position: "Developer"
+    bio: "Proudly weird, pedantic problem solver. Enjoys meta-programming a little
+    too much. Got a GameBoy&reg; when he was eight and hasn't shut up about
+    Pokémon&reg; since."
+    social:
+      twitter: "https://twitter.com/iampfac"
+      github: "https://github.com/pfac"
+
   - name: "Roberto Machado"
     picture: "roberto-machado"
     position: "Founder & CEO"
-    bio: "Breathes technology and deeply believes, hence the creation of Subvisual, 
+    bio: "Breathes technology and deeply believes, hence the creation of Subvisual,
     that it is the medium for a better future. Always has 5 minutes to listen to you."
     social:
       twitter: "https://twitter.com/rmdgb"
