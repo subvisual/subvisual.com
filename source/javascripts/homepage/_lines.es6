@@ -101,7 +101,7 @@
     });
 
     TweenLite.to(group, getSpeed(width) * 0.4, {
-      x: translateX(direction, width * 1.4),
+      x: translateX(direction, width * 1.8),
       delay: 0.8 * i,
       onComplete: animateLine,
       onCompleteParams: [group, i, xwing]
