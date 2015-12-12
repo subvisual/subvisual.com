@@ -1,6 +1,6 @@
 // lightsaber underline on nav items
 .StarWars.StarWars.StarWars {
-  .Nav-item {
+  .Nav:not(.Nav--fixed) .Nav-item {
     position: relative;
 
     &,
