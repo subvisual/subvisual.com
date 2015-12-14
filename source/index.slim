@@ -23,6 +23,8 @@ page_classes: 'StarWars'
 - content_for :javascripts
   javascript:
     $('#HomepageHero').load(function() {
-      var svg = $('#HomepageHero').contents().find('svg')[0];
-      window.homepage.animateLines(svg);
-    })
+      setTimeout(function() {
+        var svg = $('#HomepageHero').contents().find('svg')[0];
+        window.homepage.animateLines(svg);
+      }, 2000);
+    });
