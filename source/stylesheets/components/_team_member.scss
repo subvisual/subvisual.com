@@ -44,6 +44,7 @@ $TeamMember-max-width-small: 200px;
 .TeamMember-picture {
   width: 100%;
   max-width: $TeamMember-max-width-small;
+  max-height: $TeamMember-max-width-small;
   margin-bottom: $Theme-spacing-small;
 
   @include media('>=700px') {
