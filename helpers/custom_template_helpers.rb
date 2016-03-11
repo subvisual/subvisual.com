@@ -24,9 +24,10 @@ module CustomTemplateHelpers
     content_tag(:li, link_to(link_text, page_url, class: link_class), options)
   end
 
-  def nav_overlay_item(link_text, page_url, page_name = '')
-    nav_item(link_text,page_url, page_name,
-             class: 'NavOverlay-item', link_class: 'NavOverlay-link')
+  def nav_overlay_item(link_text, page_url, page_name = '', options = {})
+    options[:class] ||= "NavOverlay-item"
+    options[:link_class] ||= "NavOverlay-link"
+    nav_item(link_text, page_url, page_name, options)
   end
 
   def nav_burger_class

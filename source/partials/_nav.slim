@@ -2,8 +2,8 @@
   = nav_overlay_item('Work', '/work')
   = nav_overlay_item('Company', '/company')
   = nav_overlay_item('Community', '/community')
-  = nav_overlay_item('Apprenticeship', '/apprenticeship')
   = nav_overlay_item('Blog', '/blog')
+  = nav_overlay_item('Work with us', '/hire-us', '', { link_class: 'ButtonSecondary' })
 
 header#main-nav.Nav.Nav--topPositioned class="#{current_page.data.nav_class}"
   = link_to '/', "aria-label" => "Homepage", class: 'Nav-logo'
@@ -20,5 +20,5 @@ header#main-nav.Nav.Nav--topPositioned class="#{current_page.data.nav_class}"
       = nav_item('Work', '/work')
       = nav_item('Company', '/company')
       = nav_item('Community', '/community')
-      = nav_item('Apprenticeship', '/apprenticeship')
       = nav_item('Blog', '/blog')
+      = nav_item('Work with us', '/hire-us', '', { class: 'Nav-itemNoUnderline', link_class: 'ButtonSecondary' })
