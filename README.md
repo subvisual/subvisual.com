@@ -10,6 +10,12 @@ Run the setup to get started:
 bin/setup
 ```
 
+Launch our styleguide:
+
+```bash
+bundle exec rake styleguide
+```
+
 This is built on top of [middleman](https://middlemanapp.com/) with the
 [middleman-seo template](https://github.com/secretsaucehq/middleman-seo), you
 might want to check out the docs for these projects.
