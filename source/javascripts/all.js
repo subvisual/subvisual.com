@@ -7,6 +7,7 @@
 //= require _fastclick_init
 //= require _input
 //= require _animation_helpers
+//= require _custom_events
 //= require homepage/_lines
 //= require homepage/_planets
 //= require homepage/_hero_parallax

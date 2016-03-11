@@ -20,7 +20,18 @@ nav_logo_class: 'is-animated'
 
 - content_for :javascripts
   javascript:
-    $('#HomepageHero').load(function() {
-      var svg = $('#HomepageHero').contents().find('svg')[0];
-      window.homepage.animateLines(svg);
-    })
+    var heroWrapper = $('#HomepageHeroWrapper')[0];
+    var objectElement = $('#HomepageHeroSVG');
+
+    function findSVG() {
+      return objectElement.contents().find('svg');
+    }
+
+    function startAnimation() {
+      window.homepage.parallax(findSVG(), heroWrapper);
+    }
+
+    function guardFn() {
+      return findSVG()[0];
+    };
+    window.customEvents.onLoad(guardFn, startAnimation);

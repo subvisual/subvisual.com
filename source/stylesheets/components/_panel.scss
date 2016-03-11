@@ -299,3 +299,45 @@
   background-color: #47b340;
   // scss-lint:enable ColorVariable
 }
+
+.Panel.Panel--homepage {
+  position: relative;
+
+  .Panel-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: $Theme-layer-stickyElement - 1;
+
+    width: 100%;
+    height: 100%;
+  }
+
+  .Panel-background {
+    display: flex;
+    justify-content: center;
+  }
+
+  @include media('>tablet') {
+    min-height: 550px; // these min-height values  were extracted after analysing how the component's contents behave
+
+    .Panel-content {
+      padding-top: $Theme-spacing-default;
+    }
+  }
+
+  @include media('>795px') {
+    min-height: 475px;
+  }
+
+  @include media('>950px') {
+    .Panel-content {
+      display: flex;
+      padding-top: 0;
+    }
+  }
+
+  @include media('>1250px') {
+    min-height: 662px;
+  }
+}

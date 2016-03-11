@@ -1,11 +1,8 @@
 (function(window) {
-  const viewportWidth = 1440;
-  const viewportHeight = 540;
-  const lineMinWidth = 100;
-  const lineMaxWidth = 500;
-  const colors = ['#0ADCF2', '#EC7376', '#FCD380', '#E1EAF6', '#8DC8DC', '#4DEBC3'];
-  let lines;
-  let speedTable = {
+  const LINE_MIN_WIDTH = 100;
+  const LINE_MAX_WIDTH = 500;
+  const COLORS = ['#0ADCF2', '#EC7376', '#FCD380', '#E1EAF6', '#8DC8DC', '#4DEBC3'];
+  const SPEED_TABLE = {
     get 1() {
       return getRandomInt(65, 70);
     },
@@ -22,6 +19,9 @@
       return getRandomInt(30, 35);
     },
   };
+  let viewportWidth;
+  let viewportHeight;
+  let lines;
 
   function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -36,7 +36,7 @@
   }
 
   function lineHeight(width) {
-    if (width < lineMaxWidth/2) {
+    if (width < LINE_MAX_WIDTH / 2) {
       return 1;
     } else {
       return 2;
@@ -44,7 +44,7 @@
   }
 
   function resetLine(direction, width, i) {
-    let color = randomColor();
+    const color = randomColor();
     return {
       attr: {
         width: width,
@@ -58,8 +58,8 @@
   }
 
   function getY(i) {
-    let sectionHeight = viewportHeight / lines.length;
-    let vPadding = 20;
+    const sectionHeight = viewportHeight / lines.length;
+    const vPadding = 20;
     return getRandomInt((sectionHeight * i) + vPadding, (sectionHeight * i + sectionHeight) - vPadding);
   }
 
@@ -68,12 +68,12 @@
   }
 
   function randomColor() {
-    return colors[Math.floor(Math.random() * colors.length)];
+    return COLORS[Math.floor(Math.random() * COLORS.length)];
   }
 
   function getSpeed(width) {
-    let scaleFactor = Math.floor(width / 75);
-    return speedTable[scaleFactor];
+    const scaleFactor = Math.floor(width / 75);
+    return SPEED_TABLE[scaleFactor];
   }
 
   function translateX(direction, elementWidth) {
@@ -83,13 +83,12 @@
   }
 
   function animateLine(el, i) {
-    let width = getRandomInt(lineMinWidth, lineMaxWidth);
-    let direction = randomDirection();
+    const width = getRandomInt(LINE_MIN_WIDTH, LINE_MAX_WIDTH);
+    const direction = randomDirection();
 
     TweenLite.set(el, resetLine(direction, width, i));
     TweenLite.to(
-      el, getSpeed(width),
-      {
+      el, getSpeed(width), {
         x: translateX(direction, width),
         delay: 0.8 * i,
         onComplete: animateLine,
@@ -100,8 +99,10 @@
 
   function animateLines(svg) {
     lines = svg.querySelectorAll('.Line');
+    viewportWidth = svg.viewBox.baseVal.width;
+    viewportHeight = svg.viewBox.baseVal.height;
 
-    for(let i = 0; i < lines.length; i++) {
+    for (let i = 0; i < lines.length; i++) {
       animateLine(lines[i], i);
     };
   }

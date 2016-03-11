@@ -1,18 +1,26 @@
-.u-smallMargin
-h1.u-visuallyHidden We are Subvisual
-.ContentFormatter.ContentFormatter--centerHorizontally.u-onlySmall
-  img.RatioEnforcer(
-    src="#{image_path('homepage/hero-mobile.png')}"
-    srcset="#{image_path('homepage/hero-mobile.png')} 320w, #{image_path('homepage/hero-mobile@2x.png')} 640w"
-    sizes="100vw"
-    alt="Another galaxy"
-  )
-.u-exceptSmall
-  object#HomepageHero.HoverAnimation data="/images/homepage/hero.svg" type="image/svg+xml"
-.u-smallMargin
-.GridCell.GridCell--alignCenter.u-defaultThenDoubleLargeMargin
-  .GridCell-content
-    .ContentFormatter.ContentFormatter--centerHorizontally
-      .u-smallThenDefaultMargin
-      p.Text.Text--dark
-        | We handcraft thoughtful digital experiences that empower individuals, institutions and communities
+#HomepageHeroWrapper.Panel.Panel--homepage
+  .Panel-content
+    .HomepageHero
+      .HomepageHero-content
+        .HomepageHero-copy
+          h1.HomepageHero-heading.u-xSmallThenSmallMargin
+            ' We
+            span.HomepageHero-headingHighlight> design
+            ' and
+            span.HomepageHero-headingHighlight> develop
+            ' thoughtful digital
+            span.HomepageHero-headingHighlight products
+          p.HomepageHero-text.u-defaultMargin
+            | We craft products with a focus on great User Experience and high-quality code
+        .HomepageHero-cta
+          = link_to "Let's work together", '/hire-us', class: 'ButtonPrimary'
+  .Panel-background
+    .ContentFormatter.ContentFormatter--centerHorizontally.u-onlyOnHomepageHeroSmall
+      img.RatioEnforcer(
+        src="#{image_path('homepage/hero-mobile.png')}"
+        srcset="#{image_path('homepage/hero-mobile.png')} 320w, #{image_path('homepage/hero-mobile@2x.png')} 640w"
+        sizes="100vw"
+        alt="Another galaxy"
+      )
+    .RatioEnforcer.RatioEnforcer--homepageHero.u-onlyOnHomepageHeroLarge
+      object#HomepageHeroSVG.HoverAnimation data="/images/homepage/hero.svg" type="image/svg+xml"
