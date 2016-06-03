@@ -1,0 +1,81 @@
+$OncostatsQuote-frame-width: 450px;
+
+.OncostatsQuote {
+  position: relative;
+
+  padding: 0 $Theme-spacing-small;
+}
+
+.OncostatsQuote-frame {
+  display: none;
+
+  @include media('>=smallDesktop') {
+    display: block;
+
+    width: $OncostatsQuote-frame-width;
+    height: 470px;
+    margin: 0 auto;
+
+    background-image: image-url('case-studies/oncostats/murta.png');
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+
+    border: 15px solid $Theme-color-aquaMarineClear;
+
+    @include retina {
+      background-image: image-url('case-studies/oncostats/murta@2x.png');
+    }
+  }
+}
+
+.OncostatsQuote-text {
+  @include theme-typography(quoteText);
+
+  width: $Theme-max-width;
+  max-width: $Theme-max-width;
+
+  text-align: center;
+
+  @include media('>=smallDesktop') {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    background: $Theme-color-white;
+
+    transform: translate(-50%, -150%);
+  }
+}
+
+.OncostatsQuote-author {
+  color: $Theme-color-darkSlateBlue;
+
+  text-align: right;
+
+  @include desktop {
+    position: absolute;
+
+    bottom: $Theme-spacing-large;
+    left: 50%;
+
+    text-align: left;
+
+    transform: translateX($OncostatsQuote-frame-width / 2 + $Theme-spacing-default);
+  }
+}
+
+.OncostatsQuote-authorName {
+  @include theme-typography(quoteAuthorName);
+
+  display: block;
+}
+
+.OncostatsQuote-authorTitle {
+  @include theme-typography(quoteAuthorTitle);
+
+  display: block;
+
+  opacity: 0.5;
+}

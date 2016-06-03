@@ -1,0 +1,20 @@
+.OncostatsNext {
+  padding: $Theme-spacing-default 0;
+
+  @include media('>=smallDesktop') {
+    padding: $Theme-spacing-large 0;
+  }
+}
+
+.OncostatsNext-content {
+  max-width: $Theme-max-width;
+  margin: 0 auto;
+}
+
+.OncostatsNext-content:first-child {
+  margin-bottom: $Theme-spacing-large;
+}
+
+.OncostatsNext-quote {
+  margin-bottom: $Theme-spacing-large;
+}

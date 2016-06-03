@@ -1,0 +1,67 @@
+$Theme-fontFamily-futura: 'futura-pt', sans-serif;
+$Theme-fontFamily-ptSerif: 'pt-serif', serif;
+
+$Theme-fontWeight-regular: 400;
+$Theme-fontWeight-bold: 700;
+
+$Theme-typography: (
+  body: (
+    font-size: (16px, 20px),
+    line-height: (24px, 32px),
+  ),
+  quoteAuthorName: (
+    font-family: $Theme-fontFamily-futura,
+    font-size: (28px, 40px),
+    font-weight: $Theme-fontWeight-bold,
+    line-height: (40px, 52px),
+  ),
+  quoteAuthorTitle: (
+    font-family: $Theme-fontFamily-futura,
+    font-weight: $Theme-fontWeight-regular,
+    font-size: (16px, 20px),
+    line-height: (24px, 32px),
+    text-transform: uppercase,
+  ),
+  quoteText: (
+    font-family: $Theme-fontFamily-futura,
+    font-size: (28px, 40px),
+    line-height: (40px, 52px),
+  ),
+  sectionHeading: (
+    font-family: $Theme-fontFamily-futura,
+    font-size: (28px, 40px),
+    font-weight: $Theme-fontWeight-bold,
+    line-height: (40px, 52px),
+  ),
+  subsectionHeading: (
+    font-family: $Theme-fontFamily-futura,
+    font-size: (20px, 24px),
+    font-weight: $Theme-fontWeight-bold,
+    line-height: (32px, 36px),
+  ),
+  statsLabel: (
+    font-family: $Theme-fontFamily-futura,
+    font-size: (20px, 24px),
+    line-height: (28px, 36px),
+    text-transform: uppercase,
+  ),
+  statsNumber: (
+    font-family: $Theme-fontFamily-futura,
+    font-size: (40px, 80px),
+    line-height: (52px, 92px),
+  ),
+  titleHeading: (
+    font-size: (16px, 20px),
+    line-height: (24px, 32px),
+  ),
+);
+
+@mixin theme-typography($level, $typography: $Theme-typography) {
+  $values: map-get($typography, $level);
+
+  font-family: $Theme-fontFamily-ptSerif;
+  font-style: normal;
+  font-weight: $Theme-fontWeight-regular;
+
+  @include responsive-values($values);
+}

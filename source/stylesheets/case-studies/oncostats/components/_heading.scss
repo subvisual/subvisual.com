@@ -1,0 +1,31 @@
+.Heading {
+  color: $Theme-color-tealish;
+}
+
+.Heading.Heading--alternative {
+  @include theme-typography(heading);
+
+  color: $Theme-color-white;
+}
+
+@each $level in section, subsection, title {
+  .Heading.Heading--#{$level} {
+    @include theme-typography("#{$level}Heading");
+  }
+}
+
+.Heading.Heading--section {
+  text-align: center;
+}
+
+.Heading-note {
+  display: block;
+}
+
+.Heading.Heading--title {
+  &::before {
+    content: '-';
+
+    margin-right: theme-spacing(tiny);
+  }
+}

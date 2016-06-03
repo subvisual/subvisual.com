@@ -1,23 +1,12 @@
-// Colors
-$oncostats-color-aqua-marine: #48d8e8;
-$oncostats-color-cerulean: #0096bc;
-$oncostats-color-slate: #3c5961;
-$oncostats-color-water-blue: #1da2cf;
-$oncostats-color-white: #ffffff;
-
-// Color scheme
-$oncostats-Theme-color-scheme: (
-  background: (
-    base: $oncostats-color-white,
-    inverted: $oncostats-color-cerulean,
-    hero: (
-      light: $oncostats-color-aqua-marine,
-      dark: $oncostats-color-water-blue
-    )
-  ),
-  text: (
-    base: $oncostats-color-slate,
-    inverted: $oncostats-color-white
-  )
-);
-
+$Theme-color-apricot: #ffc56c;
+$Theme-color-aquaMarine: #48d8e8;
+$Theme-color-aquaMarineClear: #50e3c2;
+$Theme-color-cornflower: #ffa6a6;
+$Theme-color-cerulean: #0096bc;
+$Theme-color-darkSlateBlue: #134652;
+$Theme-color-grapefruit: #ff4c4c;
+$Theme-color-peach: #ffe2b6;
+$Theme-color-slate: #3c5961;
+$Theme-color-tealish: #2bd6d8;
+$Theme-color-waterBlue: #1da2cf;
+$Theme-color-white: #ffffff;

@@ -1,0 +1,102 @@
+$StatsBall-gradient: linear-gradient(to bottom, $Theme-color-apricot, $Theme-color-grapefruit);
+$StatsBall-gradient-border: linear-gradient(to bottom, $Theme-color-peach, $Theme-color-cornflower);
+
+$StatsBall-borderWidth: 15px;
+$StatsBall-size-desktop: 550px;
+$StatsBall-size-mobile: 300px;
+
+$StatsBall-values: (
+  width: ($StatsBall-size-mobile, $StatsBall-size-desktop),
+  height: ($StatsBall-size-mobile, $StatsBall-size-desktop),
+  border-radius: ($StatsBall-size-mobile * 0.5, $StatsBall-size-desktop * 0.5),
+);
+
+$StatsBall-content-size-desktop: $StatsBall-size-desktop - $StatsBall-borderWidth * 2;
+$StatsBall-content-size-mobile: $StatsBall-size-mobile - $StatsBall-borderWidth * 2;
+
+$StatsBall-content-values: (
+  width: ($StatsBall-content-size-mobile, $StatsBall-content-size-desktop),
+  height: ($StatsBall-content-size-mobile, $StatsBall-content-size-desktop),
+  border-radius: ($StatsBall-content-size-mobile * 0.5, $StatsBall-content-size-desktop * 0.5),
+);
+
+.StatsBall {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  background-image: image-url('case-studies/oncostats/stats-strip-outside.svg');
+  background-position: center;
+  background-repeat: repeat no-repeat;
+  background-size: auto 20px;
+
+  @include desktop {
+    background-size: auto 40px;
+  }
+}
+
+.StatsBall-bottomGroup {
+  flex: 1 0 0;
+
+  @include desktop {
+    flex: 0 0 0;
+  }
+}
+
+.StatsBall-innerBall {
+  @include responsive-values($StatsBall-content-values);
+
+  position: absolute;
+  top: $StatsBall-borderWidth;
+  left: $StatsBall-borderWidth;
+
+  display: flex;
+  flex-direction: column;
+
+  background: image-url('case-studies/oncostats/stats-strip-inside.svg') center / auto 20px repeat no-repeat, $StatsBall-gradient;
+
+  @include desktop {
+    justify-content: center;
+
+    background: image-url('case-studies/oncostats/stats-strip-inside.svg') center / auto 40px repeat no-repeat, $StatsBall-gradient;
+  }
+}
+
+.StatsBall-label {
+  @include theme-typography(statsLabel);
+}
+
+.StatsBall-outerBall {
+  @include responsive-values($StatsBall-values);
+
+  position: relative;
+
+  background: $StatsBall-gradient-border;
+}
+
+.StatsBall-number {
+  @include theme-typography(statsNumber);
+}
+
+.StatsBall-label,
+.StatsBall-number {
+  display: block;
+
+  color: $Theme-color-white;
+
+  text-align: center;
+}
+
+.StatsBall-topGroup {
+  flex: 1 0 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  @include desktop {
+    flex: 0 0 0;
+
+    display: block;
+  }
+}
