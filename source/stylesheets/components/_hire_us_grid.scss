@@ -23,10 +23,6 @@
   padding-right: $Theme-spacing-small;
 }
 
-.HireUsGrid-greetings {
-  flex: 1;
-}
-
 .HireUsGrid-form {
   flex: 2;
 
@@ -58,5 +54,9 @@
   .HireUsGrid-form {
     margin-top: 0;
     margin-left: $Theme-spacing-large;
+  }
+
+  .HireUsGrid-greetings {
+    flex: 1;
   }
 }
