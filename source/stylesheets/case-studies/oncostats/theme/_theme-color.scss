@@ -1,0 +1,10 @@
+@function oncostats-theme-color($element, $variant: 'base', $color: false, $color-scheme: $oncostats-Theme-color-scheme) {
+  $element-color-scheme: map-get($color-scheme, $element);
+  $variant-color: map-get($element-color-scheme, $variant);
+
+  @if $color {
+    @return map-get($variant-color, $color);
+  }
+
+  @return $variant-color;
+}

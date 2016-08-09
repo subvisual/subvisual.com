@@ -50,7 +50,8 @@ footer
     .Footer-credits
       span.Footer-handcrafted Handcrafted by
       span.Footer-subvisual SUBVISUAL
-      span.Footer-copyright © 2016 Copyright by Subvisual
+      span.Footer-copyright
+        | © #{Date.today.year} Copyright by Subvisual
     = link_to '/hire-us', class: 'Footer-work'
       span.Footer-interested Interested in our services?
       .Footer-workText
