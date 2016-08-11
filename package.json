@@ -4,6 +4,7 @@
   "description": "We are subvisual and this is our website.",
   "main": "gulpfile.js",
   "dependencies": {
+    "bower": "^1.7.9"
   },
   "devDependencies": {
     "sc5-styleguide": "^0.3.16"
