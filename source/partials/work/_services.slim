@@ -1,6 +1,6 @@
 #services.Panel
   .u-largeThenDoubleLargeMargin
-  .HorizontalGrid.HorizontalGrid--limited.u-defaultThenLargeMargin
+  .HorizontalGrid.HorizontalGrid--limited.u-defaultMargin
     .HorizontalGrid-cell
       .GridCell.GridCell--alignCenter
         .GridCell-content
@@ -11,17 +11,12 @@
             .Heading.Heading--small.u-smallMargin
               ' We’ve mastered a set of services based
               | on years of learning and practice.
-            .Text
-              ' If you’re not sure your problem is within our expertise,
-              = link_to 'we should talk', '/hire-us', class: 'Link Link--highlight Link--noWrap'
-              '. If we’re not a perfect match, we’ll
-              | recommend you another team that’s a better fit.
 
   .HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--lightFrame
     .HorizontalGrid-cell
       .GridCell.u-defaultMargin.u-flexGrow
-        .GridCell-content.StickToBottom.u-defaultThenLargeMargin
-          .u-defaultThenLargeMargin
+        .GridCell-content
+          .u-smallThenDefaultMargin
           .ContentFormatter.ContentFormatter--centerHorizontally.u-smallThenDefaultMargin
             .RatioEnforcer.RatioEnforcer--services
               = partial 'work/product_development.svg'
@@ -29,15 +24,12 @@
             h3.Heading.Heading--brand.u-smallMargin
               .Heading-highlight
                 | Product Development
-            .Text.u-smallThenDefaultMargin
+            .Text
               | We turn your bright idea into a delightful product.
-          .StickToBottom-target
-            .ContentFormatter.ContentFormatter--centerHorizontally
-              = link_to 'Learn more', '/work/product-development', class: 'ButtonPrimary'
     .HorizontalGrid-cell
       .GridCell.u-defaultMargin.u-flexGrow
-        .GridCell-content.StickToBottom.u-defaultThenLargeMargin
-          .u-defaultThenLargeMargin
+        .GridCell-content
+          .u-smallThenDefaultMargin
           .ContentFormatter.ContentFormatter--centerHorizontally.u-smallThenDefaultMargin
             .RatioEnforcer.RatioEnforcer--services
               = partial 'work/consulting.svg'
@@ -45,15 +37,12 @@
             h3.Heading.Heading--brand.u-smallMargin
               .Heading-highlight
                 | Consulting
-            .Text.u-defaultMargin
+            .Text
               | We stand alongside your team producing excellent work while carrying our disciplined practices with us.
-          .StickToBottom-target
-            .ContentFormatter.ContentFormatter--centerHorizontally
-              = link_to 'Learn more', '/work/consulting', class: 'ButtonPrimary'
     .HorizontalGrid-cell
       .GridCell.u-defaultMargin.u-flexGrow
-        .GridCell-content.StickToBottom.u-defaultThenLargeMargin
-          .u-defaultThenLargeMargin
+        .GridCell-content
+          .u-smallThenDefaultMargin
           .ContentFormatter.ContentFormatter--centerHorizontally.u-smallThenDefaultMargin
             .RatioEnforcer.RatioEnforcer--services
               = partial 'work/training.svg'
@@ -61,9 +50,6 @@
             h3.Heading.Heading--brand.u-smallMargin
               .Heading-highlight
                 | Training
-            .Text.u-defaultMargin
+            .Text
               | Steer your team's standards towards a sense of craftsmanship.
-          .StickToBottom-target
-            .ContentFormatter.ContentFormatter--centerHorizontally
-              = link_to 'Learn more', '/work/training', class: 'ButtonPrimary'
-  .u-largeThenDoubleLargeMargin
+  .u-defaultThenDoubleLargeMargin

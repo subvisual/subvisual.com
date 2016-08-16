@@ -1,37 +1,38 @@
-#team.GridCell.GridCell--alignCenter.u-defaultThenLargeMargin
-  .GridCell-content
-    .u-largeThenDoubleLargeMargin
-    .ContentFormatter.ContentFormatter--centerHorizontally
-      h2.Heading.Heading--brand.u-smallMargin
-        ' Our
-        span.Heading-highlight> team
-        | of craftsmen
-      p.Text
-        ' Our bond as a team stems from having fun while doing what we love together: crafting delightful experiences.
-        | We are a small team with boundless ambitions.
+.Panel
+  #team.GridCell.GridCell--alignCenter.u-defaultThenLargeMargin
+    .GridCell-content
+      .u-largeThenDoubleLargeMargin
+      .ContentFormatter.ContentFormatter--centerHorizontally
+        h2.Heading.Heading--brand.u-smallMargin
+          ' Our
+          span.Heading-highlight> team
+          | of craftsmen
+        p.Text
+          ' Our bond as a team stems from having fun while doing what we love together: crafting delightful experiences.
+          | We are a small team with boundless ambitions.
 
-.HorizontalGrid.HorizontalGrid--limited.u-largeThenDoubleLargeMargin
-  .HorizontalGrid-cell
-    .TeamGrid
-      - data.team.members.each do |member|
-        .TeamGrid-cell
-          .TeamMember
-            = image_tag "team/#{member.picture}.png", class: "TeamMember-picture"
-            h3.TeamMember-name = member.name
-            p.TeamMember-position = member.position
-            .u-xSmallThenSmallMargin
-            hr.TeamMember-separator
-            .u-xSmallThenSmallMargin
-            .TeamMember-bio
-              p.Text.Text--small = member.bio
-            - if member.social
-              .TeamMember-social
-                - member.social.each_pair do |site, link|
-                  = link_to link do
-                    img.TeamMember-socialLink(
-                      src="#{image_path("icons/#{site}.png")}"
-                      srcset="#{image_path("icons/#{site}.png")} 25w, #{image_path("icons/#{site}@2x.png")} 50w"
-                      sizes="25px"
-                      alt="#{site} icon"
-                    )
-            .u-defaultThenLargeMargin
+  .HorizontalGrid.HorizontalGrid--limited.u-largeThenDoubleLargeMargin
+    .HorizontalGrid-cell
+      .TeamGrid
+        - data.team.members.each do |member|
+          .TeamGrid-cell
+            .TeamMember
+              = image_tag "team/#{member.picture}.png", class: "TeamMember-picture"
+              h3.TeamMember-name = member.name
+              p.TeamMember-position = member.position
+              .u-xSmallThenSmallMargin
+              hr.TeamMember-separator
+              .u-xSmallThenSmallMargin
+              .TeamMember-bio
+                p.Text.Text--small = member.bio
+              - if member.social
+                .TeamMember-social
+                  - member.social.each_pair do |site, link|
+                    = link_to link do
+                      img.TeamMember-socialLink(
+                        src="#{image_path("icons/#{site}.png")}"
+                        srcset="#{image_path("icons/#{site}.png")} 25w, #{image_path("icons/#{site}@2x.png")} 50w"
+                        sizes="25px"
+                        alt="#{site} icon"
+                      )
+              .u-defaultThenLargeMargin
