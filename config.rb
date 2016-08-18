@@ -36,7 +36,7 @@ page 'feed.xml', layout: false
 
 # Reload the browser automatically whenever files change
 configure :development do
-  activate :livereload
+  set :blog_posts_json, 'http://localhost:3000'
 end
 
 # Add bower's directory to sprockets asset path
@@ -53,6 +53,7 @@ after_configuration do
   sprockets.import_asset "blue/subvisual_separator.svg"
   sprockets.import_asset "blue/link-arrow.svg"
   sprockets.import_asset "blue/link-arrow-white.svg"
+  sprockets.import_asset "blue/link-arrow-cerulean.svg"
 end
 
 set :css_dir, 'stylesheets'
@@ -69,6 +70,8 @@ activate :es6
 
 # Build-specific configuration
 configure :build do
+  set :blog_posts_json, 'https://subvisual.co'
+
   # For example, change the Compass output style for deployment
   activate :minify_css
   activate :minify_javascript

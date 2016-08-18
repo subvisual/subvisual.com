@@ -1,0 +1,11 @@
+.u-desktop {
+  @include mobile {
+    display: none;
+  }
+}
+
+.u-mobile {
+  @include desktop {
+    display: none;
+  }
+}

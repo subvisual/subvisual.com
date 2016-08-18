@@ -8,12 +8,9 @@
 //= require _input
 //= require _animation_helpers
 //= require _custom_events
-//= require homepage/_lines
-//= require homepage/_planets
-//= require homepage/_hero_parallax
-//= require homepage/_logo_tools
-//= require homepage/_logo_transparency
+//= require homepage/_blog_posts
 //= require work/_origami
 //= require company/_planets
+//= require company/_lines
 //= require nav/_logo
 //= require _segment

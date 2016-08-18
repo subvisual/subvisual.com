@@ -1,24 +1,3 @@
-// Panel
-//
-// Full width container with a unique background. The height is defined by the content.
-//
-// .Panel--creatorsSchoolCaseStudy - A panel with a background to be used as the creators school case study
-// .Panel--fishTank - A panel with a background that is a map of our HQ
-// .Panel--team - A panel with a background to be used in the team's page
-// .Panel--clients - A panel with a background that is a world map with all of our clients
-// .Panel--creatorsSchool - A panel for the specific case of Creators School event
-// .Panel--rubyconf - A panel for the specific case of Rubyconf event
-// .Panel--joinUs - A panel with a background to be used on the careers page hero
-// .Panel--secondHome - A panel with a background to be used on the careers page
-// .Panel--easymoney - A panel with an easy.money gradient as background
-// .Panel--techCrunch - A panel with TechCrunch's color as background
-//
-// markup:
-// <div class="Panel {$modifiers}" style="height: 500px"></div>
-//
-// Styleguide 5.1
-
-.Panel.Panel--creatorsSchoolCaseStudy,
 .Panel.Panel--fishTank,
 .Panel.Panel--clients,
 .Panel.Panel--team,
@@ -26,40 +5,6 @@
 .Panel.Panel--joinUs {
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.Panel.Panel--easyMoneyCaseStudy,
-.Panel.Panel--creatorsSchoolCaseStudy {
-  background-position: center;
-  background-size: cover;
-
-  text-decoration: none;
-
-  .Panel-contentWithBackground {
-    background: rgba(#0b2633, 0.85);
-
-    transition: background 0.25s linear;
-  }
-}
-
-.Panel.Panel--easyMoneyCaseStudy {
-  @include retina-background('case-studies/easy-money/banner', 'jpg');
-
-  &:hover {
-    .Panel-contentWithBackground {
-      background: rgba(#372468, 0.85);
-    }
-  }
-}
-
-.Panel.Panel--creatorsSchoolCaseStudy {
-  @include retina-background('case-studies/creators-school/banner', 'jpg');
-
-  &:hover {
-    .Panel-contentWithBackground {
-      background: rgba(#f06f2a, 0.85);
-    }
-  }
 }
 
 .Panel.Panel--fishTank {
@@ -132,11 +77,9 @@
   }
 
   @include media('>desktop') {
-    // styleguide:ignore:start
     $distance-to-content: calc(50% + #{$Theme-grid-singleColumn-maxWidth/2} + 50px);
     $figure-width: calc((100% - #{$Theme-grid-singleColumn-maxWidth}) / 2);
     $figure-width-large: calc(((100% - #{$Theme-grid-singleColumn-maxWidth}) / 2)  + 8%); // the extra 8% is to compensate the fact that this image has a different ration that the other, therefore cannot grow the same way as the other
-    // styleguide:ignore:end
 
     .Panel-leftFigure,
     .Panel-rightFigure {
@@ -239,105 +182,10 @@
   }
 }
 
-.Panel.Panel--easymoneyGradient {
-  // scss-lint:disable ColorVariable
-  background: linear-gradient(to bottom right, #372468 0%, #d056a4 100%);
-  // scss-lint:enable ColorVariable
+.Panel.Panel--polar {
+  background-color: $Theme-color-polar;
 }
 
-.Panel.Panel--easymoney {
-  // scss-lint:disable ColorVariable
-  background-color: #a53b68;
-  // scss-lint:enable ColorVariable
-}
-
-.Panel.Panel--easymoneyMapaMundi {
-  position: relative;
-  z-index: 1;
-
-  height: 0;
-  padding-bottom: 45.87%;
-
-  background-color: transparent;
-
-  .Panel-backgroundImage {
-    @include retina-background('case-studies/easy-money/easymoney-header-650');
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-
-    width: 100%;
-    height: 100%;
-
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: contain;
-
-    @include media('>tablet') {
-      @include retina-background('case-studies/easy-money/easymoney-header');
-    }
-  }
-
-  .Panel-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: $Theme-layer-stickyElement;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 100%;
-    height: 100%;
-  }
-}
-
-.Panel.Panel--techCrunch {
-  // scss-lint:disable ColorVariable
-  background-color: #47b340;
-  // scss-lint:enable ColorVariable
-}
-
-.Panel.Panel--homepage {
-  position: relative;
-
-  .Panel-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: $Theme-layer-stickyElement - 1;
-
-    width: 100%;
-    height: 100%;
-  }
-
-  .Panel-background {
-    display: flex;
-    justify-content: center;
-  }
-
-  @include media('>tablet') {
-    min-height: 550px; // these min-height values  were extracted after analysing how the component's contents behave
-
-    .Panel-content {
-      padding-top: $Theme-spacing-default;
-    }
-  }
-
-  @include media('>795px') {
-    min-height: 475px;
-  }
-
-  @include media('>950px') {
-    .Panel-content {
-      display: flex;
-      padding-top: 0;
-    }
-  }
-
-  @include media('>1250px') {
-    min-height: 662px;
-  }
+.Panel.Panel--limedSpruce {
+  background-color: $Theme-color-limedSpruce;
 }

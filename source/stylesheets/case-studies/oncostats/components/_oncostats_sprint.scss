@@ -1,0 +1,75 @@
+$OncostatsSprint-borderColor: $Theme-color-white;
+$OncostatsSprint-borderWidth: 1px;
+$OncostatsSprint-spacing: $Theme-spacing-default;
+
+$OncostatsSprint-point-borderColor: mix($Theme-color-tealish, rgba($Theme-color-cerulean, 0.8), 20%);
+$OncostatsSprint-point-borderWidth: 4px;
+$OncostatsSprint-point-size: 24px;
+
+.OncostatsSprint {
+  padding: $Theme-spacing-default $Theme-spacing-small;
+
+  background-image: linear-gradient(rgba($Theme-color-cerulean, 0.8), rgba($Theme-color-cerulean, 0.8)), image-url('case-studies/oncostats/design-sprint.jqg');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+
+  @include media('>=smallDesktop') {
+    padding-top: $Theme-spacing-large;
+    padding-bottom: $Theme-spacing-large;
+  }
+}
+
+.OncostatsSprint-content {
+  max-width: $Theme-max-width;
+  margin: 0 auto;
+}
+
+.OncostatsSprint-story {
+  position: relative;
+
+  @include mobile {
+    padding-left: $OncostatsSprint-spacing * 0.5;
+  }
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    top: 0.5em;
+    bottom: 0;
+    left: 0;
+
+    width: $OncostatsSprint-borderWidth;
+
+    background: linear-gradient(to bottom, $OncostatsSprint-borderColor, rgba($OncostatsSprint-borderColor, 0));
+
+    @include desktop {
+      left: - $OncostatsSprint-spacing;
+    }
+  }
+}
+
+.OncostatsSprint-dot {
+  position: relative;
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    top: 0.3em;
+    left: - $OncostatsSprint-spacing * 0.5 - $OncostatsSprint-point-size * 0.5;
+
+    display: inline-block;
+    width: $OncostatsSprint-point-size;
+    height: $OncostatsSprint-point-size;
+
+    background-color: $OncostatsSprint-borderColor;
+    border: $OncostatsSprint-point-borderWidth solid $OncostatsSprint-point-borderColor;
+    border-radius: ($OncostatsSprint-point-size + $OncostatsSprint-point-borderWidth) * 0.5;
+
+    @include desktop {
+      left: - $OncostatsSprint-spacing - $OncostatsSprint-point-size * 0.5;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.PostAuthor {
+  align-items: center;
+  display: flex;
+}
+
+.PostAuthor-picture {
+  border-radius: 50%;
+  height: 50px;
+  margin-right: $Theme-spacing-small;
+  width: 50px;
+}
+
+.PostAuthor-name {
+}

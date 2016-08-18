@@ -1,0 +1,19 @@
+$OncostatsHero-gradient: linear-gradient(to bottom, $Theme-color-aquaMarine, $Theme-color-waterBlue);
+
+.OncostatsHero {
+  min-height: 450px;
+  padding-top: $Theme-spacing-large;
+  padding-right: $Theme-spacing-small;
+  padding-left: $Theme-spacing-small;
+
+  background: image-url('case-studies/oncostats/hero-chart.svg') center bottom / 100% no-repeat, $OncostatsHero-gradient;
+
+  @include desktop {
+    min-height: 580px;
+  }
+}
+
+.OncostatsHero-content {
+  max-width: $Theme-max-width;
+  margin: 0 auto;
+}

@@ -1,0 +1,35 @@
+$SectionHeading-border: solid 1px $Theme-color-polar;
+
+.SectionHeading {
+  padding: 0 $Theme-spacing-small;
+}
+
+.SectionHeading-title {
+  @include font-properties('subvisual', 'base');
+
+  max-width: $Theme-grid-maxWidth;
+  padding-bottom: $Theme-spacing-xSmall;
+  margin: 0 auto;
+
+  border-bottom: $SectionHeading-border;
+
+  font-weight: bold;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+
+  @include media('>smallDesktop') {
+    @include font-properties('subvisual', 'large');
+  }
+}
+
+.SectionHeading.SectionHeading--light {
+  .SectionHeading-title {
+    color: $Theme-color-white;
+  }
+}
+
+.SectionHeading.SectionHeading--lightBorder {
+  .SectionHeading-title {
+    border-bottom-color: rgba($Theme-color-white, .6);
+  }
+}

@@ -1,0 +1,96 @@
+$StatsBall-gradient: linear-gradient(to bottom, $Theme-color-apricot, $Theme-color-grapefruit);
+$StatsBall-border-gradient: linear-gradient(to bottom, $Theme-color-peach, $Theme-color-cornflower);
+
+.StatsBall {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  background-image: image-url('case-studies/oncostats/orange-sprite.png');
+  background-position: center;
+  background-repeat: repeat no-repeat;
+  background-size: auto 20px;
+
+  @include desktop {
+    background-position: -14px center;
+    background-size: auto 40px;
+  }
+}
+
+.StatsBall-bottomGroup {
+  flex: 1 0 0;
+
+  @include desktop {
+    flex: 0 0 0;
+  }
+}
+
+.StatsBall-innerBall {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  height: 270px;
+
+  background: image-url('case-studies/oncostats/white-sprite.png') left center / auto 20px repeat no-repeat, $StatsBall-gradient;
+  border-radius: 50%;
+
+  @include desktop {
+    justify-content: center;
+    width: 520px;
+    height: 520px;
+
+    background: image-url('case-studies/oncostats/white-sprite.png') left center / auto 40px repeat no-repeat, $StatsBall-gradient;
+  }
+}
+
+.StatsBall-label {
+  @include theme-typography(statsLabel);
+}
+
+.StatsBall-outerBall {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 300px;
+  height: 300px;
+
+  background: $StatsBall-border-gradient;
+  border-radius: 50%;
+
+  @include desktop {
+    width: 550px;
+    height: 550px;
+  }
+}
+
+.StatsBall-number {
+  @include theme-typography(statsNumber);
+}
+
+.StatsBall-label,
+.StatsBall-number {
+  display: block;
+
+  color: $Theme-color-white;
+
+  text-align: center;
+}
+
+.StatsBall-topGroup {
+  flex: 1 0 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  @include desktop {
+    flex: 0 0 0;
+
+    display: block;
+  }
+}
+
+.StatsBall-margin {
+  margin-bottom: 40px;
+}

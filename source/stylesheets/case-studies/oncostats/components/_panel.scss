@@ -1,9 +1,0 @@
-@import '../theme';
-
-.oncostats-Panel.oncostats-Panel--hero {
-  $light-color: oncostats-theme-color(background, hero, light);
-  $dark-color: oncostats-theme-color(background, hero, dark);
-
-  background-color: $light-color;
-  background-image: linear-gradient(to bottom, $light-color, $dark-color);
-}

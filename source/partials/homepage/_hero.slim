@@ -1,26 +1,17 @@
-#HomepageHeroWrapper.Panel.Panel--homepage
-  .Panel-content
+.u-overflowHidden
+  .Panel.Panel--polar
+    .u-navPlaceholder
     .HomepageHero
       .HomepageHero-content
         .HomepageHero-copy
-          h1.HomepageHero-heading.u-xSmallThenSmallMargin
-            ' We
-            span.HomepageHero-headingHighlight> design
-            ' and
-            span.HomepageHero-headingHighlight> develop
-            ' thoughtful digital
-            span.HomepageHero-headingHighlight products
-          p.HomepageHero-text.u-defaultMargin
-            | We craft products with a focus on great User Experience and high-quality code
-        .HomepageHero-cta
-          = link_to "Let's work together", '/hire-us', class: 'ButtonPrimary'
-  .Panel-background
-    .ContentFormatter.ContentFormatter--centerHorizontally.u-onlyOnHomepageHeroSmall
-      img.RatioEnforcer(
-        src="#{image_path('homepage/hero-mobile.png')}"
-        srcset="#{image_path('homepage/hero-mobile.png')} 320w, #{image_path('homepage/hero-mobile@2x.png')} 640w"
-        sizes="100vw"
-        alt="Another galaxy"
-      )
-    .RatioEnforcer.RatioEnforcer--homepageHero.u-onlyOnHomepageHeroLarge
-      object#HomepageHeroSVG.HoverAnimation data="/images/homepage/hero.svg" type="image/svg+xml"
+          h1.HomepageHero-heading
+            | We design and develop thoughtful web and mobile products
+        .HomepageHero-skill--ui UX & UI Design
+        .HomepageHero-skill--dev Web Development
+        .HomepageHero-skill--mobile Mobile Development
+      .HomepageHero-showcase
+        img.HomepageHero-image(
+          src="#{image_path('case-studies/oncostats/showcase.jpg')}"
+          srcset="#{image_path('case-studies/oncostats/showcase@2x.jpg')} 2x"
+          alt="Showcase image for Oncostats"
+        )

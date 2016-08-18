@@ -1,0 +1,35 @@
+.u-overflowHidden
+  .Panel.Panel--limedSpruce
+
+    .u-defaultThenLargeMargin
+
+    .SectionHeading.SectionHeading--lightBorder.SectionHeading--light
+      h1.SectionHeading-title Experience
+
+    .u-smallThenDefaultMargin
+
+    .HomepageExperience
+      .HomepageExperience-content
+        .HomepageExperience-work
+          h2.HomepageExperience-title Let’s build something awesome together
+          .u-smallMargin
+          p
+            ' By working together with partners from all over the world,
+            ' tackling a wide range of problems in a variety of areas
+            ' - from Banking to Medtech
+            | - we gathered the experience you need to make your product great.
+          .u-smallMargin
+          p
+            ' Combining your unique vision and ambition with our amazing team,
+            | we can start building something awesome together.
+          .u-defaultMargin
+          button.ButtonPrimary.ButtonPrimary--brand Let's get to work
+        .HomepageExperience-clients
+          .ClientsGrid
+            - data.companies.each_slice(2) do |slice|
+              .ClientsGrid-clients
+                - slice.each do |company|
+                  .ClientsGrid-client
+                    = image_tag "clients/#{company.image}", alt: company.name, class: "ClientsGrid-img"
+
+      .u-defaultThenLargeMargin

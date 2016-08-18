@@ -6,9 +6,6 @@
   "dependencies": {
     "bower": "^1.7.9"
   },
-  "devDependencies": {
-    "sc5-styleguide": "^0.3.16"
-  },
   "scripts": {},
   "repository": {
     "type": "git",
