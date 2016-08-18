@@ -1,47 +1,51 @@
-  .ClientsGrid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  width: 100%;
-  margin-top: -$Theme-spacing-small;
-  margin-left: -$Theme-spacing-small;
-}
-
-.ClientsGrid-cell {
-  flex: 1 0 100px; //this is workaround for safari and iOS, https://bugs.webkit.org/show_bug.cgi?id=136041
+.ClientsGrid {
   display: flex;
   flex-direction: column;
+}
+
+.ClientsGrid-clients {
+  display: flex;
+
+  @include media('>=smallDesktop') {
+    justify-content: space-between;
+  }
+}
+
+.ClientsGrid-clients:first-child {
+  margin-bottom: $Theme-spacing-small;
+
+  @include media('>=smallDesktop') {
+    margin-bottom: $Theme-spacing-default;
+  }
+}
+
+.ClientsGrid-client {
+  flex-grow: 0;
+  flex-basis: 200px;
+  display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
+  min-height: 140px;
 
-  min-width: 100px;
-  margin-top: $Theme-spacing-small;
-  margin-left: $Theme-spacing-small;
-}
+  background-color: $Theme-color-white;
 
-@include media('>=500px') {
-  .ClientsGrid-cell {
-    flex: 1 0 25%; //this is workaround for safari and iOS, https://bugs.webkit.org/show_bug.cgi?id=136041
-    min-width: 25%;
+  box-shadow: 0 20px 60px 0 #cecece;
+
+  @include media('>=smallDesktop') {
+    flex-basis: 300px;
+    min-height: 200px;
   }
 }
 
-@include media('>=900px') {
-  .ClientsGrid {
-    margin-top: -$Theme-spacing-default;
-    margin-left: -$Theme-spacing-default;
-  }
+.ClientsGrid-client:first-child {
+  margin-right: $Theme-spacing-small;
 
-  .ClientsGrid-cell {
-    margin-top: $Theme-spacing-default;
-    margin-left: $Theme-spacing-default;
+  @include media('>=smallDesktop') {
+    margin-right: $Theme-spacing-default;
   }
 }
 
-@include media('>=1250px') {
-  .ClientsGrid-cell {
-    flex: 1 0 200px; //this is workaround for safari and iOS, https://bugs.webkit.org/show_bug.cgi?id=136041
-    min-width: 200px;
-  }
+.ClientsGrid-img {
+  max-width: 100%;
+  max-height: 100%;
 }

@@ -1,0 +1,34 @@
+.HomepageExperience {
+  padding: 0 $Theme-spacing-small;
+}
+
+.HomepageExperience-content {
+  display: flex;
+  flex-direction: column-reverse;
+
+  max-width: $Theme-grid-maxWidth;
+  margin: 0 auto;
+
+  @include media('>=smallDesktop') {
+    flex-direction: row;
+  }
+}
+
+.HomepageExperience-clients {
+  flex: 1;
+  margin-bottom: $Theme-spacing-default;
+
+  @include media('>=smallDesktop') {
+    margin-bottom: 0;
+  }
+}
+
+.HomepageExperience-img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.HomepageExperience-work {
+  flex: 1;
+  margin-right: $Theme-spacing-small;
+}

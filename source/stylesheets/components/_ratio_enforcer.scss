@@ -27,15 +27,6 @@
   }
 }
 
-.RatioEnforcer.RatioEnforcer--companies {
-  width: auto;
-  height: 50px;
-
-  @include media('>=900px') {
-    height: 100px;
-  }
-}
-
 .RatioEnforcer.RatioEnforcer--clients {
   max-width: 120px;
 }
@@ -57,18 +48,6 @@
 
   @include media('>tablet') {
     max-width: 200px;
-  }
-}
-
-.RatioEnforcer.RatioEnforcer--homepageIcons {
-  max-width: 150px;
-
-  @include media('>tablet') {
-    max-width: 200px;
-  }
-
-  @include media('>desktop') {
-    max-width: 300px;
   }
 }
 

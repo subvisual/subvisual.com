@@ -1,0 +1,26 @@
+// PostAuthor
+//
+// A picture on the left and some text on the right.
+//
+// markup:
+// <div class="PostAuthor">
+//   <img class="PostAuthor-picture" src="https://avatars1.githubusercontent.com/u/934580?v=3&s=46://avatars1.githubusercontent.com/u/934580?v=3&s=460">
+//   <div class="PostAuthor-name">by <a class="Link" href="http://twiter.com/subvisual">Subvisual</a></div>
+// </div>
+//
+// Styleguide 5.20
+
+.PostAuthor {
+  align-items: center;
+  display: flex;
+}
+
+.PostAuthor-picture {
+  border-radius: 50%;
+  height: 50px;
+  margin-right: $Theme-spacing-small;
+  width: 50px;
+}
+
+.PostAuthor-name {
+}

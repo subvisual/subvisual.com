@@ -4,15 +4,12 @@ page: home
 nav_logo_class: 'is-animated'
 ---
 
-.Panel
-  .u-navPlaceholder
-  = partial 'homepage/hero'
-= partial 'homepage/team'
-= partial 'homepage/services'
-= partial 'homepage/values'
+= partial 'homepage/hero'
+= partial 'homepage/skills'
+= partial 'homepage/case_studies'
+= partial 'homepage/clients'
+= partial 'homepage/blog_posts'
 = partial 'work_with_us', locals: { text: 'Do you have an exciting project in mind?<br>We are ready to start.', buttonText: "Let's work together" }
-= partial 'homepage/practices'
-= partial 'work/case_studies'
 = partial 'homepage/contact'
 = partial 'subvisual_separator'
 = partial 'newsletter'
@@ -20,18 +17,4 @@ nav_logo_class: 'is-animated'
 
 - content_for :javascripts
   javascript:
-    var heroWrapper = $('#HomepageHeroWrapper')[0];
-    var objectElement = $('#HomepageHeroSVG');
-
-    function findSVG() {
-      return objectElement.contents().find('svg');
-    }
-
-    function startAnimation() {
-      window.homepage.parallax(findSVG(), heroWrapper);
-    }
-
-    function guardFn() {
-      return findSVG()[0];
-    };
-    window.customEvents.onLoad(guardFn, startAnimation);
+    window.homepage.loadBlogPosts();

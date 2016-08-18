@@ -1,0 +1,126 @@
+// CaseStudy
+//
+// A compoent to showcase a project
+//
+// .CaseStudy--articles - Uses articles background color
+// .CaseStudy--oncostats - Users oncostats background color
+// .CaseStudy--left - Puts the image on the left
+//
+// markup:
+// <div class="CaseStudy {$modifiers}">
+//   <img class="CaseStudy-image">
+//   <div class="CaseStudy-details">
+//     <div class="CaseStudy-fixedBackground"></div>
+//     <h2 class="CaseStudy-title">Some title</h2>
+//     <p>Some html</p>
+//     <p>More HTML</p>
+//   </div>
+// </div>
+//
+// Styleguide 5.22
+
+$CaseStudy-shadow: 0 20px 60px 0 rgba(#000, 0.25);
+
+.u-overflowHidden {
+  overflow: hidden;
+}
+
+.CaseStudy {
+  padding: 0 $Theme-spacing-small;
+}
+
+.CaseStudy-content {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  max-width: $Theme-grid-maxWidth;
+  margin: 0 auto;
+
+  @include media('>smallDesktop') {
+    flex-direction: row-reverse;
+    align-items: flex-end;
+  }
+}
+
+@include media('>smallDesktop') {
+  .CaseStudy.CaseStudy--left {
+    .CaseStudy-content {
+      flex-direction: row;
+      align-items: flex-end;
+    }
+
+    .CaseStudy-showcase {
+      flex-direction: row;
+    }
+
+    .CaseStudy-details {
+      padding-right: 0;
+      padding-left: $Theme-spacing-small;
+    }
+  }
+}
+
+.CaseStudy-showcase {
+  width: 100%;
+
+  @include media('>smallDesktop') {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 60%;
+    width: auto;
+  }
+}
+
+.CaseStudy-imageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+
+  @include media('>smallDesktop') {
+    flex: 1;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+
+.CaseStudy-image {
+  max-width: calc(100% - #{$Theme-spacing-small} * 2);
+  max-height: 400px;
+
+  box-shadow: $CaseStudy-shadow;
+
+  @include media('>smallDesktop') {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.CaseStudy-details {
+  width: 100%;
+  padding-top: $Theme-spacing-small;
+  padding-right: $Theme-spacing-small;
+  padding-bottom: $Theme-spacing-small;
+
+  @include media('>smallDesktop') {
+    z-index: -1;
+
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 40%;
+    width: auto;
+
+    margin-bottom: 80px;
+  }
+}
+
+.CaseStudy-title {
+  @include font-properties(subvisual, large);
+
+  margin-bottom: $Theme-spacing-xSmall;
+
+  white-space: nowrap;
+}

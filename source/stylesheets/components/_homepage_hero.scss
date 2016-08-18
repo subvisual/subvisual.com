@@ -7,15 +7,18 @@
 //   <div class="HomepageHero-content">
 //     <div class="HomepageHero-copy">
 //       <h1 class="HomepageHero-heading u-xSmallThenSmallMargin">
-//         We <span class="HomepageHero-headingHighlight">design</span> and <span class="HomepageHero-headingHighlight">develop</span> thoughtful digital <span class="HomepageHero-headingHighlight">products</span>
+//         We design and thoughtful digital products
 //       </h1>
 //       <p class="HomepageHero-text u-defaultMargin">
 //         We craft products with a focus on great User Experience and high-quality code
 //       </p>
 //     </div>
 //     <div class="HomepageHero-cta">
-//       <a class="ButtonPrimary" href="/hire-us">Let's work together</a>
+//       <a class="ButtonPrimary ButtonPrimary--brand" href="/work">See our work</a>
 //     </div>
+//   </div>
+//   <div class="HomepageHero-showcase">
+//     <div class="HomepageHero-image"></div>
 //   </div>
 // </div>
 //
@@ -27,72 +30,73 @@
   max-width: $Theme-grid-maxWidth;
   margin-right: auto;
   margin-left: auto;
+  overflow: hidden;
 }
 
 .HomepageHero-content {
-  flex: 0 0 50%;
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 $Theme-spacing-small;
+  padding: 80px 0 $Theme-spacing-default $Theme-spacing-small;
+
+  @include media('<750px') {
+    padding-right: $Theme-spacing-default;
+  }
 }
 
-@include media('<=795px') {
-  .HomepageHero-content {
-    position: absolute;
-    top: 0;
-    left: 0;
+.HomepageHero-showcase {
+  position: relative;
 
-    flex: 1 0 0%;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+  flex: 1;
+  display: none;
+
+  @include media('>=550px') {
+    display: block;
   }
+}
 
-  .HomepageHero-cta {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
+.HomepageHero-image {
+  position: absolute;
+  right: 0;
+  bottom: -80px;
 
-    display: flex;
-    justify-content: center;
-    width: 250px;
+  flex: 1;
+  width: 100%;
+  height: 100%;
 
-    transform: translate(-50%, 50%);
-  }
+  background-image: url('/images/homepage/shelf.png');
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left top;
 
-  .HomepageHero-copy {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    width: 100%;
-    max-width: 460px;
+  @include media('>=1180px') {
+    background-position: bottom right;
+    background-size: contain;
   }
 }
 
 .HomepageHero-heading {
-  @include font-properties(subvisual, base);
+  @include font-properties(subvisual, large);
+
+  color: $Theme-color-limedSpruce;
+
+  font-weight: $Theme-typography-fontWeight-bold;
+
   @include media('>=750px') {
     @include font-properties-on-resolution(subvisual, large, desktop);
   }
-
-  color: $Theme-color-horizon;
-
-  font-weight: $Theme-typography-fontWeight-bold;
-}
-
-.HomepageHero-headingHighlight {
-  color: $Theme-color-brightTurquoise;
 }
 
 .HomepageHero-text {
   @include font-properties(bodyText, small);
+
+  color: $Theme-color-limedSpruce;
+
+  font-weight: $Theme-typography-fontWeight-regular;
+
   @include media('>=750px') {
     @include font-properties-on-resolution(bodyText, base, desktop);
   }
-
-  color: $Theme-palette-text-body-default;
-
-  font-weight: $Theme-typography-fontWeight-regular;
 }

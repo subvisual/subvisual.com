@@ -1,0 +1,40 @@
+// SectionHeading
+//
+// A picture on the left and some text on the right.
+//
+// markup:
+// <section class="SectionHeading">
+//   <h1 class="SectionHeading-title">Blog Posts</h1>
+// </section>
+//
+// Styleguide 5.21
+
+$SectionHeading-border: solid 1px $Theme-color-polar;
+
+.SectionHeading {
+  padding: 0 $Theme-spacing-small;
+}
+
+.SectionHeading-title {
+  @include font-properties('subvisual', 'base');
+
+  max-width: $Theme-grid-maxWidth;
+  padding-bottom: $Theme-spacing-xSmall;
+  margin: 0 auto;
+
+  border-bottom: $SectionHeading-border;
+
+  font-weight: bold;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+
+  @include media('>smallDesktop') {
+    @include font-properties('subvisual', 'large');
+  }
+}
+
+.SectionHeading.SectionHeading--lightBorder {
+  .SectionHeading-title {
+    border-bottom-color: $Theme-color-white;
+  }
+}

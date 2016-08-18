@@ -1,0 +1,12 @@
+$Heading-icons: "dev", "ui", "mobile";
+
+@each $icon in $Heading-icons {
+  .Heading.Heading--#{$icon} {
+    @include responsive-background-image('icons/skill-#{$icon}', $size: auto 30px);
+
+    padding-left: 40px;
+
+    background-position: left center;
+    background-repeat: no-repeat;
+  }
+}
