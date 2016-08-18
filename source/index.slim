@@ -4,9 +4,7 @@ page: home
 nav_logo_class: 'is-animated'
 ---
 
-.Panel
-  .u-navPlaceholder
-  = partial 'homepage/hero'
+= partial 'homepage/hero'
 = partial 'homepage/team'
 = partial 'homepage/services'
 = partial 'homepage/values'
@@ -20,18 +18,3 @@ nav_logo_class: 'is-animated'
 
 - content_for :javascripts
   javascript:
-    var heroWrapper = $('#HomepageHeroWrapper')[0];
-    var objectElement = $('#HomepageHeroSVG');
-
-    function findSVG() {
-      return objectElement.contents().find('svg');
-    }
-
-    function startAnimation() {
-      window.homepage.parallax(findSVG(), heroWrapper);
-    }
-
-    function guardFn() {
-      return findSVG()[0];
-    };
-    window.customEvents.onLoad(guardFn, startAnimation);
