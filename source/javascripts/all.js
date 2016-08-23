@@ -12,6 +12,7 @@
 //= require homepage/_logo_tools
 //= require homepage/_logo_transparency
 //= require homepage/_planets
+//= require homepage/_blog_posts
 //= require work/_origami
 //= require company/_planets
 //= require nav/_logo
