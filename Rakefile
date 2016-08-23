@@ -44,6 +44,7 @@ namespace :styleguide do
       f.write compile_stylesheets
       f.flush
       sh "rm -rf #{output_folder}; mkdir #{output_folder}; cp -R source/images/* #{output_folder}"
+      sh "touch #{output_folder}/overview.md"
       sh styleguide_command(f.path, output_folder, watch)
     end
   end
@@ -57,6 +58,8 @@ namespace :styleguide do
     [
       './node_modules/.bin/styleguide',
       '--server',
+      '--overviewPath',
+      "#{output_folder}/overview.md",
       "#{watch ? '--watch' : ''}",
       '--title "Blue Styleguide"',
       "--output #{output_folder}",
