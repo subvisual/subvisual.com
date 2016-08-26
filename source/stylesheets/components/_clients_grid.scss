@@ -1,47 +1,52 @@
-  .ClientsGrid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+$ClientsGrid-border: 1px solid $Theme-color-polar;
 
-  width: 100%;
-  margin-top: -$Theme-spacing-small;
-  margin-left: -$Theme-spacing-small;
-}
-
-.ClientsGrid-cell {
-  flex: 1 0 100px; //this is workaround for safari and iOS, https://bugs.webkit.org/show_bug.cgi?id=136041
+.ClientsGrid {
   display: flex;
   flex-direction: column;
+
+  border-top: $ClientsGrid-border;
+  border-right: $ClientsGrid-border;
+  border-left: $ClientsGrid-border;
+
+  @include media('>=smallDesktop') {
+    flex-direction: row;
+  }
+}
+
+.ClientsGrid-clients {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+
+  @include media('>=desktop') {
+    flex: 3;
+  }
+}
+
+.ClientsGrid-work {
+  flex: 1;
+  padding: $Theme-spacing-default $Theme-spacing-small;
+
+  background-color: $Theme-color-limedSpruce;
+
+  @include media('>=desktop') {
+    flex: 4;
+  }
+}
+
+.ClientsGrid-client {
+  flex-basis: 50%;
+  display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
+  min-height: 140px;
 
-  min-width: 100px;
-  margin-top: $Theme-spacing-small;
-  margin-left: $Theme-spacing-small;
+  border-right: $ClientsGrid-border;
+  border-bottom: $ClientsGrid-border;
 }
 
-@include media('>=500px') {
-  .ClientsGrid-cell {
-    flex: 1 0 25%; //this is workaround for safari and iOS, https://bugs.webkit.org/show_bug.cgi?id=136041
-    min-width: 25%;
-  }
-}
-
-@include media('>=900px') {
-  .ClientsGrid {
-    margin-top: -$Theme-spacing-default;
-    margin-left: -$Theme-spacing-default;
-  }
-
-  .ClientsGrid-cell {
-    margin-top: $Theme-spacing-default;
-    margin-left: $Theme-spacing-default;
-  }
-}
-
-@include media('>=1250px') {
-  .ClientsGrid-cell {
-    flex: 1 0 200px; //this is workaround for safari and iOS, https://bugs.webkit.org/show_bug.cgi?id=136041
-    min-width: 200px;
-  }
+.ClientsGrid-details {
+  @include font-properties(bodyText, base);
+  color: $Theme-color-white;
+  opacity: 0.8;
 }

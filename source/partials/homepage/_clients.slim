@@ -1,0 +1,23 @@
+.u-defaultThenLargeMargin
+.SectionHeading
+  h1.SectionHeading-title Experience
+.ClientsGrid
+  .ClientsGrid-clients
+    - data.companies.each do |company|
+      .ClientsGrid-client= company.name
+  .ClientsGrid-work
+    h2.Heading.Heading--brand
+      .Heading-light Let’s build something awesome together
+    .u-smallMargin
+    .ClientsGrid-details
+      p
+        | By working together with partners from all over the world,
+        | tackling a wide range of problems in a variety of areas
+        | - from Banking to Medtech
+        | - we gathered the experience you need to make your product great.
+      .u-smallMargin
+      p
+        | Combining your unique vision and ambition with our amazing team,
+        | we can start building something awesome together.
+      .u-smallMargin
+      button.ButtonPrimary.ButtonPrimary--brand Let's get to work
