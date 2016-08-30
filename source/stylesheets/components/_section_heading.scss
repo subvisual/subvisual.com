@@ -10,7 +10,7 @@
 // Styleguide 5.21
 
 .SectionHeading {
-  overflow-y: hidden;
+  position: relative;
 }
 
 .SectionHeading-title {
@@ -20,12 +20,21 @@
 
   font-family: map-get($Theme-font-families, subvisual);
   font-size: 46px;
+  font-weight: bold;
   letter-spacing: 4px;
   line-height: 1;
   text-align: center;
   text-transform: uppercase;
 
   white-space: nowrap;
+
+  @include media('>=500px') {
+    margin-bottom: -14px;
+
+    font-size: 64px;
+
+    letter-spacing: 4px;
+  }
 
   @include media('>=tablet') {
     margin-bottom: -21px;

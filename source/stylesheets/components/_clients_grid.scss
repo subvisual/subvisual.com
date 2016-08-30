@@ -1,12 +1,16 @@
 $ClientsGrid-border: 1px solid $Theme-color-polar;
 
 .ClientsGrid {
+  position: relative;
+
   display: flex;
   flex-direction: column;
 
   border-top: $ClientsGrid-border;
   border-right: $ClientsGrid-border;
   border-left: $ClientsGrid-border;
+
+  background-color: $Theme-color-white;
 
   @include media('>=smallDesktop') {
     flex-direction: row;

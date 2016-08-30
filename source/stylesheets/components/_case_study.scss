@@ -1,0 +1,125 @@
+// CaseStudy
+//
+// A compoent to showcase a project
+//
+// .CaseStudy--articles - Uses articles background color
+// .CaseStudy--oncostats - Users oncostats background color
+// .CaseStudy--left - Puts the image on the left
+//
+// markup:
+// <div class="CaseStudy {$modifiers}">
+//   <img class="CaseStudy-image">
+//   <div class="CaseStudy-details">
+//     <div class="CaseStudy-fixedBackground"></div>
+//     <h2 class="CaseStudy-title">Some title</h2>
+//     <p>Some html</p>
+//     <p>More HTML</p>
+//   </div>
+// </div>
+//
+// Styleguide 5.22
+
+$CaseStudy-colors: (articles, #cdb187), (oncostats, #6dd4e0);
+$CaseStudy-shadow: 0 20px 60px 0 rgba(#000, 0.25);
+
+.u-overflowHidden {
+  overflow: hidden;
+}
+
+.CaseStudy {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  max-width: $Theme-grid-maxWidth;
+  margin: 0 auto;
+
+  @include media('>smallDesktop') {
+    flex-direction: row-reverse;
+    align-items: flex-end;
+  }
+}
+
+@include media('>smallDesktop') {
+  .CaseStudy.CaseStudy--left {
+    flex-direction: row;
+    align-items: flex-end;
+
+    .CaseStudy-showcase {
+      flex-direction: row;
+      padding-left: $Theme-spacing-small;
+      padding-right: 0;
+    }
+  }
+}
+
+.CaseStudy-fixedBackground {
+  position: absolute;
+  top: 0;
+  right: -2000px; // this is a hack to make the color cover the monitor's width
+  left: -2000px;
+  z-index: -1;
+
+  height: 100%;
+}
+
+.CaseStudy-showcase {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+
+  @include media('>smallDesktop') {
+    flex-direction: row;
+    padding-right: $Theme-spacing-small;
+  }
+}
+
+.CaseStudy-image {
+  max-width: calc(100% - #{$Theme-spacing-small} * 2);
+  max-height: 400px;
+
+  box-shadow: $CaseStudy-shadow;
+
+  @include media('>smallDesktop') {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.CaseStudy-details {
+  position: relative;
+  z-index: 1;
+
+  width: 100%;
+  padding: $Theme-spacing-small;
+
+  @include media('>smallDesktop') {
+    z-index: -1;
+
+    margin-top: 60px;
+  }
+}
+
+.CaseStudy-title {
+  @include font-properties(subvisual, large);
+
+  margin-bottom: $Theme-spacing-xSmall;
+
+  text-transform: uppercase;
+
+  @include media('>smallDesktop') {
+    position: absolute;
+    top: -60px; // hack to prevent title from being covered by element above
+  }
+}
+
+@each $name, $color in $CaseStudy-colors {
+  .CaseStudy.CaseStudy--#{$name} {
+    .CaseStudy-fixedBackground {
+      background-color: $color;
+    }
+  }
+}

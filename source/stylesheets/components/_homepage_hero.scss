@@ -39,6 +39,10 @@
   flex-direction: column;
   justify-content: center;
   padding: 80px 0 $Theme-spacing-default $Theme-spacing-small;
+
+  @include media('<750px') {
+    padding-right: $Theme-spacing-default;
+  }
 }
 
 .HomepageHero-showcase {
@@ -74,7 +78,7 @@
 }
 
 .HomepageHero-heading {
-  @include font-properties(subvisual, base);
+  @include font-properties(subvisual, large);
 
   color: $Theme-color-limedSpruce;
 
