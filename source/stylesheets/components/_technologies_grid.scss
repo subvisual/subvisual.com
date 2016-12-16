@@ -36,6 +36,7 @@ $TechnologiesGrid-secondaryTechonolgy-color: #e0edf3;
 
 .TechnologiesGrid-primaryTechonolgy {
   display: flex;
+  color: $TechnologiesGrid-primaryTechonolgy-color;
 
   &:nth-child(odd) {
     padding-right: $Theme-spacing-default;
@@ -55,6 +56,7 @@ $TechnologiesGrid-secondaryTechonolgy-color: #e0edf3;
 
 .TechnologiesGrid-secondaryTechonolgy {
   display: none;
+  color: $TechnologiesGrid-secondaryTechonolgy-color;
 
   @include media('>=desktop') {
     display: flex;
@@ -83,12 +85,4 @@ $TechnologiesGrid-secondaryTechonolgy-color: #e0edf3;
   @include media('>=desktop') {
     height: 100px;
   }
-}
-
-.TechnologiesGrid-primaryTechonolgy {
-  color: $TechnologiesGrid-primaryTechonolgy-color;
-}
-
-.TechnologiesGrid-secondaryTechonolgy {
-  color: $TechnologiesGrid-secondaryTechonolgy-color;
 }
