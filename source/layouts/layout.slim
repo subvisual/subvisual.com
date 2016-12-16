@@ -53,7 +53,6 @@ html.Theme itemscope='' itemtype='http://schema.org/WebPage' lang=data.site.lang
       = yield
 
     script src="//use.typekit.net/wbx6iwp.js"
-    script src="//my.hellobar.com/ddb28d1c17aab1b3671a22369daa4d7fd21faacb.js"
     javascript:
       try{Typekit.load();}catch(e){}
     = javascript_include_tag 'all'
@@ -66,8 +65,3 @@ html.Theme itemscope='' itemtype='http://schema.org/WebPage' lang=data.site.lang
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-TTR9JW');
-
-        window.intercomSettings = {
-         app_id: "ss8u8pej"
-        };
-      = javascript_include_tag :third_party, async: true, defer: true

@@ -17,4 +17,3 @@
 //= require company/_planets
 //= require nav/_logo
 //= require _segment
-//= require _popcorn_metrics

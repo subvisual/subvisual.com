@@ -61,7 +61,7 @@ set :images_dir, 'images'
 set :partials_dir, 'partials'
 
 activate :autoprefixer do |config|
-  config.browsers = ['last 2 version']
+  config.browsers = ['ie >= 11']
 end
 
 activate :directory_indexes
