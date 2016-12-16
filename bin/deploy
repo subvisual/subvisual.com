@@ -1,1 +1,6 @@
-bundle exec cap production deploy
+#!/bin/sh
+
+set -e
+
+bundle exec middleman build
+bundle exec s3_website push
