@@ -41,15 +41,6 @@ $SectionHeading-border: solid 20px $Theme-color-polar;
     @include media('>=tablet') {
       $height: 20px;
 
-      left: -$height / 2;
-
-      width: calc(100% + #{$height});
-      height: $height;
-    }
-
-    @include media('>=desktop') {
-      $height: 20px;
-
       left: -$height;
 
       width: calc(100% + #{$height * 2});

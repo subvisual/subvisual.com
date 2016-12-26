@@ -1,0 +1,127 @@
+.AOSHero {
+  @include responsive-window-margin;
+
+  display: flex;
+
+  @include media('>=smallDesktop') {
+    flex-direction: column;
+  }
+}
+
+.AOSHero-content {
+  display: flex;
+  flex-direction: column-reverse;
+
+  max-width: $Theme-grid-maxWidth;
+  margin: 0 auto;
+  margin-top: $Theme-spacing-large;
+
+  @include media('>=smallDesktop') {
+    flex-direction: row;
+  }
+}
+
+.AOSHero-desktopImage {
+  display: none;
+
+  @include media('>=smallDesktop') {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 64%;
+
+    display: block;
+  }
+}
+
+.AOSHero-mobileImage {
+  @include media('>=smallDesktop') {
+    display: none;
+  }
+}
+
+.AOSHero-details {
+  flex: 1;
+
+  @include media('>=smallDesktop') {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 36%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-bottom: $Theme-spacing-large;
+    margin-left: $Theme-spacing-default;
+  }
+}
+
+.AOSHero-heading {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  margin-bottom: $Theme-spacing-small;
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    z-index: -1;
+
+    bottom: 60px;
+    left:  -3000px;
+
+    width: 6000px;
+    height: 2000px;
+
+    background-color: #cdb187;
+  }
+
+  @include media('>=smallDesktop') {
+    padding-bottom: $Theme-spacing-default;
+
+    &::before {
+      bottom: 0;
+    }
+  }
+}
+
+.AOSHero-image {
+  max-width: 100%;
+  box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.3);
+}
+
+.AOSHero-title {
+  @include font-properties(subvisual);
+
+  margin-bottom: $Theme-spacing-xSmall;
+
+  color: $Theme-color-white;
+
+  font-weight: $Theme-typography-fontWeight-bold;
+  text-transform: uppercase;
+
+  @include media('>=smallDesktop') {
+    margin-bottom: $Theme-spacing-small;
+
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+.AOSHero-subtitle {
+  position: relative;
+
+  margin-bottom: $Theme-spacing-small;
+
+  color: rgba($Theme-color-white, .8);
+
+  @include media('>=smallDesktop') {
+    margin-bottom: 0;
+
+    font-size: 20px;
+    line-height: 28px;
+  }
+}

@@ -1,13 +1,12 @@
 .ProductGrid {
   @include responsive-window-margin;
-
-  margin: 0 auto;
 }
 
 .ProductGrid-content {
   display: flex;
   flex-direction: row;
   max-width: $Theme-grid-maxWidth;
+  margin: 0 auto;
 }
 
 .ProductGrid-column {
