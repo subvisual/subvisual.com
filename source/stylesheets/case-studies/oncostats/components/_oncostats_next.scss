@@ -1,8 +1,9 @@
 .OncostatsNext {
-  padding: $Theme-spacing-default 0;
+  padding: $Theme-spacing-default $Theme-spacing-small;
 
   @include media('>=smallDesktop') {
-    padding: $Theme-spacing-large 0;
+    padding-top: $Theme-spacing-large;
+    padding-bottom: $Theme-spacing-large;
   }
 }
 
@@ -11,10 +12,11 @@
   margin: 0 auto;
 }
 
-.OncostatsNext-content:first-child {
-  margin-bottom: $Theme-spacing-large;
-}
-
+.OncostatsNext-content:first-child,
 .OncostatsNext-quote {
-  margin-bottom: $Theme-spacing-large;
+  margin-bottom: $Theme-spacing-default;
+
+  @include media('>=smallDesktop') {
+    margin-bottom: $Theme-spacing-large;
+  }
 }

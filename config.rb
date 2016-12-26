@@ -36,7 +36,6 @@ page 'feed.xml', layout: false
 
 # Reload the browser automatically whenever files change
 configure :development do
-  #activate :livereload
   set :blog_posts_json, 'http://localhost:3000'
 end
 

@@ -32,8 +32,9 @@ $OncostatsQuote-frame-width: 450px;
 .OncostatsQuote-text {
   @include theme-typography(quoteText);
 
-  width: $Theme-max-width;
+  width: 100%;
   max-width: $Theme-max-width;
+  margin-bottom: $Theme-spacing-default;
 
   text-align: center;
 
@@ -42,6 +43,8 @@ $OncostatsQuote-frame-width: 450px;
 
     top: 50%;
     left: 50%;
+
+    margin: 0;
 
     background: $Theme-color-white;
 

@@ -106,8 +106,6 @@ $CaseStudy-shadow: 0 20px 60px 0 rgba(#000, 0.25);
   padding-bottom: $Theme-spacing-small;
 
   @include media('>smallDesktop') {
-    z-index: -1;
-
     flex-grow: 1;
     flex-shrink: 0;
     flex-basis: 40%;
