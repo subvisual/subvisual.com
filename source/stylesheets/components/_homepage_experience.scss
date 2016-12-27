@@ -17,7 +17,9 @@
 }
 
 .HomepageExperience-clients {
-  flex: 1;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 45%;
   margin-bottom: $Theme-spacing-default;
 
   @include media('>=smallDesktop') {
@@ -31,7 +33,9 @@
 }
 
 .HomepageExperience-work {
-  flex: 1;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 55%;
   margin-right: $Theme-spacing-small;
 }
 
