@@ -28,21 +28,18 @@
   display: flex;
   width: 100%;
   max-width: $Theme-grid-maxWidth;
+  padding-top: $Theme-spacing-large;
   margin-right: auto;
   margin-left: auto;
-  overflow: hidden;
 }
 
 .HomepageHero-content {
   flex: 1;
+  flex-shrink: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 80px 0 $Theme-spacing-default $Theme-spacing-small;
-
-  @include media('<750px') {
-    padding-right: $Theme-spacing-default;
-  }
+  padding: 0 $Theme-spacing-default $Theme-spacing-large $Theme-spacing-small;
 }
 
 .HomepageHero-showcase {
@@ -51,30 +48,19 @@
   flex: 1;
   display: none;
 
-  @include media('>=550px') {
+  @include media('>tablet') {
     display: block;
   }
 }
 
 .HomepageHero-image {
   position: absolute;
-  right: 0;
-  bottom: -80px;
+  top: 0;
+  left: 0;
 
-  flex: 1;
-  width: 100%;
   height: 100%;
 
-  background-image: url('/images/homepage/shelf.png');
-  background-position: right bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: left top;
-
-  @include media('>=1180px') {
-    background-position: bottom right;
-    background-size: contain;
-  }
+  box-shadow: 0 20px 60px 0 rgba(#000, 0.25);
 }
 
 .HomepageHero-heading {

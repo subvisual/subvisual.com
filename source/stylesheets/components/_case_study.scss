@@ -21,6 +21,7 @@
 
 $CaseStudy-colors: (articles:  #f9f6f3,  oncostats: #f0f6f9);
 $CaseStudy-shadow: 0 20px 60px 0 rgba(#000, 0.25);
+$CaseStudy-image-offset: $Theme-spacing-small;
 
 .u-overflowHidden {
   overflow: hidden;
@@ -63,7 +64,7 @@ $CaseStudy-shadow: 0 20px 60px 0 rgba(#000, 0.25);
 
   width: 100%;
 
-  transform: translateY(- $Theme-spacing-small);
+  transform: translateY(-$CaseStudy-image-offset);
 
   @include media('>smallDesktop') {
     flex: 1;
@@ -80,7 +81,6 @@ $CaseStudy-shadow: 0 20px 60px 0 rgba(#000, 0.25);
 
   box-shadow: $CaseStudy-shadow;
 }
-
 
 .CaseStudy-details {
   position: relative;

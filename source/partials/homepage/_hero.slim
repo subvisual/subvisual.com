@@ -1,6 +1,6 @@
-.Panel.Panel--concrete
-  .u-navPlaceholder
-  .Panel-content
+.u-overflowHidden
+  .Panel.Panel--polar
+    .u-navPlaceholder
     .HomepageHero
       .HomepageHero-content
         .HomepageHero-copy
@@ -11,4 +11,8 @@
         .HomepageHero-cta
           = link_to "See our work", '/work', class: 'ButtonPrimary ButtonPrimary--brand'
       .HomepageHero-showcase
-        .HomepageHero-image
+        img.HomepageHero-image(
+          src="#{image_path('case-studies/oncostats/showcase.png')}"
+          srcset="#{image_path('case-studies/oncostats/showcase@2x.png')} 2x"
+          alt="Showcase image for Oncostats"
+        )
