@@ -9,6 +9,8 @@
   max-width: $Theme-grid-maxWidth;
   margin: 0 auto;
 
+  color: #95a2ac;
+
   @include media('>=smallDesktop') {
     flex-direction: row;
   }
@@ -31,4 +33,10 @@
 .HomepageExperience-work {
   flex: 1;
   margin-right: $Theme-spacing-small;
+}
+
+.HomepageExperience-title {
+  @include font-properties(subvisual, large);
+
+  color: $Theme-color-white;
 }

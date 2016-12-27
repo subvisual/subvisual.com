@@ -301,6 +301,10 @@
   // scss-lint:enable ColorVariable
 }
 
-.Panel.Panel--homepage {
+.Panel.Panel--concrete {
   background-color: $Theme-color-concrete;
+}
+
+.Panel.Panel--limedSpruce {
+  background-color: $Theme-color-limedSpruce;
 }
