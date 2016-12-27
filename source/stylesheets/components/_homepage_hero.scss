@@ -75,14 +75,21 @@
   }
 }
 
-.HomepageHero-text {
-  @include font-properties(bodyText, small);
+[class^=HomepageHero-skill] {
+  margin-bottom: $Theme-spacing-small;
+}
 
-  color: $Theme-color-limedSpruce;
+$HomepageHero-icons: "dev", "ui", "mobile";
 
-  font-weight: $Theme-typography-fontWeight-regular;
+@each $icon in $HomepageHero-icons {
+  .HomepageHero-skill--#{$icon} {
+    @include responsive-background-image('icons/skill-#{$icon}', $size: auto 30px);
 
-  @include media('>=750px') {
-    @include font-properties-on-resolution(bodyText, base, desktop);
+    padding-left: 60px;
+
+    background-position: left center;
+    background-repeat: no-repeat;
+
+    text-transform: uppercase;
   }
 }

@@ -6,9 +6,12 @@
         .HomepageHero-copy
           h1.HomepageHero-heading.u-xSmallThenSmallMargin
             | We design and develop thoughtful web and mobile products
-        .HomepageHero-skill--ui UX & UI Design
-        .HomepageHero-skill--dev Web Development
-        .HomepageHero-skill--mobile Mobile Development
+        .HomepageHero-skill
+          h2.Heading.Heading--brand.Heading--brandSubBase.Heading--ui UX & UI Design
+        .HomepageHero-skill
+          h2.Heading.Heading--brand.Heading--brandSubBase.Heading--dev Web Development
+        .HomepageHero-skill
+          h2.Heading.Heading--brand.Heading--brandSubBase.Heading--mobile Mobile Development
       .HomepageHero-showcase
         img.HomepageHero-image(
           src="#{image_path('case-studies/oncostats/showcase.png')}"
