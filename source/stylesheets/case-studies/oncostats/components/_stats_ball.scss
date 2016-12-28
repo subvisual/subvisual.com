@@ -6,12 +6,13 @@ $StatsBall-border-gradient: linear-gradient(to bottom, $Theme-color-peach, $Them
   justify-content: center;
   width: 100%;
 
-  background-image: image-url('case-studies/oncostats/stats-strip-outside.svg');
+  background-image: image-url('case-studies/oncostats/orange-sprite.png');
   background-position: center;
   background-repeat: repeat no-repeat;
   background-size: auto 20px;
 
   @include desktop {
+    background-position: -14px center;
     background-size: auto 40px;
   }
 }
@@ -30,7 +31,7 @@ $StatsBall-border-gradient: linear-gradient(to bottom, $Theme-color-peach, $Them
   width: 270px;
   height: 270px;
 
-  background: image-url('case-studies/oncostats/stats-strip-inside.svg') center / auto 20px repeat no-repeat, $StatsBall-gradient;
+  background: image-url('case-studies/oncostats/white-sprite.png') left center / auto 20px repeat no-repeat, $StatsBall-gradient;
   border-radius: 50%;
 
   @include desktop {
@@ -38,7 +39,7 @@ $StatsBall-border-gradient: linear-gradient(to bottom, $Theme-color-peach, $Them
     width: 520px;
     height: 520px;
 
-    background: image-url('case-studies/oncostats/stats-strip-inside.svg') center / auto 40px repeat no-repeat, $StatsBall-gradient;
+    background: image-url('case-studies/oncostats/white-sprite.png') left center / auto 40px repeat no-repeat, $StatsBall-gradient;
   }
 }
 

@@ -1,84 +1,44 @@
-$OncostatsQuote-frame-width: 450px;
-
 .OncostatsQuote {
   position: relative;
 
-  padding: 0 $Theme-spacing-small;
+  padding: $Theme-spacing-large $Theme-spacing-default;
+  width: 566px;
+
+  background-image: linear-gradient(to bottom, #73dbe8, #14a3c3);
+
+  color: $Theme-color-white;
 }
 
-.OncostatsQuote-frame {
-  display: none;
+.OncostatsQuote::before {
+  content: '';
 
-  @include media('>=smallDesktop') {
-    display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
 
-    width: $OncostatsQuote-frame-width;
-    height: 470px;
-    margin: 0 auto;
+  width: 100%;
+  height: 100%;
 
-    background-image: image-url('case-studies/oncostats/murta.png');
-    background-position: right bottom;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-
-    border: 15px solid $Theme-color-aquaMarineClear;
-
-    @include retina {
-      background-image: image-url('case-studies/oncostats/murta@2x.png');
-    }
-  }
+  background-color: #27b5d6;
 }
 
 .OncostatsQuote-text {
-  @include theme-typography(quoteText);
+  @include font-properties(bodyText, extraLarge);
 
-  width: 100%;
-  max-width: $Theme-max-width;
   margin-bottom: $Theme-spacing-default;
-
-  text-align: center;
-
-  @include media('>=smallDesktop') {
-    position: absolute;
-
-    top: 50%;
-    left: 50%;
-
-    margin: 0;
-
-    background: $Theme-color-white;
-
-    transform: translate(-50%, -150%);
-  }
-}
-
-.OncostatsQuote-author {
-  color: $Theme-color-darkSlateBlue;
-
-  text-align: right;
-
-  @include desktop {
-    position: absolute;
-
-    bottom: $Theme-spacing-large;
-    left: 50%;
-
-    text-align: left;
-
-    transform: translateX($OncostatsQuote-frame-width / 2 + $Theme-spacing-default);
-  }
 }
 
 .OncostatsQuote-authorName {
-  @include theme-typography(quoteAuthorName);
+  @include font-properties(subvisual, base);
 
-  display: block;
+  font-style: normal;
+  font-weight: $Theme-typography-fontWeight-bold;
 }
 
 .OncostatsQuote-authorTitle {
-  @include theme-typography(quoteAuthorTitle);
+  @include font-properties(subvisual, small);
 
-  display: block;
+  font-style: normal;
 
-  opacity: 0.5;
+  text-transform: uppercase;
 }

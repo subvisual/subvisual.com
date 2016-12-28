@@ -8,9 +8,37 @@
   color: $Theme-color-white;
 }
 
-@each $level in section, subsection, title {
-  .Heading.Heading--#{$level} {
-    @include theme-typography("#{$level}Heading");
+.Heading.Heading--section {
+  font-family: $Theme-fontFamily-futura;
+  font-size: 28px;
+  font-weight: $Theme-fontWeight-bold;
+  line-height: 40px;
+
+  @include desktop {
+    font-size: 40px;
+    line-height: 52px;
+  }
+}
+
+.Heading.Heading--subsection {
+  font-family: $Theme-fontFamily-futura;
+  font-size: 20px;
+  font-weight: $Theme-fontWeight-bold;
+  line-height: 32px;
+
+  @include desktop {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.Heading.Heading--title {
+  font-size: 16px;
+  line-height: 24px;
+
+  @include desktop {
+    font-size: 20px;
+    line-height: 32px;
   }
 }
 
@@ -26,6 +54,6 @@
   &::before {
     content: '-';
 
-    margin-right: theme-spacing(tiny);
+    margin-right: $Theme-spacing-small;
   }
 }
