@@ -1,3 +1,5 @@
+$HomepageHero-icons: 'dev', 'ui', 'mobile';
+
 .HomepageHero {
   display: flex;
   width: 100%;
@@ -40,6 +42,8 @@
 .HomepageHero-heading {
   @include font-properties(subvisual, large);
 
+  margin-bottom: $Theme-spacing-default;
+
   color: $Theme-color-limedSpruce;
 
   font-weight: $Theme-typography-fontWeight-bold;
@@ -49,20 +53,25 @@
   }
 }
 
-[class^=HomepageHero-skill] {
+[class^=HomepageHero-skill]:not(:last-child) {
   margin-bottom: $Theme-spacing-small;
 }
 
-$HomepageHero-icons: "dev", "ui", "mobile";
-
 @each $icon in $HomepageHero-icons {
   .HomepageHero-skill--#{$icon} {
+    @include font-properties(subvisual, small);
     @include responsive-background-image('icons/skill-#{$icon}', $size: auto 30px);
 
-    padding-left: 60px;
+    display: flex;
+    align-items: center;
+    height: 32px;
+    padding-left: 50px;
 
     background-position: left center;
     background-repeat: no-repeat;
+    color: #7d98ab;
+
+    font-weight: $Theme-typography-fontWeight-bold;
 
     text-transform: uppercase;
   }
