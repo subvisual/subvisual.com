@@ -15,7 +15,11 @@ $HomepageHero-icons: 'dev', 'ui', 'mobile';
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 $Theme-spacing-default $Theme-spacing-large $Theme-spacing-small;
+  padding: 0 $Theme-spacing-default $Theme-spacing-default $Theme-spacing-small;
+
+  @include media('>=smallDesktop') {
+    padding-bottom: $Theme-spacing-large;
+  }
 }
 
 .HomepageHero-showcase {
@@ -42,14 +46,16 @@ $HomepageHero-icons: 'dev', 'ui', 'mobile';
 .HomepageHero-heading {
   @include font-properties(subvisual, large);
 
-  margin-bottom: $Theme-spacing-default;
+  margin-bottom: $Theme-spacing-small;
 
   color: $Theme-color-limedSpruce;
 
   font-weight: $Theme-typography-fontWeight-bold;
 
-  @include media('>=750px') {
+  @include media('>=smallDesktop') {
     @include font-properties-on-resolution(subvisual, large, desktop);
+
+    margin-bottom: $Theme-spacing-default;
   }
 }
 
