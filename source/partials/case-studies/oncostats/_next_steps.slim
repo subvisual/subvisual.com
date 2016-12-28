@@ -1,12 +1,20 @@
 .OncostatsNext
-  .OncostatsNext-content
-    h2.Heading.Heading--section The next steps
-  .OncostatsNext-quote
-    blockquote.OncostatsQuote
-      .OncostatsQuote-text This company can change the way we do clinical decisions in Oncology.
-      cite.OncostatsQuote-author
-        .OncostatsQuote-authorName António Murta
-        .OncostatsQuote-authorTitle Expert Advisor
+  .u-overflowHidden
+    .OncostatsNext-content
+      h2.Heading.Heading--section The next steps
+  .OncostatsNext-image
+    img.OncostatsNext-imageSrc(
+      src="#{image_path('case-studies/oncostats/murta.png')}"
+      srcset="#{image_path('case-studies/oncostats/murta.png')} 2x"
+      alt="A photo of António Murta"
+    )
+    .OncostatsNext-quote
+      blockquote.OncostatsQuote
+        .OncostatsQuote-image
+        .OncostatsQuote-text This company can change the way we do clinical decisions in Oncology.
+        cite.OncostatsQuote-author
+          .OncostatsQuote-authorName António Murta
+          .OncostatsQuote-authorTitle Expert Advisor
   .OncostatsNext-content
     p.Text
       ' Oncostats started running a real-world pilot in CH Gaia (public hospital)

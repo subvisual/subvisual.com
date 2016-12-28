@@ -1,25 +1,35 @@
+$OncostatsQuote-offset: 20px;
+
 .OncostatsQuote {
   position: relative;
 
-  padding: $Theme-spacing-large $Theme-spacing-default;
-  width: 566px;
+  width: 100%;
+  padding: $Theme-spacing-default $Theme-spacing-small;
+  margin: 0;
 
   background-image: linear-gradient(to bottom, #73dbe8, #14a3c3);
 
   color: $Theme-color-white;
+
+  @include media('>=smallDesktop') {
+    padding: $Theme-spacing-large $Theme-spacing-default;
+  }
 }
 
 .OncostatsQuote::before {
   content: '';
 
   position: absolute;
-  top: 0;
-  left: 0;
+  top: $OncostatsQuote-offset;
+  left: $OncostatsQuote-offset * -1;
+  z-index: -1;
 
   width: 100%;
   height: 100%;
 
   background-color: #27b5d6;
+
+  opacity: .2;
 }
 
 .OncostatsQuote-text {
@@ -41,4 +51,19 @@
   font-style: normal;
 
   text-transform: uppercase;
+}
+
+.OncostatsQuote-image {
+  width: 86px;
+  height: 30px;
+  margin-bottom: $Theme-spacing-small;
+
+  background-image: image-url('case-studies/oncostats/quote.png');
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @include media('>=smallDesktop') {
+    height: 50px;
+  }
 }
