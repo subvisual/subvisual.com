@@ -1,52 +1,23 @@
-.ClientsGrid {
-  display: flex;
-  flex-direction: column;
-}
-
 .ClientsGrid-clients {
-  display: flex;
-
-  @include media('>=smallDesktop') {
-    justify-content: space-between;
-  }
-}
-
-.ClientsGrid-clients:first-child {
-  margin-bottom: $Theme-spacing-small;
-
-  @include media('>=smallDesktop') {
-    margin-bottom: $Theme-spacing-default;
-  }
+  column-count: 2;
+  column-gap: $Theme-spacing-small;
 }
 
 .ClientsGrid-client {
-  flex-grow: 0;
-  flex-basis: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 140px;
-  padding: $Theme-spacing-xSmall;
+  @include aspect-ratio(320px, 220px);
+  margin: auto;
+  margin-bottom: $Theme-spacing-small;
 
-  background-color: $Theme-color-white;
+  max-width: 160px;
 
-  box-shadow: 0 20px 60px 0 #172c38;
+  background-color: white;
 
-  @include media('>=smallDesktop') {
-    flex-basis: 300px;
-    min-height: 200px;
-  }
-}
 
-.ClientsGrid-client:first-child {
-  margin-right: $Theme-spacing-small;
-
-  @include media('>=smallDesktop') {
-    margin-right: $Theme-spacing-default;
+  @include media('>=desktop') {
+    max-width: 320px;
   }
 }
 
 .ClientsGrid-img {
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
 }

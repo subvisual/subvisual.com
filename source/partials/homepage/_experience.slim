@@ -26,8 +26,8 @@
           button.ButtonPrimary.ButtonPrimary--brand Let's get to work
         .HomepageExperience-clients
           .ClientsGrid
-            - data.companies.each_slice(2) do |slice|
-              .ClientsGrid-clients
+            .ClientsGrid-clients
+              - data.companies.each_slice(2) do |slice|
                 - slice.each do |company|
                   .ClientsGrid-client
                     = image_tag "clients/#{company.image}", alt: company.name, class: "ClientsGrid-img"

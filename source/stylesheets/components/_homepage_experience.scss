@@ -20,23 +20,16 @@
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 45%;
-  margin-bottom: $Theme-spacing-default;
-
-  @include media('>=smallDesktop') {
-    margin-bottom: 0;
-  }
-}
-
-.HomepageExperience-img {
-  max-width: 100%;
-  max-height: 100%;
 }
 
 .HomepageExperience-work {
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 55%;
-  margin-right: $Theme-spacing-small;
+
+  @include media('>=smallDesktop') {
+    margin-right: $Theme-spacing-small;
+  }
 }
 
 .HomepageExperience-title {
