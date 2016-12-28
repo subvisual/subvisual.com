@@ -1,16 +1,3 @@
-// RatioEnforcer
-//
-// Forces the image to adapt to its container's dimensions but maintaing its natural ratio.
-// Supposed to be applied to an image.
-//
-// In situations where custom dimensions are needed for a specific image, it
-// should be defined here as a modifier.
-//
-// markup:
-// <img src="/placeholder.png" class="RatioEnforcer">
-//
-// Styleguide 5.2
-
 .RatioEnforcer {
   display: inline-block;
   width: 100%;

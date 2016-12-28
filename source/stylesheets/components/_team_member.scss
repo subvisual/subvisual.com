@@ -1,31 +1,3 @@
-// TeamMember
-//
-// Displays information about a team member, such as picture, name, position, etc...
-//
-// Uses Suzy to help with the grid.
-//
-// markup:
-// <div class="TeamMember">
-//   <img src="/team/zamith.jpg" class="TeamMember-picture"/>
-//   <h2 class="TeamMember-name">
-//     Person Name
-//   </h2>
-//   <p class="TeamMember-position">
-//     Developer
-//   </p>
-//   <hr class="TeamMember-separator">
-//   <p class="TeamMember-bio">
-//     I am a member of Subvisual.
-//   </p>
-//   <p class="TeamMember-social">
-//     <a href="twitter.com/person">
-//       <img src="icons/twitter.png" class="TeamMember-socialLink">
-//     </a>
-//   </p>
-// </div>
-//
-// Styleguide 5.5
-
 @import 'blue/theme_vars';
 
 $TeamMember-max-width: 200px;

@@ -1,20 +1,3 @@
-// Newsletter
-//
-// A custom grid for the newsletter section.
-//
-// markup:
-// <div class="Newsletter">
-//   <div class="Newsletter-input">
-//     <div class="InputText">
-//       <label class="InputText-label">What's your email</label>
-//       <input class="InputText-input" type="email"></input>
-//     </div>
-//   </div>
-//   <div class="Newsletter-submit">
-//     <input class="ButtonPrimary"></input>
-//   </div>
-// </div>
-
 .Newsletter {
   display: flex;
   flex-wrap: wrap;

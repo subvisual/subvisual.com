@@ -146,7 +146,6 @@ $Atom-electrons: (
   $startRotation: map-get($values, 'startRotation');
 
   // animate each electron to rotate around the orbit
-  // styleguide:ignore:start
   @keyframes rotate-#{$name} {
     0% {
       transform: rotate($startRotation + 0deg)   translate(-$Atom-size * 0.5) rotate(-$startRotation - 0deg);
@@ -156,7 +155,6 @@ $Atom-electrons: (
       transform: rotate($startRotation + 360deg) translate(-$Atom-size * 0.5) rotate(-$startRotation - 360deg);
     }
   }
-  // styleguide:ignore:end
 
   .Atom-orbit--#{$name} .Atom-electron {
     animation: rotate-#{$name} infinite linear;

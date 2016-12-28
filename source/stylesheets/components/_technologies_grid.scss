@@ -1,25 +1,3 @@
-// TechnologiesGrid
-//
-// A fluid grid prepared to list the main technologies we use, highlighting the primary ones. primary technologies are moved to the beginning in smaller screens, while preserving the original order in larger ones.
-//
-// markup:
-// <div class="TechnologiesGrid">
-//   <div class="TechnologiesGrid-secondaryTechonolgy">
-//     <img alt="tech logo">
-//     <div>tech name</div>
-//   </div>
-//   <div class="TechnologiesGrid-primaryTechonolgy">
-//     <img alt="tech logo">
-//     <div>tech name</div>
-//   </div>
-//   <div class="TechnologiesGrid-secondaryTechonolgy">
-//     <img alt="tech logo">
-//     <div>tech name</div>
-//   </div>
-// </div>
-//
-// Styleguide 5.7
-
 $TechnologiesGrid-primaryTechonolgy-color: #45beff;
 $TechnologiesGrid-secondaryTechonolgy-color: #e0edf3;
 

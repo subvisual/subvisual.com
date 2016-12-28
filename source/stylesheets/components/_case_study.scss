@@ -1,24 +1,3 @@
-// CaseStudy
-//
-// A compoent to showcase a project
-//
-// .CaseStudy--articles - Uses articles background color
-// .CaseStudy--oncostats - Users oncostats background color
-// .CaseStudy--left - Puts the image on the left
-//
-// markup:
-// <div class="CaseStudy {$modifiers}">
-//   <img class="CaseStudy-image">
-//   <div class="CaseStudy-details">
-//     <div class="CaseStudy-fixedBackground"></div>
-//     <h2 class="CaseStudy-title">Some title</h2>
-//     <p>Some html</p>
-//     <p>More HTML</p>
-//   </div>
-// </div>
-//
-// Styleguide 5.22
-
 $CaseStudy-colors: (articles:  #f9f6f3,  oncostats: #f0f6f9);
 $CaseStudy-shadow: 0 20px 60px 0 rgba(#000, 0.25);
 $CaseStudy-image-offset: $Theme-spacing-small;

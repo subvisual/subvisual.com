@@ -1,22 +1,3 @@
-// ContactsGrid
-//
-// A custom grid for the contacts section.
-//
-// markup:
-// <div class="ContactsGrid">
-//   <div class="ContactsGrid-contact">
-//     +351 123 123 123
-//   </div>
-//   <div class="ContactsGrid-contact">
-//     Pólo de Negócios de Braga
-//   </div>
-//   <div class="ContactsGrid-image">
-//     <img src="/placeholder.png" style="max-height: 100%;"/>
-//   </div>
-// </div>
-//
-// Styleguide 5.9
-
 @import 'blue/theme_vars';
 
 $ContactsGrid-image-width-mobile: 75px;

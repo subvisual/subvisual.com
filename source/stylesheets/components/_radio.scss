@@ -1,15 +1,3 @@
-// Radio
-//
-// Radio button
-//
-// markup:
-// <div class="Radio">
-//   <input class="Radio-input" id="form-design-sprint" name="work_area" type="radio" value="design_sprint">
-//   <label class="Radio-label" for="form-design-sprint">Design Sprint</label>
-// </div>
-//
-// Styleguide 5.13
-
 $Radio-input-size: 25px;
 
 .Radio {
@@ -72,10 +60,8 @@ $Radio-input-size: 25px;
     top: $inner-border;
     left: $inner-border;
 
-    // styleguide:ignore:start
     width: calc(100% - #{$inner-border * 2});
     height: calc(100% - #{$inner-border * 2});
-    // styleguide:ignore:end
 
     background-color: $Theme-color-yellowOrange;
     border-radius: 50%;

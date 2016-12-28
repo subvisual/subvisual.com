@@ -1,29 +1,3 @@
-// HomepageHero
-//
-// Custom component for managing the homepage's hero layout
-//
-// markup:
-// <div class="HomepageHero">
-//   <div class="HomepageHero-content">
-//     <div class="HomepageHero-copy">
-//       <h1 class="HomepageHero-heading u-xSmallThenSmallMargin">
-//         We design and thoughtful digital products
-//       </h1>
-//       <p class="HomepageHero-text u-defaultMargin">
-//         We craft products with a focus on great User Experience and high-quality code
-//       </p>
-//     </div>
-//     <div class="HomepageHero-cta">
-//       <a class="ButtonPrimary ButtonPrimary--brand" href="/work">See our work</a>
-//     </div>
-//   </div>
-//   <div class="HomepageHero-showcase">
-//     <div class="HomepageHero-image"></div>
-//   </div>
-// </div>
-//
-// Styleguide 5.19
-
 .HomepageHero {
   display: flex;
   width: 100%;

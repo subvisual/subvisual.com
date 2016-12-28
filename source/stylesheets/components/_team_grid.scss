@@ -1,34 +1,3 @@
-// TeamGrid
-//
-// A fluid grid prepared to be used with TeamMember components. It starts with
-// 3 elements per row, and resizes nicely to 2 and then 1 per row, depending on
-// the viewport size.
-//
-// Uses Suzy to help with the grid.
-//
-// markup:
-// <div class="TeamGrid">
-//   <div class="TeamGrid-cell">
-//     <div>Cell 1</div>
-//   </div>
-//   <div class="TeamGrid-cell">
-//     <div>Cell 2</div>
-//   </div>
-//   <div class="TeamGrid-cell">
-//     <div>Cell 3</div>
-//   </div>
-//   <div class="TeamGrid-cell">
-//     <div>Cell 4</div>
-//   </div>
-// </div>
-//
-// sg-wrapper:
-// <div class="styleguide-grid-unit">
-//   <sg-wrapper-content/>
-// </div>
-//
-// Styleguide 5.4
-
 $susy: (
   columns: 12,
   gutters: 1/4

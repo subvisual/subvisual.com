@@ -7,7 +7,6 @@ $InputText-label-layer: $Theme-layer-stickyElement - 1;
 @mixin placeholderToLabelAnimation($animationName, $labelPosition, $resolution) {
   animation-name: $animationName;
 
-  // styleguide:ignore:start
   @keyframes #{$animationName} {
     0% {
       opacity: 1;
@@ -37,13 +36,11 @@ $InputText-label-layer: $Theme-layer-stickyElement - 1;
       transform: translate3D(0, #{$labelPosition}, 0);
     }
   }
-  // styleguide:ignore:end
 }
 
 @mixin labelToPlaceholderAnimation($animationName, $labelPosition, $resolution) {
   animation-name: $animationName;
 
-  // styleguide:ignore:start
   @keyframes #{$animationName} {
     0% {
       opacity: 1;
@@ -68,7 +65,6 @@ $InputText-label-layer: $Theme-layer-stickyElement - 1;
       opacity: 1;
     }
   }
-  // styleguide:ignore:end
 }
 
 .InputText {
