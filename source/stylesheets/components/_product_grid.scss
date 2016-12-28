@@ -1,0 +1,24 @@
+.ProductGrid {
+  margin: 0 auto;
+
+  padding: 0 $Theme-spacing-small;
+}
+
+.ProductGrid-content {
+  max-width: $Theme-grid-maxWidth;
+  display: flex;
+  flex-direction: row;
+}
+
+.ProductGrid-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.ProductGrid-gap {
+  margin-right: 40px;
+
+  @include media(">=smallDesktop") {
+    margin-right: 80px;
+  }
+}

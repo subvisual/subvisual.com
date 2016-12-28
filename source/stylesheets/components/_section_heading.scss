@@ -33,3 +33,10 @@ $SectionHeading-border: solid 1px $Theme-color-polar;
     border-bottom-color: rgba($Theme-color-white, .6);
   }
 }
+
+.SectionHeading.SectionHeading--tickBorder {
+  .SectionHeading-title {
+    border-bottom-color: rgba($Theme-color-white, .6);
+    border-bottom-size: 20px;
+  }
+}

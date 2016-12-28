@@ -1,0 +1,60 @@
+.ProductShowcase {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ProductShowcase-images {
+  position: relative;
+
+  margin: 40px 0 20px;
+}
+
+.ProductShowcase-image {
+  width: 100%;
+
+  box-shadow: 0 20px 80px #bbc8c9;
+}
+
+.ProductShowcase-absImage {
+  position: absolute;
+  width: 120%;
+  top: 0;
+  bottom: 0;
+  left: -10%;
+  right: -10%;
+
+  margin: auto;
+  pointer-events: none;
+}
+
+.ProductShowcase-title {
+  @include font-properties(subvisual, base);
+}
+
+.ProductShowcase-tech {
+  @include font-properties(bodyText, base);
+  color: $Theme-color-poloBlue;
+}
+
+.ProductShowcase-image,
+.ProductShowcase-absImage {
+  transition: transform 0.3s ease-out, clip-path 0.2s ease-out;
+  clip-path: inset(0px);
+}
+
+.ProductShowcase:hover {
+  .ProductShowcase-image,
+  .ProductShowcase-absImage {
+    transform: scale(1.05);
+  }
+
+  .ProductShowcase-image {
+    clip-path: inset(10px);
+
+    @include media(">=smallDesktop") {
+      clip-path: inset(20px);
+    }
+  }
+}

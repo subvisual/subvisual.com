@@ -1,8 +1,8 @@
-.HomepageExperience {
+.Experience {
   padding: 0 $Theme-spacing-small;
 }
 
-.HomepageExperience-content {
+.Experience-content {
   display: flex;
   flex-direction: column-reverse;
 
@@ -16,7 +16,7 @@
   }
 }
 
-.HomepageExperience-clients {
+.Experience-clients {
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 45%;
@@ -27,19 +27,19 @@
   }
 }
 
-.HomepageExperience-img {
+.Experience-img {
   max-width: 100%;
   max-height: 100%;
 }
 
-.HomepageExperience-work {
+.Experience-work {
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 55%;
   margin-right: $Theme-spacing-small;
 }
 
-.HomepageExperience-title {
+.Experience-title {
   @include font-properties(subvisual, large);
 
   color: $Theme-color-white;

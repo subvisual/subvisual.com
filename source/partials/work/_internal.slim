@@ -1,0 +1,18 @@
+.Panel.Panel--white
+  .u-defaultThenLargeMargin
+
+  .SectionHeading
+    .SectionHeading-title Internal Products
+
+  .u-smallThenDefaultMargin
+
+  .ProductGrid
+    .ProductGrid-content
+      .ProductGrid-column
+        = partial "work/product_showcase.slim", locals: { product: data.work.internal[0] }
+
+      .ProductGrid-gap
+
+      .ProductGrid-column
+        = partial "work/product_showcase.slim", locals: { product: data.work.internal[1] }
+        = partial "work/product_showcase.slim", locals: { product: data.work.internal[2] }

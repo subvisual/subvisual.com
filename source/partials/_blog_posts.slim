@@ -19,3 +19,7 @@ div#blog-post-template.u-visuallyHidden
 .u-smallThenDefaultMargin
 .Panel.Panel--alternative
   #blog-posts.HorizontalGrid.HorizontalGrid--darkFrame.HorizontalGrid--topFrame.HorizontalGrid--bottomFrame.HorizontalGrid--withGutters
+
+- content_for :javascripts
+  javascript:
+    window.helpers.loadBlogPosts();

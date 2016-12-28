@@ -3,15 +3,9 @@ title: Subvisual - Work
 page: work
 ---
 
-.Panel.Panel--alternative
-  .u-navPlaceholder
-  = partial 'work/hero'
-= partial 'work_with_us', locals: { text: "These are just some highlights of what we’ve done so far. Do you feel ready to start?", buttonText: "Let's work together" }
-= partial 'work/services'
+= partial 'work/recent'
+= partial 'work/internal'
+= partial 'experience'
+= partial 'blog_posts'
 = partial 'subvisual_separator'
 = partial 'footer'
-
-javascript:
-  window.onload = function() {
-    window.work.animateOrigami();
-  };

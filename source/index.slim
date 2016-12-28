@@ -6,12 +6,8 @@ nav_logo_class: 'is-animated'
 
 = partial 'homepage/hero'
 = partial 'homepage/work'
-= partial 'homepage/experience'
-= partial 'homepage/blog_posts'
+= partial 'experience'
+= partial 'blog_posts'
 = partial 'homepage/contact'
 = partial 'subvisual_separator'
 = partial 'footer'
-
-- content_for :javascripts
-  javascript:
-    window.homepage.loadBlogPosts();
