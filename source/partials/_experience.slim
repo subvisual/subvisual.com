@@ -26,10 +26,9 @@
           button.ButtonPrimary Let's get to work
         .Experience-clients
           .ClientsGrid
-            - data.companies.each_slice(2) do |slice|
-              .ClientsGrid-clients
-                - slice.each do |company|
-                  .ClientsGrid-client
-                    = image_tag "clients/#{company.image}", alt: company.name, class: "ClientsGrid-img"
+            .ClientsGrid-clients
+              - data.companies.each do |company|
+                .ClientsGrid-client
+                  = image_tag "clients/#{company.image}", alt: company.name, class: "ClientsGrid-img"
 
       .u-defaultThenLargeMargin

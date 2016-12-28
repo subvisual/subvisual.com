@@ -19,24 +19,22 @@
 .Experience-clients {
   flex-grow: 1;
   flex-shrink: 1;
-  flex-basis: 45%;
-  margin-bottom: $Theme-spacing-default;
 
   @include media('>=smallDesktop') {
-    margin-bottom: 0;
+    flex-basis: 680px;
   }
-}
-
-.Experience-img {
-  max-width: 100%;
-  max-height: 100%;
 }
 
 .Experience-work {
   flex-grow: 1;
   flex-shrink: 1;
-  flex-basis: 55%;
-  margin-right: $Theme-spacing-small;
+  margin-top: $Theme-spacing-xSmall;
+
+  @include media('>=smallDesktop') {
+    flex-basis: 540px;
+    margin-top: 0;
+    margin-right: $Theme-spacing-small;
+  }
 }
 
 .Experience-title {
