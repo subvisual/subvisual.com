@@ -1,24 +1,5 @@
 $StatsBall-gradient: linear-gradient(to bottom, $Theme-color-apricot, $Theme-color-grapefruit);
-$StatsBall-gradient-border: linear-gradient(to bottom, $Theme-color-peach, $Theme-color-cornflower);
-
-$StatsBall-borderWidth: 15px;
-$StatsBall-size-desktop: 550px;
-$StatsBall-size-mobile: 300px;
-
-$StatsBall-values: (
-  width: ($StatsBall-size-mobile, $StatsBall-size-desktop),
-  height: ($StatsBall-size-mobile, $StatsBall-size-desktop),
-  border-radius: ($StatsBall-size-mobile * 0.5, $StatsBall-size-desktop * 0.5),
-);
-
-$StatsBall-content-size-desktop: $StatsBall-size-desktop - $StatsBall-borderWidth * 2;
-$StatsBall-content-size-mobile: $StatsBall-size-mobile - $StatsBall-borderWidth * 2;
-
-$StatsBall-content-values: (
-  width: ($StatsBall-content-size-mobile, $StatsBall-content-size-desktop),
-  height: ($StatsBall-content-size-mobile, $StatsBall-content-size-desktop),
-  border-radius: ($StatsBall-content-size-mobile * 0.5, $StatsBall-content-size-desktop * 0.5),
-);
+$StatsBall-border-gradient: linear-gradient(to bottom, $Theme-color-peach, $Theme-color-cornflower);
 
 .StatsBall {
   display: flex;
@@ -44,19 +25,18 @@ $StatsBall-content-values: (
 }
 
 .StatsBall-innerBall {
-  @include responsive-values($StatsBall-content-values);
-
-  position: absolute;
-  top: $StatsBall-borderWidth;
-  left: $StatsBall-borderWidth;
-
   display: flex;
   flex-direction: column;
+  width: 270px;
+  height: 270px;
 
   background: image-url('case-studies/oncostats/stats-strip-inside.svg') center / auto 20px repeat no-repeat, $StatsBall-gradient;
+  border-radius: 50%;
 
   @include desktop {
     justify-content: center;
+    width: 520px;
+    height: 520px;
 
     background: image-url('case-studies/oncostats/stats-strip-inside.svg') center / auto 40px repeat no-repeat, $StatsBall-gradient;
   }
@@ -67,11 +47,20 @@ $StatsBall-content-values: (
 }
 
 .StatsBall-outerBall {
-  @include responsive-values($StatsBall-values);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  position: relative;
+  width: 300px;
+  height: 300px;
 
-  background: $StatsBall-gradient-border;
+  background: $StatsBall-border-gradient;
+  border-radius: 50%;
+
+  @include desktop {
+    width: 550px;
+    height: 550px;
+  }
 }
 
 .StatsBall-number {
@@ -99,4 +88,8 @@ $StatsBall-content-values: (
 
     display: block;
   }
+}
+
+.StatsBall-margin {
+  margin-bottom: 40px;
 }

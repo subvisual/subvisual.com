@@ -63,5 +63,18 @@ $Theme-typography: (
   font-style: normal;
   font-weight: $Theme-fontWeight-regular;
 
-  @include responsive-values($values);
+  @each $rule, $value in $values {
+    @if type-of($value) == list {
+      $mobile-value: nth($value, 1);
+      $desktop-value: nth($value, 2);
+
+      #{$rule}: $mobile-value;
+
+      @include desktop {
+        #{$rule}: $desktop-value;
+      }
+    } @else {
+      #{$rule}: $value;
+    }
+  }
 }
