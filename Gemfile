@@ -13,6 +13,7 @@ gem 'rake'
 gem 'scss_lint', require: false
 gem 'slim'
 gem 'susy'
+gem 'therubyracer'
 
 group :deploy do
   gem 'capistrano', '~> 3.2.1', require: false
