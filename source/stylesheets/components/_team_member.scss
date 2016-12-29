@@ -19,6 +19,8 @@ $TeamMember-max-width-small: 200px;
   max-height: $TeamMember-max-width-small;
   margin-bottom: $Theme-spacing-small;
 
+  border-radius: 8px;
+
   @include media('>=700px') {
     max-width: $TeamMember-max-width;
   }
