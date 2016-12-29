@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 40px;
 }
 
 .ProductShowcase-images {
@@ -31,6 +32,8 @@
 
 .ProductShowcase-title {
   @include font-properties(subvisual, base);
+
+  color: $Theme-color-gunMetal;
 }
 
 .ProductShowcase-tech {

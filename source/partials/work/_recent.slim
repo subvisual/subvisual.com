@@ -1,6 +1,6 @@
 .Panel.Panel--polar
   .u-navPlaceholder
-  .u-defaultThenLargeMargin
+  .u-largeThenDoubleLargeMargin
 
   h1.SectionHeading
     .SectionHeading-title Recent Work
@@ -18,3 +18,4 @@
       .ProductGrid-column
         = partial "work/product_showcase.slim", locals: { product: data.work.recent[2] }
         = partial "work/product_showcase.slim", locals: { product: data.work.recent[3] }
+  .u-defaultThenLargeMargin
