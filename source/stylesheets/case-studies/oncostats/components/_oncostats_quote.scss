@@ -4,7 +4,7 @@ $OncostatsQuote-offset: 20px;
   position: relative;
 
   width: 100%;
-  padding: $Theme-spacing-default $Theme-spacing-small;
+  padding: $Theme-spacing-small $Theme-spacing-small;
   margin: 0;
 
   background-image: linear-gradient(to bottom, #73dbe8, #14a3c3);
@@ -35,7 +35,11 @@ $OncostatsQuote-offset: 20px;
 .OncostatsQuote-text {
   @include font-properties(bodyText, extraLarge);
 
-  margin-bottom: $Theme-spacing-default;
+  margin-bottom: $Theme-spacing-small;
+
+  @include media('>=smallDesktop') {
+    margin-bottom: $Theme-spacing-default;
+  }
 }
 
 .OncostatsQuote-authorName {
@@ -56,7 +60,7 @@ $OncostatsQuote-offset: 20px;
 .OncostatsQuote-image {
   width: 86px;
   height: 30px;
-  margin-bottom: $Theme-spacing-small;
+  margin-bottom: $Theme-spacing-xSmall;
 
   background-image: image-url('case-studies/oncostats/quote.png');
   background-position: left center;
@@ -65,5 +69,6 @@ $OncostatsQuote-offset: 20px;
 
   @include media('>=smallDesktop') {
     height: 50px;
+    margin-bottom: $Theme-spacing-small;
   }
 }
