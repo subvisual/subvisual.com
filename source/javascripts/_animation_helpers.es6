@@ -15,33 +15,6 @@
     });
   }
 
-  function onScrollToElement(elem, visibility, callback) {
-    var $elem = $(elem);
-
-    if ($elem.length == 0) {
-      return;
-    }
-
-    var checkVisibility = function() {
-      var $viewport = $(this);
-      if ($elem.data('scrolled')) {
-        return;
-      }
-
-      var elemThreshold = $elem.offset().top + $elem.outerHeight() * visibility;
-      var viewportBottom = $viewport.scrollTop() + $viewport.height();
-
-      if (viewportBottom > elemThreshold) {
-        callback();
-        $elem.data('scrolled', true);
-      }
-    }
-
-    $(window).scroll(checkVisibility);
-    checkVisibility();
-  }
-
   window.animationHelpers = window.animationHelpers || {};
   window.animationHelpers.animateAlongPath = animateAlongPath;
-  window.animationHelpers.onScrollToElement = onScrollToElement;
 })(window)
