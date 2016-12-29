@@ -51,9 +51,10 @@ configure :build do
     options.manifest = true
     options.nice = true
     options.threads = true
+    options.allow_lossy = true
 
     options.svgo = false
-    options.jpegoptim = { allow_lossy: true, max_quality: 80 }
+    options.jpegoptim = { max_quality: 80 }
   end
 
   activate :robots, rules: [
