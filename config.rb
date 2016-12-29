@@ -47,15 +47,15 @@ configure :build do
   activate :asset_hash
   activate :gzip
 
-  activate :imageoptim do |options|
-    options.manifest = true
-    options.nice = true
-    options.threads = true
-    options.allow_lossy = true
+  # activate :imageoptim do |options|
+  #   options.manifest = true
+  #   options.nice = true
+  #   options.threads = true
+  #   options.allow_lossy = true
 
-    options.svgo = false
-    options.jpegoptim = { max_quality: 80 }
-  end
+  #   options.svgo = false
+  #   options.jpegoptim = { max_quality: 80 }
+  # end
 
   activate :robots, rules: [
     { user_agent: '*', allow: ['/'] }
