@@ -122,6 +122,7 @@ GEM
       rack-test (~> 0.6.2)
       thor (>= 0.15.2, < 2.0)
       tilt (~> 1.4.1, < 2.0)
+    middleman-critical_css (0.0.1)
     middleman-imageoptim (0.2.1)
       image_optim (~> 0.20.2)
       image_optim_pack (~> 0.2.1)
@@ -214,6 +215,7 @@ DEPENDENCIES
   dotenv
   middleman (~> 3.3.12)
   middleman-autoprefixer
+  middleman-critical_css
   middleman-es6!
   middleman-imageoptim
   middleman-livereload (~> 3.4.6)

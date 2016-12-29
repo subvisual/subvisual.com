@@ -14,5 +14,8 @@
   "author": "",
   "license": "ISC",
   "bugs": {},
-  "homepage": "https://github.com/groupbuddies/subvisual.co"
+  "homepage": "https://github.com/groupbuddies/subvisual.co",
+  "devDependencies": {
+    "critical": "^0.8.1"
+  }
 }
