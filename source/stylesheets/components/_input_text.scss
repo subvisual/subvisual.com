@@ -61,7 +61,7 @@ $InputText-label-layer: $Theme-layer-stickyElement - 1;
     100% {
       @include font-properties-on-resolution(subvisual, small, $resolution);
 
-      color: $Theme-color-poloBlue;
+      color: $Theme-color-blueyGrey;
       opacity: 1;
     }
   }
@@ -150,7 +150,6 @@ $InputText-label-layer: $Theme-layer-stickyElement - 1;
     border-color: $InputText-color-input;
   }
 }
-
 
 .InputText.is-active.InputText--animateOut {
   background-color: $InputText-backgroundColor-label;

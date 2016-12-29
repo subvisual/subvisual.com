@@ -1,7 +1,7 @@
 $SectionHeading-border: solid 1px $Theme-color-polar;
 
 .SectionHeading {
-  padding: 0 $Theme-spacing-small;
+  padding: 0 $Theme-spacing-default;
 }
 
 .SectionHeading-title {
@@ -16,6 +16,8 @@ $SectionHeading-border: solid 1px $Theme-color-polar;
   font-weight: bold;
   letter-spacing: 4px;
   text-transform: uppercase;
+
+  color: $Theme-color-gunMetal;
 
   @include media('>smallDesktop') {
     @include font-properties('subvisual', 'large');

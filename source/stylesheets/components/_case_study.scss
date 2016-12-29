@@ -7,7 +7,7 @@ $CaseStudy-image-offset: $Theme-spacing-small;
 }
 
 .CaseStudy {
-  padding: 0 $Theme-spacing-small;
+  padding: 0 $Theme-spacing-default;
 }
 
 .CaseStudy-content {
@@ -74,6 +74,7 @@ $CaseStudy-image-offset: $Theme-spacing-small;
     flex-basis: 40%;
     width: auto;
     padding-top: $Theme-spacing-large;
+    padding-right: $Theme-spacing-default;
     padding-bottom: $Theme-spacing-large;
   }
 }
@@ -97,6 +98,8 @@ $CaseStudy-image-offset: $Theme-spacing-small;
 
   margin-bottom: $Theme-spacing-xSmall;
 
+  color: $Theme-color-gunMetal;
+
   white-space: nowrap;
 }
 
@@ -117,7 +120,7 @@ $CaseStudy-image-offset: $Theme-spacing-small;
 
     .CaseStudy-details {
       padding-right: 0;
-      padding-left: $Theme-spacing-small;
+      padding-left: $Theme-spacing-default;
     }
   }
 }

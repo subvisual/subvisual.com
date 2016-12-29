@@ -2,8 +2,8 @@ $HomepageHero-icons: 'dev', 'ui', 'mobile';
 
 .HomepageHero {
   padding-top: $Theme-spacing-large;
-  padding-left: $Theme-spacing-small;
-  padding-right: $Theme-spacing-small;
+  padding-left: $Theme-spacing-default;
+  padding-right: $Theme-spacing-default;
 }
 
 .HomepageHero-container {
@@ -81,7 +81,6 @@ $HomepageHero-icons: 'dev', 'ui', 'mobile';
 
     background-position: left center;
     background-repeat: no-repeat;
-    color: #7d98ab;
 
     font-weight: $Theme-typography-fontWeight-bold;
 
