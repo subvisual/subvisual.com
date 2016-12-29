@@ -1,10 +1,15 @@
 $HomepageHero-icons: 'dev', 'ui', 'mobile';
 
 .HomepageHero {
+  padding-top: $Theme-spacing-large;
+  padding-left: $Theme-spacing-small;
+  padding-right: $Theme-spacing-small;
+}
+
+.HomepageHero-container {
   display: flex;
   width: 100%;
   max-width: $Theme-grid-maxWidth;
-  padding-top: $Theme-spacing-large;
   margin-right: auto;
   margin-left: auto;
 }
@@ -15,7 +20,8 @@ $HomepageHero-icons: 'dev', 'ui', 'mobile';
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 $Theme-spacing-default $Theme-spacing-default $Theme-spacing-small;
+  padding-right: $Theme-spacing-default;
+  padding-bottom: $Theme-spacing-default;
 
   @include media('>=smallDesktop') {
     padding-bottom: $Theme-spacing-large;

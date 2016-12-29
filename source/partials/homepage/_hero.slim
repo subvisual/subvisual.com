@@ -2,16 +2,17 @@
   .Panel.Panel--polar
     .u-navPlaceholder
     .HomepageHero
-      .HomepageHero-content
-        .HomepageHero-copy
-          h1.HomepageHero-heading
-            | We design and develop thoughtful web and mobile products
-        .HomepageHero-skill--ui UX & UI Design
-        .HomepageHero-skill--dev Web Development
-        .HomepageHero-skill--mobile Mobile Development
-      .HomepageHero-showcase
-        img.HomepageHero-image(
-          src="#{image_path('case-studies/oncostats/showcase.jpg')}"
-          srcset="#{image_path('case-studies/oncostats/showcase@2x.jpg')} 2x"
-          alt="Showcase image for Oncostats"
-        )
+      .HomepageHero-container
+        .HomepageHero-content
+          .HomepageHero-copy
+            h1.HomepageHero-heading
+              | We design and develop thoughtful web and mobile products
+          .HomepageHero-skill--ui UX & UI Design
+          .HomepageHero-skill--dev Web Development
+          .HomepageHero-skill--mobile Mobile Development
+        .HomepageHero-showcase
+          img.HomepageHero-image(
+            src="#{image_path('case-studies/oncostats/showcase.jpg')}"
+            srcset="#{image_path('case-studies/oncostats/showcase@2x.jpg')} 2x"
+            alt="Showcase image for Oncostats"
+          )
