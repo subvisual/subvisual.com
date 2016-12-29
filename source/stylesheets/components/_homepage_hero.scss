@@ -1,9 +1,13 @@
 $HomepageHero-icons: 'dev', 'ui', 'mobile';
 
 .HomepageHero {
-  padding-top: $Theme-spacing-large;
+  padding-top: $Theme-spacing-default;
   padding-left: $Theme-spacing-default;
   padding-right: $Theme-spacing-default;
+
+  @include media('>=smallDesktop') {
+    padding-top: $Theme-spacing-large;
+  }
 }
 
 .HomepageHero-container {
@@ -15,8 +19,9 @@ $HomepageHero-icons: 'dev', 'ui', 'mobile';
 }
 
 .HomepageHero-content {
-  flex: 1;
+  flex-grow: 1;
   flex-shrink: 0;
+  flex-basis: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,6 +29,7 @@ $HomepageHero-icons: 'dev', 'ui', 'mobile';
   padding-bottom: $Theme-spacing-default;
 
   @include media('>=smallDesktop') {
+    flex-basis: 50%;
     padding-bottom: $Theme-spacing-large;
   }
 }
@@ -35,6 +41,14 @@ $HomepageHero-icons: 'dev', 'ui', 'mobile';
   display: none;
 
   @include media('>tablet') {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 40%;
+    display: block;
+  }
+
+  @include media('>=smallDesktop') {
+    flex-basis: 50%;
     display: block;
   }
 }
@@ -51,12 +65,17 @@ $HomepageHero-icons: 'dev', 'ui', 'mobile';
 
 .HomepageHero-heading {
   @include font-properties(subvisual, large);
+  @include font-properties-on-resolution(subvisual, base, mobile);
 
   margin-bottom: $Theme-spacing-small;
 
   color: $Theme-color-gunMetal;
 
   font-weight: $Theme-typography-fontWeight-bold;
+
+  @include media('>=tablet') {
+    @include font-properties-on-resolution(subvisual, large, mobile);
+  }
 
   @include media('>=smallDesktop') {
     @include font-properties-on-resolution(subvisual, large, desktop);
@@ -66,7 +85,11 @@ $HomepageHero-icons: 'dev', 'ui', 'mobile';
 }
 
 [class^=HomepageHero-skill]:not(:last-child) {
-  margin-bottom: $Theme-spacing-small;
+  margin-bottom: $Theme-spacing-xSmall;
+
+  @include media('>=smallDesktop') {
+    margin-bottom: $Theme-spacing-small;
+  }
 }
 
 @each $icon in $HomepageHero-icons {
@@ -77,13 +100,24 @@ $HomepageHero-icons: 'dev', 'ui', 'mobile';
     display: flex;
     align-items: center;
     height: 32px;
-    padding-left: 50px;
+    padding-left: 40px;
 
     background-position: left center;
     background-repeat: no-repeat;
+    background-size: 22px;
 
     font-weight: $Theme-typography-fontWeight-bold;
 
     text-transform: uppercase;
+
+    @include media('>=tablet') {
+      @include font-properties-on-resolution(subvisual, small, mobile);
+    }
+
+    @include media('>=smallDesktop') {
+      padding-left: 50px;
+
+      background-size: contain;
+    }
   }
 }
