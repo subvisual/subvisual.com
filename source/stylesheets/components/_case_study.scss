@@ -2,12 +2,14 @@ $CaseStudy-colors: (articles:  #f9f6f3,  oncostats: #f0f6f9);
 $CaseStudy-shadow: 0 20px 60px 0 rgba(#000, 0.25);
 $CaseStudy-image-offset: $Theme-spacing-small;
 
-.u-overflowHidden {
-  overflow: hidden;
-}
-
 .CaseStudy {
-  padding: 0 $Theme-spacing-default;
+  @include responsive-window-margin;
+
+  margin-top: $CaseStudy-image-offset;
+
+  @include media('>smallDesktop') {
+    margin-top: 0;
+  }
 }
 
 .CaseStudy-content {
@@ -65,7 +67,7 @@ $CaseStudy-image-offset: $Theme-spacing-small;
   position: relative;
 
   width: 100%;
-  padding-right: $Theme-spacing-small;
+  padding-right: 0;
   padding-bottom: $Theme-spacing-small;
 
   @include media('>smallDesktop') {

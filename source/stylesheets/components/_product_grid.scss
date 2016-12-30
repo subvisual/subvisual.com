@@ -1,13 +1,13 @@
 .ProductGrid {
-  margin: 0 auto;
+  @include responsive-window-margin;
 
-  padding: 0 $Theme-spacing-default;
+  margin: 0 auto;
 }
 
 .ProductGrid-content {
-  max-width: $Theme-grid-maxWidth;
   display: flex;
   flex-direction: row;
+  max-width: $Theme-grid-maxWidth;
 }
 
 .ProductGrid-column {
@@ -18,7 +18,7 @@
 .ProductGrid-gap {
   margin-right: 40px;
 
-  @include media(">=smallDesktop") {
+  @include media('>=smallDesktop') {
     margin-right: 80px;
   }
 }

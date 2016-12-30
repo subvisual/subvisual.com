@@ -1,11 +1,15 @@
 $HomepageHero-icons: 'dev', 'ui', 'mobile';
 
 .HomepageHero {
-  padding-top: $Theme-spacing-default;
-  padding-left: $Theme-spacing-default;
-  padding-right: $Theme-spacing-default;
+  @include responsive-window-margin;
+
+  padding-top: $Theme-spacing-small;
 
   @include media('>=smallDesktop') {
+    padding-top: $Theme-spacing-default;
+  }
+
+  @include media('>=desktop') {
     padding-top: $Theme-spacing-large;
   }
 }

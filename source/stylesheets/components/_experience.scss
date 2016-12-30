@@ -1,5 +1,5 @@
 .Experience {
-  padding: 0 $Theme-spacing-default;
+  @include responsive-window-margin;
 }
 
 .Experience-content {
