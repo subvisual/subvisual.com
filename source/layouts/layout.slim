@@ -12,8 +12,8 @@ html.Theme itemscope='' itemtype='http://schema.org/WebPage' lang=data.site.lang
       = stylesheet_link_tag 'all'
     - else
       = partial "lazy_load_stylesheet", locals: { stylesheet_name: 'all' }
-      = partial 'load_css/cssrelpreload'
       = partial 'load_css/load_css'
+      = partial 'load_css/cssrelpreload'
 
     = yield_content :stylesheets
 
