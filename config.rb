@@ -42,10 +42,10 @@ end
 configure :build do
   set :blog_posts_json, 'https://subvisual.co'
 
-  activate :critical_css
   activate :minify_css
   activate :minify_javascript
   activate :asset_hash
+  activate :critical_css
   activate :gzip
 
   # activate :imageoptim do |options|

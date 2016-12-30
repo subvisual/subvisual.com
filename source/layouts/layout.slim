@@ -8,12 +8,7 @@ html.Theme itemscope='' itemtype='http://schema.org/WebPage' lang=data.site.lang
 
     = partial 'load_css/cssrelpreload'
     = partial 'load_css/load_css'
-    link rel='preload' href="#{asset_path(:css, 'stylesheets/all.css')}" as='style' onload="this.rel='stylesheet'"
-    noscript
-      = stylesheet_link_tag 'all'
-    javascript:
-      loadCSS("#{asset_path(:css, 'stylesheets/all.css')}")
-    = partial "lazy_load_stylesheet", stylesheet_name: 'all'
+    = partial "lazy_load_stylesheet", locals: { stylesheet_name: 'all' }
 
     = yield_content :stylesheets
 
