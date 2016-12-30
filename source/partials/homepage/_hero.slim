@@ -16,3 +16,6 @@
             srcset="#{image_path('case-studies/oncostats/showcase@2x.jpg')} 2x"
             alt="Showcase image for Oncostats"
           )
+
+= content_for :preload
+  link ref="preload" as="image" href="#{image_path('case-studies/oncostats/showcase.jpg')}"
