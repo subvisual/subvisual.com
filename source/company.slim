@@ -3,6 +3,9 @@ title: Subvisual - Company
 page: company
 ---
 
+- content_for :javascripts
+  = javascript_include_tag 'company/all'
+
 .Panel
   .u-navPlaceholder
   = partial 'company/hero'
