@@ -42,7 +42,7 @@ end
 configure :build do
   set :blog_posts_json, 'https://subvisual.co'
 
-  activate :critical_css, width: 1920, height: 1080
+  activate :critical_css, width: 1920, height: 1400
   activate :minify_css
   activate :minify_javascript
   activate :asset_hash
