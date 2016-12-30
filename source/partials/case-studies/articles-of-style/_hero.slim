@@ -3,15 +3,18 @@
     .u-navPlaceholder
     .AOSHero-content
       .AOSHero-desktopImage
-        = image_tag "/images/case-studies/articles/aos-mockup-1.png", class: "AOSHero-image"
+        = image_tag "case-studies/articles/aos-mockup-1.jpg", class: "AOSHero-image"
       .AOSHero-details
         .AOSHero-heading
           h1.AOSHero-title Articles of Style
           p.AOSHero-subtitle The uncompromising craftsmanship of the team behind Articles of Style.
           .AOSHero-mobileImage
-            = image_tag "/images/case-studies/articles/aos-mockup-1.png", class: "AOSHero-image"
+            = image_tag "case-studies/articles/aos-mockup-1.jpg", class: "AOSHero-image"
         .AOSHero-skills
           p.Text.Text--small Javascript, HTML, CSS
           a.Text.Text--small target="_blank" href="https://shop.articlesofstyle.com/"
             | https://shop.articlesofstyle.com/
   .u-defaultThenDoubleLargeMargin
+
+- content_for :preload
+  link rel="preload" as="image" href="#{image_path('case-studies/articles/aos-mockup-1.jpg')}"
