@@ -1,3 +1,5 @@
+//= require load_css/_load_css
+//= require load_css/_cssrelpreload
 //= require jquery
 //= require picturefill
 //= require fastclick
