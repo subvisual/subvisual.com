@@ -8,7 +8,7 @@ gem 'middleman-es6', github: 'vast/middleman-es6'
 gem 'middleman-imageoptim'
 gem 'middleman-livereload', '~> 3.4.6'
 gem 'middleman-robots'
-gem 'middleman-critical_css', '~> 0.0.2'
+gem 'middleman-critical_css', '~> 0.0.3'
 gem 'pry'
 gem 'rake'
 gem 'scss_lint', require: false
