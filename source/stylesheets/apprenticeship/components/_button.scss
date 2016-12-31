@@ -1,0 +1,8 @@
+.ButtonSecondary.ButtonSecondary--fixedWidth,
+.ButtonPrimary.ButtonPrimary--fixedWidth {
+  width: 200px;
+
+  @include media('>tablet') {
+    width: 280px;
+  }
+}

@@ -1,0 +1,60 @@
+---
+title: Subvisual - Development Apprenticeship
+page: development
+---
+
+- content_for :stylesheets
+  = stylesheet_link_tag "apprenticeship/all"
+
+.Panel.Panel--alternative
+  .u-navPlaceholder
+  header.HorizontalGrid
+    .HorizontalGrid-cell
+      .GridCell.GridCell--alignCenter
+        .GridCell-content
+          .u-largeThenDoubleLargeMargin
+          .ContentFormatter.ContentFormatter--centerHorizontally
+            h1.Heading.Heading--brandLarge.Heading--large
+              span.Heading-highlight> Development
+              span Apprenticeship
+          .u-defaultMargin
+          h1.Heading What is your experience with developing for the web?
+          .u-smallMargin
+          p Developers at Subvisual have a strong experience in building and shipping applications following a test-driven development process, with high-quality standards.
+          br
+          p Our Development Apprenticeship aims to set you up into working with those standards in mind and accepting nothing less.
+          .u-defaultThenLargeMargin
+
+.HorizontalGrid.HorizontalGrid--darkFrame
+  .HorizontalGrid-cell
+    .GridCell.GridCell--alignRight
+      .GridCell-content
+        .u-defaultThenLargeMargin
+        .ContentFormatter.ContentFormatter--centerHorizontally
+          .u-beginnerBallooon
+        .u-smallMargin
+        h1.Heading Beginner
+        .u-smallMargin
+        p You’re not quite ready for taking the apprenticeship just yet, but you definitely have the right spirit and we can help you get there. We recommend you taking Creators School Development course, that will get you more than ready.
+        .u-smallThenDefaultMargin
+        .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft
+          = link_to "Learn More", "http://creatorsschool.com/", target: '_blank', class: "ButtonPrimary"
+        .u-defaultThenLargeMargin
+
+  .HorizontalGrid-cell
+    .GridCell
+      .GridCell-content
+        .u-defaultThenLargeMargin
+        .ContentFormatter.ContentFormatter--centerHorizontally
+          .u-intermediateBalloon
+        .u-smallMargin
+        h1.Heading Intermediate
+        .u-smallMargin
+        p You've got some programming skills. You understand the web and you even managed to get some of your own ideas up and running. You're ready to take the next step, to improve your skills as a developer, as a team member, in a professional environment.
+        .u-smallThenDefaultMargin
+        .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft
+          = link_to "Apply For Development", "/apprenticeship/development/apply", class: "ButtonPrimary"
+        .u-defaultThenLargeMargin
+
+= partial 'subvisual_separator'
+= partial 'footer'

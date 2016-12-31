@@ -1,0 +1,40 @@
+@mixin panel-background($image, $height, $position) {
+  min-height: $height;
+
+  background-image: image-url($image);
+  background-size: cover;
+  background-repeat: none;
+  background-position: $position;
+}
+
+.u-panel {
+  background-color: $Theme-color-polar;
+}
+
+.u-panelAction {
+  background-color: $Theme-color-horizon;
+}
+
+.u-panelAlternative {
+  background-color: $Theme-color-white;
+}
+
+@include media('>tablet') {
+  .u-panelApprenticeDesign {
+    @include panel-background('apprenticeship/apprentice-design.jpg', 600px, center left);
+  }
+
+  .u-panelApprenticeDevelopment {
+    @include panel-background('apprenticeship/apprentice-development.jpg', 600px, center right);
+  }
+}
+
+@include media('<=tablet') {
+  .u-panelApprenticeDesign {
+    @include panel-background('apprenticeship/apprentice-design-small.jpg', 300px, center left);
+  }
+
+  .u-panelApprenticeDevelopment {
+    @include panel-background('apprenticeship/apprentice-development-small.jpg', 300px, center right);
+  }
+}

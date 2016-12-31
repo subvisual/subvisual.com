@@ -1,0 +1,45 @@
+@charset 'utf-8';
+
+// @import 'font-awesome-compass';
+// @import 'font-awesome';
+
+@import 'variables';
+@import 'blue';
+
+@import 'components/base';
+@import 'utilities/base';
+
+.Logo {
+  height: 90px;
+
+  @include media('<=tablet') {
+    height: 60px;
+  }
+}
+
+.u-mediaPlaceholder {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: $Theme-color-polar;
+}
+
+.u-visibilityHidden {
+  visibility: hidden;
+}
+
+@include media('<=tablet') {
+  .u-centerOnMobile {
+    justify-content: center;
+
+    text-align: center;
+  }
+}
+
+.Paragraph {
+  margin-bottom: $Theme-spacing-small;
+}
+
+.u-italic {
+  font-style: italic;
+}

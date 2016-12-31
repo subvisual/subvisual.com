@@ -1,0 +1,66 @@
+.u-defaultThenLargeMargin
+.HorizontalGrid
+  .HorizontalGrid-cell
+    .GridCell.GridCell--alignCenter
+      .GridCell-content
+        .ContentFormatter.ContentFormatter--centerHorizontally
+          object data="#{image_path('blue/subvisual_separator.svg')}" type="image/svg+xml"
+
+.u-defaultThenLargeMargin
+
+.HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--withGutters.u-largeMargin.u-exceptSmall
+  .HorizontalGrid-cell
+    .SitemapTopic
+      h1.SitemapTopic-heading
+        | Work
+      .u-xSmallMargin
+      ul
+        li = link_to 'Product Development', '/work/product-development', class: 'SitemapTopic-link'
+        li = link_to 'Consulting', '/work/consulting', class: 'SitemapTopic-link'
+        li = link_to 'Training', '/work/training', class: 'SitemapTopic-link'
+        li = link_to 'Design Sprint', '/work/product-development/design-sprint', class: 'SitemapTopic-link'
+        li = link_to 'MDP', '/work/product-development/mdp', class: 'SitemapTopic-link'
+
+  .HorizontalGrid-cell
+    .SitemapTopic
+      h1.SitemapTopic-heading
+        | Company
+      .u-xSmallMargin
+      ul.SitemapTopic-links
+        li = link_to 'History', '/company#history', class: 'SitemapTopic-link'
+        li = link_to 'Values', '/company#values', class: 'SitemapTopic-link'
+        li = link_to 'Team', '/company#team', class: 'SitemapTopic-link'
+        li = link_to 'Join Us', '/company/join-us', class: 'SitemapTopic-link'
+
+  .HorizontalGrid-cell
+    .SitemapTopic
+      h1.SitemapTopic-heading
+        | Community
+      .u-xSmallMargin
+      ul.SitemapTopic-links
+        li = link_to 'Creators School', '/community#creatorsschool', class: 'SitemapTopic-link'
+        li = link_to 'RubyConf Portugal', '/community#rubyconfpt', class: 'SitemapTopic-link'
+        li = link_to 'BragaRB', '/community#bragarb', class: 'SitemapTopic-link'
+        li = link_to 'BragaJS', '/community#bragajs', class: 'SitemapTopic-link'
+
+  .HorizontalGrid-cell
+    .SitemapTopic
+      h1.SitemapTopic-heading
+        | Follow Us
+      .u-xSmallMargin
+      ul.SitemapTopic-links
+        li = link_to 'Blog', '/blog', class: 'SitemapTopic-link'
+        li = link_to 'Twitter', 'https://twitter.com/subvisual', target: :blank, class: 'SitemapTopic-link'
+        li = link_to 'Facebook', 'https://www.facebook.com/subvisual.co', target: :blank, class: 'SitemapTopic-link'
+        li = link_to 'Github', 'https://github.com/subvisual', target: :blank, class: 'SitemapTopic-link'
+        li = link_to 'Dribbble', 'https://dribbble.com/subvisual', target: :blank, class: 'SitemapTopic-link'
+
+.Footer
+  .Footer-credits
+    span.Footer-handcrafted Handcrafted by
+    span.Footer-subvisual SUBVISUAL
+    span.Footer-copyright © 2015 Copyright by Subvisual
+  = link_to 'https://subvisual.co/hire-us', class: 'Footer-work'
+    span.Footer-interested Interested in our services?
+    .Footer-workText
+      .EngagementLink.EngagementLink--iconRight.EngagementLink--light Let's get to work

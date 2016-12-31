@@ -1,0 +1,80 @@
+$InputGroup-icon-plus-size: 25px;
+
+.InputGroup {
+  position: relative;
+
+  width: 100%;
+
+  padding: $Theme-spacing-xSmall;
+}
+
+.InputGroup-label {
+  @include font-properties(subvisual, small);
+  display: block;
+
+  margin-bottom: $Theme-spacing-xSmall;
+
+  font-weight: $Theme-typography-fontWeight-bold;
+  text-transform: uppercase;
+}
+
+.InputGroup-input {
+  @include font-properties(bodyText, base);
+
+  width: 100%;
+
+  border: 0;
+
+  color: $Theme-palette-text-body-default;
+
+  transition: all 1s linear;
+}
+
+.InputGroup-textarea {
+  @include font-properties(bodyText, base);
+
+  width: 100%;
+  height: 6em;
+
+  resize: none;
+
+  border: 0;
+
+  color: $Theme-palette-text-body-default;
+}
+
+.InputGroup-item {
+  @include font-properties(bodyText, base);
+
+  color: $Theme-color-limedSpruce;
+}
+
+.InputGroup-iconPlus {
+  position: absolute;
+  top: 50%;
+  right: $Theme-spacing-xSmall;
+
+  display: none;
+
+  width: $InputGroup-icon-plus-size;
+  height: $InputGroup-icon-plus-size;
+
+  background-color: $Theme-color-yellowOrange;
+  border-radius: 50%;
+
+  color: $Theme-color-white;
+
+  line-height: $InputGroup-icon-plus-size;
+  text-align: center;
+  text-decoration: none;
+
+  transform: translateY(-50%);
+}
+
+.InputGroup.InputGroup--icon {
+  padding-right: $InputGroup-icon-plus-size + $Theme-spacing-default;
+
+  .InputGroup-iconPlus {
+    display: block;
+  }
+}

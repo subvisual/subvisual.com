@@ -1,0 +1,107 @@
+@mixin background-clouds($image-url: '', $container-width: 0px, $animation-duration: 100s, $top: 0) {
+  &:before,
+  &:after {
+    position: absolute;
+    top: $top;
+    left: 0;
+
+    width: $container-width;
+    height: calc(100% - #{$top});
+
+    background-image: image-url($image-url);
+    background-size: contain;
+    background-repeat: repeat;
+
+    transition: all 1s linear;
+    transform: translateX(0);
+
+    content: ' ';
+
+    animation-name:  clouds-animation;
+    animation-duration: $animation-duration;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  &:before {
+    animation-delay: - $animation-duration / 2;
+  }
+}
+
+.Panel.Panel--clouds {
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+
+.Panel-clouds1 {
+  @include background-clouds('apprenticeship/clouds1.svg', 5444px, 800s, $Theme-nav-height-mobile);
+  z-index: -1;
+}
+
+.Panel-clouds2 {
+  @include background-clouds('apprenticeship/clouds2.svg', 5088px, 400s, $Theme-nav-height-mobile);
+  z-index: -2;
+}
+
+.Panel-balloonWrapper {
+  z-index: -3;
+
+  position: absolute;
+
+  bottom: $Theme-spacing-default;
+  right: $Theme-spacing-small;
+
+  width: 180px;
+  height: 180px;
+}
+
+.Panel-balloon {
+  width: 100%;
+  height: 100%;
+
+  background-image: image-url('apprenticeship/balloon.png');
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center;
+
+  transform-origin: 50% 18%;
+
+  animation-name:  balloon;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@include media('>tablet') {
+  .Panel-clouds1 {
+    @include background-clouds('apprenticeship/clouds1.svg', 5444px, 800s, $Theme-nav-height-desktop);
+    z-index: -1;
+  }
+
+  .Panel-clouds2 {
+    @include background-clouds('apprenticeship/clouds2.svg', 5088px, 400s, $Theme-nav-height-desktop);
+    z-index: -2;
+  }
+}
+
+@keyframes balloon {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(-25deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
+@keyframes clouds-animation {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

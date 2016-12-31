@@ -1,0 +1,22 @@
+.ApplicationButtons {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .ApplicationButtons-button:first-child {
+    margin-bottom: $Theme-spacing-small;
+  }
+}
+
+@include media('>tablet') {
+  .ApplicationButtons {
+    flex-direction: row;
+    justify-content: space-between;
+
+    .ApplicationButtons-button:first-child {
+      margin-bottom: 0;
+    }
+  }
+}

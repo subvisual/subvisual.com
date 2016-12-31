@@ -1,0 +1,14 @@
+.UserPicture {
+  width: 60px;
+  height: 60px;
+
+  background-color: $Theme-color-polar;
+  border-radius: 50%;
+}
+
+@include media('>tablet') {
+  .UserPicture {
+    width: 100px;
+    height: 100px;
+  }
+}
