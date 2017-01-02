@@ -78,7 +78,7 @@
     width: 6000px;
     height: 2000px;
 
-    background-color: #cdb187;
+    background-color: $AOS-color;
   }
 
   @include media('>=smallDesktop') {

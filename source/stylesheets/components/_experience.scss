@@ -33,7 +33,7 @@
   @include media('>=smallDesktop') {
     flex-basis: 540px;
     margin-top: 0;
-    margin-right: $Theme-spacing-small;
+    margin-right: $Theme-spacing-default;
   }
 }
 
