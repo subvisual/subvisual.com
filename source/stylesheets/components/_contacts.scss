@@ -1,0 +1,112 @@
+.Contacts {
+  @include responsive-window-margin;
+}
+
+.Contacts-content {
+  display: flex;
+  flex-direction: column;
+  max-width: $Theme-grid-maxWidth;
+  margin: 0 auto;
+
+  @include media('>=tablet') {
+    flex-direction: row;
+  }
+}
+
+.Contacts-contact {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 50%;
+
+  margin-bottom: $Theme-spacing-default;
+
+
+  @include media('>=tablet') {
+    &:first-child {
+      margin-right: $Theme-spacing-small;
+    }
+  }
+}
+
+.Contacts-details {
+  margin-right: $Theme-spacing-small;
+  margin-left: $Theme-spacing-default;
+
+  @include media('>=smallDesktop') {
+    margin-right: $Theme-spacing-default;
+    margin-left: $Theme-spacing-large;
+  }
+
+  @include media('>=desktop') {
+    margin-right: $Theme-spacing-large;
+    margin-left: $Theme-spacing-xlarge;
+  }
+}
+
+.Contacts-image {
+  max-height: 100%;
+  max-width: 100%;
+  box-shadow: 0 20px 60px 0 rgba(#000, 0.25);
+}
+
+.Contacts-title {
+  @include font-properties(subvisual);
+
+  margin-bottom: $Theme-spacing-xSmall;
+
+  color: $Theme-color-limedSpruce;
+}
+
+.Contacts-address {
+  @include font-properties(bodyText, small);
+
+  position: relative;
+
+  margin-bottom: $Theme-spacing-xSmall;
+
+  font-style: normal;
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    top: 4px;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    background-image: image-url('homepage/location.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    transform: translateX(-20px - $Theme-spacing-xSmall);
+  }
+}
+
+.Contacts-time {
+  @include font-properties(bodyText, small);
+
+  position: relative;
+
+  font-style: normal;
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    top: 3px;
+    left: 0;
+
+    width: 15px;
+    height: 15px;
+
+    background-image: image-url('homepage/clock.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    transform: translateX(-16px - $Theme-spacing-xSmall);
+  }
+}

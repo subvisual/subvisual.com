@@ -1,26 +1,26 @@
-.Panel.Panel--fishTank
-  .u-defaultThenDoubleLargeMargin
-  .GridCell.GridCell--alignCenter.u-smallThenDefaultMargin
-    .GridCell-content
-      .ContentFormatter.ContentFormatter--centerHorizontally
-        h2.Heading.Heading--brandLarge
-          ' Based in a dynamic and young city in Portugal called
-          span.Heading-light Braga
-  .ContentFormatter.ContentFormatter--centerHorizontally.u-defaultThenDoubleLargeMargin
-    .ContactsGrid
-      .ContactsGrid-contact
-        .ContentFormatter.ContentFormatter--centerHorizontallyThenRight
-          p.Text.Text--light.Text--strong.u-xSmallMargin contact@subvisual.co
-          p.Text.Text--light
-            ' +351
-            span.Text--light.Text.Text--strong 916 748 994
-      .ContactsGrid-image
-        img(
-          src="#{image_path('footer-logo.png')}"
-          srcset="#{image_path('footer-logo.png')} 150w, #{image_path('footer-logo@2x.png')} 300w"
-          sizes="(min-width: 650px) 150px, 75px"
-          alt="Subvisual logo"
-        )
-      .ContactsGrid-address
-        p.Text.Text--light.Text--strong
-          ' Pólo de Negócios de Braga
+.u-defaultThenDoubleLargeMargin
+
+.Contacts
+  .Contacts-content
+    .Contacts-contact
+      img.Contacts-image(
+        src="#{image_path('homepage/braga.jpg')}"
+        srcset="#{image_path('homepage/braga@2x.jpg')} 2x"
+        alt="A photo of Braga"
+      )
+      .Contacts-details
+        h3.Contacts-title Braga, Portugal
+        address.Contacts-address Polo de Negócios de Braga, Avenida D. JOAO II 404, 4º andar, Sala 45, 4715-275 Braga. Get directions
+        time.Contacts-time 4:48 pm
+    .Contacts-contact
+      img.Contacts-image(
+        src="#{image_path('homepage/boston.jpg')}"
+        srcset="#{image_path('homepage/boston@2x.jpg')} 2x"
+        alt="A photo of Boston"
+      )
+      .Contacts-details
+        h3.Contacts-title Boston, USA
+        address.Contacts-address CIC Cambridge, 1 Broadway, Cambridge, MA 02142, USA Get directions
+        time.Contacts-time 4:48 pm
+
+.u-defaultThenDoubleLargeMargin

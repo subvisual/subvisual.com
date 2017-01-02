@@ -7,10 +7,6 @@
   background-size: cover;
 }
 
-.Panel.Panel--fishTank {
-  @include retina-background('homepage_map', 'jpg');
-}
-
 .Panel.Panel--team {
   @include retina-background('company/join_us_mobile', 'jpg');
   background-position: center;
