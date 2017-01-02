@@ -1,3 +1,5 @@
+@import 'utilities/responsive-background-image';
+
 .AOSHero {
   @include responsive-window-margin;
 
@@ -124,4 +126,34 @@
     font-size: 20px;
     line-height: 28px;
   }
+}
+
+.AOSHero-skillStack,
+.AOSHero-skillWeb {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  margin: $Theme-spacing-small;
+}
+
+.AOSHero-skillStack:before,
+.AOSHero-skillWeb:before {
+  content: '';
+
+  background-position: center;
+
+  margin-right: $Theme-spacing-small;
+}
+
+.AOSHero-skillStack:before {
+  width: 32px;
+  height: 21px;
+  @include responsive-background-image('icons/stack');
+}
+
+.AOSHero-skillWeb:before {
+  width: 28px;
+  height: 22px;
+  @include responsive-background-image('icons/website');
 }

@@ -6,6 +6,8 @@
 
   background-color: #f6f2ea;
 
+  color: $Theme-color-gunMetal;
+
   @include media('>=smallDesktop') {
     padding-top: $Theme-spacing-xlarge;
     padding-bottom: $Theme-spacing-xlarge;
@@ -31,13 +33,13 @@
 }
 
 .AOSQuote-text {
-  @include font-properties(bodyText, small);
+  @include font-properties(bodyText, large);
 
   font-style: italic;
 }
 
 .AOSQuote-author {
-  @include font-properties(bodyText, small);
+  @include font-properties(bodyText, large);
 
   position: relative;
 
@@ -66,7 +68,7 @@
     width: 60px;
     height: 60px;
 
-    background: black;
+    @include responsive-background-image("clients/aos-dan");
 
     border-radius: 50%;
 
@@ -77,8 +79,27 @@
   }
 }
 
+.AOSQuote-icon {
+  font-size: 70px;
+  line-height: 10px;
+  font-style: italic;
+}
+
+.AOSQuote-icon:before {
+  content: '“';
+
+  color: $Theme-color-gunMetal;
+  vertical-align: sub;
+
+  display: inline-block;
+}
+
 .AOSQuote-imageWrapper {
   flex: 1.3;
+
+  @include media('<smallDesktop') {
+    margin-bottom: $Theme-spacing-default;
+  }
 }
 
 .AOSQuote-image {
