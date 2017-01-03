@@ -20,7 +20,6 @@
 
   margin-bottom: $Theme-spacing-default;
 
-
   @include media('>=tablet') {
     &:first-child {
       margin-right: $Theme-spacing-small;
@@ -65,6 +64,10 @@
   margin-bottom: $Theme-spacing-xSmall;
 
   font-style: normal;
+
+  a {
+    color: inherit;
+  }
 
   &::before {
     content: '';
