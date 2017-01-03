@@ -2,29 +2,35 @@ recent:
   - name: Cadoo
     tech: Design, Rails, JavaScript
     image_url: "/images/work/cadoo.jpg"
+    url: "https://cadoo.io"
 
   - name: Articles of Style
-    tech: Design, Rails, JavaScript
+    tech: Design, JavaScript
     image_url: "/images/work/articles-of-style.jpg"
+    url: "https://test.subvisual.co/case-studies/articles-of-style/"
 
-  - name: GoTasker
+  - name: Monoji
     tech: Design, Rails, JavaScript
-    image_url: "/images/work/cadoo.jpg"
+    image_url: "/images/work/monoji.jpg"
+    url: "https://monoji.io"
 
   - name: OncoStats
     tech: Design, Rails, JavaScript
-    image_url: "/images/work/cadoo.jpg"
+    image_url: "https://test.subvisual.co/case-studies/oncostats/"
 
 internal:
   - name: Tetrominos
     tech: iOS, Android, Unity
     image_url: "/images/work/tetrominos.jpg"
     abs_image_url: "/images/work/tetrominos-foreground.png"
+    url: "https://tetrominos.subvisual.co"
 
   - name: Mirror Conf 2016
     tech: Design, Ruby, Javascript
     image_url: "/images/work/mirrorconf.jpg"
+    url: "http://mirrorconf.com"
 
   - name: Shelf
     tech: Design, Rails
     image_url: "/images/work/mirrorconf.jpg"
+    url: "https://getshelf.io"
