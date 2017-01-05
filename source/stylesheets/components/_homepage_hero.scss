@@ -1,4 +1,5 @@
 $HomepageHero-icons: 'dev', 'ui', 'mobile';
+$HomepageHero-offset: 40px;
 
 .HomepageHero {
   @include responsive-window-margin;
@@ -16,6 +17,7 @@ $HomepageHero-icons: 'dev', 'ui', 'mobile';
 
 .HomepageHero-container {
   display: flex;
+  justify-content: space-between;
   width: 100%;
   max-width: $Theme-grid-maxWidth;
   margin-right: auto;
@@ -30,11 +32,12 @@ $HomepageHero-icons: 'dev', 'ui', 'mobile';
   flex-direction: column;
   justify-content: center;
   padding-right: $Theme-spacing-default;
-  padding-bottom: $Theme-spacing-default;
+  padding-bottom: $Theme-spacing-small;
 
   @include media('>=smallDesktop') {
+    flex-grow: 0;
     flex-basis: 50%;
-    padding-bottom: $Theme-spacing-large;
+    padding-bottom: $Theme-spacing-default;
   }
 }
 
@@ -51,10 +54,18 @@ $HomepageHero-icons: 'dev', 'ui', 'mobile';
     display: block;
   }
 
-  @include media('>=smallDesktop') {
-    flex-basis: 50%;
+  @include media('>=desktop') {
+    flex-grow: 0;
+    flex-basis: 590px;
     display: block;
   }
+}
+
+.HomepageHero-showcaseDescription {
+  position: absolute;
+  top: calc(100% + #{$HomepageHero-offset + $Theme-spacing-small});
+  max-width: 360px;
+  left: 0;
 }
 
 .HomepageHero-image {
@@ -62,9 +73,13 @@ $HomepageHero-icons: 'dev', 'ui', 'mobile';
   top: 0;
   left: 0;
 
-  height: 100%;
+  height: calc(100% + #{$HomepageHero-offset});
 
   box-shadow: 0 20px 60px 0 rgba(#000, 0.25);
+
+  @include media('>=desktop') {
+    right: 0;
+  }
 }
 
 .HomepageHero-heading {
