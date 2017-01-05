@@ -16,7 +16,8 @@ recent:
 
   - name: OncoStats
     tech: Design, Rails, JavaScript
-    image_url: "https://test.subvisual.co/case-studies/oncostats/"
+    image_url: "/images/work/oncostats.jpg"
+    url: "https://test.subvisual.co/case-studies/oncostats/"
 
 internal:
   - name: Tetrominos
