@@ -59,7 +59,7 @@
     clip-path: inset(10px);
 
     @include media(">=smallDesktop") {
-      clip-path: inset(15px);
+      clip-path: inset(20px);
     }
   }
 }

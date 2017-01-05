@@ -1,18 +1,18 @@
 recent:
-  - name: Cadoo
+  - name: Monoji
     tech: Design, Rails, JavaScript
-    image_url: "/images/work/cadoo.jpg"
-    url: "https://cadoo.io"
+    image_url: "/images/work/monoji.jpg"
+    url: "https://monoji.io"
 
   - name: Articles of Style
     tech: Design, JavaScript
     image_url: "/images/work/articles-of-style.jpg"
     url: "https://test.subvisual.co/case-studies/articles-of-style/"
 
-  - name: Monoji
+  - name: Cadoo
     tech: Design, Rails, JavaScript
-    image_url: "/images/work/monoji.jpg"
-    url: "https://monoji.io"
+    image_url: "/images/work/cadoo.jpg"
+    url: "https://cadoo.io"
 
   - name: OncoStats
     tech: Design, Rails, JavaScript
@@ -33,5 +33,5 @@ internal:
 
   - name: Shelf
     tech: Design, Rails
-    image_url: "/images/work/mirrorconf.jpg"
+    image_url: "/images/work/shelf.jpg"
     url: "https://getshelf.io"
