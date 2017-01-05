@@ -45,7 +45,7 @@
 
 .ProductShowcase-image,
 .ProductShowcase-absImage {
-  transition: transform 0.3s ease-out, clip-path 0.2s ease-out;
+  transition: transform .8s ease-out, clip-path .8s ease-out;
   clip-path: inset(0px);
 }
 
@@ -59,7 +59,7 @@
     clip-path: inset(10px);
 
     @include media(">=smallDesktop") {
-      clip-path: inset(20px);
+      clip-path: inset(15px);
     }
   }
 }
