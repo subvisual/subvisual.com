@@ -12,11 +12,11 @@
           .HomepageHero-skill--mobile Mobile Development
         .HomepageHero-showcase
           img.HomepageHero-image(
-            src="#{image_path('case-studies/oncostats/showcase.jpg')}"
-            srcset="#{image_path('case-studies/oncostats/showcase@2x.jpg')} 2x"
+            src="#{image_path('homepage/showcase.jpg')}"
+            srcset="#{image_path('homepage/showcase@2x.jpg')} 2x"
             alt="Showcase image for Oncostats"
           )
 
 - content_for :preload
-  link rel="preload" as="image" href="#{image_path('case-studies/oncostats/showcase@2x.jpg')}"
-  link rel="preload" as="image" href="#{image_path('case-studies/oncostats/showcase.jpg')}"
+  link rel="preload" as="image" href="#{image_path('homepage/showcase@2x.jpg')}"
+  link rel="preload" as="image" href="#{image_path('homepage/showcase.jpg')}"
