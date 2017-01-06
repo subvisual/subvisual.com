@@ -7,19 +7,12 @@
 
   text-decoration: none;
 
-  position: relative;
 }
 
-.ProductShowcase-absImage {
-  position: absolute;
-  width: 120%;
-  top: 0;
-  bottom: 0;
-  left: -10%;
-  right: -10%;
+.ProductShowcase-images {
+  position: relative;
 
-  margin: auto;
-  pointer-events: none;
+  margin: 40px 0 20px;
 }
 
 .ProductShowcase-title {
@@ -37,27 +30,24 @@
 .ProductShowcase-absImageWrapper {
   position: relative;
 
-
-
   overflow: hidden;
   transition: transform .8s ease-out;
 }
 
 .ProductShowcase-imageWrapper {
   box-shadow: 0 20px 80px 0 #bbc3c9;
-
-  margin: 40px 0 20px;
 }
 
 .ProductShowcase-absImageWrapper {
   position: absolute;
-  width: 110%;
-  height: 600px;
-  margin: auto;
-  top: 40px;
+  top: 0;
+  bottom: 0;
 
   display: flex;
   align-items: center;
+
+  width: 120%;
+  margin-left: -10%;
 }
 
 .ProductShowcase-image {
