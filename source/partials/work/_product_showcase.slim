@@ -1,8 +1,9 @@
 a.ProductShowcase target="_blank" href=product.url
-  .ProductShowcase-images
+  .ProductShowcase-imageWrapper
     = retina_tag(product.image_url, class: "ProductShowcase-image", alt: product.image_alt)
-    - if product.abs_image_url
-      = retina_tag(product.abs_image_url, class: "ProductShowcase-absImage", alt: product.abs_image_alt)
+  - if product.abs_image_url
+    .ProductShowcase-absImageWrapper
+      = retina_tag(product.abs_image_url, class: "ProductShowcase-image", alt: product.abs_image_alt)
 
   h2.ProductShowcase-title = product.name
   .ProductShowcase-tech = product.tech

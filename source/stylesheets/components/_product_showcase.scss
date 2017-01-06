@@ -6,18 +6,8 @@
   margin-bottom: 40px;
 
   text-decoration: none;
-}
 
-.ProductShowcase-images {
   position: relative;
-
-  margin: 40px 0 20px;
-}
-
-.ProductShowcase-image {
-  width: 100%;
-
-  box-shadow: 0 20px 80px 0 #bbc3c9;
 }
 
 .ProductShowcase-absImage {
@@ -43,23 +33,45 @@
   color: $Theme-color-blueyGrey;
 }
 
-.ProductShowcase-image,
-.ProductShowcase-absImage {
-  transition: transform .8s ease-out, clip-path .8s ease-out;
-  clip-path: inset(0px);
+.ProductShowcase-imageWrapper,
+.ProductShowcase-absImageWrapper {
+  position: relative;
+
+
+
+  overflow: hidden;
+  transition: transform .8s ease-out;
+}
+
+.ProductShowcase-imageWrapper {
+  box-shadow: 0 20px 80px 0 #bbc3c9;
+
+  margin: 40px 0 20px;
+}
+
+.ProductShowcase-absImageWrapper {
+  position: absolute;
+  width: 110%;
+  height: 600px;
+  margin: auto;
+  top: 40px;
+
+  display: flex;
+  align-items: center;
+}
+
+.ProductShowcase-image {
+  width: 100%;
+  display: block;
+  transition: transform .8s ease-out;
 }
 
 .ProductShowcase:hover {
-  .ProductShowcase-image,
-  .ProductShowcase-absImage {
-    transform: scale(1.05);
+  .ProductShowcase-imageWrapper {
+    transform: scale(0.95);
   }
 
   .ProductShowcase-image {
-    clip-path: inset(10px);
-
-    @include media(">=smallDesktop") {
-      clip-path: inset(20px);
-    }
+    transform: scale(1.10);
   }
 }
