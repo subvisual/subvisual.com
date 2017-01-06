@@ -7,7 +7,7 @@ recent:
   - name: Articles of Style
     tech: Design, JavaScript
     image_url: "/images/work/articles-of-style.jpg"
-    url: "https://test.subvisual.co/case-studies/articles-of-style/"
+    url: "/case-studies/articles-of-style/"
 
   - name: Cadoo
     tech: Design, Rails, JavaScript
@@ -17,7 +17,7 @@ recent:
   - name: OncoStats
     tech: Design, Rails, JavaScript
     image_url: "/images/work/oncostats.jpg"
-    url: "https://test.subvisual.co/case-studies/oncostats/"
+    url: "/case-studies/oncostats/"
 
 internal:
   - name: Tetrominos
