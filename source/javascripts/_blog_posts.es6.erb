@@ -13,6 +13,7 @@
       posts.splice(0, 2).forEach(post => {
         const author = post.author;
         const template = $('#blog-post-template').clone().find('.PostsPreview-post');
+        template.find('.blog-post-href').attr('href', '<%= config[:blog_posts_json] %>' + post.path);
         template.find('.blog-post-title').html(post.title);
         template.find('.blog-post-content').html(post.processed_intro);
         template.find('.blog-post-author-picture').attr('src', '<%= config[:blog_posts_json] %>/' + author.photo_url);

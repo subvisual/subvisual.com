@@ -32,6 +32,10 @@ $PostsPreview-border: 1px solid $Theme-color-polar;
   }
 }
 
+.PostsPreview-postURL {
+  text-decoration: none;
+}
+
 .PostsPreview-postTitle {
   margin-bottom: $Theme-spacing-small;
 }
