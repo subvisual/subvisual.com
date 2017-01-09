@@ -6,17 +6,21 @@
     .SectionHeading-content
       h1.SectionHeading-title Recent Work
 
-  .u-smallThenDefaultMargin
+  .u-defaultThenLargeMargin
 
   .ProductGrid
     .ProductGrid-content
       .ProductGrid-column
-        = partial "work/product_showcase.slim", locals: { product: data.work.recent[0] }
-        = partial "work/product_showcase.slim", locals: { product: data.work.recent[1] }
+        .ProductGrid-product
+          = partial "work/product_showcase.slim", locals: { product: data.work.recent[0] }
+        .ProductGrid-product
+          = partial "work/product_showcase.slim", locals: { product: data.work.recent[1] }
 
       .ProductGrid-gap
 
       .ProductGrid-column
-        = partial "work/product_showcase.slim", locals: { product: data.work.recent[2] }
-        = partial "work/product_showcase.slim", locals: { product: data.work.recent[3] }
+        .ProductGrid-product
+          = partial "work/product_showcase.slim", locals: { product: data.work.recent[2] }
+        .ProductGrid-product
+          = partial "work/product_showcase.slim", locals: { product: data.work.recent[3] }
   .u-defaultThenLargeMargin

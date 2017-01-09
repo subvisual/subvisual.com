@@ -15,9 +15,17 @@
 }
 
 .ProductGrid-gap {
-  margin-right: 40px;
+  margin-right: $Theme-spacing-default;
 
   @include media('>=smallDesktop') {
-    margin-right: 80px;
+    margin-right: $Theme-spacing-large;
+  }
+}
+
+.ProductGrid-product {
+  margin-bottom: $Theme-spacing-default;
+
+  @include media('>=smallDesktop') {
+    margin-bottom: $Theme-spacing-large;
   }
 }

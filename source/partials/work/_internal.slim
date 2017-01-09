@@ -4,17 +4,20 @@
   .SectionHeading-content
     .SectionHeading-title Internal Products
 
-.u-smallThenDefaultMargin
+.u-defaultThenLargeMargin
 
 .ProductGrid
   .ProductGrid-content
     .ProductGrid-column
-      = partial "work/product_showcase.slim", locals: { product: data.work.internal[0] }
+      .ProductGrid-product
+        = partial "work/product_showcase.slim", locals: { product: data.work.internal[0] }
 
     .ProductGrid-gap
 
     .ProductGrid-column
-      = partial "work/product_showcase.slim", locals: { product: data.work.internal[1] }
-      = partial "work/product_showcase.slim", locals: { product: data.work.internal[2] }
+      .ProductGrid-product
+        = partial "work/product_showcase.slim", locals: { product: data.work.internal[1] }
+      .ProductGrid-product
+        = partial "work/product_showcase.slim", locals: { product: data.work.internal[2] }
 
 .u-defaultThenLargeMargin
