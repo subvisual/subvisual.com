@@ -4,12 +4,13 @@ $AOSNavigation-max-width: 540px;
   @include responsive-window-margin;
 
   padding-top: $Theme-spacing-default;
+  padding-bottom: $Theme-spacing-default;
 
   background-color: #f6f2ea;
 
   @include media('>=smallDesktop') {
     padding-top: $Theme-spacing-large;
-    padding-bottom: $Theme-spacing-xlarge;
+    padding-bottom: $Theme-spacing-large;
 
     background: transparent;
   }

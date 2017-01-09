@@ -1,7 +1,7 @@
 .AOSQuote {
   @include responsive-window-margin;
 
-  padding-top: $Theme-spacing-default;
+  padding-top: $Theme-spacing-small;
   padding-bottom: $Theme-spacing-default;
 
   background-color: #f6f2ea;

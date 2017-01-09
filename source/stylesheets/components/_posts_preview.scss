@@ -1,0 +1,61 @@
+$PostsPreview-border: 1px solid $Theme-color-polar;
+
+.PostsPreview {
+  display: flex;
+  flex-direction: column;
+  max-width: $Theme-grid-maxWidth;
+  margin: 0 auto;
+
+  border-top: 1px solid $Theme-color-polar;
+  border-bottom: 1px solid $Theme-color-polar;
+
+  @include media('>=smallDesktop') {
+    flex-direction: row;
+  }
+}
+
+.PostsPreview-post {
+  padding: $Theme-spacing-small;
+
+  @include media('>=smallDesktop') {
+    padding: $Theme-spacing-default;
+  }
+}
+
+.PostsPreview-post:not(:last-child) {
+  border-bottom: $PostsPreview-border;
+
+  @include media('>=smallDesktop') {
+    border-right: $PostsPreview-border;
+    border-bottom: 0;
+  }
+}
+
+.PostsPreview-postTitle {
+  margin-bottom: $Theme-spacing-small;
+}
+
+.PostsPreview-postContent {
+  margin-bottom: $Theme-spacing-xSmall;
+
+  a {
+    color: inherit;
+  }
+}
+
+.PostsPreview-postTags {
+  margin-bottom: $Theme-spacing-small;
+}
+
+.PostsPreview-postAuthor {
+  display: flex;
+  align-items: center;
+}
+
+.PostsPreview-postAuthorPic {
+  width: 50px;
+  height: 50px;
+  margin-right: $Theme-spacing-small;
+
+  border-radius: 50%;
+}

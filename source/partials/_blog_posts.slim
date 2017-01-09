@@ -1,27 +1,29 @@
 - heading_class ||= ""
 
 div#blog-post-template.u-visuallyHidden
-  .HorizontalGrid-cell
-    .u-smallThenDefaultMargin
-    h2.Heading.Heading--blog.u-smallMargin.blog-post-title Blog post
-    p.blog-post-content
-    .u-xSmallMargin
-    .blog-post-tags
-    .u-smallMargin
-    .PostAuthor
-      img.PostAuthor-picture.blog-post-author-picture alt="A photo of the author"
+  .PostsPreview-post
+    .PostsPreview-postTitle
+      h2.Heading.Heading--blog.blog-post-title Blog post
+    .PostsPreview-postContent
+      p.blog-post-content
+    .PostsPreview-postTags
+      .blog-post-tags
+    .PostsPreview-postAuthor
+      img.PostsPreview-postAuthorPic.blog-post-author-picture alt="A photo of the author"
       .PostAuthor-name
         span> by
         a.Link.blog-post-author-name(href="#" target="_blank")
-    .u-smallThenDefaultMargin
 
-.u-defaultThenLargeMargin
+.u-defaultThenDoubleLargeMargin
+
 .SectionHeading class=heading_class
   .SectionHeading-content
     h2.SectionHeading-title Blog Posts
 .u-smallThenDefaultMargin
 .Panel.Panel--alternative
-  #blog-posts.HorizontalGrid.HorizontalGrid--darkFrame.HorizontalGrid--topFrame.HorizontalGrid--bottomFrame.HorizontalGrid--withGutters
+  #blog-posts.PostsPreview
+
+.u-defaultThenDoubleLargeMargin
 
 - content_for :javascripts
   javascript:
