@@ -15,6 +15,7 @@ $PostsPreview-border: 1px solid $Theme-color-polar;
 }
 
 .PostsPreview-post {
+  flex: 1;
   padding: $Theme-spacing-small;
 
   @include media('>=smallDesktop') {
