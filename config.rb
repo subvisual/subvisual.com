@@ -1,7 +1,7 @@
 require 'slim'
 Slim::Engine.disable_option_validator!
 
-page '/google7c9e77390335f0f4.html', :layout => false, directory_index: false
+page '/google203b7ea3f078f0ea.html', :layout => false, directory_index: false
 page 'sitemap.html', layout: false
 page 'sitemap.xml', layout: false
 page 'feed.xml', layout: false
