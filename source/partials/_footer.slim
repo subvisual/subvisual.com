@@ -1,5 +1,5 @@
 footer
-  .HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--withGutters.u-largeMargin.u-exceptSmall
+  .HorizontalGrid.HorizontalGrid--limited.HorizontalGrid--withGutters.u-defaultMargin.u-exceptSmall
     .HorizontalGrid-cell
       .SitemapTopic
         span.SitemapTopic-heading
@@ -46,6 +46,10 @@ footer
           li = link_to 'Twitter', 'https://twitter.com/subvisual', target: :_blank, rel: 'noopener', class: 'SitemapTopic-link'
           li = link_to 'Facebook', 'https://www.facebook.com/subvisual.co', target: :_blank, rel: 'noopener', class: 'SitemapTopic-link'
           li = link_to 'Instagram', 'https://www.instagram.com/wearesubvisual/', target: :_blank, rel: 'noopener', class: 'SitemapTopic-link'
+
+  .HorizontalGrid.HorizontalGrid--limited.u-defaultMargin.u-exceptSmall
+    = link_to "/documents/Ficha_de_Projeto_Site_SI_QPME_Subvisual.pdf", target: :_blank, rel: "noopener"
+      = image_tag "norte-2020-logos.jpg", class: "BannerLogo"
 
   .Footer
     .Footer-credits
