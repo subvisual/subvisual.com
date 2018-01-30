@@ -57,9 +57,11 @@ members:
   - name: "Laura Esteves"
     picture: "laura-esteves"
     position: "Head of Operations"
-    bio: "Multitasking. Purpose: Making life easier. Sidekicks: Minions.
-    This smiley girl can mislead you to think she is all niceness. Give her a
-    challenge and see the workforce she becomes."
+    bio: >-
+      Obsessive about organization and productivity, she'll take control and
+      make sure things actually happen.
+      The only way to stop her is with a good book and a fireplace.
+      Always says goodbye with a smile.
     social:
       twitter: "https://twitter.com/lauraeesteves"
 
