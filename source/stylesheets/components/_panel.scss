@@ -100,11 +100,11 @@
   // scss-lint:enable DeclarationOrder
 }
 
-.Panel.Panel--rubyconf {
-  @include background-image('community/rubytown.svg');
+.Panel.Panel--mirrorconf {
+  @include background-image('community/2017.mirrorconf.png');
   background-position: center bottom;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 
   @include media('>450px') {
     padding-bottom: 50px;
@@ -112,6 +112,16 @@
 
   @include media('>tablet') {
     padding-bottom: 15%;
+  }
+
+  @include media('>=desktop') {
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+      @include background-image('community/2017.mirrorconf@2x.png');
+    }
+
+    @media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi) { 
+      @include background-image('community/2017.mirrorconf@3x.png');
+    }
   }
 }
 

@@ -14,74 +14,81 @@
               ' From international events to an active contribution to Open Source
               | projects, we keep ourselves pretty busy.
 
-#creatorsschool.Panel.Panel--alternative.Panel--creatorsSchool
+#mirrorconf.Panel.Panel--mirrorconf
   .HorizontalGrid.HorizontalGrid--limited
     .HorizontalGrid-cell
       .GridCell.GridCell--alignCenter
         .GridCell-content
           .u-defaultThenLargeMargin
-          object.RatioEnforcer.RatioEnforcer--communityLogos.u-smallThenDefaultMargin type="image/svg+xml" data="#{image_path('community/creators_school_logo.svg')}"
+          = retina_tag "community/mirrorconf.svg",
+            class: "RatioEnforcer RatioEnforcer--mirrorconfLogo u-smallThenDefaultMargin"
           .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft
-            h2.Heading.u-smallMargin
-              | Teaching others is our favourite way of learning
-          p.Text.u-smallThenDefaultMargin
-            ' From the very beginning we created and supported several educational programs.
-            ' Creators School is definitely our crown jewel.
-            ' It’s an intensive learning program that teaches people how to code for the web.
-            | The purpose of this program is to qualify people and open new opportunities for their careers.
+            h2.Heading.Heading--mirrorconf.u-smallMargin
+              | For designers and front-end developers
+          p.Text.Text--mirrorconf.u-smallThenDefaultMargin
+            ' MirrorConf is a conference designed to empower designers and
+            ' front-end developers who have a thirst for knowledge and want to
+            ' broaden their horizons. It aims to create the perfect set to blur
+            ' the differences between these two worlds and point towards a
+            | more collaborative future.
           .ContentFormatter.ContentFormatter--center.u-largeMargin
-            = link_to 'Visit the website', 'http://creatorsschool.com/', target: :blank, class: 'ButtonSecondary'
-  .Panel-leftFigure
-    = partial 'community/batman.svg'
-  .Panel-rightFigure
-    = partial 'community/ironman.svg'
-
-#rubyconfpt.Panel.Panel--rubyconf
-  .HorizontalGrid.HorizontalGrid--limited
-    .HorizontalGrid-cell
-      .GridCell.GridCell--alignCenter
-        .GridCell-content
-          .u-defaultThenLargeMargin
-          object.RatioEnforcer.RatioEnforcer--communityLogos.u-smallThenDefaultMargin type="image/svg+xml" data="#{image_path('community/rubyconf.svg')}"
-          .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft
-            h2.Heading.u-smallMargin
-              | The most precious Ruby Conference in the world!
-          p.Text.u-smallThenDefaultMargin
-            ' Our team has a deep connection with Ruby and that was one of the things that brought us together when we created Subvisual.
-            ' Having the opportunity to organize such an event and to continue fostering the portuguese ruby community is something we’re proud of.
-            ' The second edition will take place on September 14 and 15.
-          .ContentFormatter.ContentFormatter--center.u-largeMargin
-            = link_to 'Visit the website', 'http://rubyconf.pt/', target: :blank, class: 'ButtonSecondary'
+            = link_to "Visit the website", "http://www.mirrorconf.com/",
+              target: :_blank,
+              class: "ButtonSecondary ButtonSecondary--mirrorconf"
 
 .Panel.Panel--alternative
   .HorizontalGrid.HorizontalGrid--limited
+    #bragadesign.HorizontalGrid-cell
+      .GridCell.u-flexGrow.u-defaultMargin
+        .GridCell-content.StickToBottom.u-defaultThenLargeMargin
+          .u-defaultThenLargeMargin
+          .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft.u-smallThenDefaultMargin
+            = retina_tag "community/meetups/braga.design@3x.png"
+          .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft.u-smallMargin
+            h2.Heading
+              | Design
+          p.Text.u-smallThenDefaultMargin
+            ' A meetup for thinkers, tinkerers, inventors, and makers interested
+            | in thouhtful design.
+          .StickToBottom-target
+            .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft
+              = link_to "Visit the website", "https://www.meetup.com/bragadesign/",
+                target: :_blank,
+                rel: "noopener noreferrer",
+                class: "ButtonSecondary"
     #bragajs.HorizontalGrid-cell
       .GridCell.u-flexGrow.u-defaultMargin
         .GridCell-content.StickToBottom.u-defaultThenLargeMargin
           .u-defaultThenLargeMargin
           .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft.u-smallThenDefaultMargin
-            object type="image/svg+xml" data="#{image_path('community/bragajs.svg')}"
+            = retina_tag "community/meetups/braga.js.png"
           .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft.u-smallMargin
             h2.Heading
-              | A monthly meetup about JavaScript
+              | JavaScript
           p.Text.u-smallThenDefaultMargin
-            ' Every month we gather all the JavaScript enthusiasts from the north of Portugal and discuss any and all things JS.
+            ' A common ground for JS enthusiastics and Web aficionados in general.
             | It’s also a place to talk about the Web and Mobile worlds.
           .StickToBottom-target
             .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft
-              = link_to 'Visit the website', 'http://www.meetup.com/pt/bragajs/', target: :blank, class: 'ButtonSecondary'
-    #bragarb.HorizontalGrid-cell
+              = link_to "Visit the website", "https://www.meetup.com/bragajs/",
+                target: :_blank,
+                rel: "noopener noreferrer",
+                class: "ButtonSecondary"
+    #bragaproduct.HorizontalGrid-cell
       .GridCell.u-flexGrow.u-defaultMargin
         .GridCell-content.StickToBottom.u-defaultThenLargeMargin
           .u-defaultThenLargeMargin
           .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft.u-smallThenDefaultMargin
-            object type="image/svg+xml" data="#{image_path('community/bragarb.svg')}"
+            = retina_tag "community/meetups/braga.product.png"
           .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft.u-smallMargin
             h2.Heading
-              | A bi-weekly meetup about Ruby
+              | Product
           p.Text.u-smallThenDefaultMargin
-            ' It can happen in a bar with a beer in our hands or at our office talking serious topics.
-            ' Our ruby meetup is not only about all things related to the language and what it can do, but also about discussing the best practices.
+            ' A community to discuss all the things related with the creation of
+            | digital products.
           .StickToBottom-target
             .ContentFormatter.ContentFormatter--centerHorizontallyThenLeft
-              = link_to 'Visit the website', 'http://www.meetup.com/pt/bragarb/', target: :blank, class: 'ButtonSecondary'
+              = link_to "Visit the website", "https://www.meetup.com/Braga-Product/",
+                target: :_blank,
+                rel: "noopener noreferrer",
+                class: "ButtonSecondary"

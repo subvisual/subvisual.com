@@ -14,6 +14,18 @@
   }
 }
 
+.RatioEnforcer.RatioEnforcer--mirrorconfLogo {
+  display: block;
+  width: auto;
+  max-height: 50px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include media('>=tablet') {
+    max-height: 75px;
+  }
+}
+
 .RatioEnforcer.RatioEnforcer--clients {
   max-width: 120px;
 }
