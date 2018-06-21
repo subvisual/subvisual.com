@@ -92,17 +92,6 @@ members:
       twitter: "https://twitter.com/naps62"
       github: "https://github.com/naps62"
 
-  - name: "Nick Olender"
-    picture: "nick-olender"
-    position: "Director of Sales"
-    bio: >
-      Believes technology is only as important as the business problems it
-      solves. Loves opening a closed mind to a solution that a new perspective
-      can create. Has an interest in international business, new uses for
-      technology, and ICOs.
-    social:
-      twitter: "https://twitter.com/enterprisenick"
-
   - name: "Pedro Costa"
     picture: "pedro-costa"
     position: "Developer"
