@@ -1,7 +1,5 @@
-s3_id: <%= ENV["AWS_ACCESS_KEY"] %>
-s3_secret: <%= ENV["AWS_ACCESS_SECRET"] %>
-s3_bucket: subvisual.co
 cloudfront_distribution_id: EKUQ3N076J3QQ
+s3_bucket: subvisual.co
 s3_endpoint: eu-west-1
 
 site: build
