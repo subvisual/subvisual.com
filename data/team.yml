@@ -8,17 +8,6 @@ members:
       twitter: "https://twitter.com/azevedo_252"
       github: "https://github.com/azevedo-252"
 
-  - name: "Fernando Mendes"
-    picture: "fernando-mendes"
-    position: "Developer"
-    bio: >
-      Mendes exchanges coffee for code. Contrary to popular belief he does not
-      host the portuguese version of The Price Is Right. Loves photography and
-      reading and ’); DROP TABLE employees; --
-    social:
-      twitter: "https://twitter.com/fribmendes"
-      github: "https://github.com/fribmendes"
-
   - name: "Francisco Baila"
     picture: "francisco-baila"
     position: "Designer"
@@ -40,7 +29,7 @@ members:
     position: Head of People Operations
     bio: >
       Loves people, learning, and to travel. Thrives in helping the team shoot
-      for the moon. Believes everyone can achieve their goals and dreams. 
+      for the moon. Believes everyone can achieve their goals and dreams.
 
   - name: "João Ferreira"
     picture: "joao-ferreira"
