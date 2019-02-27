@@ -1,13 +1,4 @@
 members:
-  - name: "Bruno Azevedo"
-    picture: "bruno-azevedo"
-    position: "Developer"
-    bio: "Likes to make a difference in everything he does. Music lover and practitioner.
-    Healthy Hacker wannabe."
-    social:
-      twitter: "https://twitter.com/azevedo_252"
-      github: "https://github.com/azevedo-252"
-
   - name: "Francisco Baila"
     picture: "francisco-baila"
     position: "Designer"
