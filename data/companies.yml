@@ -1,8 +1,0 @@
-- name: 'AT&T'
-  image: 'att-logo.png'
-- name: 'Betfair'
-  image: 'betfair-logo.png'
-- name: 'Uphold'
-  image: 'uphold-logo.png'
-- name: 'Airtel'
-  image: 'airtel-logo.png'

@@ -1,7 +1,0 @@
-extra:
-  - url: 'https://subvisual.co/blog/'
-    changefreq: 'weekly'
-    title: 'Subvisual - Blog'
-  - url: '/apprenticeship/'
-    changefreq: 'monthly'
-    title: 'Subvisual - Apprenticeship'
