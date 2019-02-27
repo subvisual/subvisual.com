@@ -1,3 +1,0 @@
-[submodule "blue"]
-	path = vendor/blue
-	url = https://github.com/subvisual/blue.git
