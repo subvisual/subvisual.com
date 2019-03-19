@@ -2,6 +2,9 @@ module.exports = {
   siteMetadata: {
     title: "Subvisual",
     description: "",
+    twitter: {
+      creator: "@subvisual",
+    },
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
