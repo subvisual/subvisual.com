@@ -51,8 +51,9 @@ typings/
 # Output of 'npm pack'
 *.tgz
 
-# dotenv environment variables file
+# dotenv and envrc environment variables file
 .env
+.envrc
 
 # gatsby files
 .cache/
@@ -67,3 +68,6 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+
+# Terraform metadata
+.terraform/
