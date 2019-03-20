@@ -1,0 +1,108 @@
+---
+- name: "Francisco Baila"
+  photo: "francisco-baila"
+  role: "Designer"
+  bio: >-
+    Cares about overcoming self limitations. Working to turn technology into a
+    friend.
+  social:
+    twitter: "fcBaila"
+    dribbble: "franciscobaila"
+
+- name: "Gabriel Poça"
+  photo: "gabriel-poca"
+  role: "Developer"
+  bio: >-
+    There is no time for introductions, but if there was, you would instantly
+    understand that this guy is a developer and he loves every aspect of it.
+  social:
+    twitter: "gabrielgpoca"
+    github: "gabrielpoca"
+
+- name: Helena Muniz
+  photo: helena-muniz
+  role: Head of People Operations
+  bio: >
+    Loves people, learning, and to travel. Thrives in helping the team shoot
+    for the moon. Believes everyone can achieve their goals and dreams.
+
+- name: "João Ferreira"
+  photo: "joao-ferreira"
+  role: "Designer"
+  bio: >-
+    Believes Design is not about mastering tools but about mastering people.
+    Passionate about music, movies and whisky.
+  social:
+    twitter: "jferreiradzn"
+    dribbble: "jferreiradzn"
+
+- name: "João Justo"
+  photo: "joao-justo"
+  role: "Developer"
+  bio: "Always gets way too excited about a new idea. Downhill amateur and
+  Android fanboy. Avoid talking to him about Game of Thrones unless you have
+  serious time to spend."
+  social:
+    twitter: "jpjustonunes"
+    github: "joaojusto"
+
+- name: "Laura Esteves"
+  photo: "laura-esteves"
+  role: COO
+  bio: >-
+    Obsessive about organization and productivity, she'll take control and
+    make sure things actually happen.
+    The only way to stop her is with a good book and a fireplace.
+    Always says goodbye with a smile.
+  social:
+    twitter: "lauraeesteves"
+
+- name: "Luis Ferreira"
+  photo: "luis-ferreira"
+  role: "Founder & Developer"
+  bio: "Has worked on the web for a while now, mainly using Ruby and Ruby on
+  Rails. Enjoys open source and giving back to the community, having taught
+  Rails to hundreds of people."
+  social:
+    twitter: "zamith"
+    github: "zamith"
+
+- name: "Miguel Palhas"
+  photo: "miguel-palhas"
+  role: "Developer & SysAdmin"
+  bio: "All-round developer with a background in High Performance Computing
+  and a passion for the Open Source world. Still dreams about becoming a real
+  game developer someday."
+  social:
+    twitter: "naps62"
+    github: "naps62"
+
+- name: "Pedro Costa"
+  photo: "pedro-costa"
+  role: "Developer"
+  bio: "Proudly weird, pedantic problem solver. Enjoys meta-programming a little
+  too much. Got a GameBoy&reg; when he was eight and hasn't shut up about
+  Pokémon&reg; since."
+  social:
+    twitter: "iampfac"
+    github: "pfac"
+
+- name: "Roberto Machado"
+  photo: "roberto-machado"
+  role: "Founder & CEO"
+  bio: "Breathes technology and deeply believes, hence the creation of Subvisual,
+  that it is the medium for a better future. Always has 5 minutes to listen to you."
+  social:
+    twitter: "rmdgb"
+    github: "rmdmachado"
+
+- name: "Ronaldo Sousa"
+  photo: "ronaldo-sousa"
+  role: "Developer"
+  bio: "Restless tech, design and music lover that likes to build software
+  for people. Usually you can find him in front of a computer, behind a
+  guitar or lying on a couch. Or you can’t."
+  social:
+    twitter: "ronaldofsousa"
+    github: "ronaldofs"
+
