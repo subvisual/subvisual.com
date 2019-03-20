@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Team from "../components/team"
 
 const IndexPage = () => (
   <Layout>
@@ -78,7 +79,7 @@ const IndexPage = () => (
       shaping your product's development.
     </p>
     <h3>Team</h3>
-    <p>...</p>
+    <Team />
   </Layout>
 )
 
