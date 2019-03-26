@@ -1,4 +1,7 @@
 #!/bin/sh
 
+# Install expected NodeJS version with ASDF VM
+asdf install
+
 # Install JavaScript dependencies
 npm install
