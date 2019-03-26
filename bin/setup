@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# Install JavaScript dependencies
+npm install
