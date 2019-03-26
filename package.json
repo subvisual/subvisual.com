@@ -20,7 +20,8 @@
     "react-helmet": "^5.2.0"
   },
   "devDependencies": {
-    "prettier": "^1.16.4"
+    "prettier": "^1.16.4",
+    "svgo": "^1.2.0"
   },
   "keywords": [
     "gatsby"
