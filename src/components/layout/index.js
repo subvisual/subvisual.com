@@ -6,25 +6,16 @@ import Header from "./header"
 import Footer from "./footer"
 import "./index.css"
 
+const render = children => data => (
+  <>
+    <Header siteTitle={data.site.siteMetadata.title} />
+    <main>{children}</main>
+    <Footer />
+  </>
+)
+
 const Layout = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `}
-    render={data => (
-      <>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <main>{children}</main>
-        <Footer />
-      </>
-    )}
-  />
+  <StaticQuery query={siteTitleQuery} render={render(children)} />
 )
 
 Layout.propTypes = {
@@ -32,3 +23,13 @@ Layout.propTypes = {
 }
 
 export default Layout
+
+const siteTitleQuery = graphql`
+  query SiteTitleQuery {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`
