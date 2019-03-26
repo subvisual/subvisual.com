@@ -1,0 +1,30 @@
+.Header {
+  display: flex;
+  justify-content: center;
+
+  padding-top: 56px;
+  padding-right: 28px;
+  padding-left: 28px;
+}
+
+.Header-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1184px;
+}
+
+.Header-logo {
+  max-height: 28px;
+}
+
+.Header-links {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.Header-link:not(:last-child) {
+  margin-right: 28px;
+}
