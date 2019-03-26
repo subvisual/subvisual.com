@@ -5,6 +5,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Team from "../components/team"
 
+import "../common/normalize.css"
+
 const IndexPage = () => (
   <Layout>
     <SEO
