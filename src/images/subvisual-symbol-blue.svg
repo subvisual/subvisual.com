@@ -1,10 +1,1 @@
-<svg width="42" height="41" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <ellipse cx="36.527" cy="5.147" rx="5.375" ry="5.147" fill="url(#paint0_radial)"/>
-    <path d="M24.696 12.987h.56l-.56-9.856c-3.08-1.68-7.448-2.52-10.864-2.52C6.16.611 0 4.531 0 11.923c0 12.208 19.208 11.592 19.208 21.728 0 4.816-3.36 6.72-6.552 6.72-6.216 0-10.192-5.376-12.04-12.656h-.56l.56 10.416c3.08 1.68 7.952 2.8 11.984 2.8 7.504 0 14.392-3.808 14.392-12.432 0-12.712-19.208-12.544-19.208-22.12 0-3.696 2.856-5.208 6.104-5.208 5.264 0 8.96 5.768 10.808 11.816z" fill="#045CFC"/>
-    <defs>
-        <radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(128.89 19.677 10.384) scale(8.54599 9.02566)">
-            <stop stop-color="#045CFC" stop-opacity=".6"/>
-            <stop offset="1" stop-color="#045CFC"/>
-        </radialGradient>
-    </defs>
-</svg>
+<svg width="43" height="42" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="36.696" cy="6.03" rx="5.253" ry="5.03" fill="url(#paint0_radial)"/><path d="M25.134 13.692h.547l-.547-9.632c-3.01-1.641-7.279-2.462-10.617-2.462C7.02 1.598 1 5.428 1 12.652c0 11.93 18.771 11.329 18.771 21.234 0 4.706-3.284 6.567-6.403 6.567-6.075 0-9.96-5.254-11.766-12.368h-.547l.547 10.179C4.612 39.906 9.373 41 13.313 41c7.334 0 14.065-3.721 14.065-12.149 0-12.423-18.771-12.258-18.771-21.617 0-3.611 2.79-5.09 5.965-5.09 5.144 0 8.756 5.638 10.562 11.548z" fill="#045CFC"/><defs><radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(128.89 19.49 10.886) scale(8.35154 8.8203)"><stop stop-color="#045CFC" stop-opacity=".6"/><stop offset="1" stop-color="#045CFC"/></radialGradient></defs></svg>
