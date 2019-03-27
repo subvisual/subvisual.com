@@ -1,11 +1,11 @@
-import React from 'react'
-import Img from 'gatsby-image'
-import { StaticQuery, graphql } from 'gatsby'
+import React from "react"
+import Img from "gatsby-image"
+import { StaticQuery, graphql } from "gatsby"
 
-import PageTitle from '../../page_title'
-import CallToAction from '../../call_to_action'
+import PageTitle from "../../page_title"
+import CallToAction from "../../call_to_action"
 
-import './index.module.css'
+import "./index.module.css"
 
 const Hero = ({ data }) => (
   <div styleName="root">
