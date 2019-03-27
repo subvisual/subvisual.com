@@ -4,6 +4,11 @@
   text-decoration: underline;
 }
 
-.CallToAction--white {
+.CallToAction.CallToAction--white {
   color: #fcfcfc;
+}
+
+.CallToAction.CallToAction--large {
+  font-size: 28px;
+  line-height: 40px;
 }
