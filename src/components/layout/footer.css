@@ -1,0 +1,29 @@
+.PageFooter {
+  background-color: #045cfc;
+  padding: 112px 28px 28px;
+}
+
+.PageFooter-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1184px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.PageFooter-logo {
+  margin-bottom: 28px;
+}
+
+.PageFooter-callToAction {
+  margin-bottom: 56px;
+}
+
+.PageFooter-locations {
+  margin-bottom: 56px;
+}
+
+.PageFooter-social {
+  margin-bottom: 112px;
+}
