@@ -1,8 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
 
+import Logo from "../logo"
+
 const Footer = () => (
   <footer>
+    <Logo white />
     <address>Braga, Portugal</address>
     <address>Boston, USA</address>
     <Link to="#">Let's work together</Link>
