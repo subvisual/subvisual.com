@@ -1,0 +1,31 @@
+.root {
+  padding: 112px 28px;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: 25% 25% auto;
+  grid-column-gap: 28px;
+}
+
+.content {
+  width: 100%;
+  max-width: 1184px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.title {
+  margin-bottom: 112px;
+}
+
+.text {
+  width: 100%;
+  max-width: 578px;
+  margin-left: auto;
+  margin-bottom: 112px;
+}
+
+.textParagraph:not(:last-child) {
+  margin-bottom: 28px;
+}
