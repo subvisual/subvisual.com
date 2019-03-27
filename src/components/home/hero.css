@@ -1,0 +1,36 @@
+.Hero {
+  padding: 112px 28px;
+}
+
+.Hero-content {
+  width: 100%;
+  max-width: 1184px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.Hero-title {
+  margin-bottom: 112px;
+}
+
+.Hero-text {
+  width: 100%;
+  max-width: 578px;
+  margin-left: auto;
+  margin-bottom: 112px;
+}
+
+.Hero-quarterImage:not(:last-child),
+.Hero-halfImage:not(:last-child) {
+  margin-right: 28px;
+}
+
+.Hero-quarterImage {
+  width: 100%;
+  max-width: 275px;
+}
+
+.Hero-halfImage {
+  width: 100%;
+  max-width: 578px;
+}
