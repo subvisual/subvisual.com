@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
+import PageTitle from "../components/page_title"
 import SEO from "../components/seo"
 import Team from "../components/team"
 
@@ -13,7 +14,7 @@ const IndexPage = () => (
       title="Subvisual - We nurture ideas that empower people"
       keywords={[]}
     />
-    <h1>We nurture ideas that empower people</h1>
+    <PageTitle>We nurture ideas that empower people</PageTitle>
     <p>
       Building a company from the ground up is hard and stressful, particularly
       in heavy regulated fields such as fintech and digital healthcare.
