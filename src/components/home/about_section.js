@@ -2,6 +2,7 @@ import React from "react"
 
 import Subtitle from "../subtitle"
 import Team from "./team"
+import Text from "../Text"
 import Title from "../title"
 import "./about_section.css"
 
@@ -15,24 +16,32 @@ const AboutSection = () => (
         <section className="AboutSection-section">
           <Subtitle white>It started out of friendship</Subtitle>
           <p>
-            Subvisual was born out of friendship, with the ambition to become a
-            company we'd love to work in.
+            <Text white>
+              Subvisual was born out of friendship, with the ambition to become
+              a company we'd love to work in.
+            </Text>
           </p>
           <p>
-            By putting people first and never compromising on quality, we were
-            able to shape a team culture that will embrace you and nurture your
-            ideas to fruition.
+            <Text white>
+              By putting people first and never compromising on quality, we were
+              able to shape a team culture that will embrace you and nurture
+              your ideas to fruition.
+            </Text>
           </p>
         </section>
         <section className="AboutSection-section">
           <Subtitle white>And grew with craft</Subtitle>
           <p>
-            We're a small, but powerful team, that can help you make informed
-            decisions throughout the process of building a digital product.
+            <Text white>
+              We're a small, but powerful team, that can help you make informed
+              decisions throughout the process of building a digital product.
+            </Text>
           </p>
           <p>
-            We'll challenge you to think further and help you do the heavy
-            lifting of shaping your product's development.
+            <Text white>
+              We'll challenge you to think further and help you do the heavy
+              lifting of shaping your product's development.
+            </Text>
           </p>
         </section>
       </div>

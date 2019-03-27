@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 
 import CallToAction from "../call_to_action"
 import Logo from "../logo"
+import Text from "../Text"
 import "./footer.css"
 
 const Footer = () => (
@@ -13,16 +14,26 @@ const Footer = () => (
       </div>
       <div className="PageFooter-callToAction">
         <p>
-          Ready to bring your ideas to life?{" "}
+          <Text white>Ready to bring your ideas to life?</Text>{" "}
           <CallToAction white>Let's talk.</CallToAction>
         </p>
       </div>
       <div className="PageFooter-locations">
-        <address>Braga, Portugal</address>
-        <address>Boston, USA</address>
+        <address>
+          <Text small white>
+            Braga, Portugal
+          </Text>
+        </address>
+        <address>
+          <Text small white>
+            Boston, USA
+          </Text>
+        </address>
       </div>
       <div className="PageFooter-social">
-        <h3>Follow us</h3>
+        <Text small white>
+          Follow us
+        </Text>
         <ul>
           <li>
             <Link to="#">Medium</Link>
@@ -48,7 +59,11 @@ const Footer = () => (
         </ul>
       </div>
       <div className="PageFooter-legal">
-        <p>Handcrafted by Subvisual © {new Date().getFullYear()}</p>
+        <p>
+          <Text darkBlue small>
+            Handcrafted by Subvisual © {new Date().getFullYear()}
+          </Text>
+        </p>
       </div>
     </div>
   </footer>

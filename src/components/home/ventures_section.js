@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 
 import CallToAction from "../call_to_action"
 import Subtitle from "../subtitle"
+import Text from "../Text"
 import Title from "../title"
 import "./ventures_section.css"
 
@@ -53,9 +54,9 @@ const VenturesSection = () => (
       </section>
       <footer className="VenturesSection-footer">
         <p>
-          Join our venture universe.
+          <Text large>Join our venture universe.</Text>
           <br />
-          <CallToAction>Let's talk</CallToAction>
+          <CallToAction large>Let's talk</CallToAction>
         </p>
       </footer>
     </div>
