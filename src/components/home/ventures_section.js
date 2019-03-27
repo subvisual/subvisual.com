@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
+import CallToAction from "../call_to_action"
 import Subtitle from "../subtitle"
 import Title from "../title"
 import "./ventures_section.css"
@@ -54,9 +55,8 @@ const VenturesSection = () => (
         <p>
           Join our venture universe.
           <br />
-          Let's talk
+          <CallToAction>Let's talk</CallToAction>
         </p>
-        <Link to="#">Join our universe</Link>
       </footer>
     </div>
   </section>

@@ -1,5 +1,6 @@
 import React from "react"
 
+import CallToAction from "../call_to_action"
 import PageTitle from "../page_title"
 import hero1_1x from "../../images/hero-1.png"
 import hero2_1x from "../../images/hero-2.png"
@@ -20,7 +21,7 @@ const Hero = () => (
         </p>
         <p className="Hero-textParagraph">
           Struggling with designing and developing that awesome idea you’ve had?
-          We can help you succeed. Together.
+          We can help you succeed. <CallToAction>Together.</CallToAction>
         </p>
       </div>
       <div className="Hero-images">
