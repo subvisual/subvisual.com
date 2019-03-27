@@ -1,5 +1,6 @@
 import React from "react"
 
+import Subtitle from "../subtitle"
 import Team from "./team"
 import Title from "../title"
 import "./about_section.css"
@@ -12,7 +13,7 @@ const AboutSection = () => (
       </header>
       <div className="AboutSection-story">
         <section className="AboutSection-section">
-          <h3>It started out of friendship</h3>
+          <Subtitle white>It started out of friendship</Subtitle>
           <p>
             Subvisual was born out of friendship, with the ambition to become a
             company we'd love to work in.
@@ -24,7 +25,7 @@ const AboutSection = () => (
           </p>
         </section>
         <section className="AboutSection-section">
-          <h3>And grew with craft</h3>
+          <Subtitle white>And grew with craft</Subtitle>
           <p>
             We're a small, but powerful team, that can help you make informed
             decisions throughout the process of building a digital product.
@@ -36,7 +37,7 @@ const AboutSection = () => (
         </section>
       </div>
       <section className="AboutSection-team">
-        <h3>Team</h3>
+        <Subtitle white>Team</Subtitle>
         <Team />
       </section>
     </div>

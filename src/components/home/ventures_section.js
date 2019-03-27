@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
+import Subtitle from "../subtitle"
 import Title from "../title"
 import "./ventures_section.css"
 
@@ -11,7 +12,7 @@ const VenturesSection = () => (
         <Title>Meaningful Ventures</Title>
       </header>
       <section className="VenturesSection-section">
-        <h3>Looking for</h3>
+        <Subtitle>Looking for</Subtitle>
         <dl>
           <dt>Product Vision</dt>
           <dd>Ideas that solve a clear problem for real users</dd>
@@ -22,7 +23,7 @@ const VenturesSection = () => (
         </dl>
       </section>
       <section className="VenturesSection-section">
-        <h3>Helping with</h3>
+        <Subtitle>Helping with</Subtitle>
         <ul>
           <li>Seed investment & incubation</li>
           <li>Strong company culture</li>
@@ -31,7 +32,7 @@ const VenturesSection = () => (
         </ul>
       </section>
       <section className="VenturesSection-section">
-        <h3>Portfolio</h3>
+        <Subtitle>Portfolio</Subtitle>
         <dl>
           <dt>UTRUST</dt>
           <dd>Crypto payments, simple as they should be</dd>
