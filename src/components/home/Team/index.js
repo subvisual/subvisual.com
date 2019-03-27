@@ -16,21 +16,20 @@ const socialLink = (platform, username) => {
 }
 
 const Team = props => {
-  console.log(props)
   return (
     <ul styleName="root">
       {props.members.map(({ name, role, social, photo }) => (
         <li styleName="member" key={name}>
           <Img styleName="photo" fluid={photo.childImageSharp.fluid} />
           <div styleName="name">
-            {name} <br />
-            <span>{role}</span>
+            <span styleName="bold">{name}</span> <br />
+            {role}
           </div>
           <ul styleName="links">
             {_.map(social, (name, platform) => (
               <li styleName="link" key={platform}>
                 <a target="_blank" href={socialLink(platform, name)}>
-                  {platform}
+                  link
                 </a>
               </li>
             ))}

@@ -10,6 +10,7 @@
     "gatsby-image": "^2.0.35",
     "gatsby-plugin-manifest": "^2.0.19",
     "gatsby-plugin-offline": "^2.0.24",
+    "gatsby-plugin-postcss": "^2.0.7",
     "gatsby-plugin-react-css-modules": "^2.0.9",
     "gatsby-plugin-react-helmet": "^3.0.7",
     "gatsby-plugin-sharp": "^2.0.22",
@@ -22,6 +23,7 @@
     "react-helmet": "^5.2.0"
   },
   "devDependencies": {
+    "postcss-custom-media": "^7.0.7",
     "prettier": "^1.16.4",
     "svgo": "^1.2.0"
   },
