@@ -25,5 +25,6 @@
 }
 
 .PageFooter-social {
+  display: flex;
   margin-bottom: 112px;
 }
