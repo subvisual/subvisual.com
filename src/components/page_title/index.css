@@ -1,6 +1,16 @@
 .PageTitle {
   font-family: "Acta Display";
   font-size: 112px;
+  font-weight: 400;
   line-height: 112px;
   color: #045cfc;
+}
+
+/**
+ * Fix for Firefox font rendering issues.
+ */
+@-moz-document url-prefix() {
+  .PageTitle {
+    font-weight: lighter;
+  }
 }
