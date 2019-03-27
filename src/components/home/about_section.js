@@ -1,13 +1,14 @@
 import React from "react"
 
 import Team from "./team"
+import Title from "../title"
 import "./about_section.css"
 
 const AboutSection = () => (
   <section className="AboutSection">
     <div className="AboutSection-content">
       <header className="AboutSection-header">
-        <h2>About</h2>
+        <Title darkBlue>About</Title>
       </header>
       <div className="AboutSection-story">
         <section className="AboutSection-section">
