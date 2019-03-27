@@ -1,10 +1,10 @@
 import React from "react"
-import { Link } from "gatsby"
 
-import CallToAction from "../call_to_action"
-import Logo from "../logo"
-import Text from "../Text"
-import "./footer.css"
+import CallToAction from "../../call_to_action"
+import Logo from "../../logo"
+import SocialLinks from "./SocialLinks"
+import Text from "../../Text"
+import "./index.css"
 
 const Footer = () => (
   <footer className="PageFooter">
@@ -34,29 +34,7 @@ const Footer = () => (
         <Text small white>
           Follow us
         </Text>
-        <ul>
-          <li>
-            <Link to="#">Medium</Link>
-          </li>
-          <li>
-            <Link to="#">GitHub</Link>
-          </li>
-          <li>
-            <Link to="#">Dribbble</Link>
-          </li>
-          <li>
-            <Link to="#">Behance</Link>
-          </li>
-          <li>
-            <Link to="#">Twitter</Link>
-          </li>
-          <li>
-            <Link to="#">Facebook</Link>
-          </li>
-          <li>
-            <Link to="#">Instagram</Link>
-          </li>
-        </ul>
+        <SocialLinks />
       </div>
       <div className="PageFooter-legal">
         <p>
