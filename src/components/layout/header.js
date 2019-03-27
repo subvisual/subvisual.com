@@ -5,7 +5,7 @@ import React from "react"
 import "./header.css"
 import logo from "../../images/subvisual-logo-blue.svg"
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <header className="Header">
     <div className="Header-content">
       <div className="Header-left">
@@ -28,13 +28,5 @@ const Header = ({ siteTitle }) => (
     </div>
   </header>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header

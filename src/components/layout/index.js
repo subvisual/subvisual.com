@@ -1,21 +1,21 @@
 import React from "react"
 import PropTypes from "prop-types"
+import Helmet from "react-helmet"
 import { StaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import Footer from "./footer"
 import "./index.css"
 
-const render = children => data => (
+const Layout = ({ children }) => (
   <>
-    <Header siteTitle={data.site.siteMetadata.title} />
+    <Helmet>
+      <link rel="stylesheet" href="https://use.typekit.net/bcx8qfd.css" />
+    </Helmet>
+    <Header />
     <main>{children}</main>
     <Footer />
   </>
-)
-
-const Layout = ({ children }) => (
-  <StaticQuery query={siteTitleQuery} render={render(children)} />
 )
 
 Layout.propTypes = {
@@ -23,13 +23,3 @@ Layout.propTypes = {
 }
 
 export default Layout
-
-const siteTitleQuery = graphql`
-  query SiteTitleQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`

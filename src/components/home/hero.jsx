@@ -13,11 +13,14 @@ const Hero = () => (
         <PageTitle>We nurture ideas that empower people</PageTitle>
       </div>
       <div className="Hero-text">
-        <p>
-          Building a company from the ground up is hard and stressful, particularly
-          in heavy regulated fields such as fintech and digital healthcare.
-          Struggling with designing and developing that awesome idea you’ve had? We
-          can help you succeed. Together.
+        <p className="Hero-textParagraph">
+          Building a company from the ground up is hard and stressful,
+          particularly in heavy regulated fields such as fintech and digital
+          healthcare.
+        </p>
+        <p className="Hero-textParagraph">
+          Struggling with designing and developing that awesome idea you’ve had?
+          We can help you succeed. Together.
         </p>
       </div>
       <div className="Hero-images">
