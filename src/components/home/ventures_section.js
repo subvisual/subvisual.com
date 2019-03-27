@@ -1,13 +1,14 @@
 import React from "react"
 import { Link } from "gatsby"
 
+import Title from "../title"
 import "./ventures_section.css"
 
 const VenturesSection = () => (
   <section className="VenturesSection">
     <div className="VenturesSection-content">
       <header className="VenturesSection-header">
-        <h2>Meaningful Ventures</h2>
+        <Title>Meaningful Ventures</Title>
       </header>
       <section className="VenturesSection-section">
         <h3>Looking for</h3>

@@ -1,0 +1,20 @@
+.Title {
+  font-family: "Acta Display";
+  font-size: 84px;
+  font-weight: 400;
+  line-height: 96px;
+  color: #045cfc;
+}
+
+.Title.Title--darkBlue {
+  color: #2421ab;
+}
+
+/**
+ * Fix for Firefox font rendering issues.
+ */
+@-moz-document url-prefix() {
+  .Title {
+    font-weight: lighter;
+  }
+}
