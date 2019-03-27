@@ -1,9 +1,9 @@
-.PageFooter {
+.root {
   background-color: #045cfc;
   padding: 112px 28px 28px;
 }
 
-.PageFooter-content {
+.content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,19 +12,30 @@
   margin-left: auto;
 }
 
-.PageFooter-logo {
+.logo {
   margin-bottom: 28px;
 }
 
-.PageFooter-callToAction {
+.callToAction {
   margin-bottom: 56px;
 }
 
-.PageFooter-locations {
+.locations {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
   margin-bottom: 56px;
 }
 
-.PageFooter-social {
+.location {
+  flex: 1 0 0;
+}
+
+.location:not(:last-child) {
+  margin-right: 28px;
+}
+
+.social {
   display: flex;
   margin-bottom: 112px;
 }

@@ -1,0 +1,19 @@
+.root {
+
+}
+
+.image {
+  margin-bottom: 20px;
+}
+
+.info.left {
+  text-align: left;
+}
+
+.info.right {
+  text-align: right;
+}
+
+.name {
+  margin-right: 20px;
+}
