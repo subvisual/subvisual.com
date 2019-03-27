@@ -3,7 +3,7 @@ import Img from "gatsby-image"
 import { StaticQuery, graphql } from "gatsby"
 
 import PageTitle from "../../page_title"
-import CallToAction from "../../call_to_action"
+import CallToAction from "../../CallToAction"
 
 import "./index.module.css"
 

@@ -1,6 +1,6 @@
 import React from "react"
 
-import CallToAction from "../../call_to_action"
+import CallToAction from "../../CallToAction"
 import Location from "./Location"
 import Logo from "../../logo"
 import SocialLinks from "./SocialLinks"
@@ -16,7 +16,7 @@ const Footer = () => (
       <div styleName="callToAction">
         <p>
           <Text white>Ready to bring your ideas to life?</Text>{" "}
-          <CallToAction white>Let's talk.</CallToAction>
+          <CallToAction color="white">Let's talk.</CallToAction>
         </p>
       </div>
       <div styleName="locations">
