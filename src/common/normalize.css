@@ -1,2 +1,10 @@
 @import './fonts.css';
 @import './reset.css';
+
+html,
+body {
+  font-family: colfax-web, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+}
