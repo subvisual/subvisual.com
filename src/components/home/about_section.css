@@ -1,0 +1,15 @@
+.AboutSection {
+  padding: 224px 28px 112px;
+  background-color: #045cfc;
+}
+
+.AboutSection-content {
+  max-width: 1184px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.AboutSection-header {
+  margin-bottom: 112px;
+}
+
