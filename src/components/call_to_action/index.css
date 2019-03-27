@@ -1,0 +1,9 @@
+.CallToAction {
+  font-weight: 700;
+  color: #2421ab;
+  text-decoration: underline;
+}
+
+.CallToAction--white {
+  color: #fcfcfc;
+}

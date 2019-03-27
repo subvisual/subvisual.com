@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
+import CallToAction from "../call_to_action"
 import Logo from "../logo"
 import "./footer.css"
 
@@ -12,7 +13,8 @@ const Footer = () => (
       </div>
       <div className="PageFooter-callToAction">
         <p>
-          Ready to bring your ideas to life? <Link to="#">Let's talk.</Link>
+          Ready to bring your ideas to life?{" "}
+          <CallToAction white>Let's talk.</CallToAction>
         </p>
       </div>
       <div className="PageFooter-locations">
