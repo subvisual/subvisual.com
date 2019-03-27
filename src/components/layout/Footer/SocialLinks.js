@@ -1,30 +1,44 @@
 import React from "react"
-import { Link } from "gatsby"
 
-import "./SocialLinks.css"
+import Link from "../../Link"
+import "./SocialLinks.module.css"
 
 const SocialLinks = () => (
-  <ul className="SocialLinks">
-    <li className="SocialLinks-item">
-      <Link to="#">Medium</Link>
+  <ul styleName="root">
+    <li styleName="item">
+      <Link to="#" size="small" title="Medium">
+        Md
+      </Link>
     </li>
-    <li className="SocialLinks-item">
-      <Link to="#">GitHub</Link>
+    <li styleName="item">
+      <Link to="#" size="small" title="Behance">
+        Be
+      </Link>
     </li>
-    <li className="SocialLinks-item">
-      <Link to="#">Dribbble</Link>
+    <li styleName="item">
+      <Link to="#" size="small" title="GitHub">
+        Git
+      </Link>
     </li>
-    <li className="SocialLinks-item">
-      <Link to="#">Behance</Link>
+    <li styleName="item">
+      <Link to="#" size="small" title="Dribbble">
+        Dri
+      </Link>
     </li>
-    <li className="SocialLinks-item">
-      <Link to="#">Twitter</Link>
+    <li styleName="item">
+      <Link to="#" size="small" title="Facebook">
+        Fb
+      </Link>
     </li>
-    <li className="SocialLinks-item">
-      <Link to="#">Facebook</Link>
+    <li styleName="item">
+      <Link to="#" size="small" title="Twitter">
+        Tw
+      </Link>
     </li>
-    <li className="SocialLinks-item">
-      <Link to="#">Instagram</Link>
+    <li styleName="item">
+      <Link to="#" size="small" title="Instagram">
+        In
+      </Link>
     </li>
   </ul>
 )

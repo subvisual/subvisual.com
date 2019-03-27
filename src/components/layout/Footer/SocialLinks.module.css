@@ -1,8 +1,8 @@
-.SocialLinks {
+.root {
   display: flex;
   list-style: none;
 }
 
-.SocialLinks-item:not(:last-child) {
+.item:not(:last-child) {
   margin-right: 20px;
 }
