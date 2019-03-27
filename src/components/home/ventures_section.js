@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import CallToAction from "../call_to_action"
+import CallToAction from "../CallToAction"
 import Subtitle from "../subtitle"
 import Text from "../Text"
 import Title from "../title"
@@ -56,7 +56,7 @@ const VenturesSection = () => (
         <p>
           <Text large>Join our venture universe.</Text>
           <br />
-          <CallToAction large>Let's talk</CallToAction>
+          <CallToAction size="large">Let's talk</CallToAction>
         </p>
       </footer>
     </div>

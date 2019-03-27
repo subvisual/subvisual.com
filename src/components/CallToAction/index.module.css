@@ -1,0 +1,22 @@
+.root {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.root.blue {
+  color: #2421ab;
+}
+
+.root.white {
+  color: #fcfcfc;
+}
+
+.root.regular {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.root.large {
+  font-size: 28px;
+  line-height: 40px;
+}
