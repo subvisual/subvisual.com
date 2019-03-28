@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Hero from "../components/home/Hero"
 import About from "../components/home/About"

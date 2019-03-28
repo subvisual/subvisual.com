@@ -1,9 +1,8 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
 
 import Logo from "../logo"
-import styles from "./header.module.css"
+import "./header.module.css"
 
 const Header = () => (
   <header styleName="root">
