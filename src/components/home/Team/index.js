@@ -45,25 +45,23 @@ const Team = props => {
             <span styleName="bold">{name}</span> <br />
             {role}
           </div>
-          <nav aria-label="Social Links">
-            <ul styleName="links">
-              {_.map(social, (name, platform) => {
-                const { linkName, linkShortname, url } = socialDetails(
-                  platform,
-                  name
-                )
+          <ul aria-label="Social Links" styleName="links">
+            {_.map(social, (name, platform) => {
+              const { linkName, linkShortname, url } = socialDetails(
+                platform,
+                name
+              )
 
-                return (
-                  <li styleName="link" key={platform}>
-                    <a target="_blank" href={url}>
-                      <span className="visuallyhidden">{linkName}</span>
-                      <span aria-hidden="true">{linkShortname}</span>
-                    </a>
-                  </li>
-                )
-              })}
-            </ul>
-          </nav>
+              return (
+                <li styleName="link" key={platform}>
+                  <a target="_blank" href={url}>
+                    <span className="visuallyHidden">{linkName}</span>
+                    <span aria-hidden="true">{linkShortname}</span>
+                  </a>
+                </li>
+              )
+            })}
+          </ul>
         </li>
       ))}
     </ul>
