@@ -1,7 +1,7 @@
 import React from "react"
 
 import Link from "../Link"
-import Logo from "../logo"
+import Logo from "../Logo"
 
 import "./Header.module.css"
 

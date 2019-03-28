@@ -7,18 +7,23 @@ import White from "./subvisual-logo-white.inline.svg"
 
 import "./index.module.css"
 
-const Logo = ({ white, className }) => (
+const renderers = {
+  blue: () => <Blue />,
+  white: () => <White />,
+}
+
+const Logo = ({ color }) => (
   <Link to="/" styleName="root">
-    {white ? <White /> : <Blue />}
+    {renderers[color]()}
   </Link>
 )
 
 Logo.propTypes = {
-  white: PropTypes.bool,
+  color: PropTypes.bool,
 }
 
 Logo.defaultProps = {
-  white: false,
+  color: "blue",
 }
 
 export default Logo

@@ -2,7 +2,7 @@ import React from "react"
 
 import CallToAction from "../../CallToAction"
 import Location from "./Location"
-import Logo from "../../logo"
+import Logo from "../../Logo"
 import SocialLinks from "./SocialLinks"
 import Text from "../../Text"
 import "./index.module.css"
@@ -11,7 +11,7 @@ const Footer = () => (
   <footer styleName="root">
     <div styleName="content">
       <div styleName="logo">
-        <Logo white />
+        <Logo color="white" />
       </div>
       <div styleName="callToAction">
         <p>
