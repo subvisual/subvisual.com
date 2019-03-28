@@ -1,20 +1,19 @@
 .root {
   background-color: #045cfc;
-  padding: 112px 28px 28px;
+  padding: 56px 20px 20px;
 }
 
 .content {
   display: flex;
   flex-direction: column;
-  align-items: center;
   max-width: 1184px;
   margin-right: auto;
   margin-left: auto;
 }
 
 .logo {
-  max-width: 176px;
-  margin-bottom: 28px;
+  max-width: 124px;
+  margin-bottom: 20px;
 }
 
 .callToAction {
@@ -23,9 +22,10 @@
 
 .locations {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 56px;
+  margin-bottom: 28px;
 }
 
 .location {
@@ -33,14 +33,50 @@
 }
 
 .location:not(:last-child) {
-  margin-right: 28px;
+  margin-bottom: 28px;
 }
 
 .social {
   display: flex;
-  margin-bottom: 112px;
+  flex-direction: column;
+  margin-bottom: 56px;
 }
 
 .socialLabel {
-  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 321px) {
+  .root {
+    padding: 112px 28px 28px;
+  }
+
+  .content {
+    align-items: center;
+  }
+
+  .logo {
+    max-width: 176px;
+    margin-bottom: 28px;
+  }
+
+  .locations {
+    flex-direction: row;
+    margin-bottom: 56px;
+  }
+
+  .location:not(:last-child) {
+    margin-right: 28px;
+    margin-bottom: 0;
+  }
+
+  .social {
+    flex-direction: row;
+    margin-bottom: 112px;
+  }
+
+  .socialLabel {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
 }
