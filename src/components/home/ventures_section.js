@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import CallToAction from "../CallToAction"
 import Subtitle from "../subtitle"
