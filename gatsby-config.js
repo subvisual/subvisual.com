@@ -7,6 +7,12 @@ module.exports = {
     },
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-postcss`,
+      options: {
+        postCssPlugins: [require(`postcss-custom-media`)()],
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-yaml`,
     {
