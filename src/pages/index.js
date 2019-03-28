@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Hero from "../components/home/Hero"
-import AboutSection from "../components/home/about_section"
+import About from "../components/home/About"
 import VenturesSection from "../components/home/ventures_section"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -17,7 +17,7 @@ const IndexPage = () => (
     />
     <Hero />
     <VenturesSection />
-    <AboutSection />
+    <About />
   </Layout>
 )
 
