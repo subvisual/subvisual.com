@@ -4,6 +4,7 @@ import CallToAction from "../CallToAction"
 import Subtitle from "../subtitle"
 import Text from "../Text"
 import Title from "../Title"
+import VenturesPhotos from "./VenturesPhotos"
 import "./ventures_section.css"
 
 const VenturesSection = () => (
@@ -58,6 +59,7 @@ const VenturesSection = () => (
           <CallToAction size="large">Let's talk</CallToAction>
         </p>
       </footer>
+      <VenturesPhotos />
     </div>
   </section>
 )
