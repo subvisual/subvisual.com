@@ -13,6 +13,7 @@
 }
 
 .logo {
+  max-width: 176px;
   margin-bottom: 28px;
 }
 
@@ -38,4 +39,8 @@
 .social {
   display: flex;
   margin-bottom: 112px;
+}
+
+.socialLabel {
+  margin-right: 20px;
 }

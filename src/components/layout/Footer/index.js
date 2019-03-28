@@ -38,9 +38,11 @@ const Footer = () => (
         </div>
       </div>
       <div styleName="social">
-        <Text small white>
-          Follow us
-        </Text>
+        <div styleName="socialLabel">
+          <Text small white>
+            Follow us
+          </Text>
+        </div>
         <SocialLinks />
       </div>
       <p>
