@@ -1,0 +1,48 @@
+.root {
+  font-family: colfax-web, sans-serif;
+  font-weight: 400;
+}
+
+.root.black {
+  color: #403f4c;
+}
+
+.root.darkBlue {
+  color: #2421ab;
+}
+
+.root.white {
+  color: #fcfcfc;
+}
+
+.root.small {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.root.regular {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.root.large {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+@media (min-width: 321px) {
+  .root.small {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .root.regular {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .root.large {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
