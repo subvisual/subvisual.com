@@ -1,8 +1,8 @@
-.Header {
+.root {
   padding: 56px 28px 112px;
 }
 
-.Header-content {
+.content {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -11,17 +11,33 @@
   margin-left: auto;
 }
 
-.Header-logo {
-  max-height: 28px;
+.logo {
+  height: 20px;
 }
 
-.Header-links {
+.links {
   display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.Header-link:not(:last-child) {
+.link:not(:last-child) {
   margin-right: 28px;
+}
+
+@media (width <= 900px) {
+  .root {
+  }
+}
+
+@media (width <= 600px) {
+  .root {
+  }
+}
+
+@media (width >= 400px) {
+  .logo {
+    max-height: 28px;
+  }
 }
