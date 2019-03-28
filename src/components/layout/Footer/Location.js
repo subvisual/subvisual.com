@@ -29,7 +29,7 @@ const Location = ({ align, directions, image, name }) => (
 Location.propTypes = {
   align: PropTypes.string,
   directions: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
+  image: PropTypes.object.isRequired,
   name: PropTypes.string.isRequired,
 }
 

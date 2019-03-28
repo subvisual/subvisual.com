@@ -1,0 +1,28 @@
+.root {
+  color: #fcfcfc;
+  max-width: 100%;
+}
+
+.photo {
+  background-color: #045cfc;
+  mix-blend-mode: overlay;
+}
+
+.name {
+  margin-bottom: 28px;
+  margin-top: 28px;
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+.links {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+}
+
+.link:not(:last-child) {
+  margin-right: 28px;
+}

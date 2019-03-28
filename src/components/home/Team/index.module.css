@@ -24,32 +24,3 @@
     grid-template-columns: repeat(1, 1fr);
   }
 }
-
-.member {
-  color: #FCFCFC;
-  max-width: 100%;
-}
-
-.name {
-  margin-bottom: 28px;
-  margin-top: 28px;
-}
-
-.bold {
-  font-weight: bolder;
-}
-
-.photo {
-  background: #045CFC;
-  mix-blend-mode: overlay;
-}
-
-.links {
-  list-style-type: none;
-  display: flex;
-  padding: 0;
-}
-
-.link {
-  margin-right: 28px;
-}
