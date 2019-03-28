@@ -15,7 +15,7 @@ const Footer = () => (
       </div>
       <div styleName="callToAction">
         <p>
-          <Text white>Ready to bring your ideas to life?</Text>{" "}
+          <Text color="white">Ready to bring your ideas to life?</Text>{" "}
           <CallToAction color="white">Let's talk.</CallToAction>
         </p>
       </div>
@@ -39,14 +39,14 @@ const Footer = () => (
       </div>
       <div styleName="social">
         <div styleName="socialLabel">
-          <Text small white>
+          <Text size="small" color="white">
             Follow us
           </Text>
         </div>
         <SocialLinks />
       </div>
       <p>
-        <Text darkBlue small>
+        <Text size="small" color="darkBlue">
           Handcrafted by Subvisual © {new Date().getFullYear()}
         </Text>
       </p>

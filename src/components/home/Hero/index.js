@@ -4,6 +4,7 @@ import { StaticQuery, graphql } from "gatsby"
 
 import PageTitle from "../../page_title"
 import CallToAction from "../../CallToAction"
+import Text from "../../Text"
 
 import "./index.module.css"
 
@@ -15,13 +16,17 @@ const Hero = ({ data }) => (
       </div>
       <div styleName="text">
         <p styleName="textParagraph">
-          Building a company from the ground up is hard and stressful,
-          particularly in heavy regulated fields such as fintech and digital
-          healthcare.
+          <Text>
+            Building a company from the ground up is hard and stressful,
+            particularly in heavy regulated fields such as fintech and digital
+            healthcare.
+          </Text>
         </p>
         <p styleName="textParagraph">
-          Struggling with designing and developing that awesome idea you’ve had?
-          We can help you succeed. <CallToAction>Together.</CallToAction>
+          <Text>
+            Struggling with designing and developing that awesome idea you’ve
+            had? We can help you succeed. <CallToAction>Together.</CallToAction>
+          </Text>
         </p>
       </div>
       <div styleName="images">

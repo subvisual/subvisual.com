@@ -54,7 +54,7 @@ const VenturesSection = () => (
       </section>
       <footer className="VenturesSection-footer">
         <p>
-          <Text large>Join our venture universe.</Text>
+          <Text size="large">Join our venture universe.</Text>
           <br />
           <CallToAction size="large">Let's talk</CallToAction>
         </p>

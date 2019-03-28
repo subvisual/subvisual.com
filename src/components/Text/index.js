@@ -1,33 +1,20 @@
 import React from "react"
 import PropTypes from "prop-types"
-import classNames from "classnames"
 
-import "./index.css"
+import styles from "./index.module.css"
 
-const Text = ({ children, darkBlue, large, small, white }) => {
-  const className = classNames({
-    Text: true,
-    "Text--darkBlue": darkBlue,
-    "Text--large": large,
-    "Text--small": small,
-    "Text--white": white,
-  })
-
-  return <span className={className}>{children}</span>
-}
+const Text = ({ color, children, size }) => (
+  <span styleName={`root ${size} ${color}`}>{children}</span>
+)
 
 Text.propTypes = {
-  darkBlue: PropTypes.bool,
-  large: PropTypes.bool,
-  small: PropTypes.bool,
-  white: PropTypes.bool,
+  color: PropTypes.string,
+  size: PropTypes.string,
 }
 
 Text.defaultProps = {
-  darkBlue: false,
-  large: false,
-  small: false,
-  white: false,
+  color: "black",
+  size: "regular",
 }
 
 export default Text

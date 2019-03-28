@@ -15,7 +15,7 @@ const Location = ({ align, directions, image, name }) => (
     </div>
     <div styleName={`info ${align}`}>
       <span styleName="name">
-        <Text small white>
+        <Text size="small" color="white">
           {name}
         </Text>
       </span>
