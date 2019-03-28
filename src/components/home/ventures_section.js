@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import CallToAction from "../CallToAction"
 import Subtitle from "../subtitle"
 import Text from "../Text"
-import Title from "../title"
+import Title from "../Title"
 import "./ventures_section.css"
 
 const VenturesSection = () => (

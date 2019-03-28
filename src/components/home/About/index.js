@@ -3,7 +3,7 @@ import React from "react"
 import Subtitle from "../../subtitle"
 import Text from "../../Text"
 import Team from "../Team"
-import Title from "../../title"
+import Title from "../../Title"
 
 import "./index.module.css"
 
@@ -11,7 +11,7 @@ const AboutSection = () => (
   <section styleName="root">
     <div styleName="content">
       <header styleName="header">
-        <Title darkBlue>About</Title>
+        <Title color="darkBlue">About</Title>
       </header>
       <div styleName="story">
         <section styleName="section">
