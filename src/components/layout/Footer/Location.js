@@ -19,7 +19,7 @@ const Location = ({ align, directions, image, name }) => (
           {name}
         </Text>
       </span>
-      <Link to={directions} size="small">
+      <Link to={directions} size="small" color="white" faded>
         Directions
       </Link>
     </div>

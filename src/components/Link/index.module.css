@@ -1,15 +1,30 @@
 .root {
   font-family: colfax-web, sans-serif;
   font-weight: 400;
-  color: #fcfcfc;
   text-decoration: none;
-  opacity: 0.5;
+  opacity: 1;
   transition: opacity 0.2s;
 }
 
 .root:hover {
-  opacity: 1;
+  opacity: 0.5;
   transition: opacity 0.2s;
+}
+
+.root.faded {
+  opacity: 0.5;
+}
+
+.root.faded:hover {
+  opacity: 1;
+}
+
+.root.black {
+  color: #402f4c;
+}
+
+.root.white {
+  color: #fcfcfc;
 }
 
 .root.regular {
