@@ -3,21 +3,23 @@ import PropTypes from "prop-types"
 import React from "react"
 
 import Logo from "../logo"
-import "./header.css"
+import styles from "./header.module.css"
 
 const Header = () => (
-  <header className="Header">
-    <div className="Header-content">
-      <div className="Header-left">
-        <Logo />
+  <header styleName="root">
+    <div styleName="content">
+      <div>
+        <div styleName="logo">
+          <Logo />
+        </div>
       </div>
-      <div className="Header-right">
+      <div>
         <nav>
-          <ul className="Header-links">
-            <li className="Header-link">
+          <ul styleName="links">
+            <li styleName="link">
               <Link to="#">Blog</Link>
             </li>
-            <li className="Header-link">
+            <li styleName="link">
               <Link to="#">Contact</Link>
             </li>
           </ul>
