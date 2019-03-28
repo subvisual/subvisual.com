@@ -6,34 +6,64 @@ import { StaticQuery, graphql } from "gatsby"
 
 import "./index.module.css"
 
-const socialLink = (platform, username) => {
+const socialDetails = (platform, username) => {
   switch (platform) {
     case "twitter":
-      return `https://twitter.com/${username}`
+      return {
+        linkName: "Twitter",
+        linkShortname: "Tw",
+        url: `https://twitter.com/${username}`,
+      }
+    case "dribbble":
+      return {
+        linkName: "Dribble",
+        linkShortname: "Dri",
+        url: `https://dribbble.com/${username}`,
+      }
+    case "github":
+      return {
+        linkName: "Github",
+        linkShortname: "Git",
+        url: `https://github.com/${username}`,
+      }
     default:
-      return "https://subvisual.co"
+      return {
+        linkName: "Other",
+        linkShortname: "Other",
+        url: "https://subvisual.co",
+      }
   }
 }
 
 const Team = props => {
   return (
     <ul styleName="root">
-      {props.members.map(({ name, role, social, photo }) => (
-        <li styleName="member" key={name}>
+      {props.members.map(({ name, role, social, photo }, index) => (
+        <li styleName="member" key={index}>
           <Img styleName="photo" fluid={photo.childImageSharp.fluid} />
           <div styleName="name">
             <span styleName="bold">{name}</span> <br />
             {role}
           </div>
-          <ul styleName="links">
-            {_.map(social, (name, platform) => (
-              <li styleName="link" key={platform}>
-                <a target="_blank" href={socialLink(platform, name)}>
-                  link
-                </a>
-              </li>
-            ))}
-          </ul>
+          <nav aria-label="Social Links">
+            <ul styleName="links">
+              {_.map(social, (name, platform) => {
+                const { linkName, linkShortname, url } = socialDetails(
+                  platform,
+                  name
+                )
+
+                return (
+                  <li styleName="link" key={platform}>
+                    <a target="_blank" href={url}>
+                      <span className="visuallyhidden">{linkName}</span>
+                      <span aria-hidden="true">{linkShortname}</span>
+                    </a>
+                  </li>
+                )
+              })}
+            </ul>
+          </nav>
         </li>
       ))}
     </ul>
