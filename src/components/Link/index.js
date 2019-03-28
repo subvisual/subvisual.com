@@ -4,28 +4,49 @@ import { Link as GatsbyLink } from "gatsby"
 
 import "./index.module.css"
 
-const Link = ({ color, faded, children, size, title, to }) => {
+const Link = ({ blank, children, color, faded, internal, size, title, to }) => {
   const styleNames = ["root", size, color, faded ? "faded" : null]
   const styleName = styleNames.filter(Boolean).join(" ")
 
+  let attrs = {
+    title,
+  }
+
+  if (blank) {
+    attrs.target = "_blank"
+    attrs.rel = "noopener noreferrer"
+  }
+
+  if (internal) {
+    return (
+      <GatsbyLink to={to} {...attrs} styleName={styleName}>
+        {children}
+      </GatsbyLink>
+    )
+  }
+
   return (
-    <GatsbyLink to={to} title={title} styleName={styleName}>
+    <a href={to} {...attrs} styleName={styleName}>
       {children}
-    </GatsbyLink>
+    </a>
   )
 }
 
 Link.propTypes = {
+  blank: PropTypes.bool,
   color: PropTypes.string,
   faded: PropTypes.bool,
+  internal: PropTypes.bool,
   size: PropTypes.string,
   title: PropTypes.string,
   to: PropTypes.string.isRequired,
 }
 
 Link.defaultProps = {
+  blank: false,
   color: "black",
   faded: false,
+  internal: false,
   size: "regular",
 }
 

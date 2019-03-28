@@ -1,57 +1,27 @@
+import _ from "lodash"
 import React from "react"
 
-import Link from "../../Link"
+import SocialLink from "../../SocialLink"
 
 import "./SocialLinks.module.css"
 
-const socialDetails = [
-  {
-    name: "Medium",
-    label: "Md",
-    url: "#",
-  },
-  {
-    name: "Behance",
-    label: "Be",
-    url: "#",
-  },
-  {
-    name: "GitHub",
-    label: "Git",
-    url: "#",
-  },
-  {
-    name: "Dribbble",
-    label: "Dri",
-    url: "#",
-  },
-  {
-    name: "Facebook",
-    label: "Fb",
-    url: "#",
-  },
-  {
-    name: "Twitter",
-    label: "Tw",
-    url: "#",
-  },
-  {
-    name: "Instagram",
-    label: "In",
-    url: "#",
-  },
-]
-
-const SocialLink = ({ name, label, url }) => (
-  <li key={name} styleName="item">
-    <Link to={url} title={name} size="small" color="white" faded>
-      {label}
-    </Link>
-  </li>
-)
+const socialDetails = {
+  medium: "subvisual",
+  behance: "subvisual",
+  github: "subvisual",
+  dribbble: "subvisual",
+  facebook: "subvisual.co",
+  instagram: "wearesubvisual",
+}
 
 const SocialLinks = () => (
-  <ul styleName="root">{socialDetails.map(SocialLink)}</ul>
+  <ul styleName="root">
+    {_.map(socialDetails, (username, platform) => (
+      <li key={platform} styleName="item">
+        <SocialLink platform={platform} username={username} size="small" />
+      </li>
+    ))}
+  </ul>
 )
 
 export default SocialLinks

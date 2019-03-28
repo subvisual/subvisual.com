@@ -19,7 +19,7 @@ const Logo = ({ color }) => (
 )
 
 Logo.propTypes = {
-  color: PropTypes.bool,
+  color: PropTypes.string,
 }
 
 Logo.defaultProps = {
