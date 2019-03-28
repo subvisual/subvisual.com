@@ -4,19 +4,28 @@ import { Link as GatsbyLink } from "gatsby"
 
 import "./index.module.css"
 
-const Link = ({ children, size, title, to }) => (
-  <GatsbyLink to={to} title={title} styleName={`root ${size}`}>
-    {children}
-  </GatsbyLink>
-)
+const Link = ({ color, faded, children, size, title, to }) => {
+  const styleNames = ["root", size, color, faded ? "faded" : null]
+  const styleName = styleNames.filter(Boolean).join(" ")
+
+  return (
+    <GatsbyLink to={to} title={title} styleName={styleName}>
+      {children}
+    </GatsbyLink>
+  )
+}
 
 Link.propTypes = {
+  color: PropTypes.string,
+  faded: PropTypes.bool,
   size: PropTypes.string,
   title: PropTypes.string,
   to: PropTypes.string.isRequired,
 }
 
 Link.defaultProps = {
+  color: "black",
+  faded: false,
   size: "regular",
 }
 

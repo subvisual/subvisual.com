@@ -1,8 +1,9 @@
-import { Link } from "gatsby"
 import React from "react"
 
+import Link from "../Link"
 import Logo from "../logo"
-import "./header.module.css"
+
+import "./Header.module.css"
 
 const Header = () => (
   <header styleName="root">
