@@ -19,7 +19,7 @@
 .logo {
   margin-right: auto;
   margin-left: auto;
-  font-size: 84px;
+  font-size: 40px;
   animation: fadeIn 1s;
 }
 
@@ -47,5 +47,11 @@
   100% {
     width: 0;
     height: 0;
+  }
+}
+
+@media (min-width: 321px) {
+  .logo {
+    font-size: 84px;
   }
 }

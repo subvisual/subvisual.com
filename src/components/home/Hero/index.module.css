@@ -19,7 +19,7 @@
   margin-bottom: 56px;
 }
 
-.textParagraph:not(:last-child) {
+.paragraph:not(:last-child) {
   margin-bottom: 20px;
 }
 
