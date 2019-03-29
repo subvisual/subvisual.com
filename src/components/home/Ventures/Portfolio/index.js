@@ -2,6 +2,8 @@ import React from "react"
 import Img from "gatsby-image"
 import { StaticQuery, graphql } from "gatsby"
 
+import Text from "../../../Text"
+
 import "./index.module.css"
 
 const Portfolio = props => {
@@ -9,14 +11,18 @@ const Portfolio = props => {
     <ul styleName="root">
       {props.ventures.map(({ name, description, cover }) => (
         <li styleName="item" key={name}>
-          <Img
-            {...cover.childImageSharp}
-            imgStyle={{ display: "block" }}
-            alt={name}
-          />
-          <div styleName="details">
-            {name}
-            <br /> {description}
+          <div styleName="photo">
+            <Img
+              {...cover.childImageSharp}
+              imgStyle={{ display: "block" }}
+              alt={name}
+            />
+          </div>
+          <div styleName="name">
+            <Text>{name}</Text>
+          </div>
+          <div styleName="description">
+            <Text>{description}</Text>
           </div>
         </li>
       ))}
