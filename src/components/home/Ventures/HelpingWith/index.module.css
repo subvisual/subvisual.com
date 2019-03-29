@@ -1,0 +1,13 @@
+.root {
+  list-style: none;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 321px) {
+  .item:not(:last-child) {
+    margin-bottom: 28px;
+  }
+}
