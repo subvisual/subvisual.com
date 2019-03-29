@@ -8,7 +8,7 @@
   margin-right: 20px;
 }
 
-@media (min-width: 321px) {
+@media (min-width: 768px) {
   .info.left {
     text-align: left;
   }

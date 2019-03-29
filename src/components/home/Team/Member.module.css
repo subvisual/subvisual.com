@@ -26,7 +26,7 @@
   margin-right: 28px;
 }
 
-@media (min-width: 321px) {
+@media (min-width: 768px) {
   .photo,
   .info {
     margin-bottom: 28px;

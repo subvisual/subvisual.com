@@ -11,7 +11,7 @@
   margin-bottom: 20px;
 }
 
-@media (min-width: 321px) {
+@media (min-width: 768px) {
   .root {
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 56px;

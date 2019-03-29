@@ -34,7 +34,7 @@
   line-height: 28px;
 }
 
-@media (min-width: 321px) {
+@media (min-width: 768px) {
   .root::after {
     border-bottom: 3px solid currentColor;
   }

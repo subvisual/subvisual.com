@@ -1,4 +1,8 @@
 .root {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 28px;
+  grid-row-gap: 56px;
   list-style-type: none;
 }
 
@@ -6,7 +10,19 @@
   margin-bottom: 28px;
 }
 
-@media (min-width: 321px) {
+@media (min-width: 384px) {
+  .root {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 576px) {
+  .root {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
   .root {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -16,23 +32,5 @@
 
   .member:not(:last-child) {
     margin-bottom: 0;
-  }
-}
-
-@media (width <= 900px) {
-  .root {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (width <= 600px) {
-  .root {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (width <= 400px) {
-  .root {
-    grid-template-columns: repeat(1, 1fr);
   }
 }
