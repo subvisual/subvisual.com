@@ -3,6 +3,10 @@
   font-weight: 400;
 }
 
+.root.bold {
+  font-weight: 700;
+}
+
 .root.black {
   color: #403f4c;
 }

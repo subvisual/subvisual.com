@@ -1,5 +1,4 @@
 .root {
-  color: #fcfcfc;
   max-width: 100%;
 }
 
@@ -8,14 +7,14 @@
   mix-blend-mode: overlay;
 }
 
-.name {
+.info {
   margin-bottom: 28px;
   margin-top: 28px;
 }
 
-.bold {
-  font-weight: bolder;
-}
+.name {}
+
+.role {}
 
 .links {
   list-style-type: none;
