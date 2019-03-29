@@ -50,28 +50,43 @@
     padding: 112px 28px;
   }
 
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 28px;
+    grid-row-gap: 112px;
+  }
+
   .title {
-    margin-bottom: 112px;
+    grid-column: 1 / span 2;
   }
 
   .text {
-    margin-left: auto;
-    margin-bottom: 112px;
+    grid-column: 2 / span 1;
   }
 
-  .textParagraph:not(:last-child) {
+  .paragraph:not(:last-child) {
     margin-bottom: 28px;
   }
 
   .images {
+    grid-column: 1 / span 2;
     max-height: 452px;
-    grid-template-columns: 25% 25% auto;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: initial;
     grid-column-gap: 28px;
     grid-row-gap: initial;
   }
 
-  .image {
-    overflow-y: ;
+  .image:nth-child(1) {
+    grid-column: 1 / span 1;
+  }
+
+  .image:nth-child(2) {
+    grid-column: 2 / span 1;
+  }
+
+  .image:nth-child(3) {
+    grid-column: 3 / span 2;
   }
 }

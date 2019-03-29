@@ -15,14 +15,14 @@ const Hero = ({ data }) => (
         <PageTitle>We nurture ideas that empower people</PageTitle>
       </div>
       <div styleName="text">
-        <p styleName="textParagraph">
+        <p styleName="paragraph">
           <Text>
             Building a company from the ground up is hard and stressful,
             particularly in heavy regulated fields such as fintech and digital
             healthcare.
           </Text>
         </p>
-        <p styleName="textParagraph">
+        <p styleName="paragraph">
           <Text>
             Struggling with designing and developing that awesome idea you’ve
             had? We can help you succeed. <CallToAction>Together.</CallToAction>
