@@ -20,7 +20,6 @@
   }
 
   .content {
-    position: relative;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 28px;
     grid-row-gap: 112px;
@@ -31,25 +30,26 @@
   .helpingWith,
   .footer {
     grid-column: 2 / span 1;
-    margin-bottom: 0;
   }
 
   .portfolio {
     grid-column: 1 / span 2;
-    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 28px;
   }
 
-  .portfolio .subheader {
-    max-width: 578px;
-    margin-left: auto;
+  .portfolioHeader {
+    grid-column: 2 / span 1;
+  }
+
+  .portfolioContent {
+    grid-column: 1 / span 2;
   }
 
   .universe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    max-width: 578px;
-    margin-bottom: 0;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 3;
   }
 
   .subheader {
