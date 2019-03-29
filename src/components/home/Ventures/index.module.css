@@ -3,17 +3,11 @@
 }
 
 .content {
+  display: grid;
+  grid-row-gap: 56px;
   max-width: 1184px;
   margin-right: auto;
   margin-left: auto;
-}
-
-.header,
-.lookingFor,
-.helpingWith,
-.universe,
-.portfolio {
-  margin-bottom: 56px;
 }
 
 .subheader {
@@ -27,20 +21,25 @@
 
   .content {
     position: relative;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 28px;
+    grid-row-gap: 112px;
   }
 
   .header,
   .lookingFor,
   .helpingWith,
-  .portfolio {
-    margin-bottom: 112px;
-  }
-
-  .header,
-  .lookingFor,
-  .helpingWith,
-  .portfolio .subheader,
   .footer {
+    grid-column: 2 / span 1;
+    margin-bottom: 0;
+  }
+
+  .portfolio {
+    grid-column: 1 / span 2;
+    margin-bottom: 0;
+  }
+
+  .portfolio .subheader {
     max-width: 578px;
     margin-left: auto;
   }
