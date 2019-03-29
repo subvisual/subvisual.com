@@ -1,6 +1,6 @@
 import React from "react"
 
-import Subtitle from "../../subtitle"
+import Subtitle from "../../Subtitle"
 import Text from "../../Text"
 import Team from "../Team"
 import Title from "../../Title"
@@ -16,7 +16,7 @@ const AboutSection = () => (
       <div styleName="story">
         <section styleName="section">
           <div styleName="title">
-            <Subtitle white>It started out of friendship</Subtitle>
+            <Subtitle color="white">It started out of friendship</Subtitle>
           </div>
           <p styleName="p">
             <Text color="white">
@@ -34,7 +34,7 @@ const AboutSection = () => (
         </section>
         <section styleName="section">
           <div styleName="title">
-            <Subtitle white>And grew with craft</Subtitle>
+            <Subtitle color="white">And grew with craft</Subtitle>
           </div>
           <p styleName="p">
             <Text color="white">
@@ -52,7 +52,7 @@ const AboutSection = () => (
       </div>
       <section>
         <div styleName="title">
-          <Subtitle white>Team</Subtitle>
+          <Subtitle color="white">Team</Subtitle>
         </div>
         <Team />
       </section>

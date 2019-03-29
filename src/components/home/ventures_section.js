@@ -1,7 +1,7 @@
 import React from "react"
 
 import CallToAction from "../CallToAction"
-import Subtitle from "../subtitle"
+import Subtitle from "../Subtitle"
 import Text from "../Text"
 import Title from "../Title"
 import "./ventures_section.css"
