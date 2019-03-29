@@ -1,0 +1,40 @@
+.root {
+  padding: 56px 20px 168px;
+}
+
+.content {
+  max-width: 1184px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.header:not(:last-child),
+.section:not(:last-child),
+.footer:not(:last-child) {
+  margin-bottom: 56px;
+}
+
+.subheader {
+  margin-bottom: 28px;
+}
+
+.rightHalf {
+  max-width: 578px;
+  margin-left: auto;
+}
+
+@media (min-width: 321px) {
+  .root {
+    padding: 112px 28px 224px;
+  }
+
+  .header:not(:last-child),
+  .section:not(:last-child),
+  .footer:not(:last-child) {
+    margin-bottom: 112px;
+  }
+
+  .subheader {
+    margin-bottom: 56px;
+  }
+}

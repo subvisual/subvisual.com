@@ -2,7 +2,7 @@ import React from "react"
 
 import Hero from "../components/home/Hero"
 import About from "../components/home/About"
-import VenturesSection from "../components/home/ventures_section"
+import Ventures from "../components/home/Ventures"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -15,7 +15,7 @@ const IndexPage = () => (
       keywords={[]}
     />
     <Hero />
-    <VenturesSection />
+    <Ventures />
     <About />
   </Layout>
 )
