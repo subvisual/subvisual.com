@@ -33,10 +33,12 @@ const Ventures = () => (
         <Universe />
       </div>
       <section styleName="portfolio">
-        <header styleName="subheader">
+        <header styleName="portfolioHeader">
           <Subtitle>Portfolio</Subtitle>
         </header>
-        <Portfolio />
+        <div styleName="portfolioContent">
+          <Portfolio />
+        </div>
       </section>
       <footer styleName="footer">
         <p>

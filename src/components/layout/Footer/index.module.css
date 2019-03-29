@@ -62,12 +62,13 @@
   }
 
   .locations {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 28px;
     margin-bottom: 56px;
   }
 
   .location:not(:last-child) {
-    margin-right: 28px;
     margin-bottom: 0;
   }
 
