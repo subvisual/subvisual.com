@@ -1,6 +1,7 @@
 import React from "react"
 
 import CallToAction from "../../CallToAction"
+import HelpingWith from "./HelpingWith"
 import LookingFor from "./LookingFor"
 import Portfolio from "./Portfolio"
 import Subtitle from "../../Subtitle"
@@ -25,12 +26,7 @@ const Ventures = () => (
         <header styleName="subheader">
           <Subtitle>Helping with</Subtitle>
         </header>
-        <ul>
-          <li>Seed investment & incubation</li>
-          <li>Strong company culture</li>
-          <li>Early stage product mentorship</li>
-          <li>Strong international ecosystem</li>
-        </ul>
+        <HelpingWith />
       </section>
       <section styleName="section rightHalf">
         <header styleName="subheader">
