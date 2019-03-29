@@ -7,6 +7,7 @@
 }
 
 .photo {
+  height: 224px;
   margin-bottom: 20px;
 }
 
@@ -33,6 +34,7 @@
   }
 
   .photo {
+    height: 452px;
     margin-bottom: 28px;
   }
 }
