@@ -47,6 +47,11 @@
     padding: 56px 28px 112px;
   }
 
+  .logo {
+    height: 28px;
+    font-size: 20px;
+  }
+
   .link {
     font-size: 20px;
     line-height: 28px;
