@@ -42,11 +42,7 @@ const socialPlatforms = {
 }
 
 const SocialLink = ({ platform, size, username }) => {
-  const info = socialPlatforms[platform]
-
-  if (!username || !info) return null
-
-  const { label, name, url } = info
+  const { label, name, url } = socialPlatforms[platform]
 
   return (
     <Link
@@ -65,7 +61,7 @@ const SocialLink = ({ platform, size, username }) => {
 SocialLink.propTypes = {
   platform: PropTypes.string.isRequired,
   size: PropTypes.string,
-  username: PropTypes.string,
+  username: PropTypes.string.isRequired,
 }
 
 SocialLink.defaultProps = {
