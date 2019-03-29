@@ -39,6 +39,7 @@
   .header,
   .lookingFor,
   .helpingWith,
+  .portfolio .subheader,
   .footer {
     max-width: 578px;
     margin-left: auto;
