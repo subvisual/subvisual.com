@@ -14,7 +14,7 @@ const Header = () => (
       <nav>
         <ul styleName="links">
           <li styleName="link-item">
-            <Link to="#" title="Blog" styleName="link">
+            <Link to="https://blog.subvisual.com" title="Blog" styleName="link">
               Blog
             </Link>
           </li>
