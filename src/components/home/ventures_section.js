@@ -52,6 +52,7 @@ const VenturesSection = () => (
           <dd>Active digital finance</dd>
         </dl>
       </section>
+      <VenturesPhotos />
       <footer className="VenturesSection-footer">
         <p>
           <Text size="large">Join our venture universe.</Text>
@@ -59,7 +60,6 @@ const VenturesSection = () => (
           <CallToAction size="large">Let's talk</CallToAction>
         </p>
       </footer>
-      <VenturesPhotos />
     </div>
   </section>
 )

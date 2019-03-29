@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from "gatsby"
 
 import "./index.module.css"
 
-const TeamPhotos = props => {
+const VenturesPhotos = props => {
   return (
     <ul styleName="root">
       {props.ventures.map(({ name, description, cover }) => (
@@ -48,9 +48,10 @@ export default () => (
   <StaticQuery
     query={query}
     render={data => {
-      console.log(data)
       return (
-        <TeamPhotos ventures={data.allVenturesYaml.edges.map(e => e.node)} />
+        <VenturesPhotos
+          ventures={data.allVenturesYaml.edges.map(e => e.node)}
+        />
       )
     }}
   />
