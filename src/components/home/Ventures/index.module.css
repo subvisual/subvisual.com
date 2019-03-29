@@ -8,9 +8,11 @@
   margin-left: auto;
 }
 
-.header:not(:last-child),
-.section:not(:last-child),
-.footer:not(:last-child) {
+.header,
+.lookingFor,
+.helpingWith,
+.universe,
+.portfolio {
   margin-bottom: 56px;
 }
 
@@ -18,20 +20,36 @@
   margin-bottom: 28px;
 }
 
-.rightHalf {
-  max-width: 578px;
-  margin-left: auto;
-}
-
 @media (min-width: 321px) {
   .root {
     padding: 112px 28px 224px;
   }
 
-  .header:not(:last-child),
-  .section:not(:last-child),
-  .footer:not(:last-child) {
+  .content {
+    position: relative;
+  }
+
+  .header,
+  .lookingFor,
+  .helpingWith,
+  .portfolio {
     margin-bottom: 112px;
+  }
+
+  .header,
+  .lookingFor,
+  .helpingWith,
+  .footer {
+    max-width: 578px;
+    margin-left: auto;
+  }
+
+  .universe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 578px;
+    margin-bottom: 0;
   }
 
   .subheader {

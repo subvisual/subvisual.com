@@ -7,6 +7,7 @@ import Portfolio from "./Portfolio"
 import Subtitle from "../../Subtitle"
 import Text from "../../Text"
 import Title from "../../Title"
+import Universe from "./Universe"
 
 import "./index.module.css"
 
@@ -16,25 +17,28 @@ const Ventures = () => (
       <header styleName="header">
         <Title>Meaningful Ventures</Title>
       </header>
-      <section styleName="section rightHalf">
+      <section styleName="lookingFor">
         <header styleName="subheader">
           <Subtitle>Looking for</Subtitle>
         </header>
         <LookingFor />
       </section>
-      <section styleName="section rightHalf">
+      <section styleName="helpingWith">
         <header styleName="subheader">
           <Subtitle>Helping with</Subtitle>
         </header>
         <HelpingWith />
       </section>
-      <section styleName="section rightHalf">
+      <div styleName="universe">
+        <Universe />
+      </div>
+      <section styleName="portfolio">
         <header styleName="subheader">
           <Subtitle>Portfolio</Subtitle>
         </header>
         <Portfolio />
       </section>
-      <footer styleName="footer rightHalf">
+      <footer styleName="footer">
         <p>
           <Text size="large">Join our venture universe.</Text>
           <br />
