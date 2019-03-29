@@ -14,6 +14,7 @@ const Portfolio = props => {
           <div styleName="photo">
             <Img
               {...cover.childImageSharp}
+              style={{ height: "100%" }}
               imgStyle={{ display: "block" }}
               alt={name}
             />
