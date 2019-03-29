@@ -15,12 +15,21 @@
   grid-column: 1 / span 2;
 }
 
-@media(width <= 600px) {
-  .item {
-    grid-column: 1 / span 2;
-  }
-}
-
 .details {
   margin-top: 28px;
 }
+
+@media(width <= 600px) {
+  .root {
+    grid-row-gap: 28px;
+  }
+
+  .item {
+    grid-column: 1 / span 2;
+  }
+
+  .details {
+    margin-top: 20px;
+  }
+}
+

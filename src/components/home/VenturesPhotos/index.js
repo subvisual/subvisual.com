@@ -5,7 +5,6 @@ import { StaticQuery, graphql } from "gatsby"
 import "./index.module.css"
 
 const TeamPhotos = props => {
-  console.log(props)
   return (
     <ul styleName="root">
       {props.ventures.map(({ name, description, cover }) => (
