@@ -10,7 +10,16 @@
 }
 
 .header {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 56px;
+}
+
+.headerTitle {}
+
+.headerIcon {
+  max-width: 58px;
+  max-height: 56px;
 }
 
 .story {
@@ -37,6 +46,11 @@
 
   .header {
     margin-bottom: 112px;
+  }
+
+  .headerIcon {
+    max-width: 98px;
+    max-height: 96px;
   }
 
   .story {

@@ -1,5 +1,6 @@
 import React from "react"
 
+import Icon from "../../Icon"
 import Subtitle from "../../Subtitle"
 import Text from "../../Text"
 import Team from "../Team"
@@ -7,11 +8,16 @@ import Title from "../../Title"
 
 import "./index.module.css"
 
-const AboutSection = () => (
+const About = () => (
   <section styleName="root">
     <div styleName="content">
       <header styleName="header">
-        <Title color="darkBlue">About</Title>
+        <div styleName="headerTitle">
+          <Title color="darkBlue">About</Title>
+        </div>
+        <div styleName="headerIcon">
+          <Icon />
+        </div>
       </header>
       <div styleName="story">
         <section styleName="section">
@@ -47,4 +53,4 @@ const AboutSection = () => (
   </section>
 )
 
-export default AboutSection
+export default About
