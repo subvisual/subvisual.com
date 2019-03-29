@@ -1,0 +1,35 @@
+.root {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 28px;
+  grid-row-gap: 56px;
+  list-style-type: none;
+}
+
+
+.item {
+  max-width: 100%;
+}
+
+.item:first-child {
+  grid-column: 1 / span 2;
+}
+
+.details {
+  margin-top: 28px;
+}
+
+@media(width <= 600px) {
+  .root {
+    grid-row-gap: 28px;
+  }
+
+  .item {
+    grid-column: 1 / span 2;
+  }
+
+  .details {
+    margin-top: 20px;
+  }
+}
+

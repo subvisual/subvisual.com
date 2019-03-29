@@ -4,6 +4,7 @@ import CallToAction from "../CallToAction"
 import Subtitle from "../Subtitle"
 import Text from "../Text"
 import Title from "../Title"
+import VenturesPhotos from "./VenturesPhotos"
 import "./ventures_section.css"
 
 const VenturesSection = () => (
@@ -51,6 +52,7 @@ const VenturesSection = () => (
           <dd>Active digital finance</dd>
         </dl>
       </section>
+      <VenturesPhotos />
       <footer className="VenturesSection-footer">
         <p>
           <Text size="large">Join our venture universe.</Text>
