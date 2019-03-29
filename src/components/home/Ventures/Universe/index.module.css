@@ -1,0 +1,14 @@
+.root {
+  width: 100%;
+  padding: 0 5%;
+}
+
+.root svg {
+  width: 100%;
+}
+
+@media (min-width: 321px) {
+  .root {
+    padding: 0 10%;
+  }
+}
