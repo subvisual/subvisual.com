@@ -24,7 +24,12 @@ h4,
 h5,
 h6,
 p,
-ul {
+ol,
+ul,
+li,
+dl,
+dt,
+dd {
   margin: 0;
   padding: 0;
 }

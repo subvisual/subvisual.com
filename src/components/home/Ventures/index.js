@@ -1,6 +1,7 @@
 import React from "react"
 
 import CallToAction from "../../CallToAction"
+import LookingFor from "./LookingFor"
 import Portfolio from "./Portfolio"
 import Subtitle from "../../Subtitle"
 import Text from "../../Text"
@@ -18,14 +19,7 @@ const Ventures = () => (
         <header styleName="subheader">
           <Subtitle>Looking for</Subtitle>
         </header>
-        <dl>
-          <dt>Product Vision</dt>
-          <dd>Ideas that solve a clear problem for real users</dd>
-          <dt>Business Strategy</dt>
-          <dd>With clear goals, aiming for sustainable growth</dd>
-          <dt>Founders & Culture</dt>
-          <dd>Backed by committed people, with the right values</dd>
-        </dl>
+        <LookingFor />
       </section>
       <section styleName="section rightHalf">
         <header styleName="subheader">
