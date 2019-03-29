@@ -10,8 +10,9 @@
   margin-left: auto;
 }
 
-.subheader {
-  margin-bottom: 28px;
+.portfolio {
+  display: grid;
+  grid-row-gap: 28px;
 }
 
 @media (min-width: 768px) {
@@ -37,6 +38,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 28px;
+    grid-row-gap: 56px;
   }
 
   .portfolioHeader {
