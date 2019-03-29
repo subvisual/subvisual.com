@@ -18,17 +18,10 @@ const AboutSection = () => (
           <div styleName="title">
             <Subtitle color="white">It started out of friendship</Subtitle>
           </div>
-          <p styleName="p">
-            <Text color="white">
-              Subvisual was born out of friendship, with the ambition to become
-              a company we'd love to work in.
-            </Text>
-          </p>
-          <p styleName="p">
+          <p styleName="paragraph">
             <Text color="white">
               By putting people first and never compromising on quality, we were
-              able to shape a team culture that will embrace you and nurture
-              your ideas to fruition.
+              able to shape a team culture that will embrace you and your ideas.
             </Text>
           </p>
         </section>
@@ -36,13 +29,7 @@ const AboutSection = () => (
           <div styleName="title">
             <Subtitle color="white">And grew with craft</Subtitle>
           </div>
-          <p styleName="p">
-            <Text color="white">
-              We're a small, but powerful team, that can help you make informed
-              decisions throughout the process of building a digital product.
-            </Text>
-          </p>
-          <p styleName="p">
+          <p styleName="paragraph">
             <Text color="white">
               We'll challenge you to think further and help you do the heavy
               lifting of shaping your product's development.

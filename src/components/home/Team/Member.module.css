@@ -5,11 +5,11 @@
 .photo {
   background-color: #045cfc;
   mix-blend-mode: overlay;
+  margin-bottom: 20px;
 }
 
 .info {
-  margin-bottom: 28px;
-  margin-top: 28px;
+  margin-bottom: 20px;
 }
 
 .name {}
@@ -24,4 +24,11 @@
 
 .link:not(:last-child) {
   margin-right: 28px;
+}
+
+@media (min-width: 321px) {
+  .photo,
+  .info {
+    margin-bottom: 28px;
+  }
 }

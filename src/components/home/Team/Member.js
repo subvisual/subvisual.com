@@ -8,7 +8,7 @@ import Text from "../../Text"
 import "./Member.module.css"
 
 const Member = ({ name, role, social, photo }) => (
-  <li styleName="root">
+  <div styleName="root">
     <Img styleName="photo" fluid={photo.childImageSharp.fluid} />
     <div styleName="info">
       <div styleName="name">
@@ -21,13 +21,21 @@ const Member = ({ name, role, social, photo }) => (
       </div>
     </div>
     <ul aria-label="Social Links" styleName="links">
-      {_.map(social, (username, platform) => (
-        <li key={platform} styleName="link">
-          <SocialLink username={username} platform={platform} key={platform} />
-        </li>
-      ))}
+      {_.map(social, (username, platform) => {
+        if (!username) return null
+
+        return (
+          <li key={platform} styleName="link">
+            <SocialLink
+              username={username}
+              platform={platform}
+              key={platform}
+            />
+          </li>
+        )
+      })}
     </ul>
-  </li>
+  </div>
 )
 
 export default Member
