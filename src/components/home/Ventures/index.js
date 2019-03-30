@@ -17,22 +17,18 @@ const Ventures = () => (
       <header styleName="header">
         <Title>Meaningful Ventures</Title>
       </header>
-      <section styleName="lookingFor">
-        <header styleName="subheader">
-          <Subtitle>Looking for</Subtitle>
-        </header>
+      <section styleName="section lookingFor">
+        <Subtitle>Looking for</Subtitle>
         <LookingFor />
       </section>
-      <section styleName="helpingWith">
-        <header styleName="subheader">
-          <Subtitle>Helping with</Subtitle>
-        </header>
+      <section styleName="section helpingWith">
+        <Subtitle>Helping with</Subtitle>
         <HelpingWith />
       </section>
       <div styleName="universe">
         <Universe />
       </div>
-      <section styleName="portfolio">
+      <section styleName="section portfolio">
         <header styleName="portfolioHeader">
           <Subtitle>Portfolio</Subtitle>
         </header>

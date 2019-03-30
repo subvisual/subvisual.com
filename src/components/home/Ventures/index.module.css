@@ -10,7 +10,7 @@
   margin-left: auto;
 }
 
-.portfolio {
+.section {
   display: grid;
   grid-row-gap: 28px;
 }
@@ -33,12 +33,19 @@
     grid-column: 2 / span 1;
   }
 
+  .section {
+    grid-row-gap: 56px;
+  }
+
+  .universe {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 3;
+  }
+
   .portfolio {
     grid-column: 1 / span 2;
-    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 28px;
-    grid-row-gap: 56px;
   }
 
   .portfolioHeader {
@@ -47,14 +54,5 @@
 
   .portfolioContent {
     grid-column: 1 / span 2;
-  }
-
-  .universe {
-    grid-column: 1 / span 1;
-    grid-row: 1 / span 3;
-  }
-
-  .subheader {
-    margin-bottom: 56px;
   }
 }
