@@ -107,7 +107,6 @@
   .vertical {
     position: initial;
     top: initial;
-    height: auto;
     transform: initial;
   }
 }
