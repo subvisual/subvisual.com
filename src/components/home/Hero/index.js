@@ -31,25 +31,52 @@ const Hero = ({ data }) => (
       </div>
       <div styleName="images">
         <div styleName="image">
-          <Img
-            fluid={data.hero1.childImageSharp.fluid}
-            imgStyle={{ display: "block" }}
-            style={{ height: "100%" }}
-          />
+          <div styleName="horizontal">
+            <Img
+              fluid={data.hero1_h.childImageSharp.fluid}
+              imgStyle={{ display: "block" }}
+              style={{ height: "100%" }}
+            />
+          </div>
+          <div styleName="vertical">
+            <Img
+              fluid={data.hero1_v.childImageSharp.fluid}
+              imgStyle={{ display: "block" }}
+              style={{ height: "100%" }}
+            />
+          </div>
         </div>
         <div styleName="image">
-          <Img
-            fluid={data.hero2.childImageSharp.fluid}
-            imgStyle={{ display: "block" }}
-            style={{ height: "100%" }}
-          />
+          <div styleName="horizontal">
+            <Img
+              fluid={data.hero2_h.childImageSharp.fluid}
+              imgStyle={{ display: "block" }}
+              style={{ height: "100%" }}
+            />
+          </div>
+          <div styleName="vertical">
+            <Img
+              fluid={data.hero2_v.childImageSharp.fluid}
+              imgStyle={{ display: "block" }}
+              style={{ height: "100%" }}
+            />
+          </div>
         </div>
         <div styleName="image">
-          <Img
-            fluid={data.hero3.childImageSharp.fluid}
-            imgStyle={{ display: "block" }}
-            style={{ height: "100%" }}
-          />
+          <div styleName="horizontal">
+            <Img
+              fluid={data.hero3_h.childImageSharp.fluid}
+              imgStyle={{ display: "block" }}
+              style={{ height: "100%" }}
+            />
+          </div>
+          <div styleName="vertical">
+            <Img
+              fluid={data.hero3_v.childImageSharp.fluid}
+              imgStyle={{ display: "block" }}
+              style={{ height: "100%" }}
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -62,25 +89,46 @@ export default () => (
 
 const query = graphql`
   query {
-    hero1: file(relativePath: { regex: "/hero-1.jpg/" }) {
+    hero1_v: file(relativePath: { regex: "/hero-1-vertical.jpg/" }) {
       childImageSharp {
         fluid(maxHeight: 452, quality: 100) {
           ...GatsbyImageSharpFluid_noBase64
         }
       }
     }
+    hero1_h: file(relativePath: { regex: "/hero-1-horizontal.jpg/" }) {
+      childImageSharp {
+        fluid(maxHeight: 224, quality: 100) {
+          ...GatsbyImageSharpFluid_noBase64
+        }
+      }
+    }
 
-    hero2: file(relativePath: { regex: "/hero-2.jpg/" }) {
+    hero2_v: file(relativePath: { regex: "/hero-2-vertical.jpg/" }) {
       childImageSharp {
         fluid(maxHeight: 452, quality: 100) {
           ...GatsbyImageSharpFluid_noBase64
         }
       }
     }
+    hero2_h: file(relativePath: { regex: "/hero-2-horizontal.jpg/" }) {
+      childImageSharp {
+        fluid(maxHeight: 224, quality: 100) {
+          ...GatsbyImageSharpFluid_noBase64
+        }
+      }
+    }
 
-    hero3: file(relativePath: { regex: "/hero-3.jpg/" }) {
+    hero3_v: file(relativePath: { regex: "/hero-3-vertical.jpg/" }) {
       childImageSharp {
         fluid(maxHeight: 452, quality: 100) {
+          ...GatsbyImageSharpFluid_noBase64
+        }
+      }
+    }
+    hero3_h: file(relativePath: { regex: "/hero-3-horizontal.jpg/" }) {
+      childImageSharp {
+        fluid(maxHeight: 320, quality: 100) {
           ...GatsbyImageSharpFluid_noBase64
         }
       }
