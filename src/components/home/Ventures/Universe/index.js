@@ -18,8 +18,8 @@ const Universe = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="rotate(128.89 41.66 77.16) scale(32.4033 34.2221)"
           >
-            <stop stop-color="#045CFC" stop-opacity=".6" />
-            <stop offset="1" stop-color="#045CFC" />
+            <stop stopColor="#045CFC" stopOpacity=".6" />
+            <stop offset="1" stopColor="#045CFC" />
           </radialGradient>
           <radialGradient
             id="paint1_radial"
@@ -29,8 +29,8 @@ const Universe = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="rotate(128.89 35.113 19.253) scale(21.6022 22.8147)"
           >
-            <stop stop-color="#2421AB" stop-opacity=".6" />
-            <stop offset="1" stop-color="#2421AB" />
+            <stop stopColor="#2421AB" stopOpacity=".6" />
+            <stop offset="1" stopColor="#2421AB" />
           </radialGradient>
           <radialGradient
             id="paint2_radial"
@@ -40,8 +40,8 @@ const Universe = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="matrix(-6.78122 8.40707 -8.87898 -7.16188 34.619 132.354)"
           >
-            <stop stop-color="#2421AB" stop-opacity=".6" />
-            <stop offset="1" stop-color="#2421AB" />
+            <stop stopColor="#2421AB" stopOpacity=".6" />
+            <stop offset="1" stopColor="#2421AB" />
           </radialGradient>
           <radialGradient
             id="paint3_radial"
@@ -51,8 +51,8 @@ const Universe = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="rotate(128.89 88.022 72.354) scale(15.4302 16.2962)"
           >
-            <stop stop-color="#2421AB" stop-opacity=".6" />
-            <stop offset="1" stop-color="#2421AB" />
+            <stop stopColor="#2421AB" stopOpacity=".6" />
+            <stop offset="1" stopColor="#2421AB" />
           </radialGradient>
           <radialGradient
             id="paint4_radial"
@@ -62,8 +62,8 @@ const Universe = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="rotate(128.89 82.842 103.967) scale(21.6022 22.8147)"
           >
-            <stop stop-color="#2421AB" stop-opacity=".6" />
-            <stop offset="1" stop-color="#2421AB" />
+            <stop stopColor="#2421AB" stopOpacity=".6" />
+            <stop offset="1" stopColor="#2421AB" />
           </radialGradient>
           <radialGradient
             id="paint5_radial"
@@ -73,8 +73,8 @@ const Universe = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="matrix(-27.12496 33.62834 -35.51577 -28.64738 117.604 179.978)"
           >
-            <stop stop-color="#2421AB" stop-opacity=".6" />
-            <stop offset="1" stop-color="#2421AB" />
+            <stop stopColor="#2421AB" stopOpacity=".6" />
+            <stop offset="1" stopColor="#2421AB" />
           </radialGradient>
           <radialGradient
             id="paint6_radial"
@@ -84,8 +84,8 @@ const Universe = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="matrix(-22.28121 27.62327 -29.17367 -23.53178 37.213 30.621)"
           >
-            <stop stop-color="#2421AB" stop-opacity=".6" />
-            <stop offset="1" stop-color="#2421AB" />
+            <stop stopColor="#2421AB" stopOpacity=".6" />
+            <stop offset="1" stopColor="#2421AB" />
           </radialGradient>
         </defs>
         <ellipse
