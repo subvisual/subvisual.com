@@ -15,6 +15,10 @@
   grid-row-gap: 28px;
 }
 
+.footer {
+  padding-top: 112px;
+}
+
 @media (min-width: 768px) {
   .root {
     padding: 112px 28px 224px;
