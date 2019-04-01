@@ -2,9 +2,9 @@ import React from "react"
 import Img from "gatsby-image"
 import { StaticQuery, graphql } from "gatsby"
 
-import PageTitle from "../../PageTitle"
 import CallToAction from "../../CallToAction"
 import Text from "../../Text"
+import Title from "./Title"
 
 import "./index.module.css"
 
@@ -12,7 +12,7 @@ const Hero = ({ data }) => (
   <div styleName="root">
     <div styleName="content">
       <div styleName="title">
-        <PageTitle>We nurture ideas that empower people</PageTitle>
+        <Title />
       </div>
       <div styleName="text">
         <p>

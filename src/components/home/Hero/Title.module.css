@@ -1,0 +1,51 @@
+.ideas {
+  position: relative;
+  display: inline-block;
+}
+
+.planet,
+.planet::before,
+.planet::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.planet::before,
+.planet::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.planet {
+  top: 7px;
+  left: 3px;
+  width: 12px;
+  height: 12px;
+}
+
+.planet::before {
+  background: #fcfcfc;
+}
+
+.planet::after {
+  background: radial-gradient(9px at 83% 15%, rgba(4, 92, 252, 0.6) 0%, #045cfc 100%);
+}
+
+@media (min-width: 950px) {
+  .planet {
+    top: 17px;
+    left: 6px;
+    width: 23px;
+    height: 23px;
+  }
+
+  .planet::after {
+    background: radial-gradient(19px at 83% 15%, rgba(4, 92, 252, 0.6) 0%, #045cfc 100%);
+  }
+}
