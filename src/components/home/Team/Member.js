@@ -1,5 +1,6 @@
 import _ from "lodash"
 import React from "react"
+import PropTypes from "prop-types"
 import Img from "gatsby-image"
 
 import SocialLink from "../../SocialLink"
@@ -37,5 +38,12 @@ const Member = ({ name, role, social, photo }) => (
     </ul>
   </div>
 )
+
+Member.propTypes = {
+  name: PropTypes.string.isRequired,
+  photo: PropTypes.string.isRequired,
+  role: PropTypes.string.isRequired,
+  social: PropTypes.object.isRequired,
+}
 
 export default Member
