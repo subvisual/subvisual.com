@@ -35,10 +35,6 @@
 }
 
 @media (min-width: 768px) {
-  .root::after {
-    border-bottom: 3px solid currentColor;
-  }
-
   .root:hover::after {
     transform: translateY(2px);
     transition: transform 0.2s;
