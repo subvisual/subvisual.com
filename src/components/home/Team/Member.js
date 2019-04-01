@@ -41,9 +41,9 @@ const Member = ({ name, role, social, photo }) => (
 
 Member.propTypes = {
   name: PropTypes.string.isRequired,
-  photo: PropTypes.string.isRequired,
+  photo: PropTypes.object.isRequired,
   role: PropTypes.string.isRequired,
-  social: PropTypes.object.isRequired,
+  social: PropTypes.object,
 }
 
 export default Member
