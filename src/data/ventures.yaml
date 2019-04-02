@@ -1,20 +1,25 @@
 ---
 - name: "UTRUST"
   description: "Crypto payments, simple as they should be"
-  cover: "./ventures/utrust.jpg"
+  color: "./ventures/utrust_color.jpg"
+  grey: "./ventures/utrust.jpg"
 
 - name: "siosLIFE"
   description: "For younger spirits"
-  cover: "./ventures/sios.jpg"
+  color: "./ventures/sioslife_color.jpg"
+  grey: "./ventures/sioslife.jpg"
 
 - name: "Crediflux"
   description: "Simple, fast, and paperless"
-  cover: "./ventures/crediflux.jpg"
+  color: "./ventures/crediflux_color.jpg"
+  grey: "./ventures/crediflux.jpg"
 
 - name: "Oncostats"
   description: "Defeating a common enemy, cancer"
-  cover: "./ventures/oncostats.jpg"
+  color: "./ventures/oncostats_color.jpg"
+  grey: "./ventures/oncostats.jpg"
 
 - name: "SV Health"
   description: "Nurturing digital healthcare solutions"
-  cover: "./ventures/svhealth.jpg"
+  grey: "./ventures/svhealth.jpg"
+  color: "./ventures/svhealth_color.jpg"

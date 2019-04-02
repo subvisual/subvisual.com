@@ -9,15 +9,25 @@ import "./index.module.css"
 const Portfolio = props => {
   return (
     <ul styleName="root">
-      {props.ventures.map(({ name, description, cover }) => (
+      {props.ventures.map(({ name, description, color, grey }) => (
         <li styleName="item" key={name}>
-          <div styleName="photo">
-            <Img
-              {...cover.childImageSharp}
-              style={{ height: "100%" }}
-              imgStyle={{ display: "block" }}
-              alt={name}
-            />
+          <div styleName="wrapper">
+            <div styleName="photo">
+              <Img
+                {...color.childImageSharp}
+                style={{ height: "100%" }}
+                imgStyle={{ display: "block" }}
+                alt={name}
+              />
+            </div>
+            <div styleName="grey">
+              <Img
+                {...grey.childImageSharp}
+                style={{ height: "100%" }}
+                imgStyle={{ display: "block" }}
+                alt={name}
+              />
+            </div>
           </div>
           <div styleName="name">
             <Text>{name}</Text>
@@ -38,7 +48,14 @@ const query = graphql`
         node {
           name
           description
-          cover {
+          grey {
+            childImageSharp {
+              fluid(maxHeight: 452, quality: 100) {
+                ...GatsbyImageSharpFluid_noBase64
+              }
+            }
+          }
+          color {
             childImageSharp {
               fluid(maxHeight: 452, quality: 100) {
                 ...GatsbyImageSharpFluid_noBase64

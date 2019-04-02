@@ -9,12 +9,49 @@
 .photo {
   height: 224px;
   margin-bottom: 20px;
+
+  z-index: 0;
+}
+
+.grey {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  pointer-events: none;
+
+  z-index: 1;
+
+  opacity: 1;
+
+  transition: opacity 0.3s ease-in-out;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.item {
+  cursor: pointer;
+}
+
+.item:hover .grey {
+  opacity: 0;
 }
 
 @media (min-width: 768px) {
   .root {
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 56px;
+  }
+
+  .name {
+    font-size: 20px;
+    line-height: 28px;
   }
 
   .item:first-child {
@@ -24,7 +61,7 @@
     grid-column-gap: 28px;
   }
 
-  .item:first-child .photo {
+  .item:first-child .wrapper {
     grid-column: 1 / span 2;
   }
 
@@ -33,7 +70,8 @@
     grid-column: 2 / span 1;
   }
 
-  .photo {
+  .photo,
+  .grey {
     height: 452px;
     margin-bottom: 28px;
   }
