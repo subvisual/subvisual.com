@@ -34,12 +34,7 @@
   line-height: 28px;
 }
 
-@media (min-width: 950px) {
-  .root.small {
-    font-size: 16px;
-    line-height: 20px;
-  }
-
+@media (min-width: 768px) {
   .root.regular {
     font-size: 20px;
     line-height: 28px;
