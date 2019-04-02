@@ -1,18 +1,13 @@
 .root {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-column-gap: 28px;
-  grid-row-gap: 56px;
+  grid-row-gap: 28px;
   list-style-type: none;
-}
-
-.member:not(:last-child) {
-  margin-bottom: 28px;
 }
 
 @media (min-width: 384px) {
   .root {
     grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
   }
 }
 
@@ -24,13 +19,13 @@
 
 @media (min-width: 768px) {
   .root {
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 950px) {
+  .root {
     grid-column-gap: 28px;
     grid-row-gap: 56px;
-  }
-
-  .member:not(:last-child) {
-    margin-bottom: 0;
   }
 }

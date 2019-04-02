@@ -24,7 +24,7 @@ const About = () => (
           <div styleName="title">
             <Subtitle color="white">It started out of friendship</Subtitle>
           </div>
-          <p>
+          <p styleName="text">
             <Text color="white">
               By putting people first and never compromising on quality, we were
               able to shape a team culture that will embrace you and your ideas.
@@ -35,7 +35,7 @@ const About = () => (
           <div styleName="title">
             <Subtitle color="white">And grew with craft</Subtitle>
           </div>
-          <p>
+          <p styleName="text">
             <Text color="white">
               We'll challenge you to think further and help you do the heavy
               lifting of shaping your product's development.

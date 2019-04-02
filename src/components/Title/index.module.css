@@ -13,7 +13,7 @@
   color: #2421ab;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 950px) {
   .root {
     font-size: 84px;
     line-height: 96px;

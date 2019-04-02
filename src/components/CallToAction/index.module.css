@@ -39,7 +39,9 @@
     transform: translateY(2px);
     transition: transform 0.2s;
   }
+}
 
+@media (min-width: 950px) {
   .root.regular {
     font-size: 20px;
     line-height: 28px;

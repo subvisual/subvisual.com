@@ -18,24 +18,17 @@
 }
 
 .callToAction {
-  margin-bottom: 56px;
+  margin-bottom: 28px;
 }
 
 .locations {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: grid;
+  grid-row-gap: 28px;
   width: 100%;
   margin-bottom: 28px;
 }
 
-.location {
-  flex: 1 0 0;
-}
-
-.location:not(:last-child) {
-  margin-bottom: 28px;
-}
+.location {}
 
 .social {
   display: flex;
@@ -48,12 +41,30 @@
 }
 
 @media (min-width: 768px) {
-  .root {
-    padding: 112px 28px 28px;
-  }
-
   .content {
     align-items: center;
+  }
+
+  .locations {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: initial;
+    grid-column-gap: 20px;
+    grid-row-gap: initial;
+  }
+
+  .social {
+    flex-direction: row;
+  }
+
+  .socialLabel {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 950px) {
+  .root {
+    padding: 112px 28px 28px;
   }
 
   .logo {
@@ -61,24 +72,16 @@
     margin-bottom: 28px;
   }
 
+  .callToAction {
+    margin-bottom: 56px;
+  }
+
   .locations {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     grid-column-gap: 28px;
     margin-bottom: 56px;
   }
 
-  .location:not(:last-child) {
-    margin-bottom: 0;
-  }
-
   .social {
-    flex-direction: row;
     margin-bottom: 112px;
-  }
-
-  .socialLabel {
-    margin-right: 20px;
-    margin-bottom: 0;
   }
 }
