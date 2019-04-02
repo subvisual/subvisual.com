@@ -36,7 +36,7 @@
   margin-right: 28px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 950px) {
   .root {
     padding: 56px 28px 112px;
   }

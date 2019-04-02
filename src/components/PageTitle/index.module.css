@@ -6,7 +6,7 @@
   color: #045cfc;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 950px) {
   .root {
     font-size: 112px;
     line-height: 112px;
