@@ -34,7 +34,7 @@
   line-height: 28px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 950px) {
   .root.regular {
     font-size: 20px;
     line-height: 28px;
