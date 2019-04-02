@@ -1,16 +1,12 @@
 .root {
+  display: grid;
+  grid-row-gap: 20px;
   max-width: 100%;
 }
 
-.photo {
-  background-color: #045cfc;
-  mix-blend-mode: overlay;
-  margin-bottom: 20px;
-}
+.photo {}
 
-.info {
-  margin-bottom: 20px;
-}
+.info {}
 
 .name {}
 
@@ -19,16 +15,26 @@
 .links {
   list-style-type: none;
   display: flex;
-  padding: 0;
 }
 
 .link:not(:last-child) {
   margin-right: 28px;
 }
 
+@media (max-width: 768px) {
+  .vertical {
+    display: none;
+  }
+}
+
 @media (min-width: 768px) {
-  .photo,
-  .info {
-    margin-bottom: 28px;
+  .horizontal {
+    display: none;
+  }
+}
+
+@media (min-width: 950px) {
+  .root {
+    grid-row-gap: 28px;
   }
 }

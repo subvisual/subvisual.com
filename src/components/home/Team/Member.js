@@ -10,7 +10,12 @@ import "./Member.module.css"
 
 const Member = ({ name, role, social, photo }) => (
   <div styleName="root">
-    <Img styleName="photo" fluid={photo.childImageSharp.fluid} />
+    <div styleName="photo horizontal">
+      <Img fluid={photo.horizontal.childImageSharp.fluid} />
+    </div>
+    <div styleName="photo vertical">
+      <Img fluid={photo.vertical.childImageSharp.fluid} />
+    </div>
     <div styleName="info">
       <div styleName="name">
         <Text color="white" bold>
@@ -41,7 +46,10 @@ const Member = ({ name, role, social, photo }) => (
 
 Member.propTypes = {
   name: PropTypes.string.isRequired,
-  photo: PropTypes.object.isRequired,
+  photo: PropTypes.shape({
+    horizontal: PropTypes.object.isRequired,
+    vertical: PropTypes.object.isRequired,
+  }).isRequired,
   role: PropTypes.string.isRequired,
   social: PropTypes.object,
 }

@@ -32,9 +32,18 @@ const teamQuery = graphql`
           name
           role
           photo {
-            childImageSharp {
-              fluid(maxWidth: 320, quality: 100) {
-                ...GatsbyImageSharpFluid_noBase64
+            horizontal {
+              childImageSharp {
+                fluid(maxWidth: 320, quality: 100) {
+                  ...GatsbyImageSharpFluid_noBase64
+                }
+              }
+            }
+            vertical {
+              childImageSharp {
+                fluid(maxWidth: 320, quality: 100) {
+                  ...GatsbyImageSharpFluid_noBase64
+                }
               }
             }
           }
