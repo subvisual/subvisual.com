@@ -13,7 +13,7 @@ const About = () => (
     <div styleName="content">
       <header styleName="header">
         <div styleName="headerTitle">
-          <Title color="darkBlue">About</Title>
+          <Title color="purple">About</Title>
         </div>
         <div styleName="headerIcon">
           <Icon />

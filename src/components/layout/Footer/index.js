@@ -46,7 +46,7 @@ const Footer = () => (
         <SocialLinks />
       </div>
       <p>
-        <Text size="small" color="darkBlue">
+        <Text size="small" color="purple">
           Handcrafted by Subvisual © {new Date().getFullYear()}
         </Text>
       </p>

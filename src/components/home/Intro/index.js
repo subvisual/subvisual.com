@@ -7,7 +7,7 @@ import "./index.module.css"
 const Intro = () => (
   <div styleName="root">
     <div styleName="logo">
-      <Logo color="darkBlue" />
+      <Logo color="purple" />
     </div>
   </div>
 )
