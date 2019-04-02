@@ -54,14 +54,19 @@
   pointer-events: none;
 }
 
-.sioslife {
-  top: 414px;
-  left: 4%;
-}
-
-.utrust {
+.planet:nth-child(1) {
   top: 137px;
   left: 48%;
+}
+
+.planet:nth-child(2) {
+  top: 334px;
+  left: 30%;
+}
+
+.planet:nth-child(3) {
+  top: 770px;
+  left: 77%;
 }
 
 @media (min-width: 768px) {
@@ -97,13 +102,19 @@
     margin-bottom: 28px;
   }
 
-  .sioslife {
-    top: 648px;
+  .planet:nth-child(1) {
+    top: 300px;
+    left: 9%;
+  }
+
+  .planet:nth-child(2) {
+    top: 723px;
     left: 27%;
   }
 
-  .utrust {
-    top: 300px;
-    left: 9%;
+  .planet:nth-child(3) {
+    top: 664px;
+    right: 12%;
+    left: auto;
   }
 }

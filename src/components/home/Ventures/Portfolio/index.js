@@ -8,10 +8,11 @@ import Text from "../../../Text"
 import underscore from "../../../../utilities/underscore"
 import "./index.module.css"
 
-const planetSizes = {
-  sioslife: 55,
-  utrust: 112,
-}
+const planetSizes = [
+  { mobile: 112, desktop: 224 },
+  { mobile: 56, desktop: 84 },
+  { mobile: 168, desktop: 112 },
+]
 
 class Portfolio extends Component {
   constructor() {
@@ -19,10 +20,13 @@ class Portfolio extends Component {
     this.state = { isDesktop: false }
   }
 
-  getPlanetSize(name) {
-    const size = planetSizes[name]
+  getPlanetSize(index) {
+    const { isDesktop } = this.state
+    const size = planetSizes[index]
 
-    return this.state.isDesktop ? size * 2 : size
+    if (!size) return
+
+    return isDesktop ? size.desktop : size.mobile
   }
 
   handleWindowResize = () => {
@@ -40,14 +44,13 @@ class Portfolio extends Component {
     window.removeEventListener("resize", this.handleWindowResize)
   }
 
-  renderPlanet = ({ name }) => {
-    const planetName = underscore(name)
-    const planetSize = this.getPlanetSize(planetName)
+  renderPlanet = ({ name }, index) => {
+    const planetSize = this.getPlanetSize(index)
 
     if (!planetSize) return null
 
     return (
-      <div key={name} styleName={`planet ${planetName}`}>
+      <div key={name} styleName="planet">
         <Planet color="purple" size={planetSize} />
       </div>
     )
@@ -88,7 +91,7 @@ class Portfolio extends Component {
     return (
       <div styleName="root">
         <ul styleName="ventures">{ventures.map(this.renderVenture)}</ul>
-        {ventures.map(this.renderPlanet)}
+        <div>{ventures.map(this.renderPlanet)}</div>
       </div>
     )
   }
