@@ -8,7 +8,7 @@ import "./index.module.css"
 const Team = ({ members }) => (
   <ul styleName="root">
     {members.map((data, index) => (
-      <li key={index} styleName="member">
+      <li key={index}>
         <Member {...data} />
       </li>
     ))}
