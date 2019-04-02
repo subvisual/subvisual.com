@@ -11,6 +11,7 @@ const planetSizes = [
   { mobile: 112, desktop: 224 },
   { mobile: 56, desktop: 84 },
   { mobile: 168, desktop: 112 },
+  { mobile: 112, desktop: 168 },
 ]
 
 class Portfolio extends Component {

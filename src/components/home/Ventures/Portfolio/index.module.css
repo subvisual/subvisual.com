@@ -65,8 +65,13 @@
 }
 
 .planet:nth-child(3) {
-  top: 770px;
-  left: 77%;
+  top: 700px;
+  left: -16%;
+}
+
+.planet:nth-child(4) {
+  top: 1230px;
+  left: 87%;
 }
 
 @media (min-width: 768px) {
@@ -116,5 +121,10 @@
     top: 664px;
     right: 12%;
     left: auto;
+  }
+
+  .planet:nth-child(4) {
+    top: 1270px;
+    left: 42%;
   }
 }
