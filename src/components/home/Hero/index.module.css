@@ -117,6 +117,10 @@
     padding: 112px 28px;
   }
 
+  .title {
+    max-width: 100%;
+  }
+
   .content {
     grid-column-gap: 28px;
     grid-row-gap: 112px;
