@@ -5,7 +5,6 @@ import { StaticQuery, graphql } from "gatsby"
 import Planet from "../../../Planet"
 import Text from "../../../Text"
 
-import underscore from "../../../../utilities/underscore"
 import "./index.module.css"
 
 const planetSizes = [
