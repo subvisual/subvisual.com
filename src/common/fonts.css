@@ -6,6 +6,13 @@
 }
 
 @font-face {
+  font-family: "Acta Display No Tittle";
+  src: url('../fonts/acta-display-extra-bold-no-tittle.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Acta Headline";
   src: url('../fonts/acta-headline-extra-bold.woff2') format('woff2'), url('../fonts/acta-headline-extra-bold.woff') format('woff');
   font-weight: normal;
