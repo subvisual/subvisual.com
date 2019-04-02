@@ -1,4 +1,8 @@
 .root {
+  position: relative;
+}
+
+.ventures {
   display: grid;
   grid-template-columns: 1fr;
   grid-column-gap: 28px;
@@ -43,8 +47,25 @@
   opacity: 0;
 }
 
+.planet {
+  position: absolute;
+  z-index: 2;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+.sioslife {
+  top: 414px;
+  left: 4%;
+}
+
+.utrust {
+  top: 137px;
+  left: 48%;
+}
+
 @media (min-width: 768px) {
-  .root {
+  .ventures {
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 56px;
   }
@@ -74,5 +95,15 @@
   .grey {
     height: 452px;
     margin-bottom: 28px;
+  }
+
+  .sioslife {
+    top: 648px;
+    left: 27%;
+  }
+
+  .utrust {
+    top: 300px;
+    left: 9%;
   }
 }
