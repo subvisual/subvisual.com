@@ -5,8 +5,8 @@
 
 .root {
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: calc(var(--size) * 1px);
+  height: calc(var(--size) * 1px);
   border-radius: 50%;
   transform-origin: top left;
   pointer-events: none;
@@ -41,11 +41,11 @@
 }
 
 .root.blue::after {
-  background: radial-gradient(83px at 83% 15%, rgba(4, 92, 252, 0.6) 0%, #045cfc 100%);
+  background: radial-gradient(calc(var(--size) * 0.83 * 1px) at 83% 15%, rgba(4, 92, 252, 0.6) 0%, #045cfc 100%);
 }
 
 .root.purple::after {
-  background: radial-gradient(83px at 83% 15%, rgba(36, 33, 171, 0.6) 0%, #2421ab 100%);
+  background: radial-gradient(calc(var(--size) * 0.83 * 1px) at 83% 15%, rgba(36, 33, 171, 0.6) 0%, #2421ab 100%);
 }
 
 @keyframes hovering {

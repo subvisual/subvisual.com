@@ -9,28 +9,20 @@ class Planet extends Component {
     super(props)
 
     this.hoveringAmplitude = _.random(-10, 10)
-    this.hoveringDuration = _.random(0.5, 1.5)
-  }
-
-  componentDidMount() {
-    this.container.style.setProperty(
-      "--hovering-translate-y-end",
-      this.hoveringAmplitude
-    )
-    this.container.style.setProperty(
-      "--hovering-duration",
-      this.hoveringDuration
-    )
+    this.hoveringDuration = _.round(_.random(0.5, 1.5), 2)
   }
 
   render() {
-    console.log(this.props)
-    const { color, hovering, size } = this.props
+    const { color, hovering } = this.props
+    const style = {
+      "--hovering-translate-y-end": this.hoveringAmplitude,
+      "--hovering-duration": this.hoveringDuration,
+      "--size": this.props.size,
+    }
 
     return (
       <div
-        ref={el => (this.container = el)}
-        style={{ transform: `scale(${size / 100})` }}
+        style={style}
         styleName={`root ${color} ${hovering ? "hovering" : ""}`}
       />
     )
