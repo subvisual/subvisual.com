@@ -12,7 +12,7 @@ import "./Member.module.css"
 const Member = ({ name, role, social, photo }) => (
   <div styleName="root">
     <div styleName="photo horizontal">
-      <LoadPlaceholder>
+      <LoadPlaceholder delay={-1}>
         {onLoad => (
           <Img
             fadeIn={false}
@@ -23,7 +23,7 @@ const Member = ({ name, role, social, photo }) => (
       </LoadPlaceholder>
     </div>
     <div styleName="photo vertical">
-      <LoadPlaceholder>
+      <LoadPlaceholder delay={-1}>
         {onLoad => (
           <Img
             fadeIn={false}
