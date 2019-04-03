@@ -4,6 +4,7 @@ import PropTypes from "prop-types"
 import Img from "gatsby-image"
 
 import SocialLink from "../../SocialLink"
+import LoadPlaceholder from "../../LoadPlaceholder"
 import Text from "../../Text"
 
 import "./Member.module.css"
@@ -11,10 +12,26 @@ import "./Member.module.css"
 const Member = ({ name, role, social, photo }) => (
   <div styleName="root">
     <div styleName="photo horizontal">
-      <Img fluid={photo.horizontal.childImageSharp.fluid} />
+      <LoadPlaceholder>
+        {onLoad => (
+          <Img
+            fadeIn={false}
+            onLoad={onLoad}
+            fluid={photo.horizontal.childImageSharp.fluid}
+          />
+        )}
+      </LoadPlaceholder>
     </div>
     <div styleName="photo vertical">
-      <Img fluid={photo.vertical.childImageSharp.fluid} />
+      <LoadPlaceholder>
+        {onLoad => (
+          <Img
+            fadeIn={false}
+            onLoad={onLoad}
+            fluid={photo.vertical.childImageSharp.fluid}
+          />
+        )}
+      </LoadPlaceholder>
     </div>
     <div styleName="info">
       <div styleName="name">

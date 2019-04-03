@@ -48,11 +48,16 @@ class Portfolio extends Component {
 
   renderVenture = (props, index) => {
     const { name } = props
+    const baseDelay = 0.3
     const featured = index === 0
 
     return (
       <li key={name} styleName="item">
-        <Venture featured={featured} {...props} />
+        <Venture
+          delay={baseDelay + index * 0.2}
+          featured={featured}
+          {...props}
+        />
       </li>
     )
   }

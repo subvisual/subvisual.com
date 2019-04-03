@@ -3,10 +3,11 @@ import PropTypes from "prop-types"
 import Img from "gatsby-image"
 
 import Text from "../../../Text"
+import LoadPlaceholder from "../../../LoadPlaceholder"
 
 import "./Venture.module.css"
 
-const Venture = ({ color, description, featured, grey, name, url }) => (
+const Venture = ({ color, delay, description, featured, grey, name, url }) => (
   <a
     href={url}
     target="_blank"
@@ -15,20 +16,32 @@ const Venture = ({ color, description, featured, grey, name, url }) => (
   >
     <div styleName="wrapper">
       <div styleName="photo">
-        <Img
-          {...color.childImageSharp}
-          style={{ height: "100%" }}
-          imgStyle={{ display: "block" }}
-          alt={name}
-        />
+        <LoadPlaceholder delay={delay} dark>
+          {onLoad => (
+            <Img
+              fadeIn={false}
+              onLoad={onLoad}
+              {...color.childImageSharp}
+              style={{ height: "100%" }}
+              imgStyle={{ display: "block" }}
+              alt={name}
+            />
+          )}
+        </LoadPlaceholder>
       </div>
       <div styleName="grey">
-        <Img
-          {...grey.childImageSharp}
-          style={{ height: "100%" }}
-          imgStyle={{ display: "block" }}
-          alt={name}
-        />
+        <LoadPlaceholder delay={delay} dark>
+          {onLoad => (
+            <Img
+              {...grey.childImageSharp}
+              fadeIn={false}
+              onLoad={onLoad}
+              style={{ height: "100%" }}
+              imgStyle={{ display: "block" }}
+              alt={name}
+            />
+          )}
+        </LoadPlaceholder>
       </div>
     </div>
     <div styleName="info">
@@ -41,6 +54,7 @@ const Venture = ({ color, description, featured, grey, name, url }) => (
 
 Venture.propTypes = {
   color: PropTypes.object.isRequired,
+  delay: PropTypes.number,
   featured: PropTypes.bool,
   description: PropTypes.string.isRequired,
   grey: PropTypes.object.isRequired,
@@ -49,6 +63,7 @@ Venture.propTypes = {
 }
 
 Venture.defaultProps = {
+  delay: 0,
   featured: false,
 }
 
