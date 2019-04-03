@@ -8,6 +8,12 @@
   margin-right: 20px;
 }
 
+@media (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+}
+
 @media (min-width: 768px) {
   .info.left {
     text-align: left;
@@ -15,5 +21,9 @@
 
   .info.right {
     text-align: right;
+  }
+
+  .mobile {
+    display: none;
   }
 }

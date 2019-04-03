@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 import "./index.module.css"
 
 const CallToAction = ({ color, children, size }) => (
-  <Link to="#" styleName={`root ${color} ${size}`}>
+  <Link to="mailto:contact@subvisual.com" styleName={`root ${color} ${size}`}>
     {children}
   </Link>
 )

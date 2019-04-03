@@ -25,7 +25,8 @@ const Footer = () => (
             align="left"
             name="Braga, Portugal"
             image="braga"
-            directions="geo:41.543243,-8.399365"
+            geoUrl="geo:41.543243,-8.399365"
+            mapsUrl="https://goo.gl/maps/ddvtn1Ez8N72"
           />
         </div>
         <div styleName="location">
@@ -33,7 +34,8 @@ const Footer = () => (
             align="right"
             name="Boston, USA"
             image="boston"
-            directions="geo:42.356742,-71.057583"
+            geoUrl="geo:42.356742,-71.057583"
+            mapsUrl="https://goo.gl/maps/zouxb7phyLz"
           />
         </div>
       </div>

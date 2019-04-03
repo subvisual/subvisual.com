@@ -14,12 +14,22 @@ const Header = () => (
       <nav>
         <ul styleName="links">
           <li styleName="link-item">
-            <Link to="https://blog.subvisual.com" title="Blog" styleName="link">
+            <Link
+              to="https://medium.com/subvisual"
+              title="Blog"
+              styleName="link"
+              blank
+            >
               Blog
             </Link>
           </li>
           <li styleName="link-item">
-            <Link to="#" title="Contact" styleName="link">
+            <Link
+              to="mailto:contact@subvisual.com"
+              title="Contact"
+              styleName="link"
+              blank
+            >
               Contact
             </Link>
           </li>

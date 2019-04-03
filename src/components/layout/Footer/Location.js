@@ -8,7 +8,7 @@ import Text from "../../Text"
 
 import "./Location.module.css"
 
-const Location = ({ align, directions, image, name }) => (
+const Location = ({ align, geoUrl, image, mapsUrl, name }) => (
   <address styleName="root">
     <div styleName="image">
       <Img fluid={image.childImageSharp.fluid} />
@@ -19,32 +19,41 @@ const Location = ({ align, directions, image, name }) => (
           {name}
         </Text>
       </span>
-      <Link to={directions} size="small" color="white" faded>
-        Directions
-      </Link>
+      <span styleName="mobile">
+        <Link to={geoUrl} size="small" color="white" blank faded>
+          Directions
+        </Link>
+      </span>
+      <span styleName="desktop">
+        <Link to={mapsUrl} size="small" color="white" blank faded>
+          Directions
+        </Link>
+      </span>
     </div>
   </address>
 )
 
 Location.propTypes = {
   align: PropTypes.string,
-  directions: PropTypes.string.isRequired,
+  geoUrl: PropTypes.string.isRequired,
   image: PropTypes.object.isRequired,
   name: PropTypes.string.isRequired,
+  mapsUrl: PropTypes.string.isRequired,
 }
 
 Location.defaultProps = {
   align: "left",
 }
 
-export default ({ align, directions, image, name }) => (
+export default ({ align, geoUrl, image, mapsUrl, name }) => (
   <StaticQuery
     query={query}
     render={data => (
       <Location
         align={align}
-        directions={directions}
+        geoUrl={geoUrl}
         image={data[image]}
+        mapsUrl={mapsUrl}
         name={name}
       />
     )}
