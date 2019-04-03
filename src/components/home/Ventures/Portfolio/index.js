@@ -7,6 +7,7 @@ import Venture from "./Venture"
 import "./index.module.css"
 
 const planets = [
+  { color: "blue", size: { mobile: 56, desktop: 80 } },
   { color: "purple", size: { mobile: 112, desktop: 224 } },
   { color: "purple", size: { mobile: 56, desktop: 84 } },
   { color: "purple", size: { mobile: 168, desktop: 112 } },

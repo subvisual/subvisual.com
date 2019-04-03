@@ -17,21 +17,26 @@
 }
 
 .planet:nth-child(1) {
+  top: 140px;
+  left: -48px;
+}
+
+.planet:nth-child(2) {
   top: 137px;
   left: 48%;
 }
 
-.planet:nth-child(2) {
+.planet:nth-child(3) {
   top: 334px;
   left: 30%;
 }
 
-.planet:nth-child(3) {
+.planet:nth-child(4) {
   top: 700px;
   left: -16%;
 }
 
-.planet:nth-child(4) {
+.planet:nth-child(5) {
   top: 1230px;
   left: 87%;
 }
@@ -45,23 +50,23 @@
     grid-column: 1 / span 2;
   }
 
-  .planet:nth-child(1) {
+  .planet:nth-child(2) {
     top: 300px;
     left: 9%;
   }
 
-  .planet:nth-child(2) {
+  .planet:nth-child(3) {
     top: 723px;
     left: 27%;
   }
 
-  .planet:nth-child(3) {
+  .planet:nth-child(4) {
     top: 664px;
     right: 12%;
     left: auto;
   }
 
-  .planet:nth-child(4) {
+  .planet:nth-child(5) {
     top: 1270px;
     left: 42%;
   }
@@ -71,5 +76,9 @@
   .ventures {
     grid-column-gap: 28px;
     grid-row-gap: 56px;
+  }
+
+  .planet:nth-child(1) {
+    left: -68px;
   }
 }
