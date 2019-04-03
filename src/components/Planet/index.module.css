@@ -1,5 +1,4 @@
 :root {
-  --hovering-translate-y-start: -4;
   --hovering-translate-y-end: 0;
 }
 
@@ -50,10 +49,8 @@
 
 @keyframes hovering {
   0% {
-    --translate-y-start: calc(var(--hovering-translate-y-start) * 1px);
-
-    transform: translateY(var(--translate-y-start));
-    -moz-transform: translateY(var(--translate-y-start)) rotate(-0.01deg);
+    transform: translateY(0);
+    -moz-transform: translateY(0)) rotate(-0.01deg);
   }
 
   100% {
