@@ -34,9 +34,13 @@
   line-height: 28px;
 }
 
+.root.large::after {
+  border-bottom-width: 4px;
+}
+
 @media (min-width: 768px) {
   .root:hover::after {
-    transform: translateY(2px);
+    transform: translateY(3px);
     transition: transform 0.2s;
   }
 }

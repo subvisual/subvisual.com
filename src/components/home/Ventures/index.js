@@ -40,7 +40,7 @@ const Ventures = () => (
         <p>
           <Text size="large">Join our venture universe.</Text>
           <br />
-          <CallToAction size="large">Let's talk</CallToAction>
+          <CallToAction size="large">Let's talk.</CallToAction>
         </p>
       </footer>
     </div>
