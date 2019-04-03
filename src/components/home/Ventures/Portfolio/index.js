@@ -7,32 +7,6 @@ import Venture from "./Venture"
 import "./index.module.css"
 
 class Portfolio extends Component {
-  constructor() {
-    super()
-    this.state = { isDesktop: false }
-  }
-
-  handleWindowResize = () => {
-    const isDesktop = window.innerWidth >= 950
-
-    this.setState({ isDesktop })
-  }
-
-  componentDidMount() {
-    setTimeout(this.handleWindowResize, 200)
-    window.addEventListener("resize", this.handleWindowResize)
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener("resize", this.handleWindowResize)
-  }
-
-  renderPlanet = ({ color }, index) => (
-    <div key={index} styleName="planet">
-      <Planet color={color} hovering />
-    </div>
-  )
-
   renderVenture = (props, index) => {
     const { name } = props
     const baseDelay = 0.3
