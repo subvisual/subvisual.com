@@ -3,23 +3,28 @@
   description: "Crypto payments, simple as they should be"
   color: "./ventures/utrust_color.jpg"
   grey: "./ventures/utrust.jpg"
+  url: "https://utrust.com"
 
 - name: "siosLIFE"
   description: "For younger spirits"
   color: "./ventures/sioslife_color.jpg"
   grey: "./ventures/sioslife.jpg"
+  url: "http://sioslife.com/ForYoungerSpirits"
 
 - name: "Crediflux"
   description: "Simple, fast, and paperless"
   color: "./ventures/crediflux_color.jpg"
   grey: "./ventures/crediflux.jpg"
+  url: "https://www.crediflux.pt/"
 
 - name: "Oncostats"
   description: "Defeating a common enemy, cancer"
   color: "./ventures/oncostats_color.jpg"
   grey: "./ventures/oncostats.jpg"
+  url: "https://oncostats.io/"
 
 - name: "SV Health"
   description: "Nurturing digital healthcare solutions"
   grey: "./ventures/svhealth.jpg"
   color: "./ventures/svhealth_color.jpg"
+  url: "https://svhealth.io/"

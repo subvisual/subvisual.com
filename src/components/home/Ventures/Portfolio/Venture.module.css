@@ -1,7 +1,7 @@
 .root {
   display: grid;
   grid-row-gap: 20px;
-  cursor: pointer;
+  text-decoration: none;
 }
 
 .root.featured {}
@@ -34,8 +34,16 @@
   transition: opacity 0.3s ease-in-out;
 }
 
+.info {
+  transition: opacity 0.3s ease-in-out;
+}
+
 .root:hover .grey {
   opacity: 0;
+}
+
+.root:hover .info {
+  opacity: 0.5;
 }
 
 @media (min-width: 768px) {

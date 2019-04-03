@@ -4,7 +4,6 @@
 
 .ventures {
   display: grid;
-  grid-template-columns: 1fr;
   grid-column-gap: 20px;
   grid-row-gap: 28px;
   list-style-type: none;

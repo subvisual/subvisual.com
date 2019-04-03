@@ -85,6 +85,7 @@ const query = graphql`
         node {
           name
           description
+          url
           grey {
             childImageSharp {
               fluid(maxHeight: 452, quality: 100) {

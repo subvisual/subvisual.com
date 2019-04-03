@@ -6,8 +6,13 @@ import Text from "../../../Text"
 
 import "./Venture.module.css"
 
-const Venture = ({ color, description, featured, grey, name }) => (
-  <div styleName={`root ${featured ? "featured" : ""}`}>
+const Venture = ({ color, description, featured, grey, name, url }) => (
+  <a
+    href={url}
+    target="_blank"
+    rel="noopener noreferrer"
+    styleName={`root ${featured ? "featured" : ""}`}
+  >
     <div styleName="wrapper">
       <div styleName="photo">
         <Img
@@ -31,7 +36,7 @@ const Venture = ({ color, description, featured, grey, name }) => (
       <br />
       <Text>{description}</Text>
     </div>
-  </div>
+  </a>
 )
 
 Venture.propTypes = {
@@ -40,6 +45,7 @@ Venture.propTypes = {
   description: PropTypes.string.isRequired,
   grey: PropTypes.object.isRequired,
   name: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
 }
 
 Venture.defaultProps = {
