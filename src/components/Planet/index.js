@@ -17,16 +17,11 @@ class Planet extends Component {
   }
 
   getRootStyle = ({ animationName }) => {
-    const { hovering, size } = this.props
-    const style = {
-      width: `${size}px`,
-      height: `${size}px`,
-    }
+    const { hovering } = this.props
 
-    if (!hovering) return style
+    if (!hovering) return {}
 
     return {
-      ...style,
       animationName,
       animationDelay: `${this.hoveringAnimationDelay}s`,
       animationDuration: `${this.hoveringAnimationDuration}s`,
@@ -83,6 +78,7 @@ class Planet extends Component {
             viewBox="0 0 104 104"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            styleName="planet"
           >
             <circle cx="52" cy="52" r="50" fill={`url(#${radialID})`} />
             <defs>{this.renderRadialGradient({ id: radialID })}</defs>
@@ -96,7 +92,6 @@ class Planet extends Component {
 Planet.propTypes = {
   color: PropTypes.string.isRequired,
   hovering: PropTypes.bool,
-  size: PropTypes.number.isRequired,
 }
 
 Planet.defaultProps = {

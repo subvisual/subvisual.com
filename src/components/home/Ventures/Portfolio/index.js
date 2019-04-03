@@ -6,14 +6,6 @@ import Venture from "./Venture"
 
 import "./index.module.css"
 
-const planets = [
-  { color: "blue", size: { mobile: 56, desktop: 80 } },
-  { color: "purple", size: { mobile: 112, desktop: 224 } },
-  { color: "purple", size: { mobile: 56, desktop: 84 } },
-  { color: "purple", size: { mobile: 168, desktop: 112 } },
-  { color: "purple", size: { mobile: 112, desktop: 168 } },
-]
-
 class Portfolio extends Component {
   constructor() {
     super()
@@ -35,16 +27,11 @@ class Portfolio extends Component {
     window.removeEventListener("resize", this.handleWindowResize)
   }
 
-  renderPlanet = ({ color, size }, index) => {
-    const { isDesktop } = this.state
-    const planetSize = isDesktop ? size.desktop : size.mobile
-
-    return (
-      <div key={index} styleName="planet">
-        <Planet color={color} size={planetSize} hovering />
-      </div>
-    )
-  }
+  renderPlanet = ({ color }, index) => (
+    <div key={index} styleName="planet">
+      <Planet color={color} hovering />
+    </div>
+  )
 
   renderVenture = (props, index) => {
     const { name } = props
@@ -68,7 +55,23 @@ class Portfolio extends Component {
     return (
       <div styleName="root">
         <ul styleName="ventures">{ventures.map(this.renderVenture)}</ul>
-        <div>{planets.map(this.renderPlanet)}</div>
+        <div>
+          <div styleName="planet">
+            <Planet color="blue" hovering />
+          </div>
+          <div styleName="planet">
+            <Planet color="purple" hovering />
+          </div>
+          <div styleName="planet">
+            <Planet color="purple" hovering />
+          </div>
+          <div styleName="planet">
+            <Planet color="purple" hovering />
+          </div>
+          <div styleName="planet">
+            <Planet color="purple" hovering />
+          </div>
+        </div>
       </div>
     )
   }

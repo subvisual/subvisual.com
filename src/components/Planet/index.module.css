@@ -1,16 +1,22 @@
 .root {
   position: relative;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   transform-origin: top left;
   pointer-events: none;
 }
 
-.background {
+.background,
+.planet {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.background {
   border-radius: 50%;
   opacity: 0;
   background-color: #fcfcfc;
