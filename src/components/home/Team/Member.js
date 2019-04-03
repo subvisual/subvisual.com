@@ -27,16 +27,12 @@ const Member = ({ name, role, social, photo }) => (
       </div>
     </div>
     <ul aria-label="Social Links" styleName="links">
-      {_.map(social, (username, platform) => {
-        if (!username) return null
+      {_.map(social, (url, platform) => {
+        if (!url) return null
 
         return (
           <li key={platform} styleName="link">
-            <SocialLink
-              username={username}
-              platform={platform}
-              key={platform}
-            />
+            <SocialLink name={name} platform={platform} url={url} />
           </li>
         )
       })}

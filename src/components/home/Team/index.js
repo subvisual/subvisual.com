@@ -48,9 +48,13 @@ const teamQuery = graphql`
             }
           }
           social {
-            twitter
-            github
+            behance
             dribbble
+            linkedin
+            medium
+            github
+            twitter
+            web
           }
         }
       }

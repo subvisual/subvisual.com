@@ -8,8 +8,8 @@
     Cares about overcoming self limitations. Working to turn technology into a
     friend.
   social:
-    twitter: "fcBaila"
-    dribbble: "franciscobaila"
+    behance: "https://www.behance.net/fcBaila"
+    medium: "https://medium.com/@fcBaila"
 
 - name: "Gabriel Poça"
   photo:
@@ -20,8 +20,8 @@
     There is no time for introductions, but if there was, you would instantly
     understand that this guy is a developer and he loves every aspect of it.
   social:
-    twitter: "gabrielgpoca"
-    github: "gabrielpoca"
+    web: "https://gabrielpoca.com"
+    github: "https://github.com/gabrielpoca"
 
 - name: Helena Muniz
   photo:
@@ -31,6 +31,8 @@
   bio: >
     Loves people, learning, and to travel. Thrives in helping the team shoot
     for the moon. Believes everyone can achieve their goals and dreams.
+  social:
+    linkedin: "https://www.linkedin.com/in/helenammuniz/"
 
 - name: "João Ferreira"
   photo:
@@ -41,8 +43,8 @@
     Believes Design is not about mastering tools but about mastering people.
     Passionate about music, movies and whisky.
   social:
-    twitter: "jferreiradzn"
-    dribbble: "jferreiradzn"
+    dribbble: "https://dribbble.com/jferreiradzn"
+    twitter: "https://twitter.com/jferreiradzn"
 
 - name: "João Justo"
   photo:
@@ -53,8 +55,8 @@
   Android fanboy. Avoid talking to him about Game of Thrones unless you have
   serious time to spend."
   social:
-    twitter: "jpjustonunes"
-    github: "joaojusto"
+    github: "https://github.com/joaojusto"
+    twitter: "https://twitter.com/jpjustonunes"
 
 - name: "Laura Esteves"
   photo:
@@ -67,7 +69,8 @@
     The only way to stop her is with a good book and a fireplace.
     Always says goodbye with a smile.
   social:
-    twitter: "lauraeesteves"
+    linkedin: "https://www.linkedin.com/in/lauraesteves"
+    medium: "https://medium.com/@laurae.esteves"
 
 - name: "Luis Ferreira"
   photo:
@@ -78,8 +81,8 @@
   Rails. Enjoys open source and giving back to the community, having taught
   Rails to hundreds of people."
   social:
-    twitter: "zamith"
-    github: "zamith"
+    github: "https://github.com/zamith"
+    twitter: "https://twitter.com/zamith"
 
 - name: "Miguel Palhas"
   photo:
@@ -90,8 +93,8 @@
   and a passion for the Open Source world. Still dreams about becoming a real
   game developer someday."
   social:
-    twitter: "naps62"
-    github: "naps62"
+    github: "https://github.com/naps62"
+    twitter: "https://twitter.com/naps62"
 
 - name: "Pedro Costa"
   photo:
@@ -102,8 +105,8 @@
   too much. Got a GameBoy&reg; when he was eight and hasn't shut up about
   Pokémon&reg; since."
   social:
-    twitter: "iampfac"
-    github: "pfac"
+    github: "https://github.com/pfac"
+    twitter: "https://twitter.com/iampfac"
 
 - name: "Roberto Machado"
   photo:
@@ -113,8 +116,8 @@
   bio: "Breathes technology and deeply believes, hence the creation of Subvisual,
   that it is the medium for a better future. Always has 5 minutes to listen to you."
   social:
-    twitter: "rmdgb"
-    github: "rmdmachado"
+    linkedin: "https://www.linkedin.com/in/robertomachado"
+    twitter: "https://twitter.com/rmdgb"
 
 - name: "Ronaldo Sousa"
   photo:
@@ -125,6 +128,6 @@
   for people. Usually you can find him in front of a computer, behind a
   guitar or lying on a couch. Or you can’t."
   social:
-    twitter: "ronaldofsousa"
-    github: "ronaldofs"
+    github: "https://github.com/ronaldofs"
+    twitter: "https://twitter.com/ronaldofsousa"
 

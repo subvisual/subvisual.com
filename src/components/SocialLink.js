@@ -7,47 +7,48 @@ const socialPlatforms = {
   behance: {
     name: "Behance",
     label: "Be",
-    url: "https://www.behance.net/%s",
   },
   dribbble: {
     name: "Dribble",
     label: "Dri",
-    url: "https://dribbble.com/%s",
   },
   facebook: {
     name: "Facebook",
     label: "Fb",
-    url: "https://www.facebook.com/%s",
   },
   github: {
     name: "Github",
     label: "Git",
-    url: "https://github.com/%s",
   },
   instagram: {
     name: "Instagram",
+    label: "Ins",
+  },
+  linkedin: {
+    name: "LinkedIn",
     label: "In",
-    url: "https://www.instagram.com/%s/",
   },
   medium: {
     name: "Medium",
     label: "Md",
-    url: "https://medium.com/%s",
   },
   twitter: {
     name: "Twitter",
     label: "Tw",
-    url: "https://twitter.com/%s",
+  },
+  web: {
+    name: "Website",
+    label: "Web",
   },
 }
 
-const SocialLink = ({ platform, size, username }) => {
-  const { label, name, url } = socialPlatforms[platform]
+const SocialLink = ({ name: userName, platform, size, url }) => {
+  const { label, name: platformName } = socialPlatforms[platform]
 
   return (
     <Link
-      to={url.replace("%s", username)}
-      title={`${username} on ${name}`}
+      to={url}
+      title={`${userName} on ${platformName}`}
       size={size}
       color="white"
       blank
@@ -59,9 +60,10 @@ const SocialLink = ({ platform, size, username }) => {
 }
 
 SocialLink.propTypes = {
+  name: PropTypes.string.isRequired,
   platform: PropTypes.string.isRequired,
   size: PropTypes.string,
-  username: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
 }
 
 SocialLink.defaultProps = {
