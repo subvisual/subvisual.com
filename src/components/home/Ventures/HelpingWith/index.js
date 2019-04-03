@@ -6,16 +6,16 @@ import "./index.module.css"
 
 const HelpingWith = () => (
   <ul styleName="root">
-    <li styleName="item">
-      <Text>Seed investment & incubation</Text>
+    <li>
+      <Text>Seed investment &amp; incubation</Text>
     </li>
-    <li styleName="item">
+    <li>
       <Text>Strong company culture</Text>
     </li>
-    <li styleName="item">
+    <li>
       <Text>Early stage product mentorship</Text>
     </li>
-    <li styleName="item">
+    <li>
       <Text>Strong international ecosystem</Text>
     </li>
   </ul>

@@ -1,13 +1,5 @@
 .root {
+  display: grid;
+  grid-row-gap: 20px;
   list-style: none;
-}
-
-.item:not(:last-child) {
-  margin-bottom: 20px;
-}
-
-@media (min-width: 768px) {
-  .item:not(:last-child) {
-    margin-bottom: 28px;
-  }
 }
