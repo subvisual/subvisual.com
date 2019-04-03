@@ -6,26 +6,17 @@ import Venture from "./Venture"
 
 import "./index.module.css"
 
-const planetSizes = [
-  { mobile: 112, desktop: 224 },
-  { mobile: 56, desktop: 84 },
-  { mobile: 168, desktop: 112 },
-  { mobile: 112, desktop: 168 },
+const planets = [
+  { color: "purple", size: { mobile: 112, desktop: 224 } },
+  { color: "purple", size: { mobile: 56, desktop: 84 } },
+  { color: "purple", size: { mobile: 168, desktop: 112 } },
+  { color: "purple", size: { mobile: 112, desktop: 168 } },
 ]
 
 class Portfolio extends Component {
   constructor() {
     super()
     this.state = { isDesktop: false }
-  }
-
-  getPlanetSize(index) {
-    const { isDesktop } = this.state
-    const size = planetSizes[index]
-
-    if (!size) return
-
-    return isDesktop ? size.desktop : size.mobile
   }
 
   handleWindowResize = () => {
@@ -43,14 +34,13 @@ class Portfolio extends Component {
     window.removeEventListener("resize", this.handleWindowResize)
   }
 
-  renderPlanet = ({ name }, index) => {
-    const planetSize = this.getPlanetSize(index)
-
-    if (!planetSize) return null
+  renderPlanet = ({ color, size }, index) => {
+    const { isDesktop } = this.state
+    const planetSize = isDesktop ? size.desktop : size.mobile
 
     return (
-      <div key={name} styleName="planet">
-        <Planet color="purple" size={planetSize} />
+      <div key={index} styleName="planet">
+        <Planet color={color} size={planetSize} />
       </div>
     )
   }
@@ -72,7 +62,7 @@ class Portfolio extends Component {
     return (
       <div styleName="root">
         <ul styleName="ventures">{ventures.map(this.renderVenture)}</ul>
-        <div>{ventures.map(this.renderPlanet)}</div>
+        <div>{planets.map(this.renderPlanet)}</div>
       </div>
     )
   }
