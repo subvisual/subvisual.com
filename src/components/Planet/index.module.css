@@ -1,4 +1,5 @@
 :root {
+  --hovering-delay: 0;
   --hovering-duration: 1;
   --hovering-translate-y-end: 0;
 }
@@ -14,6 +15,7 @@
 
 .root.hovering {
   animation-name: hovering;
+  animation-delay: calc(var(--hovering-delay) * 1s);
   animation-duration: calc(var(--hovering-duration) * 1s);
   animation-timing-function: ease-in-out;
   animation-direction: alternate;
