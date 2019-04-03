@@ -1,9 +1,8 @@
 import React, { Component } from "react"
-import Img from "gatsby-image"
 import { StaticQuery, graphql } from "gatsby"
 
 import Planet from "../../../Planet"
-import Text from "../../../Text"
+import Venture from "./Venture"
 
 import "./index.module.css"
 
@@ -56,34 +55,16 @@ class Portfolio extends Component {
     )
   }
 
-  renderVenture = ({ name, description, color, grey }) => (
-    <li styleName="item" key={name}>
-      <div styleName="wrapper">
-        <div styleName="photo">
-          <Img
-            {...color.childImageSharp}
-            style={{ height: "100%" }}
-            imgStyle={{ display: "block" }}
-            alt={name}
-          />
-        </div>
-        <div styleName="grey">
-          <Img
-            {...grey.childImageSharp}
-            style={{ height: "100%" }}
-            imgStyle={{ display: "block" }}
-            alt={name}
-          />
-        </div>
-      </div>
-      <div styleName="name">
-        <Text>{name}</Text>
-      </div>
-      <div styleName="description">
-        <Text>{description}</Text>
-      </div>
-    </li>
-  )
+  renderVenture = (props, index) => {
+    const { name } = props
+    const featured = index === 0
+
+    return (
+      <li key={name} styleName="item">
+        <Venture featured={featured} {...props} />
+      </li>
+    )
+  }
 
   render() {
     const { ventures } = this.props
