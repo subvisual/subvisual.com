@@ -1,3 +1,8 @@
+:root {
+  --hovering-translate-y-start: -4;
+  --hovering-translate-y-end: 0;
+}
+
 .root {
   position: relative;
   width: 100px;
@@ -45,12 +50,16 @@
 
 @keyframes hovering {
   0% {
-    transform: translateY(-4px);
-    -moz-transform: translateY(-4px) rotate(-0.01deg);
+    --translate-y-start: calc(var(--hovering-translate-y-start) * 1px);
+
+    transform: translateY(var(--translate-y-start));
+    -moz-transform: translateY(var(--translate-y-start)) rotate(-0.01deg);
   }
 
   100% {
-    transform: translateY(0);
-    -moz-transform: translateY(0) rotate(0.01deg);
+    --translate-y-end: calc(var(--hovering-translate-y-end) * 1px);
+
+    transform: translateY(var(--translate-y-end));
+    -moz-transform: translateY(var(--translate-y-end)) rotate(0.01deg);
   }
 }
