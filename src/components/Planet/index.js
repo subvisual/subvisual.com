@@ -13,8 +13,7 @@ class Planet extends Component {
     super(props)
 
     this.hoveringAmplitude = _.random(-10, 10)
-    this.hoveringAnimationName = `planet-${uuid()}-hovering`
-    this.hoveringAnimationDelay = _.random(0, 3)
+    this.hoveringAnimationName = this.hoveringAnimationDelay = _.random(0, 3)
     this.hoveringAnimationDuration = _.round(_.random(0.8, 1.8), 2)
   }
 
@@ -30,7 +29,7 @@ class Planet extends Component {
     return `radial-gradient(${radius}px at 83% 15%, ${start} 0%, ${end} 100%)`
   }
 
-  get rootStyle() {
+  getRootStyle = ({ animationName }) => {
     const { hovering, size } = this.props
     const style = {
       width: `${size}px`,
@@ -41,7 +40,7 @@ class Planet extends Component {
 
     return {
       ...style,
-      animationName: this.hoveringAnimationName,
+      animationName,
       animationDelay: `${this.hoveringAnimationDelay}s`,
       animationDuration: `${this.hoveringAnimationDuration}s`,
       animationTimingFunction: "ease-in-out",
@@ -51,10 +50,13 @@ class Planet extends Component {
   }
 
   render() {
+    const animationName = `planet-${uuid()}-hovering`
+    const rootStyle = this.getRootStyle({ animationName })
+
     return (
       <>
         <style>
-          {`@keyframes ${this.hoveringAnimationName} {
+          {`@keyframes ${animationName} {
             0% {
               transform: translateY(0);
               -moz-transform: translateY(0)) rotate(-0.01deg);
@@ -68,7 +70,7 @@ class Planet extends Component {
             }
           }`}
         </style>
-        <div style={this.rootStyle} styleName="root">
+        <div style={rootStyle} styleName="root">
           <div styleName="background" />
           <div styleName="planet" style={{ background: this.radialGradient }} />
         </div>
