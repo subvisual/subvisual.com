@@ -9,7 +9,7 @@ class Planet extends Component {
     super(props)
 
     this.hoveringAmplitude = _.random(-10, 10)
-    console.log(this, this.hoveringAmplitude)
+    this.hoveringDuration = _.random(0.5, 1.5)
   }
 
   componentDidMount() {
@@ -17,11 +17,15 @@ class Planet extends Component {
       "--hovering-translate-y-end",
       this.hoveringAmplitude
     )
+    this.container.style.setProperty(
+      "--hovering-duration",
+      this.hoveringDuration
+    )
   }
 
   render() {
+    console.log(this.props)
     const { color, hovering, size } = this.props
-    const hoveringAmplitude = this.hoveringAmplitude
 
     return (
       <div
@@ -39,7 +43,7 @@ Planet.propTypes = {
   size: PropTypes.number.isRequired,
 }
 
-Planet.propTypes = {
+Planet.defaultProps = {
   hovering: false,
 }
 
