@@ -1,29 +1,12 @@
-:root {
-  --hovering-delay: 0;
-  --hovering-duration: 1;
-  --hovering-translate-y-end: 0;
-}
-
 .root {
   position: relative;
-  width: calc(var(--size) * 1px);
-  height: calc(var(--size) * 1px);
   border-radius: 50%;
   transform-origin: top left;
   pointer-events: none;
 }
 
-.root.hovering {
-  animation-name: hovering;
-  animation-delay: calc(var(--hovering-delay) * 1s);
-  animation-duration: calc(var(--hovering-duration) * 1s);
-  animation-timing-function: ease-in-out;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-}
-
-.root::before,
-.root::after {
+.background,
+.planet {
   content: '';
   position: absolute;
   top: 0;
@@ -33,33 +16,11 @@
   border-radius: 50%;
 }
 
-.root::before {
+.background {
   opacity: 0;
   background-color: #fcfcfc;
 }
 
-.root.opaque::before {
+.root.opaque .background {
   opacity: 1;
-}
-
-.root.blue::after {
-  background: radial-gradient(calc(var(--size) * 0.83 * 1px) at 83% 15%, rgba(4, 92, 252, 0.6) 0%, #045cfc 100%);
-}
-
-.root.purple::after {
-  background: radial-gradient(calc(var(--size) * 0.83 * 1px) at 83% 15%, rgba(36, 33, 171, 0.6) 0%, #2421ab 100%);
-}
-
-@keyframes hovering {
-  0% {
-    transform: translateY(0);
-    -moz-transform: translateY(0)) rotate(-0.01deg);
-  }
-
-  100% {
-    --translate-y-end: calc(var(--hovering-translate-y-end) * 1px);
-
-    transform: translateY(var(--translate-y-end));
-    -moz-transform: translateY(var(--translate-y-end)) rotate(0.01deg);
-  }
 }
