@@ -7,6 +7,14 @@
   pointer-events: none;
 }
 
+.root.hovering {
+  animation-name: hovering;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
 .root::before,
 .root::after {
   content: '';
@@ -33,4 +41,16 @@
 
 .root.purple::after {
   background: radial-gradient(83px at 83% 15%, rgba(36, 33, 171, 0.6) 0%, #2421ab 100%);
+}
+
+@keyframes hovering {
+  0% {
+    transform: translateY(-4px);
+    -moz-transform: translateY(-4px) rotate(-0.01deg);
+  }
+
+  100% {
+    transform: translateY(0);
+    -moz-transform: translateY(0) rotate(0.01deg);
+  }
 }

@@ -41,7 +41,7 @@ class Portfolio extends Component {
 
     return (
       <div key={index} styleName="planet">
-        <Planet color={color} size={planetSize} />
+        <Planet color={color} size={planetSize} hovering />
       </div>
     )
   }
