@@ -2,10 +2,10 @@ import _ from "lodash"
 import React, { Component } from "react"
 import PropTypes from "prop-types"
 
+import ViewableMonitor from "../ViewableMonitor"
 import colorCodes from "../colors"
 
 import "./index.module.css"
-
 class Planet extends Component {
   constructor(props) {
     super(props)
@@ -49,7 +49,7 @@ class Planet extends Component {
   }
 
   render() {
-    const { codeName } = this.props
+    const { codeName, morph } = this.props
     const animationName = `planet-${codeName}-hovering`
     const radialID = `planet-${codeName}-radial`
     const rootStyle = this.getRootStyle({ animationName })
@@ -71,18 +71,26 @@ class Planet extends Component {
             }
           }`}
         </style>
-        <div style={rootStyle} styleName="root">
-          <div styleName="background" />
-          <svg
-            viewBox="0 0 104 104"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            styleName="planet"
-          >
-            <circle cx="52" cy="52" r="50" fill={`url(#${radialID})`} />
-            <defs>{this.renderRadialGradient({ id: radialID })}</defs>
-          </svg>
-        </div>
+        <ViewableMonitor styleName="monitor">
+          {isViewable => {
+            if (!isViewable) return
+
+            return (
+              <div {...morph} style={rootStyle} styleName="root">
+                <div styleName="background" />
+                <svg
+                  viewBox="0 0 104 104"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  styleName="planet"
+                >
+                  <circle cx="52" cy="50" r="50" fill={`url(#${radialID})`} />
+                  <defs>{this.renderRadialGradient({ id: radialID })}</defs>
+                </svg>
+              </div>
+            )
+          }}
+        </ViewableMonitor>
       </>
     )
   }
@@ -92,10 +100,12 @@ Planet.propTypes = {
   codeName: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired,
   hovering: PropTypes.bool,
+  morph: PropTypes.func,
 }
 
 Planet.defaultProps = {
   hovering: false,
+  morph: () => {},
 }
 
 export default Planet

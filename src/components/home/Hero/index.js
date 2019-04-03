@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 import Img from "gatsby-image"
 import { StaticQuery, graphql } from "gatsby"
 
@@ -9,14 +10,14 @@ import Title from "./Title"
 
 import "./index.module.css"
 
-const Hero = ({ data }) => {
+const Hero = ({ data, planetMorph }) => {
   const baseDelay = 0.3
 
   return (
     <div styleName="root">
       <div styleName="content">
         <div styleName="title">
-          <Title />
+          <Title planetMorph={planetMorph} />
         </div>
         <div styleName="text">
           <p>
@@ -125,8 +126,19 @@ const Hero = ({ data }) => {
   )
 }
 
-export default () => (
-  <StaticQuery query={query} render={data => <Hero data={data} />} />
+Hero.propTypes = {
+  planetMorph: PropTypes.func,
+}
+
+Hero.defaultTypes = {
+  planetMorph: () => {},
+}
+
+export default ({ planetMorph }) => (
+  <StaticQuery
+    query={query}
+    render={data => <Hero data={data} planetMorph={planetMorph} />}
+  />
 )
 
 const query = graphql`

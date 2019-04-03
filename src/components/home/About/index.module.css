@@ -1,6 +1,18 @@
 .root {
+  position: relative;
   padding: 112px 20px;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 10000px;
+  height: 10000px;
   background-color: #045cfc;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
 }
 
 .content {

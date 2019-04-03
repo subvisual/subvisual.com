@@ -24,7 +24,8 @@
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-helmet": "^5.2.0",
-    "react-intersection-observer": "^8.22.5"
+    "react-intersection-observer": "^8.22.5",
+    "react-morph": "0.4.0-alpha.1"
   },
   "devDependencies": {
     "postcss-custom-media": "^7.0.7",

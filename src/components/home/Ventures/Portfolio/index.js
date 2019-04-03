@@ -1,12 +1,22 @@
 import React, { Component } from "react"
+import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
 import Planet from "../../../Planet"
+import ViewableMonitor from "../../../ViewableMonitor"
 import Venture from "./Venture"
 
 import "./index.module.css"
 
 class Portfolio extends Component {
+  static propTypes = {
+    planetMorph: PropTypes.func,
+  }
+
+  static defaultProps = {
+    planetMorph: () => {},
+  }
+
   renderVenture = (props, index) => {
     const { name } = props
     const baseDelay = 0.3
@@ -24,15 +34,26 @@ class Portfolio extends Component {
   }
 
   render() {
-    const { ventures } = this.props
+    const { planetMorph, ventures } = this.props
 
     return (
       <div styleName="root">
         <ul styleName="ventures">{ventures.map(this.renderVenture)}</ul>
         <div>
-          <div styleName="planet">
-            <Planet codeName="venturesSubvisualPlanet" color="blue" hovering />
-          </div>
+          <ViewableMonitor styleName="planet">
+            {isViewable => {
+              if (!isViewable) return
+
+              return (
+                <Planet
+                  morph={planetMorph}
+                  codeName="venturesSubvisualPlanet"
+                  color="blue"
+                  hovering
+                />
+              )
+            }}
+          </ViewableMonitor>
           <div styleName="planet">
             <Planet codeName="venturesPlanet1" color="purple" hovering />
           </div>
@@ -79,11 +100,14 @@ const query = graphql`
   }
 `
 
-export default () => (
+export default ({ planetMorph }) => (
   <StaticQuery
     query={query}
     render={data => (
-      <Portfolio ventures={data.allVenturesYaml.edges.map(e => e.node)} />
+      <Portfolio
+        planetMorph={planetMorph}
+        ventures={data.allVenturesYaml.edges.map(e => e.node)}
+      />
     )}
   />
 )

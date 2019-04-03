@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 
 import CallToAction from "../../CallToAction"
 import HelpingWith from "./HelpingWith"
@@ -11,7 +12,7 @@ import Universe from "./Universe"
 
 import "./index.module.css"
 
-const Ventures = () => (
+const Ventures = ({ planetMorph }) => (
   <section styleName="root">
     <div styleName="content">
       <header styleName="header">
@@ -26,14 +27,14 @@ const Ventures = () => (
         <HelpingWith />
       </section>
       <div styleName="universe">
-        <Universe />
+        <Universe subvisualPlanetMorph={planetMorph} />
       </div>
       <section styleName="section portfolio">
         <header styleName="portfolioHeader">
           <Subtitle>Portfolio</Subtitle>
         </header>
         <div styleName="portfolioContent">
-          <Portfolio />
+          <Portfolio planetMorph={planetMorph} />
         </div>
       </section>
       <footer styleName="footer">
@@ -46,5 +47,13 @@ const Ventures = () => (
     </div>
   </section>
 )
+
+Ventures.propTypes = {
+  planetMorph: PropTypes.func,
+}
+
+Ventures.defaultProps = {
+  planetMorph: () => {},
+}
 
 export default Ventures

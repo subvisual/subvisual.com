@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 
 import Icon from "../../Icon"
 import Subtitle from "../../Subtitle"
@@ -8,15 +9,14 @@ import Title from "../../Title"
 
 import "./index.module.css"
 
-const About = () => (
+const About = ({ planetMorph }) => (
   <section styleName="root">
+    <div styleName="background" />
     <div styleName="content">
       <header styleName="header">
-        <div styleName="headerTitle">
-          <Title color="purple">About</Title>
-        </div>
+        <Title color="purple">About</Title>
         <div styleName="headerIcon">
-          <Icon />
+          <Icon planetMorph={planetMorph} color="purple" />
         </div>
       </header>
       <div styleName="story">
@@ -52,5 +52,13 @@ const About = () => (
     </div>
   </section>
 )
+
+About.propTypes = {
+  planetMorph: PropTypes.func,
+}
+
+About.defaultProps = {
+  planetMorph: () => {},
+}
 
 export default About
