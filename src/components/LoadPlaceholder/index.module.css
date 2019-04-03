@@ -17,7 +17,7 @@
 
   background-color: #045cfc;
 
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s cubic-bezier(0.7, 0.05, 0, 1);
 
   transform: translateY(0%) translateZ(0);
 
