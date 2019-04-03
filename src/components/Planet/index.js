@@ -42,7 +42,7 @@ class Planet extends Component {
     return {
       ...style,
       animationName: this.hoveringAnimationName,
-      nimationDelay: `${this.hoveringAnimationDelay}s`,
+      animationDelay: `${this.hoveringAnimationDelay}s`,
       animationDuration: `${this.hoveringAnimationDuration}s`,
       animationTimingFunction: "ease-in-out",
       animationDirection: "alternate",
