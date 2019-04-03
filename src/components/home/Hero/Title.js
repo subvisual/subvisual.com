@@ -14,7 +14,7 @@ const Title = () => (
         <Planet size={12} color="blue" />
       </span>
     </span>{" "}
-    that empower people
+    <span styleName="glue">that empower</span> people
   </PageTitle>
 )
 

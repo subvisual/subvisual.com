@@ -38,6 +38,12 @@
   }
 }
 
+@media (min-width: 586px) {
+  .glue {
+    white-space: nowrap;
+  }
+}
+
 @media (min-width: 950px) {
   .planet {
     top: 17px;
