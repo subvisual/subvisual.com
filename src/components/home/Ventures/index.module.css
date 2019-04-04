@@ -42,6 +42,8 @@
   .universe {
     grid-column: 1 / span 1;
     grid-row: 1 / span 3;
+    display: flex;
+    align-items: center;
   }
 
   .portfolio {
