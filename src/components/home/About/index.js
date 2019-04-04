@@ -16,7 +16,11 @@ const About = ({ planetMorph }) => (
       <header styleName="header">
         <Title color="purple">About</Title>
         <div styleName="headerIcon">
-          <Icon planetMorph={planetMorph} color="purple" />
+          <Icon
+            planetCodeName="aboutHeaderIconPlanet"
+            planetMorph={planetMorph}
+            color="purple"
+          />
         </div>
       </header>
       <div styleName="story">

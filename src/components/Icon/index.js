@@ -6,7 +6,7 @@ import colorCodes from "../colors"
 
 import "./index.module.css"
 
-const Icon = ({ color, planetMorph }) => {
+const Icon = ({ color, planetCodeName, planetMorph }) => {
   const colorCode = colorCodes[color]
 
   return (
@@ -19,7 +19,12 @@ const Icon = ({ color, planetMorph }) => {
         />
       </svg>
       <div styleName="planet">
-        <Planet morph={planetMorph} color={color} hovering />
+        <Planet
+          codeName={planetCodeName}
+          morph={planetMorph}
+          color={color}
+          hovering
+        />
       </div>
     </div>
   )
@@ -27,6 +32,7 @@ const Icon = ({ color, planetMorph }) => {
 
 Icon.propTypes = {
   color: PropTypes.string.isRequired,
+  planetCodeName: PropTypes.string.isRequired,
   planetMorph: PropTypes.func,
 }
 

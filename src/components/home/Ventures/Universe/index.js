@@ -12,7 +12,13 @@ const Universe = ({ subvisualPlanetMorph }) => (
       {isViewable => {
         if (!isViewable) return
 
-        return <Planet morph={subvisualPlanetMorph} color="blue" />
+        return (
+          <Planet
+            codeName="universeSubvisualPlanet"
+            morph={subvisualPlanetMorph}
+            color="blue"
+          />
+        )
       }}
     </ViewableMonitor>
     <svg viewBox="0 0 221 224" fill="none" xmlns="http://www.w3.org/2000/svg">
