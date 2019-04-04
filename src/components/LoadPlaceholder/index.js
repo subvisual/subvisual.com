@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import PropTypes from "prop-types"
 import Observer from "react-intersection-observer"
 
 import "./index.module.css"
@@ -20,16 +21,12 @@ export default class LoadPlaceholder extends Component {
     const loaded = this.state.loaded ? "loaded" : ""
 
     return (
-      <Observer onChange={this.handleChange}>
-        <div styleName="root">
-          <div
-            style={{ transitionDelay: `${delay}s` }}
-            styleName={`placeholder ${dark} ${
-              this.state.visible ? loaded : ""
-            }`}
-          />
-          {this.props.children(this.onLoad)}
-        </div>
+      <Observer onChange={this.handleChange} styleName="root">
+        <div
+          style={{ transitionDelay: `${delay}s` }}
+          styleName={`placeholder ${dark} ${this.state.visible ? loaded : ""}`}
+        />
+        {this.props.children(this.onLoad)}
       </Observer>
     )
   }
