@@ -31,19 +31,19 @@ class Portfolio extends Component {
         <ul styleName="ventures">{ventures.map(this.renderVenture)}</ul>
         <div>
           <div styleName="planet">
-            <Planet color="blue" hovering />
+            <Planet codeName="venturesSubvisualPlanet" color="blue" hovering />
           </div>
           <div styleName="planet">
-            <Planet color="purple" hovering />
+            <Planet codeName="venturesPlanet1" color="purple" hovering />
           </div>
           <div styleName="planet">
-            <Planet color="purple" hovering />
+            <Planet codeName="venturesPlanet2" color="purple" hovering />
           </div>
           <div styleName="planet">
-            <Planet color="purple" hovering />
+            <Planet codeName="venturesPlanet3" color="purple" hovering />
           </div>
           <div styleName="planet">
-            <Planet color="purple" hovering />
+            <Planet codeName="venturesPlanet4" color="purple" hovering />
           </div>
         </div>
       </div>

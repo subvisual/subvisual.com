@@ -1,7 +1,6 @@
 import _ from "lodash"
 import React, { Component } from "react"
 import PropTypes from "prop-types"
-import uuid from "uuid/v4"
 
 import colorCodes from "../colors"
 
@@ -50,9 +49,9 @@ class Planet extends Component {
   }
 
   render() {
-    const planetUUID = uuid()
-    const animationName = `planet-${planetUUID}-hovering`
-    const radialID = `planet-${planetUUID}-radial`
+    const { codeName } = this.props
+    const animationName = `planet-${codeName}-hovering`
+    const radialID = `planet-${codeName}-radial`
     const rootStyle = this.getRootStyle({ animationName })
 
     return (
@@ -90,6 +89,7 @@ class Planet extends Component {
 }
 
 Planet.propTypes = {
+  codeName: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired,
   hovering: PropTypes.bool,
 }

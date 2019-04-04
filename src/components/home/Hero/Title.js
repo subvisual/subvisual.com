@@ -11,7 +11,7 @@ const Title = () => (
     <span styleName="ideas">
       ideas
       <span styleName="planet">
-        <Planet size={12} color="blue" />
+        <Planet codeName="heroTittle" size={12} color="blue" />
       </span>
     </span>{" "}
     <span styleName="glue">that empower</span> people
