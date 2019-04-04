@@ -11,7 +11,6 @@ import "../common/normalize.css"
 
 const IndexPage = () => (
   <>
-    <Intro />
     <Layout>
       <SEO
         title="Subvisual - We nurture ideas that empower people"
