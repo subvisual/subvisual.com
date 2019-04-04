@@ -121,8 +121,8 @@
 
 - name: "Ronaldo Sousa"
   photo:
-    horizontal: "../images/team/placeholder-h.jpg"
-    vertical: "../images/team/placeholder-v.jpg"
+    horizontal: "../images/team/ronaldo-sousa-h.jpg"
+    vertical: "../images/team/ronaldo-sousa-v.jpg"
   role: "Developer"
   bio: "Restless tech, design and music lover that likes to build software
   for people. Usually you can find him in front of a computer, behind a
