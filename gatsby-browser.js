@@ -4,6 +4,6 @@
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
 
-exports.onInitialClientRender(() => {
+exports.onInitialClientRender = () => {
   require("intersection-observer")
-})
+}
