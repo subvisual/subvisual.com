@@ -1,13 +1,14 @@
 import React from "react"
 import PropTypes from "prop-types"
+
 import { Link } from "gatsby"
 
 import "./index.module.css"
 
 const CallToAction = ({ color, children, size }) => (
-  <Link to="mailto:contact@subvisual.com" styleName={`root ${color} ${size}`}>
+  <a href="mailto:contact@subvisual.com" styleName={`root ${color} ${size}`}>
     {children}
-  </Link>
+  </a>
 )
 
 CallToAction.propTypes = {
