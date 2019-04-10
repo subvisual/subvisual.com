@@ -28,8 +28,13 @@
 
 .links {
   display: flex;
+  align-items: flex-end;
+
+  height: 26px;
+
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
@@ -45,6 +50,10 @@
   .logo {
     max-height: 28px;
     font-size: 20px;
+  }
+
+  .links {
+    height: 33px;
   }
 
   .link {
