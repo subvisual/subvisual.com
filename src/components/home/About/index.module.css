@@ -5,12 +5,19 @@
 
 .background {
   position: absolute;
+
+  width: 600%;
+  height: 100%;
+
   top: 0;
   left: 50%;
-  width: 10000px;
-  height: 10000px;
+
+  border-radius: 100% / 50%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+
   background-color: #045cfc;
-  border-radius: 50%;
+
   transform: translateX(-50%);
   z-index: -1;
 }
@@ -27,8 +34,6 @@
   display: flex;
   justify-content: space-between;
 }
-
-.headerTitle {}
 
 .headerIcon {
   max-width: 58px;
