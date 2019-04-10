@@ -11,7 +11,6 @@ class Planet extends Component {
     super(props)
 
     this.hoveringAmplitude = _.random(-20, 20)
-    this.hoveringAnimationName = this.hoveringAnimationDelay = _.random(0, 3)
     this.hoveringAnimationDuration = _.round(_.random(0.8, 1.8), 2)
   }
 
@@ -22,7 +21,6 @@ class Planet extends Component {
 
     return {
       animationName,
-      animationDelay: `${this.hoveringAnimationDelay}s`,
       animationDuration: `${this.hoveringAnimationDuration}s`,
       animationTimingFunction: "ease-in-out",
       animationDirection: "alternate",
