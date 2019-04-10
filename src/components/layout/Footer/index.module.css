@@ -1,9 +1,11 @@
-.root {
-  background-color: #045cfc;
+.root {}
+
+.blue {
   padding: 56px 20px 20px;
+  background-color: #045cfc;
 }
 
-.content {
+.blue .content {
   display: flex;
   flex-direction: column;
   max-width: 1184px;
@@ -40,8 +42,26 @@
   margin-bottom: 20px;
 }
 
+.white {
+  padding: 0;
+  background-color: #fcfcfc;
+}
+
+.white .content {
+  height: auto;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 651px) {
+  .white .content {
+    max-width: 650px;
+  }
+}
+
 @media (min-width: 768px) {
-  .content {
+  .blue .content {
     align-items: center;
   }
 
@@ -63,7 +83,7 @@
 }
 
 @media (min-width: 950px) {
-  .root {
+  .blue {
     padding: 112px 28px 28px;
   }
 
@@ -83,5 +103,9 @@
 
   .social {
     margin-bottom: 112px;
+  }
+
+  .white {
+    padding: 28px 0;
   }
 }
