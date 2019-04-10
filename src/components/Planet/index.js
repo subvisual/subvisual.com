@@ -10,7 +10,7 @@ class Planet extends Component {
   constructor(props) {
     super(props)
 
-    this.hoveringAmplitude = _.random(-20, 20)
+    this.hoveringAmplitude = _.random(props.hoveringMin, props.hoveringMax)
     this.hoveringAnimationDuration = _.round(_.random(0.8, 1.8), 2)
   }
 
@@ -99,10 +99,14 @@ Planet.propTypes = {
   color: PropTypes.string.isRequired,
   hovering: PropTypes.bool,
   morph: PropTypes.func,
+  hoveringMax: PropTypes.number.isRequired,
+  hoveringMin: PropTypes.number.isRequired,
 }
 
 Planet.defaultProps = {
   hovering: false,
+  hoveringMax: 20,
+  hoveringMin: -20,
   morph: () => {},
 }
 

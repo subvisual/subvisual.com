@@ -1,8 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import Planet from "../Planet"
-import colorCodes from "../colors"
+import Planet from "../../../Planet"
+import colorCodes from "../../../colors"
 
 import "./index.module.css"
 
@@ -20,6 +20,8 @@ const Icon = ({ color, planetCodeName, planetMorph }) => {
       </svg>
       <div styleName="planet">
         <Planet
+          hoveringMin={5}
+          hoveringMax={10}
           codeName={planetCodeName}
           morph={planetMorph}
           color={color}
