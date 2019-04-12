@@ -40,7 +40,6 @@
 }
 
 @media (min-width: 320px) {
-
   .images {
     grid-template-rows: 168px 168px 224px;
   }

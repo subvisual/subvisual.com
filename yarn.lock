@@ -8726,7 +8726,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.5.4, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -8997,6 +8997,13 @@ react-morph@0.4.0-alpha.1:
     "@popmotion/popcorn" ">=0.3.1"
     "@types/react" ">=16.8.0"
     wobble ">=1.5.1"
+
+react-scroll-parallax@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/react-scroll-parallax/-/react-scroll-parallax-2.1.1.tgz#8fe567af4c68989283462aad8614f9d7ff20defa"
+  integrity sha512-VTiv9b9aPVL2q76scCLC4X+QTnUcPYJSU2Tmc6ZLx27yEQsT3GfauUZKe1ir1YHDy+tB92ElfuYazk6OxOYYBg==
+  dependencies:
+    prop-types "^15.5.10"
 
 react-side-effect@^1.1.0:
   version "1.1.5"
