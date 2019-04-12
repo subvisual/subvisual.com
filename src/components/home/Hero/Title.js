@@ -10,24 +10,23 @@ import "./Title.module.css"
 const Title = ({ planetMorph }) => {
   const hasJavascript = useDetectJavascript()
 
-  if (hasJavascript) {
+  if (!hasJavascript)
     return (
-      <PageTitle>
-        We nurture{" "}
-        <span styleName="ideas">
-          ideas
-          <span styleName="planet">
-            <Planet morph={planetMorph} codeName="heroTittle" color="blue" />
-          </span>
-        </span>{" "}
+      <PageTitle withTittle>
+        We nurture <span styleName="ideas">ideas</span>{" "}
         <span styleName="glue">that empower</span> people
       </PageTitle>
     )
-  }
 
   return (
-    <PageTitle withTitle>
-      We nurture <span styleName="ideas">ideas</span>{" "}
+    <PageTitle>
+      We nurture{" "}
+      <span styleName="ideas">
+        ideas
+        <span styleName="planet">
+          <Planet morph={planetMorph} codeName="heroTittle" color="blue" />
+        </span>
+      </span>{" "}
       <span styleName="glue">that empower</span> people
     </PageTitle>
   )
