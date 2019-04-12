@@ -3,8 +3,8 @@ import classnames from "classnames"
 
 import "./index.module.css"
 
-const PageTitle = ({ children, regularFont }) => (
-  <h1 styleName={classnames("root", { "regular-font": regularFont })}>
+const PageTitle = ({ children, withTitle }) => (
+  <h1 styleName={classnames("root", { "with-title": withTitle })}>
     {children}
   </h1>
 )

@@ -26,7 +26,7 @@ const Title = ({ planetMorph }) => {
   }
 
   return (
-    <PageTitle regularFont>
+    <PageTitle withTitle>
       We nurture <span styleName="ideas">ideas</span>{" "}
       <span styleName="glue">that empower</span> people
     </PageTitle>
