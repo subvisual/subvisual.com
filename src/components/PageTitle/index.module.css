@@ -6,6 +6,10 @@
   color: #045cfc;
 }
 
+.regular-font {
+  font-family: "Acta Display";
+}
+
 @media (min-width: 950px) {
   .root {
     font-size: 112px;
