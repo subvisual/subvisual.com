@@ -1,32 +1,45 @@
-import React, { Component } from "react"
+import React, { useState } from "react"
+import { renderToStaticMarkup } from "react-dom/server"
 import Observer from "react-intersection-observer"
+
+import useDetectJavascript from "../../common/useDetectJavascript"
 
 import "./index.module.css"
 
-export default class LoadPlaceholder extends Component {
-  state = { loaded: false, visible: false }
+export default function LoadPlaceholder({ delay = 0, dark, children }) {
+  const [loaded, setLoaded] = useState("")
+  const [visible, setVisible] = useState(false)
+  const hasJavascript = useDetectJavascript()
+  const loadedStyle = loaded ? "loaded" : ""
+  const darkStyle = dark ? "dark" : ""
 
-  onLoad = () => this.setState({ loaded: true })
+  const onLoad = () => setLoaded(true)
 
-  handleChange = isIntersecting => {
+  const handleChange = isIntersecting => {
     if (!isIntersecting) return
 
-    return this.setState({ visible: true })
+    setVisible(true)
   }
 
-  render() {
-    const delay = this.props.delay || 0
-    const dark = this.props.dark ? "dark" : ""
-    const loaded = this.state.loaded ? "loaded" : ""
-
-    return (
-      <Observer onChange={this.handleChange} styleName="root">
-        <div
-          style={{ transitionDelay: `${delay}s` }}
-          styleName={`placeholder ${dark} ${this.state.visible ? loaded : ""}`}
-        />
-        {this.props.children(this.onLoad)}
-      </Observer>
-    )
-  }
+  return (
+    <>
+      <noscript
+        dangerouslySetInnerHTML={{
+          __html: renderToStaticMarkup(children(onLoad)).replace(
+            /noscript/g,
+            "div"
+          ),
+        }}
+      />
+      {hasJavascript ? (
+        <Observer onChange={handleChange} styleName="root">
+          <div
+            style={{ transitionDelay: `${delay}s` }}
+            styleName={`placeholder ${darkStyle} ${visible ? loadedStyle : ""}`}
+          />
+          {children(onLoad)}
+        </Observer>
+      ) : null}
+    </>
+  )
 }
