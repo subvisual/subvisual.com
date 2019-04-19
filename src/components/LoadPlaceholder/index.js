@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { renderToStaticMarkup } from "react-dom/server"
-import Observer from "react-intersection-observer"
+import Observer from "@researchgate/react-intersection-observer"
 
 import useDetectJavascript from "../../common/useDetectJavascript"
 
@@ -15,9 +15,10 @@ export default function LoadPlaceholder({ delay = 0, dark, children }) {
 
   const onLoad = () => setLoaded(true)
 
-  const handleChange = isIntersecting => {
+  const handleChange = ({ isIntersecting }, unobserve) => {
     if (!isIntersecting) return
 
+    unobserve()
     setVisible(true)
   }
 
@@ -32,12 +33,16 @@ export default function LoadPlaceholder({ delay = 0, dark, children }) {
         }}
       />
       {hasJavascript ? (
-        <Observer onChange={handleChange} styleName="root">
-          <div
-            style={{ transitionDelay: `${delay}s` }}
-            styleName={`placeholder ${darkStyle} ${visible ? loadedStyle : ""}`}
-          />
-          {children(onLoad)}
+        <Observer onChange={handleChange}>
+          <div styleName="root">
+            <div
+              style={{ transitionDelay: `${delay}s` }}
+              styleName={`placeholder ${darkStyle} ${
+                visible ? loadedStyle : ""
+              }`}
+            />
+            {children(onLoad)}
+          </div>
         </Observer>
       ) : null}
     </>

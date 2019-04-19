@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@researchgate/react-intersection-observer": "^0.7.4",
     "classnames": "^2.2.6",
     "gatsby": "^2.1.18",
     "gatsby-image": "^2.0.38",
@@ -24,7 +25,6 @@
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-helmet": "^5.2.0",
-    "react-intersection-observer": "^8.22.5",
     "react-morph": "0.4.0-alpha.1",
     "react-scroll-parallax": "^2.1.1"
   },
