@@ -3,7 +3,6 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
 import Planet from "../../../Planet"
-import ViewableMonitor from "../../../ViewableMonitor"
 import Venture from "./Venture"
 
 import "./index.module.css"
@@ -40,20 +39,14 @@ class Portfolio extends Component {
       <div styleName="root">
         <ul styleName="ventures">{ventures.map(this.renderVenture)}</ul>
         <div>
-          <ViewableMonitor styleName="planet">
-            {isViewable => {
-              if (!isViewable) return
-
-              return (
-                <Planet
-                  morph={planetMorph}
-                  codeName="venturesSubvisualPlanet"
-                  color="blue"
-                  hovering
-                />
-              )
-            }}
-          </ViewableMonitor>
+          <div styleName="planet">
+            <Planet
+              morph={planetMorph}
+              codeName="venturesSubvisualPlanet"
+              color="blue"
+              hovering
+            />
+          </div>
           <div styleName="planet">
             <Planet codeName="venturesPlanet1" color="purple" hovering />
           </div>

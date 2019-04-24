@@ -71,7 +71,7 @@ class Planet extends Component {
         </style>
         <ViewableMonitor styleName="monitor">
           {isViewable => {
-            if (!isViewable) return
+            if (!isViewable) return <div />
 
             return (
               <div {...morph} style={rootStyle} styleName="root">

@@ -1,22 +1,13 @@
-import React, { Component } from "react"
-import Observer from "react-intersection-observer"
+import React, { useState } from "react"
+import Observer from "@researchgate/react-intersection-observer"
 
-export default class ViewableMonitor extends Component {
-  state = {
-    isIntersecting: false,
-  }
+export default function ViewableMonitor({ children, ...rest }) {
+  const [isIntersecting, setIsIntersecting] = useState(false)
+  const handleChange = ({ isIntersecting }) => setIsIntersecting(isIntersecting)
 
-  handleChange = isIntersecting => {
-    this.setState({ isIntersecting })
-  }
-
-  render() {
-    const { children, ...rest } = this.props
-
-    return (
-      <Observer {...rest} onChange={this.handleChange}>
-        {children(this.state.isIntersecting)}
-      </Observer>
-    )
-  }
+  return (
+    <Observer {...rest} onChange={handleChange}>
+      {children(isIntersecting)}
+    </Observer>
+  )
 }

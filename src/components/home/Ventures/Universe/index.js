@@ -2,25 +2,19 @@ import React from "react"
 import PropTypes from "prop-types"
 
 import Planet from "../../../Planet"
-import ViewableMonitor from "../../../ViewableMonitor"
 
 import "./index.module.css"
 
 const Universe = ({ subvisualPlanetMorph }) => (
   <div styleName="root">
-    <ViewableMonitor styleName="planet">
-      {isViewable => {
-        if (!isViewable) return
-
-        return (
-          <Planet
-            codeName="universeSubvisualPlanet"
-            morph={subvisualPlanetMorph}
-            color="blue"
-          />
-        )
-      }}
-    </ViewableMonitor>
+    <div styleName="planet">
+      <Planet
+        codeName="universeSubvisualPlanet"
+        morph={subvisualPlanetMorph}
+        color="blue"
+        hovering
+      />
+    </div>
     <svg viewBox="0 0 221 224" fill="none" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <radialGradient
