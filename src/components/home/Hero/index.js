@@ -34,7 +34,7 @@ const renderParallaxImage = ({ baseDelay, image, parallaxAmount }) => (
   />
 )
 
-const Hero = ({ data, planetMorph }) => {
+const Hero = ({ data, planetMorph, hidePlanet }) => {
   const baseDelay = 0.3
 
   return (
@@ -42,7 +42,7 @@ const Hero = ({ data, planetMorph }) => {
       <div styleName="root">
         <div styleName="content">
           <div styleName="title">
-            <Title planetMorph={planetMorph} />
+            <Title planetMorph={planetMorph} hide={hidePlanet} />
           </div>
           <div styleName="text">
             <p>
@@ -117,6 +117,7 @@ const Hero = ({ data, planetMorph }) => {
 }
 
 Hero.propTypes = {
+  hidePlanet: PropTypes.bool,
   planetMorph: PropTypes.func,
 }
 
@@ -124,11 +125,8 @@ Hero.defaultTypes = {
   planetMorph: () => {},
 }
 
-export default ({ planetMorph }) => (
-  <StaticQuery
-    query={query}
-    render={data => <Hero data={data} planetMorph={planetMorph} />}
-  />
+export default props => (
+  <StaticQuery query={query} render={data => <Hero data={data} {...props} />} />
 )
 
 const query = graphql`

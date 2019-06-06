@@ -13,6 +13,14 @@
 
 .title {
   max-width: 577px;
+
+  opacity: 0;
+
+  animation-name: fade;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 3.4s;
+  animation-fill-mode: forwards;
 }
 
 .text {
@@ -131,5 +139,15 @@
 
   .images {
     grid-column-gap: 28px;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }

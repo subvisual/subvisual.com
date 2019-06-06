@@ -47,7 +47,7 @@ class Planet extends Component {
   }
 
   render() {
-    const { codeName, morph } = this.props
+    const { codeName, morph, hide } = this.props
     const animationName = `planet-${codeName}-hovering`
     const radialID = `planet-${codeName}-radial`
     const rootStyle = this.getRootStyle({ animationName })
@@ -70,12 +70,12 @@ class Planet extends Component {
           }`}
         </style>
         <ViewableMonitor styleName="monitor">
-          {isViewable => {
-            if (!isViewable) return <div />
+          {(isViewable, amount) => {
+            if (!isViewable || hide) return <div />
 
             return (
-              <div {...morph} style={rootStyle} styleName="root">
-                <div styleName="background" />
+              <div key={`${codeName}-morph`} style={rootStyle} styleName="root">
+                <div key={`splash`} {...morph} styleName="morphTarget" />
                 <svg
                   viewBox="0 0 104 104"
                   fill="none"
@@ -97,6 +97,7 @@ class Planet extends Component {
 Planet.propTypes = {
   codeName: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired,
+  hide: PropTypes.bool,
   hovering: PropTypes.bool,
   morph: PropTypes.func,
   hoveringMax: PropTypes.number.isRequired,

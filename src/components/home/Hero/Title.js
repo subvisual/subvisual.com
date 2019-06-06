@@ -7,7 +7,7 @@ import useDetectJavascript from "../../../common/useDetectJavascript"
 
 import "./Title.module.css"
 
-const Title = ({ planetMorph }) => {
+const Title = ({ planetMorph, hide }) => {
   const hasJavascript = useDetectJavascript()
 
   if (!hasJavascript)
@@ -24,7 +24,13 @@ const Title = ({ planetMorph }) => {
       <span styleName="ideas">
         ideas
         <span styleName="planet">
-          <Planet morph={planetMorph} codeName="heroTittle" color="blue" />
+          <Planet
+            hovering={false}
+            hide={hide}
+            morph={planetMorph}
+            codeName="heroTittle"
+            color="blue"
+          />
         </span>
       </span>{" "}
       <span styleName="glue">that empower</span> people

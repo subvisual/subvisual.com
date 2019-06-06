@@ -1,0 +1,60 @@
+.root {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  overflow: hidden;
+
+  z-index: 10;
+}
+
+.splash {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  border-radius: 50%;
+
+  background-color: rgb(4, 92, 252);
+
+  z-index: 10;
+}
+
+.logo {
+  position: absolute;
+
+  text-align: center;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translateX(-50%) translateY(-50%);
+
+  z-index: 11;
+}
+
+.logo svg {
+  width: calc(100% - 80px);
+  max-width: 495px;
+}
+
+@media only screen and (orientation: portrait) {
+  .splash {
+    width: 150vh;
+    height: 150vh;
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  .splash {
+    width: 150vw;
+    height: 150vw;
+  }
+}
