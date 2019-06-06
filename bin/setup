@@ -3,11 +3,9 @@
 # Install expected NodeJS version with ASDF VM
 asdf install
 
-# Install Yarn globally if necessary
-if ! command -v yarn >/dev/null 2>&1; then
-  npm install -g yarn
-  asdf reshim nodejs
-fi
+# Install or update Yarn globally
+npm install -g yarn
+asdf reshim nodejs
 
 # Install JavaScript dependencies
 yarn install
