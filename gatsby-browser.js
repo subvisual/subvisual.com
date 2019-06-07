@@ -6,6 +6,6 @@
 
 export const onClientEntry = async () => {
   if (typeof IntersectionObserver === "undefined") {
-    await import("@researchgate/react-intersection-observer")
+    await import("intersection-observer")
   }
 }
