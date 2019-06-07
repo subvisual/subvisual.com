@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "@researchgate/react-intersection-observer": "^0.7.4",
+    "@researchgate/react-intersection-observer": "1.0.1",
     "classnames": "^2.2.6",
     "gatsby": "^2.1.18",
     "gatsby-image": "^2.0.38",
