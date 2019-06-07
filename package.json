@@ -20,7 +20,7 @@
     "gatsby-source-filesystem": "^2.0.23",
     "gatsby-transformer-sharp": "^2.1.14",
     "gatsby-transformer-yaml": "^2.1.10",
-    "intersection-observer": "^0.5.1",
+    "intersection-observer": "0.7.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
