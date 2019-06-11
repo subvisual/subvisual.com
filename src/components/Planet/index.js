@@ -33,15 +33,15 @@ class Planet extends Component {
 
     return (
       <radialGradient
-        id={id}
+        id="planet_paint"
         cx="0"
         cy="0"
         r="1"
         gradientUnits="userSpaceOnUse"
-        gradientTransform="rotate(127.684 38.403 29.669) scale(81.6467 85.3669)"
+        gradientTransform="matrix(-27.95005 34.65125 -36.59612 -29.5188 46.68 8.266)"
       >
-        <stop stopColor={color} stopOpacity=".6" />
-        <stop offset="1" stopColor={color} />
+        <stop stopColor="#689DFD" />
+        <stop offset="1" stopColor="#045CFC" />
       </radialGradient>
     )
   }
@@ -74,15 +74,26 @@ class Planet extends Component {
             if (!isViewable || hide) return <div />
 
             return (
-              <div key={`${codeName}-morph`} style={rootStyle} styleName="root">
-                <div key={`splash`} {...morph} styleName="morphTarget" />
+              <div
+                id={codeName}
+                {...morph}
+                key={`${codeName}-planet`}
+                style={rootStyle}
+                styleName="root"
+              >
                 <svg
-                  viewBox="0 0 104 104"
+                  viewBox="0 0 56 54"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                   styleName="planet"
                 >
-                  <circle cx="52" cy="50" r="50" fill={`url(#${radialID})`} />
+                  <ellipse
+                    cx="28"
+                    cy="26.814"
+                    rx="28"
+                    ry="26.814"
+                    fill="url(#planet_paint)"
+                  />
                   <defs>{this.renderRadialGradient({ id: radialID })}</defs>
                 </svg>
               </div>
