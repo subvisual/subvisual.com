@@ -45,8 +45,6 @@ const IndexPage = () => {
           keywords={[]}
         />
         <Hero planetMorph={morph} hidePlanet={renderSplash} />
-        <Ventures morph={morph} />
-        <About morph={morph} />
       </Layout>
     </>
   )

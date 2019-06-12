@@ -38,81 +38,29 @@ const Hero = ({ data, planetMorph, hidePlanet }) => {
   const baseDelay = 0.3
 
   return (
-    <ParallaxProvider>
-      <div styleName="root">
-        <div styleName="content">
-          <div styleName="title">
-            <Title planetMorph={planetMorph} hide={hidePlanet} />
-          </div>
-          <div styleName="text">
-            <p>
-              <Text>
-                Building a company from the ground up is hard and stressful,
-                particularly in heavy regulated fields such as fintech and
-                digital healthcare.
-              </Text>
-            </p>
-            <p>
-              <Text>
-                Struggling with designing and developing that awesome idea
-                you’ve had? We can help you succeed.{" "}
-                <CallToAction>Together.</CallToAction>
-              </Text>
-            </p>
-          </div>
-          <div styleName="images">
-            <div styleName="image">
-              <div styleName="horizontal">
-                {renderParallaxImage({
-                  baseDelay,
-                  image: data.hero1_h.childImageSharp.fluid,
-                  parallaxAmount: 0.2,
-                })}
-              </div>
-              <div styleName="vertical">
-                {renderParallaxImage({
-                  baseDelay,
-                  image: data.hero1_v.childImageSharp.fluid,
-                  parallaxAmount: 0.2,
-                })}
-              </div>
-            </div>
-            <div styleName="image">
-              <div styleName="horizontal">
-                {renderParallaxImage({
-                  baseDelay: baseDelay + 0.1,
-                  image: data.hero2_h.childImageSharp.fluid,
-                  parallaxAmount: 0.2,
-                })}
-              </div>
-              <div styleName="vertical">
-                {renderParallaxImage({
-                  baseDelay: baseDelay + 0.1,
-                  image: data.hero2_v.childImageSharp.fluid,
-                  parallaxAmount: 0.2,
-                })}
-              </div>
-            </div>
-            <div styleName="image" id="lixo">
-              <div styleName="horizontal">
-                {renderParallaxImage({
-                  baseDelay: baseDelay + 0.2,
-                  image: data.hero3_h.childImageSharp.fluid,
-                  parallaxAmount: 0.2,
-                })}
-              </div>
-              <div styleName="vertical">
-                {renderParallaxImage({
-                  baseDelay: baseDelay + 0.2,
-                  image: data.hero3_v.childImageSharp.fluid,
-                  parallaxAmount: 0.2,
-                })}
-              </div>
-            </div>
-          </div>
+    <div styleName="root">
+      <div styleName="content">
+        <div styleName="title">
+          <Title planetMorph={planetMorph} hide={hidePlanet} />
+        </div>
+        <div styleName="text">
+          <p>
+            <Text>
+              Building a company from the ground up is hard and stressful,
+              particularly in heavy regulated fields such as fintech and digital
+              healthcare.
+            </Text>
+          </p>
+          <p>
+            <Text>
+              Struggling with designing and developing that awesome idea you’ve
+              had? We can help you succeed.{" "}
+              <CallToAction>Together.</CallToAction>
+            </Text>
+          </p>
         </div>
       </div>
-    </ParallaxProvider>
+    </div>
   )
 }
 
