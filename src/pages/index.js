@@ -33,17 +33,17 @@ const IndexPage = () => {
   const [renderSplash, setRenderSplash] = useState(true)
 
   useEffect(() => {
-    setTimeout(() => requestAnimationFrame(() => setRenderSplash(false)), 500)
+    setTimeout(() => requestAnimationFrame(() => setRenderSplash(false)), 1000)
   })
 
   return (
     <>
+      <Splash show={renderSplash} morph={morph} />
       <Layout>
         <SEO
           title="Subvisual - We nurture ideas that empower people"
           keywords={[]}
         />
-        <Splash show={renderSplash} morph={morph} />
         <Hero planetMorph={morph} hidePlanet={renderSplash} />
         <Ventures morph={morph} />
         <About morph={morph} />
