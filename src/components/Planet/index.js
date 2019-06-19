@@ -32,17 +32,22 @@ class Planet extends Component {
     const color = colorCodes[this.props.color]
 
     return (
-      <radialGradient
-        id={id}
-        cx="0"
-        cy="0"
-        r="1"
-        gradientUnits="userSpaceOnUse"
-        gradientTransform="rotate(127.684 38.403 29.669) scale(81.6467 85.3669)"
-      >
-        <stop stopColor={color} stopOpacity=".6" />
-        <stop offset="1" stopColor={color} />
-      </radialGradient>
+      <g>
+        <ellipse cx="122" cy="117.254" rx="112" ry="107.254" fill="url(#paint0_radial)"/>
+        <defs>
+          <radialGradient
+            id={id}
+            cx="0"
+            cy="0"
+            r="1"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(196.724 43.0636) rotate(128.89) scale(178.075 188.07)"
+          >
+            <stop stop-color={color} stop-opacity="0.6"/>
+            <stop offset="1" stop-color={color}/>
+          </radialGradient>
+        </defs>
+      </g>
     )
   }
 
