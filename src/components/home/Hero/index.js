@@ -93,7 +93,7 @@ const Hero = ({ data, planetMorph }) => {
                 })}
               </div>
             </div>
-            <div styleName="image" id="lixo">
+            <div styleName="image">
               <div styleName="horizontal">
                 {renderParallaxImage({
                   baseDelay: baseDelay + 0.2,
