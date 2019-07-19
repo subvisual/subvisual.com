@@ -23,8 +23,8 @@
   grey: "../images/ventures/oncostats.jpg"
   url: "https://oncostats.io/"
 
-- name: "SV Health"
-  description: "Nurturing digital healthcare solutions"
-  grey: "../images/ventures/svhealth.jpg"
-  color: "../images/ventures/svhealth-color.jpg"
-  url: "https://svhealth.io/"
+- name: "Aurora Digital"
+  description: "Nurturing digital healthcare"
+  grey: "../images/ventures/aurora-grey.jpg"
+  color: "../images/ventures/aurora-color.jpg"
+  url: "https://auroradigital.co/"
