@@ -1,4 +1,17 @@
 ---
+- name: "Fernando Mendes"
+  photo:
+    horizontal: "../images/team/fernando-mendes-h.jpg"
+    vertical: "../images/team/fernando-mendes-v.jpg"
+  role: "Developer"
+  bio: >-
+    Tech lover, with a background in Distributed Systems and Cryptography and a
+    knack for "accidentally" breaking things. Always trying out new things,
+    like '); DROP TABLE staff; --
+  social:
+    web: "https://blog.mendes.codes"
+    github: "https://github.com/justmendes"
+
 - name: "Francisco Baila"
   photo:
     horizontal: "../images/team/francisco-baila-h.jpg"
