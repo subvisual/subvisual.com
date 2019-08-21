@@ -1,35 +1,31 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import Link from "../link"
+import NavLink from "./header/nav_link"
 
-import styles from "./header.module.css"
+import styles from "./header.module.scss"
 
-const Header = ({ renderLogo }) => (
+const BLOG_PATH = "/blog/"
+
+const Header = ({ currentPath, renderLogo }) => (
   <header className={styles.root}>
     <div className={styles.content}>
       <div className={styles.logo}>{renderLogo()}</div>
       <nav>
-        <ul className={styles.links}>
-          <li className={styles.linkItem}>
-            <Link
-              to="https://medium.com/subvisual"
+        <ul className={styles.navLinks}>
+          <li className={styles.navLink}>
+            <NavLink
+              active={currentPath === BLOG_PATH}
+              to={BLOG_PATH}
               title="Blog"
-              className={styles.link}
-              blank
             >
               Blog
-            </Link>
+            </NavLink>
           </li>
-          <li className={styles.linkItem}>
-            <Link
-              to="mailto:contact@subvisual.com"
-              title="Contact"
-              className={styles.link}
-              blank
-            >
+          <li className={styles.navLink}>
+            <NavLink to="mailto:contact@subvisual.com" title="Contact" blank>
               Contact
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </nav>
@@ -38,6 +34,7 @@ const Header = ({ renderLogo }) => (
 )
 
 Header.propTypes = {
+  currentPath: PropTypes.string.isRequired,
   renderLogo: PropTypes.func.isRequired,
 }
 

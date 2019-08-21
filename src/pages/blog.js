@@ -10,7 +10,7 @@ import "../common/base.scss"
 const renderHeaderLogo = () => <Logo />
 
 const BlogPage = () => (
-  <Layout color="blue" renderHeaderLogo={renderHeaderLogo}>
+  <Layout color="blue" currentPath="/blog/" renderHeaderLogo={renderHeaderLogo}>
     <SEO
       title="Inside Subvisual"
       description={`
