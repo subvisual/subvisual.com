@@ -4,12 +4,12 @@ import Img from "gatsby-image"
 import { StaticQuery, graphql } from "gatsby"
 import { ParallaxProvider, ParallaxBanner } from "react-scroll-parallax"
 
-import CallToAction from "../../CallToAction"
-import LoadPlaceholder from "../../LoadPlaceholder"
-import Text from "../../Text"
-import Title from "./Title"
+import CallToAction from "../CallToAction"
+import LoadPlaceholder from "../LoadPlaceholder"
+import Text from "../Text"
+import Title from "./hero/title"
 
-import "./index.module.css"
+import styles from "./hero.module.css"
 
 const renderParallaxImage = ({ baseDelay, image, parallaxAmount }) => (
   <ParallaxBanner
@@ -39,12 +39,12 @@ const Hero = ({ data, planetMorph }) => {
 
   return (
     <ParallaxProvider>
-      <div styleName="root">
-        <div styleName="content">
-          <div styleName="title">
+      <div className={styles.root}>
+        <div className={styles.content}>
+          <div className={styles.title}>
             <Title planetMorph={planetMorph} />
           </div>
-          <div styleName="text">
+          <div className={styles.text}>
             <p>
               <Text>
                 Building a company from the ground up is hard and stressful,
@@ -60,16 +60,16 @@ const Hero = ({ data, planetMorph }) => {
               </Text>
             </p>
           </div>
-          <div styleName="images">
-            <div styleName="image">
-              <div styleName="horizontal">
+          <div className={styles.images}>
+            <div className={styles.image}>
+              <div className={styles.horizontal}>
                 {renderParallaxImage({
                   baseDelay,
                   image: data.hero1_h.childImageSharp.fluid,
                   parallaxAmount: 0.2,
                 })}
               </div>
-              <div styleName="vertical">
+              <div className={styles.vertical}>
                 {renderParallaxImage({
                   baseDelay,
                   image: data.hero1_v.childImageSharp.fluid,
@@ -77,15 +77,15 @@ const Hero = ({ data, planetMorph }) => {
                 })}
               </div>
             </div>
-            <div styleName="image">
-              <div styleName="horizontal">
+            <div className={styles.image}>
+              <div className={styles.horizontal}>
                 {renderParallaxImage({
                   baseDelay: baseDelay + 0.1,
                   image: data.hero2_h.childImageSharp.fluid,
                   parallaxAmount: 0.2,
                 })}
               </div>
-              <div styleName="vertical">
+              <div className={styles.vertical}>
                 {renderParallaxImage({
                   baseDelay: baseDelay + 0.1,
                   image: data.hero2_v.childImageSharp.fluid,
@@ -93,15 +93,15 @@ const Hero = ({ data, planetMorph }) => {
                 })}
               </div>
             </div>
-            <div styleName="image">
-              <div styleName="horizontal">
+            <div className={styles.image}>
+              <div className={styles.horizontal}>
                 {renderParallaxImage({
                   baseDelay: baseDelay + 0.2,
                   image: data.hero3_h.childImageSharp.fluid,
                   parallaxAmount: 0.2,
                 })}
               </div>
-              <div styleName="vertical">
+              <div className={styles.vertical}>
                 {renderParallaxImage({
                   baseDelay: baseDelay + 0.2,
                   image: data.hero3_v.childImageSharp.fluid,

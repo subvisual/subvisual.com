@@ -1,34 +1,37 @@
 import React from "react"
 import PropTypes from "prop-types"
+import classnames from "classnames"
 
-import PageTitle from "../../PageTitle"
 import Planet from "../../Planet"
 import useDetectJavascript from "../../../common/useDetectJavascript"
 
-import "./Title.module.css"
+import styles from "./title.module.css"
 
 const Title = ({ planetMorph }) => {
   const hasJavascript = useDetectJavascript()
+  const className = classnames(styles.root, {
+    [styles.withTittle]: !hasJavascript,
+  })
 
   if (!hasJavascript)
     return (
-      <PageTitle withTittle>
+      <h1 className={className}>
         We nurture <span styleName="ideas">ideas</span>{" "}
         <span styleName="glue">that empower</span> people
-      </PageTitle>
+      </h1>
     )
 
   return (
-    <PageTitle>
+    <h1 className={className}>
       We nurture{" "}
-      <span styleName="ideas">
+      <span className={styles.ideas}>
         ideas
-        <span styleName="planet">
+        <span className={styles.planet}>
           <Planet morph={planetMorph} codeName="heroTittle" color="blue" />
         </span>
       </span>{" "}
-      <span styleName="glue">that empower</span> people
-    </PageTitle>
+      <span className={styles.glue}>that empower</span> people
+    </h1>
   )
 }
 

@@ -1,3 +1,15 @@
+.root {
+  font-family: "Acta Display No Tittle";
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 56px;
+  color: #045cfc;
+}
+
+.root.with-tittle {
+  font-family: "Acta Display";
+}
+
 .ideas {
   position: relative;
   display: inline-block;
@@ -45,10 +57,24 @@
 }
 
 @media (min-width: 950px) {
+  .root {
+    font-size: 112px;
+    line-height: 112px;
+  }
+
   .planet {
     top: 17px;
     left: 6px;
     width: 23px;
     height: 23px;
+  }
+}
+
+/**
+ * Fix for Firefox font rendering issues.
+ */
+@-moz-document url-prefix() {
+  .root {
+    font-weight: lighter;
   }
 }
