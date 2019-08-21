@@ -1,7 +1,9 @@
 #!/bin/sh
+set -e
 
-# Install expected NodeJS version with ASDF VM
+# Install required language versions
 asdf install
+asdf reshim
 
 # Install or update Yarn globally
 npm install -g yarn
