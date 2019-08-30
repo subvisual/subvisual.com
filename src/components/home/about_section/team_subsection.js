@@ -1,7 +1,7 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 
-import Member from "./team_subsection/Member"
+import Member from "./team_subsection/member"
 
 import styles from "./team_subsection.module.css"
 

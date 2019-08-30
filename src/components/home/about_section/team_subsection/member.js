@@ -7,7 +7,7 @@ import SocialLink from "../../../SocialLink"
 import LoadPlaceholder from "../../../LoadPlaceholder"
 import Text from "../../../Text"
 
-import "./Member.module.css"
+import "./member.module.css"
 
 const Member = ({ name, role, social, photo }) => (
   <div styleName="root">
