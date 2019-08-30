@@ -7,9 +7,9 @@ import { ParallaxProvider, ParallaxBanner } from "react-scroll-parallax"
 import CallToAction from "../call_to_action"
 import LoadPlaceholder from "../LoadPlaceholder"
 import Text from "../Text"
-import Title from "./hero/title"
+import Title from "./hero_section/title"
 
-import styles from "./hero.module.scss"
+import styles from "./hero_section.module.css"
 
 const renderParallaxImage = ({ baseDelay, image, parallaxAmount }) => (
   <ParallaxBanner
@@ -34,7 +34,7 @@ const renderParallaxImage = ({ baseDelay, image, parallaxAmount }) => (
   />
 )
 
-const Hero = ({ data, planetMorph }) => {
+const HeroSection = ({ data, planetMorph }) => {
   const baseDelay = 0.3
 
   return (
@@ -116,18 +116,18 @@ const Hero = ({ data, planetMorph }) => {
   )
 }
 
-Hero.propTypes = {
+HeroSection.propTypes = {
   planetMorph: PropTypes.func,
 }
 
-Hero.defaultTypes = {
+HeroSection.defaultTypes = {
   planetMorph: () => {},
 }
 
 export default ({ planetMorph }) => (
   <StaticQuery
     query={query}
-    render={data => <Hero data={data} planetMorph={planetMorph} />}
+    render={data => <HeroSection data={data} planetMorph={planetMorph} />}
   />
 )
 

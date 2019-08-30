@@ -1,7 +1,7 @@
 import React from "react"
 
 import AboutSection from "../components/home/about_section"
-import Hero from "../components/home/hero"
+import HeroSection from "../components/home/hero_section"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Ventures from "../components/home/Ventures"
@@ -16,7 +16,7 @@ const IndexPage = () => {
           title="Subvisual - We nurture ideas that empower people"
           keywords={[]}
         />
-        <Hero />
+        <HeroSection />
         <Ventures />
         <AboutSection />
       </Layout>
