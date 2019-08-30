@@ -2,32 +2,33 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-import CallToAction from "../../CallToAction"
-import LoadPlaceholder from "../../LoadPlaceholder"
-import Location from "./Location"
-import Logo from "../../Logo"
-import SocialLinks from "./SocialLinks"
-import Text from "../../Text"
-import "./index.module.css"
+import CallToAction from "../CallToAction"
+import LoadPlaceholder from "../LoadPlaceholder"
+import Logo from "../Logo"
+import Text from "../Text"
+import Location from "./footer/Location"
+import SocialLinks from "./footer/SocialLinks"
+
+import styles from "./footer.module.css"
 
 const Footer = ({ data }) => (
-  <footer styleName="root">
+  <footer className={styles.root}>
     <LoadPlaceholder delay={-1}>
       {onLoad => (
         <>
-          <div styleName="blue">
-            <div styleName="content">
-              <div styleName="logo">
+          <div className={styles.blue}>
+            <div className={styles.content}>
+              <div className={styles.logo}>
                 <Logo color="white" />
               </div>
-              <div styleName="callToAction">
+              <div className={styles.callToAction}>
                 <p>
                   <Text color="white">Ready to bring your ideas to life?</Text>{" "}
                   <CallToAction color="white">Let's talk.</CallToAction>
                 </p>
               </div>
-              <div styleName="locations">
-                <div styleName="location">
+              <div className={styles.locations}>
+                <div className={styles.location}>
                   <Location
                     align="left"
                     name="Braga, Portugal"
@@ -36,7 +37,7 @@ const Footer = ({ data }) => (
                     mapsUrl="https://goo.gl/maps/ddvtn1Ez8N72"
                   />
                 </div>
-                <div styleName="location">
+                <div className={styles.location}>
                   <Location
                     align="right"
                     name="Boston, USA"
@@ -46,8 +47,8 @@ const Footer = ({ data }) => (
                   />
                 </div>
               </div>
-              <div styleName="social">
-                <div styleName="socialLabel">
+              <div className={styles.social}>
+                <div className={styles.socialLabel}>
                   <Text size="small" color="white">
                     Follow us
                   </Text>
@@ -61,8 +62,8 @@ const Footer = ({ data }) => (
               </p>
             </div>
           </div>
-          <div styleName="white">
-            <div styleName="content">
+          <div className={styles.white}>
+            <div className={styles.content}>
               <a
                 href={data.norte2020Doc.publicURL}
                 target="_blank"
