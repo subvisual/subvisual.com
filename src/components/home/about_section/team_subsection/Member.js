@@ -3,9 +3,9 @@ import React from "react"
 import PropTypes from "prop-types"
 import Img from "gatsby-image"
 
-import SocialLink from "../../SocialLink"
-import LoadPlaceholder from "../../LoadPlaceholder"
-import Text from "../../Text"
+import SocialLink from "../../../SocialLink"
+import LoadPlaceholder from "../../../LoadPlaceholder"
+import Text from "../../../Text"
 
 import "./Member.module.css"
 

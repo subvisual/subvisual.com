@@ -1,12 +1,12 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 
-import Member from "./Member"
+import Member from "./team_subsection/Member"
 
-import "./index.module.css"
+import styles from "./team_subsection.module.css"
 
-const Team = ({ members }) => (
-  <ul styleName="root">
+const TeamSubsection = ({ members }) => (
+  <ul className={styles.root}>
     {members.map((data, index) => (
       <li key={index}>
         <Member {...data} />
@@ -19,7 +19,7 @@ export default () => (
   <StaticQuery
     query={teamQuery}
     render={({ allTeamYaml: { edges: team } }) => (
-      <Team members={team.map(m => m.node)} />
+      <TeamSubsection members={team.map(m => m.node)} />
     )}
   />
 )

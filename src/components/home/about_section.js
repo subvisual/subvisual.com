@@ -1,11 +1,11 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import Icon from "./about_section/icon"
 import Subtitle from "../Subtitle"
 import Text from "../Text"
-import Team from "./Team"
 import Title from "../Title"
+import Icon from "./about_section/icon"
+import TeamSubsection from "./about_section/team_subsection"
 
 import styles from "./about_section.module.css"
 
@@ -51,7 +51,7 @@ const AboutSection = ({ planetMorph }) => (
         <div className={styles.title}>
           <Subtitle color="white">Team</Subtitle>
         </div>
-        <Team />
+        <TeamSubsection />
       </section>
     </div>
   </section>
