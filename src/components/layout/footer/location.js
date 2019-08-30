@@ -6,25 +6,25 @@ import Img from "gatsby-image"
 import Link from "../../Link"
 import Text from "../../Text"
 
-import "./Location.module.css"
+import styles from "./location.module.css"
 
 const Location = ({ align, geoUrl, image, mapsUrl, name }) => (
-  <address styleName="root">
-    <div styleName="image">
+  <address className={styles.root}>
+    <div className={styles.image}>
       <Img fluid={image.childImageSharp.fluid} />
     </div>
-    <div styleName={`info ${align}`}>
-      <span styleName="name">
+    <div className={[styles.info, styles[align]].join(" ")}>
+      <span className={styles.name}>
         <Text size="small" color="white">
           {name}
         </Text>
       </span>
-      <span styleName="mobile">
+      <span className={styles.mobile}>
         <Link to={geoUrl} size="small" color="white" blank faded>
           Directions
         </Link>
       </span>
-      <span styleName="desktop">
+      <span className={styles.desktop}>
         <Link to={mapsUrl} size="small" color="white" blank faded>
           Directions
         </Link>
@@ -34,15 +34,11 @@ const Location = ({ align, geoUrl, image, mapsUrl, name }) => (
 )
 
 Location.propTypes = {
-  align: PropTypes.string,
+  align: PropTypes.string.isRequired,
   geoUrl: PropTypes.string.isRequired,
   image: PropTypes.object.isRequired,
   name: PropTypes.string.isRequired,
   mapsUrl: PropTypes.string.isRequired,
-}
-
-Location.defaultProps = {
-  align: "left",
 }
 
 export default ({ align, geoUrl, image, mapsUrl, name }) => (

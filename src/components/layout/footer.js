@@ -6,7 +6,7 @@ import CallToAction from "../CallToAction"
 import LoadPlaceholder from "../LoadPlaceholder"
 import Logo from "../Logo"
 import Text from "../Text"
-import Location from "./footer/Location"
+import Location from "./footer/location"
 import SocialLinks from "./footer/SocialLinks"
 
 import styles from "./footer.module.css"
