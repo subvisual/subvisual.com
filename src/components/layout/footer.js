@@ -2,7 +2,7 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-import CallToAction from "../CallToAction"
+import CallToAction from "../call_to_action"
 import LoadPlaceholder from "../LoadPlaceholder"
 import Logo from "../Logo"
 import Text from "../Text"

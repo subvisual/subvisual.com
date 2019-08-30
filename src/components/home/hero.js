@@ -4,7 +4,7 @@ import Img from "gatsby-image"
 import { StaticQuery, graphql } from "gatsby"
 import { ParallaxProvider, ParallaxBanner } from "react-scroll-parallax"
 
-import CallToAction from "../CallToAction"
+import CallToAction from "../call_to_action"
 import LoadPlaceholder from "../LoadPlaceholder"
 import Text from "../Text"
 import Title from "./hero/title"

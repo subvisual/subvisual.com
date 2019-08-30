@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import CallToAction from "../../CallToAction"
+import CallToAction from "../../call_to_action"
 import HelpingWith from "./HelpingWith"
 import LookingFor from "./LookingFor"
 import Portfolio from "./Portfolio"
