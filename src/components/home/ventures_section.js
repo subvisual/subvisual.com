@@ -7,7 +7,7 @@ import Text from "../Text"
 import Title from "../Title"
 import HelpingWithSubsection from "./ventures_section/helping_with_subsection"
 import LookingForSubsection from "./ventures_section/looking_for_subsection"
-import Portfolio from "./ventures_section/Portfolio"
+import PortfolioSubsection from "./ventures_section/portfolio_subsection"
 import Universe from "./ventures_section/Universe"
 
 import styles from "./ventures_section.module.css"
@@ -34,7 +34,7 @@ const VenturesSection = ({ planetMorph }) => (
           <Subtitle>Portfolio</Subtitle>
         </header>
         <div className={styles.portfolioContent}>
-          <Portfolio planetMorph={planetMorph} />
+          <PortfolioSubsection planetMorph={planetMorph} />
         </div>
       </section>
       <footer className={styles.footer}>
