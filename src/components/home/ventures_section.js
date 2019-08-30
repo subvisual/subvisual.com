@@ -5,14 +5,14 @@ import CallToAction from "../call_to_action"
 import Subtitle from "../Subtitle"
 import Text from "../Text"
 import Title from "../Title"
-import HelpingWith from "./ventures_section/HelpingWith"
+import HelpingWithSubsection from "./ventures_section/helping_with_subsection"
 import LookingFor from "./ventures_section/LookingFor"
 import Portfolio from "./ventures_section/Portfolio"
 import Universe from "./ventures_section/Universe"
 
 import styles from "./ventures_section.module.css"
 
-const Ventures = ({ planetMorph }) => (
+const VenturesSection = ({ planetMorph }) => (
   <section className={styles.root}>
     <div className={styles.content}>
       <header className={styles.header}>
@@ -24,7 +24,7 @@ const Ventures = ({ planetMorph }) => (
       </section>
       <section className={[styles.section, styles.helpingWith].join(" ")}>
         <Subtitle>Helping with</Subtitle>
-        <HelpingWith />
+        <HelpingWithSubsection />
       </section>
       <div className={styles.universe}>
         <Universe subvisualPlanetMorph={planetMorph} />
@@ -48,12 +48,12 @@ const Ventures = ({ planetMorph }) => (
   </section>
 )
 
-Ventures.propTypes = {
+VenturesSection.propTypes = {
   planetMorph: PropTypes.func,
 }
 
-Ventures.defaultProps = {
+VenturesSection.defaultProps = {
   planetMorph: () => {},
 }
 
-export default Ventures
+export default VenturesSection

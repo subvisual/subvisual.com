@@ -1,11 +1,11 @@
 import React from "react"
 
-import Text from "../../../Text"
+import Text from "../../Text"
 
-import "./index.module.css"
+import styles from "./helping_with_subsection.module.css"
 
 const HelpingWith = () => (
-  <ul styleName="root">
+  <ul className={styles.root}>
     <li>
       <Text>Seed investment &amp; incubation</Text>
     </li>
