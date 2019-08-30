@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
 import Planet from "../../Planet"
-import Venture from "./portfolio_subsection/Venture"
+import Venture from "./portfolio_subsection/venture"
 
 import styles from "./portfolio_subsection.module.css"
 

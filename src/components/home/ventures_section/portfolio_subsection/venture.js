@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 import Text from "../../../Text"
 import LoadPlaceholder from "../../../LoadPlaceholder"
 
-import "./Venture.module.css"
+import "./venture.module.css"
 
 const Venture = ({ color, delay, description, featured, grey, name, url }) => (
   <a
