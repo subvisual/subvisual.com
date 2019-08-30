@@ -9,7 +9,7 @@ import LoadPlaceholder from "../LoadPlaceholder"
 import Text from "../Text"
 import Title from "./hero/title"
 
-import styles from "./hero.module.css"
+import styles from "./hero.module.scss"
 
 const renderParallaxImage = ({ baseDelay, image, parallaxAmount }) => (
   <ParallaxBanner
