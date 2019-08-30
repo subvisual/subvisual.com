@@ -6,7 +6,7 @@ import Subtitle from "../Subtitle"
 import Text from "../Text"
 import Title from "../Title"
 import HelpingWithSubsection from "./ventures_section/helping_with_subsection"
-import LookingFor from "./ventures_section/LookingFor"
+import LookingForSubsection from "./ventures_section/looking_for_subsection"
 import Portfolio from "./ventures_section/Portfolio"
 import Universe from "./ventures_section/Universe"
 
@@ -20,7 +20,7 @@ const VenturesSection = ({ planetMorph }) => (
       </header>
       <section className={[styles.section, styles.lookingFor].join(" ")}>
         <Subtitle>Looking for</Subtitle>
-        <LookingFor />
+        <LookingForSubsection />
       </section>
       <section className={[styles.section, styles.helpingWith].join(" ")}>
         <Subtitle>Helping with</Subtitle>
