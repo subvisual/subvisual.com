@@ -1,16 +1,16 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import Planet from "../../../Planet"
-import colorCodes from "../../../colors"
+import Planet from "../../Planet"
+import colorCodes from "../../colors"
 
-import "./index.module.css"
+import styles from "./icon.module.css"
 
 const Icon = ({ color, planetCodeName, planetMorph }) => {
   const colorCode = colorCodes[color]
 
   return (
-    <div styleName="root">
+    <div className={styles.root}>
       <svg viewBox="0 0 43 42" fill="none" xmlns="http://www.w3.org/2000/svg">
         <ellipse cx="37.432" cy="5.776" rx="5.375" ry="5.147" fill="none" />
         <path
@@ -18,7 +18,7 @@ const Icon = ({ color, planetCodeName, planetMorph }) => {
           fill={colorCode}
         />
       </svg>
-      <div styleName="planet">
+      <div className={styles.planet}>
         <Planet
           hoveringMin={5}
           hoveringMax={10}

@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import Icon from "./Icon"
+import Icon from "./icon"
 import Subtitle from "../../Subtitle"
 import Text from "../../Text"
 import Team from "../Team"
