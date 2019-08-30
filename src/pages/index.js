@@ -1,10 +1,10 @@
 import React from "react"
 
-import AboutSection from "../components/home/about_section"
-import HeroSection from "../components/home/hero_section"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Ventures from "../components/home/Ventures"
+import AboutSection from "../components/home/about_section"
+import HeroSection from "../components/home/hero_section"
+import VenturesSection from "../components/home/ventures_section"
 
 import "../common/normalize.css"
 
@@ -17,7 +17,7 @@ const IndexPage = () => {
           keywords={[]}
         />
         <HeroSection />
-        <Ventures />
+        <VenturesSection />
         <AboutSection />
       </Layout>
     </>
