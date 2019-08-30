@@ -3,31 +3,31 @@ import React from "react"
 import Link from "../Link"
 import Logo from "../Logo"
 
-import "./Header.module.css"
+import styles from "./header.module.css"
 
 const Header = () => (
-  <header styleName="root">
-    <div styleName="content">
-      <div styleName="logo">
+  <header className={styles.root}>
+    <div className={styles.content}>
+      <div className={styles.logo}>
         <Logo />
       </div>
       <nav>
-        <ul styleName="links">
+        <ul className={styles.links}>
           <li styleName="link-item">
             <Link
               to="https://medium.com/subvisual"
               title="Blog"
-              styleName="link"
+              className={styles.link}
               blank
             >
               Blog
             </Link>
           </li>
-          <li styleName="link-item">
+          <li className={styles.linkItem}>
             <Link
               to="mailto:contact@subvisual.com"
               title="Contact"
-              styleName="link"
+              className={styles.link}
               blank
             >
               Contact
