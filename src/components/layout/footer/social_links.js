@@ -3,7 +3,7 @@ import React from "react"
 
 import SocialLink from "../../SocialLink"
 
-import "./SocialLinks.module.css"
+import styles from "./social_links.module.css"
 
 const socialDetails = {
   medium: "https://medium.com/subvisual",
@@ -18,9 +18,9 @@ const socialDetails = {
 }
 
 const SocialLinks = () => (
-  <ul styleName="root">
+  <ul className={styles.root}>
     {_.map(socialDetails, (url, platform) => (
-      <li key={platform} styleName="item">
+      <li key={platform} className={styles.item}>
         <SocialLink
           name="Subvisual"
           platform={platform}

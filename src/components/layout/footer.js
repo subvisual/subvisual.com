@@ -7,7 +7,7 @@ import LoadPlaceholder from "../LoadPlaceholder"
 import Logo from "../Logo"
 import Text from "../Text"
 import Location from "./footer/location"
-import SocialLinks from "./footer/SocialLinks"
+import SocialLinks from "./footer/social_links"
 
 import styles from "./footer.module.css"
 
