@@ -1,6 +1,6 @@
 import React from "react"
 
-import About from "../components/home/About"
+import AboutSection from "../components/home/about_section"
 import Hero from "../components/home/hero"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -18,7 +18,7 @@ const IndexPage = () => {
         />
         <Hero />
         <Ventures />
-        <About />
+        <AboutSection />
       </Layout>
     </>
   )
