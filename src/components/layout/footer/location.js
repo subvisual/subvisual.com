@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-import Link from "../../Link"
+import Link from "../../link"
 import Text from "../../Text"
 
 import styles from "./location.module.css"

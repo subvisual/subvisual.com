@@ -1,6 +1,6 @@
 import React from "react"
 
-import Link from "../Link"
+import Link from "../link"
 import Logo from "../Logo"
 
 import styles from "./header.module.css"

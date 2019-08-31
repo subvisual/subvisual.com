@@ -1,14 +1,16 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { Link as GatsbyLink } from "gatsby"
+import classNames from "classnames"
 
-import "./index.module.css"
+import styles from "./link.module.css"
 
 const Link = ({ blank, children, color, faded, internal, size, title, to }) => {
-  const styleNames = ["root", size, color, faded ? "faded" : null]
-  const styleName = styleNames.filter(Boolean).join(" ")
+  const className = classNames(styles.root, styles[size], styles[color], {
+    [styles.faded]: faded,
+  })
 
-  let attrs = {
+  const attrs = {
     title,
   }
 
@@ -19,14 +21,14 @@ const Link = ({ blank, children, color, faded, internal, size, title, to }) => {
 
   if (internal) {
     return (
-      <GatsbyLink to={to} {...attrs} styleName={styleName}>
+      <GatsbyLink to={to} {...attrs} className={className}>
         {children}
       </GatsbyLink>
     )
   }
 
   return (
-    <a href={to} {...attrs} styleName={styleName}>
+    <a href={to} {...attrs} className={className}>
       {children}
     </a>
   )
