@@ -1,13 +1,13 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import Planet from "../../../Planet"
+import Planet from "../../Planet"
 
-import "./index.module.css"
+import styles from "./universe.module.css"
 
 const Universe = ({ subvisualPlanetMorph }) => (
-  <div styleName="root">
-    <div styleName="planet">
+  <div className={styles.root}>
+    <div className={styles.planet}>
       <Planet
         codeName="universeSubvisualPlanet"
         morph={subvisualPlanetMorph}

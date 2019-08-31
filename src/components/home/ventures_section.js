@@ -8,7 +8,7 @@ import Title from "../Title"
 import HelpingWithSubsection from "./ventures_section/helping_with_subsection"
 import LookingForSubsection from "./ventures_section/looking_for_subsection"
 import PortfolioSubsection from "./ventures_section/portfolio_subsection"
-import Universe from "./ventures_section/Universe"
+import Universe from "./ventures_section/universe"
 
 import styles from "./ventures_section.module.css"
 
