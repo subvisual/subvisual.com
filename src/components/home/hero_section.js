@@ -5,7 +5,7 @@ import { StaticQuery, graphql } from "gatsby"
 import { ParallaxProvider, ParallaxBanner } from "react-scroll-parallax"
 
 import CallToAction from "../call_to_action"
-import LoadPlaceholder from "../LoadPlaceholder"
+import LoadPlaceholder from "../load_placeholder"
 import Text from "../Text"
 import Title from "./hero_section/title"
 

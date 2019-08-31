@@ -1,12 +1,4 @@
 .root {
-  position: relative;
-
-  height: 100%;
-
-  overflow: hidden;
-}
-
-.placeholder {
   position: absolute;
 
   top: 0;
@@ -24,10 +16,10 @@
   z-index: 1;
 }
 
-.placeholder.loaded {
+.root.visible {
   transform: translateX(-100%);
 }
 
-.placeholder.dark {
+.root.dark {
   background-color: #403f4c;
 }

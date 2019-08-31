@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 import Img from "gatsby-image"
 
 import SocialLink from "../../../SocialLink"
-import LoadPlaceholder from "../../../LoadPlaceholder"
+import LoadPlaceholder from "../../../load_placeholder"
 import Text from "../../../Text"
 
 import "./member.module.css"

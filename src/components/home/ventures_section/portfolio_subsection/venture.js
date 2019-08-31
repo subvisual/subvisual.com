@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import Img from "gatsby-image"
 
 import Text from "../../../Text"
-import LoadPlaceholder from "../../../LoadPlaceholder"
+import LoadPlaceholder from "../../../load_placeholder"
 
 import "./venture.module.css"
 

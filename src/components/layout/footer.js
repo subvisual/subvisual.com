@@ -3,7 +3,7 @@ import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
 import CallToAction from "../call_to_action"
-import LoadPlaceholder from "../LoadPlaceholder"
+import LoadPlaceholder from "../load_placeholder"
 import Logo from "../Logo"
 import Text from "../Text"
 import Location from "./footer/location"
