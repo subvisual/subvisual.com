@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { renderToStaticMarkup } from "react-dom/server"
 import Observer from "@researchgate/react-intersection-observer"
 
-import useDetectJavascript from "../../common/useDetectJavascript"
+import useDetectJavascript from "../../utils/use_detect_javascript"
 
 import "./index.module.css"
 

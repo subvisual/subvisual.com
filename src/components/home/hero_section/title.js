@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import classnames from "classnames"
 
 import Planet from "../../Planet"
-import useDetectJavascript from "../../../common/useDetectJavascript"
+import useDetectJavascript from "../../../utils/use_detect_javascript"
 
 import styles from "./title.module.css"
 
