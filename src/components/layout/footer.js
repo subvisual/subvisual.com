@@ -4,7 +4,7 @@ import Img from "gatsby-image"
 
 import CallToAction from "../call_to_action"
 import LoadPlaceholder from "../load_placeholder"
-import Logo from "../Logo"
+import Logo from "../logo"
 import Text from "../Text"
 import Location from "./footer/location"
 import SocialLinks from "./footer/social_links"

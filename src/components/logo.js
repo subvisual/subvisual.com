@@ -3,15 +3,16 @@ import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import uuid from "uuid/v4"
 
-import colorCodes from "../colors"
-import "./index.module.css"
+import colorCodes from "./colors"
+
+import styles from "./logo.module.css"
 
 const Logo = ({ color }) => {
   const colorCode = colorCodes[color]
   const radialUUID = uuid()
 
   return (
-    <Link to="/" styleName="root">
+    <Link to="/" className={styles.root}>
       <svg viewBox="0 0 245 42" fill="none" xmlns="http://www.w3.org/2000/svg">
         <ellipse
           cx="133.244"
