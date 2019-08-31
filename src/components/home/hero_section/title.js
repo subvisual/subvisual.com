@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import classnames from "classnames"
 
-import Planet from "../../Planet"
+import Planet from "../../planet"
 import useDetectJavascript from "../../../utils/use_detect_javascript"
 
 import styles from "./title.module.css"
