@@ -13,7 +13,7 @@ const Header = () => (
       </div>
       <nav>
         <ul className={styles.links}>
-          <li styleName="link-item">
+          <li className={styles.linkItem}>
             <Link
               to="https://medium.com/subvisual"
               title="Blog"

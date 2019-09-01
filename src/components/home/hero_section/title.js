@@ -16,8 +16,8 @@ const Title = ({ planetMorph }) => {
   if (!hasJavascript)
     return (
       <h1 className={className}>
-        We nurture <span styleName="ideas">ideas</span>{" "}
-        <span styleName="glue">that empower</span> people
+        We nurture <span className={styles.ideas}>ideas</span>{" "}
+        <span className={styles.glue}>that empower</span> people
       </h1>
     )
 

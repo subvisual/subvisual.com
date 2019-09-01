@@ -1,17 +1,18 @@
-import _ from "lodash"
 import React from "react"
 import PropTypes from "prop-types"
 import Img from "gatsby-image"
+import _ from "lodash"
+import classNames from "classnames"
 
-import SocialLink from "../../../SocialLink"
 import LoadPlaceholder from "../../../load_placeholder"
+import SocialLink from "../../../SocialLink"
 import Text from "../../../text"
 
-import "./member.module.css"
+import styles from "./member.module.css"
 
 const Member = ({ name, role, social, photo }) => (
-  <div styleName="root">
-    <div styleName="photo horizontal">
+  <div className={styles.root}>
+    <div className={classNames(styles.photo, styles.horizontal)}>
       <LoadPlaceholder delay={-1}>
         {onLoad => (
           <Img
@@ -22,7 +23,7 @@ const Member = ({ name, role, social, photo }) => (
         )}
       </LoadPlaceholder>
     </div>
-    <div styleName="photo vertical">
+    <div className={classNames(styles.photo, styles.vertical)}>
       <LoadPlaceholder delay={-1}>
         {onLoad => (
           <Img
@@ -33,22 +34,22 @@ const Member = ({ name, role, social, photo }) => (
         )}
       </LoadPlaceholder>
     </div>
-    <div styleName="info">
-      <div styleName="name">
+    <div className={styles.info}>
+      <div className={styles.name}>
         <Text color="white" bold>
           {name}
         </Text>
       </div>
-      <div styleName="role">
+      <div className={styles.role}>
         <Text color="white">{role}</Text>
       </div>
     </div>
-    <ul aria-label="Social Links" styleName="links">
+    <ul aria-label="Social Links" className={styles.links}>
       {_.map(social, (url, platform) => {
         if (!url) return null
 
         return (
-          <li key={platform} styleName="link">
+          <li key={platform} className={styles.link}>
             <SocialLink name={name} platform={platform} url={url} />
           </li>
         )
