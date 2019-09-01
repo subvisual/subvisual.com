@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import Subtitle from "../Subtitle"
+import SubsectionTitle from "../subsection_title"
 import Text from "../Text"
 import Title from "../Title"
 import Icon from "./about_section/icon"
@@ -26,7 +26,9 @@ const AboutSection = ({ planetMorph }) => (
       <div className={styles.story}>
         <section className={styles.section}>
           <div className={styles.title}>
-            <Subtitle color="white">It started out of friendship</Subtitle>
+            <SubsectionTitle color="white">
+              It started out of friendship
+            </SubsectionTitle>
           </div>
           <p className={styles.text}>
             <Text color="white">
@@ -37,7 +39,7 @@ const AboutSection = ({ planetMorph }) => (
         </section>
         <section className={styles.section}>
           <div className={styles.title}>
-            <Subtitle color="white">And grew with craft</Subtitle>
+            <SubsectionTitle color="white">And grew with craft</SubsectionTitle>
           </div>
           <p className={styles.text}>
             <Text color="white">
@@ -49,7 +51,7 @@ const AboutSection = ({ planetMorph }) => (
       </div>
       <section>
         <div className={styles.title}>
-          <Subtitle color="white">Team</Subtitle>
+          <SubsectionTitle color="white">Team</SubsectionTitle>
         </div>
         <TeamSubsection />
       </section>

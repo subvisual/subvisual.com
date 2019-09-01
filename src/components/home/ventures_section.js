@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 
 import CallToAction from "../call_to_action"
-import Subtitle from "../Subtitle"
+import SubsectionTitle from "../subsection_title"
 import Text from "../Text"
 import Title from "../Title"
 import HelpingWithSubsection from "./ventures_section/helping_with_subsection"
@@ -19,11 +19,11 @@ const VenturesSection = ({ planetMorph }) => (
         <Title>Meaningful Ventures</Title>
       </header>
       <section className={[styles.section, styles.lookingFor].join(" ")}>
-        <Subtitle>Looking for</Subtitle>
+        <SubsectionTitle>Looking for</SubsectionTitle>
         <LookingForSubsection />
       </section>
       <section className={[styles.section, styles.helpingWith].join(" ")}>
-        <Subtitle>Helping with</Subtitle>
+        <SubsectionTitle>Helping with</SubsectionTitle>
         <HelpingWithSubsection />
       </section>
       <div className={styles.universe}>
@@ -31,7 +31,7 @@ const VenturesSection = ({ planetMorph }) => (
       </div>
       <section className={[styles.section, styles.portfolio].join(" ")}>
         <header className={styles.portfolioHeader}>
-          <Subtitle>Portfolio</Subtitle>
+          <SubsectionTitle>Portfolio</SubsectionTitle>
         </header>
         <div className={styles.portfolioContent}>
           <PortfolioSubsection planetMorph={planetMorph} />
