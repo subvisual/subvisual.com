@@ -1,6 +1,6 @@
 import React from "react"
 
-import ViewableMonitor from "../ViewableMonitor"
+import ViewableMonitor from "../viewable_monitor"
 
 import styles from "./viewable_monitor.module.css"
 

@@ -3,9 +3,9 @@ import PropTypes from "prop-types"
 import _random from "lodash/random"
 import _round from "lodash/round"
 
-import ViewableMonitor from "./planet/viewable_monitor"
 import HoveringAnimationStyle from "./planet/hovering_animation_style"
 import RadialGradient from "./planet/radial_gradient"
+import ViewableMonitor from "./planet/viewable_monitor"
 
 import styles from "./planet.module.css"
 
