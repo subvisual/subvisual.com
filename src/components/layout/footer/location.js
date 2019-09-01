@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
 import Link from "../../link"
-import Text from "../../Text"
+import Text from "../../text"
 
 import styles from "./location.module.css"
 

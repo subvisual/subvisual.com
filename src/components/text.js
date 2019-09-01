@@ -1,13 +1,15 @@
 import React from "react"
 import PropTypes from "prop-types"
+import classNames from "classnames"
 
-import "./index.module.css"
+import styles from "./text.module.css"
 
 const Text = ({ bold, color, children, size }) => {
-  const styleNames = ["root", bold ? "bold" : false, color, size]
-  const styleName = styleNames.filter(Boolean).join(" ")
+  const className = classNames(styles.root, styles[color], styles[size], {
+    [styles.bold]: bold,
+  })
 
-  return <span styleName={styleName}>{children}</span>
+  return <span className={className}>{children}</span>
 }
 
 Text.propTypes = {

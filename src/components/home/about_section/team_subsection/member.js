@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 
 import SocialLink from "../../../SocialLink"
 import LoadPlaceholder from "../../../load_placeholder"
-import Text from "../../../Text"
+import Text from "../../../text"
 
 import "./member.module.css"
 

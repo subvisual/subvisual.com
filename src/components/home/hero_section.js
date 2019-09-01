@@ -6,7 +6,7 @@ import { ParallaxProvider, ParallaxBanner } from "react-scroll-parallax"
 
 import CallToAction from "../call_to_action"
 import LoadPlaceholder from "../load_placeholder"
-import Text from "../Text"
+import Text from "../text"
 import Title from "./hero_section/title"
 
 import styles from "./hero_section.module.css"

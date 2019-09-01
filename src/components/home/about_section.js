@@ -1,11 +1,11 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import Text from "../Text"
+import Icon from "./about_section/icon"
 import SectionTitle from "../section_title"
 import SubsectionTitle from "../subsection_title"
-import Icon from "./about_section/icon"
 import TeamSubsection from "./about_section/team_subsection"
+import Text from "../text"
 
 import styles from "./about_section.module.css"
 

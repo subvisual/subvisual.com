@@ -1,6 +1,6 @@
 import React from "react"
 
-import Text from "../../Text"
+import Text from "../../text"
 
 import styles from "./looking_for_subsection.module.css"
 

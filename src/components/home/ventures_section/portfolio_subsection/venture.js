@@ -2,8 +2,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import Img from "gatsby-image"
 
-import Text from "../../../Text"
 import LoadPlaceholder from "../../../load_placeholder"
+import Text from "../../../text"
 
 import "./venture.module.css"
 
