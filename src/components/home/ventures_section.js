@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 import CallToAction from "../call_to_action"
 import SubsectionTitle from "../subsection_title"
 import Text from "../Text"
-import Title from "../Title"
+import SectionTitle from "../section_title"
 import HelpingWithSubsection from "./ventures_section/helping_with_subsection"
 import LookingForSubsection from "./ventures_section/looking_for_subsection"
 import PortfolioSubsection from "./ventures_section/portfolio_subsection"
@@ -16,7 +16,7 @@ const VenturesSection = ({ planetMorph }) => (
   <section className={styles.root}>
     <div className={styles.content}>
       <header className={styles.header}>
-        <Title>Meaningful Ventures</Title>
+        <SectionTitle>Meaningful Ventures</SectionTitle>
       </header>
       <section className={[styles.section, styles.lookingFor].join(" ")}>
         <SubsectionTitle>Looking for</SubsectionTitle>

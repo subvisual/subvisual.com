@@ -1,9 +1,9 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import SubsectionTitle from "../subsection_title"
 import Text from "../Text"
-import Title from "../Title"
+import SectionTitle from "../section_title"
+import SubsectionTitle from "../subsection_title"
 import Icon from "./about_section/icon"
 import TeamSubsection from "./about_section/team_subsection"
 
@@ -14,7 +14,7 @@ const AboutSection = ({ planetMorph }) => (
     <div className={styles.background} />
     <div className={styles.content}>
       <header className={styles.header}>
-        <Title color="purple">About</Title>
+        <SectionTitle color="purple">About</SectionTitle>
         <div className={styles.headerIcon}>
           <Icon
             planetCodeName="aboutHeaderIconPlanet"
