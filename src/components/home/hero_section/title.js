@@ -1,37 +1,85 @@
 import React from "react"
 import PropTypes from "prop-types"
-import classnames from "classnames"
+import { motion } from "framer-motion"
 
 import Planet from "../../planet"
 import useDetectJavascript from "../../../utils/use_detect_javascript"
 
 import styles from "./title.module.css"
 
-const Title = ({ planetMorph }) => {
-  const hasJavascript = useDetectJavascript()
-  const className = classnames(styles.root, {
-    [styles.withTittle]: !hasJavascript,
-  })
+const letterVariants = {
+  in: {
+    opacity: 1,
+  },
+  out: {
+    opacity: 0,
+  },
+}
 
-  if (!hasJavascript)
+const dragVariants = {
+  in: {
+    opacity: 1,
+    transition: {
+      ease: "easeIn",
+      delay: 1.5,
+      delayChildren: 1.5,
+      staggerChildren: 0.04,
+    },
+  },
+  out: {
+    opacity: 0,
+  },
+}
+
+const Title = ({ planetMorph, hide }) => {
+  const hasJavascript = useDetectJavascript()
+
+  function renderAnimatedLetters(string) {
+    return Array.from(string).map((letter, index) => (
+      <motion.span key={index} variants={letterVariants}>
+        {letter}
+      </motion.span>
+    ))
+  }
+
+  function renderDotless() {
     return (
-      <h1 className={className}>
-        We nurture <span className={styles.ideas}>ideas</span>{" "}
-        <span className={styles.glue}>that empower</span> people
-      </h1>
+      <motion.span variants={letterVariants}>
+        {hasJavascript ? <>&#305;</> : "i"}
+      </motion.span>
     )
+  }
 
   return (
-    <h1 className={className}>
-      We nurture{" "}
-      <span className={styles.ideas}>
-        ideas
-        <span className={styles.planet}>
-          <Planet morph={planetMorph} codeName="heroTittle" color="blue" />
-        </span>
-      </span>{" "}
-      <span className={styles.glue}>that empower</span> people
-    </h1>
+    <>
+      <h1 className="visuallyHidden">We nurture ideas that empower people</h1>
+      <h1 className={styles.root} aria-hidden="true">
+        <motion.span
+          variants={dragVariants}
+          animate={hide ? "out" : "in"}
+          key="without-files"
+        >
+          {renderAnimatedLetters("We nurture")}{" "}
+          <span className={styles.ideas}>
+            {renderDotless()}
+            {renderAnimatedLetters("deas")}
+            <span className={styles.planet}>
+              <Planet
+                hovering={false}
+                hide={hide}
+                morph={planetMorph}
+                codeName="heroTittle"
+                color="blue"
+              />
+            </span>
+          </span>{" "}
+          <span className={styles.glue}>
+            {renderAnimatedLetters("that empower")}
+          </span>{" "}
+          {renderAnimatedLetters("people")}
+        </motion.span>{" "}
+      </h1>
+    </>
   )
 }
 

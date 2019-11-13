@@ -1,30 +1,33 @@
-import React from "react"
-import PropTypes from "prop-types"
 import _random from "lodash/random"
 import _round from "lodash/round"
+import _uniqueId from "lodash/uniqueId"
+import React from "react"
+import PropTypes from "prop-types"
 
 import HoveringAnimationStyle from "./planet/hovering_animation_style"
 import RadialGradient from "./planet/radial_gradient"
-import ViewableMonitor from "./planet/viewable_monitor"
 
 import styles from "./planet.module.css"
 
 const Planet = ({
   codeName,
-  color,
+  morph,
+  hide,
   hovering,
   hoveringMin,
   hoveringMax,
-  morph,
+  color,
 }) => {
   const hoveringAmplitude = _random(hoveringMin, hoveringMax)
   const hoveringAnimationDuration = _round(_random(0.8, 1.8), 2)
-  const animationName = `planet-${codeName}-hovering`
-  const radialID = `planet-${codeName}-radial`
+  const animationName = `planet-${codeName}-hovering-${_uniqueId()}`
+  const radialID = `planet-${codeName}-radial-${_uniqueId()}`
   const style = {
     animationName,
     animationDuration: `${hoveringAnimationDuration}s`,
   }
+
+  if (hide) return <div />
 
   return (
     <>
@@ -33,22 +36,31 @@ const Planet = ({
         hovering={hovering}
         name={animationName}
       />
-      <ViewableMonitor>
-        <div {...morph} style={style} className={styles.root}>
-          <div className={styles.background} />
-          <svg
-            viewBox="0 0 104 104"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className={styles.planet}
-          >
-            <circle cx="52" cy="50" r="50" fill={`url(#${radialID})`} />
-            <defs>
-              <RadialGradient color={color} id={radialID} />
-            </defs>
-          </svg>
-        </div>
-      </ViewableMonitor>
+
+      <div
+        id={codeName}
+        key={`${codeName}-planet`}
+        style={style}
+        className={styles.root}
+        {...morph}
+      >
+        <svg
+          viewBox="0 0 104 104"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className={styles.planet}
+        >
+          <circle cx="52" cy="50" r="50" fill={`url(#${radialID})`} />
+        </svg>
+      </div>
+
+      <svg>
+        <defs>
+          <defs>
+            <RadialGradient color={color} id={radialID} />
+          </defs>
+        </defs>
+      </svg>
     </>
   )
 }
@@ -56,6 +68,7 @@ const Planet = ({
 Planet.propTypes = {
   codeName: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired,
+  hide: PropTypes.bool,
   hovering: PropTypes.bool,
   morph: PropTypes.func,
   hoveringMax: PropTypes.number.isRequired,

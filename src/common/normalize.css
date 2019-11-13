@@ -1,6 +1,10 @@
-@import './fonts.css';
-@import './reset.css';
-@import './react-scroll-parallax.css'
+@import "./fonts.css";
+@import "./reset.css";
+@import "./react-scroll-parallax.css";
+
+body {
+  overflow-x: hidden;
+}
 
 html,
 body {
