@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { useMorph } from "react-morph"
 import { cubicBezier } from "@popmotion/easing"
+import { disablePageScroll, enablePageScroll } from "scroll-lock"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -33,8 +34,11 @@ const IndexPage = () => {
   const [renderSplash, setRenderSplash] = useState(true)
 
   useEffect(() => {
+    disablePageScroll(document.documentElement)
+
     setTimeout(() => setRenderSplash(false), 750)
-  })
+    setTimeout(() => enablePageScroll(document.documentElement), 1000)
+  }, [])
 
   return (
     <Layout>
