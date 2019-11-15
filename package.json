@@ -4,6 +4,9 @@
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "engines": {
+    "node": ">=12.13.0"
+  },
   "dependencies": {
     "@researchgate/react-intersection-observer": "1.0.1",
     "classnames": "^2.2.6",
