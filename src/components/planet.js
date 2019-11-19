@@ -1,6 +1,5 @@
 import _random from "lodash/random"
 import _round from "lodash/round"
-import _uniqueId from "lodash/uniqueId"
 import React from "react"
 import PropTypes from "prop-types"
 
@@ -20,8 +19,8 @@ const Planet = ({
 }) => {
   const hoveringAmplitude = _random(hoveringMin, hoveringMax)
   const hoveringAnimationDuration = _round(_random(0.8, 1.8), 2)
-  const animationName = `planet-${codeName}-hovering-${_uniqueId()}`
-  const radialID = `planet-${codeName}-radial-${_uniqueId()}`
+  const animationName = `planet-${codeName}-hovering`
+  const radialID = `planet-${codeName}-radial`
   const style = {
     animationName,
     animationDuration: `${hoveringAnimationDuration}s`,
