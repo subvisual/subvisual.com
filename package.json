@@ -7,6 +7,7 @@
   "dependencies": {
     "@researchgate/react-intersection-observer": "1.0.1",
     "classnames": "^2.2.6",
+    "framer-motion": "^1.6.15",
     "gatsby": "^2.1.18",
     "gatsby-image": "^2.0.38",
     "gatsby-plugin-google-analytics": "^2.0.18",
@@ -19,12 +20,14 @@
     "gatsby-transformer-sharp": "^2.1.14",
     "gatsby-transformer-yaml": "^2.1.10",
     "intersection-observer": "0.7.0",
+    "popmotion": "^8.6.10",
     "prop-types": "^15.7.2",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-helmet": "^5.2.0",
     "react-morph": "0.4.0",
-    "react-scroll-parallax": "^2.1.1"
+    "react-scroll-parallax": "^2.1.1",
+    "scroll-lock": "^2.1.2"
   },
   "devDependencies": {
     "postcss-custom-media": "^7.0.7",

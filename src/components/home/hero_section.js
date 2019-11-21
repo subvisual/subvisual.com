@@ -34,89 +34,103 @@ const renderParallaxImage = ({ baseDelay, image, parallaxAmount }) => (
   />
 )
 
-const HeroSection = ({ data, planetMorph }) => {
+const HeroSection = ({ data, planetMorph, hidePlanet }) => {
   const baseDelay = 0.3
 
   return (
-    <ParallaxProvider>
-      <div className={styles.root}>
-        <div className={styles.content}>
-          <div className={styles.title}>
-            <Title planetMorph={planetMorph} />
-          </div>
-          <div className={styles.text}>
-            <p>
-              <Text>
-                Building a company from the ground up is hard and stressful,
-                particularly in heavy regulated fields such as fintech and
-                digital healthcare.
-              </Text>
-            </p>
-            <p>
-              <Text>
-                Struggling with designing and developing that awesome idea
-                you’ve had? We can help you succeed.{" "}
-                <CallToAction>Together.</CallToAction>
-              </Text>
-            </p>
-          </div>
-          <div className={styles.images}>
-            <div className={styles.image}>
-              <div className={styles.horizontal}>
-                {renderParallaxImage({
-                  baseDelay,
-                  image: data.hero1_h.childImageSharp.fluid,
-                  parallaxAmount: 0.2,
-                })}
-              </div>
-              <div className={styles.vertical}>
-                {renderParallaxImage({
-                  baseDelay,
-                  image: data.hero1_v.childImageSharp.fluid,
-                  parallaxAmount: 0.2,
-                })}
-              </div>
+    <section>
+      <noscript>
+        <style>
+          {`
+            #hero-title {
+              opacity: 1;
+              animation: none !important;
+            }
+          `}
+        </style>
+      </noscript>
+
+      <ParallaxProvider>
+        <div className={styles.root}>
+          <div className={styles.content}>
+            <div id="hero-title" className={styles.title}>
+              <Title planetMorph={planetMorph} hide={hidePlanet} />
             </div>
-            <div className={styles.image}>
-              <div className={styles.horizontal}>
-                {renderParallaxImage({
-                  baseDelay: baseDelay + 0.1,
-                  image: data.hero2_h.childImageSharp.fluid,
-                  parallaxAmount: 0.2,
-                })}
-              </div>
-              <div className={styles.vertical}>
-                {renderParallaxImage({
-                  baseDelay: baseDelay + 0.1,
-                  image: data.hero2_v.childImageSharp.fluid,
-                  parallaxAmount: 0.2,
-                })}
-              </div>
+            <div className={styles.text}>
+              <p>
+                <Text>
+                  Building a company from the ground up is hard and stressful,
+                  particularly in heavy regulated fields such as fintech and
+                  digital healthcare.
+                </Text>
+              </p>
+              <p>
+                <Text>
+                  Struggling with designing and developing that awesome idea
+                  you’ve had? We can help you succeed.{" "}
+                  <CallToAction>Together.</CallToAction>
+                </Text>
+              </p>
             </div>
-            <div className={styles.image}>
-              <div className={styles.horizontal}>
-                {renderParallaxImage({
-                  baseDelay: baseDelay + 0.2,
-                  image: data.hero3_h.childImageSharp.fluid,
-                  parallaxAmount: 0.2,
-                })}
+            <div className={styles.images}>
+              <div className={styles.image}>
+                <div className={styles.horizontal}>
+                  {renderParallaxImage({
+                    baseDelay,
+                    image: data.hero1_h.childImageSharp.fluid,
+                    parallaxAmount: 0.2,
+                  })}
+                </div>
+                <div className={styles.vertical}>
+                  {renderParallaxImage({
+                    baseDelay,
+                    image: data.hero1_v.childImageSharp.fluid,
+                    parallaxAmount: 0.2,
+                  })}
+                </div>
               </div>
-              <div className={styles.vertical}>
-                {renderParallaxImage({
-                  baseDelay: baseDelay + 0.2,
-                  image: data.hero3_v.childImageSharp.fluid,
-                  parallaxAmount: 0.2,
-                })}
+              <div className={styles.image}>
+                <div className={styles.horizontal}>
+                  {renderParallaxImage({
+                    baseDelay: baseDelay + 0.1,
+                    image: data.hero2_h.childImageSharp.fluid,
+                    parallaxAmount: 0.2,
+                  })}
+                </div>
+                <div className={styles.vertical}>
+                  {renderParallaxImage({
+                    baseDelay: baseDelay + 0.1,
+                    image: data.hero2_v.childImageSharp.fluid,
+                    parallaxAmount: 0.2,
+                  })}
+                </div>
+              </div>
+              <div className={styles.image}>
+                <div className={styles.horizontal}>
+                  {renderParallaxImage({
+                    baseDelay: baseDelay + 0.2,
+                    image: data.hero3_h.childImageSharp.fluid,
+                    parallaxAmount: 0.2,
+                  })}
+                </div>
+                <div className={styles.vertical}>
+                  {renderParallaxImage({
+                    baseDelay: baseDelay + 0.2,
+                    image: data.hero3_v.childImageSharp.fluid,
+                    parallaxAmount: 0.2,
+                  })}
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </ParallaxProvider>
+      </ParallaxProvider>
+    </section>
   )
 }
 
 HeroSection.propTypes = {
+  hidePlanet: PropTypes.bool,
   planetMorph: PropTypes.func,
 }
 
@@ -124,10 +138,10 @@ HeroSection.defaultTypes = {
   planetMorph: () => {},
 }
 
-export default ({ planetMorph }) => (
+export default props => (
   <StaticQuery
     query={query}
-    render={data => <HeroSection data={data} planetMorph={planetMorph} />}
+    render={data => <HeroSection data={data} {...props} />}
   />
 )
 
