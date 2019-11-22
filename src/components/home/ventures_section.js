@@ -41,7 +41,7 @@ const VenturesSection = ({ planetMorph }) => (
         <p>
           <Text size="large">Join our venture universe.</Text>
           <br />
-          <CallToAction size="large">Let's talk.</CallToAction>
+          <CallToAction size="large">Let&apos;s talk.</CallToAction>
         </p>
       </footer>
     </div>
