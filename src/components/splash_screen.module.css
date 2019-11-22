@@ -4,13 +4,13 @@
   top: 0;
   left: 0;
 
+  z-index: 10;
+
   width: 100vw;
   height: 100vh;
-
-  background-color: rgb(4, 92, 252);
   overflow: hidden;
 
-  z-index: 10;
+  background-color: rgb(4, 92, 252);
 }
 
 .splash {
@@ -19,25 +19,26 @@
   top: 50%;
   left: 50%;
 
+  z-index: 10;
+
   background-color: rgb(4, 92, 252);
-  transform: translate(-50%, -50%);
 
   border-radius: 50%;
 
-  z-index: 10;
+  transform: translate(-50%, -50%);
 }
 
 .logo {
   position: absolute;
 
-  text-align: center;
-
   top: 50%;
   left: 50%;
 
-  transform: translateX(-50%) translateY(-50%);
-
   z-index: 11;
+
+  text-align: center;
+
+  transform: translateX(-50%) translateY(-50%);
 }
 
 .logo svg {
