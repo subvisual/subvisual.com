@@ -32,6 +32,9 @@
   "devDependencies": {
     "postcss-custom-media": "^7.0.7",
     "prettier": "^1.16.4",
+    "stylelint": "^12.0.0",
+    "stylelint-config-prettier": "^6.0.0",
+    "stylelint-order": "^3.1.1",
     "svgo": "^1.2.0"
   },
   "keywords": [
@@ -44,6 +47,7 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
+    "lint-styles": "stylelint src/**/*.css",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "repository": {
