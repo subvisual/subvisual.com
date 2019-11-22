@@ -1,16 +1,9 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-export default function HTML({
-  htmlAttributes,
-  headComponents,
-  bodyAttributes,
-  preBodyComponents,
-  body,
-  postBodyComponents,
-}) {
+export default function HTML(props) {
   return (
-    <html {...htmlAttributes} lang="en">
+    <html {...props.htmlAttributes}>
       <head>
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
@@ -18,18 +11,17 @@ export default function HTML({
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        {headComponents}
+        {props.headComponents}
       </head>
-      <body {...bodyAttributes}>
-        {preBodyComponents}
+      <body {...props.bodyAttributes}>
+        {props.preBodyComponents}
         <noscript key="noscript" id="gatsby-noscript" />
         <div
-          key="body"
+          key={`body`}
           id="___gatsby"
-          // eslint-disable-next-line react/no-danger
-          dangerouslySetInnerHTML={{ __html: body }}
+          dangerouslySetInnerHTML={{ __html: props.body }}
         />
-        {postBodyComponents}
+        {props.postBodyComponents}
       </body>
     </html>
   )

@@ -5,12 +5,30 @@ import Member from "./team_subsection/member"
 
 import styles from "./team_subsection.module.css"
 
+const TeamSubsection = ({ members }) => (
+  <ul className={styles.root}>
+    {members.map((data, index) => (
+      <li key={index}>
+        <Member {...data} />
+      </li>
+    ))}
+  </ul>
+)
+
+export default () => (
+  <StaticQuery
+    query={teamQuery}
+    render={({ allTeamYaml: { edges: team } }) => (
+      <TeamSubsection members={team.map(m => m.node)} />
+    )}
+  />
+)
+
 const teamQuery = graphql`
   query TeamQuery {
     allTeamYaml {
       edges {
         node {
-          id
           name
           role
           photo {
@@ -43,22 +61,3 @@ const teamQuery = graphql`
     }
   }
 `
-
-const TeamSubsection = ({ members }) => (
-  <ul className={styles.root}>
-    {members.map(data => (
-      <li key={data.id}>
-        <Member {...data} />
-      </li>
-    ))}
-  </ul>
-)
-
-export default () => (
-  <StaticQuery
-    query={teamQuery}
-    render={({ allTeamYaml: { edges } }) => (
-      <TeamSubsection members={edges.map(edge => edge.node)} />
-    )}
-  />
-)

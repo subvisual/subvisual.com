@@ -95,7 +95,7 @@ export default ({ planetMorph }) => (
     render={data => (
       <PortfolioSubsection
         planetMorph={planetMorph}
-        ventures={data.allVenturesYaml.edges.map(edge => edge.node)}
+        ventures={data.allVenturesYaml.edges.map(e => e.node)}
       />
     )}
   />

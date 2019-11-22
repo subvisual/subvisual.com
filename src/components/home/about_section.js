@@ -43,8 +43,8 @@ const AboutSection = ({ planetMorph }) => (
           </div>
           <p className={styles.text}>
             <Text color="white">
-              We&apos;ll challenge you to think further and help you do the
-              heavy lifting of shaping your product&apos;s development.
+              We'll challenge you to think further and help you do the heavy
+              lifting of shaping your product's development.
             </Text>
           </p>
         </section>

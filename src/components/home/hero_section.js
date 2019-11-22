@@ -138,6 +138,13 @@ HeroSection.defaultTypes = {
   planetMorph: () => {},
 }
 
+export default props => (
+  <StaticQuery
+    query={query}
+    render={data => <HeroSection data={data} {...props} />}
+  />
+)
+
 const query = graphql`
   query {
     hero1_v: file(relativePath: { regex: "/hero-1-vertical.jpg/" }) {
@@ -186,10 +193,3 @@ const query = graphql`
     }
   }
 `
-
-export default props => (
-  <StaticQuery
-    query={query}
-    render={data => <HeroSection data={data} {...props} />}
-  />
-)

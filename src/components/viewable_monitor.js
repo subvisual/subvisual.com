@@ -3,8 +3,7 @@ import Observer from "@researchgate/react-intersection-observer"
 
 const ViewableMonitor = ({ children, ...rest }) => {
   const [isIntersecting, setIsIntersecting] = useState(false)
-  const handleChange = ({ isIntersecting: newIsIntersecting }) =>
-    setIsIntersecting(newIsIntersecting)
+  const handleChange = ({ isIntersecting }) => setIsIntersecting(isIntersecting)
 
   return (
     <Observer {...rest} onChange={handleChange}>

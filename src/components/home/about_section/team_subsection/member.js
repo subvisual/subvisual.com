@@ -16,7 +16,7 @@ const Member = ({ name, role, social, photo }) => (
       <LoadPlaceholder delay={-1}>
         {onLoad => (
           <Img
-            fadeIn
+            fadeIn={true}
             onLoad={onLoad}
             fluid={photo.horizontal.childImageSharp.fluid}
           />
@@ -27,7 +27,7 @@ const Member = ({ name, role, social, photo }) => (
       <LoadPlaceholder delay={-1}>
         {onLoad => (
           <Img
-            fadeIn
+            fadeIn={true}
             onLoad={onLoad}
             fluid={photo.vertical.childImageSharp.fluid}
           />

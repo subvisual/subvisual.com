@@ -8,25 +8,6 @@ import Text from "../../text"
 
 import styles from "./location.module.css"
 
-const query = graphql`
-  query {
-    boston: file(relativePath: { regex: "/boston.jpg/" }) {
-      childImageSharp {
-        fluid(maxWidth: 578, quality: 100) {
-          ...GatsbyImageSharpFluid_noBase64
-        }
-      }
-    }
-    braga: file(relativePath: { regex: "/braga.jpg/" }) {
-      childImageSharp {
-        fluid(maxWidth: 578, quality: 100) {
-          ...GatsbyImageSharpFluid_noBase64
-        }
-      }
-    }
-  }
-`
-
 const Location = ({ align, geoUrl, image, mapsUrl, name }) => (
   <address className={styles.root}>
     <div className={styles.image}>
@@ -74,3 +55,22 @@ export default ({ align, geoUrl, image, mapsUrl, name }) => (
     )}
   />
 )
+
+const query = graphql`
+  query {
+    boston: file(relativePath: { regex: "/boston.jpg/" }) {
+      childImageSharp {
+        fluid(maxWidth: 578, quality: 100) {
+          ...GatsbyImageSharpFluid_noBase64
+        }
+      }
+    }
+    braga: file(relativePath: { regex: "/braga.jpg/" }) {
+      childImageSharp {
+        fluid(maxWidth: 578, quality: 100) {
+          ...GatsbyImageSharpFluid_noBase64
+        }
+      }
+    }
+  }
+`
