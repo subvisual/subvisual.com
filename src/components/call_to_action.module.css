@@ -12,7 +12,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  border-bottom: 2px solid currentColor;
+  border-bottom: 3px solid currentColor;
   transform: translateY(1px);
   transition: transform 0.2s;
 }
