@@ -6,6 +6,7 @@
   display: grid;
   grid-column-gap: 20px;
   grid-row-gap: 28px;
+
   list-style-type: none;
 }
 
@@ -13,19 +14,22 @@
   position: absolute;
   z-index: 2;
   mix-blend-mode: multiply;
+
   pointer-events: none;
 }
 
 .planet:nth-child(1) {
-  width: 56px;
-  height: 56px;
   top: 140px;
   left: -48px;
+
+  width: 56px;
+  height: 56px;
 }
 
 .planet:nth-child(2) {
   top: 137px;
   left: 48%;
+
   width: 112px;
   height: 112px;
 }
@@ -33,6 +37,7 @@
 .planet:nth-child(3) {
   top: 334px;
   left: 30%;
+
   width: 56px;
   height: 56px;
 }
@@ -40,6 +45,7 @@
 .planet:nth-child(4) {
   top: 700px;
   left: -16%;
+
   width: 168px;
   height: 168px;
 }
@@ -47,6 +53,7 @@
 .planet:nth-child(5) {
   top: 1230px;
   left: 87%;
+
   width: 112px;
   height: 112px;
 }
@@ -90,6 +97,7 @@
 
   .planet:nth-child(1) {
     left: -68px;
+
     width: 80px;
     height: 80px;
   }
@@ -97,6 +105,7 @@
   .planet:nth-child(2) {
     top: 300px;
     left: 9%;
+
     width: 224px;
     height: 224px;
   }
@@ -104,6 +113,7 @@
   .planet:nth-child(3) {
     top: 723px;
     left: 27%;
+
     width: 84px;
     height: 84px;
   }
@@ -112,6 +122,7 @@
     top: 664px;
     right: 12%;
     left: auto;
+
     width: 112px;
     height: 112px;
   }
@@ -119,6 +130,7 @@
   .planet:nth-child(5) {
     top: 1270px;
     left: 42%;
+
     width: 168px;
     height: 168px;
   }
