@@ -33,6 +33,7 @@
 
 .header {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -77,8 +78,8 @@
   }
 
   .headerIcon {
-    max-width: 98px;
-    max-height: 96px;
+    width: 98px;
+    height: 96px;
   }
 
   .story {
