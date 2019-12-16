@@ -13,8 +13,9 @@
 .role {}
 
 .links {
-  list-style-type: none;
   display: flex;
+
+  list-style-type: none;
 }
 
 .link:not(:last-child) {

@@ -4,6 +4,7 @@
 
 .content {
   content: layout;
+
   display: grid;
   grid-row-gap: 56px;
   width: 100%;
@@ -36,7 +37,9 @@
 .vertical {
   position: absolute;
   top: 50%;
+
   width: 100%;
+
   transform: translateY(-50%);
 }
 
@@ -54,9 +57,9 @@
 
 @media (min-width: 400px) {
   .images {
+    grid-column-gap: 20px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 224px 320px;
-    grid-column-gap: 20px;
   }
 
   .image:nth-child(3) {
@@ -80,8 +83,8 @@
 
 @media (min-width: 768px) {
   .content {
-    grid-template-columns: 1fr 1fr;
     grid-column-gap: 20px;
+    grid-template-columns: 1fr 1fr;
   }
 
   .title {
@@ -95,10 +98,10 @@
 
   .images {
     grid-column: 1 / span 2;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: initial;
     grid-column-gap: 20px;
     grid-row-gap: initial;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: initial;
   }
 
   .image:nth-child(3) {
@@ -108,6 +111,7 @@
   .vertical {
     position: initial;
     top: initial;
+
     transform: initial;
   }
 }

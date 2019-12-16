@@ -28,8 +28,8 @@
 
 @media (min-width: 768px) {
   .content {
-    grid-template-columns: 1fr 1fr;
     grid-column-gap: 20px;
+    grid-template-columns: 1fr 1fr;
   }
 
   .header,
@@ -48,8 +48,8 @@
 
   .portfolio {
     grid-column: 1 / span 2;
-    grid-template-columns: 1fr 1fr;
     grid-column-gap: 20px;
+    grid-template-columns: 1fr 1fr;
   }
 
   .portfolioHeader {
