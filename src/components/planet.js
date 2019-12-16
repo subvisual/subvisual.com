@@ -70,8 +70,8 @@ Planet.propTypes = {
   hide: PropTypes.bool,
   hovering: PropTypes.bool,
   morph: PropTypes.func,
-  hoveringMax: PropTypes.number.isRequired,
-  hoveringMin: PropTypes.number.isRequired,
+  hoveringMax: PropTypes.number,
+  hoveringMin: PropTypes.number,
 }
 
 Planet.defaultProps = {

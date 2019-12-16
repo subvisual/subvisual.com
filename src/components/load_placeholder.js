@@ -23,6 +23,7 @@ const LoadPlaceholder = ({ delay = 0, dark, children }) => {
   return (
     <>
       <noscript
+        // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{
           __html: renderToStaticMarkup(children(onLoad)).replace(
             /noscript/g,
