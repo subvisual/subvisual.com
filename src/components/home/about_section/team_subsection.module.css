@@ -1,13 +1,14 @@
 .root {
   display: grid;
   grid-row-gap: 28px;
+
   list-style-type: none;
 }
 
 @media (min-width: 384px) {
   .root {
-    grid-template-columns: 1fr 1fr;
     grid-column-gap: 20px;
+    grid-template-columns: 1fr 1fr;
   }
 }
 

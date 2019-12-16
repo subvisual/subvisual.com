@@ -1,25 +1,26 @@
 .root {
   position: relative;
+
   padding: 112px 20px;
 }
 
 .background {
   position: absolute;
 
+  top: 0;
+  left: 50%;
+  z-index: -1;
+
   width: 600%;
   height: 100%;
 
-  top: 0;
-  left: 50%;
-
-  border-radius: 100% / 50%;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-
   background-color: #045cfc;
 
+  border-radius: 100% / 50%;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+
   transform: translateX(-50%);
-  z-index: -1;
 }
 
 .content {
@@ -32,6 +33,7 @@
 
 .header {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -60,9 +62,9 @@
 
 @media (min-width: 768px) {
   .story {
-    grid-template-columns: 1fr 1fr;
     grid-column-gap: 20px;
     grid-row-gap: initial;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -76,8 +78,8 @@
   }
 
   .headerIcon {
-    max-width: 98px;
-    max-height: 96px;
+    width: 98px;
+    height: 96px;
   }
 
   .story {

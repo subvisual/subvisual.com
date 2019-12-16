@@ -1,13 +1,15 @@
 .root {
+  color: #045cfc;
+
   font-family: "Acta Display Subsetted";
   font-size: 56px;
   font-weight: 400;
   line-height: 56px;
-  color: #045cfc;
 }
 
 .ideas {
   position: relative;
+
   display: inline-block;
 }
 
@@ -15,6 +17,7 @@
   position: absolute;
   top: 0;
   left: 0;
+
   display: block;
   width: 12px;
   height: 12px;
@@ -23,14 +26,15 @@
 .planet {
   top: 7px;
   left: 3px;
-  animation-name: hover;
-  animation-delay: 4.8s;
-  animation-duration: 1.5s;
-  animation-timing-function: ease-in-out;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
 
   transform: translateY(-4px);
+
+  animation-delay: 4.8s;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: hover;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
 }
 
 /*
@@ -39,13 +43,13 @@
  */
 @keyframes hover {
   0% {
-    transform: translateY(-4px);
     -moz-transform: translateY(-4px) rotate(-0.01deg);
+    transform: translateY(-4px);
   }
 
   100% {
-    transform: translateY(0);
     -moz-transform: translateY(0) rotate(0.01deg);
+    transform: translateY(0);
   }
 }
 
@@ -64,6 +68,7 @@
   .planet {
     top: 17px;
     left: 6px;
+
     width: 23px;
     height: 23px;
   }

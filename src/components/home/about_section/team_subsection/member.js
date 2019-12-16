@@ -12,10 +12,10 @@ import styles from "./member.module.css"
 const Member = ({ name, role, social, photo }) => (
   <div className={styles.root}>
     <div className={classNames(styles.photo, styles.horizontal)}>
-      <Img fadeIn={true} fluid={photo.horizontal.childImageSharp.fluid} />
+      <Img fadeIn fluid={photo.horizontal.childImageSharp.fluid} />
     </div>
     <div className={classNames(styles.photo, styles.vertical)}>
-      <Img fadeIn={true} fluid={photo.vertical.childImageSharp.fluid} />
+      <Img fadeIn fluid={photo.vertical.childImageSharp.fluid} />
     </div>
     <div className={styles.info}>
       <div className={styles.name}>

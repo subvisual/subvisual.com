@@ -20,7 +20,7 @@ const Footer = ({ data }) => (
         <div className={styles.callToAction}>
           <p>
             <Text color="white">Ready to bring your ideas to life?</Text>{" "}
-            <CallToAction color="white">Let's talk.</CallToAction>
+            <CallToAction color="white">Let&apos;s talk.</CallToAction>
           </p>
         </div>
         <div className={styles.locations}>
@@ -66,10 +66,7 @@ const Footer = ({ data }) => (
           rel="noopener noreferrer"
           download={data.norte2020Doc.base}
         >
-          <Img
-            fadeIn={true}
-            fluid={data.norte2020Logos.childImageSharp.fluid}
-          />
+          <Img fadeIn fluid={data.norte2020Logos.childImageSharp.fluid} />
         </a>
       </div>
     </div>

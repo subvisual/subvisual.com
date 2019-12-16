@@ -36,6 +36,7 @@ const Title = ({ planetMorph, hide }) => {
 
   function renderAnimatedLetters(string) {
     return Array.from(string).map((letter, index) => (
+      // eslint-disable-next-line react/no-array-index-key
       <motion.span key={index} variants={letterVariants}>
         {letter}
       </motion.span>
