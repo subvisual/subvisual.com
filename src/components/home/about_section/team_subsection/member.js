@@ -4,7 +4,6 @@ import Img from "gatsby-image"
 import _ from "lodash"
 import classNames from "classnames"
 
-import LoadPlaceholder from "../../../load_placeholder"
 import SocialLink from "../../../SocialLink"
 import Text from "../../../text"
 
@@ -13,26 +12,10 @@ import styles from "./member.module.css"
 const Member = ({ name, role, social, photo }) => (
   <div className={styles.root}>
     <div className={classNames(styles.photo, styles.horizontal)}>
-      <LoadPlaceholder delay={-1}>
-        {onLoad => (
-          <Img
-            fadeIn
-            onLoad={onLoad}
-            fluid={photo.horizontal.childImageSharp.fluid}
-          />
-        )}
-      </LoadPlaceholder>
+      <Img fadeIn fluid={photo.horizontal.childImageSharp.fluid} />
     </div>
     <div className={classNames(styles.photo, styles.vertical)}>
-      <LoadPlaceholder delay={-1}>
-        {onLoad => (
-          <Img
-            fadeIn
-            onLoad={onLoad}
-            fluid={photo.vertical.childImageSharp.fluid}
-          />
-        )}
-      </LoadPlaceholder>
+      <Img fadeIn fluid={photo.vertical.childImageSharp.fluid} />
     </div>
     <div className={styles.info}>
       <div className={styles.name}>
