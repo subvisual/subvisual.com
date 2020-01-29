@@ -7,10 +7,11 @@ import Venture from "./portfolio_subsection/venture"
 
 import styles from "./portfolio_subsection.module.css"
 
+const baseDelay = 0.3
+
 const PortfolioSubsection = ({ planetMorph, ventures }) => {
   const renderVenture = (props, index) => {
     const { name } = props
-    const baseDelay = 0.3
     const featured = index === 0
 
     return (

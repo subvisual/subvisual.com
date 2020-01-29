@@ -1,0 +1,17 @@
+.root {
+  position: relative;
+
+  height: 100%;
+
+  overflow: hidden;
+}
+
+.img {
+  transition: all 0.2s ease-in-out;
+  height: 100%;
+  filter: grayscale(100%);
+}
+
+.img:hover {
+  filter: initial;
+}
