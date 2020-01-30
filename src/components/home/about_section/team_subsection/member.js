@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Img from "gatsby-image"
 import _ from "lodash"
+import classNames from "classnames"
 
 import SocialLink from "../../../SocialLink"
 import Text from "../../../text"
@@ -10,16 +11,18 @@ import styles from "./member.module.css"
 
 const Member = ({ name, role, social, photo }) => (
   <div className={styles.root}>
-    <Img
-      fadeIn
-      fluid={[
-        photo.vertical.childImageSharp.fluid,
-        {
-          ...photo.horizontal.childImageSharp.fluid,
-          media: "(min-width: 768px)",
-        },
-      ]}
-    />
+    <div className={styles.photo}>
+      <Img
+        fadeIn
+        fluid={[
+          photo.horizontal.childImageSharp.fluid,
+          {
+            ...photo.vertical.childImageSharp.fluid,
+            media: "(min-width: 768px)",
+          },
+        ]}
+      />
+    </div>
     <div className={styles.info}>
       <div className={styles.name}>
         <Text color="white" bold>
