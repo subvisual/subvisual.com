@@ -22,18 +22,6 @@
   margin-right: 28px;
 }
 
-@media (max-width: 768px) {
-  .vertical {
-    display: none;
-  }
-}
-
-@media (min-width: 768px) {
-  .horizontal {
-    display: none;
-  }
-}
-
 @media (min-width: 950px) {
   .root {
     grid-row-gap: 28px;
