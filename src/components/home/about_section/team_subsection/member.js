@@ -13,9 +13,9 @@ const Member = ({ name, role, social, photo }) => (
     <Img
       fadeIn
       fluid={[
-        photo.horizontal.childImageSharp.fluid,
+        photo.vertical.childImageSharp.fluid,
         {
-          ...photo.vertical.childImageSharp.fluid,
+          ...photo.horizontal.childImageSharp.fluid,
           media: "(min-width: 768px)",
         },
       ]}
