@@ -36,6 +36,7 @@ function SEO({ description, lang, keywords, title }) {
             }}
             title={metaTitle}
           >
+            <meta name="title" content={metaTitle} />
             <meta name="description" content={metaDescription} />
 
             <meta property="og:type" content="website" />
