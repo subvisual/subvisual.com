@@ -39,11 +39,13 @@ function SEO({ description, lang, keywords, title }) {
             <meta name="description" content={metaDescription} />
 
             <meta property="og:type" content="website" />
+            <meta property="og:url" content={data.site.siteMetadata.url} />
             <meta property="og:title" content={metaTitle} />
             <meta property="og:description" content={metaDescription} />
             <meta property="og:image" content={metaImage} />
 
-            <meta name="twitter:card" content="summary" />
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta property="twitter:url" content={data.site.siteMetadata.url}>
             <meta
               name="twitter:creator"
               content={data.site.siteMetadata.twitterUsername}
