@@ -25,10 +25,10 @@ const ParallaxImage = ({
   mobileImage,
   desktopImage,
   objectPosition,
-  mobileTopMarign,
-  mobileBottomMarign,
-  desktopTopMarign,
-  desktoBottomMarign,
+  mobileTopMargin,
+  mobileBottomMargin,
+  desktopTopMargin,
+  desktoBottomMargin,
 }) => {
   const size = useWindowSize()
 
@@ -44,9 +44,9 @@ const ParallaxImage = ({
         styleInner={absoluteStyle}
         styleOuter={{
           ...absoluteStyle,
-          marginTop: size.width > 400 ? desktopTopMarign : mobileTopMarign,
+          marginTop: size.width > 400 ? desktopTopMargin : mobileTopMargin,
           marginBottom:
-            size.width > 400 ? desktoBottomMarign : mobileBottomMarign,
+            size.width > 400 ? desktoBottomMargin : mobileBottomMargin,
         }}
       >
         <ImageLoader
@@ -114,10 +114,10 @@ const HeroSection = ({ data, planetMorph, hidePlanet }) => {
                     baseDelay={baseDelay}
                     mobileImage={data.hero1_h.childImageSharp.fluid}
                     desktopImage={data.hero1_v.childImageSharp.fluid}
-                    mobileTopMarign="-10%"
-                    mobileBottomMarign="-8%"
-                    desktopTopMarign="-23%"
-                    desktoBottomMarign="-18%"
+                    mobileTopMargin="-10%"
+                    mobileBottomMargin="-8%"
+                    desktopTopMargin="-23%"
+                    desktoBottomMargin="-18%"
                     objectPosition="100% center"
                     alt="Someone on a computer"
                   />
@@ -129,10 +129,10 @@ const HeroSection = ({ data, planetMorph, hidePlanet }) => {
                     baseDelay={baseDelay + 0.1}
                     mobileImage={data.hero2_h.childImageSharp.fluid}
                     desktopImage={data.hero2_v.childImageSharp.fluid}
-                    mobileTopMarign="-10%"
-                    mobileBottomMarign="-8%"
-                    desktopTopMarign="-23%"
-                    desktoBottomMarign="-18%"
+                    mobileTopMargin="-10%"
+                    mobileBottomMargin="-8%"
+                    desktopTopMargin="-23%"
+                    desktoBottomMargin="-18%"
                     objectPosition="100% center"
                     alt="People working on a white board"
                   />
@@ -144,10 +144,10 @@ const HeroSection = ({ data, planetMorph, hidePlanet }) => {
                     baseDelay={baseDelay + 0.2}
                     mobileImage={data.hero3_h.childImageSharp.fluid}
                     desktopImage={data.hero3_v.childImageSharp.fluid}
-                    mobileTopMarign="-10%"
-                    mobileBottomMarign="-8%"
-                    desktopTopMarign="-12%"
-                    desktoBottomMarign="-18%"
+                    mobileTopMargin="-10%"
+                    mobileBottomMargin="-8%"
+                    desktopTopMargin="-12%"
+                    desktoBottomMargin="-18%"
                     objectPosition="20% 100%"
                     alt="People around a table, working"
                   />
