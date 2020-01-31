@@ -165,7 +165,7 @@ const query = graphql`
 
     hero3_v: file(relativePath: { regex: "/hero-3-vertical.jpg/" }) {
       childImageSharp {
-        fluid(maxHeight: 452, quality: 90) {
+        fluid(maxHeight: 452, quality: 85) {
           ...GatsbyImageSharpFluid_noBase64
         }
       }
