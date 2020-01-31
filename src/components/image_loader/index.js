@@ -6,7 +6,7 @@ import Placeholder from "../load_placeholder/placeholder"
 import styles from "./index.module.css"
 
 export default props => {
-  const { delay, darkOverlay, ...imgProps } = props
+  const { delay, darkOverlay, imgStyle, ...imgProps } = props
   const [loaded, setLoaded] = React.useState(false)
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -24,7 +24,7 @@ export default props => {
         {...imgProps}
         fadeIn={false}
         className={darkOverlay ? styles.darkImg : styles.img}
-        imgStyle={{ display: "block" }}
+        imgStyle={{ display: "block", ...imgStyle }}
         onLoad={() => setLoaded(true)}
       />
     </div>

@@ -7,28 +7,65 @@ import CallToAction from "../call_to_action"
 import ImageLoader from "../image_loader"
 import Text from "../text"
 import Title from "./hero_section/title"
+import useWindowSize from "../../utils/use_window_size"
 
 import styles from "./hero_section.module.css"
 
-const ParallaxImage = ({ baseDelay, alt, mobileImage, desktopImage }) => {
+const absoluteStyle = {
+  position: "absolute",
+  top: 0,
+  right: 0,
+  bottom: 0,
+  left: 0,
+}
+
+const ParallaxImage = ({
+  baseDelay,
+  alt,
+  mobileImage,
+  desktopImage,
+  objectPosition,
+  mobileTopMarign,
+  mobileBottomMarign,
+  desktopTopMarign,
+  desktoBottomMarign,
+}) => {
+  const size = useWindowSize()
+
   return (
-    <Parallax y={[-30, 30]}>
-      <ImageLoader
-        delay={baseDelay}
-        fluid={[
-          {
-            ...mobileImage,
-            media: "(max-width: 399px)",
-          },
-          {
-            ...desktopImage,
-            media: "(min-width: 400px)",
-          },
-        ]}
-        style={{ height: "100%" }}
-        alt={alt}
-      />
-    </Parallax>
+    <div
+      style={{
+        overflow: "hidden",
+        position: "unset !important",
+      }}
+    >
+      <Parallax
+        y={[-15, 15]}
+        styleInner={absoluteStyle}
+        styleOuter={{
+          ...absoluteStyle,
+          marginTop: size.width > 400 ? desktopTopMarign : mobileTopMarign,
+          marginBottom:
+            size.width > 400 ? desktoBottomMarign : mobileBottomMarign,
+        }}
+      >
+        <ImageLoader
+          delay={baseDelay}
+          imgStyle={{ objectPosition }}
+          fluid={[
+            {
+              ...mobileImage,
+              media: "(max-width: 399px)",
+            },
+            {
+              ...desktopImage,
+              media: "(min-width: 400px)",
+            },
+          ]}
+          alt={alt}
+        />
+      </Parallax>
+    </div>
   )
 }
 
@@ -77,6 +114,11 @@ const HeroSection = ({ data, planetMorph, hidePlanet }) => {
                     baseDelay={baseDelay}
                     mobileImage={data.hero1_h.childImageSharp.fluid}
                     desktopImage={data.hero1_v.childImageSharp.fluid}
+                    mobileTopMarign="-10%"
+                    mobileBottomMarign="-8%"
+                    desktopTopMarign="-23%"
+                    desktoBottomMarign="-18%"
+                    objectPosition="100% center"
                     alt="Someone on a computer"
                   />
                 </div>
@@ -87,6 +129,11 @@ const HeroSection = ({ data, planetMorph, hidePlanet }) => {
                     baseDelay={baseDelay + 0.1}
                     mobileImage={data.hero2_h.childImageSharp.fluid}
                     desktopImage={data.hero2_v.childImageSharp.fluid}
+                    mobileTopMarign="-10%"
+                    mobileBottomMarign="-8%"
+                    desktopTopMarign="-23%"
+                    desktoBottomMarign="-18%"
+                    objectPosition="100% center"
                     alt="People working on a white board"
                   />
                 </div>
@@ -97,6 +144,11 @@ const HeroSection = ({ data, planetMorph, hidePlanet }) => {
                     baseDelay={baseDelay + 0.2}
                     mobileImage={data.hero3_h.childImageSharp.fluid}
                     desktopImage={data.hero3_v.childImageSharp.fluid}
+                    mobileTopMarign="-10%"
+                    mobileBottomMarign="-8%"
+                    desktopTopMarign="-12%"
+                    desktoBottomMarign="-18%"
+                    objectPosition="20% 100%"
                     alt="People around a table, working"
                   />
                 </div>
