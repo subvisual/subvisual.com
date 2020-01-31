@@ -11,7 +11,12 @@ import Title from "./hero_section/title"
 
 import styles from "./hero_section.module.css"
 
-const renderParallaxImage = ({ baseDelay, image, parallaxAmount }) => (
+const ParallaxImage = ({
+  baseDelay,
+  mobileImage,
+  desktopImage,
+  parallaxAmount,
+}) => (
   <ParallaxBanner
     layers={[
       {
@@ -21,7 +26,16 @@ const renderParallaxImage = ({ baseDelay, image, parallaxAmount }) => (
               <Img
                 fadeIn={false}
                 onLoad={onLoad}
-                fluid={image}
+                fluid={[
+                  {
+                    ...mobileImage,
+                    media: "(max-width: 399px)",
+                  },
+                  {
+                    ...desktopImage,
+                    media: "(min-width: 400px)",
+                  },
+                ]}
                 imgStyle={{ display: "block" }}
                 style={{ height: "100%" }}
               />
@@ -74,51 +88,33 @@ const HeroSection = ({ data, planetMorph, hidePlanet }) => {
             </div>
             <div className={styles.images}>
               <div className={styles.image}>
-                <div className={styles.horizontal}>
-                  {renderParallaxImage({
-                    baseDelay,
-                    image: data.hero1_h.childImageSharp.fluid,
-                    parallaxAmount: 0.2,
-                  })}
-                </div>
-                <div className={styles.vertical}>
-                  {renderParallaxImage({
-                    baseDelay,
-                    image: data.hero1_v.childImageSharp.fluid,
-                    parallaxAmount: 0.2,
-                  })}
+                <div className={styles.inside}>
+                  <ParallaxImage
+                    baseDelay={baseDelay}
+                    mobileImage={data.hero1_h.childImageSharp.fluid}
+                    desktopImage={data.hero1_v.childImageSharp.fluid}
+                    parallaxAmount={0.2}
+                  />
                 </div>
               </div>
               <div className={styles.image}>
-                <div className={styles.horizontal}>
-                  {renderParallaxImage({
-                    baseDelay: baseDelay + 0.1,
-                    image: data.hero2_h.childImageSharp.fluid,
-                    parallaxAmount: 0.2,
-                  })}
-                </div>
-                <div className={styles.vertical}>
-                  {renderParallaxImage({
-                    baseDelay: baseDelay + 0.1,
-                    image: data.hero2_v.childImageSharp.fluid,
-                    parallaxAmount: 0.2,
-                  })}
+                <div className={styles.inside}>
+                  <ParallaxImage
+                    baseDelay={baseDelay + 0.1}
+                    mobileImage={data.hero2_h.childImageSharp.fluid}
+                    desktopImage={data.hero2_v.childImageSharp.fluid}
+                    parallaxAmount={0.2}
+                  />
                 </div>
               </div>
               <div className={styles.image}>
-                <div className={styles.horizontal}>
-                  {renderParallaxImage({
-                    baseDelay: baseDelay + 0.2,
-                    image: data.hero3_h.childImageSharp.fluid,
-                    parallaxAmount: 0.2,
-                  })}
-                </div>
-                <div className={styles.vertical}>
-                  {renderParallaxImage({
-                    baseDelay: baseDelay + 0.2,
-                    image: data.hero3_v.childImageSharp.fluid,
-                    parallaxAmount: 0.2,
-                  })}
+                <div className={styles.inside}>
+                  <ParallaxImage
+                    baseDelay={baseDelay + 0.2}
+                    mobileImage={data.hero3_h.childImageSharp.fluid}
+                    desktopImage={data.hero3_v.childImageSharp.fluid}
+                    parallaxAmount={0.2}
+                  />
                 </div>
               </div>
             </div>
@@ -172,7 +168,7 @@ const query = graphql`
 
     hero3_v: file(relativePath: { regex: "/hero-3-vertical.jpg/" }) {
       childImageSharp {
-        fluid(maxHeight: 452, quality: 95) {
+        fluid(maxHeight: 452, quality: 85) {
           ...GatsbyImageSharpFluid_noBase64
         }
       }
