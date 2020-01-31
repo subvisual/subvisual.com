@@ -1,7 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Img from "gatsby-image"
-import _ from "lodash"
 
 import SocialLink from "../../../SocialLink"
 import Text from "../../../text"
@@ -34,12 +33,16 @@ const Member = ({ name, role, social, photo }) => (
       </div>
     </div>
     <ul aria-label="Social Links" className={styles.links}>
-      {_.map(social, (url, platform) => {
-        if (!url) return null
+      {Object.keys(social).map(platform => {
+        if (!social[platform]) return null
 
         return (
           <li key={platform} className={styles.link}>
-            <SocialLink name={name} platform={platform} url={url} />
+            <SocialLink
+              name={name}
+              platform={platform}
+              url={social[platform]}
+            />
           </li>
         )
       })}
