@@ -15,7 +15,7 @@ const Member = ({ name, role, social, photo }) => (
       fluid={[
         {
           ...photo.horizontal.childImageSharp.fluid,
-          media: "(max-width: 768px)",
+          media: "(max-width: 767px)",
         },
         {
           ...photo.vertical.childImageSharp.fluid,
