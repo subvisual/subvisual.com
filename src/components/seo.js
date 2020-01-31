@@ -45,7 +45,7 @@ function SEO({ description, lang, keywords, title }) {
             <meta property="og:image" content={metaImage} />
 
             <meta name="twitter:card" content="summary_large_image" />
-            <meta property="twitter:url" content={data.site.siteMetadata.url}>
+            <meta property="twitter:url" content={data.site.siteMetadata.url} />
             <meta
               name="twitter:creator"
               content={data.site.siteMetadata.twitterUsername}
