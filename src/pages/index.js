@@ -52,10 +52,7 @@ const IndexPage = () => {
         </style>
       </noscript>
 
-      <SEO
-        title="Subvisual - We nurture ideas that empower people"
-        keywords={[]}
-      />
+      <SEO />
       <Splash show={renderSplash} morph={morph} />
       <HeroSection planetMorph={morph} hidePlanet={renderSplash} />
       <VenturesSection />
