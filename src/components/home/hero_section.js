@@ -27,7 +27,10 @@ const ParallaxImage = ({
                 fadeIn={false}
                 onLoad={onLoad}
                 fluid={[
-                  mobileImage,
+                  {
+                    ...mobileImage,
+                    media: "(max-width: 399px)",
+                  },
                   {
                     ...desktopImage,
                     media: "(min-width: 400px)",
