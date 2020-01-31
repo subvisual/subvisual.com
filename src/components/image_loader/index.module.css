@@ -6,12 +6,16 @@
   overflow: hidden;
 }
 
-.img {
+.img,
+.darkImg {
   transition: all 0.2s ease-in-out;
   height: 100%;
+}
+
+.darkImg {
   filter: grayscale(100%);
 }
 
-.img:hover {
+.darkImg:hover {
   filter: initial;
 }

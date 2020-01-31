@@ -21,7 +21,12 @@ const Venture = ({ color, delay, description, featured, grey, name, url }) => {
     >
       <div className={styles.wrapper}>
         <div className={styles.photo}>
-          <ImageLoader {...color.childImageSharp} delay={delay} alt={name} />
+          <ImageLoader
+            {...color.childImageSharp}
+            delay={delay}
+            alt={name}
+            darkOverlay
+          />
         </div>
       </div>
       <div className={styles.info}>

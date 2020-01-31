@@ -1,52 +1,73 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Img from "gatsby-image"
 import { StaticQuery, graphql } from "gatsby"
-import { ParallaxProvider, ParallaxBanner } from "react-scroll-parallax"
+import { ParallaxProvider, Parallax } from "react-scroll-parallax"
 
 import CallToAction from "../call_to_action"
-import LoadPlaceholder from "../load_placeholder"
+import ImageLoader from "../image_loader"
 import Text from "../text"
 import Title from "./hero_section/title"
+import useWindowSize from "../../utils/use_window_size"
 
 import styles from "./hero_section.module.css"
 
+const absoluteStyle = {
+  position: "absolute",
+  top: 0,
+  right: 0,
+  bottom: 0,
+  left: 0,
+}
+
 const ParallaxImage = ({
   baseDelay,
+  alt,
   mobileImage,
   desktopImage,
-  parallaxAmount,
-}) => (
-  <ParallaxBanner
-    layers={[
-      {
-        children: (
-          <LoadPlaceholder delay={baseDelay}>
-            {onLoad => (
-              <Img
-                fadeIn={false}
-                onLoad={onLoad}
-                fluid={[
-                  {
-                    ...mobileImage,
-                    media: "(max-width: 399px)",
-                  },
-                  {
-                    ...desktopImage,
-                    media: "(min-width: 400px)",
-                  },
-                ]}
-                imgStyle={{ display: "block" }}
-                style={{ height: "100%" }}
-              />
-            )}
-          </LoadPlaceholder>
-        ),
-        amount: parallaxAmount,
-      },
-    ]}
-  />
-)
+  objectPosition,
+  mobileTopMargin,
+  mobileBottomMargin,
+  desktopTopMargin,
+  desktoBottomMargin,
+}) => {
+  const size = useWindowSize()
+
+  return (
+    <div
+      style={{
+        overflow: "hidden",
+        position: "unset !important",
+      }}
+    >
+      <Parallax
+        y={[-15, 15]}
+        styleInner={absoluteStyle}
+        styleOuter={{
+          ...absoluteStyle,
+          marginTop: size.width > 400 ? desktopTopMargin : mobileTopMargin,
+          marginBottom:
+            size.width > 400 ? desktoBottomMargin : mobileBottomMargin,
+        }}
+      >
+        <ImageLoader
+          delay={baseDelay}
+          imgStyle={{ objectPosition }}
+          fluid={[
+            {
+              ...mobileImage,
+              media: "(max-width: 399px)",
+            },
+            {
+              ...desktopImage,
+              media: "(min-width: 400px)",
+            },
+          ]}
+          alt={alt}
+        />
+      </Parallax>
+    </div>
+  )
+}
 
 const HeroSection = ({ data, planetMorph, hidePlanet }) => {
   const baseDelay = 0.3
@@ -93,7 +114,12 @@ const HeroSection = ({ data, planetMorph, hidePlanet }) => {
                     baseDelay={baseDelay}
                     mobileImage={data.hero1_h.childImageSharp.fluid}
                     desktopImage={data.hero1_v.childImageSharp.fluid}
-                    parallaxAmount={0.2}
+                    mobileTopMargin="-10%"
+                    mobileBottomMargin="-8%"
+                    desktopTopMargin="-23%"
+                    desktoBottomMargin="-18%"
+                    objectPosition="100% center"
+                    alt="Someone on a computer"
                   />
                 </div>
               </div>
@@ -103,7 +129,12 @@ const HeroSection = ({ data, planetMorph, hidePlanet }) => {
                     baseDelay={baseDelay + 0.1}
                     mobileImage={data.hero2_h.childImageSharp.fluid}
                     desktopImage={data.hero2_v.childImageSharp.fluid}
-                    parallaxAmount={0.2}
+                    mobileTopMargin="-10%"
+                    mobileBottomMargin="-8%"
+                    desktopTopMargin="-23%"
+                    desktoBottomMargin="-18%"
+                    objectPosition="100% center"
+                    alt="People working on a white board"
                   />
                 </div>
               </div>
@@ -113,7 +144,12 @@ const HeroSection = ({ data, planetMorph, hidePlanet }) => {
                     baseDelay={baseDelay + 0.2}
                     mobileImage={data.hero3_h.childImageSharp.fluid}
                     desktopImage={data.hero3_v.childImageSharp.fluid}
-                    parallaxAmount={0.2}
+                    mobileTopMargin="-10%"
+                    mobileBottomMargin="-8%"
+                    desktopTopMargin="-12%"
+                    desktoBottomMargin="-18%"
+                    objectPosition="20% 100%"
+                    alt="People around a table, working"
                   />
                 </div>
               </div>
