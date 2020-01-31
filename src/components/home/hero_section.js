@@ -1,52 +1,36 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Img from "gatsby-image"
 import { StaticQuery, graphql } from "gatsby"
-import { ParallaxProvider, ParallaxBanner } from "react-scroll-parallax"
+import { ParallaxProvider, Parallax } from "react-scroll-parallax"
 
 import CallToAction from "../call_to_action"
-import LoadPlaceholder from "../load_placeholder"
+import ImageLoader from "../image_loader"
 import Text from "../text"
 import Title from "./hero_section/title"
 
 import styles from "./hero_section.module.css"
 
-const ParallaxImage = ({
-  baseDelay,
-  mobileImage,
-  desktopImage,
-  parallaxAmount,
-}) => (
-  <ParallaxBanner
-    layers={[
-      {
-        children: (
-          <LoadPlaceholder delay={baseDelay}>
-            {onLoad => (
-              <Img
-                fadeIn={false}
-                onLoad={onLoad}
-                fluid={[
-                  {
-                    ...mobileImage,
-                    media: "(max-width: 399px)",
-                  },
-                  {
-                    ...desktopImage,
-                    media: "(min-width: 400px)",
-                  },
-                ]}
-                imgStyle={{ display: "block" }}
-                style={{ height: "100%" }}
-              />
-            )}
-          </LoadPlaceholder>
-        ),
-        amount: parallaxAmount,
-      },
-    ]}
-  />
-)
+const ParallaxImage = ({ baseDelay, alt, mobileImage, desktopImage }) => {
+  return (
+    <Parallax y={[-30, 30]}>
+      <ImageLoader
+        delay={baseDelay}
+        fluid={[
+          {
+            ...mobileImage,
+            media: "(max-width: 399px)",
+          },
+          {
+            ...desktopImage,
+            media: "(min-width: 400px)",
+          },
+        ]}
+        style={{ height: "100%" }}
+        alt={alt}
+      />
+    </Parallax>
+  )
+}
 
 const HeroSection = ({ data, planetMorph, hidePlanet }) => {
   const baseDelay = 0.3
@@ -93,7 +77,7 @@ const HeroSection = ({ data, planetMorph, hidePlanet }) => {
                     baseDelay={baseDelay}
                     mobileImage={data.hero1_h.childImageSharp.fluid}
                     desktopImage={data.hero1_v.childImageSharp.fluid}
-                    parallaxAmount={0.2}
+                    alt="Someone on a computer"
                   />
                 </div>
               </div>
@@ -103,7 +87,7 @@ const HeroSection = ({ data, planetMorph, hidePlanet }) => {
                     baseDelay={baseDelay + 0.1}
                     mobileImage={data.hero2_h.childImageSharp.fluid}
                     desktopImage={data.hero2_v.childImageSharp.fluid}
-                    parallaxAmount={0.2}
+                    alt="People working on a white board"
                   />
                 </div>
               </div>
@@ -113,7 +97,7 @@ const HeroSection = ({ data, planetMorph, hidePlanet }) => {
                     baseDelay={baseDelay + 0.2}
                     mobileImage={data.hero3_h.childImageSharp.fluid}
                     desktopImage={data.hero3_v.childImageSharp.fluid}
-                    parallaxAmount={0.2}
+                    alt="People around a table, working"
                   />
                 </div>
               </div>
