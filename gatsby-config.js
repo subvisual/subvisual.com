@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: "Subvisual",
-    description: "",
-    twitter: {
-      creator: "@subvisual",
-    },
+    description: "We nurture ıdeas that empower people",
+    url: "https://subvisual.com",
+    image: "/images/meta-image.jpg",
+    twitterUsername: "@subvisual",
   },
   plugins: [
     {
