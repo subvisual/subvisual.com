@@ -12,14 +12,14 @@ const query = graphql`
   query {
     boston: file(relativePath: { regex: "/boston.jpg/" }) {
       childImageSharp {
-        fluid(maxWidth: 578, quality: 95) {
+        fluid(maxWidth: 725, quality: 85) {
           ...GatsbyImageSharpFluid_noBase64
         }
       }
     }
     braga: file(relativePath: { regex: "/braga.jpg/" }) {
       childImageSharp {
-        fluid(maxWidth: 578, quality: 95) {
+        fluid(maxWidth: 725, quality: 85) {
           ...GatsbyImageSharpFluid_noBase64
         }
       }
