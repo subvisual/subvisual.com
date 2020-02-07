@@ -174,7 +174,7 @@ const query = graphql`
   query {
     hero1_v: file(relativePath: { regex: "/hero-1-vertical.jpg/" }) {
       childImageSharp {
-        fluid(maxHeight: 452, quality: 95) {
+        fluid(maxHeight: 700, quality: 95) {
           ...GatsbyImageSharpFluid_noBase64
         }
       }
@@ -189,7 +189,7 @@ const query = graphql`
 
     hero2_v: file(relativePath: { regex: "/hero-2-vertical.jpg/" }) {
       childImageSharp {
-        fluid(maxHeight: 452, quality: 95) {
+        fluid(maxHeight: 700, quality: 95) {
           ...GatsbyImageSharpFluid_noBase64
         }
       }
@@ -204,7 +204,7 @@ const query = graphql`
 
     hero3_v: file(relativePath: { regex: "/hero-3-vertical.jpg/" }) {
       childImageSharp {
-        fluid(maxHeight: 452, quality: 85) {
+        fluid(maxHeight: 700, quality: 85) {
           ...GatsbyImageSharpFluid_noBase64
         }
       }
