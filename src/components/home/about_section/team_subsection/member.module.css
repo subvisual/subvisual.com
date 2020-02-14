@@ -22,6 +22,16 @@
   margin-right: 28px;
 }
 
+.aspectRatioHack > div:first-child {
+  padding-bottom: 60% !important;
+}
+
+@media (min-width: 768px) {
+  .aspectRatioHack > div:first-child {
+    padding-bottom: 116.788% !important;
+  }
+}
+
 @media (min-width: 950px) {
   .root {
     grid-row-gap: 28px;
