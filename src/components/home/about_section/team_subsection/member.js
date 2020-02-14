@@ -14,10 +14,12 @@ const Member = ({ name, role, social, photo }) => (
       fluid={[
         {
           ...photo.horizontal.childImageSharp.fluid,
+          aspectRatio: 1.6666666667,
           media: "(max-width: 767px)",
         },
         {
           ...photo.vertical.childImageSharp.fluid,
+          aspectRatio: 0.85625,
           media: "(min-width: 768px)",
         },
       ]}
