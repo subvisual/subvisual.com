@@ -50,7 +50,6 @@ const SocialLink = ({ name: userName, platform, size, url }) => {
       to={url}
       title={`${userName} on ${platformName}`}
       size={size}
-      color="white"
       blank
       faded
     >
