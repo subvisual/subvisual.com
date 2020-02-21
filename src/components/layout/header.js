@@ -1,16 +1,14 @@
 import React from "react"
+import PropTypes from "prop-types"
 
 import Link from "../link"
-import Logo from "../logo"
 
 import styles from "./header.module.css"
 
-const Header = () => (
+const Header = ({ renderLogo }) => (
   <header className={styles.root}>
     <div className={styles.content}>
-      <div className={styles.logo}>
-        <Logo />
-      </div>
+      <div className={styles.logo}>{renderLogo()}</div>
       <nav>
         <ul className={styles.links}>
           <li className={styles.linkItem}>
@@ -38,5 +36,9 @@ const Header = () => (
     </div>
   </header>
 )
+
+Header.propTypes = {
+  renderLogo: PropTypes.func.isRequired,
+}
 
 export default Header
