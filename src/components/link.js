@@ -5,8 +5,8 @@ import classNames from "classnames"
 
 import styles from "./link.module.css"
 
-const Link = ({ blank, children, color, faded, internal, size, title, to }) => {
-  const className = classNames(styles.root, styles[size], styles[color], {
+const Link = ({ blank, children, faded, internal, size, title, to }) => {
+  const className = classNames(styles.root, styles[size], {
     [styles.faded]: faded,
   })
 
@@ -36,7 +36,6 @@ const Link = ({ blank, children, color, faded, internal, size, title, to }) => {
 
 Link.propTypes = {
   blank: PropTypes.bool,
-  color: PropTypes.string,
   faded: PropTypes.bool,
   internal: PropTypes.bool,
   size: PropTypes.string,
@@ -46,7 +45,6 @@ Link.propTypes = {
 
 Link.defaultProps = {
   blank: false,
-  color: "black",
   faded: false,
   internal: false,
   size: "regular",

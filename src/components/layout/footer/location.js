@@ -39,12 +39,12 @@ const Location = ({ align, geoUrl, image, mapsUrl, name }) => (
         </Text>
       </span>
       <span className={styles.mobile}>
-        <Link to={geoUrl} size="small" color="white" blank faded>
+        <Link to={geoUrl} size="small" blank faded>
           Directions
         </Link>
       </span>
       <span className={styles.desktop}>
-        <Link to={mapsUrl} size="small" color="white" blank faded>
+        <Link to={mapsUrl} size="small" blank faded>
           Directions
         </Link>
       </span>
