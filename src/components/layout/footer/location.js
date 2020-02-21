@@ -34,9 +34,7 @@ const Location = ({ align, geoUrl, image, mapsUrl, name }) => (
     </div>
     <div className={[styles.info, styles[align]].join(" ")}>
       <span className={styles.name}>
-        <Text size="small" color="white">
-          {name}
-        </Text>
+        <Text size="small">{name}</Text>
       </span>
       <span className={styles.mobile}>
         <Link to={geoUrl} size="small" blank faded>

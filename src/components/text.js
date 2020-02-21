@@ -20,7 +20,6 @@ Text.propTypes = {
 
 Text.defaultProps = {
   bold: false,
-  color: "black",
   size: "regular",
 }
 

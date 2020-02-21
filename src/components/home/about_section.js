@@ -31,7 +31,7 @@ const AboutSection = ({ planetMorph }) => (
             </SubsectionTitle>
           </div>
           <p className={styles.text}>
-            <Text color="white">
+            <Text>
               By putting people first and never compromising on quality, we were
               able to shape a team culture that will embrace you and your ideas.
             </Text>
@@ -42,7 +42,7 @@ const AboutSection = ({ planetMorph }) => (
             <SubsectionTitle color="white">And grew with craft</SubsectionTitle>
           </div>
           <p className={styles.text}>
-            <Text color="white">
+            <Text>
               We&apos;ll challenge you to think further and help you do the
               heavy lifting of shaping your product&apos;s development.
             </Text>
