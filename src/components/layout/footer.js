@@ -15,7 +15,7 @@ const Footer = ({ data }) => (
     <div className={styles.blue}>
       <div className={styles.content}>
         <div className={styles.logo}>
-          <Logo color="white" />
+          <Logo />
         </div>
         <div className={styles.callToAction}>
           <p>
