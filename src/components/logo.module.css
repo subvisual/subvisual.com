@@ -6,6 +6,10 @@
   color: currentColor;
 }
 
+.root.blue {
+  color: #045cfc;
+}
+
 .root svg {
   display: inline-block;
   height: 1em;
