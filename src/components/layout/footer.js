@@ -19,7 +19,7 @@ const Footer = ({ data }) => (
         </div>
         <div className={styles.callToAction}>
           <p>
-            <Text color="white">Ready to bring your ideas to life?</Text>{" "}
+            <Text>Ready to bring your ideas to life?</Text>{" "}
             <CallToAction color="white">Let&apos;s talk.</CallToAction>
           </p>
         </div>
@@ -45,9 +45,7 @@ const Footer = ({ data }) => (
         </div>
         <div className={styles.social}>
           <div className={styles.socialLabel}>
-            <Text size="small" color="white">
-              Follow us
-            </Text>
+            <Text size="small">Follow us</Text>
           </div>
           <SocialLinks />
         </div>

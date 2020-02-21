@@ -26,12 +26,10 @@ const Member = ({ name, role, social, photo }) => {
       />
       <div className={styles.info}>
         <div className={styles.name}>
-          <Text color="white" bold>
-            {name}
-          </Text>
+          <Text bold>{name}</Text>
         </div>
         <div className={styles.role}>
-          <Text color="white">{role}</Text>
+          <Text>{role}</Text>
         </div>
       </div>
       <ul aria-label="Social Links" className={styles.links}>
