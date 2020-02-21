@@ -1,14 +1,17 @@
 import React from "react"
+import PropTypes from "prop-types"
 import { Link } from "gatsby"
+import classnames from "classnames"
 import uuid from "uuid/v4"
 
 import styles from "./logo.module.css"
 
-const Logo = () => {
+const Logo = ({ color }) => {
+  const className = classnames(styles.root, styles[color])
   const radialUUID = uuid()
 
   return (
-    <Link to="/" className={styles.root}>
+    <Link to="/" className={className}>
       <svg viewBox="0 0 245 42" fill="none" xmlns="http://www.w3.org/2000/svg">
         <ellipse
           cx="133.244"
@@ -37,6 +40,10 @@ const Logo = () => {
       </svg>
     </Link>
   )
+}
+
+Logo.propTypes = {
+  color: PropTypes.string,
 }
 
 export default Logo

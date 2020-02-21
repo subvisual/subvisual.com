@@ -25,7 +25,7 @@ Layout.propTypes = {
 }
 
 Layout.defaultProps = {
-  renderHeaderLogo: () => <Logo />,
+  renderHeaderLogo: () => <Logo color="blue" />,
 }
 
 export default Layout
