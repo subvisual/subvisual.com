@@ -64,7 +64,7 @@ PortfolioSubsection.defaultProps = {
 
 const query = graphql`
   query {
-    allVenturesYaml {
+    allVentureYaml {
       edges {
         node {
           name
@@ -96,7 +96,7 @@ export default ({ planetMorph }) => (
     render={data => (
       <PortfolioSubsection
         planetMorph={planetMorph}
-        ventures={data.allVenturesYaml.edges.map(edge => edge.node)}
+        ventures={data.allVentureYaml.edges.map(edge => edge.node)}
       />
     )}
   />
