@@ -3,8 +3,6 @@
   cursor: pointer;
   opacity: 1;
 
-  font-family: colfax-web, sans-serif;
-  font-weight: 400;
   text-decoration: none;
 
   transition: opacity 0.2s;
@@ -22,26 +20,4 @@
 
 .root.faded:hover {
   opacity: 1;
-}
-
-.root.small {
-  font-size: 16px;
-  line-height: 20px;
-}
-
-.root.regular {
-  font-size: 16px;
-  line-height: 20px;
-}
-
-@media (min-width: 950px) {
-  .root.small {
-    font-size: 16px;
-    line-height: 20px;
-  }
-
-  .root.regular {
-    font-size: 20px;
-    line-height: 28px;
-  }
 }
