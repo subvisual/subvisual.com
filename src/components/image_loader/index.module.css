@@ -8,8 +8,9 @@
 
 .img,
 .darkImg {
-  transition: all 0.2s ease-in-out;
   height: 100%;
+
+  transition: all 0.2s ease-in-out;
 }
 
 .darkImg {
