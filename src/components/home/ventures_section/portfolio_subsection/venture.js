@@ -7,7 +7,7 @@ import ImageLoader from "../../../image_loader"
 
 import styles from "./venture.module.css"
 
-const Venture = ({ color, delay, description, featured, grey, name, url }) => {
+const Venture = ({ delay, description, featured, image, name, url }) => {
   const className = classNames(styles.root, {
     [styles.featured]: featured,
   })
@@ -22,7 +22,7 @@ const Venture = ({ color, delay, description, featured, grey, name, url }) => {
       <div className={styles.wrapper}>
         <div className={styles.photo}>
           <ImageLoader
-            {...color.childImageSharp}
+            {...image.childImageSharp}
             delay={delay}
             alt={name}
             darkOverlay
@@ -39,11 +39,10 @@ const Venture = ({ color, delay, description, featured, grey, name, url }) => {
 }
 
 Venture.propTypes = {
-  color: PropTypes.object.isRequired,
   delay: PropTypes.number,
-  featured: PropTypes.bool,
   description: PropTypes.string.isRequired,
-  grey: PropTypes.object.isRequired,
+  featured: PropTypes.bool,
+  image: PropTypes.object.isRequired,
   name: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
 }

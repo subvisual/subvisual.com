@@ -1,31 +1,26 @@
 ---
 - name: "UTRUST"
   description: "Crypto payments, simple as they should be"
-  color: "../images/ventures/utrust-color.jpg"
-  grey: "../images/ventures/utrust.jpg"
+  image: "../images/ventures/utrust.jpg"
   url: "https://utrust.com"
 
 - name: "siosLIFE"
   description: "For younger spirits"
-  color: "../images/ventures/sioslife-color.jpg"
-  grey: "../images/ventures/sioslife.jpg"
+  image: "../images/ventures/sioslife.jpg"
   url: "https://sioslife.com/ForYoungerSpirits"
 
 - name: "Crediflux"
   description: "Simple, fast, and paperless"
-  color: "../images/ventures/crediflux-color.jpg"
-  grey: "../images/ventures/crediflux.jpg"
+  image: "../images/ventures/crediflux.jpg"
   url: "https://www.crediflux.pt/en/"
 
 - name: "Oncostats"
   description: "Defeating a common enemy, cancer"
-  color: "../images/ventures/oncostats-color.jpg"
-  grey: "../images/ventures/oncostats.jpg"
+  image: "../images/ventures/oncostats.jpg"
   url: "https://oncostats.io/"
 
 - name: "Aurora Digital"
   description: "Nurturing digital healthcare"
-  grey: "../images/ventures/aurora-grey.jpg"
-  color: "../images/ventures/aurora-color.jpg"
+  image: "../images/ventures/aurora.jpg"
   url: "https://auroradigital.co/"
   
