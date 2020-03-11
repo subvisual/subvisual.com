@@ -70,14 +70,7 @@ const query = graphql`
           name
           description
           url
-          grey {
-            childImageSharp {
-              fluid(maxHeight: 720, quality: 85) {
-                ...GatsbyImageSharpFluid_noBase64
-              }
-            }
-          }
-          color {
+          image {
             childImageSharp {
               fluid(maxHeight: 720, quality: 85) {
                 ...GatsbyImageSharpFluid_noBase64

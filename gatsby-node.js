@@ -41,8 +41,7 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
       type VentureYaml implements Node @dontInfer {
         name: String!,
         description: String!,
-        color: File! @fileByRelativePath,
-        grey: File! @fileByRelativePath,
+        image: File! @fileByRelativePath,
         url: String!
       }
     `,
