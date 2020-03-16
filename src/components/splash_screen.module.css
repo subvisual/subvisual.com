@@ -44,7 +44,7 @@
 
 .logo svg {
   display: block;
-  width: calc(100% - 80px);
+  width: calc(100vw - 80px);
   max-width: 495px;
   margin: 0 auto;
 }
@@ -60,15 +60,5 @@
   .splash {
     width: 150vw;
     height: 150vw;
-  }
-}
-
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
   }
 }
