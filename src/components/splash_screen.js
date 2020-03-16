@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react"
 import PropTypes from "prop-types"
 import { disablePageScroll, enablePageScroll } from "scroll-lock"
-import uuid from "uuid/v4"
+import _uniqueId from "lodash/uniqueId"
 
 import styles from "./splash_screen.module.css"
 
 const SplashScreen = ({ lockScrollFor, onHide, morph, showFor }) => {
   const [showing, setShowing] = useState(true)
-  const radialUUID = uuid()
-  const rootUUID = uuid()
+  const radialUUID = _uniqueId("splash-screen-radial-")
+  const rootUUID = _uniqueId("splash-screen-")
   const hide = () => {
     setShowing(false)
     onHide()
