@@ -11,7 +11,7 @@ import styles from "./layout.module.css"
 const Layout = ({ children, renderHeaderLogo }) => (
   <div className={styles.root}>
     <Helmet>
-      <link rel="stylesheet" href="https://use.typekit.net/bcx8qfd.css" />
+      <link rel="stylesheet" href="https://use.typekit.net/dpm7mos.css" />
     </Helmet>
     <Header renderLogo={renderHeaderLogo} />
     <main>{children}</main>
