@@ -8,6 +8,14 @@
   height: 100vh;
   overflow: hidden;
 
+  /* Cover the page content while the splash is not shown.
+   *
+   * Since the splash is animated via JavaScript, it is actually rendered
+   * server-side to stay hidden (by React Morph, not our choice actually).
+   *
+   * This means there is a fraction of time during which the page will be
+   * rendered before we actually get to see the splash. This cover hides that.
+   */
   background-color: rgb(4, 92, 252);
 }
 
