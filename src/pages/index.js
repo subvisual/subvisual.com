@@ -31,13 +31,14 @@ const config = { spring, easings, getMargins: true }
 const IndexPage = () => {
   const morph = useMorph(config)
   const [hidingTittlePlanet, setHidingTittlePlanet] = useState(true)
+  const showTittlePlanet = () => setHidingTittlePlanet(false)
 
   return (
     <>
       <SplashScreen
         lockScrollFor={1000}
         morph={morph}
-        onHide={() => setHidingTittlePlanet(false)}
+        onHide={showTittlePlanet}
         showFor={750}
       />
       <Layout>
