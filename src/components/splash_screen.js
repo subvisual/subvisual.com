@@ -6,11 +6,11 @@ import _uniqueId from "lodash/uniqueId"
 import styles from "./splash_screen.module.css"
 
 const SplashScreen = ({ lockScrollFor, onHide, morph, showFor }) => {
-  const [hiding, setHiding] = useState(false)
+  const [showing, setShowing] = useState(true)
   const radialId = _uniqueId("splash-screen-radial-")
   const rootId = _uniqueId("splash-screen-")
   const hide = () => {
-    setHiding(true)
+    setShowing(false)
     onHide()
   }
 
@@ -21,7 +21,7 @@ const SplashScreen = ({ lockScrollFor, onHide, morph, showFor }) => {
     setTimeout(() => enablePageScroll(document.documentElement), lockScrollFor)
   }, [])
 
-  if (hiding) return null
+  if (!showing) return null
 
   return (
     <>
