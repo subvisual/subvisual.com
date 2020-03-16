@@ -1,4 +1,36 @@
 @font-face {
+  font-family: "Acta";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/acta-regular.woff2") format("woff2"),
+    url("../fonts/acta-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Acta";
+  font-style: italic;
+  font-weight: normal;
+  src: url("../fonts/acta-regular-italic.woff2") format("woff2"),
+    url("../fonts/acta-regular-italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Acta";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/acta-bold.woff2") format("woff2"),
+    url("../fonts/acta-bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Acta";
+  font-style: italic;
+  font-weight: bold;
+  src: url("../fonts/acta-bold-italic.woff2") format("woff2"),
+    url("../fonts/acta-bold-italic.woff") format("woff");
+}
+
+@font-face {
   font-family: "Acta Display";
   font-style: normal;
   font-weight: normal;
