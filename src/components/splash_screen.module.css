@@ -1,28 +1,31 @@
 .root {
   position: absolute;
-
   top: 0;
   left: 0;
-
   z-index: 10;
 
   width: 100vw;
   height: 100vh;
   overflow: hidden;
 
+  /* Cover the page content while the splash is not shown.
+   *
+   * Since the splash is animated via JavaScript, it is actually rendered
+   * server-side to stay hidden (by React Morph, not our choice actually).
+   *
+   * This means there is a fraction of time during which the page will be
+   * rendered before we actually get to see the splash. This cover hides that.
+   */
   background-color: rgb(4, 92, 252);
 }
 
 .splash {
   position: absolute;
-
   top: 50%;
   left: 50%;
-
   z-index: 10;
 
   background-color: rgb(4, 92, 252);
-
   border-radius: 50%;
 
   transform: translate(-50%, -50%);
@@ -30,20 +33,20 @@
 
 .logo {
   position: absolute;
-
   top: 50%;
   left: 50%;
-
   z-index: 11;
 
-  text-align: center;
+  width: 100%;
 
   transform: translateX(-50%) translateY(-50%);
 }
 
 .logo svg {
-  width: calc(100% - 80px);
+  display: block;
+  width: calc(100vw - 80px);
   max-width: 495px;
+  margin: 0 auto;
 }
 
 @media only screen and (orientation: portrait) {
@@ -57,15 +60,5 @@
   .splash {
     width: 150vw;
     height: 150vw;
-  }
-}
-
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
   }
 }

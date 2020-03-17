@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import { useMorph } from "react-morph"
 import { cubicBezier } from "@popmotion/easing"
-import { disablePageScroll, enablePageScroll } from "scroll-lock"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Splash from "../components/splash_screen"
+import SplashScreen from "../components/splash_screen"
 import AboutSection from "../components/home/about_section"
 import HeroSection from "../components/home/hero_section"
 import VenturesSection from "../components/home/ventures_section"
@@ -31,33 +30,24 @@ const config = { spring, easings, getMargins: true }
 
 const IndexPage = () => {
   const morph = useMorph(config)
-  const [renderSplash, setRenderSplash] = useState(true)
-
-  useEffect(() => {
-    disablePageScroll(document.documentElement)
-
-    setTimeout(() => setRenderSplash(false), 750)
-    setTimeout(() => enablePageScroll(document.documentElement), 1000)
-  }, [])
+  const [hidingTittlePlanet, setHidingTittlePlanet] = useState(true)
+  const showTittlePlanet = () => setHidingTittlePlanet(false)
 
   return (
-    <Layout>
-      <noscript>
-        <style>
-          {`
-            #splash-screen{
-              display: none
-            }
-          `}
-        </style>
-      </noscript>
-
-      <SEO />
-      <Splash show={renderSplash} morph={morph} />
-      <HeroSection planetMorph={morph} hidePlanet={renderSplash} />
-      <VenturesSection />
-      <AboutSection />
-    </Layout>
+    <>
+      <SplashScreen
+        lockScrollFor={1000}
+        morph={morph}
+        onHide={showTittlePlanet}
+        showFor={750}
+      />
+      <Layout>
+        <SEO />
+        <HeroSection planetMorph={morph} hidePlanet={hidingTittlePlanet} />
+        <VenturesSection />
+        <AboutSection />
+      </Layout>
+    </>
   )
 }
 
