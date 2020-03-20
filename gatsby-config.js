@@ -65,5 +65,11 @@ module.exports = {
         respectDNT: true,
       },
     },
+    {
+      resolve: `gatsby-plugin-netlify-cache`,
+      options: {
+        cachePublic: true,
+      },
+    },
   ],
 }
