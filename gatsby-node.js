@@ -2,15 +2,6 @@ exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions
   const typeDefs = [
     `
-      type TeamMemberYaml implements Node @dontInfer {
-        key: String!,
-        name: String!,
-        photo: Photo!,
-        role: String!,
-        bio: String,
-        social: Social,
-      }
-
       type Photo {
         horizontal: File! @fileByRelativePath,
         vertical: File! @fileByRelativePath,
@@ -24,6 +15,15 @@ exports.createSchemaCustomization = ({ actions }) => {
         medium: String,
         twitter: String,
         web: String,
+      }
+
+      type TeamMemberYaml implements Node @dontInfer {
+        key: String!,
+        name: String!,
+        photo: Photo!,
+        role: String!,
+        bio: String,
+        social: Social,
       }
 
       type VentureYaml implements Node @dontInfer {
