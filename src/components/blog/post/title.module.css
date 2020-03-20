@@ -1,0 +1,24 @@
+.root {
+  color: #045cfc;
+
+  font-family: "Acta Headline", serif;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 40px;
+}
+
+@media (min-width: 950px) {
+  .root {
+    font-size: 56px;
+    line-height: 68px;
+  }
+}
+
+/**
+ * Fix for Firefox font rendering issues.
+ */
+@-moz-document url-prefix() {
+  .root {
+    font-weight: lighter;
+  }
+}
