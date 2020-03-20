@@ -1,5 +1,5 @@
 ---
-- slug: bruno-azevedo
+- key: bruno-azevedo
   name: Bruno Azevedo
   bio: >-
     Likes to make a difference in everything he does. Music lover and
@@ -8,7 +8,7 @@
     github: azevedo-252
     twitter: azevedo_252
 
-- slug: summer-campers
+- key: summer-campers
   name: Summer Campers
   bio: >-
     Thirsty for knowledge and keen to learn. Then we found out they had free
