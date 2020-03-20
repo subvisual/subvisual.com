@@ -1,0 +1,14 @@
+.root.padded {
+  padding: 0 20px;
+}
+
+.content {
+  max-width: 1182px;
+  margin: 0 auto;
+}
+
+@media (min-width: 950px) {
+  .root.padded {
+    padding: 0 28px;
+  }
+}
