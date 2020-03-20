@@ -1,28 +1,16 @@
-const defaultTo = require("lodash/defaultTo")
-
-exports.createSchemaCustomization = ({ actions, schema }) => {
+exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions
   const typeDefs = [
-    schema.buildObjectType({
-      name: "TeamMemberYaml",
-      interfaces: ["Node"],
-      extensions: {
-        infer: false,
-      },
-      fields: {
-        id: "String!",
-        name: "String!",
-        photo: "Photo!",
-        role: "String!",
-        bio: "String",
-        social: "Social",
-        active: {
-          type: "Boolean",
-          resolve: ({ active }) => defaultTo(active, true),
-        },
-      },
-    }),
     `
+      type TeamMemberYaml implements Node @dontInfer {
+        key: String!,
+        name: String!,
+        photo: Photo!,
+        role: String!,
+        bio: String,
+        social: Social,
+      }
+
       type Photo {
         horizontal: File! @fileByRelativePath,
         vertical: File! @fileByRelativePath,
