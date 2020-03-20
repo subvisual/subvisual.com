@@ -8,6 +8,7 @@
     "@popmotion/easing": "^1.0.2",
     "@researchgate/react-intersection-observer": "1.0.1",
     "classnames": "^2.2.6",
+    "dateformat": "^3.0.3",
     "framer-motion": "^1.6.15",
     "gatsby": "^2.1.18",
     "gatsby-image": "^2.2.39",
