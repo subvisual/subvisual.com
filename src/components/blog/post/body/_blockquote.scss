@@ -1,0 +1,76 @@
+blockquote {
+  position: relative;
+
+  max-width: 618px;
+  padding: 20px 20px 0;
+  margin: 56px auto 40px 0;
+
+  font-family: 'Acta Headline', serif;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 28px;
+
+  @media (--desktop) {
+    max-width: 634px;
+    padding: 28px 28px 0 28px;
+    margin: 78px auto 56px 0;
+
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  /**
+   * Fix for Firefox font rendering issues.
+   */
+  @-moz-document url-prefix() {
+    font-weight: lighter;
+  }
+
+  &::before {
+    content: '“';
+
+    position: absolute;
+    top: -26px;
+    left: 95px;
+
+    display: inline-block;
+
+    font-size: 56px;
+    font-weight: normal;
+    line-height: 56px;
+
+    @media (--desktop) {
+      top: -34px;
+      left: 128px;
+
+      font-size: 72px;
+      line-height: 72px;
+    }
+  }
+
+  p {
+    padding: 0;
+  }
+
+  p:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  p:last-child:not(:first-child) {
+    width: calc(100% - 72px);
+    max-width: 506px;
+    margin-left: auto;
+
+    font-family: colfax-web, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+
+    @media (--desktop) {
+      max-width: 478px;
+
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+}

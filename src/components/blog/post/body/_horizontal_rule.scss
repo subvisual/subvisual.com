@@ -1,0 +1,12 @@
+hr {
+  width: 25vw;
+  max-width: 174px;
+  margin: 28px auto;
+
+  border-top: none;
+  border-bottom: currentColor solid 1px;
+
+  @media (--desktop) {
+    margin: 56px auto;
+  }
+}

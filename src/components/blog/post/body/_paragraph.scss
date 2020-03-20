@@ -1,0 +1,21 @@
+p {
+  max-width: 618px;
+  padding: 0 20px;
+  margin: 20px auto 28px;
+
+  @media (--desktop) {
+    max-width: 634px;
+    padding: 0 28px;
+    margin: 28px auto 32px;
+  }
+
+  p:first-child {
+    margin-top: 0;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  @import './inline_code';
+}
