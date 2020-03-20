@@ -1,0 +1,10 @@
+.root {
+  height: 100%;
+  max-width: calc(50vw - 40px);
+
+  color: currentColor;
+}
+
+.root.blue {
+  color: #045cfc;
+}
