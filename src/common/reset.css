@@ -26,7 +26,8 @@ ul,
 li,
 dl,
 dt,
-dd {
+dd,
+blockquote {
   padding: 0;
   margin: 0;
 }
@@ -37,6 +38,8 @@ a:focus,
 a:link,
 a:visited {
   color: currentColor;
+
+  text-decoration: none;
 }
 
 address {
