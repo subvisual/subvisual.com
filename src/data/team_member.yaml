@@ -1,5 +1,5 @@
----
-- name: "Fernando Mendes"
+- key: fernando-mendes
+  name: "Fernando Mendes"
   photo:
     horizontal: "../images/team/fernando-mendes-h.jpg"
     vertical: "../images/team/fernando-mendes-v.jpg"
@@ -12,7 +12,8 @@
     web: "https://blog.mendes.codes"
     github: "https://github.com/frm"
 
-- name: "Francisco Baila"
+- key: francisco-baila
+  name: "Francisco Baila"
   photo:
     horizontal: "../images/team/francisco-baila-h.jpg"
     vertical: "../images/team/francisco-baila-v.jpg"
@@ -24,7 +25,8 @@
     behance: "https://www.behance.net/fcBaila"
     medium: "https://medium.com/@fcBaila"
 
-- name: "Gabriel Poça"
+- key: gabriel-poca
+  name: "Gabriel Poça"
   photo:
     horizontal: "../images/team/gabriel-poca-h.jpg"
     vertical: "../images/team/gabriel-poca-v.jpg"
@@ -36,7 +38,8 @@
     web: "https://gabrielpoca.com"
     github: "https://github.com/gabrielpoca"
 
-- name: Helena Muniz
+- key: helena-muniz
+  name: Helena Muniz
   photo:
     horizontal: "../images/team/helena-muniz-h.jpg"
     vertical: "../images/team/helena-muniz-v.jpg"
@@ -47,7 +50,8 @@
   social:
     linkedin: "https://www.linkedin.com/in/helenammuniz/"
 
-- name: "João Ferreira"
+- key: joao-ferreira
+  name: "João Ferreira"
   photo:
     horizontal: "../images/team/joao-ferreira-h.jpg"
     vertical: "../images/team/joao-ferreira-v.jpg"
@@ -59,7 +63,8 @@
     dribbble: "https://dribbble.com/jferreiradzn"
     twitter: "https://twitter.com/jferreiradzn"
 
-- name: "João Justo"
+- key: joao-justo
+  name: "João Justo"
   photo:
     horizontal: "../images/team/joao-justo-h.jpg"
     vertical: "../images/team/joao-justo-v.jpg"
@@ -71,7 +76,8 @@
     github: "https://github.com/joaojusto"
     twitter: "https://twitter.com/jpjustonunes"
 
-- name: "Laura Esteves"
+- key: laura-esteves
+  name: "Laura Esteves"
   photo:
     horizontal: "../images/team/laura-esteves-h.jpg"
     vertical: "../images/team/laura-esteves-v.jpg"
@@ -85,7 +91,8 @@
     linkedin: "https://www.linkedin.com/in/lauraesteves"
     medium: "https://medium.com/@laurae.esteves"
 
-- name: "Luis Ferreira"
+- key: luis-zamith
+  name: "Luis Ferreira"
   photo:
     horizontal: "../images/team/luis-ferreira-h.jpg"
     vertical: "../images/team/luis-ferreira-v.jpg"
@@ -97,7 +104,8 @@
     github: "https://github.com/zamith"
     twitter: "https://twitter.com/zamith"
 
-- name: "Miguel Palhas"
+- key: miguel-palhas
+  name: "Miguel Palhas"
   photo:
     horizontal: "../images/team/miguel-palhas-h.jpg"
     vertical: "../images/team/miguel-palhas-v.jpg"
@@ -109,7 +117,8 @@
     github: "https://github.com/naps62"
     twitter: "https://twitter.com/naps62"
 
-- name: "Pedro Costa"
+- key: pedro-costa
+  name: "Pedro Costa"
   photo:
     horizontal: "../images/team/pedro-costa-h.jpg"
     vertical: "../images/team/pedro-costa-v.jpg"
@@ -121,7 +130,8 @@
     github: "https://github.com/pfac"
     twitter: "https://twitter.com/iampfac"
 
-- name: "Roberto Machado"
+- key: roberto-machado
+  name: "Roberto Machado"
   photo:
     horizontal: "../images/team/roberto-machado-h.jpg"
     vertical: "../images/team/roberto-machado-v.jpg"
@@ -132,7 +142,8 @@
     linkedin: "https://www.linkedin.com/in/robertomachado"
     twitter: "https://twitter.com/rmdgb"
 
-- name: "Ronaldo Sousa"
+- key: ronaldo-sousa
+  name: "Ronaldo Sousa"
   photo:
     horizontal: "../images/team/ronaldo-sousa-h.jpg"
     vertical: "../images/team/ronaldo-sousa-v.jpg"
@@ -143,4 +154,3 @@
   social:
     github: "https://github.com/ronaldofs"
     twitter: "https://twitter.com/ronaldofsousa"
-
