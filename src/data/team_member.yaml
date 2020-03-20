@@ -1,7 +1,4 @@
 ---
-- name: Bruno Azevedo
-  active: false
-
 - name: "Fernando Mendes"
   photo:
     horizontal: "../images/team/fernando-mendes-h.jpg"

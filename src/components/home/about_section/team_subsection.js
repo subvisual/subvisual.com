@@ -7,7 +7,7 @@ import styles from "./team_subsection.module.css"
 
 const teamQuery = graphql`
   query TeamQuery {
-    allTeamMemberYaml(filter: { active: { ne: false } }) {
+    allTeamMemberYaml {
       edges {
         node {
           id
