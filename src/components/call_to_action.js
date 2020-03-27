@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import styles from "./call_to_action.module.css"
+import styles from "./call_to_action.module.scss"
 
 const CallToAction = ({ color, children, size }) => {
   const className = [styles.root, styles[color], styles[size]].join(" ")
