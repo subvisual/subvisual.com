@@ -1,5 +1,4 @@
 const postCssCustomMedia = require("postcss-custom-media")
-const postCssNested = require("postcss-nested")
 
 module.exports = {
   siteMetadata: {
@@ -11,9 +10,9 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: "gatsby-plugin-postcss",
+      resolve: "gatsby-plugin-sass",
       options: {
-        postCssPlugins: [postCssCustomMedia(), postCssNested()],
+        postCssPlugins: [postCssCustomMedia()],
       },
     },
     "gatsby-plugin-react-helmet",
