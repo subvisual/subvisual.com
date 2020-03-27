@@ -1,5 +1,5 @@
-const postCssCustomMedia = require(`postcss-custom-media`)
-const postCssNested = require(`postcss-nested`)
+const postCssCustomMedia = require("postcss-custom-media")
+const postCssNested = require("postcss-nested")
 
 module.exports = {
   siteMetadata: {
@@ -11,44 +11,44 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-postcss`,
+      resolve: "gatsby-plugin-postcss",
       options: {
         postCssPlugins: [postCssCustomMedia(), postCssNested()],
       },
     },
-    `gatsby-plugin-react-helmet`,
-    `gatsby-transformer-yaml`,
+    "gatsby-plugin-react-helmet",
+    "gatsby-transformer-yaml",
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-source-filesystem",
       options: {
         path: `${__dirname}/src/data`,
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-source-filesystem",
       options: {
         path: `${__dirname}/src/documents`,
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: `images`,
+        name: "images",
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: "gatsby-plugin-manifest",
       options: {
-        name: `subvisual`,
-        short_name: `subvisual`,
-        start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#ffffff`,
-        display: `minimal-ui`,
-        icon: `src/images/subvisual-symbol-blue.svg`,
+        name: "subvisual",
+        short_name: "subvisual",
+        start_url: "/",
+        background_color: "#ffffff",
+        theme_color: "#ffffff",
+        display: "minimal-ui",
+        icon: "src/images/subvisual-symbol-blue.svg",
       },
     },
     {
@@ -60,7 +60,7 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: "gatsby-plugin-google-analytics",
       options: {
         trackingId: "UA-63400449-1",
         head: false,
@@ -69,7 +69,7 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-netlify-cache`,
+      resolve: "gatsby-plugin-netlify-cache",
       options: {
         cachePublic: true,
       },
