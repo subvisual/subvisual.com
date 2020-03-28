@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 import dateFormat from "dateformat"
 
 import Title from "./title"
@@ -39,6 +40,15 @@ const BlogPostHeader = ({ author, date, retinaCover, title }) => {
       </Wrapper>
     </>
   )
+}
+
+BlogPostHeader.propTypes = {
+  author: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+  }).isRequired,
+  date: PropTypes.instanceOf(Date).isRequired,
+  retinaCover: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
 }
 
 export default BlogPostHeader
