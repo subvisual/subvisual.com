@@ -1,0 +1,41 @@
+.root {
+  padding: 28px 20px 56px;
+
+  @media (--desktop) {
+    padding: 28px 28px 56px;
+  }
+}
+
+.content {
+  width: 100%;
+  max-width: 1184px;
+  margin: 0 auto;
+}
+
+.posts-list {
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+
+  list-style: none;
+}
+
+.posts-list-item {
+  padding: 28px 0;
+
+  border-bottom: 1px solid #fcfcfc;
+
+  @media (--desktop) {
+    padding: 40px 0;
+  }
+
+  &:first-child {
+    padding-top: 0;
+  }
+
+  &:last-child {
+    padding-bottom: 0;
+
+    border-bottom: none;
+  }
+}
