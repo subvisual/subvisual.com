@@ -2,6 +2,31 @@ module.exports = ({ actions }) => {
   const { createTypes } = actions
   const typeDefs = [
     `
+      interface Author {
+        key: String!,
+        name: String!,
+      }
+
+      type BlogContributorYaml implements Author & Node @dontInfer {
+        key: String!,
+        bio: String,
+        name: String!,
+        social: Social,
+      }
+
+      type Frontmatter {
+        id: Int!,
+        author: Author! @link(by: "key"),
+        date: Date!,
+        path: String!,
+        tags: [String]!,
+        title: String!,
+      }
+
+      type MarkdownRemark implements Node {
+        frontmatter: Frontmatter!,
+      }
+
       type Photo {
         horizontal: File! @fileByRelativePath,
         vertical: File! @fileByRelativePath,
@@ -17,7 +42,7 @@ module.exports = ({ actions }) => {
         web: String,
       }
 
-      type TeamMemberYaml implements Node @dontInfer {
+      type TeamMemberYaml implements Author & Node @dontInfer {
         key: String!,
         name: String!,
         photo: Photo!,
