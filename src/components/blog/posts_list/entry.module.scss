@@ -1,0 +1,91 @@
+@custom-media --grid-9 (min-width: 700px);
+@custom-media --grid-10 (min-width: 1036px);
+
+.root {
+  @media (--grid-9) {
+    display: grid;
+    grid-gap: 28px;
+    grid-template-columns: repeat(9, 1fr);
+  }
+
+  @media (--grid-10) {
+    grid-template-columns: repeat(10, 1fr);
+  }
+}
+
+.title {
+  display: block;
+  margin-bottom: 20px;
+
+  font-family: "Acta Headline";
+  font-size: 20px;
+  line-height: 28px;
+
+  @media (--desktop) {
+    margin-bottom: 28px;
+
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  @media (--grid-9) {
+    grid-column: 1 / span 6;
+    grid-row: 1 / span 1;
+    margin-bottom: 0;
+  }
+
+  @media (--grid-10) {
+    grid-column-start: 2;
+  }
+
+  /**
+   * Fix for Firefox font rendering issues.
+   */
+  @-moz-document url-prefix() {
+    font-weight: lighter;
+  }
+}
+
+.intro {
+  margin-bottom: 20px;
+
+  font-family: "Acta", serif;
+
+  @media (--desktop) {
+    margin-bottom: 28px;
+  }
+
+  @media (--grid-9) {
+    grid-column: 1 / span 5;
+    grid-row: 2 / span 1;
+  }
+
+  @media (--grid-10) {
+    grid-column-start: 2;
+  }
+
+  /**
+   * Fix for Firefox font rendering issues.
+   */
+  @-moz-document url-prefix() {
+    font-weight: lighter;
+  }
+}
+
+.info {
+  font-family: colfax-web;
+
+  @media (--grid-9) {
+    grid-column: 7 / span 3;
+    grid-row: 2 / span 1;
+  }
+
+  @media (--grid-10) {
+    grid-column-start: 8;
+  }
+}
+
+.author,
+.date {
+  display: block;
+}
