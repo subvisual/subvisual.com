@@ -1,3 +1,4 @@
+@import './custom_media';
 @import './fonts';
 @import './reset';
 @import './react-scroll-parallax';
@@ -11,10 +12,8 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-}
 
-@media (min-width: 950px) {
-  body {
+  @media (--desktop) {
     font-size: 20px;
     line-height: 28px;
   }
