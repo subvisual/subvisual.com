@@ -1,12 +1,12 @@
 import React from "react"
-import classnames from "classnames"
+import PropTypes from "prop-types"
 
-import styles from "./page_title.module.css"
+import styles from "./page_title.module.scss"
 
-const PageTitle = ({ children, withTittle }) => {
-  const className = classnames(styles.root, { [styles.withTittle]: withTittle })
+const PageTitle = ({ children }) => <h1 className={styles.root}>{children}</h1>
 
-  return <h1 className={className}>{children}</h1>
+PageTitle.propTypes = {
+  children: PropTypes.node.isRequired,
 }
 
 export default PageTitle
