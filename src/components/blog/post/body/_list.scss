@@ -1,0 +1,16 @@
+ol,
+ul {
+  max-width: 618px;
+  padding: 0 20px 0 40px;
+  margin: 20px auto;
+
+  @media (--desktop) {
+    max-width: 634px;
+    padding: 0 28px 0 56px;
+    margin: 28px auto;
+  }
+}
+
+li {
+  @import './inline_code';
+}

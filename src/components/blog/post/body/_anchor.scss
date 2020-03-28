@@ -1,0 +1,17 @@
+a {
+  &,
+  &:hover,
+  &:link,
+  &:visited {
+    color: #2421ab;
+
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  &:hover {
+    opacity: 0.5;
+
+    transition: opacity 0.2s;
+  }
+}

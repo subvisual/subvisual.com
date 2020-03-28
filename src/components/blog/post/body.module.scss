@@ -1,0 +1,46 @@
+.root {
+  @import './body/anchor';
+  @import './body/blockquote';
+  @import './body/bold';
+  @import './body/code';
+  @import './body/code_block';
+  @import './body/heading';
+  @import './body/horizontal_rule';
+  @import './body/image';
+  @import './body/italic';
+  @import './body/list';
+  @import './body/paragraph';
+
+  font-family: "Acta", serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+
+  @media (--desktop) {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  /* Drop cap */
+
+  & > p:first-child::first-letter {
+    float: left;
+    padding-right: 4px;
+    margin-top: 0;
+
+    font-family: "Acta Display", serif;
+    font-size: 56px;
+    line-height: 56px;
+
+    @media (--desktop) {
+      margin-top: -2px;
+
+      font-size: 66px;
+      line-height: 66px;
+    }
+
+    @-moz-document url-prefix() {
+      margin-top: 8px;
+    }
+  }
+}
