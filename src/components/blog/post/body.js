@@ -7,9 +7,8 @@ import styles from "./body.module.scss"
 
 const PostBody = ({ html }) => (
   <BodyWrapper>
-    {/* eslint-disable react/no-danger */}
+    {/* eslint-disable-next-line react/no-danger */}
     <div className={styles.root} dangerouslySetInnerHTML={{ __html: html }} />
-    {/* eslint-enable react/no-danger */}
   </BodyWrapper>
 )
 

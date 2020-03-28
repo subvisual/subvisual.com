@@ -1,14 +1,4 @@
 .root {
-  font-family: "Acta", serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 28px;
-
-  @media (--desktop) {
-    font-size: 20px;
-    line-height: 32px;
-  }
-
   @import './body/anchor';
   @import './body/blockquote';
   @import './body/bold';
@@ -20,6 +10,16 @@
   @import './body/italic';
   @import './body/list';
   @import './body/paragraph';
+
+  font-family: "Acta", serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+
+  @media (--desktop) {
+    font-size: 20px;
+    line-height: 32px;
+  }
 
   /* Drop cap */
 
