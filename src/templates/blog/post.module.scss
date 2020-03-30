@@ -1,0 +1,21 @@
+.root {
+  @media (--desktop) {
+    margin: 0 auto;
+  }
+}
+
+.article {
+  padding: 56px 0;
+
+  @media (--desktop) {
+    padding: 0 0 224px;
+  }
+}
+
+.header {
+  margin-bottom: 88px;
+
+  @media (--desktop) {
+    margin: 0 auto 112px 88px;
+  }
+}
