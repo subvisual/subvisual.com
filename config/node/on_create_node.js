@@ -22,13 +22,12 @@ const onCreateBlogPostNode = ({ actions, getNode, node }) => {
   })
 
   if (frontmatter.path !== generatedPath) {
-    /* eslint-disable no-console */
+    /* eslint-disable-next-line no-console */
     console.warn(`
       Warning:
         File at ${fileAbsolutePath} will generate a page at ${generatedPath},
         but the path in its frontmatter is ${frontmatter.path}
     `)
-    /* eslint-enable no-console */
   }
 
   createNodeField({
