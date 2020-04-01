@@ -43,7 +43,7 @@ const renderItem = ({ fields, frontmatter }) => {
   )
 }
 
-const BlogPostList = () => {
+const BlogPostsList = () => {
   const {
     allMarkdownRemark: { nodes: postsNodes },
   } = useStaticQuery(query)
@@ -57,4 +57,4 @@ const BlogPostList = () => {
   )
 }
 
-export default BlogPostList
+export default BlogPostsList
