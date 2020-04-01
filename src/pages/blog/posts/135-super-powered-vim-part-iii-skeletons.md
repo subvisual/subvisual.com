@@ -66,7 +66,7 @@ That command will then call the `skel#InsertSkeleton` function (see the code sni
 
 For the example of `app/models/foo.rb`, this will literally insert the word `class` into the buffer, and call `UltiSnips#ExpandSnippet()` for us, creating the class definition.
 
-![magic](http://i.imgur.com/Efolbol.gif)
+![magic](https://i.imgur.com/Efolbol.gif)
 
 ## But wait, there's more
 

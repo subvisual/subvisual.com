@@ -86,7 +86,7 @@ it, the process and approach you chose were focal. Besides the grade taking them
 very complex system that wouldn't do what it was supposed
 to.
 
-![Non-working is best working](http://i.imgur.com/t8UHRIY.gif)
+![Non-working is best working](https://i.imgur.com/t8UHRIY.gif)
 
 *A non-working project was as good as
 dead* so the first goal was to have *something* working.
