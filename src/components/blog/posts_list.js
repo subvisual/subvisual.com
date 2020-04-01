@@ -1,28 +1,9 @@
 import React from "react"
-import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 
 import Entry from "./posts_list/entry"
 
 import styles from "./posts_list.module.scss"
-
-const renderItem = ({ id, ...entry }) => (
-  <li key={id} className={styles.postsListItem}>
-    <Entry {...entry} />
-  </li>
-)
-
-const BlogPostsList = ({ items }) => (
-  <div className={styles.root}>
-    <div className={styles.content}>
-      <ol className={styles.postsList}>{items.map(renderItem)}</ol>
-    </div>
-  </div>
-)
-
-BlogPostsList.propTypes = {
-  items: PropTypes.array.isRequired,
-}
 
 const query = graphql`
   {
@@ -45,27 +26,35 @@ const query = graphql`
   }
 `
 
-export default () => (
-  <StaticQuery
-    query={query}
-    render={data => {
-      const {
-        allMarkdownRemark: { nodes: postsNodes },
-      } = data
+const renderItem = ({ fields, frontmatter }) => {
+  const { slug } = fields
+  const { author, id, ...entry } = frontmatter
+  const { name: authorName } = author
+  const entryProps = {
+    author: authorName,
+    slug,
+    ...entry,
+  }
 
-      const items = postsNodes.map(({ fields, frontmatter }) => {
-        const { slug } = fields
-        const { author, ...entry } = frontmatter
-        const { name: authorName } = author
+  return (
+    <li key={id} className={styles.postsListItem}>
+      <Entry {...entryProps} />
+    </li>
+  )
+}
 
-        return {
-          author: authorName,
-          slug,
-          ...entry,
-        }
-      })
+const BlogPostList = () => {
+  const {
+    allMarkdownRemark: { nodes: postsNodes },
+  } = useStaticQuery(query)
 
-      return <BlogPostsList items={items} />
-    }}
-  />
-)
+  return (
+    <div className={styles.root}>
+      <div className={styles.content}>
+        <ol className={styles.postsList}>{postsNodes.map(renderItem)}</ol>
+      </div>
+    </div>
+  )
+}
+
+export default BlogPostList
