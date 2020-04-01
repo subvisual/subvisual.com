@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import { graphql } from "gatsby"
 
 import Body from "../../components/blog/post/body"
 import Header from "../../components/blog/post/header"
@@ -8,6 +9,22 @@ import Logo from "../../components/blog/logo"
 
 import "../../common/base.scss"
 import styles from "./post.module.scss"
+
+export const query = graphql`
+  query($slug: String!) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      html
+      frontmatter {
+        author {
+          name
+        }
+        date
+        retina_cover
+        title
+      }
+    }
+  }
+`
 
 const renderHeaderLogo = () => <Logo color="blue" />
 
@@ -34,4 +51,10 @@ BlogPostTemplate.propTypes = {
   title: PropTypes.string.isRequired,
 }
 
-export default BlogPostTemplate
+export default ({ data }) => {
+  const { markdownRemark } = data
+  const { frontmatter, html } = markdownRemark
+  const { author, date, retina_cover: retinaCover, title } = frontmatter
+
+  return <BlogPostTemplate {...{ author, date, html, retinaCover, title }} />
+}

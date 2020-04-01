@@ -28,6 +28,18 @@ module.exports = root => [
       path: `${root}/src/images`,
     },
   },
+  {
+    resolve: "gatsby-source-filesystem",
+    options: {
+      path: `${root}/src/pages/blog`,
+    },
+  },
+  {
+    resolve: "gatsby-transformer-remark",
+    options: {
+      plugins: ["gatsby-remark-unwrap-images"],
+    },
+  },
   "gatsby-transformer-sharp",
   "gatsby-plugin-sharp",
   {
