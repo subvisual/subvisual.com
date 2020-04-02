@@ -5,7 +5,7 @@ blockquote {
   padding: 20px 20px 0;
   margin: 56px auto 40px 0;
 
-  font-family: 'Acta Headline', serif;
+  font-family: "Acta Headline", serif;
   font-size: 20px;
   font-weight: 800;
   line-height: 28px;
@@ -27,7 +27,7 @@ blockquote {
   }
 
   &::before {
-    content: '“';
+    content: "“";
 
     position: absolute;
     top: -26px;

@@ -1,11 +1,13 @@
 {
   "plugins": [
-    "stylelint-order"
+    "stylelint-order",
+    "stylelint-prettier"
   ],
   "extends": [
     "stylelint-config-prettier"
   ],
   "rules": {
+    "prettier/prettier": true,
     "max-nesting-depth": 3,
     "indentation": 2,
     "order/order": [

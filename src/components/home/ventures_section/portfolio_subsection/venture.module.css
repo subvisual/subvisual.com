@@ -5,14 +5,11 @@
   text-decoration: none;
 }
 
-.root.featured {}
-
 .wrapper {
   position: relative;
 }
 
 .photo {
-
   z-index: 0;
 
   height: 224px;
