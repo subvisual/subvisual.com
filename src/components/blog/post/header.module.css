@@ -16,7 +16,7 @@
 
 .info {
   width: 100%;
-  max-width: calc(100vw - 40px);/* full-width, minus 20px side paddings */
+  max-width: calc(100vw - 40px); /* full-width, minus 20px side paddings */
   margin: 0 auto;
 }
 
