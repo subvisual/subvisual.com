@@ -1,23 +1,60 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 
 import Entry from "./posts_list/entry"
 
 import styles from "./posts_list.module.scss"
 
-const PostsList = () => (
-  <div className={styles.root}>
-    <div className={styles.content}>
-      <ol className={styles.postsList}>
-        <li className={styles.postsListItem}>
-          <Entry
-            author="Subvisual"
-            title="Coming soon..."
-            intro="Our blog is making its return. In style."
-          />
-        </li>
-      </ol>
-    </div>
-  </div>
-)
+const query = graphql`
+  {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+      nodes {
+        fields {
+          slug
+        }
+        frontmatter {
+          author {
+            name
+          }
+          date
+          id
+          title
+          intro
+        }
+      }
+    }
+  }
+`
 
-export default PostsList
+const renderItem = ({ fields, frontmatter }) => {
+  const { slug } = fields
+  const { author, id, ...entry } = frontmatter
+  const { name: authorName } = author
+  const entryProps = {
+    author: authorName,
+    slug,
+    ...entry,
+  }
+
+  return (
+    <li key={id} className={styles.postsListItem}>
+      <Entry {...entryProps} />
+    </li>
+  )
+}
+
+const BlogPostsList = () => {
+  const {
+    allMarkdownRemark: { nodes: postsNodes },
+  } = useStaticQuery(query)
+
+  return (
+    <div className={styles.root}>
+      <div className={styles.content}>
+        <ol className={styles.postsList}>{postsNodes.map(renderItem)}</ol>
+      </div>
+    </div>
+  )
+}
+
+export default BlogPostsList
