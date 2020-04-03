@@ -1,17 +1,7 @@
 .root {
   overflow: hidden;
 
-  background-color: transparent;
+  background-color: #fcfcfc;
 
   color: #403f4c;
-}
-
-.blue {
-  background-color: #045cfc;
-  color: #fcfcfc;
-}
-
-.white {
-  background-color: #fcfcfc;
-  color: #045cfc;
 }

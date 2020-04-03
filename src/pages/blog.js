@@ -7,7 +7,7 @@ import PostsList from "../components/blog/posts_list"
 import "../common/base.scss"
 
 const BlogPage = () => (
-  <Layout color="blue" currentPath="/blog/">
+  <Layout currentPath="/blog/">
     <SEO
       title="Inside Subvisual"
       description={`
