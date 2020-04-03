@@ -50,10 +50,19 @@ blockquote {
 
   p {
     padding: 0;
+    margin: 20px 0;
+
+    @media (--desktop) {
+      margin: 28px 0;
+    }
   }
 
-  p:not(:last-child) {
-    margin-bottom: 20px;
+  p:first-child {
+    margin-top: 0;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
   }
 
   p:last-child:not(:first-child) {
