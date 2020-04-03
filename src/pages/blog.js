@@ -1,16 +1,13 @@
 import React from "react"
 
-import Logo from "../components/blog/logo"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PostsList from "../components/blog/posts_list"
 
 import "../common/base.scss"
 
-const renderHeaderLogo = () => <Logo />
-
 const BlogPage = () => (
-  <Layout color="blue" currentPath="/blog/" renderHeaderLogo={renderHeaderLogo}>
+  <Layout color="blue" currentPath="/blog/">
     <SEO
       title="Inside Subvisual"
       description={`
