@@ -36,7 +36,8 @@ We were all there to understand our wants and needs. As humans, we are social be
 
 I know now that I lived an extraordinary moment, that I will always remember for the upcoming years as the very first edition of Mirror Conf. This is a beautiful memory to keep, and I can't wait to create new ones.
 
-<iframe src="https://player.vimeo.com/video/184114133" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+`vimeo: 184114133`
+
 <p><a href="https://vimeo.com/184114133">First Day of MirrorConf 2016</a> from <a href="https://vimeo.com/ostaisdovideo">Os Tais</a>.</p>
 
 Finally, the best links from around the web:

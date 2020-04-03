@@ -1,6 +1,4 @@
-iframe {
-  display: block;
-  max-width: 100%;
+:global(.gatsby-resp-iframe-wrapper) {
   margin: 40px auto;
 
   @media (--desktop) {
