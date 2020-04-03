@@ -17,7 +17,7 @@ The first edition of [MirrorConf](http://mirrorconf.com/) is closing in, and eve
 
 This week we all need some extra motivation, so I want to remember why we organize conferences, and how much we enjoy it. The following is a video from last year's [RubyConf Portugal](http://rubyconf.pt/), and the best moments from the staff.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8H8d-mGYjgw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+`youtube: 8H8d-mGYjgw`
 
 ![file](https://subvisual.s3.amazonaws.com/blog/post_image/188/original.jpg)![file](https://subvisual.s3.amazonaws.com/blog/post_image/190/original.jpg)![file](https://subvisual.s3.amazonaws.com/blog/post_image/191/original.jpg)![file](https://subvisual.s3.amazonaws.com/blog/post_image/192/original.jpg)![file](https://subvisual.s3.amazonaws.com/blog/post_image/193/original.jpg)![file](https://subvisual.s3.amazonaws.com/blog/post_image/194/original.jpg)![file](https://subvisual.s3.amazonaws.com/blog/post_image/189/original.jpg)![file](https://subvisual.s3.amazonaws.com/blog/post_image/195/original.jpg)
 

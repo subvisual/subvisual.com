@@ -20,6 +20,8 @@
     "gatsby-plugin-react-svg": "^2.1.1",
     "gatsby-plugin-sass": "^2.2.1",
     "gatsby-plugin-sharp": "^2.0.22",
+    "gatsby-remark-embed-video": "^2.0.1",
+    "gatsby-remark-responsive-iframe": "^2.3.1",
     "gatsby-remark-unwrap-images": "^1.0.1",
     "gatsby-source-filesystem": "^2.0.23",
     "gatsby-transformer-remark": "^2.6.15",

@@ -19,7 +19,7 @@ Last week our team was at [Pixels Camp][pixels-camp], a gathering of geeks from 
 
 During the second night, there was a Quizshow on the Main Stage, and the winners were our very own craftsmen Miguel and Fernando. In this video, they are being proclaimed, live on television and youtube, as Pixels Camp's "Top Geeks." That was fun to watch!
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/znPOpIT7x7I" frameborder="0" allowfullscreen></iframe>
+`youtube: znPOpIT7x7I`
 
 _If you're interested in reading more about the quiz, Miguel [wrote](https://subvisual.co/blog/posts/111-an-exercise-in-futility) about one of the challenges for the classification_
 
