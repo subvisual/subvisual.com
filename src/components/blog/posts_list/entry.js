@@ -10,9 +10,9 @@ const Entry = ({ author, date, intro, slug, title }) => {
 
   return (
     <div className={styles.root}>
-      <Link to={`/blog/${slug}`} className={styles.title}>
-        {title}
-      </Link>
+      <div className={styles.title}>
+        <Link to={`/blog/${slug}`}>{title}</Link>
+      </div>
       <p className={styles.intro}>
         <Link to={`/blog/${slug}`}>
           {/* eslint-disable-next-line react/no-danger */}
