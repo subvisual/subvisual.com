@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 
 import BodyWrapper from "./body_wrapper"
 
+import "prismjs/themes/prism.css"
 import styles from "./body.module.scss"
 
 const PostBody = ({ html }) => (

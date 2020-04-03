@@ -1,4 +1,15 @@
 code {
+  color: inherit; /* Override PrismJS default theme color */
+
   font-family: Inconsolata, monospace;
   font-weight: 400;
+
+  /* Override PrismJS theme background in operators */
+  &:global(.language-css) :global(.token.string),
+  :global(.style) :global(.token.string),
+  :global(.token.entity),
+  :global(.token.operator),
+  :global(.token.url) {
+    background: none;
+  }
 }
