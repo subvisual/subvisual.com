@@ -1,48 +1,30 @@
-import _random from "lodash/random"
-import _round from "lodash/round"
 import React from "react"
 import PropTypes from "prop-types"
+import _uniqueId from "lodash/uniqueId"
 
-import HoveringAnimationStyle from "./planet/hovering_animation_style"
+import {
+  generateAnimation,
+  buildAnimationStyles,
+} from "./planet/animation_utils"
+import AnimationStyle from "./planet/animation_style"
 import RadialGradient from "./planet/radial_gradient"
+import { withMorphStyle } from "../utils/morph_utils"
 
 import styles from "./planet.module.css"
 
-const Planet = ({
-  codeName,
-  morph,
-  hide,
-  hovering,
-  hoveringMin,
-  hoveringMax,
-  color,
-}) => {
-  const hoveringAmplitude = _random(hoveringMin, hoveringMax)
-  const hoveringAnimationDuration = _round(_random(0.8, 1.8), 2)
-  const animationName = `planet-${codeName}-hovering`
-  const radialID = `planet-${codeName}-radial`
-  const style = {
-    animationName,
-    animationDuration: `${hoveringAnimationDuration}s`,
-  }
+const Planet = ({ color, hide, hoverAnimation, hovering, morph }) => {
+  if (hide) return null
 
-  if (hide) return <div />
+  const animation = generateAnimation(hoverAnimation)
+  const animationStyle = buildAnimationStyles(animation)
+  const [rootStyle, newMorph] = withMorphStyle(morph, animationStyle)
+  const radialID = _uniqueId("planet-radial-")
 
   return (
     <>
-      <HoveringAnimationStyle
-        amplitude={hoveringAmplitude}
-        hovering={hovering}
-        name={animationName}
-      />
+      <AnimationStyle {...animation} hovering={hovering} />
 
-      <div
-        id={codeName}
-        key={`${codeName}-planet`}
-        style={style}
-        className={styles.root}
-        {...morph}
-      >
+      <div className={styles.root} style={rootStyle} {...newMorph}>
         <svg
           viewBox="0 0 104 104"
           fill="none"
@@ -50,34 +32,31 @@ const Planet = ({
           className={styles.planet}
         >
           <circle cx="52" cy="50" r="50" fill={`url(#${radialID})`} />
-        </svg>
-      </div>
 
-      <svg>
-        <defs>
           <defs>
             <RadialGradient color={color} id={radialID} />
           </defs>
-        </defs>
-      </svg>
+        </svg>
+      </div>
     </>
   )
 }
 
 Planet.propTypes = {
-  codeName: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired,
   hide: PropTypes.bool,
+  hoverAnimation: PropTypes.shape({
+    delay: PropTypes.number,
+    duration: PropTypes.number,
+    endYAt: PropTypes.number,
+  }),
   hovering: PropTypes.bool,
   morph: PropTypes.func,
-  hoveringMax: PropTypes.number,
-  hoveringMin: PropTypes.number,
 }
 
 Planet.defaultProps = {
+  hoverAnimation: {},
   hovering: false,
-  hoveringMax: 20,
-  hoveringMin: -20,
   morph: () => {},
 }
 

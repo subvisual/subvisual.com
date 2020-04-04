@@ -16,11 +16,7 @@ const AboutSection = ({ planetMorph }) => (
       <header className={styles.header}>
         <SectionTitle color="purple">About</SectionTitle>
         <div className={styles.headerIcon}>
-          <Icon
-            planetCodeName="aboutHeaderIconPlanet"
-            planetMorph={planetMorph}
-            color="purple"
-          />
+          <Icon planetMorph={planetMorph} color="purple" />
         </div>
       </header>
       <div className={styles.story}>
