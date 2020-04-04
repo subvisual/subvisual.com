@@ -1,17 +1,17 @@
 import React from "react"
 import PropTypes from "prop-types"
-
-import BlogPostWrapper from "./wrapper"
+import classNames from "classnames"
 
 import styles from "./body_wrapper.module.scss"
 
-const BlogPostBodyWrapper = ({ children }) => (
-  <BlogPostWrapper>
-    <div className={styles.content}>{children}</div>
-  </BlogPostWrapper>
-)
+const BlogPostBodyWrapper = ({ className, children }) => {
+  const rootClassName = classNames(styles.root, className)
+
+  return <div className={rootClassName}>{children}</div>
+}
 
 BlogPostBodyWrapper.propTypes = {
+  className: PropTypes.string,
   children: PropTypes.node.isRequired,
 }
 

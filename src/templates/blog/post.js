@@ -3,9 +3,12 @@ import PropTypes from "prop-types"
 import { graphql } from "gatsby"
 
 import Body from "../../components/blog/post/body"
+import BodyWrapper from "../../components/blog/post/body_wrapper"
 import Header from "../../components/blog/post/header"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
+import ShareLinks from "../../components/blog/post/body/share_links"
+import Wrapper from "../../components/blog/post/wrapper"
 
 import "../../common/base.scss"
 import styles from "./post.module.scss"
@@ -15,6 +18,7 @@ export const query = graphql`
     markdownRemark(frontmatter: { path: { eq: $slug } }) {
       fields {
         cover
+        url
       }
       frontmatter {
         author {
@@ -36,7 +40,15 @@ export const query = graphql`
   }
 `
 
-const BlogPostTemplate = ({ author, cover, coverFile, date, html, title }) => (
+const BlogPostTemplate = ({
+  author,
+  cover,
+  coverFile,
+  date,
+  html,
+  title,
+  url,
+}) => (
   <Layout>
     <SEO title={title} />
     <div className={styles.root}>
@@ -44,8 +56,13 @@ const BlogPostTemplate = ({ author, cover, coverFile, date, html, title }) => (
         <header className={styles.header}>
           <Header {...{ author, cover, coverFile, date, title }} />
         </header>
-        <section className={styles.body}>
-          <Body html={html} />
+        <section>
+          <Wrapper className={styles.outerWrapper}>
+            <BodyWrapper className={styles.innerWrapper}>
+              <Body html={html} />
+            </BodyWrapper>
+            <ShareLinks className={styles.shareLinks} url={url} />
+          </Wrapper>
         </section>
       </article>
     </div>
@@ -64,18 +81,19 @@ BlogPostTemplate.propTypes = {
 export default ({ data }) => {
   const { markdownRemark, coverFile } = data
   const { fields, frontmatter, html } = markdownRemark
-  const { cover } = fields
+  const { cover, url } = fields
   const { author, date, title } = frontmatter
 
   return (
     <BlogPostTemplate
       {...{
         author,
-        date: new Date(date),
-        html,
         cover,
         coverFile,
+        date: new Date(date),
+        html,
         title,
+        url,
       }}
     />
   )
