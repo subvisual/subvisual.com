@@ -44,6 +44,15 @@ module.exports = root => [
             width: 980,
           },
         },
+        {
+          resolve: "gatsby-remark-prismjs",
+          options: {
+            aliases: {
+              sh: "bash",
+              vimscript: "vim",
+            },
+          },
+        },
         "gatsby-remark-responsive-iframe",
         "gatsby-remark-unwrap-images",
       ],

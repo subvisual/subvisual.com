@@ -3,6 +3,9 @@ pre {
   margin: 40px 0;
 
   background-color: rgba(64, 63, 76, 0.1);
+  color: inherit; /* Override PrismJS default theme color */
+
+  text-shadow: none; /* Override PrismJS default text shadow */
 
   @media (--desktop) {
     padding: 28px;

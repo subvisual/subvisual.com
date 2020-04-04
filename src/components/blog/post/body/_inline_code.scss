@@ -2,6 +2,8 @@ code {
   padding: 0 4px;
 
   background-color: rgba(64, 63, 76, 0.1);
+  color: inherit; /** Override PrismJS default theme color **/
 
   font-size: smaller;
+  text-shadow: none; /* Override PrismJS default text shadow */
 }
