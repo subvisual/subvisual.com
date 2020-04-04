@@ -3,6 +3,7 @@ code {
 
   font-family: Inconsolata, monospace;
   font-weight: 400;
+  text-shadow: none; /* Override PrismJS default text shadow */
 
   /* Override PrismJS theme background in operators */
   &:global(.language-css) :global(.token.string),
