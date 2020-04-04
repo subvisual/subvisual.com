@@ -44,6 +44,7 @@ module.exports = root => [
             width: 980,
           },
         },
+        "gatsby-remark-external-links",
         {
           resolve: "gatsby-remark-prismjs",
           options: {
