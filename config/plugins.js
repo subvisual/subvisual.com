@@ -37,7 +37,16 @@ module.exports = root => [
   {
     resolve: "gatsby-transformer-remark",
     options: {
-      plugins: ["gatsby-remark-unwrap-images"],
+      plugins: [
+        {
+          resolve: "gatsby-remark-embed-video",
+          options: {
+            width: 980,
+          },
+        },
+        "gatsby-remark-responsive-iframe",
+        "gatsby-remark-unwrap-images",
+      ],
     },
   },
   "gatsby-transformer-sharp",

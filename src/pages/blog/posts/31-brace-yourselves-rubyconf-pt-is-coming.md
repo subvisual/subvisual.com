@@ -31,7 +31,8 @@ Braga can be described as an ancient, historic city, filled with young people, d
 ### The first sponsor
 
 Being a growing tech hub led to the creation of a local government agency to boost investments in the city, called InvestBraga. This agency is the first official partner of RubyConf Portugal. Check the presentation video for InvestBraga, featuring our venue:
-<iframe width="560" height="315" src="//www.youtube.com/embed/n1x-AbaDAbM" frameborder="0" allowfullscreen></iframe> 
+
+`youtube: n1x-AbaDAbM`
 
 
 ##CFP, Tickets, and more...

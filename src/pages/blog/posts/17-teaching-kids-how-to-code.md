@@ -26,7 +26,7 @@ The easiest way to introduce a kid to coding, especially if you don't know how t
 For the grown ups or more experienced, you can try [Codecademy](https://www.codecademy.com/) and/or [KidsRuby](https://www.kidsruby.com). The biggest initiative to the moment is [Code.org](https://code.org/). Visit it to know more about this and other tools. 
 See the video bellow to get inspired:
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/nKIu9yen5nc" frameborder="0" allowfullscreen></iframe>
+`youtube: nKIu9yen5nc`
 
 Are you teaching kids to code or want some tips to get started? 
 

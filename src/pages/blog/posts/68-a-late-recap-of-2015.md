@@ -50,7 +50,7 @@ At a first glance, we were flattered and happy because this could mean that our 
 
 We are still deciding if we are going to move forward with a third edition or not. At this point, we want to do a conference but are unsure if it will be a new edition of RubyConf Portugal or something broader in scope. One thing we know for sure, the second edition was an epic event, in a stunning venue, once again with tasty food and wine, with a memorable karaoke night (and rain :)) and here's a video to prove it.
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/8H8d-mGYjgw" frameborder="0" allowfullscreen></iframe>
+`youtube: 8H8d-mGYjgw`
 
 ## Projects Overview
 

@@ -1,5 +1,7 @@
-iframe {
-  display: block;
-  max-width: 100%;
-  margin: 0 auto;
+:global(.gatsby-resp-iframe-wrapper) {
+  margin: 40px auto;
+
+  @media (--desktop) {
+    margin: 56px auto;
+  }
 }

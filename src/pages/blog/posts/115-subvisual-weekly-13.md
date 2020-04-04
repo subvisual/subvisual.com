@@ -31,7 +31,7 @@ For me, going to [Pixels Camp](https://pixels.camp/) was a sort of wake up call 
 
 Having to rehearse a technical talk to my team before I actually delivered it, I got a lot of constructive feedback from them. Those few hours were more helpful to my talk than all the days I spent working on it by myself.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jrBTpf7-yaw" frameborder="0" allowfullscreen></iframe>
+`youtube: jrBTpf7-yaw`
 
 Attending a tech conference after so long also reminded me of how long it's been since I've worked on a new technology or side project.
 
