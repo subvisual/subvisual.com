@@ -66,11 +66,15 @@ const Title = ({ planetMorph, hide }) => {
             {renderAnimatedLetters("deas")}
             <span className={styles.planet}>
               <Planet
-                hovering={false}
                 hide={hide}
                 morph={planetMorph}
-                codeName="heroTittle"
                 color="blue"
+                hoverAnimation={{
+                  delay: 4.8,
+                  duration: 1.5,
+                  endYAt: -4,
+                }}
+                hovering
               />
             </span>
           </span>{" "}

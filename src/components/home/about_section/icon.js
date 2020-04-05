@@ -1,12 +1,13 @@
 import React from "react"
 import PropTypes from "prop-types"
+import _random from "lodash/random"
 
 import Planet from "../../planet"
 import colorCodes from "../../colors"
 
 import styles from "./icon.module.css"
 
-const Icon = ({ color, planetCodeName, planetMorph }) => {
+const Icon = ({ color, planetMorph }) => {
   const colorCode = colorCodes[color]
 
   return (
@@ -20,12 +21,11 @@ const Icon = ({ color, planetCodeName, planetMorph }) => {
       </svg>
       <div className={styles.planet}>
         <Planet
-          hoveringMin={5}
-          hoveringMax={10}
-          codeName={planetCodeName}
           morph={planetMorph}
           color={color}
-          hovering
+          hoverAnimation={{
+            endYAt: _random(5, 10),
+          }}
         />
       </div>
     </div>
@@ -34,7 +34,6 @@ const Icon = ({ color, planetCodeName, planetMorph }) => {
 
 Icon.propTypes = {
   color: PropTypes.string.isRequired,
-  planetCodeName: PropTypes.string.isRequired,
   planetMorph: PropTypes.func,
 }
 

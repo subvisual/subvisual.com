@@ -30,24 +30,19 @@ const PortfolioSubsection = ({ planetMorph, ventures }) => {
       <ul className={styles.ventures}>{ventures.map(renderVenture)}</ul>
       <div>
         <div className={styles.planet}>
-          <Planet
-            morph={planetMorph}
-            codeName="venturesSubvisualPlanet"
-            color="blue"
-            hovering
-          />
+          <Planet morph={planetMorph} color="blue" hovering />
         </div>
         <div className={styles.planet}>
-          <Planet codeName="venturesPlanet1" color="purple" hovering />
+          <Planet color="purple" hovering />
         </div>
         <div className={styles.planet}>
-          <Planet codeName="venturesPlanet2" color="purple" hovering />
+          <Planet color="purple" hovering />
         </div>
         <div className={styles.planet}>
-          <Planet codeName="venturesPlanet3" color="purple" hovering />
+          <Planet color="purple" hovering />
         </div>
         <div className={styles.planet}>
-          <Planet codeName="venturesPlanet4" color="purple" hovering />
+          <Planet color="purple" hovering />
         </div>
       </div>
     </div>

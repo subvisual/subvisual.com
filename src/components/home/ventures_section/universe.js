@@ -8,12 +8,7 @@ import styles from "./universe.module.css"
 const Universe = ({ subvisualPlanetMorph }) => (
   <div className={styles.root}>
     <div className={styles.planet}>
-      <Planet
-        codeName="universeSubvisualPlanet"
-        morph={subvisualPlanetMorph}
-        color="blue"
-        hovering
-      />
+      <Planet morph={subvisualPlanetMorph} color="blue" hovering />
     </div>
     <svg viewBox="0 0 221 224" fill="none" xmlns="http://www.w3.org/2000/svg">
       <defs>

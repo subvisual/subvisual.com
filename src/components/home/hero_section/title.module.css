@@ -26,31 +26,6 @@
 .planet {
   top: 7px;
   left: 3px;
-
-  transform: translateY(-4px);
-
-  animation-delay: 4.8s;
-  animation-duration: 1.5s;
-  animation-iteration-count: infinite;
-  animation-name: hover;
-  animation-timing-function: ease-in-out;
-  animation-direction: alternate;
-}
-
-/*
- * Firefox has an issue with shaky transitions, rotations help smooth it out.
- * source: https://gielberkers.com/how-to-fix-shaking-css-transitions-in-firefox/
- */
-@keyframes hover {
-  0% {
-    -moz-transform: translateY(-4px) rotate(-0.01deg);
-    transform: translateY(-4px);
-  }
-
-  100% {
-    -moz-transform: translateY(0) rotate(0.01deg);
-    transform: translateY(0);
-  }
 }
 
 @media (min-width: 586px) {
