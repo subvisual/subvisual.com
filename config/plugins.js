@@ -1,6 +1,6 @@
-const sass = require("sass")
 const path = require("path")
 const postCssUrl = require("postcss-url")
+const sass = require("sass")
 
 module.exports = root => [
   {
