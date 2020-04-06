@@ -1,7 +1,9 @@
+@import "common/breakpoints";
+
 .root {
   padding: 28px 20px 56px;
 
-  @media (--desktop) {
+  @include media(">=desktop") {
     padding: 56px 28px 112px;
   }
 }
@@ -20,7 +22,7 @@
 
   font-size: 16px;
 
-  @media (--desktop) {
+  @include media(">=desktop") {
     max-height: 28px;
 
     font-size: 20px;
@@ -38,7 +40,7 @@
 
   list-style: none;
 
-  @media (--desktop) {
+  @include media(">=desktop") {
     height: 33px;
   }
 }
@@ -46,7 +48,7 @@
 .nav-link {
   margin-right: 20px;
 
-  @media (--desktop) {
+  @include media(">=desktop") {
     margin-right: 28px;
   }
 

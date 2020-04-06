@@ -1,3 +1,5 @@
+@import "common/breakpoints";
+
 .root {
   display: inline-block;
 }
@@ -25,7 +27,7 @@
 
   transition: opacity 0.2s;
 
-  @media (--desktop) {
+  @include media(">=desktop") {
     bottom: -8px;
 
     width: 8px;
@@ -48,7 +50,7 @@
   line-height: 20px;
   text-decoration: none;
 
-  @media (--desktop) {
+  @include media(">=desktop") {
     font-size: 20px;
     line-height: 28px;
   }

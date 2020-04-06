@@ -1,5 +1,7 @@
+@import "common/breakpoints";
+
 .root {
-  @media (--desktop) {
+  @include media(">=desktop") {
     margin: 0 auto;
   }
 }
@@ -7,7 +9,7 @@
 .article {
   padding: 56px 0;
 
-  @media (--desktop) {
+  @include media(">=desktop") {
     padding: 0 0 224px;
   }
 }
@@ -15,7 +17,7 @@
 .header {
   margin-bottom: 88px;
 
-  @media (--desktop) {
+  @include media(">=desktop") {
     margin-bottom: 112px;
   }
 }

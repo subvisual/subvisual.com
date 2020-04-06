@@ -9,7 +9,7 @@ img {
 
   transform: translateX(-50%);
 
-  @media (--desktop) {
+  @include media(">=desktop") {
     margin: 56px 0;
   }
 }

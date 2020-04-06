@@ -29,11 +29,10 @@
     "gatsby-transformer-remark": "^2.6.15",
     "gatsby-transformer-sharp": "^2.1.14",
     "gatsby-transformer-yaml": "^2.1.10",
+    "include-media": "^1.4.9",
     "intersection-observer": "0.7.0",
     "lodash": "^4.17.15",
-    "node-sass": "^4.13.1",
     "popmotion": "^8.6.10",
-    "postcss-custom-media": "^7.0.7",
     "postcss-url": "^8.0.0",
     "prismjs": "^1.19.0",
     "prop-types": "^15.7.2",
@@ -43,6 +42,7 @@
     "react-intersection-observer": "^8.25.1",
     "react-morph": "0.4.0",
     "react-scroll-parallax": "^2.1.1",
+    "sass": "^1.26.3",
     "scroll-lock": "^2.1.2"
   },
   "devDependencies": {

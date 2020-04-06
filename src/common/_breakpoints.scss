@@ -1,0 +1,15 @@
+@use "sass:map";
+
+@import "include-media/dist/include-media";
+
+$breakpoints: (
+  "desktop": 950px,
+);
+
+$media-expressions: map.merge(
+  $media-expressions,
+  (
+    "grid-9": "(min-width: 700px)",
+    "grid-10": "(min-width: 1036px)",
+  )
+);
