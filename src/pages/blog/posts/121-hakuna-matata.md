@@ -1,14 +1,17 @@
 ---
 id: 121
 path: /posts/121-hakuna-matata/
-title: "Hakuna Matata…"
+title: Hakuna Matata...
 author: laura-esteves
 date: 2017-02-10
 cover: https://subvisual.s3.amazonaws.com/blog/hero/189/image.jpg
 retina_cover: https://subvisual.s3.amazonaws.com/blog/hero/189/image@2x.jpg
 tags:
   - general
-intro: "###... our problem-free philosophy."
+intro: >
+  I never laughed, cried, hugged and loved so much in such a short time. I had
+  the opportunity to meet amazing people during this volunteer experience and
+  I'm sharing some of the stories in this blog post.
 ---
 
 ### ... our problem-free philosophy.
