@@ -31,11 +31,11 @@
 }
 
 @font-face {
-  font-family: "Acta Display";
+  font-family: "Acta Display subset";
   font-style: normal;
   font-weight: normal;
-  src: url("../fonts/inline/acta-display-extra-bold.woff2") format("woff2"),
-    url("../fonts/inline/acta-display-extra-bold.woff") format("woff");
+  src: url("../fonts/inline/acta-display-extra-bold-subset.woff2") format("woff2"),
+    url("../fonts/inline/acta-display-extra-bold-subset.woff") format("woff");
   unicode-range: U+21-7E;
 }
 

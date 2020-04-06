@@ -1,10 +1,10 @@
 @import "../common/base.scss";
 
 @font-face {
-  font-family: "Acta Display without tittle";
+  font-family: "Acta Display subset without tittle";
   font-style: normal;
   font-weight: normal;
-  src: url("../fonts/acta-display-extra-bold-no-tittle.woff2") format("woff2"),
-    url("../fonts/acta-display-extra-bold-no-tittle.woff") format("woff");
+  src: url("../fonts/acta-display-extra-bold-subset-no-tittle.woff2") format("woff2"),
+    url("../fonts/acta-display-extra-bold-subset-no-tittle.woff") format("woff");
   unicode-range: U+69;
 }
