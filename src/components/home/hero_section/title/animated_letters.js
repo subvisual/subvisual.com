@@ -3,7 +3,6 @@ import PropTypes from "prop-types"
 import { motion } from "framer-motion"
 
 import Planet from "../../../planet"
-import useDetectJavascript from "../../../../utils/use_detect_javascript"
 
 import styles from "./animated_letters.module.scss"
 
