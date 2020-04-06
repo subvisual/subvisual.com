@@ -1,7 +1,8 @@
-@import "./custom_media";
-@import "./fonts";
-@import "./reset";
-@import "./react-scroll-parallax";
+@import "common/breakpoints";
+
+@import "common/fonts";
+@import "common/reset";
+@import "common/react-scroll-parallax";
 
 body {
   overflow-x: hidden;
@@ -14,7 +15,7 @@ body {
   font-weight: 400;
   line-height: 20px;
 
-  @media (--desktop) {
+  @include media(">=desktop") {
     font-size: 20px;
     line-height: 28px;
   }

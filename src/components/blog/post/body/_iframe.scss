@@ -1,7 +1,7 @@
 :global(.gatsby-resp-iframe-wrapper) {
   margin: 40px auto;
 
-  @media (--desktop) {
+  @include media(">=desktop") {
     margin: 56px auto;
   }
 }

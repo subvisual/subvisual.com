@@ -1,3 +1,5 @@
+@import "common/breakpoints";
+
 blockquote {
   position: relative;
 
@@ -10,7 +12,7 @@ blockquote {
   font-weight: 800;
   line-height: 28px;
 
-  @media (--desktop) {
+  @include media(">=desktop") {
     max-width: 634px;
     padding: 28px 28px 0 28px;
     margin: 78px auto 56px 0;
@@ -39,7 +41,7 @@ blockquote {
     font-weight: normal;
     line-height: 56px;
 
-    @media (--desktop) {
+    @include media(">=desktop") {
       top: -34px;
       left: 128px;
 
@@ -52,7 +54,7 @@ blockquote {
     padding: 0;
     margin: 20px 0;
 
-    @media (--desktop) {
+    @include media(">=desktop") {
       margin: 28px 0;
     }
   }
@@ -75,7 +77,7 @@ blockquote {
     font-weight: 500;
     line-height: 20px;
 
-    @media (--desktop) {
+    @include media(">=desktop") {
       max-width: 478px;
 
       font-size: 20px;

@@ -7,7 +7,7 @@ pre {
 
   text-shadow: none; /* Override PrismJS default text shadow */
 
-  @media (--desktop) {
+  @include media(">=desktop") {
     padding: 28px;
     margin: 56px 0;
 

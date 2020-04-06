@@ -4,7 +4,7 @@ ul {
   padding: 0 20px 0 40px;
   margin: 20px auto;
 
-  @media (--desktop) {
+  @include media(">=desktop") {
     max-width: 634px;
     padding: 0 28px 0 56px;
     margin: 28px auto;
