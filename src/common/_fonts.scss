@@ -36,6 +36,7 @@
   font-weight: normal;
   src: url("../fonts/inline/acta-display-extra-bold.woff2") format("woff2"),
     url("../fonts/inline/acta-display-extra-bold.woff") format("woff");
+  unicode-range: U+21-7E;
 }
 
 @font-face {
@@ -44,7 +45,7 @@
   font-weight: normal;
   src: url("../fonts/acta-display-extra-bold-no-tittle.woff2") format("woff2"),
     url("../fonts/acta-display-extra-bold-no-tittle.woff") format("woff");
-  unicode-range: U+69;
+  unicode-range: U+21-7E;
 }
 
 @font-face {
