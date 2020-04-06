@@ -1,10 +1,14 @@
 const postCssCustomMedia = require("postcss-custom-media")
+const postCssUrl = require("postcss-url")
 
 module.exports = root => [
   {
     resolve: "gatsby-plugin-sass",
     options: {
-      postCssPlugins: [postCssCustomMedia()],
+      postCssPlugins: [
+        postCssCustomMedia(),
+        postCssUrl([{ filter: "**/fonts/inline/*", url: "inline" }]),
+      ],
     },
   },
   "gatsby-plugin-react-helmet",

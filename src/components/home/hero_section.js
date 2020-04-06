@@ -89,7 +89,7 @@ const HeroSection = ({ data, planetMorph, hidePlanet }) => {
         <div className={styles.root}>
           <div className={styles.content}>
             <div id="hero-title" className={styles.title}>
-              <Title planetMorph={planetMorph} hide={hidePlanet} />
+              <Title planetMorph={planetMorph} hidden={hidePlanet} />
             </div>
             <div className={styles.text}>
               <p>

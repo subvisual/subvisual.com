@@ -9,7 +9,7 @@ import AboutSection from "../components/home/about_section"
 import HeroSection from "../components/home/hero_section"
 import VenturesSection from "../components/home/ventures_section"
 
-import "../common/base.scss"
+import "./index.scss"
 
 const curve = cubicBezier(1, -0.05, 0.45, 0.8)
 

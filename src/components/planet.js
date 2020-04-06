@@ -12,9 +12,7 @@ import { withMorphStyle } from "../utils/morph_utils"
 
 import styles from "./planet.module.css"
 
-const Planet = ({ color, hide, hoverAnimation, hovering, morph }) => {
-  if (hide) return null
-
+const Planet = ({ color, hoverAnimation, hovering, morph }) => {
   const animation = generateAnimation(hoverAnimation)
   const animationStyle = buildAnimationStyles(animation)
   const [rootStyle, newMorph] = withMorphStyle(morph, animationStyle)
@@ -44,7 +42,6 @@ const Planet = ({ color, hide, hoverAnimation, hovering, morph }) => {
 
 Planet.propTypes = {
   color: PropTypes.string.isRequired,
-  hide: PropTypes.bool,
   hoverAnimation: PropTypes.shape({
     delay: PropTypes.number,
     duration: PropTypes.number,
