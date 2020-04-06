@@ -1,8 +1,11 @@
 import React from "react"
 import PropTypes from "prop-types"
+import classNames from "classnames"
 import { motion } from "framer-motion"
 
 import Planet from "../../../planet"
+import useUserAgent from "../../../../utils/use_user_agent"
+import { isLinux } from "../../../../utils/user_agent_utils"
 
 import styles from "./animated_letters.module.scss"
 
@@ -57,28 +60,36 @@ const renderPlanet = ({ hidden, morph }) => {
   return planet
 }
 
-const HeroTitleAnimatedLetters = ({ hidden, planetMorph }) => (
-  <motion.span
-    variants={dragVariants}
-    animate={hidden ? "out" : "in"}
-    key="without-files"
-  >
-    {renderAnimatedLetters("We nurture ")}
-    <span className={styles.ideas}>
-      <motion.span className={styles.tittleless} variants={letterVariants}>
-        i
-      </motion.span>
-      <span className={styles.planet}>
-        {renderPlanet({ hidden, morph: planetMorph })}
+const HeroTitleAnimatedLetters = ({ hidden, planetMorph }) => {
+  const userAgent = useUserAgent()
+  const className = classNames(styles.root, {
+    [styles.linux]: isLinux(userAgent),
+  })
+
+  return (
+    <motion.span
+      className={className}
+      variants={dragVariants}
+      animate={hidden ? "out" : "in"}
+      key="without-files"
+    >
+      {renderAnimatedLetters("We nurture ")}
+      <span className={styles.ideas}>
+        <motion.span className={styles.tittleless} variants={letterVariants}>
+          i
+        </motion.span>
+        <span className={styles.planet}>
+          {renderPlanet({ hidden, morph: planetMorph })}
+        </span>
+        {renderAnimatedLetters("deas")}
       </span>
-      {renderAnimatedLetters("deas")}
-    </span>
-    <span className={styles.glue}>
-      {renderAnimatedLetters(" that empower ")}
-    </span>
-    {renderAnimatedLetters("people")}
-  </motion.span>
-)
+      <span className={styles.glue}>
+        {renderAnimatedLetters(" that empower ")}
+      </span>
+      {renderAnimatedLetters("people")}
+    </motion.span>
+  )
+}
 
 HeroTitleAnimatedLetters.propTypes = {
   hidden: PropTypes.bool.isRequired,
