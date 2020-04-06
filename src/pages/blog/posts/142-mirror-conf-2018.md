@@ -8,7 +8,11 @@ retina_cover: https://s3-eu-west-1.amazonaws.com/subvisual/blog/hero/post-142/mi
 date: 2018-10-02
 tags:
   - community
-intro: ""
+intro: >
+  We’re happy to announce the 3rd edition of Mirror Conf! This year our theme
+  is "The Future of the Web", and we’re inviting you to a trip through time,
+  from humanity's first forms of art and culture to the unknown wonders the
+  future might hold.
 ---
 
 We’re happy to announce that the 3rd edition of Mirror Conf is happening in 17 days! \o/
