@@ -7,9 +7,14 @@ import useDetectJavascript from "../../utils/use_detect_javascript"
 
 import styles from "./index.module.css"
 
+const renderPlaceholder = (props, shouldRender) => {
+  if (!shouldRender) return null
+
+  return <Placeholder {...props} />
+}
+
 export default props => {
   const hasJavascript = useDetectJavascript()
-
   const { delay, darkOverlay, imgStyle, ...imgProps } = props
   const [loaded, setLoaded] = React.useState(false)
   const [ref, inView] = useInView({
@@ -19,11 +24,10 @@ export default props => {
 
   return (
     <div ref={ref} className={styles.root}>
-      <Placeholder
-        visible={hasJavascript && inView && loaded}
-        delay={delay}
-        dark={darkOverlay}
-      />
+      {renderPlaceholder(
+        { visible: inView && loaded, delay, dark: darkOverlay },
+        hasJavascript
+      )}
       <Img
         {...imgProps}
         fadeIn={false}
