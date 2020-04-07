@@ -1,9 +1,11 @@
 @import "common/breakpoints";
 
+@import "./variables";
+
 blockquote {
   position: relative;
 
-  max-width: 618px;
+  max-width: $BlogPostBody-text-maxWidth-mobile;
   padding: 20px 20px 0;
   margin: 56px auto 40px 0;
 
@@ -13,7 +15,7 @@ blockquote {
   line-height: 28px;
 
   @include media(">=desktop") {
-    max-width: 634px;
+    max-width: $BlogPostBody-text-maxWidth-desktop;
     padding: 28px 28px 0 28px;
     margin: 78px auto 56px 0;
 
@@ -43,7 +45,7 @@ blockquote {
 
     @include media(">=desktop") {
       top: -34px;
-      left: 128px;
+      left: 78px;
 
       font-size: 72px;
       line-height: 72px;

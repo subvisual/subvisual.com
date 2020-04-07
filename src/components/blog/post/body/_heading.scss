@@ -1,3 +1,5 @@
+@import "./variables";
+
 h1 {
   display: none;
 }
@@ -7,14 +9,14 @@ h3,
 h4,
 h5,
 h6 {
-  max-width: 618px;
+  max-width: $BlogPostBody-text-maxWidth-mobile;
   padding: 0 20px;
 
   font-family: colfax-web, sans-serif;
   font-weight: 500;
 
   @include media(">=desktop") {
-    max-width: 634px;
+    max-width: $BlogPostBody-text-maxWidth-desktop;
     padding: 0 28px;
   }
 }
