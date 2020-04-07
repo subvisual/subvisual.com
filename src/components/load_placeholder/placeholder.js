@@ -4,18 +4,25 @@ import classNames from "classnames"
 
 import styles from "./placeholder.module.css"
 
-const Placeholder = ({ dark, delay, visible }) => {
+const Placeholder = ({ dark, delay, id, visible }) => {
   const className = classNames(styles.root, {
     [styles.dark]: dark,
     [styles.visible]: visible,
   })
 
-  return <div style={{ transitionDelay: `${delay}s` }} className={className} />
+  return (
+    <div
+      className={className}
+      id={id}
+      style={{ transitionDelay: `${delay}s` }}
+    />
+  )
 }
 
 Placeholder.propTypes = {
   dark: PropTypes.bool,
   delay: PropTypes.number,
+  id: PropTypes.string,
   visible: PropTypes.bool,
 }
 
