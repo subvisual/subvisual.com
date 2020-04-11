@@ -22,8 +22,6 @@ const PostBody = ({ html }) => {
     [styles.macos]: isMacOS(userAgent),
     [styles.safari]: isSafari(userAgent),
   })
-  console.log("is edge?", isEdge(userAgent))
-  console.log("root className", rootClassName)
 
   return (
     <BodyWrapper>
