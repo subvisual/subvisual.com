@@ -1,9 +1,14 @@
+import { useEffect, useState } from "react"
 import UAParser from "ua-parser-js"
 
 export default () => {
-  if (!window || !window.navigator) return undefined
+  const [userAgent, setUserAgent] = useState(UAParser())
 
-  const parser = new UAParser(window.navigator.userAgent)
+  useEffect(() => {
+    const parsed = UAParser(window.navigator.userAgent)
 
-  return parser.getResult()
+    setUserAgent(parsed)
+  }, [])
+
+  return userAgent
 }
