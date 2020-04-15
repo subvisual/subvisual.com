@@ -25,11 +25,14 @@ const query = graphql`
 `
 
 const renderItem = ({ frontmatter }) => {
-  const { author, id, path, ...entry } = frontmatter
+  const { author, date, id, path, ...entry } = frontmatter
   const { name: authorName } = author
+
   const entryProps = {
     author: authorName,
     path,
+    date: new Date(date),
+    slug,
     ...entry,
   }
 
