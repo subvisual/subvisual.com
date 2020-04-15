@@ -11,7 +11,7 @@ import styles from "./post.module.scss"
 
 export const query = graphql`
   query($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    markdownRemark(frontmatter: { path: { eq: $slug } }) {
       html
       frontmatter {
         author {

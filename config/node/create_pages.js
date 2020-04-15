@@ -15,8 +15,8 @@ const createBlogPostsPages = async ({ createPage, graphql }) => {
         sort: { order: DESC, fields: [frontmatter___date] }
       ) {
         nodes {
-          fields {
-            slug
+          frontmatter {
+            path
           }
         }
       }
@@ -24,12 +24,13 @@ const createBlogPostsPages = async ({ createPage, graphql }) => {
   `
   const results = await graphql(query)
 
-  results.data.allMarkdownRemark.nodes.forEach(({ fields: { slug } }) =>
-    createPage({
-      component,
-      context: { slug },
-      path: path.join("/blog", slug),
-    })
+  results.data.allMarkdownRemark.nodes.forEach(
+    ({ frontmatter: { path: slug } }) =>
+      createPage({
+        component,
+        context: { slug },
+        path: path.join("/blog", slug),
+      })
   )
 }
 
