@@ -32,7 +32,6 @@ const renderItem = ({ frontmatter }) => {
     author: authorName,
     path,
     date: new Date(date),
-    slug,
     ...entry,
   }
 
