@@ -1,15 +1,18 @@
 img {
+  margin: 40px 0;
+
+  @include media(">=desktop") {
+    margin: 56px 0;
+  }
+}
+
+img:not(:global .gatsby-resp-image-image) {
   position: relative;
   left: 50%;
 
   display: block;
   width: auto;
   max-width: 100%;
-  margin: 40px 0;
 
   transform: translateX(-50%);
-
-  @include media(">=desktop") {
-    margin: 56px 0;
-  }
 }

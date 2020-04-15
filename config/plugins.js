@@ -53,6 +53,13 @@ module.exports = root => [
             width: 980,
           },
         },
+        {
+          resolve: "gatsby-remark-images",
+          options: {
+            maxWidth: 834,
+            linkImagesToOriginal: false,
+          },
+        },
         "gatsby-remark-external-links",
         {
           resolve: "gatsby-remark-prismjs",
