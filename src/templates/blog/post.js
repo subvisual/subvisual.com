@@ -42,7 +42,7 @@ const BlogPostTemplate = ({ author, date, html, retinaCover, title }) => (
 
 BlogPostTemplate.propTypes = {
   author: PropTypes.object.isRequired,
-  date: PropTypes.string.isRequired,
+  date: PropTypes.instanceOf(Date).isRequired,
   html: PropTypes.string.isRequired,
   retinaCover: PropTypes.string,
   title: PropTypes.string.isRequired,
@@ -53,5 +53,9 @@ export default ({ data }) => {
   const { frontmatter, html } = markdownRemark
   const { author, date, retina_cover: retinaCover, title } = frontmatter
 
-  return <BlogPostTemplate {...{ author, date, html, retinaCover, title }} />
+  return (
+    <BlogPostTemplate
+      {...{ author, date: new Date(date), html, retinaCover, title }}
+    />
+  )
 }
