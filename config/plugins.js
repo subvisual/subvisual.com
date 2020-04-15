@@ -40,7 +40,7 @@ module.exports = root => [
   {
     resolve: "gatsby-source-filesystem",
     options: {
-      path: `${root}/src/pages/blog`,
+      path: `${root}/src/posts`,
     },
   },
   {
