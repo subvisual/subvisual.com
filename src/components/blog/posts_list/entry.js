@@ -29,7 +29,7 @@ const Entry = ({ author, date, intro, path, title }) => {
 
 Entry.propTypes = {
   author: PropTypes.string.isRequired,
-  date: PropTypes.instanceOf(Date).isRequired,
+  date: PropTypes.string.isRequired,
   intro: PropTypes.string.isRequired,
   path: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,

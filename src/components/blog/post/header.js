@@ -46,8 +46,8 @@ BlogPostHeader.propTypes = {
   author: PropTypes.shape({
     name: PropTypes.string.isRequired,
   }).isRequired,
-  date: PropTypes.instanceOf(Date).isRequired,
-  retinaCover: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  retinaCover: PropTypes.string,
   title: PropTypes.string.isRequired,
 }
 
