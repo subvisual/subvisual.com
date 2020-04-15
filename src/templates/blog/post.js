@@ -42,9 +42,9 @@ const BlogPostTemplate = ({ author, date, html, retinaCover, title }) => (
 
 BlogPostTemplate.propTypes = {
   author: PropTypes.object.isRequired,
-  date: PropTypes.instanceOf(Date).isRequired,
+  date: PropTypes.string.isRequired,
   html: PropTypes.string.isRequired,
-  retinaCover: PropTypes.string.isRequired,
+  retinaCover: PropTypes.string,
   title: PropTypes.string.isRequired,
 }
 
