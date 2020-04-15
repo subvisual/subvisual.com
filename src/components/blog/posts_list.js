@@ -9,15 +9,13 @@ const query = graphql`
   {
     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
       nodes {
-        fields {
-          slug
-        }
         frontmatter {
           author {
             name
           }
           date
           id
+          path
           title
           intro
         }
@@ -26,13 +24,12 @@ const query = graphql`
   }
 `
 
-const renderItem = ({ fields, frontmatter }) => {
-  const { slug } = fields
-  const { author, id, ...entry } = frontmatter
+const renderItem = ({ frontmatter }) => {
+  const { author, id, path, ...entry } = frontmatter
   const { name: authorName } = author
   const entryProps = {
     author: authorName,
-    slug,
+    path,
     ...entry,
   }
 
