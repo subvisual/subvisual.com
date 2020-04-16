@@ -22,7 +22,7 @@ intro: "Last year, I took on the task of improving the continuous process over a
 [actions-checkout]: https://github.com/actions/checkout/tree/v2.0.0
 [twitter]: https://twitter.com/naps62
 
-<div class="custom-paragraph">
+<div class="BlogPostParagraph">
 <em>
 This post was adapted from a talk that I gave at several local meetups over the past few months. It got enough positive
 feedback that I felt compeled to convert it to written format. Original slides are available <a
