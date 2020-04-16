@@ -2,9 +2,11 @@ const path = require("path")
 
 const { normalizePathForRegex } = require("./path_utils")
 
+const ROOT = path.resolve(__dirname, "../..")
+
 const createBlogPostsPages = async ({ createPage, graphql }) => {
-  const blogPostsAbsolutePath = path.resolve(__dirname, "../../src/posts")
-  const component = path.resolve(__dirname, "../../src/templates/blog/post.js")
+  const blogPostsAbsolutePath = path.resolve(ROOT, "src/posts")
+  const component = path.resolve(ROOT, "src/templates/blog/post.js")
   const basePath = normalizePathForRegex(blogPostsAbsolutePath)
   const query = `
     {
