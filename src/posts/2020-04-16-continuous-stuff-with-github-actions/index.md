@@ -27,11 +27,11 @@ intro: >
 [twitter]: https://twitter.com/naps62
 
 <div class="BlogPostParagraph">
-<em>
-This post was adapted from a talk that I gave at several local meetups over the past few months. It got enough positive
-feedback that I felt compeled to convert it to written format. Original slides are available <a
-href="https://slides.com/naps62/continuous-stuff" target="_blanks">here</a>.
-</em>
+  <em>
+    This post was adapted from a talk that I gave at several local meetups over the
+    past few months. It got enough positive feedback that I felt compeled to convert it to written format. Original slides
+    are available <a href="https://slides.com/naps62/continuous-stuff" target="_blank">here</a>.
+  </em>
 </div>
 
 Last year, I took on the task of improving the continuous process over at [UTRUST][utrust]. We weren't really happy with
@@ -49,20 +49,20 @@ I've worked with a fair amount of CIs over the years...
 
 ![CIs](./cis.png)
 
-There was always something that seemed a bit off, though.
-They all do one simple, but very useful, thing: they react to commits
+There was always something that seemed a bit off, though.  They all do one simple, but very useful, thing: they react to
+commits
 
-The main use case for this is the now common one: to run tests for every new version of your code.
-But any kind of automated task can be triggered, really. A deploy is very common as well, or a preview build for
-testing.
+The main use case for this is the now common one: to run tests for every new version of your code.  But any kind of
+automated task can be triggered, really. A deploy is very common as well, or a preview build for testing.
 
 But a lot of these automations shouldn't necessarily need a commit. They are not triggered by changes in the code.
-Deploys might be triggered by some higher-level decision, or a QA team manually approving the latest version, which was committed days ago.
+Deploys might be triggered by some higher-level decision, or a QA team manually approving the latest version, which was
+committed days ago.
 
 ### Not everything is a commit
 
-This led to the common practice of creating "special" ways to trigger these commits. In [CircleCI][circleci], for example, you'd do
-something like this:
+This led to the common practice of creating "special" ways to trigger these commits. In [CircleCI][circleci], for
+example, you'd do something like this:
 
 ```yaml
 workflows:
@@ -75,24 +75,23 @@ workflows:
                 - staging
 ```
 
-With this, commits to the `staging` branch would trigger a deploy to staging. Seems simple enough.
-But now you need a branch for every single environment. And probably quite a few `push -f` commands, or similar git
-sorceries to force a commit from your normal workflow into a branch whose history is messier than the plot of
-[Primer][primer].
+With this, commits to the `staging` branch would trigger a deploy to staging. Seems simple enough.  But now you need
+a branch for every single environment. And probably quite a few `push -f` commands, or similar git sorceries to force
+a commit from your normal workflow into a branch whose history is messier than the plot of [Primer][primer].
 
 ## GitHub API to the rescue
 
 The problem here is that we're solving things the wrong way. A deploy is not a commit. It's a deploy.
 
-And GitHub actually has a [Deployments API][github-deployments] that encapsulates that exact concept.
-You can tell GitHub to create a deployment, by providing a certain git reference, an environment to which you want to
-deploy, and other optional parameters.
+And GitHub actually has a [Deployments API][github-deployments] that encapsulates that exact concept.  You can tell
+GitHub to create a deployment, by providing a certain git reference, an environment to which you want to deploy, and
+other optional parameters.
 
 GitHub will then collect this and build a history of all the deploys you requested, and the status of each one (which
 can be updated using the same API).
 
-This API won't really do anything by itself, though. It builds a nice log, but that's about it.
-You can subscribe to webhooks from this API though.
+This API won't really do anything by itself, though. It builds a nice log, but that's about it.  You can subscribe to
+webhooks from this API though.
 
 So any 3rd party service could theoretically listen to these webhooks, and process the deployment you requested, instead
 of forcing you the come up with fancy ways to commit things in a particular way.
@@ -153,9 +152,8 @@ Requests' history should trigger the job.
 We can also react to comments on the Pull Request itself, which can be useful if you want a more seamless integration of
 some features.
 
-In my case, I wanted to deploy a preview version of Pull Requests to our frontend application.
-It wasn't efficient to do this for every single PR though (only a small subset of them actually need this), so we went
-with this instead:
+In my case, I wanted to deploy a preview version of Pull Requests to our frontend application.  It wasn't efficient to
+do this for every single PR though (only a small subset of them actually need this), so we went with this instead:
 
 ![Comments triggering GitHub Action](./github-actions-comment.png)
 
@@ -178,9 +176,8 @@ extension: *component
   baz: biz
 ```
 
-... but they don't look pretty, especially once they start to grow.
-And if you, like me, have any experience mantaining a large project with multiple CI
-worflows and configurations, you probably know that things tend to get out of hand.
+... but they don't look pretty, especially once they start to grow.  And if you, like me, have any experience mantaining
+a large project with multiple CI worflows and configurations, you probably know that things tend to get out of hand.
 It's always a single YAML file, which can grow to hundreds of lines. You can reuse blocks of YAML, but they may end up
 running under different contexts (e.g.: different docker images, different dependencies installed, etc).
 
@@ -198,12 +195,12 @@ push_s3:
 ```
 
 This is a trimmed-down example, where a custom command is encapsulated in a `my-custom-orb` Orb. You may notice that the
-main config file is the one who specificies the execution environment (ubuntu, in this case).
-So, if the Orb tries to `yum install git`, this would fail, because that package manager isn't used in Ubuntu.
+main config file is the one who specificies the execution environment (ubuntu, in this case).  So, if the Orb tries to
+`yum install git`, this would fail, because that package manager isn't used in Ubuntu.
 
 So you end up with a mess of a script that does a whole bunch of magic just to figure out how to install the
-dependencies it needs. Check out [the actual source code](orb-awscli) for the official Orb that installs `awscli` on your
-jobs. It's a bit of a mess, isn't it?
+dependencies it needs. Check out [the actual source code](orb-awscli) for the official Orb that installs `awscli` on
+your jobs. It's a bit of a mess, isn't it?
 
 You could delegate everything into a ready-to-go Docker container, and run whatever you need in there. But then you lose
 access to the overall filesystem of your original job, where you already cloned your project and created a bunch of
@@ -238,8 +235,10 @@ jobs:
       run: npm run test
 ```
 
-The first step here, `actions/checkout@v2` is what checks out your repo to the local filesystem. And it's
-actually done in JavaScript! The syntax, as you may tell, looks suspiciously like a link to a GitHub repo. And, well, it is. If you check [release `v2` on that repository][actions-checkout], you'll see the actual JS code used to clone your repo into the action.
+The first step here, `actions/checkout@v2` is what checks out your repo to the local filesystem. And it's actually done
+in JavaScript! The syntax, as you may tell, looks suspiciously like a link to a GitHub repo. And, well, it is. If you
+check [release `v2` on that repository][actions-checkout], you'll see the actual JS code used to clone your repo into
+the action.
 
 And of course, you're free to fork this action and edit it with your own customizations, if you need. The exact same
 flow that GitHub already allows for regular open-source work, now applied to their own CI.
@@ -250,17 +249,20 @@ As you may be able to tell, I like GitHub Actions quite a lot. They're not witho
 
 I have 2 major concerns:
 
-1. **Still a new kid in the block**. Public beta opened less than a year ago, which might be good enough of a reason to think twice before jumping into the hype-train. It's still in it's infancy and, as such, a lot of things may not be as polished as you'd expect. There's quite a lot of missing features being requested by the community, and hopefully we'll see them implemented soon enough.
-2. **No SSH access for debugging**. This might fall under the previous point, but the lack of ability to debug failed actions by
-   SSH'ing into the container was almost a deal breaker for me. I spent countless hours debugging things via
+1. **Still a new kid in the block**. Public beta opened less than a year ago, which might be good enough of a reason to
+   think twice before jumping into the hype-train. It's still in it's infancy and, as such, a lot of things may not be
+   as polished as you'd expect. There's quite a lot of missing features being requested by the community, and hopefully
+   we'll see them implemented soon enough.
+2. **No SSH access for debugging**. This might fall under the previous point, but the lack of ability to debug failed
+   actions by SSH'ing into the container was almost a deal breaker for me. I spent countless hours debugging things via
    trial-and-error that would have been way faster had I just been able to see what happened for myself.
 
 ## Wrapping up
 
 These drawbacks, as concerning as they may have been, didn't prevent me from using GitHub Actions over the past few
 months, and even performing a company-wide migration at [Utrust][utrust]. This post was my way of compiling a short
-tutorial around how I started using them, and how they're so much different than previous CIs I've tried.
-By far, the ease with each I'm able to create reusable, encapsulated actions, and the ability to react not just to
-commits, but to any other event GitHub emits, is a very powerful tool.
+tutorial around how I started using them, and how they're so much different than previous CIs I've tried.  By far, the
+ease with each I'm able to create reusable, encapsulated actions, and the ability to react not just to commits, but to
+any other event GitHub emits, is a very powerful tool.
 
 Let me know on [twitter][twitter] if you have any thoughts about this!
