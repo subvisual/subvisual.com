@@ -38,7 +38,7 @@ I ended up pleasantly surprised. But first, let's talk about what exactly was wr
 
 I've worked with a fair amount of CIs over the years...
 
-![CIs](./2020-04-16-continuous-stuff-with-github-actions/cis.png)
+![CIs](./cis.png)
 
 There was always something that seemed a bit off, though.
 They all do one simple, but very useful, thing: they react to commits
@@ -148,7 +148,7 @@ In my case, I wanted to deploy a preview version of Pull Requests to our fronten
 It wasn't efficient to do this for every single PR though (only a small subset of them actually need this), so we went
 with this instead:
 
-![Comments triggering GitHub Action](./2020-04-16-continuous-stuff-with-github-action/github-actions-comment.png)
+![Comments triggering GitHub Action](./github-actions-comment.png)
 
 The ease with which this was all done by just using different hooks made this very pleasant to work with.
 
