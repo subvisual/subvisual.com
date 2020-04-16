@@ -1,20 +1,6 @@
 @import "common/breakpoints";
 
 .root {
-  padding: 28px 20px 56px;
-
-  @include media(">=desktop") {
-    padding: 28px 28px 56px;
-  }
-}
-
-.content {
-  width: 100%;
-  max-width: 1184px;
-  margin: 0 auto;
-}
-
-.posts-list {
   width: 100%;
   max-width: 980px;
   margin: 0 auto;
@@ -22,7 +8,7 @@
   list-style: none;
 }
 
-.posts-list-item {
+.item {
   padding: 28px 0;
 
   border-bottom: 1px solid currentColor;
