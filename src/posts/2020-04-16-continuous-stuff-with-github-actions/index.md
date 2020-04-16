@@ -6,7 +6,11 @@ author: miguel-palhas
 date: 2020-04-20
 tags:
   - devops
-intro: "Last year, I took on the task of improving the continuous process over at Utrust. We weren't really happy with the amount of work that went into our releases, and I was looking for a more agile approach, where everyone from developers to the QA team could do their part with low friction."
+intro: >
+  Last year, I took on the task of improving the continuous process over at
+  Utrust. We weren't really happy with the amount of work that went into our
+  releases, and I was looking for a more agile approach, where everyone from
+  developers to the QA team could do their part with low friction.
 ---
 
 [slides]: https://slides.com/naps62/continuous-stuff
