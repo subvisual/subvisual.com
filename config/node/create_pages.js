@@ -1,11 +1,13 @@
 const path = require("path")
 
-const blogPostsConfig = require("./blog_posts")
 const { normalizePathForRegex } = require("./path_utils")
 
+const ROOT = path.resolve(__dirname, "../..")
+
 const createBlogPostsPages = async ({ createPage, graphql }) => {
-  const component = path.resolve("./src/templates/blog/post.js")
-  const basePath = normalizePathForRegex(blogPostsConfig.absolutePath)
+  const blogPostsAbsolutePath = path.resolve(ROOT, "src/posts")
+  const component = path.resolve(ROOT, "src/templates/blog/post.js")
+  const basePath = normalizePathForRegex(blogPostsAbsolutePath)
   const query = `
     {
       allMarkdownRemark(
@@ -21,7 +23,7 @@ const createBlogPostsPages = async ({ createPage, graphql }) => {
     createPage({
       component,
       context: { slug },
-      path: path.join("/blog", slug),
+      path: path.posix.join("/blog", slug),
     })
   )
 }

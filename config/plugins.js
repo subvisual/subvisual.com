@@ -2,14 +2,16 @@ const path = require("path")
 const postCssUrl = require("postcss-url")
 const sass = require("sass")
 
-module.exports = root => [
+const ROOT = path.resolve(__dirname, "..")
+
+module.exports = [
   {
     resolve: "gatsby-plugin-sass",
     options: {
       implementation: sass,
       includePaths: [
-        path.resolve(root, "node_modules"),
-        path.resolve(root, "src"),
+        path.resolve(ROOT, "node_modules"),
+        path.resolve(ROOT, "src"),
       ],
       postCssPlugins: [
         postCssUrl([{ filter: "**/fonts/inline/*", url: "inline" }]),
@@ -21,26 +23,26 @@ module.exports = root => [
   {
     resolve: "gatsby-source-filesystem",
     options: {
-      path: `${root}/src/data`,
+      path: path.resolve(ROOT, "src/data"),
     },
   },
   {
     resolve: "gatsby-source-filesystem",
     options: {
-      path: `${root}/src/documents`,
+      path: path.resolve(ROOT, "src/documents"),
     },
   },
   {
     resolve: "gatsby-source-filesystem",
     options: {
       name: "images",
-      path: `${root}/src/images`,
+      path: path.resolve(ROOT, "src/images"),
     },
   },
   {
     resolve: "gatsby-source-filesystem",
     options: {
-      path: `${root}/src/posts`,
+      path: path.resolve(ROOT, "src/posts"),
     },
   },
   {
@@ -86,7 +88,7 @@ module.exports = root => [
       background_color: "#ffffff",
       theme_color: "#ffffff",
       display: "minimal-ui",
-      icon: "src/images/subvisual-symbol-blue.svg",
+      icon: path.resolve(ROOT, "src/images/subvisual-symbol-blue.svg"),
     },
   },
   {
