@@ -22,8 +22,13 @@ intro: "Last year, I took on the task of improving the continuous process over a
 [actions-checkout]: https://github.com/actions/checkout/tree/v2.0.0
 [twitter]: https://twitter.com/naps62
 
-*This post was adapted from a talk that I gave at several local meetups over the past few months. It got enough positive
-feedback that I felt compeled to convert it to written format. Original slides are available [here][slides]*
+<div class="custom-paragraph">
+<em>
+This post was adapted from a talk that I gave at several local meetups over the past few months. It got enough positive
+feedback that I felt compeled to convert it to written format. Original slides are available <a
+href="https://slides.com/naps62/continuous-stuff" target="_blanks">here</a>.
+</em>
+</div>
 
 Last year, I took on the task of improving the continuous process over at [UTRUST][utrust]. We weren't really happy with
 the amount of work that went into our releases, and I was looking for a more agile approach, where everyone from
