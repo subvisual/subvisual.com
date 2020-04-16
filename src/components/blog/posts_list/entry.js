@@ -6,6 +6,7 @@ import dateFormat from "dateformat"
 import styles from "./entry.module.scss"
 
 const Entry = ({ author, date, intro, path, title }) => {
+  const { name: authorName } = author
   const formattedDate = dateFormat(date, "mmmm d, yyyy")
 
   return (
@@ -20,7 +21,7 @@ const Entry = ({ author, date, intro, path, title }) => {
         </Link>
       </p>
       <div className={styles.info}>
-        <span className={styles.author}>By {author}</span>
+        <span className={styles.author}>By {authorName}</span>
         <span className={styles.date}>On {formattedDate}</span>
       </div>
     </div>
@@ -28,7 +29,9 @@ const Entry = ({ author, date, intro, path, title }) => {
 }
 
 Entry.propTypes = {
-  author: PropTypes.string.isRequired,
+  author: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+  }).isRequired,
   date: PropTypes.instanceOf(Date).isRequired,
   intro: PropTypes.string.isRequired,
   path: PropTypes.string.isRequired,
