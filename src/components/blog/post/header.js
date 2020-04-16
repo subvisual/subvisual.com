@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import dateFormat from "dateformat"
 
-import Title from "./title"
+import Title from "../title"
 import Wrapper from "./wrapper"
 
 import styles from "./header.module.css"
