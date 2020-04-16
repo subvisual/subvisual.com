@@ -10,25 +10,19 @@ const createBlogPostsPages = async ({ createPage, graphql }) => {
     {
       allMarkdownRemark(
         filter: { fileAbsolutePath: { regex: "/^${basePath}/" } },
-        sort: { order: DESC, fields: [frontmatter___date] }
       ) {
-        nodes {
-          frontmatter {
-            path
-          }
-        }
+        distinct(field: frontmatter___path)
       }
     }
   `
   const results = await graphql(query)
 
-  results.data.allMarkdownRemark.nodes.forEach(
-    ({ frontmatter: { path: slug } }) =>
-      createPage({
-        component,
-        context: { slug },
-        path: path.join("/blog", slug),
-      })
+  results.data.allMarkdownRemark.distinct.forEach(slug =>
+    createPage({
+      component,
+      context: { slug },
+      path: path.join("/blog", slug),
+    })
   )
 }
 
