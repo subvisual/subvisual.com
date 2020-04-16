@@ -1,13 +1,11 @@
 const path = require("path")
 
 const blogPostsConfig = require("./blog_posts")
+const { normalizePathForRegex } = require("./path_utils")
 
 const createBlogPostsPages = async ({ createPage, graphql }) => {
   const component = path.resolve("./src/templates/blog/post.js")
-  const basePath = blogPostsConfig.absolutePath.replace(
-    new RegExp("/", "g"),
-    "\\/"
-  )
+  const basePath = normalizePathForRegex(blogPostsConfig.absolutePath)
   const query = `
     {
       allMarkdownRemark(
