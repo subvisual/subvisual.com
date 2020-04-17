@@ -5,6 +5,7 @@ import { graphql } from "gatsby"
 import Body from "../../components/blog/post/body"
 import Header from "../../components/blog/post/header"
 import Layout from "../../components/layout"
+import SEO from "../../components/seo"
 
 import "../../common/base.scss"
 import styles from "./post.module.scss"
@@ -27,6 +28,7 @@ export const query = graphql`
 
 const BlogPostTemplate = ({ author, date, html, retinaCover, title }) => (
   <Layout>
+    <SEO title={title} />
     <div className={styles.root}>
       <article className={styles.article}>
         <header className={styles.header}>
