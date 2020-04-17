@@ -4,9 +4,12 @@ path: /posts/147-plug-based-authorisation-for-elixir/
 title: Plug-based authorisation for Elixir and Phoenix
 author: fernando-mendes
 date: 2020-04-16
+tags:
+  - development
+  - elixir
 intro: >
   A while ago I felt the shame of copying and pasting code around from projects.
-  Eventually, I decided to stop being lazy, extracting it and making a hex
+  Eventually, I decided to stop being lazy, extract it and make a hex
   package out of it. This is story of that project and a walkthrough all the
   awesome things it does, with very little code. Yay Elixir!
 ---
@@ -218,3 +221,7 @@ Lots of stuff happening, small number of codes. Elixir awesome. Demo [here](http
 [Have a nice.](https://www.youtube.com/watch?v=VvPaEsuz-tY)
 
 Mendes
+
+---
+
+PS: Looking to learn Elixir? We're having an Elixir workshop, 2h a day during 8 days. All proceedings from the workshop will be directed to fight COVID-19 and donated to a charity. Further details and tickets at: [getgoing.subvisual.com](https://getgoing.subvisual.com)
