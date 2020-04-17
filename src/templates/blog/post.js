@@ -16,6 +16,7 @@ export const query = graphql`
       html
       frontmatter {
         author {
+          key
           name
         }
         date

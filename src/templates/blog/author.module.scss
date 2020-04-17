@@ -1,0 +1,29 @@
+@import "common/breakpoints";
+
+.root {
+  padding: 28px 20px 56px;
+
+  @include media(">=desktop") {
+    padding: 28px 28px 56px;
+  }
+}
+
+.content {
+  width: 100%;
+  max-width: 1184px;
+  margin: 0 auto;
+}
+
+.title {
+  max-width: 980px;
+  margin: 0 auto 80px;
+
+  @include media(">=desktop") {
+    margin: 0 auto 112px;
+  }
+}
+
+.posts {
+  max-width: 980px;
+  margin: 0 auto;
+}

@@ -3,15 +3,41 @@ const path = require("path")
 const { normalizePathForRegex } = require("./path_utils")
 
 const ROOT = path.resolve(__dirname, "../..")
+const BLOG_POSTS_ABSOLUTE_PATH = path.resolve(ROOT, "src/posts")
 
-const createBlogPostsPages = async ({ createPage, graphql }) => {
-  const blogPostsAbsolutePath = path.resolve(ROOT, "src/posts")
-  const component = path.resolve(ROOT, "src/templates/blog/post.js")
-  const basePath = normalizePathForRegex(blogPostsAbsolutePath)
+const createBlogAuthorsPages = async ({ createPage, graphql }) => {
+  const component = path.resolve(
+    __dirname,
+    "../../src/templates/blog/author.js"
+  )
+  const basePath = normalizePathForRegex(BLOG_POSTS_ABSOLUTE_PATH)
   const query = `
     {
       allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/^${basePath}/" } },
+        filter: { fileAbsolutePath: { regex: "/^${basePath}/" } }
+      ) {
+        distinct(field: frontmatter___author___key)
+      }
+    }
+  `
+  const results = await graphql(query)
+
+  results.data.allMarkdownRemark.distinct.forEach(authorKey =>
+    createPage({
+      component,
+      context: { authorKey, blogPostsPathRegex: `/^${basePath}/` },
+      path: path.posix.join("/blog/author", authorKey),
+    })
+  )
+}
+
+const createBlogPostsPages = async ({ createPage, graphql }) => {
+  const component = path.resolve(ROOT, "src/templates/blog/post.js")
+  const basePath = normalizePathForRegex(BLOG_POSTS_ABSOLUTE_PATH)
+  const query = `
+    {
+      allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/^${basePath}/" } }
       ) {
         distinct(field: frontmatter___path)
       }
@@ -31,5 +57,6 @@ const createBlogPostsPages = async ({ createPage, graphql }) => {
 module.exports = async ({ actions, graphql }) => {
   const { createPage } = actions
 
+  await createBlogAuthorsPages({ createPage, graphql })
   await createBlogPostsPages({ createPage, graphql })
 }

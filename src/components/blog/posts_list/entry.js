@@ -5,8 +5,17 @@ import dateFormat from "dateformat"
 
 import styles from "./entry.module.scss"
 
+const renderAuthor = ({ className, key, name }) => {
+  if (!key || !name) return null
+
+  return (
+    <Link to={`/blog/author/${key}`} className={className}>
+      By {name}
+    </Link>
+  )
+}
+
 const Entry = ({ author, date, intro, path, title }) => {
-  const { name: authorName } = author
   const formattedDate = dateFormat(date, "mmmm d, yyyy")
 
   return (
@@ -21,7 +30,7 @@ const Entry = ({ author, date, intro, path, title }) => {
         </Link>
       </p>
       <div className={styles.info}>
-        <span className={styles.author}>By {authorName}</span>
+        {renderAuthor({ className: styles.author, ...author })}
         <span className={styles.date}>On {formattedDate}</span>
       </div>
     </div>
@@ -30,8 +39,9 @@ const Entry = ({ author, date, intro, path, title }) => {
 
 Entry.propTypes = {
   author: PropTypes.shape({
+    key: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
-  }).isRequired,
+  }),
   date: PropTypes.instanceOf(Date).isRequired,
   intro: PropTypes.string.isRequired,
   path: PropTypes.string.isRequired,

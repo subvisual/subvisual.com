@@ -14,6 +14,7 @@ const query = graphql`
       nodes {
         frontmatter {
           author {
+            key
             name
           }
           date
