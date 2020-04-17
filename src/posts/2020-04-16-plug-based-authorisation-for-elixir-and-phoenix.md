@@ -222,6 +222,8 @@ Lots of stuff happening, small number of codes. Elixir awesome. Demo [here](http
 
 Mendes
 
+*If you enjoy my shenanigans, I usually say stuff on [twitter](https://twitter.com/justmnds). Drop by and say hi*
+
 ---
 
 PS: Looking to learn Elixir? We're having an Elixir workshop, 2h a day during 8 days. All proceedings from the workshop will be directed to fight COVID-19 and donated to a charity. Further details and tickets at: [getgoing.subvisual.com](http://getgoing.subvisual.com)
