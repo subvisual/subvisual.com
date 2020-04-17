@@ -224,4 +224,4 @@ Mendes
 
 ---
 
-PS: Looking to learn Elixir? We're having an Elixir workshop, 2h a day during 8 days. All proceedings from the workshop will be directed to fight COVID-19 and donated to a charity. Further details and tickets at: [getgoing.subvisual.com](https://getgoing.subvisual.com)
+PS: Looking to learn Elixir? We're having an Elixir workshop, 2h a day during 8 days. All proceedings from the workshop will be directed to fight COVID-19 and donated to a charity. Further details and tickets at: [getgoing.subvisual.com](http://getgoing.subvisual.com)
