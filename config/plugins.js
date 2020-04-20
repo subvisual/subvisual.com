@@ -60,6 +60,7 @@ module.exports = [
           options: {
             maxWidth: 834,
             linkImagesToOriginal: false,
+            quality: 95,
           },
         },
         "gatsby-remark-external-links",
