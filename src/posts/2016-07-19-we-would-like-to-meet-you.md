@@ -1,5 +1,4 @@
 ---
-id: 93
 path: /posts/93-we-would-like-to-meet-you/
 title: "We would like to meet you"
 author: luis-zamith

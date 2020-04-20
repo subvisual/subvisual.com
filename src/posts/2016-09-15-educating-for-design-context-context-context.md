@@ -1,5 +1,4 @@
 ---
-id: 107
 path: /posts/107-educating-for-design-context-context-context/
 title: "Educating for design: Context, context, context"
 author: joao-ferreira

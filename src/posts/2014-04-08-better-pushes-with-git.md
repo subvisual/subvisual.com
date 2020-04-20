@@ -1,5 +1,4 @@
 ---
-id: 33
 path: /posts/33-better-pushes-with-git/
 title: "Better pushes with git"
 author: luis-zamith

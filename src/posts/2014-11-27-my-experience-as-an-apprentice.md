@@ -1,5 +1,4 @@
 ---
-id: 46
 path: /posts/46-my-experience-as-an-apprentice/
 title: "My experience as an apprentice"
 author: joao-justo

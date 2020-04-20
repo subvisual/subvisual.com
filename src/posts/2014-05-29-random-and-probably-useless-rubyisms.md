@@ -1,5 +1,4 @@
 ---
-id: 37
 path: /posts/37-random-and-probably-useless-rubyisms/
 title: "Random (and probably useless) Rubyisms"
 author: miguel-palhas

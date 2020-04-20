@@ -21,7 +21,6 @@ export const query = graphql`
         node {
           frontmatter {
             date
-            id
             intro
             path
             title
@@ -64,9 +63,9 @@ export default ({ data }) => {
   const { name: authorName, bio: authorBio } = authorYaml
   const posts = edges.map(({ node }) => {
     const { frontmatter } = node
-    const { date, id, intro, path, title } = frontmatter
+    const { date, intro, path, title } = frontmatter
 
-    return { date: new Date(date), id, intro, path, title }
+    return { date: new Date(date), intro, path, title }
   })
 
   return <BlogAuthorTemplate {...{ authorName, authorBio, posts }} />

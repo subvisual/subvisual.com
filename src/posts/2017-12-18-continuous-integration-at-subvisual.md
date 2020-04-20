@@ -1,5 +1,4 @@
 ---
-id: 140
 path: /posts/140-continuous-integration-at-subvisual/
 title: "Continuous Integration at Subvisual"
 author: miguel-palhas

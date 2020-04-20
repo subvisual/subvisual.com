@@ -1,5 +1,4 @@
 ---
-id: 59
 path: /posts/59-why-subvisual/
 title: "Why Subvisual?"
 author: joao-ferreira

@@ -1,5 +1,4 @@
 ---
-id: 145
 path: /posts/145-upsert-statements-with-ecto/
 title: "Upsert statements with Ecto"
 author: luis-zamith

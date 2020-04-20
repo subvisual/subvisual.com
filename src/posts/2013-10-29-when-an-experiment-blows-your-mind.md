@@ -1,5 +1,4 @@
 ---
-id: 13
 path: /posts/13-when-an-experiment-blows-your-mind/
 title: "When an experiment blows your mind"
 author: roberto-machado

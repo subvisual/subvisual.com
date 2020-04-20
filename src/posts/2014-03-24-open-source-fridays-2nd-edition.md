@@ -1,5 +1,4 @@
 ---
-id: 30
 path: /posts/30-open-source-fridays-2nd-edition/
 title: "Open Source Fridays - 2nd Edition"
 author: luis-zamith

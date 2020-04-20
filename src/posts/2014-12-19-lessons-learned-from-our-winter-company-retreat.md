@@ -1,5 +1,4 @@
 ---
-id: 48
 path: /posts/48-lessons-learned-from-our-winter-company-retreat/
 title: "Lessons Learned from our Winter Company Retreat"
 author: roberto-machado

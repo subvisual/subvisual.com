@@ -1,5 +1,4 @@
 ---
-id: 146
 path: /posts/146-subvisual-is-hiring-a-frontend-developer/
 title: Subvisual is hiring a Front End Developer
 author: roberto-machado

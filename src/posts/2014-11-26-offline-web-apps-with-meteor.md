@@ -1,5 +1,4 @@
 ---
-id: 45
 path: /posts/45-offline-web-apps-with-meteor/
 title: "Offline Web Apps with Meteor"
 author: gabriel-poca

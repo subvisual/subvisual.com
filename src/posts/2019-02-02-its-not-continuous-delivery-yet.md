@@ -1,5 +1,4 @@
 ---
-id: 143
 path: /posts/143-its-not-continuous-delivery-yet/
 title: "It's not Continuous Delivery (yet)"
 author: pedro-costa

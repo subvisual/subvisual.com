@@ -1,5 +1,4 @@
 ---
-id: 58
 path: /posts/58-our-biggest-announcement-yet/
 title: "Our Biggest Announcement Yet"
 author: roberto-machado

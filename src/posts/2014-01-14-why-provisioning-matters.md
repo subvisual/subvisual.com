@@ -1,5 +1,4 @@
 ---
-id: 24
 path: /posts/24-why-provisioning-matters/
 title: "Why Provisioning Matters"
 author: miguel-palhas

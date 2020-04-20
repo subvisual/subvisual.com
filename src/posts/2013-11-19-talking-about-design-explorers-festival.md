@@ -1,5 +1,4 @@
 ---
-id: 15
 path: /posts/15-talking-about-design-explorers-festival/
 title: "Talking about design @ Explorers Festival"
 author: joao-ferreira

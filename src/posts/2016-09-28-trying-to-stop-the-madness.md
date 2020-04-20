@@ -1,5 +1,4 @@
 ---
-id: 72
 path: /posts/72-trying-to-stop-the-madness/
 title: "Trying to stop the madness"
 author: francisco-baila

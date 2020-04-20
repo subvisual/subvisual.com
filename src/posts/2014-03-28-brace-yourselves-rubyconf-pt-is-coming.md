@@ -1,5 +1,4 @@
 ---
-id: 31
 path: /posts/31-brace-yourselves-rubyconf-pt-is-coming/
 title: "Brace Yourselves, RubyConf PT is coming!"
 author: roberto-machado

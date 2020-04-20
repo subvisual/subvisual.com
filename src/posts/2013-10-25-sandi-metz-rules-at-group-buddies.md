@@ -1,5 +1,4 @@
 ---
-id: 12
 path: /posts/12-sandi-metz-rules-at-group-buddies/
 title: "Sandi Metz rules at Group Buddies"
 author: luis-zamith

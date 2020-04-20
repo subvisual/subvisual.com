@@ -1,5 +1,4 @@
 ---
-id: 43
 path: /posts/43-supercharge-your-git/
 title: "Supercharge your git"
 author: luis-zamith

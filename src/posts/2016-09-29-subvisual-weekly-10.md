@@ -1,5 +1,4 @@
 ---
-id: 110
 path: /posts/110-subvisual-weekly-10/
 title: "Subvisual Weekly #10"
 author: summer-campers

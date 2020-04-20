@@ -1,5 +1,4 @@
 ---
-id: 35
 path: /posts/35-dipping-the-toes-in-phonegap/
 title: "Dipping the toes in Phonegap"
 author: gabriel-poca

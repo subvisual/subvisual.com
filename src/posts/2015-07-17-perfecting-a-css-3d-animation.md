@@ -1,5 +1,4 @@
 ---
-id: 62
 path: /posts/62-perfecting-a-css-3d-animation/
 title: "Perfecting a CSS 3D animation "
 author: miguel-palhas

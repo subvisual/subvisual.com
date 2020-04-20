@@ -15,7 +15,6 @@ module.exports = ({ actions }) => {
       }
 
       type Frontmatter {
-        id: Int!,
         author: Author! @link(by: "key"),
         date: Date!,
         path: String!,

@@ -1,5 +1,4 @@
 ---
-id: 104
 path: /posts/104-subvisual-weekly-7/
 title: "Subvisual Weekly #7"
 author: fernando-mendes

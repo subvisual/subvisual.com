@@ -1,5 +1,4 @@
 ---
-id: 47
 path: /posts/47-for-makers/
 title: "For Makers"
 author: joao-ferreira
