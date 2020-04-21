@@ -3,7 +3,7 @@ id: 148
 path: /posts/continuous-stuff-with-github-actions
 title: "Continuous Stuff with Github Actions"
 author: miguel-palhas
-date: 2020-04-20
+date: 2020-04-22
 tags:
   - devops
 intro: >
