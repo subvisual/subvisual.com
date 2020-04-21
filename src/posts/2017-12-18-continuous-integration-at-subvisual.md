@@ -4,8 +4,7 @@ path: /posts/140-continuous-integration-at-subvisual/
 title: "Continuous Integration at Subvisual"
 author: miguel-palhas
 date: 2017-12-18
-cover: https://s3.eu-west-1.amazonaws.com/subvisual/blog/posts/140/cover.jpg
-retina_cover: https://s3.eu-west-1.amazonaws.com/subvisual/blog/posts/140/cover@2x.jpg
+cover: https://s3.eu-west-1.amazonaws.com/subvisual/blog/posts/140/cover@2x.jpg
 tags:
   - development
 intro: "Learn how we do Continuous Integration, and what tools we use at each step of the way"

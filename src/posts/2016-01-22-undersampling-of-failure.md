@@ -4,8 +4,7 @@ path: /posts/69-undersampling-of-failure/
 title: "Undersampling of Failure"
 author: roberto-machado
 date: 2016-01-22
-cover: https://subvisual.s3.amazonaws.com/blog/hero/135/image.jpg
-retina_cover: https://subvisual.s3.amazonaws.com/blog/hero/135/image@2x.jpg
+cover: https://subvisual.s3.amazonaws.com/blog/hero/135/image@2x.jpg
 tags:
   - general
 intro: ""

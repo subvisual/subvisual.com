@@ -4,8 +4,7 @@ path: /posts/74-ruby-bits-br-each-with-object/
 title: "Ruby Bits:  Each with object"
 author: luis-zamith
 date: 2016-03-15
-cover: https://subvisual.s3.amazonaws.com/blog/hero/140/image.jpg
-retina_cover: https://subvisual.s3.amazonaws.com/blog/hero/140/image@2x.jpg
+cover: https://subvisual.s3.amazonaws.com/blog/hero/140/image@2x.jpg
 tags:
   - development
 intro: "The`Enumerable` module is the core of everything in Ruby. It is often said that"

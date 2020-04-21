@@ -20,20 +20,20 @@ export const query = graphql`
           name
         }
         date
-        retina_cover
+        cover
         title
       }
     }
   }
 `
 
-const BlogPostTemplate = ({ author, date, html, retinaCover, title }) => (
+const BlogPostTemplate = ({ author, date, html, cover, title }) => (
   <Layout>
     <SEO title={title} />
     <div className={styles.root}>
       <article className={styles.article}>
         <header className={styles.header}>
-          <Header {...{ author, date, retinaCover, title }} />
+          <Header {...{ author, date, cover, title }} />
         </header>
         <section className={styles.body}>
           <Body html={html} />
@@ -47,18 +47,18 @@ BlogPostTemplate.propTypes = {
   author: PropTypes.object.isRequired,
   date: PropTypes.instanceOf(Date).isRequired,
   html: PropTypes.string.isRequired,
-  retinaCover: PropTypes.string,
+  cover: PropTypes.string,
   title: PropTypes.string.isRequired,
 }
 
 export default ({ data }) => {
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
-  const { author, date, retina_cover: retinaCover, title } = frontmatter
+  const { author, date, cover, title } = frontmatter
 
   return (
     <BlogPostTemplate
-      {...{ author, date: new Date(date), html, retinaCover, title }}
+      {...{ author, date: new Date(date), html, cover, title }}
     />
   )
 }

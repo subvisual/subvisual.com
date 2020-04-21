@@ -4,8 +4,7 @@ path: /posts/84-launching-subvisual-s-summer-camp/
 title: "Launching Subvisual's Summer Camp"
 author: roberto-machado
 date: 2016-06-01
-cover: https://subvisual.s3.amazonaws.com/blog/hero/150/image.jpg
-retina_cover: https://subvisual.s3.amazonaws.com/blog/hero/150/image@2x.jpg
+cover: https://subvisual.s3.amazonaws.com/blog/hero/150/image@2x.jpg
 tags:
   - general
 intro: "Summer is coming, and most of us are looking for things to do during the summer"

@@ -4,8 +4,7 @@ path: /posts/66-sending-multiple-emails-with-actionmailer/
 title: "Sending multiple emails with ActionMailer"
 author: luis-zamith
 date: 2015-12-02
-cover: https://subvisual.s3.amazonaws.com/blog/hero/132/image.jpg
-retina_cover: https://subvisual.s3.amazonaws.com/blog/hero/132/image@2x.jpg
+cover: https://subvisual.s3.amazonaws.com/blog/hero/132/image@2x.jpg
 tags:
   - development
 intro: "If you have ever built a Rails application, you probably have encountered"

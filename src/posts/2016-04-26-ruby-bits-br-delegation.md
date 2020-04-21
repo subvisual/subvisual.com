@@ -4,8 +4,7 @@ path: /posts/80-ruby-bits-br-delegation/
 title: "Ruby Bits:  Delegation"
 author: luis-zamith
 date: 2016-04-26
-cover: https://subvisual.s3.amazonaws.com/blog/hero/146/image.jpg
-retina_cover: https://subvisual.s3.amazonaws.com/blog/hero/146/image@2x.jpg
+cover: https://subvisual.s3.amazonaws.com/blog/hero/146/image@2x.jpg
 tags:
   - development
 intro: "If you've been writing Object Oriented code for a while (or any code really),"

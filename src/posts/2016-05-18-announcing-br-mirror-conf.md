@@ -4,8 +4,7 @@ path: /posts/83-announcing-br-mirror-conf/
 title: "Announcing Mirror Conf"
 author: roberto-machado
 date: 2016-05-18
-cover: https://subvisual.s3.amazonaws.com/blog/hero/149/image.jpg
-retina_cover: https://subvisual.s3.amazonaws.com/blog/hero/149/image@2x.jpg
+cover: https://subvisual.s3.amazonaws.com/blog/hero/149/image@2x.jpg
 tags:
   - community
 intro: "About four years ago, when our company was still taking its first steps and hardly making any money, we invested 250€ to support a small ruby conference called RubyNorte. Since we only had 200€ in our bank account, we actually had to put the extra 50€ from our own pockets. As naive and premature as it was, it is a perfect example of how much we value community, and how it is at the core of our company's culture."

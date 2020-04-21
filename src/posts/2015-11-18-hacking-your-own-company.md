@@ -4,8 +4,7 @@ path: /posts/64-hacking-your-own-company/
 title: "Hacking your own company"
 author: joao-justo
 date: 2015-11-18
-cover: https://subvisual.s3.amazonaws.com/blog/hero/129/image.jpg
-retina_cover: https://subvisual.s3.amazonaws.com/blog/hero/129/image@2x.jpg
+cover: https://subvisual.s3.amazonaws.com/blog/hero/129/image@2x.jpg
 tags:
   - development
 intro: "I have a confession to make. A while ago I hacked my own company."

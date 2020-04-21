@@ -5,7 +5,6 @@ title: "How to program Vim using Ruby"
 author: gabriel-poca
 date: 2017-09-04
 cover: https://s3-eu-west-1.amazonaws.com/subvisual/blog/hero/139/ruby-vim.jpg
-retina_cover: https://s3-eu-west-1.amazonaws.com/subvisual/blog/hero/139/ruby-vim.jpg
 tags:
   - development
 intro: "In this article, I hope to demonstrate how you can program Vim using Ruby."

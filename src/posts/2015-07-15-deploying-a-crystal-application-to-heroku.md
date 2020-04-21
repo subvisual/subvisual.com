@@ -4,8 +4,7 @@ path: /posts/63-deploying-a-crystal-application-to-heroku/
 title: "Deploying a Crystal application to Heroku"
 author: luis-zamith
 date: 2015-07-15
-cover: https://subvisual.s3.amazonaws.com/blog/hero/125/image.jpg
-retina_cover: https://subvisual.s3.amazonaws.com/blog/hero/125/image@2x.jpg
+cover: https://subvisual.s3.amazonaws.com/blog/hero/125/image@2x.jpg
 tags:
   - development
 intro: "[Crystal](http://crystal-lang.org/) is a typed, LLVM compiled language that"

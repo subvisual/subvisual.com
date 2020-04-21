@@ -4,8 +4,7 @@ path: /posts/67-newsletter-as-a-team-building-exercise/
 title: "Newsletter as a team building exercise"
 author: laura-esteves
 date: 2016-01-06
-cover: https://subvisual.s3.amazonaws.com/blog/hero/133/image.jpg
-retina_cover: https://subvisual.s3.amazonaws.com/blog/hero/133/image@2x.jpg
+cover: https://subvisual.s3.amazonaws.com/blog/hero/133/image@2x.jpg
 tags:
   - general
 intro: "In this blog post, I will share how we plan, create and send our weekly newsletter that has helped us improve cooperation, communication and responsibility within the team."

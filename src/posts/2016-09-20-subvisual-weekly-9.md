@@ -4,8 +4,7 @@ path: /posts/109-subvisual-weekly-9/
 title: "Subvisual Weekly #9"
 author: gabriel-poca
 date: 2016-09-20
-cover: https://subvisual.s3.amazonaws.com/blog/hero/177/image.jpg
-retina_cover: https://subvisual.s3.amazonaws.com/blog/hero/177/image@2x.jpg
+cover: https://subvisual.s3.amazonaws.com/blog/hero/177/image@2x.jpg
 tags:
   - community
 intro: "I can tell that something's off. Boxes are laying around on the floor, unorganized. People show up at our door asking us to taste food. Phones are ringing all day. And everyone is tense. Everyone but Laura; she's just pulling her hair off."

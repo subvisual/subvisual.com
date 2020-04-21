@@ -4,8 +4,7 @@ path: /posts/110-subvisual-weekly-10/
 title: "Subvisual Weekly #10"
 author: summer-campers
 date: 2016-09-29
-cover: https://subvisual.s3.amazonaws.com/blog/hero/178/image.jpg
-retina_cover: https://subvisual.s3.amazonaws.com/blog/hero/178/image@2x.jpg
+cover: https://subvisual.s3.amazonaws.com/blog/hero/178/image@2x.jpg
 tags:
   - community
 intro: "We did it. We made it happen. MirrorConf is done."

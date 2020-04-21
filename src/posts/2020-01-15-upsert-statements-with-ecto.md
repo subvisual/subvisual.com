@@ -5,7 +5,6 @@ title: "Upsert statements with Ecto"
 author: luis-zamith
 date: 2020-01-15
 cover: https://cdn-images-1.medium.com/max/2400/1*B6YxPvAMw_kx5D-_RQpotw.jpeg
-retina_cover: https://cdn-images-1.medium.com/max/2400/1*B6YxPvAMw_kx5D-_RQpotw.jpeg
 tags:
   - development
 intro: >

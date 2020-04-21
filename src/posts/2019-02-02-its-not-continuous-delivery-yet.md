@@ -4,8 +4,7 @@ path: /posts/143-its-not-continuous-delivery-yet/
 title: "It's not Continuous Delivery (yet)"
 author: pedro-costa
 date: 2019-02-02
-cover: https://s3-eu-west-1.amazonaws.com/subvisual/blog/hero/post-143/gears-1920x1080.jpg
-retina_cover: https://s3-eu-west-1.amazonaws.com/subvisual/blog/hero/post-143/gears-3840x2160.jpg
+cover: https://s3-eu-west-1.amazonaws.com/subvisual/blog/hero/post-143/gears-3840x2160.jpg
 tags:
   - development
 intro: >

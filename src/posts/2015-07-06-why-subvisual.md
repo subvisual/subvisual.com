@@ -4,8 +4,7 @@ path: /posts/59-why-subvisual/
 title: "Why Subvisual?"
 author: joao-ferreira
 date: 2015-07-06
-cover: https://subvisual.s3.amazonaws.com/blog/hero/121/image.jpg
-retina_cover: https://subvisual.s3.amazonaws.com/blog/hero/121/image@2x.jpg
+cover: https://subvisual.s3.amazonaws.com/blog/hero/121/image@2x.jpg
 tags:
   - design
 intro: "Rebranding our company was our biggest challenge yet.  Figuring out how to convey our values and ambitions through a new brand while honouring our roots was frightening."

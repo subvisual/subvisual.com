@@ -24,7 +24,9 @@ function SEO({ description, lang, keywords, title }) {
       render={data => {
         const metaDescription =
           description || data.site.siteMetadata.description
-        const metaImage = `${data.site.siteMetadata.url}${data.site.siteMetadata.image}`
+        const metaImage =
+          image ||
+          `${data.site.siteMetadata.url}${data.site.siteMetadata.image}`
         const metaTitle = title
           ? `${data.site.siteMetadata.title} | ${title}`
           : data.site.siteMetadata.title
