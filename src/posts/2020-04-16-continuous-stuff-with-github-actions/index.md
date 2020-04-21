@@ -34,11 +34,11 @@ intro: >
   </em>
 </div>
 
-Last year, I took on the task of improving the continuous process over at [UTRUST][utrust]. We weren't really happy with
+Last year, I took on the task of improving the continuous process over at [Utrust][utrust]. We weren't really happy with
 the amount of work that went into our releases, and I was looking for a more agile approach, where everyone from
 developers to the QA team could do their part with low friction.
 
-Coincidentally, that project started right around the same time where GitHub Actions went into public beta. Some of our
+Coincidentally, that project started right around the same time GitHub Actions went into public beta. Some of our
 problems were related to shortcomings on our existing CI solution, so it felt right to see what GitHub had to offer.
 
 I ended up pleasantly surprised. But first, let's talk about what exactly was wrong with our previous CI.
@@ -156,6 +156,9 @@ In my case, I wanted to deploy a preview version of Pull Requests to our fronten
 do this for every single PR though (only a small subset of them actually need this), so we went with this instead:
 
 ![Comments triggering GitHub Action](./github-actions-comment.png)
+
+Whenever someone comments on a Pull Request and includes the word "preview", an Action will be triggered which will take
+that branch and deploy a live preview of it, so it can be easily tested.
 
 The ease with which this was all done by just using different hooks made this very pleasant to work with.
 
