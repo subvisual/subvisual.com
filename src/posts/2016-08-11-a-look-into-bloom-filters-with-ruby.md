@@ -4,8 +4,7 @@ path: /posts/96-a-look-into-bloom-filters-with-ruby/
 title: "A Look Into Bloom Filters with Ruby"
 author: fernando-mendes
 date: 2016-08-11
-cover: https://subvisual.s3.amazonaws.com/blog/hero/164/image.jpg
-retina_cover: https://subvisual.s3.amazonaws.com/blog/hero/164/image@2x.jpg
+cover: https://subvisual.s3.amazonaws.com/blog/hero/164/image@2x.jpg
 tags:
   - development
 intro: "I remember one particular class I had. It was late May and, as pretty much every Spring day in Portugal, the sun decided to greet us with a little too much enthusiasm."

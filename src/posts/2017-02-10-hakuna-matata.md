@@ -4,8 +4,7 @@ path: /posts/121-hakuna-matata/
 title: Hakuna Matata...
 author: laura-esteves
 date: 2017-02-10
-cover: https://subvisual.s3.amazonaws.com/blog/hero/189/image.jpg
-retina_cover: https://subvisual.s3.amazonaws.com/blog/hero/189/image@2x.jpg
+cover: https://subvisual.s3.amazonaws.com/blog/hero/189/image@2x.jpg
 tags:
   - general
 intro: >

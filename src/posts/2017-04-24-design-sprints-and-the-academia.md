@@ -4,8 +4,7 @@ path: /posts/132-design-sprints-and-the-academia/
 title: "Design Sprints and the Academia"
 author: fernando-mendes
 date: 2017-04-24
-cover: https://subvisual.s3.amazonaws.com/blog/hero/200/image.jpg
-retina_cover: https://subvisual.s3.amazonaws.com/blog/hero/200/image@2x.jpg
+cover: https://subvisual.s3.amazonaws.com/blog/hero/200/image@2x.jpg
 tags:
   - design
   - general

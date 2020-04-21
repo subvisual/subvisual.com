@@ -4,8 +4,7 @@ path: /posts/101-subvisual-weekly-5/
 title: "Subvisual Weekly #5"
 author: gabriel-poca
 date: 2016-08-22
-cover: https://subvisual.s3.amazonaws.com/blog/hero/169/image.jpg
-retina_cover: https://subvisual.s3.amazonaws.com/blog/hero/169/image@2x.jpg
+cover: https://subvisual.s3.amazonaws.com/blog/hero/169/image@2x.jpg
 tags:
   - development
   - general

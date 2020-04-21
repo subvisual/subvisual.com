@@ -4,8 +4,7 @@ path: /posts/78-rubyconf-portugal-br-is-back/
 title: "RubyConf Portugal  is back!"
 author: roberto-machado
 date: 2016-04-08
-cover: https://subvisual.s3.amazonaws.com/blog/hero/144/image.jpg
-retina_cover: https://subvisual.s3.amazonaws.com/blog/hero/144/image@2x.jpg
+cover: https://subvisual.s3.amazonaws.com/blog/hero/144/image@2x.jpg
 tags:
   - community
 intro: "We’re ready to announce that the 3rd edition of RubyConf Portugal is happening on October 28-29!"

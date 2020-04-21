@@ -4,8 +4,7 @@ path: /posts/92-subvisual-weekly-1/
 title: "Subvisual Weekly #1"
 author: gabriel-poca
 date: 2016-07-22
-cover: https://subvisual.s3.amazonaws.com/blog/hero/159/image.jpg
-retina_cover: https://subvisual.s3.amazonaws.com/blog/hero/159/image@2x.jpg
+cover: https://subvisual.s3.amazonaws.com/blog/hero/159/image@2x.jpg
 tags:
   - community
 intro: "Our journey begins in the sunny city of Braga, as we adventure ourselves through the tall, green, grass. We were not prepared for this. But we pushed through. An empty Pokédex and just one Pokéball in our pockets, ready to take on the world."

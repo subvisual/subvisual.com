@@ -4,8 +4,7 @@ path: /posts/130-how-to-build-offline-web-applications-with-couchdb-and-pouchdb/
 title: "How to build offline web applications with CouchDB and PouchDB"
 author: gabriel-poca
 date: 2017-04-20
-cover: https://subvisual.s3.amazonaws.com/blog/hero/198/image.jpg
-retina_cover: https://subvisual.s3.amazonaws.com/blog/hero/198/image@2x.jpg
+cover: https://subvisual.s3.amazonaws.com/blog/hero/198/image@2x.jpg
 tags:
   - development
 intro: "You may have heard about [Progressive Web Apps"

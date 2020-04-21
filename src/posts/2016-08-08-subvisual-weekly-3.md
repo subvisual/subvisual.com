@@ -4,8 +4,7 @@ path: /posts/97-subvisual-weekly-3/
 title: "Subvisual Weekly #3"
 author: gabriel-poca
 date: 2016-08-08
-cover: https://subvisual.s3.amazonaws.com/blog/hero/165/image.jpg
-retina_cover: https://subvisual.s3.amazonaws.com/blog/hero/165/image@2x.jpg
+cover: https://subvisual.s3.amazonaws.com/blog/hero/165/image@2x.jpg
 tags:
   - general
   - community

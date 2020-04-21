@@ -14,17 +14,17 @@ const renderAuthor = ({ key, name }) => (
   </>
 )
 
-const BlogPostHeader = ({ author, date, retinaCover, title }) => {
+const BlogPostHeader = ({ author, date, cover, title }) => {
   const formattedDate = dateFormat(date, "mmmm d, yyyy")
 
   const renderCover = () => {
-    if (!retinaCover) return null
+    if (!cover) return null
 
     return (
       <Wrapper>
         <div
           className={styles.cover}
-          style={{ backgroundImage: `url(${retinaCover})` }}
+          style={{ backgroundImage: `url(${cover})` }}
         />
       </Wrapper>
     )
@@ -54,7 +54,7 @@ BlogPostHeader.propTypes = {
     name: PropTypes.string.isRequired,
   }).isRequired,
   date: PropTypes.instanceOf(Date).isRequired,
-  retinaCover: PropTypes.string,
+  cover: PropTypes.string,
   title: PropTypes.string.isRequired,
 }
 

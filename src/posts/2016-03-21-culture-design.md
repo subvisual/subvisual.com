@@ -4,8 +4,7 @@ path: /posts/77-culture-design/
 title: "Culture Design"
 author: joao-ferreira
 date: 2016-03-21
-cover: https://subvisual.s3.amazonaws.com/blog/hero/143/image.jpg
-retina_cover: https://subvisual.s3.amazonaws.com/blog/hero/143/image@2x.jpg
+cover: https://subvisual.s3.amazonaws.com/blog/hero/143/image@2x.jpg
 tags:
   - design
   - general

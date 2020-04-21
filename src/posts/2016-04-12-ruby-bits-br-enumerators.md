@@ -4,8 +4,7 @@ path: /posts/76-ruby-bits-br-enumerators/
 title: "Ruby Bits:  Enumerators"
 author: luis-zamith
 date: 2016-04-12
-cover: https://subvisual.s3.amazonaws.com/blog/hero/142/image.jpg
-retina_cover: https://subvisual.s3.amazonaws.com/blog/hero/142/image@2x.jpg
+cover: https://subvisual.s3.amazonaws.com/blog/hero/142/image@2x.jpg
 tags:
   - development
 intro: "Welcome back to the world of `Enumerable` my friend. As Rubyists we are used to"

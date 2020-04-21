@@ -4,8 +4,7 @@ path: /posts/105-first-steps-into-product-design/
 title: "First steps into product design"
 author: summer-campers
 date: 2016-09-09
-cover: https://subvisual.s3.amazonaws.com/blog/hero/173/image.jpg
-retina_cover: https://subvisual.s3.amazonaws.com/blog/hero/173/image@2x.jpg
+cover: https://subvisual.s3.amazonaws.com/blog/hero/173/image@2x.jpg
 tags:
   - general
 intro: "On the 1st of August we started out our internship at Subvisual. The main goal was developing a new product consisting of a financial app that would  deal with the process of organizing and registering all the financial data of their organizations. Our target audience would be early stage enterprises like tech startups and small tech companies. Growing a business healthfully is a huge effort by itself, so why not clear the path of minor tasks that are simultaneously so important? So the problem was identified and our opportunity was here."

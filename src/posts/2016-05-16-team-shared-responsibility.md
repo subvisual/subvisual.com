@@ -4,8 +4,7 @@ path: /posts/82-team-shared-responsibility/
 title: "Team-shared Responsibility"
 author: joao-ferreira
 date: 2016-05-16
-cover: https://subvisual.s3.amazonaws.com/blog/hero/148/image.jpg
-retina_cover: https://subvisual.s3.amazonaws.com/blog/hero/148/image@2x.jpg
+cover: https://subvisual.s3.amazonaws.com/blog/hero/148/image@2x.jpg
 tags:
   - design
   - general

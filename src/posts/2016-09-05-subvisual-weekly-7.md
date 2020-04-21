@@ -4,8 +4,7 @@ path: /posts/104-subvisual-weekly-7/
 title: "Subvisual Weekly #7"
 author: fernando-mendes
 date: 2016-09-05
-cover: https://subvisual.s3.amazonaws.com/blog/hero/172/image.jpg
-retina_cover: https://subvisual.s3.amazonaws.com/blog/hero/172/image@2x.jpg
+cover: https://subvisual.s3.amazonaws.com/blog/hero/172/image@2x.jpg
 tags:
   - general
   - community

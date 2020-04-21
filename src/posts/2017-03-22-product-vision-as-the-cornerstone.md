@@ -4,8 +4,7 @@ path: /posts/129-product-vision-as-the-cornerstone/
 title: "Product Vision as the Cornerstone "
 author: roberto-machado
 date: 2017-03-22
-cover: https://subvisual.s3.amazonaws.com/blog/hero/197/image.jpg
-retina_cover: https://subvisual.s3.amazonaws.com/blog/hero/197/image@2x.jpg
+cover: https://subvisual.s3.amazonaws.com/blog/hero/197/image@2x.jpg
 tags:
   - general
 intro: "It always strikes me when someone has to explain what product they are working on and struggle to formulate a concise sentence that is easy to understand. Being an Elevator Pitch or a more techie product explanation, you should instinctively be able to explain what you are doing. Usually, this is a smell for the lack of direction in the team. If you start asking a question, you will notice the absence of a product vision."

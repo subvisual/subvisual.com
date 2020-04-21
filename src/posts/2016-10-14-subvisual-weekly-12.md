@@ -4,8 +4,7 @@ path: /posts/114-subvisual-weekly-12/
 title: "Subvisual Weekly #12"
 author: gabriel-poca
 date: 2016-10-14
-cover: https://subvisual.s3.amazonaws.com/blog/hero/182/image.jpg
-retina_cover: https://subvisual.s3.amazonaws.com/blog/hero/182/image@2x.jpg
+cover: https://subvisual.s3.amazonaws.com/blog/hero/182/image@2x.jpg
 tags:
   - general
 intro: "I'm proud to introduce the top geeks: Miguel and Fernando."

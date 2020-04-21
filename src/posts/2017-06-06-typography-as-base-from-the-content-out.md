@@ -4,8 +4,7 @@ path: /posts/138-typography-as-base-from-the-content-out/
 title: "Typography as Base: From the Content Out"
 author: francisco-baila
 date: 2017-06-06
-cover: https://subvisual.s3.amazonaws.com/blog/hero/206/image.jpg
-retina_cover: https://subvisual.s3.amazonaws.com/blog/hero/206/image@2x.jpg
+cover: https://subvisual.s3.amazonaws.com/blog/hero/206/image@2x.jpg
 tags:
   - design
 intro: "This blog post was born out of my necessity to find a structure in which I could rely on when designing any kind of web project."

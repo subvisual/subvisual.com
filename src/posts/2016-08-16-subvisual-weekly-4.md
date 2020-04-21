@@ -4,8 +4,7 @@ path: /posts/99-subvisual-weekly-4/
 title: "Subvisual Weekly #4"
 author: joao-justo
 date: 2016-08-16
-cover: https://subvisual.s3.amazonaws.com/blog/hero/167/image.jpg
-retina_cover: https://subvisual.s3.amazonaws.com/blog/hero/167/image@2x.jpg
+cover: https://subvisual.s3.amazonaws.com/blog/hero/167/image@2x.jpg
 tags:
   - general
   - community

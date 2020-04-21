@@ -4,8 +4,7 @@ path: /posts/137-tutorial-deploying-elixir-applications-with-docker-and-digital-
 title: "Tutorial: Deploying Elixir applications with Docker and Digital Ocean"
 author: miguel-palhas
 date: 2017-05-24
-cover: https://subvisual.s3.amazonaws.com/blog/hero/205/image.jpg
-retina_cover: https://subvisual.s3.amazonaws.com/blog/hero/205/image@2x.jpg
+cover: https://subvisual.s3.amazonaws.com/blog/hero/205/image@2x.jpg
 tags:
   - elixir
   - docker

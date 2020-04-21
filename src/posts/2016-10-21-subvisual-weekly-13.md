@@ -4,8 +4,7 @@ path: /posts/115-subvisual-weekly-13/
 title: "Subvisual Weekly #13"
 author: miguel-palhas
 date: 2016-10-21
-cover: https://subvisual.s3.amazonaws.com/blog/hero/183/image.jpg
-retina_cover: https://subvisual.s3.amazonaws.com/blog/hero/183/image@2x.jpg
+cover: https://subvisual.s3.amazonaws.com/blog/hero/183/image@2x.jpg
 tags:
   - general
 intro: "Have you ever found yourself working alone for what appears to be **too damn long** ?"
