@@ -1,7 +1,7 @@
 ---
 id: 148
 path: /posts/announcing-subvisual-live-talks/
-title: "Announcing Subvisual Live Talks: Zamith, Josh Clayton, Sasa Juric and others"
+title: "Announcing Subvisual Live Talks: Zamith, Josh Clayton, Saša Jurić and others"
 author: fernando-mendes
 date: 2020-04-17
 intro: >
@@ -25,6 +25,8 @@ Zamith and Josh dive into the **nature of consulting work, building digital prod
 We're aiming to make this a weekly occurence and already have a string of guests lined up. If you have any suggestions, feel free to tweet at us.
 
 That being said, **we're going to be back this Thursday, April 23 at 6 P.M. WEST (GMT+1)** with a very special guest: **[Saša Jurić](https://twitter.com/sasajuric)**, renowed alchemist and author of [Elixir in Action](https://www.manning.com/books/elixir-in-action-second-edition?a_aid=sjuric)!
+
+![Announcing the second edition with Saša Jurić](./second-edition.png)
 
 We're aiming to make this the best possible experience for you, so if you have suggestions, we're only a DM/email away.
 
