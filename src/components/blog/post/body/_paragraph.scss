@@ -1,6 +1,7 @@
 @import "./variables";
 
-p {
+p,
+:global(.BlogPostParagraph) {
   max-width: $BlogPostBody-text-maxWidth-mobile;
   padding: 0 20px;
   margin: 20px auto 28px;

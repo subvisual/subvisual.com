@@ -24,7 +24,7 @@
 
   /* Drop cap */
 
-  & > p:first-child::first-letter {
+  & > p:first-of-type::first-letter {
     float: left;
     padding-right: 4px;
     margin-top: 0;
