@@ -45,21 +45,21 @@
     }
   }
 
-  &.macos > p:first-child::first-letter {
+  &.macos > p:first-of-type::first-letter {
     @-moz-document url-prefix() {
       margin-top: 10px;
     }
   }
 
-  &.macos.chrome > p:first-child::first-letter {
+  &.macos.chrome > p:first-of-type::first-letter {
     margin-top: 6px;
   }
 
-  &.safari > p:first-child::first-letter {
+  &.safari > p:first-of-type::first-letter {
     margin-top: 2px;
   }
 
-  &.edge > p:first-child::first-letter {
+  &.edge > p:first-of-type::first-letter {
     margin-top: 4px;
   }
 }
