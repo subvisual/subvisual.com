@@ -1,3 +1,5 @@
+@import "common/breakpoints";
+
 .root {
   @import "./body/anchor";
   @import "./body/blockquote";
@@ -61,5 +63,23 @@
 
   &.edge > p:first-of-type::first-letter {
     margin-top: 4px;
+  }
+
+  /* Image placement */
+
+  & > p > img,
+  & > p > :global(.gatsby-resp-image-wrapper) {
+    position: relative;
+    left: 50%;
+
+    display: block;
+    width: 100vw;
+    max-width: 762px;
+
+    transform: translateX(-50%);
+
+    @include media(">=desktop") {
+      max-width: 834px;
+    }
   }
 }
