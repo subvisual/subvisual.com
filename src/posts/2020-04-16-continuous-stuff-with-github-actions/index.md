@@ -168,7 +168,7 @@ Yes, YAML allows you to reuse blocks...
 
 ```yaml
 
-component: &compoenent
+component: &component
   foo: bar
 
 extension: *component
