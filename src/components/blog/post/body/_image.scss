@@ -5,14 +5,3 @@ img {
     margin: 56px 0;
   }
 }
-
-img:not(:global .gatsby-resp-image-image) {
-  position: relative;
-  left: 50%;
-
-  display: block;
-  width: auto;
-  max-width: 100%;
-
-  transform: translateX(-50%);
-}
