@@ -1,4 +1,5 @@
 @import "common/breakpoints";
+@import "common/utils/interpolate";
 
 @import "./variables";
 
@@ -6,17 +7,21 @@ blockquote {
   position: relative;
 
   max-width: $BlogPostBody-text-maxWidth-mobile;
-  padding: 20px 20px 0;
-  margin: 56px auto 40px 0;
+  padding-top: 20px;
+  margin: 56px auto 40px;
 
   font-family: "Acta Headline", serif;
   font-size: 20px;
   font-weight: 800;
   line-height: 28px;
 
+  @include interpolate("padding-right", 718px, 758px, 20px, 0);
+  @include interpolate("padding-left", 818px, 858px, 20px, 0);
+  @include interpolate("margin-left", 818px, 858px, 50px, 0, auto);
+
   @include media(">=desktop") {
     max-width: $BlogPostBody-text-maxWidth-desktop;
-    padding: 28px 28px 0 28px;
+    padding: 28px 0 0;
     margin: 78px auto 56px 0;
 
     font-size: 28px;
@@ -42,6 +47,8 @@ blockquote {
     font-size: 56px;
     font-weight: normal;
     line-height: 56px;
+
+    @include interpolate("left", 818px, 858px, 95px, 70px);
 
     @include media(">=desktop") {
       top: -34px;
@@ -70,8 +77,9 @@ blockquote {
   }
 
   p:last-child:not(:first-child) {
-    width: calc(100% - 72px);
-    max-width: 506px;
+    position: relative;
+    left: 75px;
+
     margin-left: auto;
 
     font-family: colfax-web, sans-serif;
@@ -79,8 +87,18 @@ blockquote {
     font-weight: 500;
     line-height: 20px;
 
+    @include interpolate("left", 818px, 858px, 75px, 70px);
+
+    @include media(">=818px") {
+      left: calc(70px + (858px - 100vw) * 0.125);
+    }
+
+    @include media(">=858px") {
+      left: 70px;
+    }
+
     @include media(">=desktop") {
-      max-width: 478px;
+      left: 78px;
 
       font-size: 20px;
       line-height: 28px;
