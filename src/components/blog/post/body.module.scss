@@ -1,5 +1,7 @@
 @import "common/breakpoints";
 
+@import "./variables";
+
 .root {
   @import "./body/anchor";
   @import "./body/blockquote";
@@ -74,12 +76,12 @@
 
     display: block;
     width: 100vw;
-    max-width: 762px;
+    max-width: $BlogPost-body-maxWidth-mobile !important; /* override inline styles */
 
     transform: translateX(-50%);
 
     @include media(">=desktop") {
-      max-width: 834px;
+      max-width: $BlogPost-body-maxWidth-desktop !important; /* override inline styles */
     }
   }
 }
