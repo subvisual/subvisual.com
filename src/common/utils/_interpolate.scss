@@ -1,0 +1,37 @@
+@use "sass:math";
+
+/** Interpolate the values of a property in a range of the viewport width.
+ *
+ * The design only covers the minimum and maximum viewport sizes. While spaces
+ * collapse to absorb the growth of the viewport, in some specific points the
+ * rules are not set. So, instead of jumping straight from one position to the
+ * other, this function allows us to gradually transition between the two
+ * states.
+ */
+@mixin interpolate(
+  $property,
+  $from,
+  $to,
+  $start,
+  $end,
+  $before: $start,
+  $after: $end
+) {
+  #{$property}: $before;
+
+  @media (min-width: #{$from}) {
+    $base: min($start, $end);
+    $multiplier: abs($end - $start) / abs($to - $from);
+
+    /* CSS calc() expressions don't accept additions with unitless zeros */
+    @if $base == 0 {
+      #{$property}: calc((#{$to} - 100vw) * #{$multiplier});
+    } @else {
+      #{$property}: calc(#{$base} + (#{$to} - 100vw) * #{$multiplier});
+    }
+  }
+
+  @media (min-width: #{$to}) {
+    #{$property}: $after;
+  }
+}
