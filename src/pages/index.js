@@ -28,6 +28,30 @@ const spring = {
 
 const config = { spring, easings, getMargins: true }
 
+const shouldShowAnimation = () => {
+  const currentTime = new Date().getTime()
+
+  if (!window.localStorage.getItem("visited")) {
+    window.localStorage.setItem("visited", currentTime.toString())
+
+    return true
+  }
+
+  const visitedTime = Number(window.localStorage.getItem("visited"))
+  const ONE_DAY = 24 * 60 * 60 * 1000
+
+  if (
+    window.localStorage.getItem("visited") &&
+    currentTime - visitedTime < ONE_DAY
+  ) {
+    return false
+  }
+
+  window.localStorage.setItem("visited", currentTime.toString())
+
+  return true
+}
+
 const IndexPage = () => {
   const morph = useMorph(config)
   const [hidingTittlePlanet, setHidingTittlePlanet] = useState(true)
@@ -35,12 +59,12 @@ const IndexPage = () => {
 
   return (
     <>
-      <SplashScreen
+      {shouldShowAnimation && (<SplashScreen
         lockScrollFor={1000}
         morph={morph}
         onHide={showTittlePlanet}
         showFor={750}
-      />
+      />)}
       <Layout>
         <SEO />
         <HeroSection planetMorph={morph} hidePlanet={hidingTittlePlanet} />
