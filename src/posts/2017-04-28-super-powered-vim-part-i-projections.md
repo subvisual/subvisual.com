@@ -1,5 +1,4 @@
 ---
-id: 133
 path: /posts/133-super-powered-vim-part-i-projections/
 title: "Super-powered Vim, part I: Projections"
 author: miguel-palhas

@@ -1,5 +1,4 @@
 ---
-id: 116
 path: /posts/116-subvisual-weekly-14/
 title: "Subvisual Weekly #14"
 author: pedro-costa

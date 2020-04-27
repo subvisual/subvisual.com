@@ -1,5 +1,4 @@
 ---
-id: 70
 path: /posts/70-life-after-apprenticeship/
 title: "Life After Apprenticeship"
 author: francisco-baila

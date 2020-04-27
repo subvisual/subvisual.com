@@ -1,5 +1,4 @@
 ---
-id: 148
 path: /posts/continuous-stuff-with-github-actions
 title: "Continuous Stuff with Github Actions"
 author: miguel-palhas

@@ -18,7 +18,6 @@ const query = graphql`
             name
           }
           date
-          id
           path
           title
           intro
@@ -54,9 +53,9 @@ export default () => {
   } = useStaticQuery(query)
   const posts = nodes.map(node => {
     const { frontmatter } = node
-    const { author, date, id, intro, path, title } = frontmatter
+    const { author, date, intro, path, title } = frontmatter
 
-    return { author, date: new Date(date), intro, id, path, title }
+    return { author, date: new Date(date), intro, path, title }
   })
 
   return <BlogPage posts={posts} />

@@ -1,5 +1,4 @@
 ---
-id: 81
 path: /posts/81-rubybits-br-type-coercion/
 title: "RubyBits:  Type coercion"
 author: luis-zamith

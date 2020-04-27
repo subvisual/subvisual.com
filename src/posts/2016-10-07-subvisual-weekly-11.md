@@ -1,5 +1,4 @@
 ---
-id: 112
 path: /posts/112-subvisual-weekly-11/
 title: "Subvisual Weekly #11"
 author: gabriel-poca

@@ -1,5 +1,4 @@
 ---
-id: 139
 path: /posts/139-how-to-program-vim-using-ruby/
 title: "How to program Vim using Ruby"
 author: gabriel-poca

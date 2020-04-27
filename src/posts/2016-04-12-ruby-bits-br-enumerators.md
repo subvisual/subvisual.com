@@ -1,5 +1,4 @@
 ---
-id: 76
 path: /posts/76-ruby-bits-br-enumerators/
 title: "Ruby Bits:  Enumerators"
 author: luis-zamith

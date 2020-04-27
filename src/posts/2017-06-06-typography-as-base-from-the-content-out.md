@@ -1,5 +1,4 @@
 ---
-id: 138
 path: /posts/138-typography-as-base-from-the-content-out/
 title: "Typography as Base: From the Content Out"
 author: francisco-baila

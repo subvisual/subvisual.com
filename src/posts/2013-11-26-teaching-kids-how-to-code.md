@@ -1,5 +1,4 @@
 ---
-id: 17
 path: /posts/17-teaching-kids-how-to-code/
 title: "Teaching Kids How to Code"
 author: roberto-machado

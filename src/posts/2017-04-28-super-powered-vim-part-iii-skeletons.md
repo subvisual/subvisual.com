@@ -1,5 +1,4 @@
 ---
-id: 135
 path: /posts/135-super-powered-vim-part-iii-skeletons/
 title: "Super-powered Vim, part III: Skeletons"
 author: miguel-palhas

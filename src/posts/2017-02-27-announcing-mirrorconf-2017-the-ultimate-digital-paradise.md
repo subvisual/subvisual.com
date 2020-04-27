@@ -1,5 +1,4 @@
 ---
-id: 124
 path: /posts/124-announcing-mirrorconf-2017-the-ultimate-digital-paradise/
 title: "Announcing MirrorConf 2017: the ultimate digital paradise"
 author: roberto-machado

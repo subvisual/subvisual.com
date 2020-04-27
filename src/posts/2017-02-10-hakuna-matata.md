@@ -1,5 +1,4 @@
 ---
-id: 121
 path: /posts/121-hakuna-matata/
 title: Hakuna Matata...
 author: laura-esteves

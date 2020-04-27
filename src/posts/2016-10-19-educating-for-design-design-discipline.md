@@ -1,5 +1,4 @@
 ---
-id: 108
 path: /posts/108-educating-for-design-design-discipline/
 title: "Educating for design: Design discipline"
 author: joao-ferreira

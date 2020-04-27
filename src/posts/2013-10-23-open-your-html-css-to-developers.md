@@ -1,5 +1,4 @@
 ---
-id: 11
 path: /posts/11-open-your-html-css-to-developers/
 title: "Open your HTML/CSS to Developers"
 author: joao-ferreira

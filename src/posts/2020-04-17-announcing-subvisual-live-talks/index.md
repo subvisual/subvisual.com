@@ -1,5 +1,4 @@
 ---
-id: 148
 path: /posts/announcing-subvisual-live-talks/
 title: "Announcing Subvisual Live Talks: Zamith, Josh Clayton, Saša Jurić and others"
 author: fernando-mendes

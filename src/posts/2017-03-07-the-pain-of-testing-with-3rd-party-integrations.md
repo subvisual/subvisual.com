@@ -1,5 +1,4 @@
 ---
-id: 102
 path: /posts/102-the-pain-of-testing-with-3rd-party-integrations/
 title: "The pain of testing with 3rd party integrations"
 author: miguel-palhas

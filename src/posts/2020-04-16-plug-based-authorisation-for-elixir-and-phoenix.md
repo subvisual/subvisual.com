@@ -1,5 +1,4 @@
 ---
-id: 147
 path: /posts/147-plug-based-authorisation-for-elixir/
 title: Plug-based authorisation for Elixir and Phoenix
 author: fernando-mendes
