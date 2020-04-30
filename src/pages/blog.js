@@ -51,7 +51,7 @@ export default () => {
   const {
     allMarkdownRemark: { nodes },
   } = useStaticQuery(query)
-  const posts = nodes.map(node => {
+  const posts = nodes.map((node) => {
     const { frontmatter } = node
     const { author, date, intro, path, title } = frontmatter
 

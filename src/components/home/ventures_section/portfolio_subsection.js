@@ -81,10 +81,10 @@ const query = graphql`
 export default ({ planetMorph }) => (
   <StaticQuery
     query={query}
-    render={data => (
+    render={(data) => (
       <PortfolioSubsection
         planetMorph={planetMorph}
-        ventures={data.allVentureYaml.edges.map(edge => edge.node)}
+        ventures={data.allVentureYaml.edges.map((edge) => edge.node)}
       />
     )}
   />

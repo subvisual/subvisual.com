@@ -21,7 +21,7 @@ function SEO({ description, lang, keywords, title }) {
   return (
     <StaticQuery
       query={detailsQuery}
-      render={data => {
+      render={(data) => {
         const metaDescription =
           description || data.site.siteMetadata.description
         const metaImage = `${data.site.siteMetadata.url}${data.site.siteMetadata.image}`

@@ -6,7 +6,7 @@ import _uniqueId from "lodash/uniqueId"
 import Placeholder from "../load_placeholder/placeholder"
 import styles from "./index.module.css"
 
-export default props => {
+export default (props) => {
   const { delay, darkOverlay, imgStyle, ...imgProps } = props
   const [loaded, setLoaded] = React.useState(false)
   const [ref, inView] = useInView({

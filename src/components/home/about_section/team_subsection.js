@@ -46,7 +46,7 @@ const teamQuery = graphql`
 
 const TeamSubsection = ({ members }) => (
   <ul className={styles.root}>
-    {members.map(data => (
+    {members.map((data) => (
       <li key={data.id}>
         <Member {...data} />
       </li>
@@ -58,7 +58,7 @@ export default () => (
   <StaticQuery
     query={teamQuery}
     render={({ allTeamMemberYaml: { edges } }) => (
-      <TeamSubsection members={edges.map(edge => edge.node)} />
+      <TeamSubsection members={edges.map((edge) => edge.node)} />
     )}
   />
 )
