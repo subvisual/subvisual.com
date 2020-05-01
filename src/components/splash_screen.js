@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react"
 import PropTypes from "prop-types"
+import { motion } from "framer-motion"
 import { disablePageScroll, enablePageScroll } from "scroll-lock"
 import _uniqueId from "lodash/uniqueId"
 

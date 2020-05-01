@@ -6,7 +6,7 @@ import AnimatedLetters from "./title/animated_letters"
 
 import styles from "./title.module.scss"
 
-const HeroTitle = ({ hidden, planetMorph }) => {
+const HeroTitle = ({ tittleRef }) => {
   const hasJavascript = useDetectJavascript()
 
   if (!hasJavascript) {
@@ -19,20 +19,14 @@ const HeroTitle = ({ hidden, planetMorph }) => {
         We nurture ideas that empower people
       </span>
       <span aria-hidden="true">
-        <AnimatedLetters {...{ hidden, planetMorph }} />
+        <AnimatedLetters {...{ tittleRef }} />
       </span>
     </h1>
   )
 }
 
 HeroTitle.propTypes = {
-  hidden: PropTypes.bool,
-  planetMorph: PropTypes.func,
-}
-
-HeroTitle.defaultProps = {
-  hidden: false,
-  planetMorph: () => {},
+  tittleRef: PropTypes.oneOfType([PropTypes.object, PropTypes.func]).isRequired,
 }
 
 export default HeroTitle
