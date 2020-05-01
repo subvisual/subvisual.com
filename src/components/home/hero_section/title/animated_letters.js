@@ -60,7 +60,7 @@ const renderPlanet = ({ hidden, morph }) => {
   return planet
 }
 
-const HeroTitleAnimatedLetters = ({ hidden, planetMorph }) => {
+const HeroTitleAnimatedLetters = ({ tittleRef }) => {
   const userAgent = useUserAgent()
   const className = classNames(styles.root, {
     [styles.linux]: isLinux(userAgent),
@@ -70,7 +70,7 @@ const HeroTitleAnimatedLetters = ({ hidden, planetMorph }) => {
     <motion.span
       className={className}
       variants={dragVariants}
-      animate={hidden ? "out" : "in"}
+      animate={false ? "out" : "in"}
       key="without-files"
     >
       {renderAnimatedLetters("We nurture ")}
@@ -78,9 +78,7 @@ const HeroTitleAnimatedLetters = ({ hidden, planetMorph }) => {
         <motion.span className={styles.tittleless} variants={letterVariants}>
           i
         </motion.span>
-        <span className={styles.planet}>
-          {renderPlanet({ hidden, morph: planetMorph })}
-        </span>
+        <div ref={tittleRef} className={styles.tittle} />
         {renderAnimatedLetters("deas")}
       </span>
       <span className={styles.glue}>
@@ -92,8 +90,7 @@ const HeroTitleAnimatedLetters = ({ hidden, planetMorph }) => {
 }
 
 HeroTitleAnimatedLetters.propTypes = {
-  hidden: PropTypes.bool.isRequired,
-  planetMorph: PropTypes.func.isRequired,
+  tittleRef: PropTypes.oneOfType([PropTypes.object, PropTypes.func]).isRequired,
 }
 
 export default HeroTitleAnimatedLetters

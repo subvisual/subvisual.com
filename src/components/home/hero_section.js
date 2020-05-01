@@ -69,7 +69,7 @@ const ParallaxImage = ({
   )
 }
 
-const HeroSection = ({ data, planetMorph, hidePlanet }) => {
+const HeroSection = ({ data, tittleRef }) => {
   const baseDelay = 0.3
 
   return (
@@ -89,7 +89,7 @@ const HeroSection = ({ data, planetMorph, hidePlanet }) => {
         <div className={styles.root}>
           <div className={styles.content}>
             <div id="hero-title" className={styles.title}>
-              <Title planetMorph={planetMorph} hidden={hidePlanet} />
+              <Title {...{ tittleRef }} />
             </div>
             <div className={styles.text}>
               <p>
@@ -162,12 +162,7 @@ const HeroSection = ({ data, planetMorph, hidePlanet }) => {
 }
 
 HeroSection.propTypes = {
-  hidePlanet: PropTypes.bool,
-  planetMorph: PropTypes.func,
-}
-
-HeroSection.defaultTypes = {
-  planetMorph: () => {},
+  tittleRef: PropTypes.oneOfType([PropTypes.object, PropTypes.func]).isRequired,
 }
 
 const query = graphql`

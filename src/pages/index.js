@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import { useMorph } from "react-morph"
 import { cubicBezier } from "@popmotion/easing"
 
+import AnimatedPlanet from "../components/animated_planet"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import SplashScreen from "../components/splash_screen"
@@ -29,24 +30,25 @@ const spring = {
 const config = { spring, easings, getMargins: true }
 
 const IndexPage = () => {
-  const morph = useMorph(config)
-  const [hidingTittlePlanet, setHidingTittlePlanet] = useState(true)
-  const showTittlePlanet = () => setHidingTittlePlanet(false)
+  const [heroTittle, setHeroTittle] = useState()
 
   return (
     <>
-      <SplashScreen
-        lockScrollFor={1000}
-        morph={morph}
-        onHide={showTittlePlanet}
-        showFor={750}
-      />
+      {/*
+        <SplashScreen
+          lockScrollFor={1000}
+          morph={morph}
+          onHide={showTittlePlanet}
+          showFor={750}
+        />
+      */}
       <Layout>
         <SEO />
-        <HeroSection planetMorph={morph} hidePlanet={hidingTittlePlanet} />
+        <HeroSection tittleRef={setHeroTittle} />
         <VenturesSection />
         <AboutSection />
       </Layout>
+      <AnimatedPlanet heroTittle={heroTittle} />
     </>
   )
 }
