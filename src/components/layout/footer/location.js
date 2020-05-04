@@ -61,7 +61,7 @@ Location.propTypes = {
 export default ({ align, geoUrl, image, mapsUrl, name }) => (
   <StaticQuery
     query={query}
-    render={data => (
+    render={(data) => (
       <Location
         align={align}
         geoUrl={geoUrl}

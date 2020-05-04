@@ -90,5 +90,5 @@ const query = graphql`
 `
 
 export default () => (
-  <StaticQuery query={query} render={data => <Footer data={data} />} />
+  <StaticQuery query={query} render={(data) => <Footer data={data} />} />
 )

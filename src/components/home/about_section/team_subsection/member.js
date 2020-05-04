@@ -33,7 +33,7 @@ const Member = ({ name, role, social, photo }) => {
         </div>
       </div>
       <ul aria-label="Social Links" className={styles.links}>
-        {Object.keys(social).map(platform => {
+        {Object.keys(social).map((platform) => {
           if (!social[platform]) return null
 
           return (

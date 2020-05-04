@@ -18,7 +18,7 @@ const socialDetails = {
 
 const SocialLinks = () => (
   <ul className={styles.root}>
-    {Object.keys(socialDetails).map(platform => (
+    {Object.keys(socialDetails).map((platform) => (
       <li key={platform} className={styles.item}>
         <SocialLink
           name="Subvisual"

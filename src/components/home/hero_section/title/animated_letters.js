@@ -33,7 +33,7 @@ const letterVariants = {
   },
 }
 
-const renderAnimatedLetters = string =>
+const renderAnimatedLetters = (string) =>
   Array.from(string).map((letter, index) => (
     // eslint-disable-next-line react/no-array-index-key
     <motion.span key={index} variants={letterVariants}>
