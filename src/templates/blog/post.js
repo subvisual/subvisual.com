@@ -11,29 +11,38 @@ import "../../common/base.scss"
 import styles from "./post.module.scss"
 
 export const query = graphql`
-  query($slug: String!) {
+  query($cover: String, $slug: String!) {
     markdownRemark(frontmatter: { path: { eq: $slug } }) {
-      html
+      fields {
+        cover
+      }
       frontmatter {
         author {
           key
           name
         }
         date
-        cover
         title
+      }
+      html
+    }
+    coverFile: file(absolutePath: { eq: $cover }) {
+      childImageSharp {
+        fluid(maxWidth: 980) {
+          ...GatsbyImageSharpFluid
+        }
       }
     }
   }
 `
 
-const BlogPostTemplate = ({ author, date, html, cover, title }) => (
+const BlogPostTemplate = ({ author, cover, coverFile, date, html, title }) => (
   <Layout>
     <SEO title={title} />
     <div className={styles.root}>
       <article className={styles.article}>
         <header className={styles.header}>
-          <Header {...{ author, date, cover, title }} />
+          <Header {...{ author, cover, coverFile, date, title }} />
         </header>
         <section className={styles.body}>
           <Body html={html} />
@@ -48,17 +57,26 @@ BlogPostTemplate.propTypes = {
   date: PropTypes.instanceOf(Date).isRequired,
   html: PropTypes.string.isRequired,
   cover: PropTypes.string,
+  coverFile: PropTypes.object,
   title: PropTypes.string.isRequired,
 }
 
 export default ({ data }) => {
-  const { markdownRemark } = data
-  const { frontmatter, html } = markdownRemark
-  const { author, date, cover, title } = frontmatter
+  const { markdownRemark, coverFile } = data
+  const { fields, frontmatter, html } = markdownRemark
+  const { cover } = fields
+  const { author, date, title } = frontmatter
 
   return (
     <BlogPostTemplate
-      {...{ author, date: new Date(date), html, cover, title }}
+      {...{
+        author,
+        date: new Date(date),
+        html,
+        cover,
+        coverFile,
+        title,
+      }}
     />
   )
 }
