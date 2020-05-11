@@ -28,7 +28,7 @@ export const query = graphql`
     }
     coverFile: file(absolutePath: { eq: $cover }) {
       childImageSharp {
-        fluid(maxWidth: 980) {
+        fluid(grayscale: true, maxWidth: 980) {
           ...GatsbyImageSharpFluid
         }
       }
