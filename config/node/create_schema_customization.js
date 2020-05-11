@@ -16,6 +16,7 @@ module.exports = ({ actions }) => {
 
       type Frontmatter {
         author: Author! @link(by: "key"),
+        cover: String,
         date: Date!,
         path: String!,
         tags: [String]!,

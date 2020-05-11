@@ -22,7 +22,7 @@ const createBlogAuthorsPages = async ({ createPage, graphql }) => {
   `
   const results = await graphql(query)
 
-  results.data.allMarkdownRemark.distinct.forEach(authorKey =>
+  results.data.allMarkdownRemark.distinct.forEach((authorKey) =>
     createPage({
       component,
       context: { authorKey, blogPostsPathRegex: `/^${basePath}/` },
@@ -39,19 +39,30 @@ const createBlogPostsPages = async ({ createPage, graphql }) => {
       allMarkdownRemark(
         filter: { fileAbsolutePath: { regex: "/^${basePath}/" } }
       ) {
-        distinct(field: frontmatter___path)
+        nodes {
+          fields {
+            cover
+          }
+          frontmatter {
+            path
+          }
+        }
       }
     }
   `
   const results = await graphql(query)
 
-  results.data.allMarkdownRemark.distinct.forEach(slug =>
+  results.data.allMarkdownRemark.nodes.forEach((node) => {
+    const { fields, frontmatter } = node
+    const { cover } = fields
+    const { path: slug } = frontmatter
+
     createPage({
       component,
-      context: { slug },
+      context: { cover, slug },
       path: path.posix.join("/blog", slug),
     })
-  )
+  })
 }
 
 module.exports = async ({ actions, graphql }) => {

@@ -6,12 +6,8 @@
   width: 100%;
   height: 100vw;
   max-width: 980px; /* 10 columns + 9 gutters */
-  max-height: 50vh;
+  max-height: 452px;
   margin-bottom: 40px;
-
-  background-position: center bottom;
-  background-size: cover;
-  filter: grayscale(100%);
 }
 
 .info {

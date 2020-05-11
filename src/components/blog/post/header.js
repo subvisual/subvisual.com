@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import dateFormat from "dateformat"
 
+import Cover from "./header/cover"
 import Title from "../title"
 import Wrapper from "./wrapper"
 
@@ -14,21 +15,18 @@ const renderAuthor = ({ key, name }) => (
   </>
 )
 
-const BlogPostHeader = ({ author, date, cover, title }) => {
+const renderCover = ({ cover, coverFile }) => {
+  if (!coverFile && !cover) return null
+
+  return (
+    <Wrapper>
+      <Cover {...{ className: styles.cover, cover, coverFile }} />
+    </Wrapper>
+  )
+}
+
+const BlogPostHeader = ({ author, cover, coverFile, date, title }) => {
   const formattedDate = dateFormat(date, "mmmm d, yyyy")
-
-  const renderCover = () => {
-    if (!cover) return null
-
-    return (
-      <Wrapper>
-        <div
-          className={styles.cover}
-          style={{ backgroundImage: `url(${cover})` }}
-        />
-      </Wrapper>
-    )
-  }
 
   return (
     <>
@@ -37,7 +35,7 @@ const BlogPostHeader = ({ author, date, cover, title }) => {
           <Title>{title}</Title>
         </div>
       </Wrapper>
-      {renderCover()}
+      {renderCover({ cover, coverFile })}
       <Wrapper padded>
         <div className={styles.info}>
           <span className={styles.author}>{renderAuthor(author)}</span>
@@ -53,8 +51,9 @@ BlogPostHeader.propTypes = {
     key: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
   }).isRequired,
-  date: PropTypes.instanceOf(Date).isRequired,
   cover: PropTypes.string,
+  coverFile: PropTypes.object,
+  date: PropTypes.instanceOf(Date).isRequired,
   title: PropTypes.string.isRequired,
 }
 
