@@ -4,7 +4,9 @@ title: 8 Habits To Help You Through The Pandemic Times
 author: laura-esteves
 date: 2020-05-13
 intro: >
-  TODO
+  Your brain is constantly building new neural pathways and, if you're staying
+  at home, this can be the perfect opportunity to start breaking bad habits and
+  replacing them with some good ones.
 ---
 
 # 8 Habits To Help You Through The Pandemic Times
@@ -25,7 +27,7 @@ To help you define what good habits you could be creating during this time at
 home, here's a list of the ones I consider essential.
 
 
-## Habit #1 - Make your bed every morning
+## Habit 1 - Make your bed every morning
 
 Making our bed in the morning might seem like something small and not really
 important. But “it will give you a small sense of pride and it will encourage
@@ -34,7 +36,7 @@ you to do another task and another and another.”
 `youtube: pxBQLFLei70`
 
 
-## Habit #2 - Drink plenty of water
+## Habit 2 - Drink plenty of water
 
 You already know this but it's important so here's a friendly reminder. Keeping
 hydrated is crucial for your health and well-being.
