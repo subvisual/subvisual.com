@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 
 import BlogPostWrapper from "./wrapper"
 
-import styles from "./body_wrapper.module.css"
+import styles from "./body_wrapper.module.scss"
 
 const BlogPostBodyWrapper = ({ children }) => (
   <BlogPostWrapper>

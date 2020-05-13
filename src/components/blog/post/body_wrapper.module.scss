@@ -1,0 +1,12 @@
+@import "common/breakpoints";
+
+@import "./variables";
+
+.content {
+  max-width: $BlogPost-body-maxWidth-mobile;
+  margin-left: auto;
+
+  @include media(">=desktop") {
+    max-width: $BlogPost-body-maxWidth-desktop;
+  }
+}
