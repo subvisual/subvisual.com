@@ -73,6 +73,7 @@ First, we want to check if we're in a git project:
 
 ```vim
 let s:in_git = system("git rev-parse — git-dir 2> /dev/null")
+
 if s:in_git == 0
   " call hub
 endif
