@@ -14,12 +14,12 @@ blockquote {
   font-weight: 800;
   line-height: 28px;
 
-  @include media(">=628px") {
+  @include media(">=668px") {
     max-width: $BlogPostBody-text-maxWidth-mobile + (56px + 20px) * 2;
   }
 
   @include media(">=818px") {
-    margin-left: 95px;
+    margin-left: 75px;
   }
 
   @include media(">=desktop") {
