@@ -49,14 +49,14 @@
     }
   }
 
+  &.chrome > p:first-of-type::first-letter {
+    margin-top: 5px;
+  }
+
   &.macos > p:first-of-type::first-letter {
     @-moz-document url-prefix() {
       margin-top: 10px;
     }
-  }
-
-  &.macos.chrome > p:first-of-type::first-letter {
-    margin-top: 6px;
   }
 
   &.safari > p:first-of-type::first-letter {
