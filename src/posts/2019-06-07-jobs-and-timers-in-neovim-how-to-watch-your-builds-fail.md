@@ -72,8 +72,9 @@ Now let's change our custom status bar.
 First, we want to check if we're in a git project:
 
 ```vim
-let s:in_git = system("git rev-parse — git-dir 2> /dev/null")if s:in_git == 0
- " call hub
+let s:in_git = system("git rev-parse — git-dir 2> /dev/null")
+if s:in_git == 0
+  " call hub
 endif
 ```
 
@@ -88,9 +89,11 @@ So let's create a `CiStatus` function that looks like this:
 
 ```vim
 function! CiStatus()
- let l:callbacks = {
- \ 'on_stdout': function('OnCiStatus'),
- \ }call jobstart('hub ci-status', l:callbacks)
+  let l:callbacks = {
+  \ 'on_stdout': function('OnCiStatus'),
+  \ }
+
+  call jobstart('hub ci-status', l:callbacks)
 endfunction
 ```
 
@@ -101,21 +104,25 @@ variable. We will later use this variable in our statusline.
 
 ```vim
 function! OnCiStatus(job_id, data, event) dict
- if a:event == "stdout" && a:data[0] != ''
- let g:ci_status = ParseCiStatus(a:data[0])
- endif
-endfunctionfunction! ParseCiStatus(out)
- let l:states = {
- \ 'success': "ci passed",
- \ 'failure': "ci failed",
- \ 'neutral': "ci yet to run",
- \ 'error': "ci errored",
- \ 'cancelled': "ci cancelled",
- \ 'action_required': "ci requires action",
- \ 'pending': "ci running",
- \ 'timed_out': "ci timed out",
- \ 'no status': "no ci",
- \ }return l:states[a:out] . ", "
+  if a:event == "stdout" && a:data[0] != ''
+    let g:ci_status = ParseCiStatus(a:data[0])
+  endif
+endfunction
+
+function! ParseCiStatus(out)
+  let l:states = {
+  \ 'success': "ci passed",
+  \ 'failure': "ci failed",
+  \ 'neutral': "ci yet to run",
+  \ 'error': "ci errored",
+  \ 'cancelled': "ci cancelled",
+  \ 'action_required': "ci requires action",
+  \ 'pending': "ci running",
+  \ 'timed_out': "ci timed out",
+  \ 'no status': "no ci",
+  \ }
+
+  return l:states[a:out] . ", "
 endfunction
 ```
 
@@ -129,10 +136,11 @@ first `CiStatus` function again:
 
 ```vim
 function! OnCiStatus(job_id, data, event) dict
- if a:event == "stdout" && a:data[0] != ''
- let g:ci_status = ParseCiStatus(a:data[0])
- call timer_start(30000, 'CiStatus') " relevant new part
- endif
+  if a:event == "stdout" && a:data[0] != ''
+    let g:ci_status = ParseCiStatus(a:data[0])
+
+    call timer_start(30000, 'CiStatus') " relevant new part
+  endif
 endfunction
 ```
 
@@ -142,12 +150,19 @@ to modify `CiStatus` to accept an argument (that we can safely ignore):
 
 ```vim
 function! CiStatus(timer_id)
- let l:callbacks = {
- \ 'on_stdout': function('OnCiStatus'),
- \ }call jobstart('hub ci-status', l:callbacks)
-endfunction" We also need to change the first CiStatus call to receive an int
-" Since we don't care about it, let's just use 0let s:in_git = system("git rev-parse — git-dir 2> /dev/null")if s:in_git == 0
- call CiStatus(0)
+  let l:callbacks = {
+  \ 'on_stdout': function('OnCiStatus'),
+  \ }
+
+  call jobstart('hub ci-status', l:callbacks)
+endfunction
+
+" We also need to change the first CiStatus call to receive an int
+" Since we don't care about it, let's just use 0
+let s:in_git = system("git rev-parse — git-dir 2> /dev/null")
+
+if s:in_git == 0
+  call CiStatus(0)
 endif
 ```
 
