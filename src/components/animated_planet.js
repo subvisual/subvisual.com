@@ -15,45 +15,46 @@ const SPLASH_TRANSITION = {
   ease: [1, -0.05, 0.45, 0.8],
 }
 
-const PLANET_VARIANTS = {
-  splash: ({ windowSize }) => {
-    const { width, height } = windowSize
-    const diameter = Math.max(width, height) * 1.5
+const getBackgroundInitial = () => ({ opacity: 1 })
 
-    return {
-      x: width / 2 - diameter / 2,
-      y: height / 2 - diameter / 2,
-      width: diameter,
-      height: diameter,
-    }
-  },
-  heroTittle: ({ boundingBox }) => {
-    const { x, y, width, height } = boundingBox
+const getBackgroundAnimate = ({ initial, variant }) => {
+  if (variant === "splash") return initial
 
-    return {
-      x,
-      y,
-      width,
-      height,
-      transition: SPLASH_TRANSITION,
-    }
-  },
-}
-
-const BACKGROUND_VARIANTS = {
-  splash: {
-    opacity: 1,
-  },
-  heroTittle: {
-    opacity: 0,
-    transition: SPLASH_TRANSITION,
-  },
+  return { opacity: 0 }
 }
 
 const getBoundingBox = (elem) => {
   if (!elem || !elem.getBoundingClientRect) return {}
 
   return elem.getBoundingClientRect()
+}
+
+const getRootInitial = ({ windowSize }) => {
+  const { width, height } = windowSize
+  const diameter = Math.max(width, height) * 1.5
+
+  return {
+    x: width / 2 - diameter / 2,
+    y: height / 2 - diameter / 2,
+    width: diameter,
+    height: diameter,
+  }
+}
+
+const getRootAnimate = ({ anchors, initial, variant }) => {
+  if (variant === "splash") return initial
+
+  const anchor = anchors[variant]
+  const boundingBox = getBoundingBox(anchor)
+  const { x, y, width, height } = boundingBox
+
+  return {
+    x,
+    y,
+    width,
+    height,
+    transition: SPLASH_TRANSITION,
+  }
 }
 
 const AnimatedPlanet = ({ heroTittle }) => {
@@ -65,15 +66,21 @@ const AnimatedPlanet = ({ heroTittle }) => {
   })
 
   const radialGradientID = _uniqueId("animated-planet-radial-gradient-")
-  const boundingBox = getBoundingBox(heroTittle)
+  const rootInitial = getRootInitial({ windowSize })
+  const rootAnimate = getRootAnimate({
+    anchors: { heroTittle },
+    initial: rootInitial,
+    variant,
+  })
+  const backgroundInitial = getBackgroundInitial()
+  const backgroundAnimate = getBackgroundAnimate({ variant })
 
   return (
     <motion.div
       className={styles.root}
-      custom={{ boundingBox, windowSize }}
-      initial="splash"
-      animate={variant}
-      variants={PLANET_VARIANTS}
+      initial={rootInitial}
+      animate={rootAnimate}
+      transition={SPLASH_TRANSITION}
     >
       <svg
         className={styles.image}
@@ -86,9 +93,9 @@ const AnimatedPlanet = ({ heroTittle }) => {
           cy="50"
           r="50"
           fill="#fcfcfc"
-          initial="splash"
-          animate={variant}
-          variants={BACKGROUND_VARIANTS}
+          initial={backgroundInitial}
+          animate={backgroundAnimate}
+          transition={SPLASH_TRANSITION}
         />
         <circle cx="50" cy="50" r="50" fill={`url(#${radialGradientID})`} />
 
