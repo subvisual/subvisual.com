@@ -130,5 +130,12 @@
     "react/require-default-props": "off",
     "react/prop-types": "off",
     "react-hooks/rules-of-hooks": "error"
+  },
+  "settings": {
+    "import/resolver": {
+      "alias": [
+        ["src", "./src"]
+      ]
+    }
   }
 }

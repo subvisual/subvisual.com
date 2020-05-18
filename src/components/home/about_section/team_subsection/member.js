@@ -2,8 +2,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import Img from "gatsby-image"
 
-import SocialLink from "../../../SocialLink"
-import Text from "../../../text"
+import SocialLink from "src/components/SocialLink"
+import Text from "src/components/text"
 
 import styles from "./member.module.css"
 
