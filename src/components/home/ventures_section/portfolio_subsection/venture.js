@@ -2,8 +2,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import classNames from "classnames"
 
-import Text from "../../../text"
-import ImageLoader from "../../../image_loader"
+import Text from "src/components/text"
+import ImageLoader from "src/components/image_loader"
 
 import styles from "./venture.module.css"
 

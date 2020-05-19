@@ -1,6 +1,6 @@
 import React from "react"
 
-import SocialLink from "../../SocialLink"
+import SocialLink from "src/components/SocialLink"
 
 import styles from "./social_links.module.css"
 

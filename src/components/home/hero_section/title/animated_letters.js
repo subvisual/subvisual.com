@@ -3,9 +3,9 @@ import PropTypes from "prop-types"
 import classNames from "classnames"
 import { motion } from "framer-motion"
 
-import Planet from "../../../planet"
-import useUserAgent from "../../../../utils/use_user_agent"
-import { isLinux } from "../../../../utils/user_agent_utils"
+import Planet from "src/components/planet"
+import useUserAgent from "src/utils/use_user_agent"
+import { isLinux } from "src/utils/user_agent_utils"
 
 import styles from "./animated_letters.module.scss"
 

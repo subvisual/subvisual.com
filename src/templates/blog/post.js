@@ -2,15 +2,15 @@ import React from "react"
 import PropTypes from "prop-types"
 import { graphql } from "gatsby"
 
-import Body from "../../components/blog/post/body"
-import BodyWrapper from "../../components/blog/post/body_wrapper"
-import Header from "../../components/blog/post/header"
-import Layout from "../../components/layout"
-import SEO from "../../components/seo"
-import ShareLinks from "../../components/blog/post/body/share_links"
-import Wrapper from "../../components/blog/post/wrapper"
+import Body from "src/components/blog/post/body"
+import BodyWrapper from "src/components/blog/post/body_wrapper"
+import Header from "src/components/blog/post/header"
+import Layout from "src/components/layout"
+import SEO from "src/components/seo"
+import ShareLinks from "src/components/blog/post/body/share_links"
+import Wrapper from "src/components/blog/post/wrapper"
 
-import "../../common/base.scss"
+import "src/common/base.scss"
 import styles from "./post.module.scss"
 
 export const query = graphql`
