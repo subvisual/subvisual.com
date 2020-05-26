@@ -6,6 +6,7 @@ import NavLink from "./header/nav_link"
 import styles from "./header.module.scss"
 
 const BLOG_PATH = "/blog/"
+const CAREERS_PATH = "/careers/"
 
 const Header = ({ currentPath, renderLogo }) => (
   <header className={styles.root}>
@@ -13,6 +14,15 @@ const Header = ({ currentPath, renderLogo }) => (
       <div className={styles.logo}>{renderLogo()}</div>
       <nav>
         <ul className={styles.navLinks}>
+          <li className={styles.navLink}>
+            <NavLink
+              active={currentPath === CAREERS_PATH}
+              to={CAREERS_PATH}
+              title="Careers"
+            >
+              Careers
+            </NavLink>
+          </li>
           <li className={styles.navLink}>
             <NavLink
               active={currentPath === BLOG_PATH}

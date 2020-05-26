@@ -1,0 +1,87 @@
+.root {
+  position: relative;
+
+  padding: 112px 20px;
+}
+
+.background {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: #045cfc;
+}
+
+.content {
+  display: grid;
+  grid-row-gap: 56px;
+  max-width: 1184px;
+  margin-right: auto;
+  margin-left: auto;
+
+  color: #fcfcfc;
+}
+
+.academy {
+  position: absolute;
+  top: -10vh;
+  left: calc(50% - 10vh);
+
+  height: 20vh;
+}
+
+.header {
+  text-align: center;
+}
+
+.apprenticeship {
+  grid-column: 1 / span 2;
+}
+
+.summer-camp {
+  grid-column: 2 / span 1;
+}
+
+.title {
+  margin-bottom: 28px;
+}
+
+.text {
+  max-width: 577px;
+}
+
+@media (min-width: 768px) {
+  .story {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: initial;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 950px) {
+  .root {
+    padding: 224px 28px 112px;
+  }
+
+  .content {
+    grid-row-gap: 112px;
+  }
+
+  .apprenticeship {
+    grid-column: 1 / span 2;
+  }
+
+  .summer-camp {
+    grid-column: 2 / span 1;
+  }
+
+  .title {
+    margin-bottom: 56px;
+  }
+}

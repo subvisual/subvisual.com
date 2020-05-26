@@ -1,0 +1,51 @@
+@import "common/breakpoints";
+
+.ideas {
+  position: relative;
+
+  display: inline-block;
+}
+
+.tittleless {
+  font-family: "Acta Display subset without tittle";
+}
+
+.planet {
+  position: absolute;
+  top: 7px;
+  left: 3px;
+
+  display: block;
+  width: 12px;
+  height: 12px;
+
+  @include media(">=desktop") {
+    top: 10px;
+    left: 6px;
+
+    width: 23px;
+    height: 23px;
+
+    /**
+     * Fix for letter vertical placement rendering differences.
+     */
+    @-moz-document url-prefix() {
+      top: 17px;
+    }
+  }
+}
+
+.glue {
+  @media (min-width: 586px) {
+    white-space: nowrap;
+  }
+}
+
+/**
+ * Fix for letter vertical placement rendering differences.
+ */
+@include media(">=desktop") {
+  .root.linux .planet {
+    top: 17px;
+  }
+}
