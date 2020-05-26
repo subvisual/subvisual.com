@@ -13,7 +13,7 @@
 .planet {
   position: absolute;
   top: 7px;
-  left: 3px;
+  left: 116px;
 
   display: block;
   width: 12px;
@@ -21,7 +21,7 @@
 
   @include media(">=desktop") {
     top: 10px;
-    left: 6px;
+    left: 231px;
 
     width: 23px;
     height: 23px;

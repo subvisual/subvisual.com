@@ -6,7 +6,6 @@
 
 .background {
   position: absolute;
-
   top: 0;
   left: 0;
   z-index: -1;
@@ -27,12 +26,18 @@
   color: #fcfcfc;
 }
 
-.academy {
+.imgContainer {
   position: absolute;
-  top: -10vh;
-  left: calc(50% - 10vh);
+  top: -8vh;
+  left: 0;
 
-  height: 20vh;
+  width: 100%;
+
+  text-align: center;
+}
+
+.academy {
+  height: 16vh;
 }
 
 .header {
@@ -71,6 +76,20 @@
 
   .content {
     grid-row-gap: 112px;
+  }
+
+  .imgContainer {
+    position: absolute;
+    top: -10vh;
+    left: 0;
+
+    width: 100%;
+
+    text-align: center;
+  }
+
+  .academy {
+    height: 20vh;
   }
 
   .apprenticeship {

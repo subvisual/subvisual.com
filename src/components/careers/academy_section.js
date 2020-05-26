@@ -9,7 +9,7 @@ import styles from "./academy_section.module.css"
 
 const AcademySection = () => (
   <section className={styles.root}>
-    <div>
+    <div className={styles.imgContainer}>
       <img className={styles.academy} src={academy} alt="subvisual academy" />
     </div>
     <div className={styles.background} />
@@ -22,23 +22,23 @@ const AcademySection = () => (
           <div className={styles.title}>
             <SubsectionTitle color="white">Apprenticeship</SubsectionTitle>
           </div>
-          <p className={styles.text}>
-            <Text>
+          <div className={styles.text}>
+            <Text as="p">
               By putting people first and never compromising on quality, we were
               able to shape a team culture that will embrace you and your ideas.
             </Text>
-          </p>
+          </div>
         </section>
         <section className={styles.summerCamp}>
           <div className={styles.title}>
             <SubsectionTitle color="white">Summer Camp</SubsectionTitle>
           </div>
-          <p className={styles.text}>
-            <Text>
+          <div className={styles.text}>
+            <Text as="p">
               We&apos;ll challenge you to think further and help you do the
               heavy lifting of shaping your product&apos;s development.
             </Text>
-          </p>
+          </div>
         </section>
       </div>
     </div>

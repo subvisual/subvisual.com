@@ -13,12 +13,10 @@ const UniverseCultureSection = () => (
       </header>
 
       <div>
-        <p>
-          <Text>
-            We are a group of people from different companies with a shared
-            culture
-          </Text>
-        </p>
+        <Text as="p">
+          We are a group of people from different companies with a shared
+          culture
+        </Text>
       </div>
     </div>
   </section>

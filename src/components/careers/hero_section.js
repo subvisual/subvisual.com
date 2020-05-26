@@ -93,19 +93,14 @@ const HeroSection = ({ data }) => {
             </div>
             <div className={styles.heroMessage}>
               <div className={styles.text}>
-                <p>
-                  <Text>
-                    Our universe is always growing and looking for people to
-                    grow with it. Whether in Subvisual or in one of our
-                    ventures, we are sure that you will find the right space for
-                    you.
-                  </Text>
-                </p>
-                <p>
-                  <Text>
-                    Let’s explore. <CallToAction>Together.</CallToAction>
-                  </Text>
-                </p>
+                <Text as="p">
+                  Our universe is always growing and looking for people to grow
+                  with it. Whether in Subvisual or in one of our ventures, we
+                  are sure that you will find the right space for you.
+                </Text>
+                <Text as="p">
+                  Let’s explore. <CallToAction>Together.</CallToAction>
+                </Text>
               </div>
               <div className={styles.illustrationDiv}>
                 <img

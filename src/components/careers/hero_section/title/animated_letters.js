@@ -69,8 +69,9 @@ const HeroTitleAnimatedLetters = () => {
       animate="in"
       key="without-files"
     >
-      {renderAnimatedLetters("Always look")}
+      {renderAnimatedLetters("Always ")}
       <span className={styles.ideas}>
+        {renderAnimatedLetters("look")}
         <motion.span className={styles.tittleless} variants={letterVariants}>
           i
         </motion.span>

@@ -1,0 +1,111 @@
+.root {
+  --background-color: #403f4c;
+  --foreground-color: #fcfcfc;
+  --content-margin-left: 14px;
+  position: relative;
+
+  width: 100%;
+  height: 280px;
+}
+
+.positionLayer {
+  width: 100%;
+  height: 100%;
+}
+
+.positionLayer::before {
+  content: "";
+
+  position: absolute;
+  top: 12px;
+  left: 12px;
+
+  width: 100%;
+  height: 100%;
+
+  background: #403f4c url("../../../../images/careers/pattern_layer.svg");
+  background-size: 100% 100%;
+}
+
+.positionLayer::after {
+  content: "";
+
+  position: absolute;
+
+  box-sizing: border-box;
+
+  width: 100%;
+  height: 100%;
+
+  background: var(--foreground-color);
+  border: 4px solid var(--background-color);
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+}
+
+.line {
+  --top: 135px;
+  position: absolute;
+  top: var(--top);
+  left: var(--content-margin-left);
+
+  width: calc(100% - var(--content-margin-left) * 2);
+  height: 1px;
+
+  background: var(--background-color);
+}
+
+.company {
+  position: absolute;
+  top: 28px;
+  left: var(--content-margin-left);
+
+  display: flex;
+  align-items: flex-start;
+
+  width: calc(100% - var(--content-margin-left) * 2);
+  height: 40px;
+}
+
+.about {
+  position: absolute;
+  top: 76px;
+  left: var(--content-margin-left);
+
+  display: flex;
+  align-items: flex-start;
+
+  width: calc(100% - var(--content-margin-left) * 2);
+  height: 40px;
+}
+
+.role {
+  position: absolute;
+  top: 156px;
+  left: var(--content-margin-left);
+
+  display: flex;
+  align-items: flex-end;
+
+  width: calc(100% - var(--content-margin-left) * 2);
+  height: 28px;
+}
+
+.location {
+  position: absolute;
+  top: 224px;
+  left: var(--content-margin-left);
+
+  display: flex;
+  align-items: flex-end;
+
+  width: calc(100% - var(--content-margin-left) * 2);
+  height: 28px;
+}

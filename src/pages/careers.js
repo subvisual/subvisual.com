@@ -7,6 +7,7 @@ import "../common/base.scss"
 import HeroSection from "../components/careers/hero_section"
 import UniverseCultureSection from "../components/careers/universe_culture_section"
 import AcademySection from "../components/careers/academy_section"
+import OpenPositionsSection from "../components/careers/open_positions_section"
 
 const CareersPage = () => (
   <>
@@ -21,6 +22,7 @@ const CareersPage = () => (
         <div className="">
           <HeroSection />
           <UniverseCultureSection />
+          <OpenPositionsSection />
           <AcademySection />
         </div>
       </div>

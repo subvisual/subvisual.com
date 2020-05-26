@@ -57,6 +57,14 @@ module.exports = ({ actions }) => {
         image: File! @fileByRelativePath,
         url: String!
       }
+      
+      type PositionYaml implements Node @dontInfer {
+        company: String!,
+        logo: File! @fileByRelativePath,
+        about: String!,
+        role: String!,
+        location: String!,
+      }
     `,
   ]
 

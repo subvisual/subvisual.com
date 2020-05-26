@@ -11,7 +11,11 @@
 }
 
 .header {
-  max-width: 577px;
+  max-width: 550px;
+}
+
+.listPositions {
+  grid-column: 1 / span 2;
 }
 
 @media (min-width: 768px) {
