@@ -38,18 +38,6 @@
     web: "https://gabrielpoca.com"
     github: "https://github.com/gabrielpoca"
 
-- key: helena-muniz
-  name: Helena Muniz
-  photo:
-    horizontal: "../images/team/helena-muniz-h.jpg"
-    vertical: "../images/team/helena-muniz-v.jpg"
-  role: Head of People Operations
-  bio: >
-    Loves people, learning, and to travel. Thrives in helping the team shoot
-    for the moon. Believes everyone can achieve their goals and dreams.
-  social:
-    linkedin: "https://www.linkedin.com/in/helenammuniz/"
-
 - key: joao-ferreira
   name: "João Ferreira"
   photo:
@@ -62,19 +50,6 @@
   social:
     dribbble: "https://dribbble.com/jferreiradzn"
     twitter: "https://twitter.com/jferreiradzn"
-
-- key: joao-justo
-  name: "João Justo"
-  photo:
-    horizontal: "../images/team/joao-justo-h.jpg"
-    vertical: "../images/team/joao-justo-v.jpg"
-  role: "Developer"
-  bio: "Always gets way too excited about a new idea. Downhill amateur and
-  Android fanboy. Avoid talking to him about Game of Thrones unless you have
-  serious time to spend."
-  social:
-    github: "https://github.com/joaojusto"
-    twitter: "https://twitter.com/jpjustonunes"
 
 - key: laura-esteves
   name: "Laura Esteves"
