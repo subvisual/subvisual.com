@@ -50,11 +50,7 @@ really simple way.
 > Key Results are the "Hows." They:
 > - express measurable milestones which, if achieved, will advance objective(s)
 >   in a useful manner to their constituents;
-> - must describe outcomes, not activities. If your KRs include words like
->   "consult," "help," "analyze," or "participate," they describe activities.
->   Instead, describe the end-user impact of these activities: "publish average
->   and tail latency measurements from six Colossus cells by March 7," rather
->   than "assess Colossus latency";
+> - must describe outcomes, not activities(...);
 > - must include evidence of completion. This evidence must be available,
 >   credible, and easily discoverable. Examples of evidence include change
 >   lists, links to docs, notes, and published metrics reports.
