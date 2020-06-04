@@ -159,8 +159,8 @@ We need approximately 2.5 hours and we follow this session structure:
 
 ### Day 2 - Goals & Strategy
 
-The second day is all about defining goals and [strategies] together and we
-need a full day for this. Our goals (objectives) tell us what is important to
+The second day is all about defining goals and strategies together and we need
+a full day for this. Our goals (objectives) tell us what is important to
 achieve and they should be ambitious, qualitative, and actionable. We start by
 defining 3 to 5 Objectives we want to achieve during the year.
 
@@ -209,6 +209,5 @@ share with me.
 [Basecamp]: https://basecamp.com/
 [Basecamp-todo-list]: https://3.basecamp-help.com/article/48-to-dos
 [DRI]: https://www.youtube.com/watch?v=xCqKmhCBtJk
-[strategies]: https://www.youtube.com/watch?v=8dsFo8TMD4k
 [Roberto]: https://twitter.com/rmdgb
 [twitter]: https://twitter.com/lauraeesteves
