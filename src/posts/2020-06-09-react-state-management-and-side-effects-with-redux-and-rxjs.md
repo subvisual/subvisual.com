@@ -10,9 +10,11 @@ intro: Over the years I worked on many front-end projects. I don't always enjoy 
 
 In React, state management can take many shapes. I remember when the [Flux architecture](https://facebook.github.io/flux/) was the hot new thing. Eventually Redux became the standard, but new libraries are published all the time, especially when we get React APIs that fundamentally change how we build applications. React Hooks are the most recent example of that, and I believe Redux adapted itself nicely to it.
 
+For side-effects, I don't even know what the game was. I've seen people use a wide range of solutions, from nothing to Redux-Sagas. I've had my share of obscure Redux middlewares.
+
 Over the years I worked on many front-end projects. I don't always enjoy it, but I've found some libraries that make it more pleasant. One of those libraries is RxJS. I found it because of [RxDB](https://rxdb.info/), which combines RxJS and PouchDB to create the best thing I've used so far to build offline-first web apps.
 
-You may be thinking that if I'm using RxJS I don't need Redux. It's pretty easy to build a Redux clone using _BehaviorSubject_ and _scan_. But the truth is that I would be writing a lot of plumbing code, which Redux already does for me. I would eventually arrive at the same solution or, most likely, a worse one. And I wouldn't be able to use the community-supported packages. I know this because I did try to do it.
+RxJS can be many things, but I only use it to manage side-effects. You may be thinking that if I'm using RxJS I don't need Redux. It's pretty easy to build a Redux clone using _BehaviorSubject_ and _scan_. But the truth is that I would be writing a lot of plumbing code, which Redux already does for me. I would eventually arrive at the same solution or, most likely, a worse one. And I wouldn't be able to use the community-supported packages. I know this because I did try to do it.
 
 Back to Redux for state management, and RxJS for side effects. We just need one other library, to combines these two: [redux-observables](https://redux-observable.js.org/).
 
