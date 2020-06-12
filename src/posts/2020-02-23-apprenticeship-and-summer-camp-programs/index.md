@@ -106,7 +106,7 @@ resume/portfolio if you want.
 We're flexible on the starting and ending dates.
 
 Applications for an Apprenticeship are open throughout the year. For our Summer
-Camp, you should apply until the end of May.
+Camp, you should apply until the end of June.
 
 ## Benefits
 
