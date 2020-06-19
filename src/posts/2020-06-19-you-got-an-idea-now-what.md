@@ -84,7 +84,7 @@ On the same spectrum of want vs need there's also a very important concept to
 keep in mind when validating an idea. Is there a problem here, or only a
 solution? Time and time again you'll talk to people with brilliant ideas of how
 they'll build something, only to realise that even though it sounds good, what
-they have a solution to a problem that doesn't exist.
+they have is a solution to a problem that doesn't exist.
 
 At this stage, the solution is secondary. You can always pivot, change your
 solution to something slightly (or not so slightly) different, as long as there
