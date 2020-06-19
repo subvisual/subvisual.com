@@ -11,7 +11,7 @@ intro: Having an idea for a digital product might be the start of something beau
 First of all let me say right out of the gate that ideas are overrated. Having a
 lot of ideas is good, having good ideas is even better, but they're not even
 half of story, which is why I always find it funny when people want me to sign
-an NDA before sharing they're idea. The likelihood of anyone trying to steal
+an NDA before sharing their idea. The likelihood of anyone trying to steal
 your idea is very low, the likelihood of someone trying to steal your idea and
 then doing something useful with it is even lower. All of this to say that the
 hard work happens after you've had the idea, not before!
