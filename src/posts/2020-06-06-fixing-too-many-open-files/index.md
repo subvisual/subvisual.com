@@ -35,7 +35,7 @@ depending on your needs.
 
 On creation, each process is assigned its own limits. These might be inherited
 from the parent process, or assigned by the operating system directly, but
-while the process is running it will be guided by its these limits.
+while the process is running it will be guided by these limits.
 
 The [`prlimit`][prlimit] command can be used to run a command with a specific
 set of limits.
@@ -288,7 +288,7 @@ What happens if a process just starts multiplying _ad infinitum_? Each sandbox
 takes a bit of extra memory to setup, and each "child" has at least a partial
 copy of the original process data, and they all have the same resources
 requested by the parent process. So it's easy to imagine the system eventually
-runs out of some resource and crashes (this is a known as a [fork bomb]).  So
+runs out of some resource and crashes (this is known as a [fork bomb]).  So
 how can the operating system handle these rascals?
 
 Linux, the most common operating system for production servers, imposes limits
