@@ -2,7 +2,7 @@
 path: /posts/going-remote/
 title: "Going Remote: The Parts No One Tells You"
 author: fernando-mendes
-date: 1970-01-01
+date: 2020-06-22
 intro: >
   A lot of companies are allowing their workers to stay remote. Which is awesome. But the situation will now be drastically different. You see, before, everyone was remote. Now, however, you'll have part of your team in office and part of it remote. If not done properly, it won't quite be the best time of your life.
 ---
