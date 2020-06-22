@@ -114,3 +114,7 @@ So to recap, these are our steps for an awesome remote culture. They might not a
 * And finally: implement Margarita Tuesdays to the sound of Cardi B. If you're not allowed, implement them by yourself at home because you now have an awesome remote culture.
 
 Cheers,<br>Mendes
+
+---
+
+PS: We're hiring a front-end developer! We're remote friendly, incredibly curious and a lovely bunch! You can find more details on our [hiring blog post](https://subvisual.com/blog/posts/146-subvisual-is-hiring-a-frontend-developer/).
