@@ -7,12 +7,12 @@
 - name: "siosLIFE"
   description: "For younger spirits"
   image: "../images/ventures/sioslife.jpg"
-  url: "https://sioslife.com/ForYoungerSpirits"
+  url: "https://sioslife.com"
 
 - name: "Crediflux"
   description: "Simple, fast, and paperless"
   image: "../images/ventures/crediflux.jpg"
-  url: "https://www.crediflux.pt/en/"
+  url: "https://web.archive.org/web/20190222154441/https://www.crediflux.pt/"
 
 - name: "Oncostats"
   description: "Defeating a common enemy, cancer"
