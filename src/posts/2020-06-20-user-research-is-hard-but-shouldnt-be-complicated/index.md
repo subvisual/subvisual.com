@@ -24,8 +24,7 @@ I used to kick myself in the head for being lazy and delaying the research repor
 ![](./inglourious_basterds.jpg)
 
 > You know how you get to Carnegie Hall, don’t you? Practice.
-
-Aldo Raine, from “Inglourious Basterds”
+> — Aldo Raine, from “Inglourious Basterds”
 
 I used to get to the end of 5 user interviews and feel like I’d just run a marathon and I’d never want to do that again. At the time I’m writing this, I’m helping with User Research on 3 different projects, with totally different goals, and I always raise my hand when someone asks for help with research. What changed? Since then I ran over 100 interviews, with different methods of preparation, in completely different areas and for all sorts of purposes. I started with User Testing on prototypes, just following a set of steps, and now I feel comfortable doing Generative Interviews, which scared the shit out of me back then. I watched professional researchers preparing, running, and analyzing interviews, and they made it look simple. Simple doesn’t mean easy, though. The process should be manageable and streamlined in a way you can repeat it without feeling exhausted halfway through, but there’s nothing easy about guiding a stranger to tell you about their feelings and motivations for doing something. You can’t write down all the questions that will get you there, you need to have a clear concept of the goals of those interviews, be on the lookout for learning opportunities that you may not have considered before, and get the interviewee to feel like they’re having a conversation, instead of feeling interrogated. It’s not so much about finding the “perfect question” but rather how you start a conversation around each goal, how you follow up on what they say so you can slowly dig deeper.
 
