@@ -200,7 +200,7 @@ export const notesSearchEpic = (
   )
 ```
 
-This setup works for me and for the people I worked with. I've tried a few libraries for state management and side-effects, but these are the most pleasant ones to work with.
+This setup works for me and for the people I worked with. I've tried a few libraries for state management and side-effects, but these are the most pleasant ones to work with. If you're curious about how this works in practice, [we've published the source code for an app that uses all of these libraries](https://github.com/subvisual/notedown).
 
 Reach out to me on [Twitter](https://twitter.com/gabrielgpoca) if you have any comments or questions. I'll try to answer them.
 
