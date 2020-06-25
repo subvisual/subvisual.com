@@ -180,10 +180,10 @@ Our craftsmanship is not going away though. We'll help our ventures thrive by
 being the best we can at designing and developing digital products. But now we
 have a lot more experience and expertise added to our skills and curiosity.
 
-I've told you the story we want to tell, but by the time I'm of writing this
-you will notice that the story of the little planet is still not complete. To
-this day it is still waiting for someone better than me to make it travel among
-the stars. [Are you up for the challenge?][hiring-a-front-end-developer]
+I've told you the story we want to tell, but at the time I'm writing this you
+will notice that the story of the little planet is still not complete. To this
+day it is still waiting for someone better than me to make it travel among the
+stars. [Are you up for the challenge?][hiring-a-front-end-developer]
 
 
 [became Subvisual]: https://subvisual.com/blog/posts/58-our-biggest-announcement-yet/
