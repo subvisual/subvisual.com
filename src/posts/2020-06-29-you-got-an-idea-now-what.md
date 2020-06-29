@@ -2,7 +2,7 @@
 path: /posts/got-an-idea-now-what/
 title: "Got an idea, now what?"
 author: luis-zamith
-date: 2020-06-19
+date: 2020-06-29
 tags:
   - development
 intro: Having an idea for a digital product might be the start of something beautiful, but it has to be nourished
@@ -55,7 +55,7 @@ Now, there's a lot of different types of interviews and a lot of things to
 consider when preparing for them, especially if it's your first time doing this.
 You'll have a natural tendency to tell them about your idea and ask for their
 approval, "Would you like X?", "Isn't Y a pain right now?" or even "Would you
-pay for Z?".  These are all terrible questions. You're putting the interviewee
+pay for Z?". These are all terrible questions. You're putting the interviewee
 in a position in which they will say what you want to hear. Instead, don't talk
 about your idea, don't even mention you have one, at this point all you care
 about is understanding if it makes sense. Ask them about what they feel about a
