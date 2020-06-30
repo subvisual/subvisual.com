@@ -72,7 +72,7 @@ as visitors scrolled through our website. Which meant going deeper into Web
 animations like we never did before.
 
 Back when we were making the first Subvisual website, we went all out to show
-our craftsmanship, from the [Bruno]'s animations of [the hero planets] and [the
+our craftsmanship, from [Bruno]'s animations of [the hero planets] and [the
 origami bird], and [Justo]'s animations of [the pop-up buildings], both using
 [GSAP's TweenLite library], to [Miguel]'s CSS-only [animated atom]. We invested
 weeks in these details so that we could show how good we are.
