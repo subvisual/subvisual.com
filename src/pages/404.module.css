@@ -1,0 +1,38 @@
+.bodyBackground {
+  background-color: #045cfc;
+}
+
+.container {
+  max-width: 1184px;
+  margin: auto;
+}
+
+.title {
+  font-family: "Acta Headline";
+  font-weight: lighter;
+  font-size: 112px;
+  line-height: 1em;
+  color: #2421ab;
+}
+
+.text {
+}
+
+.link {
+  font-weight: bold;
+  text-decoration: underline;
+  border-bottom: solid 2px white;
+}
+
+.text,
+.link:visited,
+.link:active,
+.link:link {
+  color: white;
+}
+
+.title,
+.text,
+.link {
+  margin-bottom: 0.5em;
+}

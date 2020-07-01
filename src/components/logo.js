@@ -7,6 +7,7 @@ import _uniqueId from "lodash/uniqueId"
 import styles from "./logo.module.css"
 
 const Logo = ({ color }) => {
+  console.log(color)
   const className = classnames(styles.root, styles[color])
   const radialId = _uniqueId("logo-")
 

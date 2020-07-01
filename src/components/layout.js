@@ -8,14 +8,14 @@ import Footer from "./layout/footer"
 
 import styles from "./layout.module.css"
 
-const Layout = ({ children, currentPath, renderHeaderLogo }) => (
+const Layout = ({ children, currentPath, renderHeaderLogo, footer }) => (
   <div className={styles.root}>
     <Helmet>
       <link rel="stylesheet" href="https://use.typekit.net/dpm7mos.css" />
     </Helmet>
     <Header currentPath={currentPath} renderLogo={renderHeaderLogo} />
     <main>{children}</main>
-    <Footer />
+    {footer && <Footer />}
   </div>
 )
 
@@ -28,6 +28,7 @@ Layout.propTypes = {
 Layout.defaultProps = {
   currentPath: "",
   renderHeaderLogo: () => <Logo color="blue" />,
+  footer: true,
 }
 
 export default Layout
