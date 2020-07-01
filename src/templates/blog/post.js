@@ -75,19 +75,20 @@ const BlogPostTemplate = ({
 
 BlogPostTemplate.propTypes = {
   author: PropTypes.object.isRequired,
-  date: PropTypes.instanceOf(Date).isRequired,
-  html: PropTypes.string.isRequired,
   cover: PropTypes.string,
   coverFile: PropTypes.object,
+  date: PropTypes.instanceOf(Date).isRequired,
+  html: PropTypes.string.isRequired,
+  intro: PropTypes.string.isRequired,
+  seoDescription: PropTypes.string,
   title: PropTypes.string.isRequired,
-  description: PropTypes.string,
 }
 
 export default ({ data }) => {
   const { markdownRemark, coverFile } = data
   const { fields, frontmatter, html } = markdownRemark
   const { cover, url } = fields
-  const { author, date, title, seoDescription } = frontmatter
+  const { author, date, title, intro, seoDescription } = frontmatter
 
   return (
     <BlogPostTemplate
@@ -96,8 +97,9 @@ export default ({ data }) => {
         cover,
         coverFile,
         date: new Date(date),
-        seoDescription,
         html,
+        intro,
+        seoDescription,
         title,
         url,
       }}
