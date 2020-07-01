@@ -21,6 +21,7 @@ module.exports = ({ actions }) => {
         path: String!,
         tags: [String]!,
         title: String!,
+        seoDescription: String,
       }
 
       type MarkdownRemark implements Node {

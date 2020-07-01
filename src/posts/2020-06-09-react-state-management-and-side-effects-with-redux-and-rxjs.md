@@ -3,6 +3,7 @@ path: /posts/react-state-management-and-side-effects-with-redux-and-rxjs/
 title: React state management and side-effects with Redux and RxJS
 author: gabriel-poca
 date: 2020-06-09
+description: Over the years I worked on many front-end projects. I don't always enjoy it, but I've found some libraries that make it more pleasant. One of those libraries is RxJS.
 intro: Over the years I worked on many front-end projects. I don't always enjoy it, but I've found some libraries that make it more pleasant. One of those libraries is RxJS.
 ---
 
