@@ -26,6 +26,8 @@ export const query = graphql`
           name
         }
         date
+        intro
+        seoDescription
         title
       }
       html
@@ -48,9 +50,11 @@ const BlogPostTemplate = ({
   html,
   title,
   url,
+  intro,
+  seoDescription,
 }) => (
   <Layout>
-    <SEO title={title} />
+    <SEO {...{ title, description: seoDescription || intro }} />
     <div className={styles.root}>
       <article className={styles.article}>
         <header className={styles.header}>
@@ -71,10 +75,12 @@ const BlogPostTemplate = ({
 
 BlogPostTemplate.propTypes = {
   author: PropTypes.object.isRequired,
-  date: PropTypes.instanceOf(Date).isRequired,
-  html: PropTypes.string.isRequired,
   cover: PropTypes.string,
   coverFile: PropTypes.object,
+  date: PropTypes.instanceOf(Date).isRequired,
+  html: PropTypes.string.isRequired,
+  intro: PropTypes.string.isRequired,
+  seoDescription: PropTypes.string,
   title: PropTypes.string.isRequired,
 }
 
@@ -82,7 +88,7 @@ export default ({ data }) => {
   const { markdownRemark, coverFile } = data
   const { fields, frontmatter, html } = markdownRemark
   const { cover, url } = fields
-  const { author, date, title } = frontmatter
+  const { author, date, title, intro, seoDescription } = frontmatter
 
   return (
     <BlogPostTemplate
@@ -92,6 +98,8 @@ export default ({ data }) => {
         coverFile,
         date: new Date(date),
         html,
+        intro,
+        seoDescription,
         title,
         url,
       }}
