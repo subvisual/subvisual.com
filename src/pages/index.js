@@ -13,14 +13,13 @@ const IndexPage = () => {
   const [heroTittle, setHeroTittle] = useState()
 
   return (
-    <AnimatedPlanet.Stage>
+    <AnimatedPlanet.Stage heroTittle={heroTittle}>
       <Layout>
         <SEO />
         <HeroSection tittleRef={setHeroTittle} />
         <VenturesSection />
         <AboutSection />
       </Layout>
-      <AnimatedPlanet.Planet heroTittle={heroTittle} />
     </AnimatedPlanet.Stage>
   )
 }
