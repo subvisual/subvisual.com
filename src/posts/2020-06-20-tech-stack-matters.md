@@ -96,7 +96,7 @@ place?
 Again, I advocate for easy to change here, because remember that's what we are
 prioritising. If you really need the interactivity in the client, which is a
 resonable argument to make, use something like PJAX, Stymulus or LiveView (there
-are likely others), who allow you to handle mostly everything from your server
+are likely others), which allows you to handle mostly everything from your server
 and remove the duplication of routing, state management, etc. You do lose the
 ability to have the app work offline, which, let's face it, is a fringe scenario
 anyway and in most (if not all) cases not relevant at this stage.
