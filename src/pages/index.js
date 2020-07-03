@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 
 import AnimatedPlanet from "../components/AnimatedPlanet"
 import Layout from "../components/layout"
@@ -10,19 +10,18 @@ import VenturesSection from "../components/home/ventures_section"
 import "./index.scss"
 
 const IndexPage = () => {
-  const [heroTittle, setHeroTittle] = useState()
-  const renderPageContent = () => (
-    <Layout>
-      <SEO />
-      <HeroSection tittleRef={setHeroTittle} />
-      <VenturesSection />
-      <AboutSection />
-    </Layout>
-  )
+  const renderPageContent = ({ heroTittleRef }) => {
+    return (
+      <Layout>
+        <SEO />
+        <HeroSection tittleRef={heroTittleRef} />
+        <VenturesSection />
+        <AboutSection />
+      </Layout>
+    )
+  }
 
-  return (
-    <AnimatedPlanet.Stage heroTittle={heroTittle} render={renderPageContent} />
-  )
+  return <AnimatedPlanet.Stage render={renderPageContent} />
 }
 
 export default IndexPage

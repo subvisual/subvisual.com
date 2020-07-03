@@ -1,17 +1,20 @@
-import React from "react"
+import React, { useState } from "react"
 import PropTypes from "prop-types"
 
 import Planet from "./Planet"
 
-const Stage = ({ heroTittle, render }) => (
-  <>
-    {render()}
-    <Planet heroTittle={heroTittle} />
-  </>
-)
+const Stage = ({ render }) => {
+  const [heroTittle, setHeroTittle] = useState({})
+
+  return (
+    <>
+      {render({ heroTittleRef: setHeroTittle })}
+      <Planet heroTittle={heroTittle} />
+    </>
+  )
+}
 
 Stage.propTypes = {
-  heroTittle: PropTypes.object,
   render: PropTypes.func.isRequired,
 }
 
