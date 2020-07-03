@@ -51,7 +51,7 @@ you into thinking you're better off starting small with something that is not
 "bloated", but ultimately make you reimplement pretty much everything (or import
 it via libraries many times not controlled by the core team).
 
-You don't have to choose Rails, there are technical downsides too, like memory
+You don't have to choose Rails. There are technical downsides too, like memory
 usage or being late to the interactive apps game (mitigated by webpacker,
 actioncable and stymulus), but when starting an online product prioritise for
 batteries included and easy to change, because trust me you will change, a lot.
