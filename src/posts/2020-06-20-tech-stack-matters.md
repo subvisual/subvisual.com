@@ -29,7 +29,7 @@ be true. Proceed at your own peril.
 ## Some tech stacks add boilerplate, impeding rapid learning
 
 Let's start looking at this from the programming language angle. You can build
-anything we pretty much any programming language, as long as it is Turing
+anything with pretty much any programming language, as long as it is Turing
 complete, but there are languages that are a better fit for different types of
 jobs. I personally don't think that the language itself is going to be the
 biggest pain, but you get what you paid for. I wouldn't recommend that you start
