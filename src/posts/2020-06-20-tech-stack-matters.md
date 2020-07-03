@@ -112,7 +112,7 @@ majority of products just getting started.
 Ah, and for those that took my ideal system to be a serverless one, that's
 simply moving lines of code from a place under your control to a place you don't
 control. That's not ideal at all, especially if your core business is that
-system. Same with no code platforms, for that matter. I'm sure you can build
+system. Same with no-code platforms, for that matter. I'm sure you can build
 things quickly, but I'm personally a bit reluctant of being overly dependent on
 any platform (it's impossible not to be somewhat dependent though).
 
