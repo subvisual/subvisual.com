@@ -39,7 +39,7 @@ either, but it does boil down to personal preference.
 Where I think it starts to really matter is when it comes to productivity and
 even more importantly, speed of change. Full disclosure, I'm a big fan of both Ruby
 and Elixir, and by extension have used Rails and Phoenix a lot. However, even
-with all it's know issues, Rails is still a huge productivity boost that I would
+with all its know issues, Rails is still a huge productivity boost that I would
 be remiss not to recommend. As Ryan Singer (Head of Strategy at Basecamp) puts
 it "it's a 10x multipler for them".
 
