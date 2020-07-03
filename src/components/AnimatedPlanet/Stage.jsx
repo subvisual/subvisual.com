@@ -4,11 +4,18 @@ import PropTypes from "prop-types"
 import Planet from "./Planet"
 
 const Stage = ({ render }) => {
-  const [heroTittle, setHeroTittle] = useState({})
+  const [anchors, setAnchors] = useState({})
+  const { heroTittle } = anchors
 
   return (
     <>
-      {render({ heroTittleRef: setHeroTittle })}
+      {render({
+        heroTittleRef: (elem) => {
+          if (elem === heroTittle) return
+
+          setAnchors({ heroTittle: elem })
+        },
+      })}
       <Planet heroTittle={heroTittle} />
     </>
   )
