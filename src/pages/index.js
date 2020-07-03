@@ -10,18 +10,20 @@ import VenturesSection from "../components/home/ventures_section"
 import "./index.scss"
 
 const IndexPage = () => {
-  const renderPageContent = ({ heroTittleRef }) => {
+  const renderPageContent = ({ spikes }) => {
+    const [heroTittle] = spikes
+
     return (
       <Layout>
         <SEO />
-        <HeroSection tittleRef={heroTittleRef} />
+        <HeroSection tittleRef={heroTittle} />
         <VenturesSection />
         <AboutSection />
       </Layout>
     )
   }
 
-  return <AnimatedPlanet.Stage render={renderPageContent} />
+  return <AnimatedPlanet.Stage acts={1} render={renderPageContent} />
 }
 
 export default IndexPage
