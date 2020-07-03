@@ -3,9 +3,9 @@ import PropTypes from "prop-types"
 import _uniqueId from "lodash/uniqueId"
 import { motion } from "framer-motion"
 
-import useWindowSize from "../utils/use_window_size"
+import useWindowSize from "../../utils/use_window_size"
 
-import styles from "./animated_planet.module.scss"
+import styles from "./index.module.scss"
 
 const SPLASH_TRANSITION = {
   type: "spring",

@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { useMorph } from "react-morph"
 import { cubicBezier } from "@popmotion/easing"
 
-import AnimatedPlanet from "../components/animated_planet"
+import AnimatedPlanet from "../components/AnimatedPlanet"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import SplashScreen from "../components/splash_screen"
