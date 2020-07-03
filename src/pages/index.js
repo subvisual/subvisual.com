@@ -11,16 +11,17 @@ import "./index.scss"
 
 const IndexPage = () => {
   const [heroTittle, setHeroTittle] = useState()
+  const renderPageContent = () => (
+    <Layout>
+      <SEO />
+      <HeroSection tittleRef={setHeroTittle} />
+      <VenturesSection />
+      <AboutSection />
+    </Layout>
+  )
 
   return (
-    <AnimatedPlanet.Stage heroTittle={heroTittle}>
-      <Layout>
-        <SEO />
-        <HeroSection tittleRef={setHeroTittle} />
-        <VenturesSection />
-        <AboutSection />
-      </Layout>
-    </AnimatedPlanet.Stage>
+    <AnimatedPlanet.Stage heroTittle={heroTittle} render={renderPageContent} />
   )
 }
 

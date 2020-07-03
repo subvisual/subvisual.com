@@ -3,16 +3,16 @@ import PropTypes from "prop-types"
 
 import Planet from "./Planet"
 
-const Stage = ({ children, heroTittle }) => (
+const Stage = ({ heroTittle, render }) => (
   <>
-    {children}
+    {render()}
     <Planet heroTittle={heroTittle} />
   </>
 )
 
 Stage.propTypes = {
-  children: PropTypes.node.isRequired,
   heroTittle: PropTypes.object,
+  render: PropTypes.func.isRequired,
 }
 
 export default Stage
