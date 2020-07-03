@@ -104,7 +104,7 @@ anyway and in most (if not all) cases not relevant at this stage.
 Every line of code is a potential bug, the ideal system does all you want with
 zero lines of code, therefore you want to minimize the amount of code needed to
 achieve your goals. Not using a Front End framework is a good start, but it can
-go to infrastructure to, why not get rid of Docker, Kubernetes, Kafka,
+go to infrastructure too. Why not get rid of Docker, Kubernetes, Kafka,
 Tenserflow and so on, and so on. All of these tools have a time and a place to
 be used, don't get me wrong, I just think it should be top of mind for the great
 majority of products just getting started.
