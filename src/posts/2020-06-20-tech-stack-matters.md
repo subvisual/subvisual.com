@@ -58,7 +58,7 @@ batteries included and easy to change, because trust me, you will change, a lot.
 
 ## More moving pieces equals more headaches
 
-Having way more parts to a tech stack that what you really need to validate your
+Having way more parts to a tech stack than what you really need to validate your
 product in the market, is something I see time and time again in the wild. It
 usually boils down to two things:
 
