@@ -2,7 +2,7 @@
 path: /posts/your-tech-stack-matters/
 title: "Your tech stack matters"
 author: luis-zamith
-date: 2020-06-20
+date: 2020-07-03
 tags:
   - development
 intro: Your about to start building a digital product? Here's some consideration to consider before defining your tech stack.
