@@ -10,12 +10,8 @@ const Stage = ({ acts, render }) => {
   const spikeSetters = Array.from({ length: acts }, (_, index) => (elem) => {
     if (!elem || elem === spikes[index]) return
 
-    console.log("Setting spike", index, elem)
-
     setSpikes([...spikes.slice(0, index), elem, ...spikes.slice(index + 1)])
   })
-
-  console.log("SPIKE SETTERS", spikeSetters)
 
   return (
     <>
