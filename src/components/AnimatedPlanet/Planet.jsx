@@ -4,60 +4,17 @@ import _uniqueId from "lodash/uniqueId"
 import { motion } from "framer-motion"
 
 import Background from "./Planet/Background"
-import useWindowSize from "../../utils/use_window_size"
 
 import styles from "./Planet.module.scss"
 
-const getBoundingBox = (elem) => {
-  if (!elem || !elem.getBoundingClientRect) return {}
-
-  return elem.getBoundingClientRect()
-}
-
-const getRootInitial = ({ windowSize }) => {
-  const { width, height } = windowSize
-  const diameter = Math.max(width, height) * 1.5
-
-  return {
-    x: width / 2 - diameter / 2,
-    y: height / 2 - diameter / 2,
-    width: diameter,
-    height: diameter,
-  }
-}
-
-const getRootAnimate = ({ anchors, initial, transition, variant }) => {
-  if (variant === "splash") return initial
-
-  const anchor = anchors[variant]
-  const boundingBox = getBoundingBox(anchor)
-  const { x, y, width, height } = boundingBox
-
-  return {
-    x,
-    y,
-    width,
-    height,
-    transition,
-  }
-}
-
-const Planet = ({ children, heroTittle, transition, variant }) => {
-  const windowSize = useWindowSize()
-
+const Planet = ({ animate, children, initial, transition }) => {
   const radialGradientID = _uniqueId("animated-planet-radial-gradient-")
-  const rootInitial = getRootInitial({ windowSize })
-  const rootAnimate = getRootAnimate({
-    anchors: { heroTittle },
-    initial: rootInitial,
-    variant,
-  })
 
   return (
     <motion.div
       className={styles.root}
-      initial={rootInitial}
-      animate={rootAnimate}
+      initial={initial}
+      animate={animate}
       transition={transition}
     >
       <svg
@@ -88,10 +45,10 @@ const Planet = ({ children, heroTittle, transition, variant }) => {
 }
 
 Planet.propTypes = {
+  animate: PropTypes.object.isRequired,
   children: PropTypes.node.isRequired,
-  heroTittle: PropTypes.object,
+  initial: PropTypes.object.isRequired,
   transition: PropTypes.object.isRequired,
-  variant: PropTypes.string.isRequired,
 }
 
 Planet.Background = Background
