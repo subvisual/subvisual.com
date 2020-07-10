@@ -1,4 +1,11 @@
-export const splashScreen = {
+const getBoundingBox = (elem) => {
+  if (!elem || !elem.getBoundingClientRect) return {}
+
+  return elem.getBoundingClientRect()
+}
+
+const splash = {
+  background: { opacity: 1 },
   planet: ({ windowSize }) => {
     const { width, height } = windowSize
     const diameter = Math.max(width, height) * 1.5
@@ -10,17 +17,26 @@ export const splashScreen = {
       height: diameter,
     }
   },
-  background: { opacity: 1 },
-  transition: {
-    type: "spring",
-    damping: 26,
-    mass: 1,
-    stiffness: 8,
-    ease: [1, -0.05, 0.45, 0.8],
+}
+
+const heroTittle = {
+  background: { opacity: 0 },
+  planet: ({ anchors, transition }) => {
+    const { heroTittle: anchor } = anchors
+    const boundingBox = getBoundingBox(anchor)
+    const { x, y, width, height } = boundingBox
+
+    return {
+      x,
+      y,
+      width,
+      height,
+      transition,
+    }
   },
 }
 
-export const transition = {
+const transition = {
   type: "spring",
   damping: 26,
   mass: 1,
@@ -28,4 +44,4 @@ export const transition = {
   ease: [1, -0.05, 0.45, 0.8],
 }
 
-export default { splashScreen }
+export default { splash, heroTittle, transition }
