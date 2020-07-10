@@ -23,7 +23,7 @@ const IndexPage = () => {
     )
   }
 
-  return <AnimatedPlanet.Stage acts={1} render={renderPageContent} />
+  return <AnimatedPlanet.Stage render={renderPageContent} />
 }
 
 export default IndexPage
