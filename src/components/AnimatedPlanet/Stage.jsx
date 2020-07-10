@@ -41,7 +41,11 @@ const Stage = ({ render }) => {
   return (
     <>
       {render({ spikes: spikeSetters })}
-      <Planet heroTittle={heroTittle} variant={variant}>
+      <Planet
+        heroTittle={heroTittle}
+        variant={variant}
+        transition={SPLASH_TRANSITION}
+      >
         <Planet.Background
           initial={backgroundInitial}
           animate={backgroundAnimate}

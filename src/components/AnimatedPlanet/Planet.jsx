@@ -8,14 +8,6 @@ import useWindowSize from "../../utils/use_window_size"
 
 import styles from "./Planet.module.scss"
 
-const SPLASH_TRANSITION = {
-  type: "spring",
-  damping: 26,
-  mass: 1,
-  stiffness: 8,
-  ease: [1, -0.05, 0.45, 0.8],
-}
-
 const getBoundingBox = (elem) => {
   if (!elem || !elem.getBoundingClientRect) return {}
 
@@ -34,7 +26,7 @@ const getRootInitial = ({ windowSize }) => {
   }
 }
 
-const getRootAnimate = ({ anchors, initial, variant }) => {
+const getRootAnimate = ({ anchors, initial, transition, variant }) => {
   if (variant === "splash") return initial
 
   const anchor = anchors[variant]
@@ -46,11 +38,11 @@ const getRootAnimate = ({ anchors, initial, variant }) => {
     y,
     width,
     height,
-    transition: SPLASH_TRANSITION,
+    transition,
   }
 }
 
-const AnimatedPlanet = ({ children, heroTittle, variant }) => {
+const Planet = ({ children, heroTittle, transition, variant }) => {
   const windowSize = useWindowSize()
 
   const radialGradientID = _uniqueId("animated-planet-radial-gradient-")
@@ -66,7 +58,7 @@ const AnimatedPlanet = ({ children, heroTittle, variant }) => {
       className={styles.root}
       initial={rootInitial}
       animate={rootAnimate}
-      transition={SPLASH_TRANSITION}
+      transition={transition}
     >
       <svg
         className={styles.image}
@@ -95,12 +87,13 @@ const AnimatedPlanet = ({ children, heroTittle, variant }) => {
   )
 }
 
-AnimatedPlanet.propTypes = {
+Planet.propTypes = {
   children: PropTypes.node.isRequired,
   heroTittle: PropTypes.object,
+  transition: PropTypes.object.isRequired,
   variant: PropTypes.string.isRequired,
 }
 
-AnimatedPlanet.Background = Background
+Planet.Background = Background
 
-export default AnimatedPlanet
+export default Planet
