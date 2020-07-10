@@ -20,4 +20,12 @@ export const splashScreen = {
   },
 }
 
+export const transition = {
+  type: "spring",
+  damping: 26,
+  mass: 1,
+  stiffness: 8,
+  ease: [1, -0.05, 0.45, 0.8],
+}
+
 export default { splashScreen }

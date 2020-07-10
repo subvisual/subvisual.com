@@ -2,14 +2,7 @@ import React, { useEffect, useState } from "react"
 import PropTypes from "prop-types"
 
 import Planet from "./Planet"
-
-const SPLASH_TRANSITION = {
-  type: "spring",
-  damping: 26,
-  mass: 1,
-  stiffness: 8,
-  ease: [1, -0.05, 0.45, 0.8],
-}
+import { transition } from "./variants"
 
 const getBackgroundInitial = () => ({ opacity: 1 })
 
@@ -41,15 +34,11 @@ const Stage = ({ render }) => {
   return (
     <>
       {render({ spikes: spikeSetters })}
-      <Planet
-        heroTittle={heroTittle}
-        variant={variant}
-        transition={SPLASH_TRANSITION}
-      >
+      <Planet heroTittle={heroTittle} variant={variant} transition={transition}>
         <Planet.Background
           initial={backgroundInitial}
           animate={backgroundAnimate}
-          transition={SPLASH_TRANSITION}
+          transition={transition}
         />
       </Planet>
     </>
