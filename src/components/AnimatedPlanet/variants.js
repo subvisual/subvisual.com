@@ -36,7 +36,7 @@ const heroTittle = {
   },
 }
 
-const transition = {
+export const transition = {
   type: "spring",
   damping: 26,
   mass: 1,
@@ -44,4 +44,4 @@ const transition = {
   ease: [1, -0.05, 0.45, 0.8],
 }
 
-export default { splash, heroTittle, transition }
+export default [splash, heroTittle]

@@ -1,4 +1,5 @@
-import Planet from "./Planet"
-import Stage from "./Stage"
+import _WithAnimatedPlanet from "./WithAnimatedPlanet"
 
-export default { Planet, Stage }
+export const WithAnimatedPlanet = _WithAnimatedPlanet
+
+export default { WithAnimatedPlanet }

@@ -1,6 +1,6 @@
-import React from "react"
+import React, { useEffect } from "react"
 
-import AnimatedPlanet from "../components/AnimatedPlanet"
+import { WithAnimatedPlanet } from "../components/AnimatedPlanet"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import AboutSection from "../components/home/about_section"
@@ -9,21 +9,25 @@ import VenturesSection from "../components/home/ventures_section"
 
 import "./index.scss"
 
-const IndexPage = () => {
-  const renderPageContent = ({ spikes }) => {
-    const [heroTittle] = spikes
+const IndexPageContent = ({ animatedPlanet }) => {
+  const { actions, spikes } = animatedPlanet
+  const { play } = actions
+  const [heroTittle] = spikes
 
-    return (
-      <Layout>
-        <SEO />
-        <HeroSection tittleRef={heroTittle} />
-        <VenturesSection />
-        <AboutSection />
-      </Layout>
-    )
-  }
+  useEffect(() => {
+    setTimeout(() => play(heroTittle), 2000)
+  })
 
-  return <AnimatedPlanet.Stage render={renderPageContent} />
+  return (
+    <Layout>
+      <SEO />
+      <HeroSection tittleRef={heroTittle} />
+      <VenturesSection />
+      <AboutSection />
+    </Layout>
+  )
 }
+
+const IndexPage = WithAnimatedPlanet(IndexPageContent)
 
 export default IndexPage
