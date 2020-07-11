@@ -6,14 +6,14 @@ import useWindowSize from "../../utils/use_window_size"
 import variants, { transition } from "./variants"
 
 const Stage = ({ render }) => {
-  const spikes = [useRef()]
+  const spikes = [useRef(), useRef()] // one reference for each spike
   const [current, setCurrent] = useState(0) // index of the current spike
   const windowSize = useWindowSize()
 
-  const [heroTittle] = spikes
+  const [splashScreen, heroTittle] = spikes
 
   const actions = {
-    play: (spike) => setCurrent(spikes.indexOf(spike) + 1),
+    play: (spike) => setCurrent(spikes.indexOf(spike)),
   }
 
   return (

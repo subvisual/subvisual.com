@@ -13,7 +13,7 @@ import "./index.scss"
 const IndexPageContent = ({ animatedPlanet }) => {
   const { actions, spikes } = animatedPlanet
   const { play } = actions
-  const [heroTittle] = spikes
+  const [splashScreen, heroTittle] = spikes
 
   useEffect(() => {
     setTimeout(() => play(heroTittle), 2000)

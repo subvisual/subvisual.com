@@ -7,8 +7,6 @@
   overflow: hidden;
 
   transform: translate(-50%, -50%);
-
-  background-color: purple;
 }
 
 @media only screen and (orientation: portrait) {
