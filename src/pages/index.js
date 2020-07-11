@@ -5,7 +5,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import AboutSection from "../components/home/about_section"
 import HeroSection from "../components/home/hero_section"
-import SplashScreen from "../components/SplashScreen"
 import VenturesSection from "../components/home/ventures_section"
 
 import "./index.scss"
@@ -13,11 +12,12 @@ import "./index.scss"
 const IndexPageContent = ({ animatedPlanet }) => {
   const { actions, spikes } = animatedPlanet
   const { play } = actions
-  const [splashScreen, heroTittle] = spikes
+  const [heroTittle] = spikes
 
   useEffect(() => {
+    // After 2 seconds, move to the hero tittle
     setTimeout(() => play(heroTittle), 2000)
-  })
+  }, [])
 
   return (
     <>
@@ -27,7 +27,6 @@ const IndexPageContent = ({ animatedPlanet }) => {
         <VenturesSection />
         <AboutSection />
       </Layout>
-      <SplashScreen ref={splashScreen} />
     </>
   )
 }

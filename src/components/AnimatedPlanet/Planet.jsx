@@ -48,7 +48,7 @@ Planet.propTypes = {
   animate: PropTypes.object.isRequired,
   children: PropTypes.node.isRequired,
   initial: PropTypes.object.isRequired,
-  transition: PropTypes.object.isRequired,
+  transition: PropTypes.object,
 }
 
 Planet.Background = Background
