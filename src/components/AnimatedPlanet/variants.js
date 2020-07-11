@@ -21,9 +21,8 @@ const splash = {
 
 const heroTittle = {
   background: { opacity: 0 },
-  planet: ({ anchors }) => {
-    const { heroTittle: anchor } = anchors
-    const boundingBox = getBoundingBox(anchor)
+  planet: ({ spike }) => {
+    const boundingBox = getBoundingBox(spike)
     const { x, y, width, height } = boundingBox
 
     return {
