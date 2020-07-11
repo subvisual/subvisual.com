@@ -4,7 +4,7 @@ const getBoundingBox = (elem) => {
   return elem.getBoundingClientRect()
 }
 
-export const splashScreen = {
+const splashScreen = {
   background: { opacity: 1 },
   planet: ({ windowSize }) => {
     const { width, height } = windowSize
