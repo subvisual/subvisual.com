@@ -22,7 +22,7 @@ const Stage = ({ render }) => {
       <Planet
         initial={variants[0].planet({ windowSize })}
         animate={variants[current].planet({
-          anchors: { heroTittle },
+          anchors: { heroTittle: heroTittle.current },
           windowSize,
         })}
         transition={transition}
