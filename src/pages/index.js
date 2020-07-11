@@ -27,7 +27,7 @@ const IndexPageContent = ({ animatedPlanet }) => {
         <VenturesSection />
         <AboutSection />
       </Layout>
-      <SplashScreen />
+      <SplashScreen ref={splashScreen} />
     </>
   )
 }

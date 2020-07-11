@@ -1,7 +1,9 @@
-import React from "react"
+import React, { forwardRef } from "react"
 
 import styles from "./index.module.css"
 
-const SplashScreen = () => <div className={styles.root} />
+const SplashScreen = forwardRef((_props, ref) => (
+  <div ref={ref} className={styles.root} />
+))
 
 export default SplashScreen
