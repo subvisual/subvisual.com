@@ -1,0 +1,26 @@
+.root {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+
+  overflow: hidden;
+
+  transform: translate(-50%, -50%);
+
+  background-color: purple;
+}
+
+@media only screen and (orientation: portrait) {
+  .root {
+    width: 150vh;
+    height: 150vh;
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  .root {
+    width: 150vw;
+    height: 150vw;
+  }
+}
