@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react"
 import PropTypes from "prop-types"
+import _get from "lodash/get"
 
 import Planet from "./Planet"
 import useWindowSize from "../../utils/use_window_size"
@@ -43,7 +44,7 @@ const Stage = ({ render }) => {
       <Planet
         initial={initialVariant.planet({ windowSize })}
         animate={currentVariant.planet({
-          spike: spikes[current]?.current,
+          spike: _get(spikes, `${current}.current`),
           windowSize,
         })}
         transition={currentVariant.transition}
