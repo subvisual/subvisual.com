@@ -1,7 +1,17 @@
-const getBoundingBox = (elem) => {
+const getBoundingBox = (elem, reference) => {
   if (!elem || !elem.getBoundingClientRect) return {}
 
-  return elem.getBoundingClientRect()
+  if (!reference || !reference.getBoundingClientRect) return {}
+
+  const elemBB = elem.getBoundingClientRect()
+  const refBB = reference.getBoundingClientRect()
+
+  return {
+    x: elemBB.x - refBB.x,
+    y: elemBB.y - refBB.y,
+    width: elemBB.width,
+    height: elemBB.height,
+  }
 }
 
 const splashScreen = {
@@ -21,8 +31,8 @@ const splashScreen = {
 
 const heroTittle = {
   background: { opacity: 0 },
-  planet: ({ spike }) => {
-    const boundingBox = getBoundingBox(spike)
+  planet: ({ spike, stage }) => {
+    const boundingBox = getBoundingBox(spike, stage)
     const { x, y, width, height } = boundingBox
 
     return {

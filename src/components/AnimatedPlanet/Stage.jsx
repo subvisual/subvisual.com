@@ -6,7 +6,12 @@ import Planet from "./Planet"
 import useWindowSize from "../../utils/use_window_size"
 import variants from "./variants"
 
+import styles from "./Stage.module.css"
+
 const Stage = ({ render }) => {
+  // Reference of the root wrapper component, where the planet moves.
+  const rootRef = useRef()
+
   // List of references of the spikes to follow.
   //
   // This list is later passed on to the wrapped component, with the exception
@@ -39,12 +44,13 @@ const Stage = ({ render }) => {
   const currentVariant = variants[current]
 
   return (
-    <>
+    <div ref={rootRef} className={styles.root}>
       {render({ actions, spikes: spikes.slice(1) })}
       <Planet
         initial={initialVariant.planet({ windowSize })}
         animate={currentVariant.planet({
           spike: _get(spikes, `${current}.current`),
+          stage: rootRef.current,
           windowSize,
         })}
         transition={currentVariant.transition}
@@ -55,7 +61,7 @@ const Stage = ({ render }) => {
           transition={currentVariant.transition}
         />
       </Planet>
-    </>
+    </div>
   )
 }
 
