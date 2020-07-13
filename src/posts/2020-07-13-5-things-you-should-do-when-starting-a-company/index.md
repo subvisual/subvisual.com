@@ -6,9 +6,7 @@ date: 2020-07-13
 tags:
   - product
 intro: >
-  When I ask someone why they don’t do User Research regularly, usually
-  the arguments revolve around it being very time consuming, extremely
-  complicated to organize, and very hard to get actionable insights out of it.
+  Adverse times can present opportunities. Harnessed correctly, they can boost entrepreneurship and the creation of new business.
 ---
 
 Adverse times can present opportunities. Harnessed correctly, they can boost entrepreneurship and the creation of new business. The state in which we are all living, confined to small spaces, restrained from leisure, will spark the imagination. Also, with rising unemployment people will be encouraged to create their job. There can be a positive outcome to trying times. We have seen manifestos for building, suggesting that the best way to prevent a new pandemic is by building a solution to fight it. The most exciting piece was probably Marc Andersen's article [It's Time to Build](https://a16z.com/2020/04/18/its-time-to-build).
