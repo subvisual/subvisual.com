@@ -47,24 +47,24 @@ Now, “people” is too abstract for us to get anything valuable from this. We 
 
 The first thing you should keep in mind when preparing an interview is that people want to be helpful, but they don’t really know how they could do that because they probably never thought about the things you want to know about. People use a product because it solves a problem for them, but they don’t rationalize it unless you guide them. That’s why instead of jumping into “What do you like in app X?” or “Why do you use it?” it could be more interesting to break it down into a conversation about how they went from zero (don’t know about the app) to one (using the app):
 
-“When did you first hear about app X?”
-“Did you download it immediately?”
-“Did something happen that lead you to do it?”
+- “When did you first hear about app X?”
+- “Did you download it immediately?”
+- “Did something happen that lead you to do it?”
 
 These 3 questions should teach you about what made them interested in the concept of app X, if they were sold on it from the get-go or did something happen that pushed them to try it, and will get your foot in the door regarding their expectations about app X and how it could help them get the Job done.
 
 You can then move on to figuring out how and why they use it:
 
-“When do you use app X?”
-“When was the last time you used it?”
-“Can you walk me through that?”
+- “When do you use app X?”
+- “When was the last time you used it?”
+- “Can you walk me through that?”
 
 It’s all about focusing on their lives and constraints, getting to facts instead of speculative scenarios where they’ll try to find the right words to describe why they use app X. Some questions don’t carry on much value by themselves, but they help the flow of conversation and trigger the questions that may lead you to the golden nuggets of truth you’re looking for. By going through their memories and following their journey up to becoming a user for app X, you’re helping them help you.
 
 There’s also a lot of learning opportunities in talking about how they used to get the Job done before using app X. This could uncover unexpected competitors to your product, which could shed a brighter light into what makes app X valuable to them and if there are any missing pieces in it. You may even find that they use some other tool or method to complement app X, whether because it doesn’t cover all their needs or they simply find it easier or faster to get a part of the Job done in some other fashion.
 
-“How did you deal with this before using app X?”
-“Did you stop doing that completely?”
+- “How did you deal with this before using app X?”
+- “Did you stop doing that completely?”
 
 If the answer is “No”, it usually is followed by the reasons why. You can then follow up on it, tap into why app X isn’t fully solving the problem for them. This could happen for multiple reasons, it could be that app X doesn’t cover all their needs or maybe it does, but it just isn’t good enough for some of them. Maybe they just got their own streamlined system and find it easier to do it that way. Knowing what makes them use it and why they prefer it can provide powerful insights about how to differentiate from the competition and stand out in the crowd.
 
