@@ -22,7 +22,8 @@ Always bear in mind: remote work isn't something new. The benefits you can get f
 
 If you are starting a company now, consider remote-first, or at least remote-friendly. Don't restrain your team to a specific location. What you spend in an office, you can invest in gatherings, team culture and other stuff.*
 
-Default to transparency
+## Default to transparency
+
 Recently I've been part of the hiring process for Coverflex. I helped with the first hires, mainly on the product team side. One of the things that I've seen everyone point out as a primary factor in joining the company was the fact that it abides by a "Default to Transparency" principle. This means that **everything that doesn't strictly need to be private is public to everyone in the company**. From management meetings that any employee can join at any moment to all the documentation available on your favorite documentation tool. This a powerful motivational tool to hire and maintain people.  Speaking from personal experience, it's also super liberating. If you do it from the get-go, there is no burden of transforming sensitive information into public information in the company. As a CEO, it kind of feels that you are traveling lighter. 
 
 I believe that, more and more, employees want to be part of the whole story and not just an appendix. They want the good, the bad and the ugly. Companies that offer radical transparency models will have the edge over other companies that still like to operate in obscurity. Consider having all information open to the company from day zero. It's simpler than turning it public later on.
