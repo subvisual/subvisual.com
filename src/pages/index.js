@@ -8,6 +8,10 @@ import SplashScreen from "../components/splash_screen"
 import AboutSection from "../components/home/about_section"
 import HeroSection from "../components/home/hero_section"
 import VenturesSection from "../components/home/ventures_section"
+import {
+  touchEntranceAnimation,
+  shouldAnimateEntrance,
+} from "../utils/should_animate_entrance"
 
 import "./index.scss"
 
@@ -35,12 +39,14 @@ const IndexPage = () => {
 
   return (
     <>
-      <SplashScreen
-        lockScrollFor={1000}
-        morph={morph}
-        onHide={showTittlePlanet}
-        showFor={750}
-      />
+      {shouldAnimateEntrance() && (
+        <SplashScreen
+          lockScrollFor={1000}
+          morph={morph}
+          onHide={showTittlePlanet}
+          showFor={750}
+        />
+      )}
       <Layout>
         <SEO />
         <HeroSection planetMorph={morph} hidePlanet={hidingTittlePlanet} />
