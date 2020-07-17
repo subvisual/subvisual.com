@@ -43,7 +43,7 @@ as [Atom][atom] and [VS Code][vscode] are just as good, or even better, at least
 regarding the learning curve.
 
 There are very interesting and productive ideas behind Vim's way of doing
-things, though. So, if don't use Vim, opefully you can at least find some of
+things, though. So, if don't use Vim, hopefully you can at least find some of
 these interesting, and incorporate them into your own workflow by finding the
 equivalent approach on your editor.
 
