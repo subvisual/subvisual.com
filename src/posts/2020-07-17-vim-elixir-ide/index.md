@@ -135,7 +135,7 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gr <Plug>(coc-references)
 ```
 
-Shorcuts such as this (and many more which you can check on the [help
+Shortcuts such as this (and many more which you can check on the [help
 page][coc-help]) provides quick contextual navigation within Elixir functions.
 
 ![Showing references](./references.gif) <div style="margin-top: 5em"></div>
