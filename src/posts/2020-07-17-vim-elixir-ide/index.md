@@ -26,6 +26,7 @@ intro: "I would like to talk about how to turn vim into an IDE, with some specia
 [coc-help]: https://github.com/neoclide/coc.nvim/blob/master/doc/coc.txt#L912
 [twitter]: https://twitter.com/naps62
 [dotfiles]: https://github.com/naps62/dotfiles
+[fsmx]: https://github.com/subvisual/fsmx
 
 I would like to talk about how to turn vim into an IDE, with some special focus
 towards [Elixir][elixir], which is the language of choice at Subvisual.
@@ -43,7 +44,7 @@ as [Atom][atom] and [VS Code][vscode] are just as good, or even better, at least
 regarding the learning curve.
 
 There are very interesting and productive ideas behind Vim's way of doing
-things, though. So, if don't use Vim, hopefully you can at least find some of
+things, though. So, if don't use Vim, opefully you can at least find some of
 these interesting, and incorporate them into your own workflow by finding the
 equivalent approach on your editor.
 
