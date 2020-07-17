@@ -7,6 +7,7 @@ tags:
   - development
   - elixir
   - vim
+intro: "I would like to talk about how to turn vim into an IDE, with some special focus towards Elixir"
 ---
 
 [last-post]: https://subvisual.com/blog/posts/133-super-powered-vim-part-i-projections/
@@ -42,7 +43,7 @@ as [Atom][atom] and [VS Code][vscode] are just as good, or even better, at least
 regarding the learning curve.
 
 There are very interesting and productive ideas behind Vim's way of doing
-things, though.  So, if don't use Vim, hopefully you can at least find some of
+things, though. So, if don't use Vim, opefully you can at least find some of
 these interesting, and incorporate them into your own workflow by finding the
 equivalent approach on your editor.
 
@@ -50,9 +51,9 @@ Let's get to it, then...
 
 ## Don't worry about formatting
 
-Because the editor should do it for you!
+Because the editor should do it for you.
 
-This is something modern languages have improved a lot on recently.  Code
+This is something modern languages have improved a lot on recently. Code
 readability is a must. But instead of checking linter warnings all the time to
 find that annoying whitespace that was missing, or following the rules set by
 our project, we should just focus on what matters, and let the rules enforce
@@ -96,7 +97,7 @@ the current buffer whenever it is saved. Here it is happening in real time:
 
 ## Language Server
 
-Language Servers are all the rage nowadays.  They provide a common API for
+Language Servers are all the rage nowadays. They provide a common API for
 editors to understand each language's particularities, without having to resort
 to ad-hoc plugins that are never without their flaws.
 
@@ -238,7 +239,7 @@ Seriously, how much more efficient is that compared to the manual approach?
 ## Wrapping up
 
 This is an overview of some of the things I use on a daily basis to improve my
-productivity.  Even if you don't use Vim, perhaps you can bring some new ideas
+productivity. Even if you don't use Vim, perhaps you can bring some new ideas
 onto your own flow as well, or even implement similar plugins for your editor,
 if they don't exist already.
 
