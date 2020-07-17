@@ -73,7 +73,7 @@ packages:
 ]
 ```
 
-It just two things only:
+It does two things only:
 1. lists what files to apply the rules to;
 2. imports custom rules for Ecto functions (mostly about skipping parenthesis on
    Ecto's DSL)
