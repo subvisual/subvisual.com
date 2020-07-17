@@ -38,7 +38,7 @@ development experience a lot more enjoyable.
 
 I'm the first one to recommend people not to learn how to use Vim, which
 requires learning a lot of new habits and concepts upfront. Modern editors such
-as [Atom][atom] and [VS Code][vscode] are just as good, even better, at least
+as [Atom][atom] and [VS Code][vscode] are just as good, or even better, at least
 regarding the learning curve.
 
 There are very interesting and productive ideas behind Vim's way of doing
