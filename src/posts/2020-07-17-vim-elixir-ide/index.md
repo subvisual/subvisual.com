@@ -1,8 +1,8 @@
 ---
-path: /posts/2020-07-17-vim-elixir-ide
+path: /posts/vim-elixir-ide
 title: Vim as an Elixir IDE
 author: miguel-palhas
-date: 2020-07-15
+date: 2020-07-17
 tags:
   - development
   - elixir
