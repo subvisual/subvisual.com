@@ -4,7 +4,7 @@ const isUndefined = require("lodash/isUndefined")
 
 const { isURL } = require("../../src/utils/url_utils")
 
-const { NODE_ENV, URL } = process.env
+const { NODE_ENV } = process.env
 
 const resolveBlogPostCover = ({ cover, node }) => {
   const { fileAbsolutePath } = node
@@ -33,9 +33,12 @@ const prepareBlogPostUrl = ({ node }) => {
     `)
   }
 
-  const root = isString(URL) ? URL : "http://localhost:8000"
+  const urlBase = isURL(process.env.URL)
+    ? process.env.URL
+    : "http://localhost:8000"
+  const urlPath = path.posix.join("/blog", node.frontmatter.path)
 
-  return path.posix.join(root, "blog", node.frontmatter.path)
+  return new URL(urlPath, urlBase).toString()
 }
 
 module.exports = async ({ node, actions }) => {

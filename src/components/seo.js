@@ -17,7 +17,7 @@ const detailsQuery = graphql`
   }
 `
 
-function SEO({ description, lang, keywords, title }) {
+function SEO({ description, lang, keywords, title, url }) {
   return (
     <StaticQuery
       query={detailsQuery}
@@ -40,13 +40,19 @@ function SEO({ description, lang, keywords, title }) {
             <meta name="description" content={metaDescription} />
 
             <meta property="og:type" content="website" />
-            <meta property="og:url" content={data.site.siteMetadata.url} />
+            <meta
+              property="og:url"
+              content={url || data.site.siteMetadata.url}
+            />
             <meta property="og:title" content={metaTitle} />
             <meta property="og:description" content={metaDescription} />
             <meta property="og:image" content={metaImage} />
 
             <meta name="twitter:card" content="summary_large_image" />
-            <meta property="twitter:url" content={data.site.siteMetadata.url} />
+            <meta
+              property="twitter:url"
+              content={url || data.site.siteMetadata.url}
+            />
             <meta
               name="twitter:creator"
               content={data.site.siteMetadata.twitterUsername}
@@ -75,6 +81,7 @@ SEO.propTypes = {
   lang: PropTypes.string,
   keywords: PropTypes.arrayOf(PropTypes.string),
   title: PropTypes.string,
+  url: PropTypes.string,
 }
 
 export default SEO
