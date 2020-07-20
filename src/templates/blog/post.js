@@ -54,7 +54,12 @@ const BlogPostTemplate = ({
   seoDescription,
 }) => (
   <Layout>
-    <SEO {...{ title, description: seoDescription || intro, url }} />
+    <SEO
+      description={seoDescription || intro}
+      image={cover}
+      title={title}
+      url={url}
+    />
     <div className={styles.root}>
       <article className={styles.article}>
         <header className={styles.header}>
