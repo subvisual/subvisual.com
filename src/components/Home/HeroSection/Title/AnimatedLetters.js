@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import classNames from "classnames"
 import { motion } from "framer-motion"
 
-import Planet from "src/components/planet"
+import Planet from "src/components/Planet"
 import useUserAgent from "src/utils/useUserAgent"
 import { isLinux } from "src/utils/userAgentUtils"
 

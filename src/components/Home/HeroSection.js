@@ -5,7 +5,7 @@ import { ParallaxProvider, Parallax } from "react-scroll-parallax"
 
 import CallToAction from "src/components/CallToAction"
 import ImageLoader from "src/components/ImageLoader"
-import Text from "src/components/text"
+import Text from "src/components/Text"
 import useWindowSize from "src/utils/useWindowSize"
 import Title from "./HeroSection/Title"
 

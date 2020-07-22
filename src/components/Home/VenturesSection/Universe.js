@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import Planet from "src/components/planet"
+import Planet from "src/components/Planet"
 
 import styles from "./Universe.module.css"
 

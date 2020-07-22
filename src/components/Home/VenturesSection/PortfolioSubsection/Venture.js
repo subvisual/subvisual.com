@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import classNames from "classnames"
 
-import Text from "src/components/text"
+import Text from "src/components/Text"
 import ImageLoader from "src/components/ImageLoader"
 
 import styles from "./Venture.module.css"

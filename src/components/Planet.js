@@ -5,7 +5,7 @@ import _uniqueId from "lodash/uniqueId"
 import {
   generateAnimation,
   buildAnimationStyles,
-} from "./planet/animation_utils"
+} from "./Planet/AnimationUtils"
 import AnimationStyle from "./Planet/AnimationStyle"
 import RadialGradient from "./Planet/RadialGradient"
 import { withMorphStyle } from "../utils/morphUtils"

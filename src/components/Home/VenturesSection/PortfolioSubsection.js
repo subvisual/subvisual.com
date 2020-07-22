@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
-import Planet from "src/components/planet"
+import Planet from "src/components/Planet"
 import Venture from "./PortfolioSubsection/Venture"
 
 import styles from "./PortfolioSubsection.module.css"

@@ -2,8 +2,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import _random from "lodash/random"
 
-import Planet from "src/components/planet"
-import colorCodes from "src/components/colors"
+import Planet from "src/components/Planet"
+import colorCodes from "src/components/Colors"
 
 import styles from "./Icon.module.css"
 
