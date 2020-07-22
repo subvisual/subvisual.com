@@ -1,8 +1,8 @@
 ---
 path: /posts/elixir-console-safety-first
-title: Elixir console: Safety first
+title: "Elixir console: Safety first"
 author: miguel-palhas
-date: 2020-07-24
+date: 2020-07-23
 tags:
   - development
   - elixir
