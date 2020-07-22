@@ -60,7 +60,8 @@ IO.puts "#{IO.ANSI.red_background()}#{IO.ANSI.black()} WOW #{IO.ANSI.reset()}"
 If you inspect the return of these functions, you'll see that `IO.ANSI.black()`
 just returns `"\e[30m"`, which is gibberish for "text color is now black".
 
-<a href="#" id="full-snippet"></a> ## Full snippet
+<a href="#" id="full-snippet"></a>
+## Full snippet
 
 With these two things in mind, you can write an `.iex.exs` file that customizes
 IEx prompts as shown in the beginning:
