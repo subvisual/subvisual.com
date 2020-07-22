@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 
 import Planet from "src/components/planet"
 
-import styles from "./universe.module.css"
+import styles from "./Universe.module.css"
 
 const Universe = ({ subvisualPlanetMorph }) => (
   <div className={styles.root}>

@@ -6,11 +6,11 @@ import {
   generateAnimation,
   buildAnimationStyles,
 } from "./planet/animation_utils"
-import AnimationStyle from "./planet/animation_style"
-import RadialGradient from "./planet/radial_gradient"
-import { withMorphStyle } from "../utils/morph_utils"
+import AnimationStyle from "./Planet/AnimationStyle"
+import RadialGradient from "./Planet/RadialGradient"
+import { withMorphStyle } from "../Utils/MorphUtils"
 
-import styles from "./planet.module.css"
+import styles from "./Planet.module.css"
 
 const Planet = ({ color, hoverAnimation, hovering, morph }) => {
   const animation = generateAnimation(hoverAnimation)

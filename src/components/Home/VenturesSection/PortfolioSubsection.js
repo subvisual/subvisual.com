@@ -3,9 +3,9 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
 import Planet from "src/components/planet"
-import Venture from "./portfolio_subsection/venture"
+import Venture from "./PortfolioSubsection/Venture"
 
-import styles from "./portfolio_subsection.module.css"
+import styles from "./PortfolioSubsection.module.css"
 
 const baseDelay = 0.3
 

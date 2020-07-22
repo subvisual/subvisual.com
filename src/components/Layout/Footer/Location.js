@@ -6,7 +6,7 @@ import Img from "gatsby-image"
 import Link from "src/components/link"
 import Text from "src/components/text"
 
-import styles from "./location.module.css"
+import styles from "./Location.module.css"
 
 const query = graphql`
   query {

@@ -4,7 +4,7 @@ import classNames from "classnames"
 
 import PageWideWrapper from "src/components/page_wide_wrapper"
 
-import styles from "./wrapper.module.css"
+import styles from "./Wrapper.module.css"
 
 const BlogPostWrapper = ({ children, className, padded }) => {
   const contentClassName = classNames(styles.content, className)

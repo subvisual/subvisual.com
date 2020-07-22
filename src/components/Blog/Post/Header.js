@@ -3,11 +3,11 @@ import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import dateFormat from "dateformat"
 
-import Cover from "./header/cover"
-import Title from "../title"
-import Wrapper from "./wrapper"
+import Cover from "./Header/Cover"
+import Title from "../Title"
+import Wrapper from "./Wrapper"
 
-import styles from "./header.module.css"
+import styles from "./Header.module.css"
 
 const renderAuthor = ({ key, name }) => (
   <>

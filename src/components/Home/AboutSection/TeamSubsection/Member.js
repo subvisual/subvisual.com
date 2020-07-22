@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 import SocialLink from "src/components/SocialLink"
 import Text from "src/components/text"
 
-import styles from "./member.module.css"
+import styles from "./Member.module.css"
 
 const Member = ({ name, role, social, photo }) => {
   return (

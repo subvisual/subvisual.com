@@ -1,4 +1,4 @@
-@import "./variables";
+@import "./Variables";
 
 ol,
 ul {
@@ -14,5 +14,5 @@ ul {
 }
 
 li {
-  @import "./inline_code";
+  @import "./InlineCode";
 }

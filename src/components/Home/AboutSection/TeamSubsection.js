@@ -1,9 +1,9 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 
-import Member from "./team_subsection/member"
+import Member from "./TeamSubsection/Member"
 
-import styles from "./team_subsection.module.css"
+import styles from "./TeamSubsection.module.css"
 
 const teamQuery = graphql`
   query TeamQuery {

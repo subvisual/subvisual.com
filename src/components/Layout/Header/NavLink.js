@@ -4,7 +4,7 @@ import classNames from "classnames"
 
 import Link from "src/components/link"
 
-import styles from "./nav_link.module.scss"
+import styles from "./NavLink.module.scss"
 
 const HeaderNavLink = ({ active, blank, children, title, to }) => {
   const className = classNames(styles.root, {

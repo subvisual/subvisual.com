@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import classNames from "classnames"
 
-import styles from "./text.module.css"
+import styles from "./Text.module.css"
 
 const Text = ({ bold, color, children, size }) => {
   const className = classNames(styles.root, styles[color], styles[size], {

@@ -2,9 +2,9 @@ import React from "react"
 import PropTypes from "prop-types"
 
 import useDetectJavascript from "src/utils/use_detect_javascript"
-import AnimatedLetters from "./title/animated_letters"
+import AnimatedLetters from "./Title/AnimatedLetters"
 
-import styles from "./title.module.scss"
+import styles from "./Title.module.scss"
 
 const HeroTitle = ({ hidden, planetMorph }) => {
   const hasJavascript = useDetectJavascript()

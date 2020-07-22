@@ -1,4 +1,4 @@
-@import "./variables";
+@import "./Variables";
 
 p,
 :global(.BlogPostParagraph) {
@@ -22,5 +22,5 @@ p,
     margin-bottom: 0;
   }
 
-  @import "./inline_code";
+  @import "./InlineCode";
 }

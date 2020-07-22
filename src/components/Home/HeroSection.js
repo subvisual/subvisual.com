@@ -7,9 +7,9 @@ import CallToAction from "src/components/call_to_action"
 import ImageLoader from "src/components/image_loader"
 import Text from "src/components/text"
 import useWindowSize from "src/utils/use_window_size"
-import Title from "./hero_section/title"
+import Title from "./HeroSection/Title"
 
-import styles from "./hero_section.module.css"
+import styles from "./HeroSection.module.css"
 
 const absoluteStyle = {
   position: "absolute",

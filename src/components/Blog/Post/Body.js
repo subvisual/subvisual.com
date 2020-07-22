@@ -4,10 +4,10 @@ import classNames from "classnames"
 
 import useUserAgent from "src/utils/use_user_agent"
 import { isChrome, isEdge, isMacOS, isSafari } from "src/utils/user_agent_utils"
-import BodyWrapper from "./body_wrapper"
+import BodyWrapper from "./BodyWrapper"
 
 import "prismjs/themes/prism.css"
-import styles from "./body.module.scss"
+import styles from "./Body.module.scss"
 
 const PostBody = ({ html }) => {
   const userAgent = useUserAgent()

@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { Link as GatsbyLink } from "gatsby"
 import classNames from "classnames"
 
-import styles from "./link.module.css"
+import styles from "./Link.module.css"
 
 const Link = ({ blank, children, faded, internal, size, title, to }) => {
   const className = classNames(styles.root, styles[size], {

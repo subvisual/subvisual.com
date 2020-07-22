@@ -1,9 +1,9 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import Entry from "./posts_list/entry"
+import Entry from "./PostsList/Entry"
 
-import styles from "./posts_list.module.scss"
+import styles from "./PostsList.module.scss"
 
 const renderItem = ({ author, date, intro, path, title }, index) => (
   <li key={index} className={styles.item}>

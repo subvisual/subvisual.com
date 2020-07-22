@@ -2,12 +2,12 @@ import React, { useState } from "react"
 import { useMorph } from "react-morph"
 import { cubicBezier } from "@popmotion/easing"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import SplashScreen from "../components/splash_screen"
-import AboutSection from "../components/home/about_section"
-import HeroSection from "../components/home/hero_section"
-import VenturesSection from "../components/home/ventures_section"
+import Layout from "../components/Layout"
+import SEO from "../components/Seo"
+import SplashScreen from "../components/SplashScreen"
+import AboutSection from "../components/Home/AboutSection"
+import HeroSection from "../components/Home/HeroSection"
+import VenturesSection from "../components/Home/VenturesSection"
 
 import "./index.scss"
 

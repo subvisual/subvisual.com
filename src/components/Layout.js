@@ -2,11 +2,11 @@ import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 
-import Logo from "./logo"
-import Header from "./layout/header"
-import Footer from "./layout/footer"
+import Logo from "./Logo"
+import Header from "./Layout/Header"
+import Footer from "./Layout/Footer"
 
-import styles from "./layout.module.css"
+import styles from "./Layout.module.css"
 
 const Layout = ({ children, currentPath, renderHeaderLogo }) => (
   <div className={styles.root}>

@@ -1,13 +1,13 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import Icon from "./about_section/icon"
-import SectionTitle from "../section_title"
-import SubsectionTitle from "../subsection_title"
-import TeamSubsection from "./about_section/team_subsection"
-import Text from "../text"
+import Icon from "./AboutSection/Icon"
+import SectionTitle from "../SectionTitle"
+import SubsectionTitle from "../SubsectionTitle"
+import TeamSubsection from "./AboutSection/TeamSubsection"
+import Text from "../Text"
 
-import styles from "./about_section.module.css"
+import styles from "./AboutSection.module.css"
 
 const AboutSection = ({ planetMorph }) => (
   <section className={styles.root}>

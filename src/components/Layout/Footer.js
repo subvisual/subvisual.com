@@ -2,13 +2,13 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-import CallToAction from "../call_to_action"
-import Location from "./footer/location"
-import Logo from "../logo"
-import SocialLinks from "./footer/social_links"
-import Text from "../text"
+import CallToAction from "../CallToAction"
+import Location from "./Footer/Location"
+import Logo from "../Logo"
+import SocialLinks from "./Footer/SocialLinks"
+import Text from "../Text"
 
-import styles from "./footer.module.css"
+import styles from "./Footer.module.css"
 
 const Footer = ({ data }) => (
   <footer className={styles.root}>

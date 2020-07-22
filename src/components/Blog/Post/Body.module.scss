@@ -1,20 +1,20 @@
 @import "common/breakpoints";
 
-@import "./variables";
+@import "./Variables";
 
 .root {
-  @import "./body/anchor";
-  @import "./body/blockquote";
-  @import "./body/bold";
-  @import "./body/code";
-  @import "./body/code_block";
-  @import "./body/heading";
-  @import "./body/horizontal_rule";
-  @import "./body/iframe";
-  @import "./body/image";
-  @import "./body/italic";
-  @import "./body/list";
-  @import "./body/paragraph";
+  @import "./Body/Anchor";
+  @import "./Body/Blockquote";
+  @import "./Body/Bold";
+  @import "./Body/Code";
+  @import "./Body/CodeBlock";
+  @import "./Body/Heading";
+  @import "./Body/HorizontalRule";
+  @import "./Body/Iframe";
+  @import "./Body/Image";
+  @import "./Body/Italic";
+  @import "./Body/List";
+  @import "./Body/Paragraph";
 
   font-family: "Acta", serif;
   font-size: 16px;

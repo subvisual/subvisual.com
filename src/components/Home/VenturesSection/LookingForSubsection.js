@@ -2,7 +2,7 @@ import React from "react"
 
 import Text from "src/components/text"
 
-import styles from "./looking_for_subsection.module.css"
+import styles from "./LookingForSubsection.module.css"
 
 const LookingForSubsection = () => (
   <dl>

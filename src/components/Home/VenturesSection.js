@@ -5,12 +5,12 @@ import CallToAction from "src/components/call_to_action"
 import SectionTitle from "src/components/section_title"
 import SubsectionTitle from "src/components/subsection_title"
 import Text from "src/components/text"
-import HelpingWithSubsection from "./ventures_section/helping_with_subsection"
-import LookingForSubsection from "./ventures_section/looking_for_subsection"
-import PortfolioSubsection from "./ventures_section/portfolio_subsection"
-import Universe from "./ventures_section/universe"
+import HelpingWithSubsection from "./VenturesSection/HelpingWithSubsection"
+import LookingForSubsection from "./VenturesSection/LookingForSubsection"
+import PortfolioSubsection from "./VenturesSection/PortfolioSubsection"
+import Universe from "./VenturesSection/Universe"
 
-import styles from "./ventures_section.module.css"
+import styles from "./VenturesSection.module.css"
 
 const VenturesSection = ({ planetMorph }) => (
   <section className={styles.root}>

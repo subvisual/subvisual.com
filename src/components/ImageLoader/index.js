@@ -3,8 +3,8 @@ import { useInView } from "react-intersection-observer"
 import Img from "gatsby-image"
 import _uniqueId from "lodash/uniqueId"
 
-import Placeholder from "../load_placeholder/placeholder"
-import styles from "./index.module.css"
+import Placeholder from "../LoadPlaceholder/Placeholder"
+import styles from "./Index.module.css"
 
 export default (props) => {
   const { delay, darkOverlay, imgStyle, ...imgProps } = props

@@ -1,9 +1,9 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import NavLink from "./header/nav_link"
+import NavLink from "./Header/NavLink"
 
-import styles from "./header.module.scss"
+import styles from "./Header.module.scss"
 
 const BLOG_PATH = "/blog/"
 

@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import classNames from "classnames"
 
-import styles from "./section_title.module.css"
+import styles from "./SectionTitle.module.css"
 
 const SectionTitle = ({ color, children }) => {
   const className = classNames(styles.root, styles[color])
