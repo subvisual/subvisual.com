@@ -8,7 +8,7 @@ import {
 } from "./planet/animation_utils"
 import AnimationStyle from "./Planet/AnimationStyle"
 import RadialGradient from "./Planet/RadialGradient"
-import { withMorphStyle } from "../Utils/MorphUtils"
+import { withMorphStyle } from "../utils/morphUtils"
 
 import styles from "./Planet.module.css"
 

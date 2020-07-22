@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { graphql } from "gatsby"
 
 import Body from "src/components/blog/post/body"
-import BodyWrapper from "src/components/blog/post/body_wrapper"
+import BodyWrapper from "src/components/blog/post/BodyWrapper"
 import Header from "src/components/blog/post/header"
 import Layout from "src/components/layout"
 import SEO from "src/components/seo"

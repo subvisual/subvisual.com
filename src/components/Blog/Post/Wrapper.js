@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import classNames from "classnames"
 
-import PageWideWrapper from "src/components/page_wide_wrapper"
+import PageWideWrapper from "src/components/PageWideWrapper"
 
 import styles from "./Wrapper.module.css"
 

@@ -3,10 +3,10 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import { ParallaxProvider, Parallax } from "react-scroll-parallax"
 
-import CallToAction from "src/components/call_to_action"
-import ImageLoader from "src/components/image_loader"
+import CallToAction from "src/components/CallToAction"
+import ImageLoader from "src/components/ImageLoader"
 import Text from "src/components/text"
-import useWindowSize from "src/utils/use_window_size"
+import useWindowSize from "src/utils/useWindowSize"
 import Title from "./HeroSection/Title"
 
 import styles from "./HeroSection.module.css"

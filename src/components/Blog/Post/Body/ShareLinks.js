@@ -7,7 +7,7 @@ import {
   TwitterShareButton,
 } from "react-share"
 
-import useDetectJavascript from "src/utils/use_detect_javascript"
+import useDetectJavascript from "src/utils/useDetectJavascript"
 
 import styles from "./ShareLinks.module.scss"
 

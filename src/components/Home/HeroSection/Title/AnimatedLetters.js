@@ -4,8 +4,8 @@ import classNames from "classnames"
 import { motion } from "framer-motion"
 
 import Planet from "src/components/planet"
-import useUserAgent from "src/utils/use_user_agent"
-import { isLinux } from "src/utils/user_agent_utils"
+import useUserAgent from "src/utils/useUserAgent"
+import { isLinux } from "src/utils/userAgentUtils"
 
 import styles from "./AnimatedLetters.module.scss"
 

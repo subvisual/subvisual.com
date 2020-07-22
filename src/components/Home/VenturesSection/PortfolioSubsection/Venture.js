@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import classNames from "classnames"
 
 import Text from "src/components/text"
-import ImageLoader from "src/components/image_loader"
+import ImageLoader from "src/components/ImageLoader"
 
 import styles from "./Venture.module.css"
 
