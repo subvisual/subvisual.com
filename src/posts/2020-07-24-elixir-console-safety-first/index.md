@@ -7,6 +7,9 @@ tags:
   - development
   - elixir
   - devops
+intro: >
+  I suspect that every developer who has dealt with production systems,
+  has also messed up a production system. At least once.
 ---
 
 I suspect that every developer who has dealt with production systems, has also
