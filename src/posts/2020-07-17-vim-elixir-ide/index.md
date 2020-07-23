@@ -167,7 +167,7 @@ I've been searching for a good find & replace solution for Vim for a long time.
 Recently, I found my perfect one so far, in the form of a very simple and hacky
 trick: [quickfix-reflector][quickfix-reflector].
 
-The quickfix window is a special non-editable buffer, usually used display
+The quickfix window is a special non-editable buffer, usually used to display
 things like log messages or compiler errors.  It can also be used to show search
 results, such as when calling `:Rg some_function` to find all ocurrences of
 `some_function` in a codebase.
@@ -178,7 +178,7 @@ and update them. So find & replace operations become easy & powerful.  I love
 especially the fact that the replacement query doesn't necessarily have to be
 tied to the original search. It just ends up being applied on the lines that
 were found. Such as in this example, where I'm searching for `some_function`,
-but then changing only the `function` portion:
+but then changing only the `some` portion:
 
 ![Rename](./rename.gif)
 
