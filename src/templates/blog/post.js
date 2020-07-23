@@ -18,6 +18,7 @@ export const query = graphql`
     markdownRemark(frontmatter: { path: { eq: $slug } }) {
       fields {
         cover
+        seoImage
         url
       }
       frontmatter {
@@ -52,35 +53,41 @@ const BlogPostTemplate = ({
   url,
   intro,
   seoDescription,
-}) => (
-  <Layout>
-    <SEO
-      description={seoDescription || intro}
-      image={cover}
-      title={title}
-      url={url}
-    />
-    <div className={styles.root}>
-      <article className={styles.article}>
-        <header className={styles.header}>
-          <Header {...{ author, cover, coverFile, date, title }} />
-        </header>
-        <section>
-          <Wrapper className={styles.outerWrapper}>
-            <BodyWrapper className={styles.innerWrapper}>
-              <Body html={html} />
-            </BodyWrapper>
-            <ShareLinks className={styles.shareLinks} url={url} />
-          </Wrapper>
-        </section>
-      </article>
-    </div>
-  </Layout>
-)
+  seoImage,
+}) => {
+  console.log(cover)
+  console.log(seoImage)
+  return (
+    <Layout>
+      <SEO
+        description={seoDescription || intro}
+        image={seoImage || cover}
+        title={title}
+        url={url}
+      />
+      <div className={styles.root}>
+        <article className={styles.article}>
+          <header className={styles.header}>
+            <Header {...{ author, cover, coverFile, date, title }} />
+          </header>
+          <section>
+            <Wrapper className={styles.outerWrapper}>
+              <BodyWrapper className={styles.innerWrapper}>
+                <Body html={html} />
+              </BodyWrapper>
+              <ShareLinks className={styles.shareLinks} url={url} />
+            </Wrapper>
+          </section>
+        </article>
+      </div>
+    </Layout>
+  )
+}
 
 BlogPostTemplate.propTypes = {
   author: PropTypes.object.isRequired,
   cover: PropTypes.string,
+  seoImage: PropTypes.string,
   coverFile: PropTypes.object,
   date: PropTypes.instanceOf(Date).isRequired,
   html: PropTypes.string.isRequired,
@@ -92,7 +99,7 @@ BlogPostTemplate.propTypes = {
 export default ({ data }) => {
   const { markdownRemark, coverFile } = data
   const { fields, frontmatter, html } = markdownRemark
-  const { cover, url } = fields
+  const { seoImage, cover, url } = fields
   const { author, date, title, intro, seoDescription } = frontmatter
 
   return (
@@ -105,6 +112,7 @@ export default ({ data }) => {
         html,
         intro,
         seoDescription,
+        seoImage,
         title,
         url,
       }}

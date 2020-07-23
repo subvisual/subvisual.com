@@ -42,6 +42,7 @@ const createBlogPostsPages = async ({ createPage, graphql }) => {
         nodes {
           fields {
             cover
+            seoImage
           }
           frontmatter {
             path
@@ -54,12 +55,12 @@ const createBlogPostsPages = async ({ createPage, graphql }) => {
 
   results.data.allMarkdownRemark.nodes.forEach((node) => {
     const { fields, frontmatter } = node
-    const { cover } = fields
+    const { cover, seoImage } = fields
     const { path: slug } = frontmatter
 
     createPage({
       component,
-      context: { cover, slug },
+      context: { cover, seoImage, slug },
       path: path.posix.join("/blog", slug),
     })
   })
