@@ -4,6 +4,7 @@ title: Apprenticeship and Summer Camp programs
 author: laura-esteves
 date: 2020-02-23
 cover: ./cover.png
+seoImage: ./cover.png
 tags:
   - general
 intro: >
