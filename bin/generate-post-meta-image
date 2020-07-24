@@ -28,3 +28,5 @@ convert \
   -page +0+0 static/script-assets/blog-post-top.png \
   -page +0+0 /tmp/text-bottom.png \
   -layers merge +repage $out
+
+image_optim $out
