@@ -54,35 +54,31 @@ const BlogPostTemplate = ({
   intro,
   seoDescription,
   seoImage,
-}) => {
-  console.log(cover)
-  console.log(seoImage)
-  return (
-    <Layout>
-      <SEO
-        description={seoDescription || intro}
-        image={seoImage || cover}
-        title={title}
-        url={url}
-      />
-      <div className={styles.root}>
-        <article className={styles.article}>
-          <header className={styles.header}>
-            <Header {...{ author, cover, coverFile, date, title }} />
-          </header>
-          <section>
-            <Wrapper className={styles.outerWrapper}>
-              <BodyWrapper className={styles.innerWrapper}>
-                <Body html={html} />
-              </BodyWrapper>
-              <ShareLinks className={styles.shareLinks} url={url} />
-            </Wrapper>
-          </section>
-        </article>
-      </div>
-    </Layout>
-  )
-}
+}) => (
+  <Layout>
+    <SEO
+      description={seoDescription || intro}
+      image={seoImage || cover}
+      title={title}
+      url={url}
+    />
+    <div className={styles.root}>
+      <article className={styles.article}>
+        <header className={styles.header}>
+          <Header {...{ author, cover, coverFile, date, title }} />
+        </header>
+        <section>
+          <Wrapper className={styles.outerWrapper}>
+            <BodyWrapper className={styles.innerWrapper}>
+              <Body html={html} />
+            </BodyWrapper>
+            <ShareLinks className={styles.shareLinks} url={url} />
+          </Wrapper>
+        </section>
+      </article>
+    </div>
+  </Layout>
+)
 
 BlogPostTemplate.propTypes = {
   author: PropTypes.object.isRequired,
