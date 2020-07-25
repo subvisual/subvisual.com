@@ -1,0 +1,33 @@
+#!/bin/sh -e
+
+text="$1"
+bg="$2"
+out=$3
+res=2160x1080
+
+tmp=$(mktemp -d)
+
+if [[ "$bg" == "" ]]; then
+  bg="#2421AB"
+  convert -size $res xc:$bg $tmp/bg.png
+else
+  convert $2 -resize $res^ $tmp/bg-uncropped.png
+  convert $tmp/bg-uncropped.png -gravity center -crop $res+0+0 -fill black -colorize 40% $tmp/bg.png
+fi
+
+convert -size $res xc:"#00000000" \
+  -pointsize 100 -fill white -draw 'text 100,160 "Blog Post" ' \
+  $tmp/text-top.png
+
+convert -size $res xc:"#00000000" \
+  -font ./src/fonts/acta-headline-extra-bold.woff \
+  -pointsize 165 -fill white -draw "text 100,925 '$text' " \
+  $tmp/text-bottom.png
+
+convert \
+  -page +0+0 $tmp/bg.png \
+  -page +0+0 static/script-assets/blog-post-top.png \
+  -page +0+0 $tmp/text-bottom.png \
+  -layers merge +repage $out
+
+image_optim $out
