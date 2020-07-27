@@ -16,6 +16,16 @@ const resolveBlogPostCover = ({ cover, node }) => {
   return path.resolve(dirname, cover)
 }
 
+const resolveBlogPostSEOImage = ({ seoImage, node }) => {
+  const { fileAbsolutePath } = node
+
+  if (isURL(seoImage) || path.isAbsolute(seoImage)) return seoImage
+
+  const dirname = path.dirname(fileAbsolutePath)
+
+  return path.resolve(dirname, seoImage)
+}
+
 const prepareBlogPostCover = ({ node }) => {
   const { frontmatter } = node
   const { cover } = frontmatter
@@ -23,6 +33,15 @@ const prepareBlogPostCover = ({ node }) => {
   if (isString(cover)) return resolveBlogPostCover({ cover, node })
 
   return cover
+}
+
+const prepareBlogPostSEOImage = ({ node }) => {
+  const { frontmatter } = node
+  const { seoImage } = frontmatter
+
+  if (isString(seoImage)) return resolveBlogPostSEOImage({ seoImage, node })
+
+  return seoImage
 }
 
 const prepareBlogPostUrl = ({ node }) => {
@@ -47,8 +66,10 @@ module.exports = async ({ node, actions }) => {
 
   const { createNodeField } = actions
   const cover = prepareBlogPostCover({ node })
+  const seoImage = prepareBlogPostSEOImage({ node })
   const url = prepareBlogPostUrl({ node })
 
   createNodeField({ node, name: "cover", value: cover })
+  createNodeField({ node, name: "seoImage", value: seoImage })
   createNodeField({ node, name: "url", value: url })
 }

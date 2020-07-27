@@ -18,6 +18,7 @@ export const query = graphql`
     markdownRemark(frontmatter: { path: { eq: $slug } }) {
       fields {
         cover
+        seoImage
         url
       }
       frontmatter {
@@ -52,11 +53,12 @@ const BlogPostTemplate = ({
   url,
   intro,
   seoDescription,
+  seoImage,
 }) => (
   <Layout>
     <SEO
       description={seoDescription || intro}
-      image={cover}
+      image={seoImage || cover}
       title={title}
       url={url}
     />
@@ -81,6 +83,7 @@ const BlogPostTemplate = ({
 BlogPostTemplate.propTypes = {
   author: PropTypes.object.isRequired,
   cover: PropTypes.string,
+  seoImage: PropTypes.string,
   coverFile: PropTypes.object,
   date: PropTypes.instanceOf(Date).isRequired,
   html: PropTypes.string.isRequired,
@@ -92,7 +95,7 @@ BlogPostTemplate.propTypes = {
 export default ({ data }) => {
   const { markdownRemark, coverFile } = data
   const { fields, frontmatter, html } = markdownRemark
-  const { cover, url } = fields
+  const { seoImage, cover, url } = fields
   const { author, date, title, intro, seoDescription } = frontmatter
 
   return (
@@ -105,6 +108,7 @@ export default ({ data }) => {
         html,
         intro,
         seoDescription,
+        seoImage,
         title,
         url,
       }}
