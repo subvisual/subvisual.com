@@ -2,6 +2,8 @@ const path = require("path")
 const postCssUrl = require("postcss-url")
 const sass = require("sass")
 
+const localSearchConfig = require("./plugins/localSearch")
+
 const ROOT = path.resolve(__dirname, "../..")
 
 const rssFeedConfig = require("./plugins/rssFeed")(ROOT)
@@ -83,6 +85,7 @@ module.exports = [
   },
   "gatsby-transformer-sharp",
   "gatsby-plugin-sharp",
+  ...localSearchConfig,
   ...manifestConfig,
   ...rssFeedConfig,
   {
