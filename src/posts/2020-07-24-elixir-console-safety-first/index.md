@@ -42,8 +42,10 @@ You can also call
 [`IEx.configure/1`](https://hexdocs.pm/iex/IEx.html#configure/1) which, among
 other things, let's you customize the prompt, which is what we're doing here.
 
-In my example above, prompt color is based on `Mix.env()`, but being Elixir
-code, you can do it in whatever way you prefer.
+In my example above, prompt color is based on an `APP_ENV` environment variable,
+but being Elixir code, you can do it in whatever way you prefer.
+I tend to already have a similar variable available, to distinguish between
+staging environments and the real production one.
 
 ## ANSI escape codes
 
@@ -71,12 +73,15 @@ IEx prompts as shown in the beginning:
 # .iex.exs
 #
 
-env = Mix.env()
+env = System.get_env("APP_ENV")
 
-prompt_reset = "\e[G" prompt_color = case env do :prod ->
-"#{IO.ANSI.red_background()}#{IO.ANSI.black()}" :dev ->
-"#{IO.ANSI.blue_background()}" _ ->
-"#{IO.ANSI.white_background()}#{IO.ANSI.black()}" end
+prompt_reset = "\e[G" prompt_color = case env do
+  "production" ->
+    "#{IO.ANSI.red_background()}#{IO.ANSI.black()}"
+  "development" ->
+    "#{IO.ANSI.blue_background()}"
+  _ ->
+    "#{IO.ANSI.white_background()}#{IO.ANSI.black()}" end
 
 prompt = 
   prompt_reset <>
