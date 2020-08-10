@@ -38,6 +38,20 @@
     web: "https://gabrielpoca.com"
     github: "https://github.com/gabrielpoca"
 
+- key: joao-justo
+  name: João Justo
+  photo:
+    horizontal: "../images/team/joao-justo-h.jpg"
+    vertical: "../images/team/joao-justo-v.jpg"
+  bio: >-
+    Always gets way too excited about a new idea. Downhill amateur and Android
+    fanboy. Avoid talking to him about Game of Thrones unless you have serious
+    time to spend.
+  role: "Developer"
+  social:
+    github: joaojusto
+    twitter: jpjustonunes
+
 - key: joao-ferreira
   name: "João Ferreira"
   photo:
