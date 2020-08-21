@@ -1,0 +1,29 @@
+@import "common/breakpoints";
+
+.root > div > div {
+  & > h3 {
+    color: #403f4c !important;
+
+    font-family: "Acta Headline", serif !important;
+    font-size: 16px !important;
+    line-height: 20px !important;
+
+    @include media(">=desktop") {
+      font-size: 20px !important;
+      line-height: 28px !important;
+    }
+  }
+
+  & > p {
+    color: #403f4c !important;
+
+    font-family: colfax-web, sans-serif !important;
+    font-size: 12px !important;
+    line-height: 16px !important;
+
+    @include media(">=desktop") {
+      font-size: 16px !important;
+      line-height: 20px !important;
+    }
+  }
+}
