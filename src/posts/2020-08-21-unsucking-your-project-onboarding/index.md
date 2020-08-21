@@ -313,8 +313,8 @@ source ~/.asdf/asdf.sh
 ```
 
 As mentioned, we favour `asdf` for language version management. Usually this
-means we'll commit a `.tool-versions` in the repo to make everyone is running
-the same.
+means we'll commit a `.tool-versions` in the repo to ensure everyone is running
+the same language versions.
 
 Notice that since `asdf` is not required, we check if it isn't installed and if
 not, we notify the developer and ask for confirmation. Otherwise, we dive right
@@ -414,7 +414,7 @@ npm install -g ngrok
 
 #### Setting up the database
 
-Finally, well all is said and done, just run with the database:
+Finally, when all is said and done, just run with the database:
 
 ```shell
 MIX_ENV=$env mix deps.get
@@ -787,7 +787,7 @@ Personally, [I use an install script][dotfiles-install], 100% made in `zsh`. It
 installs and sets up [my dotfiles][my-dotfiles] and the apps I need.
 
 [Gabriel][gabriel-dotfiles] has a different philosophy, going with Ansible.
-[Miguel][miguel-terraform] uses `rcup` and [Pedro][pedro-terraform] made a
+[Miguel][miguel-dotfiles] uses `rcup` and [Pedro][pedro-dotfiles] made a
 monster that has CI checks and is completely provisioned through Ansible.
 
 To each their own thing, but the reasoning remains: it's a one-liner to set up a
@@ -815,7 +815,7 @@ PS: Drop any suggestions, ideas or questions [on Twitter][my-twitter]. I always
 love to hear what people use on their projects, so feel free to reach out!
 
 [vim-test]: https://subvisual.com/blog/posts/vim-elixir-ide
-[my-twitter]: https://twitter.com/justmnds
+[my-twitter]: https://twitter.com/frmcodes
 [gabriel-dotfiles]: https://github.com/gabrielpoca/dotfiles
 [miguel-dotfiles]: https://github.com/naps62/dotfiles
 [pedro-dotfiles]: https://github.com/pfac/.files
