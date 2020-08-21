@@ -11,6 +11,7 @@
   social:
     web: "https://blog.mendes.codes"
     github: "https://github.com/frm"
+    twitter: "https://twitter.com/frmcodes"
 
 - key: francisco-baila
   name: "Francisco Baila"
@@ -49,8 +50,8 @@
     time to spend.
   role: "Developer"
   social:
-    github: joaojusto
-    twitter: jpjustonunes
+    github: "https://github.com/joaojusto"
+    twitter: "https://twitter.com/jpjustonunes"
 
 - key: joao-ferreira
   name: "João Ferreira"

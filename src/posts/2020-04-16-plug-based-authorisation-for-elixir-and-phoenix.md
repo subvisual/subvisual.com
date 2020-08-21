@@ -221,7 +221,7 @@ Lots of stuff happening, small number of codes. Elixir awesome. Demo [here](http
 
 Mendes
 
-*If you enjoy my shenanigans, I usually say stuff on [twitter](https://twitter.com/justmnds). Drop by and say hi*
+*If you enjoy my shenanigans, I usually say stuff on [twitter](https://twitter.com/frmcodes). Drop by and say hi*
 
 ---
 

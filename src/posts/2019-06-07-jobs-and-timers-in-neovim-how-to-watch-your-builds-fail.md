@@ -193,4 +193,4 @@ kisses and all that.
 [GitHub checks API]: https://developer.github.com/v3/checks/
 [hub]: https://hub.github.com/
 [Kade Killary]: https://kadekillary.work/post/statusline-vim/
-[my dotfiles]: https://github.com/justmendes/dotfiles
+[my dotfiles]: https://github.com/frm/dotfiles
