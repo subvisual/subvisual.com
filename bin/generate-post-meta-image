@@ -30,4 +30,5 @@ convert \
   -page +0+0 $tmp/text-bottom.png \
   -layers merge +repage $out
 
-image_optim $out
+# Optimize image for smaller footprint
+bundler exec image_optim $out

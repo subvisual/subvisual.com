@@ -11,3 +11,6 @@ asdf reshim nodejs
 
 # Install JavaScript dependencies
 yarn install
+
+# Install Ruby dependencies
+bundler install

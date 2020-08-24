@@ -1,0 +1,26 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    exifr (1.3.6)
+    fspath (3.1.2)
+    image_optim (0.26.5)
+      exifr (~> 1.2, >= 1.2.2)
+      fspath (~> 3.0)
+      image_size (>= 1.5, < 3)
+      in_threads (~> 1.3)
+      progress (~> 3.0, >= 3.0.1)
+    image_size (2.1.0)
+    in_threads (1.5.4)
+    progress (3.5.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  image_optim
+
+RUBY VERSION
+   ruby 2.7.1p83
+
+BUNDLED WITH
+   2.1.4
