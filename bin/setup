@@ -12,5 +12,9 @@ asdf reshim nodejs
 # Install JavaScript dependencies
 yarn install
 
+# Install or update Bundler globally
+gem install bundler --conservative
+asdf reshim ruby
+
 # Install Ruby dependencies
 bundler install
