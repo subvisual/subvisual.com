@@ -9,8 +9,11 @@ const detailsQuery = graphql`
       siteMetadata {
         description
         image
+        lang
         title
-        twitterUsername
+        twitter {
+          creator
+        }
         url
       }
     }
@@ -32,7 +35,7 @@ function SEO({ description, image, lang, keywords, title, url }) {
         return (
           <Helmet
             htmlAttributes={{
-              lang,
+              lang: lang || data.site.siteMetadata.lang,
             }}
             title={metaTitle}
           >
@@ -55,7 +58,7 @@ function SEO({ description, image, lang, keywords, title, url }) {
             />
             <meta
               name="twitter:creator"
-              content={data.site.siteMetadata.twitterUsername}
+              content={data.site.siteMetadata.twitter.creator}
             />
             <meta name="twitter:title" content={metaTitle} />
             <meta name="twitter:description" content={metaDescription} />
@@ -72,7 +75,6 @@ function SEO({ description, image, lang, keywords, title, url }) {
 }
 
 SEO.defaultProps = {
-  lang: `en`,
   keywords: [],
 }
 

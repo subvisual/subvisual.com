@@ -1,4 +1,4 @@
-const plugins = require("./config/plugins")
-const siteMetadata = require("./config/site_metadata")
+const plugins = require("./config/gatsby/plugins")
+const siteMetadata = require("./config/gatsby/siteMetadata")
 
 module.exports = { plugins, siteMetadata }
