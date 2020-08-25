@@ -7,6 +7,7 @@
   "dependencies": {
     "@popmotion/easing": "^1.0.2",
     "@researchgate/react-intersection-observer": "1.0.1",
+    "@subvisual/utils": "0.1.0",
     "classnames": "^2.2.6",
     "dateformat": "^3.0.3",
     "framer-motion": "^1.6.15",
