@@ -1,8 +1,7 @@
 const path = require("path")
 const isString = require("lodash/isString")
 const isUndefined = require("lodash/isUndefined")
-
-const { isURL } = require("../../src/utils/url_utils")
+const isURL = require("@subvisual/utils/isURL")
 
 const { NODE_ENV } = process.env
 
