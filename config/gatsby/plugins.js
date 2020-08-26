@@ -2,7 +2,7 @@ const path = require("path")
 const postCssUrl = require("postcss-url")
 const sass = require("sass")
 
-const ROOT = path.resolve(__dirname, "..")
+const ROOT = path.resolve(__dirname, "../..")
 
 module.exports = [
   {

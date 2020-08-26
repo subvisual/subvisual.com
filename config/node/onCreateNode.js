@@ -1,9 +1,8 @@
 const path = require("path")
 const isString = require("lodash/isString")
-const isUndefined = require("lodash/isUndefined")
 const isURL = require("@subvisual/utils/isURL")
 
-const { NODE_ENV } = process.env
+const pathToURL = require("../../lib/pathToURL")
 
 const resolveBlogPostCover = ({ cover, node }) => {
   const { fileAbsolutePath } = node
@@ -44,19 +43,14 @@ const prepareBlogPostSEOImage = ({ node }) => {
 }
 
 const prepareBlogPostUrl = ({ node }) => {
-  if (NODE_ENV === "production" && isUndefined(URL)) {
-    throw new Error(`
-    URL environment variable must be set for production build to allow
-    generation of blog posts URLs.
-    `)
-  }
+  const { frontmatter } = node
 
-  const urlBase = isURL(process.env.URL)
-    ? process.env.URL
-    : "http://localhost:8000"
-  const urlPath = path.posix.join("/blog", node.frontmatter.path)
+  // If `path` is not defined in this post's markdown, exit early
+  if (!frontmatter.path) return undefined
 
-  return new URL(urlPath, urlBase).toString()
+  const urlPath = path.posix.join("/blog", frontmatter.path)
+
+  return pathToURL(urlPath).toString()
 }
 
 module.exports = async ({ node, actions }) => {
