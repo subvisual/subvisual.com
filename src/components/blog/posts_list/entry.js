@@ -17,14 +17,15 @@ const renderAuthor = ({ className, key, name }) => {
 
 const Entry = ({ author, date, intro, path, title }) => {
   const formattedDate = dateFormat(date, "mmmm d, yyyy")
+  const to = path.startsWith("/") ? `/blog${path}` : `/blog/${path}`
 
   return (
     <div className={styles.root}>
       <div className={styles.title}>
-        <Link to={`/blog/${path}`}>{title}</Link>
+        <Link to={to}>{title}</Link>
       </div>
       <p className={styles.intro}>
-        <Link to={`/blog/${path}`}>
+        <Link to={to}>
           {/* eslint-disable-next-line react/no-danger */}
           <span dangerouslySetInnerHTML={{ __html: intro }} />
         </Link>
