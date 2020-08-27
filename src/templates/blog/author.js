@@ -1,10 +1,10 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import Layout from "src/components/layout"
-import PostsList from "src/components/blog/posts_list"
-import SEO from "src/components/seo"
-import Title from "src/components/blog/title"
+import Layout from "~/src/components/layout"
+import PostsList from "~/src/components/blog/posts_list"
+import SEO from "~/src/components/seo"
+import Title from "~/src/components/blog/title"
 
 import styles from "./author.module.scss"
 

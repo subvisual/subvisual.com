@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import dateFormat from "dateformat"
 
 import Cover from "./header/cover"
-import Title from "../title"
+import Title from "~/src/components/blog/title"
 import Wrapper from "./wrapper"
 
 import styles from "./header.module.css"

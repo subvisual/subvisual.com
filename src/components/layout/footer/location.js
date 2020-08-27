@@ -3,8 +3,8 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-import Link from "src/components/link"
-import Text from "src/components/text"
+import Link from "~/src/components/link"
+import Text from "~/src/components/text"
 
 import styles from "./location.module.css"
 

@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import colorCodes from "../colors"
+import colorCodes from "~/src/components/colors"
 
 const PlanetRadialGradient = ({ color, id }) => {
   const colorCode = colorCodes[color]

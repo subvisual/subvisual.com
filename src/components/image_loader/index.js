@@ -3,7 +3,7 @@ import { useInView } from "react-intersection-observer"
 import Img from "gatsby-image"
 import _uniqueId from "lodash/uniqueId"
 
-import Placeholder from "../load_placeholder/placeholder"
+import Placeholder from "~/src/components/load_placeholder/placeholder"
 import styles from "./index.module.css"
 
 export default (props) => {
