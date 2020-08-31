@@ -1,20 +1,22 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { graphql } from "gatsby"
+import _get from "lodash/get"
 
 import Body from "~/src/components/blog/post/body"
 import BodyWrapper from "~/src/components/blog/post/body_wrapper"
 import Header from "~/src/components/blog/post/header"
 import Layout from "~/src/components/layout"
-import SEO from "~/src/components/seo"
+import SEO from "~/src/components/SEO"
 import ShareLinks from "~/src/components/blog/post/body/share_links"
 import Wrapper from "~/src/components/blog/post/wrapper"
+import pathToURL from "~/lib/pathToURL"
 
 import "~/src/common/base.scss"
 import styles from "./post.module.scss"
 
 export const query = graphql`
-  query($cover: String, $slug: String!) {
+  query($cover: String, $seoImage: String, $slug: String!) {
     markdownRemark(frontmatter: { path: { eq: $slug } }) {
       fields {
         cover
@@ -40,8 +42,22 @@ export const query = graphql`
         }
       }
     }
+    seoImageFile: file(absolutePath: { eq: $seoImage }) {
+      childImageSharp {
+        fixed(width: 2160, height: 1080) {
+          ...GatsbyImageSharpFixed_noBase64
+        }
+      }
+    }
   }
 `
+
+const resolveImageURL = ({ file, src }) =>
+  pathToURL(_get(file, "childImageSharp.fixed.src", src))
+
+const resolveSEOImage = ({ cover, coverFile, seoImage, seoImageFile }) =>
+  resolveImageURL({ file: seoImageFile, src: seoImage }) ||
+  resolveImageURL({ file: coverFile, src: cover })
 
 const BlogPostTemplate = ({
   author,
@@ -54,11 +70,12 @@ const BlogPostTemplate = ({
   intro,
   seoDescription,
   seoImage,
+  seoImageFile,
 }) => (
   <Layout>
     <SEO
       description={seoDescription || intro}
-      image={seoImage || cover}
+      image={resolveSEOImage({ cover, coverFile, seoImage, seoImageFile })}
       title={title}
       url={url}
     />
@@ -93,7 +110,7 @@ BlogPostTemplate.propTypes = {
 }
 
 export default ({ data }) => {
-  const { markdownRemark, coverFile } = data
+  const { markdownRemark, coverFile, seoImageFile } = data
   const { fields, frontmatter, html } = markdownRemark
   const { seoImage, cover, url } = fields
   const { author, date, title, intro, seoDescription } = frontmatter
@@ -109,6 +126,7 @@ export default ({ data }) => {
         intro,
         seoDescription,
         seoImage,
+        seoImageFile,
         title,
         url,
       }}

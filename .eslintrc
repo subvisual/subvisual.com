@@ -120,10 +120,11 @@
       2,
       {
         "ignore": [
-          "root/"
+          "~/"
         ]
       }
     ],
+    "import/extensions": 0,
     "react/jsx-props-no-spreading": "off",
     "react/static-property-placement": "off",
     "react/state-in-constructor": "off",

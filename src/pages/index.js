@@ -3,7 +3,7 @@ import { useMorph } from "react-morph"
 import { cubicBezier } from "@popmotion/easing"
 
 import Layout from "~/src/components/layout"
-import SEO from "~/src/components/seo"
+import SEO from "~/src/components/SEO"
 import SplashScreen from "~/src/components/splash_screen"
 import AboutSection from "~/src/components/home/about_section"
 import HeroSection from "~/src/components/home/hero_section"
