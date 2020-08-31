@@ -133,9 +133,7 @@
   },
   "settings": {
     "import/resolver": {
-      "alias": [
-        ["src", "./src"]
-      ]
+      "babel-plugin-root-import": {}
     }
   }
 }

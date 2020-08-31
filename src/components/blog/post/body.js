@@ -2,8 +2,13 @@ import React from "react"
 import PropTypes from "prop-types"
 import classNames from "classnames"
 
-import useUserAgent from "src/utils/use_user_agent"
-import { isChrome, isEdge, isMacOS, isSafari } from "src/utils/user_agent_utils"
+import useUserAgent from "~/src/utils/use_user_agent"
+import {
+  isChrome,
+  isEdge,
+  isMacOS,
+  isSafari,
+} from "~/src/utils/user_agent_utils"
 import BodyWrapper from "./body_wrapper"
 
 import "prismjs/themes/prism.css"

@@ -2,11 +2,11 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-import CallToAction from "../call_to_action"
+import CallToAction from "~/src/components/call_to_action"
 import Location from "./footer/location"
-import Logo from "../logo"
+import Logo from "~/src/components/logo"
 import SocialLinks from "./footer/social_links"
-import Text from "../text"
+import Text from "~/src/components/text"
 
 import styles from "./footer.module.css"
 

@@ -1,9 +1,9 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import PostsList from "../components/blog/posts_list"
+import Layout from "~/src/components/layout"
+import SEO from "~/src/components/seo"
+import PostsList from "~/src/components/blog/posts_list"
 
 import "../common/base.scss"
 import styles from "./blog.module.scss"

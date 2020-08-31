@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import useDetectJavascript from "src/utils/use_detect_javascript"
+import useDetectJavascript from "~/src/utils/use_detect_javascript"
 import AnimatedLetters from "./title/animated_letters"
 
 import styles from "./title.module.scss"
