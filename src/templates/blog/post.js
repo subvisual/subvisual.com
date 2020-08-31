@@ -53,7 +53,7 @@ export const query = graphql`
 `
 
 const resolveImageURL = ({ file, src }) =>
-  pathToURL(_get(file, "childImageSharp.fixed.src") || src)
+  pathToURL(_get(file, "childImageSharp.fixed.src", src))
 
 const resolveSEOImage = ({ cover, coverFile, seoImage, seoImageFile }) =>
   resolveImageURL({ file: seoImageFile, src: seoImage }) ||
