@@ -2,8 +2,6 @@ const path = require("path")
 const isString = require("lodash/isString")
 const isURL = require("@subvisual/utils/isURL")
 
-const pathToURL = require("../../lib/pathToURL")
-
 const resolveBlogPostCover = ({ cover, node }) => {
   const { fileAbsolutePath } = node
 
@@ -48,9 +46,10 @@ const prepareBlogPostUrl = ({ node }) => {
   // If `path` is not defined in this post's markdown, exit early
   if (!frontmatter.path) return undefined
 
+  const urlBase = process.env.URL || "http://localhost:8000"
   const urlPath = path.posix.join("/blog", frontmatter.path)
 
-  return pathToURL(urlPath).toString()
+  return new URL(urlPath, urlBase).toString()
 }
 
 module.exports = async ({ node, actions }) => {
