@@ -10,7 +10,7 @@ import Layout from "~/src/components/layout"
 import SEO from "~/src/components/SEO"
 import ShareLinks from "~/src/components/blog/post/body/share_links"
 import Wrapper from "~/src/components/blog/post/wrapper"
-import pathToURL from "~/lib/pathToURL"
+import usePathToURL from "~/src/utils/usePathToURL"
 
 import "~/src/common/base.scss"
 import styles from "./post.module.scss"
@@ -52,12 +52,8 @@ export const query = graphql`
   }
 `
 
-const resolveImageURL = ({ file, src }) =>
-  pathToURL(_get(file, "childImageSharp.fixed.src", src))
-
-const resolveSEOImage = ({ cover, coverFile, seoImage, seoImageFile }) =>
-  resolveImageURL({ file: seoImageFile, src: seoImage }) ||
-  resolveImageURL({ file: coverFile, src: cover })
+const resolveImage = ({ file, src }) =>
+  _get(file, "childImageSharp.fixed.src", src)
 
 const BlogPostTemplate = ({
   author,
@@ -71,31 +67,38 @@ const BlogPostTemplate = ({
   seoDescription,
   seoImage,
   seoImageFile,
-}) => (
-  <Layout>
-    <SEO
-      description={seoDescription || intro}
-      image={resolveSEOImage({ cover, coverFile, seoImage, seoImageFile })}
-      title={title}
-      url={url}
-    />
-    <div className={styles.root}>
-      <article className={styles.article}>
-        <header className={styles.header}>
-          <Header {...{ author, cover, coverFile, date, title }} />
-        </header>
-        <section>
-          <Wrapper className={styles.outerWrapper}>
-            <BodyWrapper className={styles.innerWrapper}>
-              <Body html={html} />
-            </BodyWrapper>
-            <ShareLinks className={styles.shareLinks} url={url} />
-          </Wrapper>
-        </section>
-      </article>
-    </div>
-  </Layout>
-)
+}) => {
+  const image = usePathToURL(
+    resolveImage({ file: seoImageFile, src: seoImage }) ||
+      resolveImage({ file: coverFile, src: cover })
+  )
+
+  return (
+    <Layout>
+      <SEO
+        description={seoDescription || intro}
+        image={image}
+        title={title}
+        url={url}
+      />
+      <div className={styles.root}>
+        <article className={styles.article}>
+          <header className={styles.header}>
+            <Header {...{ author, cover, coverFile, date, title }} />
+          </header>
+          <section>
+            <Wrapper className={styles.outerWrapper}>
+              <BodyWrapper className={styles.innerWrapper}>
+                <Body html={html} />
+              </BodyWrapper>
+              <ShareLinks className={styles.shareLinks} url={url} />
+            </Wrapper>
+          </section>
+        </article>
+      </div>
+    </Layout>
+  )
+}
 
 BlogPostTemplate.propTypes = {
   author: PropTypes.object.isRequired,

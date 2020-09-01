@@ -2,8 +2,9 @@ import React from "react"
 import PropTypes from "prop-types"
 import _defaults from "lodash/defaults"
 
+import useSiteMetadata from "~/src/utils/useSiteMetadata"
+
 import MetaTags from "./MetaTags"
-import useSiteMetadata from "./useSiteMetadata"
 
 const SEO = ({ description, image, lang, keywords, title, url }) => {
   // Gather the sitewide default metadata as fallback
