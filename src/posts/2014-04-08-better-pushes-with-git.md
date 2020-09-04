@@ -5,7 +5,10 @@ author: luis-zamith
 date: 2014-04-08
 tags:
   - development
-intro: "If you've been working with git for a while you've probably realised that it has a [LOT of configs](https://git-scm.com/docs/git-config). A pretty nice one is the `push.default`, which allows you to change the way your branches are pushed to a remote."
+intro: >
+  If you've been working with Git for a while you've probably realised that it
+  has a LOT of configs. There's even one which allows you to change the way
+  your branches are pushed to a remote.
 ---
 
 If you've been working with git for a while you've probably realised that it has a [LOT of configs](https://git-scm.com/docs/git-config). A pretty nice one is the `push.default`, which allows you to change the way your branches are pushed to a remote.

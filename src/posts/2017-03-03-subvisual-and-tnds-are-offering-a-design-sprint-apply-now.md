@@ -7,7 +7,11 @@ cover: https://subvisual.s3.amazonaws.com/blog/hero/193/image@2x.jpg
 tags:
   - design
   - community
-intro: "Subvisual and The New Digital School are offering a Design Sprint - [Apply now!](https://subvisual.typeform.com/to/KJonG6)"
+intro: >
+  Design Sprints are a great deal for us here at Subvisual. We do them when
+  starting a project, when doing a redesign, when adding new features, and
+  more. They are rooted in our processes now and are the base that sustains our
+  work. 
 ---
 
 Subvisual and The New Digital School are offering a Design Sprint - [Apply now!](https://subvisual.typeform.com/to/KJonG6)

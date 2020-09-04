@@ -5,7 +5,11 @@ author: joao-justo
 date: 2014-11-27
 tags:
   - development
-intro: "In the last couple of months I've been a part of [Group Buddies](https://groupbuddies.com/). I joined this company as an apprentice, where I learnt how to work for the web and to follow high quality standards. I was already coding apps for fun, but I had no idea how the web worked."
+intro: >
+  In the last couple of months I've been a part of Group Buddies. I joined this
+  company as an apprentice, where I learnt how to work for the web and to
+  follow high quality standards. I was already coding apps for fun, but I had
+  no idea how the web worked.
 ---
 
 In the last couple of months I've been a part of [Group Buddies](https://groupbuddies.com/). I joined this company as an apprentice, where I learnt how to work for the web and to follow high quality standards. I was already coding apps for fun, but I had no idea how the web worked. 

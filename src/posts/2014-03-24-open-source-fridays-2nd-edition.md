@@ -5,7 +5,8 @@ author: luis-zamith
 date: 2014-03-24
 tags:
   - development
-intro: "On the second edition of the Open Source Fridays, here's what we've done:"
+intro: >
+  On the second edition of the Open Source Fridays, here's what we've done.
 ---
 
 On the second edition of the Open Source Fridays, here's what we've done:

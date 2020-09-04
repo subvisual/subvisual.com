@@ -5,7 +5,15 @@ author: joao-ferreira
 date: 2014-06-18
 tags:
   - design
-intro: "When we started out [Creators School](https://cs.groupbuddies.com/), I got this scary feeling that we were way out of our league, like we didn't have the experience to teach anyone about anything. But as soon as I got over the panic stage, I got excited about the idea of taking a different approach at teaching. So I did a lot of research about education in order to discover new approaches to teaching and better understand how people embrace learning, how to get them 'in the zone'. I came across some interesting concepts that I'd like to share, to contribute for this fascinating subject that is so critical to our future."
+intro: >
+  When we started out Creators School, I got this scary feeling that we were
+  way out of our league, like we didn't have the experience to teach anyone
+  about anything. But as soon as I got over the panic stage, I got excited
+  about the idea of taking a different approach at teaching. So I did a lot of
+  research about education in order to discover new approaches to teaching and
+  better understand how people embrace learning, how to get them 'in the zone'.
+  I came across some interesting concepts that I'd like to share, to contribute
+  for this fascinating subject that is so critical to our future.
 ---
 
 When we started out [Creators School](https://cs.groupbuddies.com/), I got this scary feeling that we were way out of our league, like we didn't have the experience to teach anyone about anything. But as soon as I got over the panic stage, I got excited about the idea of taking a different approach at teaching. So I did a lot of research about education in order to discover new approaches to teaching and better understand how people embrace learning, how to get them 'in the zone'. I came across some interesting concepts that I'd like to share, to contribute for this fascinating subject that is so critical to our future.

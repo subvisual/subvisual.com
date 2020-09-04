@@ -6,7 +6,11 @@ date: 2016-06-01
 cover: https://subvisual.s3.amazonaws.com/blog/hero/150/image@2x.jpg
 tags:
   - general
-intro: "Summer is coming, and most of us are looking for things to do during the summer"
+intro: >
+  Summer is coming, and most of us are looking for things to do during the
+  summer when we have way too much free time. That's why we decided to create
+  an opportunity for you to spend that time investing in yourself by learning
+  and practicing the craft of software design and development.
 ---
 
 Summer is coming, and most of us are looking for things to do during the summer

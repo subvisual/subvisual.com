@@ -5,7 +5,10 @@ author: luis-zamith
 date: 2015-02-02
 tags:
   - development
-intro: "I am privileged. I am able to navigate the web in all it's glory, with all the"
+intro: >
+  Not everyone is privileged enough to be able to navigate the web in all it's
+  glory, with all the amazing animations, crazy stuff happening on scrolls,
+  great videos and the latest style for input fields.
 ---
 
 I am privileged. I am able to navigate the web in all it's glory, with all the

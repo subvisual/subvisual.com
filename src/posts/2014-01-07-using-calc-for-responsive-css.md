@@ -5,7 +5,8 @@ author: gabriel-poca
 date: 2014-01-07
 tags:
   - development
-intro: "If you implement responsive design then CSS's calc() is a must know feature. If you've never heard of it, here's a description from MDN:"
+intro: >
+  If you implement responsive design then CSS's calc() is a must-know feature.
 ---
 
 If you implement responsive design then CSS's calc() is a must know feature. If you've never heard of it, here's a description from MDN:

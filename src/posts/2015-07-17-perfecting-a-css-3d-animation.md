@@ -5,7 +5,10 @@ author: miguel-palhas
 date: 2015-07-17
 tags:
   - development
-intro: "With recent advances in front end technologies, front end developers have been going crazy, pushing CSS to its limits and doing all sorts of [beautiful animations](http://codepen.io/azevedo-252/pen/rVvMXX). Seriously, there are some [crazy things](http://codepen.io/fbrz/pen/whxbF) out there."
+intro: >
+  With recent advances in front-end technologies, front end developers have
+  been going crazy, pushing CSS to its limits and doing all sorts of beautiful
+  animations. Seriously, there are some crazy things out there.
 ---
 
 With recent advances in front end technologies, front end developers have been going crazy, pushing CSS to its limits and doing all sorts of [beautiful animations](http://codepen.io/azevedo-252/pen/rVvMXX). Seriously, there are some [crazy things](http://codepen.io/fbrz/pen/whxbF) out there.

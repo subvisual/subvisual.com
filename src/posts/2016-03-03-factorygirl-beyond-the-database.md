@@ -5,7 +5,9 @@ author: miguel-palhas
 date: 2016-03-03
 tags:
   - development
-intro: "I've been experimenting with [`factory_girl`](https://github.com/thoughtbot/factory_girl) lately, particularly to deal with test data that's not necessarily tied to the database. Did you know you can use it to instantiate any Ruby object, and not only `ActiveRecord` models?"
+intro: >
+  I've been experimenting with FactoryGirl lately, particularly to deal with
+  test data that's not necessarily tied to the database.
 ---
 
 I've been experimenting with [`factory_girl`](https://github.com/thoughtbot/factory_girl) lately, particularly to deal with test data that's not necessarily tied to the database. Did you know you can use it to instantiate any Ruby object, and not only `ActiveRecord` models?

@@ -6,7 +6,11 @@ date: 2017-04-20
 cover: https://subvisual.s3.amazonaws.com/blog/hero/198/image@2x.jpg
 tags:
   - development
-intro: "You may have heard about [Progressive Web Apps"
+intro: >
+  You may have heard about Progressive Web Apps (PWAs). These are web
+  applications that leverage the new Web APIs to look and feel like native
+  applications. There is plenty the web can do today that was only available to
+  native applications before.
 ---
 
 You may have heard about [Progressive Web Apps

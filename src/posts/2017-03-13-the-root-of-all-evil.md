@@ -5,7 +5,8 @@ author: miguel-palhas
 date: 2017-03-13
 tags:
   - development
-intro: "**Spoiler alert:** it's premature optimizations."
+intro: >
+  Spoiler alert: it's premature optimizations.
 ---
 
 **Spoiler alert:** it's premature optimizations.

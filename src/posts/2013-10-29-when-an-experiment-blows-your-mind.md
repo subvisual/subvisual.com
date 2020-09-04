@@ -5,7 +5,9 @@ author: roberto-machado
 date: 2013-10-29
 tags:
   - community
-intro: "[Creators School](https://cs.groupbuddies.com/)'s first edition took place in September and I have to say, it was mind-blowing."
+intro: >
+  Creators School's first edition took place in September and I have to say, it
+  was mind-blowing.
 ---
 
 [Creators School](https://cs.groupbuddies.com/)'s first edition took place in September and I have to say, it was mind-blowing.

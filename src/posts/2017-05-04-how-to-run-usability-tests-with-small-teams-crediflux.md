@@ -5,7 +5,12 @@ author: joao-ferreira
 date: 2017-05-04
 tags:
   - design
-intro: "It's still common to hear designers or product managers saying they'd like to run usability tests on their projects but \"it just takes too much time\" or that they \"don't have the budget for it\". If you've been reading about this topic, then you already know you don't need to have massive resources to run tests on your products, and even more importantly, the outcome heavily outweighs the investment. Steve Krug's book titled <i>\"Rocket Surgery Made Easy\"</i> kinda plays with this wrongful stereotype and it offers a  practical, [step-by-step guide](http://www.sensible.com/downloads/checklists.pdf) to run a successful Usability Test."
+intro: >
+  It's still common to hear designers or product managers saying they'd like to
+  run usability tests on their projects but "it just takes too much time" or
+  they "don't have the budget for it". Steve Krug's book kinda plays with this
+  wrongful stereotype and offers a practical guide to run a successful
+  Usability Test.
 ---
 
 It's still common to hear designers or product managers saying they'd like to run usability tests on their projects but "it just takes too much time" or that they "don't have the budget for it". If you've been reading about this topic, then you already know you don't need to have massive resources to run tests on your products, and even more importantly, the outcome heavily outweighs the investment. Steve Krug's book titled <i>"Rocket Surgery Made Easy"</i> kinda plays with this wrongful stereotype and it offers a  practical, [step-by-step guide](http://www.sensible.com/downloads/checklists.pdf) to run a successful Usability Test.

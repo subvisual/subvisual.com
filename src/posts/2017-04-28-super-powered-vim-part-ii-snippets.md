@@ -6,7 +6,6 @@ date: 2017-04-28
 tags:
   - development
   - vim
-intro: "This post is a follow-up to [Super-powered Vim, part I: Projections](https://subvisual.co/blog/posts/133-super-powered-vim-part-i-projections)."
 ---
 
 This post is a follow-up to [Super-powered Vim, part I: Projections](https://subvisual.co/blog/posts/133-super-powered-vim-part-i-projections).

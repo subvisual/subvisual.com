@@ -6,7 +6,10 @@ date: 2015-07-15
 cover: https://subvisual.s3.amazonaws.com/blog/hero/125/image@2x.jpg
 tags:
   - development
-intro: "[Crystal](http://crystal-lang.org/) is a typed, LLVM compiled language that"
+intro: >
+  Crystal is a typed, LLVM compiled language that reads (mostly) as Ruby. It's
+  a modern language that comes bundled with support for WebSockets, OAuth and
+  other niceties.
 ---
 
 [Crystal](http://crystal-lang.org/) is a typed, LLVM compiled language that

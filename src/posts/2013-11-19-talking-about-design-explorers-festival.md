@@ -5,7 +5,10 @@ author: joao-ferreira
 date: 2013-11-19
 tags:
   - design
-intro: "It was nearly 9:30 on the cold morning of November 7th, when Zamith and I departed from Braga, to attend the [Explorers Festival](http://explorersfestival.com) in Lisbon, where we were expected to give a talk each, at 2PM."
+intro: >
+  It was nearly 9:30 on the cold morning of November 7th, when Zamith and I
+  departed from Braga, to attend the Explorers Festival in Lisbon, where we
+  were expected to give a talk each, at 2PM.
 ---
 
 It was nearly 9:30 on the cold morning of November 7th, when Zamith and I departed from Braga, to attend the [Explorers Festival](http://explorersfestival.com) in Lisbon, where we were expected to give a talk each, at 2PM.

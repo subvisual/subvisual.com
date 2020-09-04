@@ -5,7 +5,8 @@ author: roberto-machado
 date: 2014-03-28
 tags:
   - community
-intro: "That's right folks, it's official:"
+intro: >
+  That's right folks, it's official.
 ---
 
 That's right folks, it's official:

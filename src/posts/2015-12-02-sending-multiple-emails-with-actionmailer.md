@@ -6,7 +6,10 @@ date: 2015-12-02
 cover: https://subvisual.s3.amazonaws.com/blog/hero/132/image@2x.jpg
 tags:
   - development
-intro: "If you have ever built a Rails application, you probably have encountered"
+intro: >
+  If you have ever built a Rails application, you probably have encountered
+  ActionMailer for sending emails. But what if we wanted to send a notification
+  to multiple users all at once?
 ---
 
 If you have ever built a Rails application, you probably have encountered

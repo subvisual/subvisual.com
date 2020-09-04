@@ -8,7 +8,10 @@ tags:
   - ruby-bits
   - development
   - ruby
-intro: "This week on Ruby Bits we've decided to honour the [Juno mission entering"
+intro: >
+  This week on Ruby Bits we've decided to honour the Juno mission entering
+  Jupiter's orbit by discussing another special operator in Ruby, commonly
+  known as the spaceship operator.
 ---
 
 This week on Ruby Bits we've decided to honour the [Juno mission entering
