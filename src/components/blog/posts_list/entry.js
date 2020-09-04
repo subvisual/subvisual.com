@@ -26,8 +26,7 @@ const Entry = ({ author, date, intro, path, title }) => {
       </div>
       <p className={styles.intro}>
         <Link to={to}>
-          {/* eslint-disable-next-line react/no-danger */}
-          <span dangerouslySetInnerHTML={{ __html: intro }} />
+          <span>{intro}</span>
         </Link>
       </p>
       <div className={styles.info}>
