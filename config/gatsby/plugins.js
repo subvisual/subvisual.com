@@ -4,6 +4,8 @@ const sass = require("sass")
 
 const ROOT = path.resolve(__dirname, "../..")
 
+const manifestConfig = require("./plugins/manifest")(ROOT)
+
 module.exports = [
   {
     resolve: "gatsby-plugin-sass",
@@ -80,18 +82,7 @@ module.exports = [
   },
   "gatsby-transformer-sharp",
   "gatsby-plugin-sharp",
-  {
-    resolve: "gatsby-plugin-manifest",
-    options: {
-      name: "subvisual",
-      short_name: "subvisual",
-      start_url: "/",
-      background_color: "#ffffff",
-      theme_color: "#ffffff",
-      display: "minimal-ui",
-      icon: path.resolve(ROOT, "src/images/subvisual-symbol-blue.svg"),
-    },
-  },
+  ...manifestConfig,
   {
     resolve: "gatsby-plugin-react-svg",
     options: {
