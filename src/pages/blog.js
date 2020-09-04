@@ -10,7 +10,12 @@ import styles from "./blog.module.scss"
 
 const query = graphql`
   {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+    allMarkdownRemark(
+      sort: {
+        fields: [frontmatter___date, frontmatter___title]
+        order: [DESC, DESC]
+      }
+    ) {
       nodes {
         frontmatter {
           author {
