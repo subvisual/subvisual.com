@@ -1,7 +1,7 @@
 import React from "react"
 import Announcement from "react-announcement"
 
-import Symbol from "src/images/subvisual-symbol-blue.svg"
+import Symbol from "~/src/images/subvisual-symbol-blue.svg"
 
 import styles from "./index.module.scss"
 
