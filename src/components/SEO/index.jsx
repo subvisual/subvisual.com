@@ -6,6 +6,12 @@ import useSiteMetadata from "~/src/utils/useSiteMetadata"
 
 import MetaTags from "./MetaTags"
 
+const buildTitle = (siteTitle, pageTitle) => {
+  if (!pageTitle) return siteTitle
+
+  return [siteTitle, pageTitle].join(" | ")
+}
+
 const SEO = ({ description, image, lang, keywords, title, url }) => {
   // Gather the sitewide default metadata as fallback
   const siteMetadata = useSiteMetadata()
@@ -16,7 +22,7 @@ const SEO = ({ description, image, lang, keywords, title, url }) => {
       image,
       lang,
       keywords,
-      title: [siteMetadata.title, title].join(" | "),
+      title: buildTitle(siteMetadata.title, title),
       url,
     },
     siteMetadata
