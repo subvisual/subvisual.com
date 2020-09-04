@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 
+import AnnouncementBanner from "~/src/components/AnnouncementBanner"
 import Logo from "./logo"
 import Header from "./layout/header"
 import Footer from "./layout/footer"
@@ -13,6 +14,7 @@ const Layout = ({ children, currentPath, renderHeaderLogo }) => (
     <Helmet>
       <link rel="stylesheet" href="https://use.typekit.net/dpm7mos.css" />
     </Helmet>
+    <AnnouncementBanner />
     <Header currentPath={currentPath} renderLogo={renderHeaderLogo} />
     <main>{children}</main>
     <Footer />
