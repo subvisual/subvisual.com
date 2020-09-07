@@ -7,7 +7,10 @@ cover: https://subvisual.s3.amazonaws.com/blog/hero/200/image@2x.jpg
 tags:
   - design
   - general
-intro: "To be honest, before this fall I had never taken part of a Design Sprint. It"
+intro: >
+  To be honest, before this fall I had never taken part of a Design Sprint. It
+  always seemed like a toy for the big boys in startups to play with. Then Eaze
+  happened...
 ---
 
 To be honest, before this fall I had never taken part of a Design Sprint. It

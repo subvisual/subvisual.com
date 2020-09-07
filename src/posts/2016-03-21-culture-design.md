@@ -7,7 +7,10 @@ cover: https://subvisual.s3.amazonaws.com/blog/hero/143/image@2x.jpg
 tags:
   - design
   - general
-intro: "![file](https://subvisual.s3.amazonaws.com/blog/post_image/99/image-1458578163461.jpg)"
+intro: >
+  Subvisual started out in 2012 with a team of four. All of us fresh out of
+  college. We also had to account for our team's different cultural background.
+  This posed a challenging context which we failed to understand at first.
 ---
 
 ![file](https://subvisual.s3.amazonaws.com/blog/post_image/99/image-1458578163461.jpg)

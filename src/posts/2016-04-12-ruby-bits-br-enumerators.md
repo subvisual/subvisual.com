@@ -6,7 +6,10 @@ date: 2016-04-12
 cover: https://subvisual.s3.amazonaws.com/blog/hero/142/image@2x.jpg
 tags:
   - development
-intro: "Welcome back to the world of `Enumerable` my friend. As Rubyists we are used to"
+intro: >
+  Welcome back to the world of `Enumerable` my friend. This time we will be
+  looking at a somewhat hidden feature of most of its methods, they can be used
+  without a block and have a return value that is itself an enumerator.
 ---
 
 Welcome back to the world of `Enumerable` my friend. As Rubyists we are used to

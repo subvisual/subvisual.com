@@ -8,7 +8,11 @@ tags:
   - ruby-bits
   - development
   - ruby
-intro: "If you've ever used Ruby you have probably used `Bundler` through it's command"
+intro: >
+  If you've ever used Ruby you have probably used Bundler through it's command
+  line tool. There's quite a few things you can do with it. There is even a
+  very useful command which will open the code for a specified gem with an
+  editor you can also configure.
 ---
 
 If you've ever used Ruby you have probably used `Bundler` through it's command

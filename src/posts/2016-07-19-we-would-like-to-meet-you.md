@@ -5,7 +5,10 @@ author: luis-zamith
 date: 2016-07-19
 tags:
   - community
-intro: "At Subvisual we take community building very seriously as you can see by"
+intro: >
+  At Subvisual we take community building very seriously, and part of it is
+  getting to know its members.  We've prepared a small survey to get to know
+  you better.
 ---
 
 At Subvisual we take community building very seriously as you can see by

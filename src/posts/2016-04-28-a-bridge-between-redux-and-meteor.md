@@ -5,7 +5,9 @@ author: gabriel-poca
 date: 2016-04-28
 tags:
   - development
-intro: "The purpose of this article is to demonstrate how to use Redux on a Meteor application. You may find it is unnecessarily complex for your application, and that is ok, there are [other options][other-data-loading] for you."
+intro: >
+  The purpose of this article is to demonstrate how to use Redux on a Meteor
+  application.
 ---
 
 The purpose of this article is to demonstrate how to use Redux on a Meteor application. You may find it is unnecessarily complex for your application, and that is ok, there are [other options][other-data-loading] for you.

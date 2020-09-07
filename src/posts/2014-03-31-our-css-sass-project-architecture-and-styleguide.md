@@ -5,7 +5,10 @@ author: bruno-azevedo
 date: 2014-03-31
 tags:
   - development
-intro: "It's an almost impossible task to find a way to write consistent, future-proof and robust CSS. Our process has, until recently, consisted of appending CSS rules in an *ad hoc* manner to some sort of file organization."
+intro: >
+  It's an almost impossible task to find a way to write consistent,
+  future-proof and robust CSS. Our process has, until recently, consisted of
+  appending CSS rules in an ad hoc manner to some sort of file organization.
 ---
 
 It's an almost impossible task to find a way to write consistent, future-proof and robust CSS. Our process has, until recently, consisted of appending CSS rules in an *ad hoc* manner to some sort of file organization.  

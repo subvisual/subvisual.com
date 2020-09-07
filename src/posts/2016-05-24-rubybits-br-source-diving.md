@@ -6,7 +6,10 @@ date: 2016-05-24
 cover: https://subvisual.s3.amazonaws.com/blog/hero/151/image@2x.jpg
 tags:
   - development
-intro: "Debugging is something that (un)fortunately we as developers are all used to"
+intro: >
+  Debugging is something that (un)fortunately we as developers are all used to
+  doing, but depending on the language, the techniques and tools might differ,
+  if ever so slightly.
 ---
 
 Debugging is something that (un)fortunately we as developers are all used to

@@ -6,7 +6,10 @@ date: 2016-10-07
 cover: https://subvisual.s3.amazonaws.com/blog/hero/180/image@2x.jpg
 tags:
   - community
-intro: "Last week was awesome. On Friday, everyone got together for a company hackathon. There was paper, code, and food all over the place. We even had a delicious meal prepared by our guest [Ben](https://twitter.com/howebenhowe)."
+intro: >
+  Last week was awesome. On Friday, everyone got together for a company
+  hackathon. There was paper, code, and food all over the place. We even had a
+  delicious meal prepared by a guest.
 ---
 
 Last week was awesome. On Friday, everyone got together for a company hackathon. There was paper, code, and food all over the place. We even had a delicious meal prepared by our guest [Ben](https://twitter.com/howebenhowe). 

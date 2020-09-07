@@ -5,7 +5,13 @@ author: roberto-machado
 date: 2017-03-17
 tags:
   - community
-intro: "We had a blast in the last three years with [RubyConf Portugal](http://rubyconf.pt/). Seriously, it was one of the most pleasuring things to do and we can not thank enough everyone that helped us put this together. All of you that attended the conference, all the speakers, sponsors, and volunteers, thank you again for all the support. But friends, it’s time for a pause.  We will not be organizing RubyConf Portugal 2017."
+intro: >
+  We had a blast in the last three years with RubyConf Portugal. Seriously, it
+  was one of the most pleasuring things to do and we can not thank enough
+  everyone that helped us put this together. All of you that attended the
+  conference, all the speakers, sponsors, and volunteers, thank you again for
+  all the support. But friends, it's time for a pause. We will not be
+  organizing RubyConf Portugal 2017.
 ---
 
 We had a blast in the last three years with [RubyConf Portugal](http://rubyconf.pt/). Seriously, it was one of the most pleasuring things to do and we can not thank enough everyone that helped us put this together. All of you that attended the conference, all the speakers, sponsors, and volunteers, thank you again for all the support. But friends, it’s time for a pause.  We will not be organizing RubyConf Portugal 2017.

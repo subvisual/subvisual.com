@@ -5,7 +5,11 @@ author: luis-zamith
 date: 2014-03-20
 tags:
   - development
-intro: "Last friday we started a new project at Group Buddies, the Open Source Fridays. This means that for four hours every Friday, every one at GB will be contributing to OSS at some level. It can be by writing documentation, opening pull requests on other people's projects or creating our own."
+intro: >
+  Last friday we started a new project at Group Buddies, the Open Source
+  Fridays. This means that for four hours every Friday, every one at GB will be
+  contributing to OSS at some level. It can be by writing documentation,
+  opening pull requests on other people's projects or creating our own.
 ---
 
 Last friday we started a new project at Group Buddies, the Open Source Fridays. This means that for four hours every Friday, every one at GB will be contributing to OSS at some level. It can be by writing documentation, opening pull requests on other people's projects or creating our own.

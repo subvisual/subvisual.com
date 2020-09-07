@@ -6,7 +6,11 @@ date: 2016-04-26
 cover: https://subvisual.s3.amazonaws.com/blog/hero/146/image@2x.jpg
 tags:
   - development
-intro: "If you've been writing Object Oriented code for a while (or any code really),"
+intro:
+  If you've been writing Object Oriented code for a while, you're probably
+  familiar with expressions such as DRY, the Law of Demeter or Composition over
+  Inheritance. One thing they all have in common is that the can be followed by
+  using delegation.
 ---
 
 If you've been writing Object Oriented code for a while (or any code really),

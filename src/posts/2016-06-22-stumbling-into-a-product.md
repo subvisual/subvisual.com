@@ -6,7 +6,12 @@ date: 2016-06-22
 cover: https://subvisual.s3.amazonaws.com/blog/hero/156/image@2x.jpg
 tags:
   - community
-intro: "This is the story of [Shelf](https://getshelf.io/?utm_source=subvisual-blog&utm_medium=blog&utm_campaign=stumble-into-product),"
+intro: >
+  This is the story of Shelf, a product we just recently launched but has been
+  in the making for almost 3 years now. Why has it taken so long? What was the
+  process to get it into the wild? Those are the questions I aim to answer with
+  this article, and hopefully you can draw some inspiration to do something
+  similar in your company.
 ---
 
 This is the story of [Shelf](https://getshelf.io/?utm_source=subvisual-blog&utm_medium=blog&utm_campaign=stumble-into-product),

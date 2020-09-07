@@ -5,7 +5,10 @@ author: miguel-palhas
 date: 2016-10-03
 tags:
   - development
-intro: "[Code golf](https://en.wikipedia.org/wiki/Code_golf) is an interesting concept to me: to solve a programming challenge, using not the most efficient or readable code, or the most state-of-the-art solution, but with the smallest code size possible."
+intro: >
+  Code golf is an interesting concept to me: to solve a programming challenge,
+  using not the most efficient or readable code, or the most state-of-the-art
+  solution, but with the smallest code size possible.
 ---
 
 [Code golf](https://en.wikipedia.org/wiki/Code_golf) is an interesting concept to me: to solve a programming challenge, using not the most efficient or readable code, or the most state-of-the-art solution, but with the smallest code size possible.

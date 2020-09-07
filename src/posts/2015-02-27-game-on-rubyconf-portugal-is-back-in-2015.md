@@ -5,7 +5,9 @@ author: roberto-machado
 date: 2015-02-27
 tags:
   - development
-intro: "We're ready to announce that the 2nd edition of [RubyConf Portugal](http://rubyconf.pt/) is coming and it's going to be bigger, bolder and awesome-er!"
+intro: >
+  We're ready to announce that the 2nd edition of RubyConf Portugal is coming
+  and it's going to be bigger, bolder and awesome-er!
 ---
 
 We're ready to announce that the 2nd edition of [RubyConf Portugal](http://rubyconf.pt/) is coming and it's going to be bigger, bolder and awesome-er!

@@ -5,7 +5,11 @@ author: luis-zamith
 date: 2013-11-29
 tags:
   - development
-intro: "If you've been in the development business for a while, especially if working with OO languages, you've probably heard of design principles. It's kind of hard to keep track of them all, and sometimes it is even [impossible to follow them all](https://www.destroyallsoftware.com/screencasts/catalog/conflicting-principles). That's why, as with many things in the software area, you should use these principles as guidelines, not rules."
+intro: >
+  If you've been in the development business for a while, especially if working
+  with OO languages, you've probably heard of design principles. That's why, as
+  with many things in the software area, you should use these principles as
+  guidelines, not rules.
 ---
 
 If you've been in the development business for a while, especially if working with OO languages, you've probably heard of design principles. It's kind of hard to keep track of them all, and sometimes it is even [impossible to follow them all](https://www.destroyallsoftware.com/screencasts/catalog/conflicting-principles). That's why, as with many things in the software area, you should use these principles as guidelines, not rules.

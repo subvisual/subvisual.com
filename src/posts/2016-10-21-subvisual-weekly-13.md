@@ -6,7 +6,9 @@ date: 2016-10-21
 cover: https://subvisual.s3.amazonaws.com/blog/hero/183/image@2x.jpg
 tags:
   - general
-intro: "Have you ever found yourself working alone for what appears to be **too damn long** ?"
+intro: >
+  Have you ever found yourself working alone for what appears to be too damn
+  long?
 ---
 
 Have you ever found yourself working alone for what appears to be **too damn long** ?

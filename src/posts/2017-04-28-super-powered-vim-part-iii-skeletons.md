@@ -6,7 +6,6 @@ date: 2017-04-28
 tags:
   - development
   - vim
-intro: "This post is the third of a three-part series. If you're interested, you can start by checking out [part I](https://subvisual.co/blog/posts/133-super-powered-vim-part-i-projections) and [part II](https://subvisual.co/blog/posts/134-super-powered-vim-part-ii-snippets)."
 ---
 
 This post is the third of a three-part series. If you're interested, you can start by checking out [part I](https://subvisual.co/blog/posts/133-super-powered-vim-part-i-projections) and [part II](https://subvisual.co/blog/posts/134-super-powered-vim-part-ii-snippets).

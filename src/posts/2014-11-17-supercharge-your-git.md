@@ -5,7 +5,6 @@ author: luis-zamith
 date: 2014-11-17
 tags:
   - development
-intro: ""
 ---
 
 

@@ -5,7 +5,9 @@ author: luis-zamith
 date: 2013-11-22
 tags:
   - development
-intro: "Imagine you have a class which gets XML data, parses it and then stores the"
+intro: >
+  Imagine you have a class which gets XML data, parses it and then stores the
+  parsed data on a database.
 ---
 
 Imagine you have a class which gets XML data, parses it and then stores the

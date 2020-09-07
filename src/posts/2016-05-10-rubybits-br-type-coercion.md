@@ -6,7 +6,10 @@ date: 2016-05-10
 cover: https://subvisual.s3.amazonaws.com/blog/hero/147/image@2x.jpg
 tags:
   - development
-intro: "Have you ever had to implement arithmetic operations for an object? If so, there"
+intro: >
+  Have you ever had to implement arithmetic operations for an object? If so,
+  there is one little method you probably should be aware of, and it's called
+  coerce.
 ---
 
 Have you ever had to implement arithmetic operations for an object? If so, there

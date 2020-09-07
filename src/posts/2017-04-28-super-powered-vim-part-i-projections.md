@@ -6,7 +6,9 @@ date: 2017-04-28
 tags:
   - development
   - vim
-intro: "One of my main focus of the past few months has been my productivity with my text editor."
+intro: >
+  One of my main focus of the past few months has been my productivity with my
+  text editor.
 ---
 
 One of my main focus of the past few months has been my productivity with my text editor.
