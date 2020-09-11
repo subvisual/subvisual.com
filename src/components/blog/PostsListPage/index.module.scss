@@ -1,0 +1,52 @@
+@import "common/breakpoints";
+
+.root {
+  max-width: 1440px;
+  padding: 28px 20px 56px;
+  margin: 0 auto;
+
+  @include media(">=800px") {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: repeat(14, 1fr);
+  }
+
+  @include media(">=desktop") {
+    grid-column-gap: 28px;
+    padding: 28px 28px 56px;
+  }
+}
+
+.filters {
+  margin-bottom: 20px;
+
+  @include media(">=800px") {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 1;
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 0;
+  }
+
+  @include media(">=desktop") {
+    grid-column-gap: 28px;
+  }
+}
+
+.posts {
+  grid-column: 5 / span 10;
+  grid-row: 1 / span 1;
+  width: 100%;
+  max-width: 1184px;
+  margin: 0 auto;
+}
+
+.title {
+  max-width: 980px;
+  margin: 0 auto 80px;
+
+  @include media(">=desktop") {
+    margin: 0 auto 112px;
+  }
+}

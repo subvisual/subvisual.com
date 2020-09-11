@@ -6,8 +6,8 @@ const BLOG_POSTS_ABSOLUTE_PATH = path.resolve(ROOT, "src/posts")
 
 const createBlogAuthorsPages = async ({ createPage, graphql }) => {
   const component = path.resolve(
-    __dirname,
-    "../../src/templates/blog/author.js"
+    ROOT,
+    "src/templates/blog/AuthorPageTemplate.jsx"
   )
   const basePath = normalizePathForRegExp(BLOG_POSTS_ABSOLUTE_PATH)
   const query = `
@@ -65,9 +65,33 @@ const createBlogPostsPages = async ({ createPage, graphql }) => {
   })
 }
 
+const createBlogTagsPages = async ({ createPage, graphql }) => {
+  const component = path.resolve(ROOT, "src/templates/blog/TagPageTemplate.jsx")
+  const basePath = normalizePathForRegExp(BLOG_POSTS_ABSOLUTE_PATH)
+  const query = `
+    {
+      allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/^${basePath}/" } }
+      ) {
+        distinct(field: frontmatter___tags)
+      }
+    }
+  `
+  const { data } = await graphql(query)
+
+  data.allMarkdownRemark.distinct.forEach((tag) =>
+    createPage({
+      component,
+      context: { blogPostsPathRegex: `/^${basePath}/`, tag },
+      path: path.posix.join("/blog/tag", tag),
+    })
+  )
+}
+
 module.exports = async ({ actions, graphql }) => {
   const { createPage } = actions
 
   await createBlogAuthorsPages({ createPage, graphql })
   await createBlogPostsPages({ createPage, graphql })
+  await createBlogTagsPages({ createPage, graphql })
 }

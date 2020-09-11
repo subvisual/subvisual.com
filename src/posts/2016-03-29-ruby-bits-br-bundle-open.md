@@ -5,7 +5,6 @@ author: luis-zamith
 date: 2016-03-29
 cover: https://subvisual.s3.amazonaws.com/blog/hero/141/image@2x.jpg
 tags:
-  - ruby-bits
   - development
   - ruby
 intro: >

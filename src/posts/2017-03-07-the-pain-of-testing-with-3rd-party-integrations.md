@@ -5,7 +5,6 @@ author: miguel-palhas
 date: 2017-03-07
 tags:
   - development
-  - rspec
   - ruby
 intro: "Whenever a web app has integrations with external APIs (which, let's face, happens most of the time nowadays), there's usually an increased complexity about it when it comes to testing."
 ---

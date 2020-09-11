@@ -1,0 +1,79 @@
+@import "common/breakpoints";
+
+.title {
+  margin-bottom: 20px;
+
+  @include media(">=800px") {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    margin-bottom: 0;
+  }
+}
+
+.titleText {
+  display: inline-block;
+
+  white-space: nowrap;
+
+  @include media(">=800px") {
+    transform: translateX(100%) rotate(90deg);
+    transform-origin: top left;
+  }
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  list-style: none;
+
+  @include media(">=800px") {
+    grid-column: 2 / span 3;
+    grid-row: 1 / span 1;
+    display: block;
+  }
+}
+
+.filter {
+  flex: 0 0 auto;
+  display: inline-block;
+  margin-bottom: 20px;
+
+  opacity: 0.5;
+
+  font-size: 16px;
+  line-height: 16px;
+
+  @media (min-width: 800px) {
+    display: block;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 950px) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:not(:last-child) {
+    margin-right: 20px;
+
+    @media (min-width: 800px) {
+      margin-right: 0;
+    }
+  }
+
+  & + & {
+    @media (min-width: 800px) {
+      margin-top: 24px; /* 20px spacing + 4px we removed from the line-height */
+    }
+
+    @media (min-width: 950px) {
+      margin-top: 36px; /* 28px spacing + 8px we removed from the line-height */
+    }
+  }
+}
