@@ -36,7 +36,7 @@ of course, and we needed a break.
 We have evolved from working mainly as a Ruby on Rails consultancy firm to a
 venture studio during the past few years, where we help create new startups.
 With this transition, we found Elixir to be a valuable alternative that we
-should invest, and we’ve been working with it for more than four years. Many of
+should invest in, and we’ve been working with it for more than four years. Many of
 us have been speakers at conferences, written blog posts, talked in podcasts and
 screencasts, etc. **We still look to inspire those around us, and we can sense a
 real vibrancy in the booming Elixir community in Portugal.** It feels like 2014
@@ -66,13 +66,13 @@ together, to share and learn, experience, and network. From the attendees to the
 speakers, we want everybody to feel like Alchemy Conf is a little bit of their
 own. This is why we want to fully commit to transparency. **We will be making a
 transparency report containing the expenses and earnings of the conference. Any
-profit that may arise will be split equally amongst the speakers.**
+profit that may arise will be given back to the community.**
 
 ## The Road to Alchemy Conf
 
 Even though we’re almost seven months away from the start of the conference, we
 want everyone to feel like they are a part of it. We want the road to Alchemy
-Conf to be a journey. And **we want to bring closer the community during times of
+Conf to be a journey. And **we want to bring the community closer during times of
 hardship, even though we can’t all be physically together yet.**
 
 We will be setting up **three online workshops in the months leading up to the
@@ -80,7 +80,7 @@ conference, all of them around Elixir development, to be given by leading
 developers in the community. Each workshop will have a cost of 50€. Taking part
 in all three will earn you a free ticket to the conference.** We’re aiming to
 encourage and reward taking part in community events. That’s why the total cost
-of the lot, 150€, is the same as an early bird ticket - they won’t be making any
+of the lot, 150€, is the same as an early bird ticket - there won't be any
 difference in terms of total cost for the participants.
 
 The Road to Alchemy will be filled with surprises and will culminate with **a
