@@ -65,8 +65,9 @@ community. To create an opportunity for developers and enthusiasts to get
 together, to share and learn, experience, and network. From the attendees to the
 speakers, we want everybody to feel like Alchemy Conf is a little bit of their
 own. This is why we want to fully commit to transparency. **We will be making a
-transparency report containing the expenses and earnings of the conference. Any
-profit that may arise will be given back to the community.**
+transparency report containing the expenses and earnings of the conference.
+Should any profit come of this, it will be given back to the community: we will
+be splitting it amongst the speakers and charitable organizations.**
 
 ## The Road to Alchemy Conf
 
