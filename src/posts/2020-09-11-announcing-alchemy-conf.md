@@ -110,7 +110,7 @@ website][website]. There are a few surprises lined up, you don’t want to miss!
 
 We’ll be waiting to see you in Braga!
 
-[twitter]: https://twitter.com/Alchemy__Conf
+[twitter]: https://twitter.com/Alchemy_Conf
 [website]: https://alchemyconf.com
 [hello@alchemyconf.com]: mailto:hello@alchemyconf.com
 [sponsorships@alchemyconf.com]: mailto:sponsorships@alchemyconf.com
