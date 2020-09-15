@@ -198,7 +198,7 @@ is allowed read access. Consequently, this is abstracted into a different
 policy: `Dictator.Policies.BelongsTo`. There a few caveats and custom options
 but we will get there.
 
-In the meantime, we should focus on how the `Post` resource of the aforemention
+In the meantime, we should focus on how the `Post` resource of the aforementioned
 example is loaded. The `EctoSchema` policy implements a `load_resource/1`
 function that receives the HTTP request parameters as the one argument and
 attempts to do `Repo.get(params["id"])`. This simple line has two assumptions:
@@ -364,5 +364,5 @@ Ta-ta,
 [Mendes][twitter]
 
 [dictator]: https://github.com/subvisual/dictator
-[miguel]: https://github.com/naps62
+[miguel]: https://twitter.com/naps62
 [twitter]: https://twitter.com/frmcodes
