@@ -7,6 +7,7 @@ tags:
   - development
   - conferences
   - elixir
+seoImage: ./seo.png
 intro: >
   How important is the community for you? It's been four years since our last
   conference. And now we're back.
