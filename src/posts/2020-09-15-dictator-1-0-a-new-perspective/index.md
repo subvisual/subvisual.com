@@ -2,10 +2,11 @@
 path: /posts/dictator-1-0-a-new-perspective/
 title: "Dictator 1.0: A new perspective"
 author: fernando-mendes
-date: 2020-09-15
+date: 2020-09-16
 tags:
   - development
   - elixir
+seoImage: ./seo.png
 intro: >
   A few months ago, Miguel and I got together and reimplemented much of
   Dictator.
