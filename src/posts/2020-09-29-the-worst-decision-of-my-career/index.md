@@ -3,6 +3,7 @@ path: /posts/the-worst-decision-of-my-career/
 title: "The Worst Decision Of My Career"
 author: gabriel-poca
 date: 2020-09-29
+seoImage: ./seo.png
 tags:
   - development
 intro: "A complex system that works is invariably found to have evolved from a simple system that worked. A complex system designed from scratch never works and cannot be patched up to make it work. You have to start over with a working simple system"
