@@ -20,15 +20,12 @@ some quotes to make me look smart:
 > simple system -- _Gall's law_
 
 I only came across this quote recently, but I think that it summarizes what
-I've learned these past seven years.
-
-> Programming in isolation is problem-solving, but software engineering is all
-> about managing complexity.
-
-This is an idea that can be found in many books, and the distinction between
-programming and software engineering makes sense to me, probably because of my
-mental models. I'm sure we can all disagree on this, but that's not the topic
-of today. Complexity is.
+I've learned these past seven years. Another idea that I've found in a few books
+is that programming in isolation is problem-solving, but software engineering
+is all about managing complexity. This distinction between programming and
+software engineering makes sense to me, probably because of my mental models.
+I'm sure we can all disagree on this, but that's not the topic of today.
+Complexity is.
 
 ## Complexity
 
@@ -143,15 +140,15 @@ going for event-sourcing and event-driven architecture was that it wasn't the
 right moment, but my colleague didn't know that. He thought the goals for the
 next years were well defined, but unfortunately, they never are.
 
-Should you use microservices or event-sourcing? Sure, it depends on the context
-and the client. The decisions I make are the best that I can with the
+Should you use microservices or event-sourcing? Maybe, it depends on the
+context and the client. The decisions I make are the best that I can with the
 information that I have. For instance, when I'm part of the team that's
 starting a product, the technology we pick will depend on how we'll hire: if
-you want to build an office in Braga, we have to make sure we have developers
-for that technology available. We have to think things through, and some things
-you only learn from experience. This applies to the systems we design as well.
-I've seen enough people design around what they believe the product will become
-in two years to know that those designs always fail to accommodate the changes
-that will come. So we design systems for small, incremental changes. Do the
-smallest thing that will get us started and not compromise our ability to
-change once we know what the business needs.
+you want to build an office in Portugal, we have to make sure we have
+developers for that technology available. We have to think things through, and
+some things you only learn from experience. This applies to the systems we
+design as well. I've seen enough people design around what they believe the
+product will become in two years to know that those designs always fail to
+accommodate the changes that will come. So we design systems for small,
+incremental changes. Do the smallest thing that will get us started and
+doesn't compromise our ability to change once we know what the business needs.
