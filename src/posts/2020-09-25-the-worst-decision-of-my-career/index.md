@@ -2,7 +2,7 @@
 path: /posts/the-worst-decision-of-my-career/
 title: "The Worst Decision Of My Career"
 author: gabriel-poca
-date: 2020-09-29
+date: 2020-09-25
 seoImage: ./seo.png
 tags:
   - development
