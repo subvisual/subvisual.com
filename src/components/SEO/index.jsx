@@ -25,7 +25,10 @@ const SEO = ({ description, image, lang, keywords, title, url }) => {
       title: buildTitle(siteMetadata.title, title),
       url,
     },
-    siteMetadata
+    siteMetadata,
+    {
+      url: siteMetadata.siteUrl,
+    }
   )
 
   return <MetaTags {...metadata} />

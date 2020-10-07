@@ -21,7 +21,7 @@ export const query = graphql`
       fields {
         cover
         seoImage
-        url
+        slug
       }
       frontmatter {
         author {
@@ -61,8 +61,8 @@ const BlogPostTemplate = ({
   coverFile,
   date,
   html,
+  slug,
   title,
-  url,
   intro,
   seoDescription,
   seoImage,
@@ -79,7 +79,7 @@ const BlogPostTemplate = ({
         description={seoDescription || intro}
         image={image}
         title={title}
-        url={url}
+        url={slug}
       />
       <div className={styles.root}>
         <article className={styles.article}>
@@ -91,7 +91,7 @@ const BlogPostTemplate = ({
               <BodyWrapper className={styles.innerWrapper}>
                 <Body html={html} />
               </BodyWrapper>
-              <ShareLinks className={styles.shareLinks} url={url} />
+              <ShareLinks className={styles.shareLinks} url={slug} />
             </Wrapper>
           </section>
         </article>
