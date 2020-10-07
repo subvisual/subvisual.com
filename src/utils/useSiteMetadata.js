@@ -8,11 +8,11 @@ function useSiteMetadata() {
         siteMetadata {
           description
           image
+          siteUrl
           title
           twitter {
             creator
           }
-          url
         }
       }
     }

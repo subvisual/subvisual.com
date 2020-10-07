@@ -4,6 +4,7 @@ const sass = require("sass")
 
 const ROOT = path.resolve(__dirname, "../..")
 
+const rssFeedConfig = require("./plugins/rssFeed")(ROOT)
 const manifestConfig = require("./plugins/manifest")(ROOT)
 
 module.exports = [
@@ -83,6 +84,7 @@ module.exports = [
   "gatsby-transformer-sharp",
   "gatsby-plugin-sharp",
   ...manifestConfig,
+  ...rssFeedConfig,
   {
     resolve: "gatsby-plugin-react-svg",
     options: {

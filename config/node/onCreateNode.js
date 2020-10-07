@@ -40,7 +40,7 @@ const prepareBlogPostSEOImage = ({ node }) => {
   return seoImage
 }
 
-const prepareBlogPostUrl = ({ node }) => {
+const prepareBlogPostSlug = ({ node }) => {
   const { frontmatter } = node
 
   // If `path` is not defined in this post's markdown, exit early
@@ -59,9 +59,9 @@ module.exports = async ({ node, actions }) => {
   const { createNodeField } = actions
   const cover = prepareBlogPostCover({ node })
   const seoImage = prepareBlogPostSEOImage({ node })
-  const url = prepareBlogPostUrl({ node })
+  const slug = prepareBlogPostSlug({ node })
 
   createNodeField({ node, name: "cover", value: cover })
   createNodeField({ node, name: "seoImage", value: seoImage })
-  createNodeField({ node, name: "url", value: url })
+  createNodeField({ node, name: "slug", value: slug })
 }
