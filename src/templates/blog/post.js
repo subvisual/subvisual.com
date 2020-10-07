@@ -16,8 +16,8 @@ import "~/src/common/base.scss"
 import styles from "./post.module.scss"
 
 export const query = graphql`
-  query($cover: String, $postPath: String!, $seoImage: String) {
-    markdownRemark(frontmatter: { path: { eq: $postPath } }) {
+  query($cover: String, $seoImage: String, $slug: String!) {
+    markdownRemark(frontmatter: { path: { eq: $slug } }) {
       fields {
         cover
         seoImage
