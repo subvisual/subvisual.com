@@ -14,9 +14,6 @@ export default () => {
     }
   `)
 
-  console.log(index)
-  console.log(store)
-
   const [query, setQuery] = useState()
   const results = useFlexSearch(query, index, store)
 

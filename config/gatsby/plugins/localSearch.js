@@ -14,17 +14,15 @@ module.exports = [
                 intro
                 title
               }
-              rawMarkdownBody
             }
           }
         }
       `,
-      index: ["title", "intro", "body"],
+      index: ["title", "intro"],
       store: ["id"],
       normalizer: ({ data }) =>
         data.allMarkdownRemark.nodes.map((node) => ({
           id: node.id,
-          body: node.rawMarkdownBody,
           intro: node.frontmatter.intro,
           title: node.frontmatter.title,
         })),
