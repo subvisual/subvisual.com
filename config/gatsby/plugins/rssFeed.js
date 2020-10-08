@@ -16,6 +16,10 @@ module.exports = () => [
                     slug
                   },
                   frontmatter {
+                    author {
+                      email
+                      name
+                    }
                     date
                     intro
                     title
@@ -25,13 +29,24 @@ module.exports = () => [
             }
           `,
           serialize: ({ query: { allMarkdownRemark } }) =>
-            allMarkdownRemark.nodes.map(({ fields, frontmatter }) => ({
-              date: frontmatter.date,
-              description: frontmatter.intro,
-              guid: fields.slug,
-              title: frontmatter.title,
-              url: fields.slug,
-            })),
+            allMarkdownRemark.nodes.map(({ fields, frontmatter }) => {
+              const { slug } = fields
+              const { author, date, intro, title } = frontmatter
+              const authorEmail = author.email || "contact@subvisual.com"
+
+              return {
+                custom_elements: [
+                  {
+                    author: `${authorEmail} (${author.name})`,
+                  },
+                ],
+                date,
+                description: intro,
+                guid: slug,
+                title,
+                url: slug,
+              }
+            }),
         },
       ],
     },

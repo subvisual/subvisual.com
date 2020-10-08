@@ -1,5 +1,6 @@
 - key: fernando-mendes
   name: "Fernando Mendes"
+  email: mendes@subvisual.com
   photo:
     horizontal: "../images/team/fernando-mendes-h.jpg"
     vertical: "../images/team/fernando-mendes-v.jpg"
@@ -96,6 +97,7 @@
 
 - key: miguel-palhas
   name: "Miguel Palhas"
+  email: miguel@subvisual.com
   photo:
     horizontal: "../images/team/miguel-palhas-h.jpg"
     vertical: "../images/team/miguel-palhas-v.jpg"
