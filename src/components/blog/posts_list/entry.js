@@ -43,7 +43,7 @@ Entry.propTypes = {
     name: PropTypes.string.isRequired,
   }),
   date: PropTypes.instanceOf(Date).isRequired,
-  intro: PropTypes.string.isRequired,
+  intro: PropTypes.string,
   path: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
 }

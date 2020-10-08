@@ -20,7 +20,7 @@ BlogPostsList.propTypes = {
     PropTypes.shape({
       author: PropTypes.object,
       date: PropTypes.instanceOf(Date).isRequired,
-      intro: PropTypes.string.isRequired,
+      intro: PropTypes.string,
       path: PropTypes.string.isRequired,
       title: PropTypes.string.isRequired,
     })
