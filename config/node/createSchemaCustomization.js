@@ -5,11 +5,13 @@ module.exports = ({ actions }) => {
       interface Author {
         key: String!,
         name: String!,
+        email: String,
       }
 
       type BlogContributorYaml implements Author & Node @dontInfer {
         key: String!,
         bio: String,
+        email: String,
         name: String!,
         social: Social,
       }
@@ -46,6 +48,7 @@ module.exports = ({ actions }) => {
 
       type TeamMemberYaml implements Author & Node @dontInfer {
         key: String!,
+        email: String,
         name: String!,
         photo: Photo!,
         role: String!,
