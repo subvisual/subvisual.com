@@ -7,7 +7,7 @@ const localSearchConfig = require("./plugins/localSearch")
 const ROOT = path.resolve(__dirname, "../..")
 
 const rssFeedConfig = require("./plugins/rssFeed")(ROOT)
-const manifestConfig = require("./plugins/manifest")(ROOT)
+const pwaConfig = require("./plugins/pwa")(ROOT)
 
 module.exports = [
   {
@@ -86,7 +86,7 @@ module.exports = [
   "gatsby-transformer-sharp",
   "gatsby-plugin-sharp",
   ...localSearchConfig,
-  ...manifestConfig,
+  ...pwaConfig,
   ...rssFeedConfig,
   {
     resolve: "gatsby-plugin-react-svg",
