@@ -32,5 +32,12 @@ export default (query, index, store) => {
     })
   }, [worker, ready, query])
 
+  console.log("QUERY", query)
+  console.log("INDEX", index)
+  console.log("STORE", store)
+  console.log("READY", ready)
+  console.log("WAITING", waiting)
+  console.log("MATCHES", matches)
+
   return [matches, waiting]
 }
