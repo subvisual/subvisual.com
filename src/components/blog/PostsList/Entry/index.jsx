@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import dateFormat from "dateformat"
 
-import styles from "./entry.module.scss"
+import styles from "./Entry.module.scss"
 
 const renderAuthor = ({ className, key, name }) => {
   if (!key || !name) return null

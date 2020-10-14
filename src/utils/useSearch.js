@@ -1,24 +1,31 @@
-import { useState } from "react"
-import { graphql, useStaticQuery } from "gatsby"
-import { useFlexSearch } from "react-use-flexsearch"
+import { useEffect, useState } from "react"
 
-export default () => {
-  const {
-    localSearchPosts: { index, store },
-  } = useStaticQuery(graphql`
-    query {
-      localSearchPosts {
-        index
-        store
-      }
-    }
-  `)
+import createSearchWorker from "~/src/workers/search.worker.js"
 
-  console.log(index)
-  console.log(store)
+const searchWorker = createSearchWorker()
 
-  const [query, setQuery] = useState()
-  const results = useFlexSearch(query, index, store)
+export default (query, index, store) => {
+  const [matches, setMatches] = useState()
+  const [ready, setReady] = useState(false)
+  const [waiting, setWaiting] = useState(false)
 
-  return [results, query, setQuery]
+  useEffect(() => {
+    setWaiting(true)
+  }, [query])
+
+  useEffect(() => {
+    setReady(false)
+    searchWorker.initialize(index, store).then(() => setReady(true))
+  }, [index, store])
+
+  useEffect(() => {
+    if (!ready) return
+
+    searchWorker.search(query).then((newMatches) => {
+      setWaiting(false)
+      setMatches(newMatches)
+    })
+  }, [query, ready])
+
+  return [matches, waiting]
 }
