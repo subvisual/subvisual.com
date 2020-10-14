@@ -1,4 +1,4 @@
-module.exports = [
+module.exports = () => [
   {
     resolve: "gatsby-plugin-local-search",
     options: {

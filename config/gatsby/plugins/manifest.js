@@ -19,10 +19,4 @@ module.exports = (root) => [
       theme_color: "#045cfc",
     },
   },
-  {
-    resolve: "gatsby-plugin-offline",
-    options: {
-      appendScript: path.resolve(root, "src/sw.js"),
-    },
-  },
 ]
