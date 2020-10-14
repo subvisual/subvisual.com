@@ -2,30 +2,35 @@ import { useEffect, useState } from "react"
 
 import createSearchWorker from "~/src/workers/search.worker.js"
 
-const searchWorker = createSearchWorker()
-
 export default (query, index, store) => {
   const [matches, setMatches] = useState()
   const [ready, setReady] = useState(false)
   const [waiting, setWaiting] = useState(false)
+  const [worker, setWorker] = useState()
+
+  useEffect(() => {
+    setWorker(createSearchWorker())
+  }, [])
 
   useEffect(() => {
     setWaiting(true)
   }, [query])
 
   useEffect(() => {
+    if (!worker) return
+
     setReady(false)
-    searchWorker.initialize(index, store).then(() => setReady(true))
-  }, [index, store])
+    worker.initialize(index, store).then(() => setReady(true))
+  }, [worker, index, store])
 
   useEffect(() => {
-    if (!ready) return
+    if (!worker || !ready) return
 
-    searchWorker.search(query).then((newMatches) => {
+    worker.search(query).then((newMatches) => {
       setWaiting(false)
       setMatches(newMatches)
     })
-  }, [query, ready])
+  }, [worker, ready, query])
 
   return [matches, waiting]
 }
