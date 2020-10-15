@@ -22,9 +22,11 @@ Hence why, when we take these two assumptions hand in hand, it is easy to deduce
 - Since often in a Product Managers' world, prioritisation tends to be seen by.. everyone else, as a topic out of the scary, obscure underworld, where great ideas all are rejected. Be aware that this post uses the words choosing and prioritising interchangeably. So you can hate on the word **choice** and, just in case, murder **option** as well 😜!
 - If you have differing opinions at any point, that's good. Instead of venting to your wildest screams, please do reach out! Would love to have a chat about these topics.
 
-![The%20burden%20of%20choice%20c1f66058a77e4df39125444a0de6521d/Untitled.png](The%20burden%20of%20choice%20c1f66058a77e4df39125444a0de6521d/Untitled.png)
 
-Project Management Triangle by Mapto - Own work, Public Domain, [https://commons.wikimedia.org/w/index.php?curid=2690261](https://commons.wikimedia.org/w/index.php?curid=2690261)
+<span class="gatsby-resp-image-wrapper" style="position: relative; display: block; margin-left: auto; margin-right: auto; width: 50%; ">
+      <span class="gatsby-resp-image-background-image" style="padding-bottom: 83.7321%; position: relative; bottom: 0px; left: 0px; background-image: url(./project-triangle.svg); background-size: cover; display: block; transition: opacity 0.5s ease 0.5s; opacity: 0;"></span>
+      <img class="gatsby-resp-image-image" alt="project-triangle" title="project-triangle" src="./project-triangle.svg" sizes="(max-width: 810px) 100vw, 810px" style="width: 100%; height: 100%; margin: 0px; vertical-align: middle; position: absolute; top: 0px; left: 0px; opacity: 1; transition: opacity 0.5s ease 0s; color: inherit; box-shadow: white 0px 0px 0px 400px inset;" loading="lazy">
+</span>
 
 To further strengthen the point about having to make decisions on what to tackle, we can also look at the triangle of 😱Project Management😱. Put simply you can **choose** 2 out of good, fast, cheap. And because it is not always possible to trade between constraints, consider the following. If you want a product that solves everything for everyone and cheap you'll wait indefinitely because, by the time you are reaching the initial goal, it will be outdated anyway (remember the assumption of fixing a problem, for 10 to pop up?). If you can actually put money into it, well, often overstaffing will compromise quality. A terribly bad example of this last one, Google+, the kind of product that wouldn't have been possible to build in a startup with that reach anyway. 
 
@@ -32,15 +34,17 @@ Making product decisions is not a straight path either. In fact, choices made at
 
 ### Cost of Change
 
-As Nikita Savitskiy, a former Product Manager and Service Designer at Utrust, used to point out:
-
-> Don't forget the cost of change
+As Nikita Savitskiy, a former Product Manager and Service Designer at Utrust, used to point out: "Don't forget the cost of change".
 
 Nikita's warning was particularly directed at the importance of setting time to research and discovery instead of skimming over one or two market signals. There is no doubt that this is one of the fundamentals of good decision making, to be informed. Both from the perspective of deciding **what** to build, and **when** to do so. *The best moment to change something is before you make it, the second best is now.* Nop, I did not just adapt one of those fancy overused quotes, it's just your imagination. 🙄
 
-![The%20burden%20of%20choice%20c1f66058a77e4df39125444a0de6521d/Untitled%201.png](The%20burden%20of%20choice%20c1f66058a77e4df39125444a0de6521d/Untitled%201.png)
+<span class="gatsby-resp-image-wrapper" style="position: relative; display: block; margin-left: auto; margin-right: auto; width: 80%; ">
+      <span class="gatsby-resp-image-background-image" style="position: relative; bottom: 0px; left: 0px; background-image: url(./cost-of-change.png); background-size: cover; display: block; transition: opacity 0.5s ease 0.5s; opacity: 0;"></span>
+      <img class="gatsby-resp-image-image" alt="cost-of-change" title="Cost of Change" src="./cost-of-change.png" sizes="(max-width: 810px) 100vw, 810px" style="width: 100%; height: 100%; margin: 0px; vertical-align: middle; position: absolute; top: 0px; left: 0px; opacity: 1; transition: opacity 0.5s ease 0s; color: inherit; box-shadow: white 0px 0px 0px 400px inset;" loading="lazy">
+</span>
 
-Cost of Change from [phaseiidesign](https://www.phaseiidesign.com)
+*Image from [phaseiidesign](https://www.phaseiidesign.com)*
+
 
 Expanding on this concept, I see 3 main takeaways. 
 
@@ -52,9 +56,7 @@ The moment you implement a decision, your future options become more limited, an
 
 One of the takeaways from Cost of Change is that Roadmaps can't be set for a long timeframe. Instead, as Giles Colborne compared on [this post](https://www.shopify.co.uk/partners/blog/product-roadmap), roadmaps are like rock climbing. You have a plan of which holds to grab first, as you proceed you choose the next best ones available to you, and quite a few get left behind never touched, while you keep striving towards the Vision and Mission. Often when people think of a Roadmap they expect to see a plan filled with milestones but what tends to be forgotten in those decisions, the choice was to NOT tackle plenty of opportunities. 
 
- 
-
-[https://twitter.com/johncutlefish/status/1310628556779565056](https://twitter.com/johncutlefish/status/1310628556779565056)
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">pm tip<br><br>always make visible the opportunities you didn&#39;t select to pursue ... and the interventions you didn&#39;t select to pursue (and candidates to try next).<br><br>in many ways, this is more helpful context than describing what you actually selected. <a href="https://t.co/LxwDKNFlLq">pic.twitter.com/LxwDKNFlLq</a></p>&mdash; John Cutler (@johncutlefish) <a href="https://twitter.com/johncutlefish/status/1310628556779565056?ref_src=twsrc%5Etfw">September 28, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
 Indeed, as I have recently read, roadmaps metaphor should be more clear when we consider the following example. 
 
@@ -79,7 +81,11 @@ First of all, we defined our own Company Vision and Mission 😱. Pretty basic r
 
 On the former it goes something like this: bla bla bla a new problem shows up at the door, and we need to choose whether we tackle it or not. So we do **ICE**!
 
-![The%20burden%20of%20choice%20c1f66058a77e4df39125444a0de6521d/giphy.gif](The%20burden%20of%20choice%20c1f66058a77e4df39125444a0de6521d/giphy.gif)
+<span class="gatsby-resp-image-wrapper" style="position: relative; display: block; margin-left: auto; margin-right: auto; width: 70%; ">
+    <img class="gatsby-resp-image-image" alt="ICE ICE BABY" title="ICE Gif" src="./ice.gif" sizes="(max-width: 810px) 100vw, 810px" style="width: 100%;" loading="lazy">
+</span>
+
+
 
 As in:
 
@@ -97,7 +103,7 @@ Finally Engineers try to see what would be the effort in solving this.
 
 So then, PMs propose changes to the roadmap based on the highest scores (but not only, numbers serve to inform decisions, not to make them) and get approval from leadership. As we pick topics in the roadmap For new products, we prototype, followed by an MVP and then perhaps to tackle the products' roadmap. For smaller themes, we do mockups and validate them with users before moving to delivery. We then try to see what we delivered, whether it fit what we expected, and try to learn from that. 
 
-Although I oversimplified a lot, it sounds great right? Is it flawless? Not at all. I can pinpoint you at least 5 areas of improvement that we can make today, and that's what we are doing. I estimate it will be a neverending process. And I challenge any company to say they have absolutely no challenges! Just like a product, there are drawbacks in approaches, and teams are constantly changing as well. Do we invest more into research? How much and what do you sacrifice? How do you combine and drive decisions out of the hundreds of things that are currently happening in the market and around your company that could shape what you do? There isn't a perfect process. There are simply great ones that solve your current problems. Also, if you want to read more about ways to handle these types of processes. I can recommend a few books ([https://uxdesign.cc/a-product-managers-bookshelf-4a0c036c3df6](https://uxdesign.cc/a-product-managers-bookshelf-4a0c036c3df6)) 😃 
+Although I oversimplified a lot, it sounds great right? Is it flawless? Not at all. I can pinpoint you at least 5 areas of improvement that we can make today, and that's what we are doing. I estimate it will be a neverending process. And I challenge any company to say they have absolutely no challenges! Just like a product, there are drawbacks in approaches, and teams are constantly changing as well. Do we invest more into research? How much and what do you sacrifice? How do you combine and drive decisions out of the hundreds of things that are currently happening in the market and around your company that could shape what you do? There isn't a perfect process. There are simply great ones that solve your current problems. Also, if you want to read more about ways to handle these types of processes. I can recommend [a few books](https://uxdesign.cc/a-product-managers-bookshelf-4a0c036c3df6) 😃 
 
 ## Takeaways
 
