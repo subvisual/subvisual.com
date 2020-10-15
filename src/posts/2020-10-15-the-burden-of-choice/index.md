@@ -3,9 +3,10 @@ path: /posts/the-burden-of-choice/
 title: "The Burden of Choice"
 author: martinho-aragao
 date: 2020-10-15
+seoImage: ./seo.png
 tags:
-  - general
-intro: "A complex system that works is invariably found to have evolved from a simple system that worked. A complex system designed from scratch never works and cannot be patched up to make it work. You have to start over with a working simple system"
+  - product
+intro: "Whoever would be able to crack the prioritisation code that leads products towards success could potentially spearhead most economic developments. What is this burden of choice in product development?"
 ---
 
 Starting with one assumption: *When we build products for the world wide web, we won't ever be able to fit everyone's needs.*
@@ -107,7 +108,7 @@ Although I oversimplified a lot, it sounds great right? Is it flawless? Not at a
 
 ## Takeaways
 
-There are a few key lessons I'd like to sum-up  that can, however slightly, ease the burden of choice:
+There are a few key lessons I'd like to sum-up that can, however slightly, ease the burden of choice:
 
 - Be informed. Create the processes that enable you to collect and process information in a way that it will decrease the infinite number of choices to a few sensible ones that fit your current situation. Data beats gut feelings all day.
 - Risk it. When everything else fails, and even when it doesn't. Risk is part of a product journey. When you look back at the decisions you have taken, everything seems easier. You are not omniscient so failure is bound to happen. But if you are trying to solve a problem for some users, you are already on the right path.
