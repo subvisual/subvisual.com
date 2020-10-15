@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 
 function Loading({ waiting }) {
   if (!waiting) return null
@@ -7,6 +7,14 @@ function Loading({ waiting }) {
 }
 
 function Search({ onChange, waiting }) {
+  const [ready, setReady] = useState(false)
+
+  useEffect(() => {
+    setReady(true)
+  }, [])
+
+  if (!ready) return null
+
   return (
     <form>
       <input type="text" onChange={(evt) => onChange(evt.target.value)} />
