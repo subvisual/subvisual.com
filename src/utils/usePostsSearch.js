@@ -1,6 +1,5 @@
 import { graphql, useStaticQuery } from "gatsby"
-
-import useSearch from "~/src/utils/useSearch"
+import { useFlexSearch } from "react-use-flexsearch"
 
 export default (posts, query) => {
   const {
@@ -15,12 +14,10 @@ export default (posts, query) => {
   `)
 
   // Search the index for matches in the store
-  const [matches, waiting] = useSearch(query, index, store)
+  const matches = useFlexSearch(query, index, store)
+
+  if (!query) return posts
 
   // Map the matches to the provided posts
-  const matchingPosts = matches
-    ? matches.map(({ id }) => posts.find((post) => post.id === id))
-    : posts
-
-  return [matchingPosts, waiting]
+  return matches.map(({ id }) => posts.find((post) => post.id === id))
 }

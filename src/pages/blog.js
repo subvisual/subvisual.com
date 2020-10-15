@@ -43,7 +43,7 @@ export default () => {
 
     return { author, date: new Date(date), id, intro, path, title }
   })
-  const [posts, waiting] = usePostsSearch(allPosts, searchQuery)
+  const posts = usePostsSearch(allPosts, searchQuery)
 
   return (
     <>
@@ -58,7 +58,7 @@ export default () => {
       <Layout currentPath="/blog/">
         <div className={styles.root}>
           <div className={styles.content}>
-            <SearchBar waiting={waiting} onChange={setSearchQuery} />
+            <SearchBar onChange={setSearchQuery} />
             <PostsList posts={posts} />
           </div>
         </div>
