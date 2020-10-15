@@ -17,8 +17,8 @@ const socialPlatforms = {
     label: "Fb",
   },
   github: {
-    name: "Github",
-    label: "Git",
+    name: "GitHub",
+    label: "Gh",
   },
   instagram: {
     name: "Instagram",
