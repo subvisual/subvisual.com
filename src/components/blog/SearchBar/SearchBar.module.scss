@@ -1,0 +1,51 @@
+@import "common/breakpoints";
+
+.root {
+  display: flex;
+  align-items: center;
+  height: 40px;
+
+  border-top: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+
+  @include media(">=desktop") {
+    height: 56px;
+  }
+}
+
+.icon {
+  display: block;
+  height: 20px;
+  padding: 0 1em;
+
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+
+  @include media(">=desktop") {
+    height: 28px;
+  }
+
+  path {
+    fill: none;
+    stroke: none;
+  }
+}
+
+.input {
+  width: 100%;
+
+  border: none;
+}
+
+.input:before {
+  content: "";
+
+  display: block;
+  width: 1em;
+  height: 1em;
+
+  background-color: purple;
+}

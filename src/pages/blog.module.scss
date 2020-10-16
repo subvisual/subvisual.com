@@ -13,3 +13,11 @@
   max-width: 1184px;
   margin: 0 auto;
 }
+
+.searchBar {
+  margin-bottom: 20px;
+
+  @include media(">=desktop") {
+    margin-bottom: 28px;
+  }
+}

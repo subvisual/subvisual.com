@@ -58,7 +58,7 @@ export default () => {
       <Layout currentPath="/blog/">
         <div className={styles.root}>
           <div className={styles.content}>
-            <SearchBar onChange={setSearchQuery} />
+            <SearchBar className={styles.searchBar} onChange={setSearchQuery} />
             <PostsList posts={posts} />
           </div>
         </div>
