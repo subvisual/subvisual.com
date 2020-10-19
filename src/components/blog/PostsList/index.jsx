@@ -1,9 +1,9 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import Entry from "./posts_list/entry"
+import Entry from "./Entry"
 
-import styles from "./posts_list.module.scss"
+import styles from "./PostsList.module.scss"
 
 const renderItem = ({ author, date, intro, path, title }, index) => (
   <li key={index} className={styles.item}>
@@ -11,20 +11,20 @@ const renderItem = ({ author, date, intro, path, title }, index) => (
   </li>
 )
 
-const BlogPostsList = ({ posts }) => (
+const PostsList = ({ posts }) => (
   <ol className={styles.root}>{posts.map(renderItem)}</ol>
 )
 
-BlogPostsList.propTypes = {
+PostsList.propTypes = {
   posts: PropTypes.arrayOf(
     PropTypes.shape({
       author: PropTypes.object,
       date: PropTypes.instanceOf(Date).isRequired,
-      intro: PropTypes.string.isRequired,
+      intro: PropTypes.string,
       path: PropTypes.string.isRequired,
       title: PropTypes.string.isRequired,
     })
   ).isRequired,
 }
 
-export default BlogPostsList
+export default PostsList
