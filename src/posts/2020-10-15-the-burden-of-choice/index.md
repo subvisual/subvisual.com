@@ -7,8 +7,8 @@ seoImage: ./seo.jpeg
 tags:
   - product
 intro: >
-      Whoever would be able to crack the prioritisation code that leads products towards success could potentially spearhead most economic developments. 
-      What is this burden of choice in product development?
+  Whoever would be able to crack the prioritisation code that leads products towards success could potentially spearhead most economic developments.
+  What is this burden of choice in product development?
 ---
 
 Starting with one assumption: *When we build products for the world wide web, we won't ever be able to fit everyone's needs.*
