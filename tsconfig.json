@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "preserve",
+    "module": "commonjs",
+    "noEmit": true,
+    "paths": {
+      "~/*": ["./*"]
+    },
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "es5"
+  }
+}

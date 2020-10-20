@@ -1,8 +1,9 @@
 import React from "react"
-import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 
-const Twitter = ({ creator, description, image, title, url }) => (
+import { Component } from "./types"
+
+const Twitter : Component = ({ creator, description, image, title, url }) => (
   <Helmet>
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:creator" content={creator} />
@@ -12,13 +13,5 @@ const Twitter = ({ creator, description, image, title, url }) => (
     <meta property="twitter:url" content={url} />
   </Helmet>
 )
-
-Twitter.propTypes = {
-  creator: PropTypes.string,
-  description: PropTypes.string,
-  image: PropTypes.string,
-  title: PropTypes.string,
-  url: PropTypes.string,
-}
 
 export default Twitter

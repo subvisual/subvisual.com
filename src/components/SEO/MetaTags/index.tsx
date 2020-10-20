@@ -1,12 +1,12 @@
 import React from "react"
-import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 
 import Keywords from "./Keywords"
 import OpenGraph from "./OpenGraph"
 import Twitter from "./Twitter"
+import { Component } from "./types"
 
-const MetaTags = ({
+const MetaTags : Component = ({
   description,
   image,
   lang,
@@ -25,14 +25,5 @@ const MetaTags = ({
     <Twitter {...{ description, image, title, url, ...twitter }} />
   </>
 )
-
-MetaTags.propTypes = {
-  description: PropTypes.string,
-  image: PropTypes.string,
-  lang: PropTypes.string,
-  title: PropTypes.string,
-  twitter: PropTypes.object,
-  url: PropTypes.string,
-}
 
 export default MetaTags

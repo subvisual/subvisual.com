@@ -1,8 +1,9 @@
 import React from "react"
-import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 
-const Keywords = ({ keywords }) => {
+import { Component } from "./types"
+
+const Keywords : Component = ({ keywords }) => {
   if (!keywords || keywords.length === 0) return null
 
   const content = keywords.join(`, `)
@@ -12,10 +13,6 @@ const Keywords = ({ keywords }) => {
       <meta name="keywords" content={content} />
     </Helmet>
   )
-}
-
-Keywords.propTypes = {
-  keywords: PropTypes.arrayOf(PropTypes.string),
 }
 
 export default Keywords
