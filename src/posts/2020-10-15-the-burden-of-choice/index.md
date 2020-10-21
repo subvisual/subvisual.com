@@ -19,7 +19,7 @@ If nothing else, the language barrier of covering over a hundred languages would
 This is without even considering full localisation to countries and/or even regions. 
 
 But even when we decrease the scope of our target, there are still a hundred reasons for perfection to never be achieved. 
-At any moment, someone else could build a product that would be either be faster, easier to use or encompassing more functionality. 
+At any moment, someone else could build a product that would be either faster, easier to use or encompassing more functionality. 
 After all, you can build a product for anyone else in the world. 
 This means that competition is enormous and the pace that technology development happens is, at least to me, still mind-boggling. 
 
@@ -68,7 +68,7 @@ Expanding on this concept, I see 3 main takeaways.
 
 1. Cost of Change at the beginning of the product. → More severe in the early stages, e.g. If you chose to use Rails 2 years ago, and would like to change it now, it can be quite difficult albeit obviously not impossible. You simply need to really ensure the problem you are trying to solve will compensate for the huge cost of change you are likely to have. No, I'm not saying Rails is slow, but you thought about it, didn't you? :InsertTrollEmoji: Hey, can someone prioritise troll emoji? Please?
 2. Cost of Change as part of a product lifecycle → Usually the one used, just like the image above.
-3. Cost of Change are one of the reason why roadmaps can't be built from a backlog of functionalities you can choose at any given time.
+3. Cost of Change is one of the reasons why roadmaps can't be built from a backlog of functionalities you can choose at any given time.
 
 The moment you implement a decision, your future options become more limited, and your speed perhaps slower as well. 
 Any attempt to either go back or move forward will be constrained. 
