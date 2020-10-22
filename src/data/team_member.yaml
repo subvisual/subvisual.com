@@ -95,6 +95,15 @@
     github: "https://github.com/zamith"
     twitter: "https://twitter.com/zamith"
 
+- key: michael-fallon
+  name: Michael Fallon
+  photo:
+    horizontal: ../images/team/michael-fallon-h.jpg
+    vertical: ../images/team/michael-fallon-v.jpg
+  role: Managing Director
+  social:
+    linkedin: https://www.linkedin.com/in/rmfallon/
+
 - key: miguel-palhas
   name: "Miguel Palhas"
   email: miguel@subvisual.com
