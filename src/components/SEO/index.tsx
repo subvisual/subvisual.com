@@ -1,18 +1,18 @@
 import React from "react"
-import PropTypes from "prop-types"
 import _defaults from "lodash/defaults"
 
 import useSiteMetadata from "~/src/utils/useSiteMetadata"
 
 import MetaTags from "./MetaTags"
+import { Component } from "./types"
 
-const buildTitle = (siteTitle, pageTitle) => {
+const buildTitle = (siteTitle: string, pageTitle?: string): string => {
   if (!pageTitle) return siteTitle
 
   return [siteTitle, pageTitle].join(" | ")
 }
 
-const SEO = ({ description, image, lang, keywords, title, url }) => {
+const SEO : Component = ({ description, image, lang, keywords, title, url }) => {
   // Gather the sitewide default metadata as fallback
   const siteMetadata = useSiteMetadata()
 
@@ -32,15 +32,6 @@ const SEO = ({ description, image, lang, keywords, title, url }) => {
   )
 
   return <MetaTags {...metadata} />
-}
-
-SEO.propTypes = {
-  description: PropTypes.string,
-  image: PropTypes.string,
-  lang: PropTypes.string,
-  title: PropTypes.string,
-  twitter: PropTypes.object,
-  url: PropTypes.string,
 }
 
 export default SEO

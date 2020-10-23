@@ -1,8 +1,9 @@
 import React from "react"
-import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 
-const OpenGraph = ({ description, image, title, url }) => (
+import { Component } from "./types"
+
+const OpenGraph : Component = ({ description, image, title, url }) => (
   <Helmet>
     <meta property="og:description" content={description} />
     <meta property="og:image" content={image} />
@@ -11,12 +12,5 @@ const OpenGraph = ({ description, image, title, url }) => (
     <meta property="og:url" content={url} />
   </Helmet>
 )
-
-OpenGraph.propTypes = {
-  description: PropTypes.string,
-  image: PropTypes.string,
-  title: PropTypes.string,
-  url: PropTypes.string,
-}
 
 export default OpenGraph
