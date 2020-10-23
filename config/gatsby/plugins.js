@@ -53,6 +53,7 @@ module.exports = [
     options: {
       plugins: [
         "gatsby-remark-copy-linked-files",
+        "gatsby-remark-embedder",
         {
           resolve: "gatsby-remark-embed-video",
           options: {
@@ -102,6 +103,7 @@ module.exports = [
       respectDNT: true,
     },
   },
+  "gatsby-plugin-twitter",
   {
     resolve: "gatsby-plugin-netlify-cache",
     options: {

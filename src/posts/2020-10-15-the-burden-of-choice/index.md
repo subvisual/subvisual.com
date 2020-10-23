@@ -87,7 +87,7 @@ Instead, as Giles Colborne compared on [this post](https://www.shopify.co.uk/par
 You have a plan of which holds to grab first, as you proceed you choose the next best ones available to you, and quite a few get left behind never touched, while you keep striving towards the Vision and Mission. 
 Often when people think of a Roadmap they expect to see a plan filled with milestones but what tends to be forgotten in those decisions, the choice was to NOT tackle plenty of opportunities. 
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">pm tip<br><br>always make visible the opportunities you didn&#39;t select to pursue ... and the interventions you didn&#39;t select to pursue (and candidates to try next).<br><br>in many ways, this is more helpful context than describing what you actually selected. <a href="https://t.co/LxwDKNFlLq">pic.twitter.com/LxwDKNFlLq</a></p>&mdash; John Cutler (@johncutlefish) <a href="https://twitter.com/johncutlefish/status/1310628556779565056?ref_src=twsrc%5Etfw">September 28, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+https://twitter.com/johncutlefish/status/1310628556779565056
 
 Indeed, as I have recently read, roadmaps metaphor should be more clear when we consider the following example. 
 
