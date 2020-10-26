@@ -1,3 +1,12 @@
+- key: alex-mendes
+  name: Alexandre Mendes
+  photo:
+    horizontal: ../images/team/alex-mendes-h.jpg
+    vertical: ../images/team/alex-mendes-v.jpg
+  role: Head of Ventures
+  social:
+    linkedin: https://www.linkedin.com/in/carlosalexandremendes/
+
 - key: fernando-mendes
   name: "Fernando Mendes"
   email: mendes@subvisual.com
