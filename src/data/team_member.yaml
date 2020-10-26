@@ -118,6 +118,16 @@
     github: "https://github.com/naps62"
     twitter: "https://twitter.com/naps62"
 
+- key: nuno-reis
+  name: Nuno Reis
+  photo:
+    horizontal: "../images/team/nuno-reis-h.jpg"
+    vertical: "../images/team/nuno-reis-v.jpg"
+  role: Business Developer
+  social:
+    linkedin: https://www.linkedin.com/in/nunohvreis/
+    twitter: https://twitter.com/onunoreis
+
 - key: pedro-costa
   name: "Pedro Costa"
   photo:
