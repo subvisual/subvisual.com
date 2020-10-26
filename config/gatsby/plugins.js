@@ -1,26 +1,13 @@
 const path = require("path")
-const postCssUrl = require("postcss-url")
-const sass = require("sass")
 
 const ROOT = path.resolve(__dirname, "../..")
 
+const sassConfig = require("./plugins/sass")(ROOT)
 const rssFeedConfig = require("./plugins/rssFeed")(ROOT)
 const manifestConfig = require("./plugins/manifest")(ROOT)
 
 module.exports = [
-  {
-    resolve: "gatsby-plugin-sass",
-    options: {
-      implementation: sass,
-      includePaths: [
-        path.resolve(ROOT, "node_modules"),
-        path.resolve(ROOT, "src"),
-      ],
-      postCssPlugins: [
-        postCssUrl([{ filter: "**/fonts/inline/*", url: "inline" }]),
-      ],
-    },
-  },
+  ...sassConfig,
   "gatsby-plugin-react-helmet",
   "gatsby-transformer-yaml",
   {
