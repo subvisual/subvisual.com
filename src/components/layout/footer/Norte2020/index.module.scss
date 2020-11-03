@@ -1,0 +1,30 @@
+@import "common/breakpoints";
+
+.image {
+  margin-bottom: 20px;
+}
+
+.links {
+  list-style: none;
+
+  @include media(">=desktop") {
+    display: flex;
+  }
+}
+
+.link {
+  text-align: center;
+
+  @include media(">=400px") {
+    & + & {
+      margin-top: 20px;
+    }
+  }
+
+  @include media(">=desktop") {
+    & + & {
+      margin-top: 0;
+      margin-left: 28px;
+    }
+  }
+}
