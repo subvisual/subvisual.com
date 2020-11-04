@@ -10,7 +10,7 @@ export default () => (
     <Announcement
       title="We're hiring!"
       subtitle="Would you like to join our team? Head down to our blog and read on our front-end developer opening."
-      link="/blog/posts/146-subvisual-is-hiring-a-frontend-developer/"
+      link="https://jobs.subvisual.com"
       daysToLive={0}
       secondsBeforeBannerShows={10}
       imageSource={Symbol}
