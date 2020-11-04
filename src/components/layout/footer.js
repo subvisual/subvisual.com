@@ -1,16 +1,15 @@
 import React from "react"
-import { StaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
 
 import CallToAction from "~/src/components/call_to_action"
 import Location from "./footer/location"
 import Logo from "~/src/components/logo"
+import Norte2020 from "./footer/Norte2020"
 import SocialLinks from "./footer/social_links"
 import Text from "~/src/components/text"
 
 import styles from "./footer.module.css"
 
-const Footer = ({ data }) => (
+const Footer = () => (
   <footer className={styles.root}>
     <div className={styles.blue}>
       <div className={styles.content}>
@@ -58,37 +57,10 @@ const Footer = ({ data }) => (
     </div>
     <div className={styles.white}>
       <div className={styles.content}>
-        <a
-          href={data.norte2020Doc.publicURL}
-          target="_blank"
-          rel="noopener noreferrer"
-          download={data.norte2020Doc.base}
-        >
-          <Img fadeIn fluid={data.norte2020Logos.childImageSharp.fluid} />
-        </a>
+        <Norte2020 />
       </div>
     </div>
   </footer>
 )
 
-const query = graphql`
-  {
-    norte2020Logos: file(relativePath: { regex: "/norte-2020-logos.jpg/" }) {
-      childImageSharp {
-        fluid(maxWidth: 650, quality: 100) {
-          ...GatsbyImageSharpFluid_noBase64
-        }
-      }
-    }
-    norte2020Doc: file(
-      relativePath: { regex: "/ficha-projeto-site-subvisual.pdf/" }
-    ) {
-      base
-      publicURL
-    }
-  }
-`
-
-export default () => (
-  <StaticQuery query={query} render={(data) => <Footer data={data} />} />
-)
+export default Footer

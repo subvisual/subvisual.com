@@ -42,7 +42,7 @@
 }
 
 .white {
-  padding: 0;
+  padding: 20px 0;
 
   background-color: #ffffff;
 }
@@ -52,6 +52,14 @@
   max-width: 100%;
   margin-right: auto;
   margin-left: auto;
+}
+
+.norte2020Links {
+  list-style: none;
+}
+
+.norte2020Link {
+  text-align: center;
 }
 
 @media (min-width: 651px) {
