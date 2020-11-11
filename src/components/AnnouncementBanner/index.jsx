@@ -9,7 +9,7 @@ export default () => (
   <div className={styles.root}>
     <Announcement
       title="We're hiring!"
-      subtitle="Would you like to join our team? Head down to our blog and read on our front-end developer opening."
+      subtitle="Would you like to join our team? Head over to our jobs page and read on our current openings."
       link="https://jobs.subvisual.com"
       daysToLive={0}
       secondsBeforeBannerShows={10}
