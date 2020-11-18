@@ -13,12 +13,22 @@ const render = ({ logo, feder020919, fse000130 }) => (
     </div>
     <ol className={styles.links}>
       <li className={styles.link}>
-        <Link to={feder020919.publicURL} download={feder020919.base} blank>
+        <Link
+          to={feder020919.publicURL}
+          download={feder020919.base}
+          size="small"
+          blank
+        >
           NORTE-02-0752-FEDER-020919
         </Link>
       </li>
       <li className={styles.link}>
-        <Link to={fse000130.publicURL} download={fse000130.base} blank>
+        <Link
+          to={fse000130.publicURL}
+          download={fse000130.base}
+          size="small"
+          blank
+        >
           NORTE-06-3559-FSE-000130
         </Link>
       </li>

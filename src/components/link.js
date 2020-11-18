@@ -3,6 +3,8 @@ import PropTypes from "prop-types"
 import { Link as GatsbyLink } from "gatsby"
 import classNames from "classnames"
 
+import Text from "~/src/components/text"
+
 import styles from "./link.module.css"
 
 const Link = ({
@@ -15,7 +17,7 @@ const Link = ({
   title,
   to,
 }) => {
-  const className = classNames(styles.root, styles[size], {
+  const className = classNames(styles.root, {
     [styles.faded]: faded,
   })
 
@@ -31,16 +33,20 @@ const Link = ({
 
   if (internal) {
     return (
-      <GatsbyLink to={to} {...attrs} className={className}>
-        {children}
-      </GatsbyLink>
+      <Text size={size}>
+        <GatsbyLink to={to} {...attrs} className={className}>
+          {children}
+        </GatsbyLink>
+      </Text>
     )
   }
 
   return (
-    <a href={to} {...attrs} className={className}>
-      {children}
-    </a>
+    <Text size={size}>
+      <a href={to} {...attrs} className={className}>
+        {children}
+      </a>
+    </Text>
   )
 }
 

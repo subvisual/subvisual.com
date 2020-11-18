@@ -14,8 +14,6 @@
 }
 
 .link {
-  font-size: 12px;
-  line-height: 16px;
   text-align: center;
 
   @include media(">=400px") {
@@ -25,9 +23,6 @@
   }
 
   @include media(">=desktop") {
-    font-size: 16px;
-    line-height: 20px;
-
     & + & {
       margin-top: 0;
       margin-left: 28px;
