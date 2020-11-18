@@ -1,7 +1,9 @@
 .root {
-  display: flex;
-
   list-style: none;
+}
+
+.item {
+  display: inline;
 }
 
 .item:not(:last-child) {
