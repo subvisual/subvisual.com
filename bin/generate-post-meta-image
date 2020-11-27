@@ -4,7 +4,7 @@ tmp=$(mktemp -d)
 bg="#2421AB"
 res=2160x1080
 
-while [[ $# -gt 0 ]] && [[ "$1" == "--"* ]]; do
+while [[ $# -gt 0 ]] && [[ "$1" == "--"* || "$1" == "-"* ]]; do
   case "$1" in
     "--resolution" | "-r")
       res=$2
@@ -18,7 +18,7 @@ while [[ $# -gt 0 ]] && [[ "$1" == "--"* ]]; do
       shift
       ;;
 
-    "--bg" | "-b")
+    "--background" | "-b")
       bg=$2
       shift
       shift
