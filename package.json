@@ -5,10 +5,12 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@babel/core": "^7.12.9",
     "@popmotion/easing": "^1.0.2",
     "@researchgate/react-intersection-observer": "1.0.1",
     "@subvisual/utils": "0.1.0",
     "classnames": "^2.2.6",
+    "core-js": "^3.0.0",
     "dateformat": "^3.0.3",
     "framer-motion": "^1.6.15",
     "gatsby": "^2.1.18",
@@ -37,6 +39,7 @@
     "include-media": "^1.4.9",
     "intersection-observer": "0.11.0",
     "lodash": "^4.17.19",
+    "node-sass": "^4.9.0",
     "popmotion": "^8.6.10",
     "postcss-url": "^8.0.0",
     "prismjs": "^1.19.0",
@@ -51,9 +54,11 @@
     "react-share": "^4.1.0",
     "sass": "^1.26.3",
     "scroll-lock": "^2.1.2",
-    "ua-parser-js": "^0.7.21"
+    "ua-parser-js": "^0.7.21",
+    "webpack": "^4.44.2"
   },
   "devDependencies": {
+    "@types/react": "^16.8.0",
     "@types/react-helmet": "^6.1.0",
     "babel-eslint": "^10.1.0",
     "babel-plugin-root-import": "^6.5.0",
