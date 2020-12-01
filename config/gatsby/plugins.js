@@ -55,6 +55,12 @@ module.exports = [
             quality: 85,
           },
         },
+        {
+          resolve: `gatsby-remark-image-attributes`,
+          options: {
+            dataAttributes: true,
+          },
+        },
         "gatsby-remark-external-links",
         {
           resolve: "gatsby-remark-prismjs",
