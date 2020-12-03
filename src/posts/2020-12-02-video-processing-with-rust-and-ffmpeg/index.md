@@ -8,6 +8,8 @@ tags:
   - development
   - rust
 intro: >
+  I fell into a rabbit hole. It all started with quarantine, and too many
+  Zoom calls.
 ---
 
 [rust]: https://www.rust-lang.org
