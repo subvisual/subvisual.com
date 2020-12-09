@@ -68,7 +68,7 @@ const query = graphql`
           image {
             childImageSharp {
               fluid(maxHeight: 720, quality: 85) {
-                ...GatsbyImageSharpFluid_noBase64
+                ...GatsbyImageSharpFluid_withWebp_noBase64
               }
             }
           }

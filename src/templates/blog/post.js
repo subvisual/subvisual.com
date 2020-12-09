@@ -38,14 +38,14 @@ export const query = graphql`
     coverFile: file(absolutePath: { eq: $cover }) {
       childImageSharp {
         fluid(grayscale: true, maxWidth: 980) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     seoImageFile: file(absolutePath: { eq: $seoImage }) {
       childImageSharp {
         fixed(width: 2160, height: 1080) {
-          ...GatsbyImageSharpFixed_noBase64
+          ...GatsbyImageSharpFixed_withWebp_noBase64
         }
       }
     }
