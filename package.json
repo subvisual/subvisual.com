@@ -40,7 +40,6 @@
     "include-media": "^1.4.9",
     "intersection-observer": "0.11.0",
     "lodash": "^4.17.19",
-    "node-sass": "^4.9.0",
     "popmotion": "^8.6.10",
     "postcss-url": "^8.0.0",
     "prismjs": "^1.19.0",
