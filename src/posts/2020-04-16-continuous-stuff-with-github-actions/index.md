@@ -93,7 +93,7 @@ of forcing you the come up with fancy ways to commit things in a particular way.
 
 None of these CIs seem to do that, though. And that's why GitHub Actions are so different.
 
-# GitHub Action triggers
+## GitHub Action triggers
 
 GitHub's new toy allows us to build jobs that can be triggered [in a variety of ways][github-workflow-triggers]. You can
 have the traditional "on every push" jobs, but also more fancy stuff, such as "on every deployment created", or even "on
@@ -158,7 +158,7 @@ that branch and deploy a live preview of it, so it can be easily tested.
 The ease with which this was all done by just using different hooks made this very pleasant to work with.
 
 
-# Reusable actions
+## Reusable actions
 
 A second issue I often had with previous CIs was the difficulty, or complete lack of a way to create reusable parts of
 your pipeline, so you can compose other jobs with them.

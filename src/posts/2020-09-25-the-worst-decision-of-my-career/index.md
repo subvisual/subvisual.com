@@ -9,8 +9,6 @@ tags:
 intro: "A complex system that works is invariably found to have evolved from a simple system that worked. A complex system designed from scratch never works and cannot be patched up to make it work. You have to start over with a working simple system"
 ---
 
-# The Worst Decision Of My Career
-
 This is a reflection on software development and complexity. Let's start with
 some quotes to make me look smart:
 
