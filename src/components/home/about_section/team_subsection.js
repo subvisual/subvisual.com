@@ -17,14 +17,14 @@ const teamQuery = graphql`
             horizontal {
               childImageSharp {
                 fluid(maxWidth: 340, quality: 80) {
-                  ...GatsbyImageSharpFluid_noBase64
+                  ...GatsbyImageSharpFluid_withWebp_noBase64
                 }
               }
             }
             vertical {
               childImageSharp {
                 fluid(maxWidth: 275, quality: 80) {
-                  ...GatsbyImageSharpFluid_noBase64
+                  ...GatsbyImageSharpFluid_withWebp_noBase64
                 }
               }
             }

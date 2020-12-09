@@ -41,7 +41,7 @@ const query = graphql`
     logo: file(relativePath: { regex: "/norte-2020-logos.jpg/" }) {
       childImageSharp {
         fluid(maxWidth: 650, quality: 100) {
-          ...GatsbyImageSharpFluid_noBase64
+          ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }
     }
