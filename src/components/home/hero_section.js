@@ -175,14 +175,14 @@ const query = graphql`
     hero1_v: file(relativePath: { regex: "/hero-1-vertical.jpg/" }) {
       childImageSharp {
         fluid(maxHeight: 700, quality: 95) {
-          ...GatsbyImageSharpFluid_noBase64
+          ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }
     }
     hero1_h: file(relativePath: { regex: "/hero-1-horizontal.jpg/" }) {
       childImageSharp {
         fluid(maxHeight: 224, quality: 95) {
-          ...GatsbyImageSharpFluid_noBase64
+          ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }
     }
@@ -190,14 +190,14 @@ const query = graphql`
     hero2_v: file(relativePath: { regex: "/hero-2-vertical.jpg/" }) {
       childImageSharp {
         fluid(maxHeight: 700, quality: 95) {
-          ...GatsbyImageSharpFluid_noBase64
+          ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }
     }
     hero2_h: file(relativePath: { regex: "/hero-2-horizontal.jpg/" }) {
       childImageSharp {
         fluid(maxHeight: 224, quality: 95) {
-          ...GatsbyImageSharpFluid_noBase64
+          ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }
     }
@@ -205,14 +205,14 @@ const query = graphql`
     hero3_v: file(relativePath: { regex: "/hero-3-vertical.jpg/" }) {
       childImageSharp {
         fluid(maxHeight: 700, quality: 85) {
-          ...GatsbyImageSharpFluid_noBase64
+          ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }
     }
     hero3_h: file(relativePath: { regex: "/hero-3-horizontal.jpg/" }) {
       childImageSharp {
         fluid(maxHeight: 320, quality: 95) {
-          ...GatsbyImageSharpFluid_noBase64
+          ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }
     }
