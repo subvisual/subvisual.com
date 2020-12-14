@@ -7,49 +7,47 @@ import Text from "~/src/components/text"
 
 import styles from "./member.module.css"
 
-const Member = ({ name, role, social, photo }) => {
-  return (
-    <div className={styles.root}>
-      <Img
-        className={styles.aspectRatioHack}
-        fadeIn
-        fluid={[
-          {
-            ...photo.horizontal.childImageSharp.fluid,
-            media: "only screen and (max-width: 768px)",
-          },
-          {
-            ...photo.vertical.childImageSharp.fluid,
-            media: "only screen and (min-width: 768px)",
-          },
-        ]}
-      />
-      <div className={styles.info}>
-        <div className={styles.name}>
-          <Text bold>{name}</Text>
-        </div>
-        <div className={styles.role}>
-          <Text>{role}</Text>
-        </div>
+const Member = ({ name, role, social, photo }) => (
+  <div className={styles.root}>
+    <Img
+      className={styles.aspectRatioHack}
+      fadeIn
+      fluid={[
+        {
+          ...photo.horizontal.childImageSharp.fluid,
+          media: "only screen and (max-width: 768px)",
+        },
+        {
+          ...photo.vertical.childImageSharp.fluid,
+          media: "only screen and (min-width: 768px)",
+        },
+      ]}
+    />
+    <div className={styles.info}>
+      <div className={styles.name}>
+        <Text bold>{name}</Text>
       </div>
-      <ul aria-label="Social Links" className={styles.links}>
-        {Object.keys(social).map((platform) => {
-          if (!social[platform]) return null
-
-          return (
-            <li key={platform} className={styles.link}>
-              <SocialLink
-                name={name}
-                platform={platform}
-                url={social[platform]}
-              />
-            </li>
-          )
-        })}
-      </ul>
+      <div className={styles.role}>
+        <Text>{role}</Text>
+      </div>
     </div>
-  )
-}
+    <ul aria-label="Social Links" className={styles.links}>
+      {Object.keys(social).map((platform) => {
+        if (!social[platform]) return null
+
+        return (
+          <li key={platform} className={styles.link}>
+            <SocialLink
+              name={name}
+              platform={platform}
+              url={social[platform]}
+            />
+          </li>
+        )
+      })}
+    </ul>
+  </div>
+)
 
 Member.propTypes = {
   name: PropTypes.string.isRequired,
