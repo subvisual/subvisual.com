@@ -41,7 +41,7 @@
     "intersection-observer": "0.11.0",
     "lodash": "^4.17.20",
     "popmotion": "^8.7.0",
-    "postcss-url": "^10.1.1",
+    "postcss-url": "^8.0.0",
     "prismjs": "^1.22.0",
     "prop-types": "^15.7.2",
     "react": "^16.14.0",
