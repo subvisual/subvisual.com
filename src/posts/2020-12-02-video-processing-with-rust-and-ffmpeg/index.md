@@ -346,7 +346,7 @@ allows piping multiple filters in a pipeline, by simply configuring a JSON file:
   ]
 ```
 
-# Conclusion
+## Conclusion
 
 This is only the groundwork for more useful features. Being able to decouple
 filters allows us to mount them together like Legos. One filter can run

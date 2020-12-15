@@ -10,9 +10,6 @@ intro: >
   reflect it and our ambition for the future. We now have a story to tell.
 ---
 
-
-# Rebuilding subvisual.com
-
 In the end of 2018 we started working on the rebranding process for Subvisual.
 We had grown beyond the identity we coined in 2015, and we felt the brand
 needed to reflect both that growth and our ambition for the future.

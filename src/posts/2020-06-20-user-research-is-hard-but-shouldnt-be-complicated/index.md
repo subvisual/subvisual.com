@@ -11,8 +11,6 @@ intro: >
   complicated to organize, and very hard to get actionable insights out of it.
 ---
 
-# User research is hard, but shouldn’t be complicated
-
 When I ask someone why they don’t do User Research regularly, usually the arguments revolve around it being very time consuming, extremely complicated to organize, and very hard to get actionable insights out of it.
 
 Like everything that you do, the first few times are always a bit harder and require more energy to pull off, but doing it regularly will dramatically improve your understanding of what makes it work and you’ll soon be more focused on perfecting it than on making sure it happens. The same phenomenon happens if you do it a bunch of times during a project and then stop for quite some time, getting back on that horse will feel like a mountain climb. That’s a natural deception of your mind, to try to stop you from actually getting in an uncomfortable position where you’d need to reconsolidate some knowledge and oil up those rusty wheels, creating room for mistakes. Now, no one likes to make mistakes, but it’s an essential part of evolving and improving at something: you need to fail to see where you went wrong. Knowing where you went wrong will guide your future efforts to stop it from happening again.

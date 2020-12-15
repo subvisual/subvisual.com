@@ -10,8 +10,6 @@ intro: >
   Subvisual.
 ---
 
-# How we set and track goals
-
 This is the first of a series of blog posts about how we set and track goals at
 Subvisual.
 
