@@ -81,7 +81,7 @@ So my overall idea was:
 - Create a fake webcam on my system (something like `/dev/video1` instead
     of `/dev/video0`, which points to my real one);
 - Use FFmpeg to read the input from my webcam;
-- That output would go through an magic video processing box that I'll somehow build;
+- That output would go through a magic video processing box that I'll somehow build;
 - Use the resulting video as the feed from my fake webcam;
 - Learn something along the way.
 
