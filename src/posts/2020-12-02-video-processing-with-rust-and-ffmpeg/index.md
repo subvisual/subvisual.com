@@ -171,7 +171,7 @@ Ok, this was fun. Let's now port this over to actual code...
 Part of the challenge on the Rust side of things is the fact that libAV is
 a C API, and an outdated one at that. Much of the goodness we're used to
 with modern languages isn't available. Things such as error handling and
-debugging become are closer to a black art than I'd prefer.
+debugging become closer to a black art than I'd prefer.
 
 The existing FFI wrappers for ffmpeg (such as the [one I'm using][ffmpeg4-ffi])
 do a decent job at providing a more Rust-like interface, but due to weak typing
