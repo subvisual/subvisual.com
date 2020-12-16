@@ -230,7 +230,7 @@ loop {
 
 Now within `do_stuff` we can do whatever we want with the given image. We just
 need to ensure the output image is encoded in the correct format (the one
-expected by out encoder, `yuv420p` in my case) and resolution.
+expected by our encoder, `yuv420p` in my case) and resolution.
 
 This also can, and probably should, be parallelized in some way.
 Ideally, frames should be read at a constant rate, equal to the desired
