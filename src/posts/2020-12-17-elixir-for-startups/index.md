@@ -10,7 +10,7 @@ tags:
 intro: >
 ---
 
-We started out as a consultancy company, working mainly with Ruby on Rails.
+We started out as a consultancy company, working mainly with [Ruby on Rails](https://rubyonrails.org/).
 
 Ruby is an awesome tool for getting things off the ground quickly. A lot of
 now-huge startups, such as Twitter, GitHub and Shopify, [made their first
@@ -19,7 +19,7 @@ lot of reasons for that, both related to the practicality of the language, and
 the community itself.
 
 However, in recent years, along with a sizable part of that community, we've
-been moving more and more towards Elixir and Phoenix. It started out with a few
+been moving more and more towards [Elixir](https://elixir-lang.org/) and [Phoenix](https://www.phoenixframework.org/). It started out with a few
 pet projects and quickly grew to become the main backend language used at
 Subvisual.
 
@@ -49,7 +49,7 @@ the near future.
 
 ## What is Elixir?
 
-Elixir is a modern programming language, created by Jose Valim, a former Ruby
+Elixir is a modern programming language, created by [Jose Valim](https://twitter.com/josevalim), a former Ruby
 and Rails contributor. It tries to provide the best of two worlds: readability
 and a strong, welcoming community (famous Ruby traits), with highly-scalable
 distributed systems technology.
@@ -143,11 +143,11 @@ broadens the spectrum quite a bit.
 
 #### Operations
 
-Docker containers are currently the preferred approach by most communities to
-package and deploy software, and that's no exception in Elixir. That approach
-completely abstracts your software from the infrastructure it's running on,
-meaning it is now straightforward to deploy any individual stack, without
-having to worry about its runtime details.
+[Docker](https://www.docker.com/) containers are currently the preferred
+approach by most communities to package and deploy software, and that's no
+exception in Elixir. That approach completely abstracts your software from the
+infrastructure it's running on, meaning it is now straightforward to deploy any
+individual stack, without having to worry about its runtime details.
 
 What this means for your business is that your infrastructure work becomes much
 easier, and decoupled from whichever hosting solution you're using. Migrating
@@ -158,12 +158,12 @@ be greatly reduced if you're doing things in "the Elixir way".
 But there are additional features you can leverage in addition to, or instead
 of, containers.
 
-Erlang, the underlying system, was built for large-scale, real-time,
-telecommunications infrastructures. It was built to handle distribution and
-scalability with ease. Those advantages are available in Elixir as well, should
-you need them. In practical terms this means delaying or completely foregoing
-the decision of using systems for intercommunication reasons, such as Redis,
-Kubernetes or Kafka.
+[Erlang](https://www.erlang.org/), the underlying system, was built for
+large-scale, real-time, telecommunications infrastructures. It was built to
+handle distribution and scalability with ease. Those advantages are available in
+Elixir as well, should you need them. In practical terms this means delaying or
+completely foregoing the decision of using systems for intercommunication
+reasons, such as Redis, Kubernetes or Kafka.
 
 
 #### Distribution
