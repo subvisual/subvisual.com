@@ -245,7 +245,7 @@ Now on to editing the image.
 ## OpenCV
 
 This one gives me a few bad memories from back when I was a student, but its
-still one of the obvious candidates image processing libraries.
+still one of the obvious candidates when it comes to image processing libraries.
 
 Now that we have a frame isolated, there's still one step left before being able to process them with OpenCV.
 
