@@ -8,9 +8,13 @@ tags:
   - development
   - elixir
 intro: >
+  We believe that Elixir is more than capable of providing the same agility
+  as Ruby for new teams, while also laying the foundation for a highly scalable
+  system.
 ---
 
-We started out as a consultancy company, working mainly with [Ruby on Rails](https://rubyonrails.org/).
+We started out as a consultancy company, working mainly with [Ruby on
+Rails](https://rubyonrails.org/).
 
 Ruby is an awesome tool for getting things off the ground quickly. A lot of
 now-huge startups, such as Twitter, GitHub and Shopify, [made their first
@@ -19,15 +23,16 @@ lot of reasons for that, both related to the practicality of the language, and
 the community itself.
 
 However, in recent years, along with a sizable part of that community, we've
-been moving more and more towards [Elixir](https://elixir-lang.org/) and [Phoenix](https://www.phoenixframework.org/). It started out with a few
-pet projects and quickly grew to become the main backend language used at
-Subvisual.
+been moving more and more towards [Elixir](https://elixir-lang.org/) and
+[Phoenix](https://www.phoenixframework.org/). It started out with a few pet
+projects and quickly grew to become the main backend language used at Subvisual.
 
 We now believe that Elixir is more than capable of providing the same agility
 as Ruby for new teams, while also laying the foundation for a highly scalable
 system. This post is a summary of the beliefs we acquired over this time and
 why we believe Elixir is a great tool for Startups.
 
+![Banner](./banner.png)
 
 ## What is a Startup?
 
@@ -49,10 +54,11 @@ the near future.
 
 ## What is Elixir?
 
-Elixir is a modern programming language, created by [Jose Valim](https://twitter.com/josevalim), a former Ruby
-and Rails contributor. It tries to provide the best of two worlds: readability
-and a strong, welcoming community (famous Ruby traits), with highly-scalable
-distributed systems technology.
+Elixir is a modern programming language, created by [Jose
+Valim](https://twitter.com/josevalim), a former Ruby and Rails contributor. It
+tries to provide the best of two worlds: readability and a strong, welcoming
+community (famous Ruby traits), with highly-scalable distributed systems
+technology.
 
 Ruby itself has many benefits that are attractive to startups. The community is
 considered one of the best out there, meaning that help is there for whoever
