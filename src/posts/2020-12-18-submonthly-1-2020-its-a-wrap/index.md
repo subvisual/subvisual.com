@@ -1,7 +1,7 @@
 ---
 path: /posts/submonthy-1-2020-its-a-wrap
 title: "SubMonthly #1 - 2020: it's a wrap!"
-author: subvisual-team
+author: subvisual
 date: 2020-12-18
 seoImage: ./seo.png
 tags:
@@ -51,12 +51,13 @@ year:**
   ventures on their [annual report][portugal-fintech-annual-report], making us
   even prouder of the road we've been tracing;
 
-* Subvisual Universe' members are also growing: [Utrust] acquired [Hold] and
-  keeps adding new merchants to their list, [Sioslife] launches [Seninc] - an
-  innovative tablet specially designed for our elder friends and family, and
-  [Coverflex] prepares to onboard their first customers on a revolutionary
-  solution for compensation, managing benefits, discounts, and insurance that
-  makes it easy for companies and people to make the most of what they get;
+* Subvisual Universe' members are also growing: [Utrust] launched [Hold] and
+  keeps adding new merchants to their list, [Sioslife] brings out [Seninc]
+  &mdash; an innovative tablet specially designed for our elder friends and
+  family &mdash;, and [Coverflex] prepares to onboard their first customers on a
+  revolutionary solution for compensation, managing benefits, discounts, and
+  insurance that makes it easy for companies and people to make the most of
+  what they get;
 
 * Subvisual Live Talks invited 14 guests. We had the pleasure of leading
   conversations with such amazing people as [Netlify]'s Principal Developer
