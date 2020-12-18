@@ -104,7 +104,7 @@ digital products and companies.
 
 Thank you for being part of this journey. Please, enjoy life and have fun
 during this season and throughout 2021. Stay safe and [stay
-tuned!](http://Subscribe our newsletter)
+tuned!][subscribe]
  
 Forever learning,<br>**The Subvisual Team.**
 
@@ -136,3 +136,4 @@ Forever learning,<br>**The Subvisual Team.**
 [our-story]: https://subvisual.com/blog/posts/8-this-is-our-story/
 [contact]: mailto:contact@subvisual.com
 [jobs]: https://jobs.subvisual.com/
+[subscribe]: https://subvisual.us5.list-manage.com/subscribe?u=79f7816bac08905f81c1a8689&id=f8b8f31221
