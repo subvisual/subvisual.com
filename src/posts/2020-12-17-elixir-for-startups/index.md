@@ -1,7 +1,7 @@
 ---
 path: /posts/elixir-for-startups/
 title: Elixir for Startups
-author: miguel-palhas
+author: subvisual
 date: 2020-12-17
 seoImage: ./seo.png
 tags:
