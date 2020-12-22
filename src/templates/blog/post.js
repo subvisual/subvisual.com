@@ -61,12 +61,12 @@ const BlogPostTemplate = ({
   coverFile,
   date,
   html,
-  slug,
   title,
   intro,
   seoDescription,
   seoImage,
   seoImageFile,
+  slug,
 }) => {
   const image = usePathToURL(
     resolveImage({ file: seoImageFile, src: seoImage }) ||
@@ -115,7 +115,7 @@ BlogPostTemplate.propTypes = {
 export default ({ data }) => {
   const { markdownRemark, coverFile, seoImageFile } = data
   const { fields, frontmatter, html } = markdownRemark
-  const { seoImage, cover, url } = fields
+  const { seoImage, cover, slug } = fields
   const { author, date, title, intro, seoDescription } = frontmatter
 
   return (
@@ -131,7 +131,7 @@ export default ({ data }) => {
         seoImage,
         seoImageFile,
         title,
-        url,
+        slug,
       }}
     />
   )
