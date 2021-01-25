@@ -76,6 +76,15 @@
     dribbble: "https://dribbble.com/jferreiradzn"
     twitter: "https://twitter.com/jferreiradzn"
 
+- key: jose-pedro-cabrita
+  name: José Pedro Cabrita
+  photo:
+    horizontal: ../images/team/jose-pedro-cabrita-h.jpg
+    vertical: ../images/team/jose-pedro-cabrita-v.jpg
+  role: Talent Manager
+  social:
+    linkedin: "https://www.linkedin.com/in/Josepedrocabrita"
+
 - key: laura-esteves
   name: "Laura Esteves"
   photo:
@@ -136,6 +145,16 @@
   social:
     linkedin: https://www.linkedin.com/in/nunohvreis/
     twitter: https://twitter.com/onunoreis
+
+- key: pedro-barbosa
+  name: Pedro Barbosa
+  photo:
+    horizontal: ../images/team/pedro-barbosa-h.jpg
+    vertical: ../images/team/pedro-barbosa-v.jpg
+  role: Developer
+  social:
+    github: https://github.com/apedrob
+    linkedin: https://www.linkedin.com/in/apedromb/
 
 - key: pedro-costa
   name: "Pedro Costa"
