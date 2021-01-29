@@ -16,15 +16,8 @@
   social:
     linkedin: helenammuniz
 
-- key: joao-justo
-  name: João Justo
-  bio: >-
-    Always gets way too excited about a new idea. Downhill amateur and Android
-    fanboy. Avoid talking to him about Game of Thrones unless you have serious
-    time to spend.
-  social:
-    github: joaojusto
-    twitter: jpjustonunes
+- key: jose-gomes
+  name: José Gomes
 
 - key: martinho-aragao
   name: Martinho Aragão
