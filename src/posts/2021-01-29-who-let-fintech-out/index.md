@@ -53,8 +53,8 @@ be getting somewhere. If I had to synthesize what I mean by fintech I would
 look at the two key components underlying it, money and technology. If it
 touches money and is powered by technology then I would argue we could do worse
 than calling it fintech. From Shopify empowering new businesses with their
-e-commerce stack exploring new avenues for revenue to [Shaq's SPAC]
-being traded on NYSE by high-frequency trading firms using machine-learning
+e-commerce stack, exploring new avenues for revenue, to [Shaq's SPAC] being
+traded on NYSE, by high-frequency trading firms using machine-learning
 algorithms, we might be all talking about the same thing, one way or the other.
 
 ![](./shaq.jpg)
@@ -145,9 +145,9 @@ innumerable wild rides along the way.
 
 Finally, I would like to mention another fringe topic that I believe will have
 a huge impact on society and further blend the edges between marketing and
-entertainment is the live streaming shopping experience that is being created
-in Asia. Dubbed "Shopatainment" recently, in [an a16z article][shopatainment],
-it brings a whole new revenue source for brands and individuals powered by the
+entertainment, the live streaming shopping experience that is being created in
+Asia. Dubbed "Shopatainment" recently, in [an a16z article][shopatainment], it
+brings a whole new revenue source for brands and individuals powered by the
 ability to seamlessly blend live streaming with unique sales opportunities and
 real-time payments. Our old infomercials model from the 90s only on steroids
 and adapted to the native environment of a new generation, with a global
@@ -164,7 +164,7 @@ more into the public conscience and day-to-day.
 
 [Money Stuff]: https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/matthew-s-levine
 [Axios Capital]: https://www.axios.com/newsletters/axios-capital-736ff9fd-7cc1-4e2a-b975-6d8ad873c3a8.html
-[Net Interest]: https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/matthew-s-levine
+[Net Interest]: https://netinterest.substack.com/
 [Invest Like the Best]: https://www.joincolossus.com/
 [Fintech newsletter]: https://a16z.com/tag/fintech-newsletter/
 [Wikipedia]: https://en.wikipedia.org/wiki/Financial_technology

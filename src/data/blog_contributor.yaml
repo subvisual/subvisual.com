@@ -18,6 +18,13 @@
 
 - key: jose-gomes
   name: José Gomes
+  bio: >-
+    He's still figuring out how the hell did he get here, hoping to never get
+    to the answer. He enjoys the usual suspects for hobbies but with a focus on
+    reading and more recently running.
+  social:
+    linkedin: https://www.linkedin.com/in/jfsgomes/
+    twitter: https://twitter.com/gomesjfs
 
 - key: martinho-aragao
   name: Martinho Aragão
