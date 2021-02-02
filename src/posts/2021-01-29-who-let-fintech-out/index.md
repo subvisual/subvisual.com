@@ -3,6 +3,10 @@ path: /posts/who-let-fintech-out
 title: Who let fintech out?
 author: jose-gomes
 date: 2021-01-29
+intro: >-
+  The fintech world has been burning red hot for a couple of years and the
+  flames don't seem to be waning anytime soon. I'll try to analyze some of the
+  ongoing trends that we've been noticing.
 ---
 
 `youtube: Qkuu0Lwb5EM`
