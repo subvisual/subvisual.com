@@ -24,8 +24,8 @@ feel less isolated. So, [catch up with us, anytime, anywhere][contact]. We'll
 be happy to book a call and have a friendly chat.
 
 With the new 20s just starting, it's time to look at the future trends. More
-and more we see companies turning into Fintech. Surprised that Apple or
-Facebook have currencies? We're not. Licensing, Core and Payment Systems, Data,
+and more we see companies turning into Fintech. Surprised that Facebook is
+launching a currency? We're not. Licensing, Core and Payment Systems, Data,
 Regulations, Fraud Detection and User Interfaces: the Financial industry has so
 many layers that there's no wonder that eventually [every company will become a
 Fintech company].
@@ -110,7 +110,7 @@ organization? What measures are you taking to face this new reality?
 If you like our newsletter feel free to share with your friends and colleagues. 🙂 
 Stay safe and [stay tuned]!
 
-Forever learning,
+Forever learning,<br>
 The Subvisual team.
 
 
