@@ -126,7 +126,7 @@ The Subvisual team.
 [Shopatainment]: https://a16z.com/2020/12/14/shopatainment/
 [Finiam]: https://finiam.com/
 [José Gomes]: https://www.linkedin.com/in/jfsgomes/
-[who-let-fintech-out]: https://deploy-preview-428--subvisual.netlify.app/blog/posts/who-let-fintech-out
+[who-let-fintech-out]: https://subvisual.com/blog/posts/who-let-fintech-out
 [josepedrocabrita]: https://www.linkedin.com/in/josepedrocabrita/
 [mail:zepedro]: mailto:zepedro@subvisual.co
 [experience a degree of change during the last year equivalent to several years]: https://www.mckinsey.com/business-functions/strategy-and-corporate-finance/our-insights/how-covid-19-has-pushed-companies-over-the-technology-tipping-point-and-transformed-business-forever#
