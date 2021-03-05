@@ -89,12 +89,19 @@ module.exports = [
     },
   },
   {
-    resolve: "gatsby-plugin-google-analytics",
+    resolve: "gatsby-plugin-google-gtag",
     options: {
-      trackingId: "UA-63400449-1",
-      head: false,
-      anonymize: true,
-      respectDNT: true,
+      trackingIds: ["UA-63400449-1"],
+      gtagConfig: {
+        anonymize_ip: true,
+        // Set GTag cookies as session cookies, will go away when the current
+        // browser session ends.
+        cookie_expires: 0,
+      },
+      pluginConfig: {
+        head: false,
+        respectDNT: true,
+      },
     },
   },
   "gatsby-plugin-twitter",
