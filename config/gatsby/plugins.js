@@ -94,6 +94,7 @@ module.exports = [
       trackingIds: ["UA-63400449-1"],
       gtagConfig: {
         anonymize_ip: true,
+        client_storage: "none",
         // Set GTag cookies as session cookies, will go away when the current
         // browser session ends.
         cookie_expires: 0,
