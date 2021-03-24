@@ -25,7 +25,7 @@ COVID-19 in Portugal forced us to go radio silence while we figured out what to
 do.
 
 The bad news: **there will be no Alchemy Conf in Portugal this year.** Your
-safety is of upmost importance for us. We aren't able to host it in conscience
+safety is of utmost importance for us. We aren't able to host it in conscience
 of putting you or your loved ones at risk. We will be back in 2022 for the most
 exquisite Elixir conference in Portugal.
 
