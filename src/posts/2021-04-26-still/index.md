@@ -16,9 +16,9 @@ You know the saying: _You don't get to 500 million users without making a few st
 I enjoy building a website every once in a while, and I've been doing it since we designed websites in Photoshop, sliced them, and imported the slices to Dreamweaver.
 Things have come a long way, and now it’s easier than ever to make websites with drag-and-drop tools, a simple editor, or custom-made scripts.
 
-There are many “modern” and “professional” tools to get you up to speed in no time. I think that it's awesome that we can scaffold a project in a couple of seconds, write a React component, and there we have it, a static website super optimized for the modern “professional” world. But do we need all of that? Would it be possible to achieve the same thing without having to buy into a massive ecosystem of packages that keeping breaking and making upgrades almost impossible? Should we be buying into those technologies just because that's what everyone does?
+There are many “modern” and “professional” tools to get you up to speed in no time. I think that it's awesome that we can scaffold a project in a couple of seconds, write a React component, and there we have it, a static website super optimized for the modern “professional” world. But do we need all of that? Would it be possible to achieve the same thing without having to buy into a massive ecosystem of packages that keep breaking and making upgrades almost impossible? Should we be buying into those technologies just because that's what everyone does?
 
-I’ve had enough. Websites don’t have to be this complicated, and the browser already does a lot for us. We need simpler tools that don’t compromise on the developer experience and pack enough features to build a “modern” website while making it easier to extend with other ecosystems. Other tools fit the description, but Elixir would do a much better job than everything else, as you’ll see in a bit.
+I’ve had enough. Websites don’t have to be this complicated, and the browser already does a lot. We need simpler tools that don’t compromise on the developer experience and pack enough features to build a “modern” website while making it easier to extend with other ecosystems. Other tools fit the description, but Elixir would do a much better job than everything else, as you’ll see in a bit.
 
 ## Modern development environment
 
@@ -26,11 +26,9 @@ Tools like [Gatsby][gatsby] and [Next.js][next] changed the game for static webs
 
 Gatsby was great, but it soon became clear that our goals were not aligned. They still aren't. Gatsby is huge. Upgrades were hard; documentation was sparse; and newer features increased its complexity but didn't do us any favor. The abstractions were great until they stopped working, then you’re on your own, digging through all the layers.
 
-So Gatsby is not my thing, but is there something else out there that satisfies my needs? Some come close, like [11ty][eleventy]. You'll find that we’ve drawn a lot of inspiration from it.
-
 If we were to build a “modern” and “professional” static site builder, what would we need? What would you expect? I know many people would say React, but do we really need a library that’s almost a new language, alongside its own runtime to write HTML? Let's simplify, stay focused, and on track. _What do we actually need?_
 
-- A development server that automatically compiles the website and refreshes the browser when necessary.
+- A development server that automatically compiles the website and refreshes the browser on change..
 - An error overlay on the browser to show what’s failing and where.
 - Support for all kinds of assets.
 - A way to generate responsive images from a source image.
@@ -77,7 +75,7 @@ defmodule YourSite.SassPreprocessor do
 end
 ```
 
-And you’re done. You can write SASS now. Do you also want to make some API requests during build time? Maybe fetch the number of starts from Github’s API?
+And you’re done. You can write SASS now. Do you also want to make some API requests during build time? Maybe fetch the number of stars from Github’s API?
 
 ```elixir
   defmodule YourSite.Github do
@@ -107,13 +105,13 @@ Done, now just call this function from literally anywhere on your website:
 
 Everything you need to get started is in there! If I caught your attention, you can find more information on the [website][stillstatic], the [docs][docs] and on [Github][still_github]. If you have questions, open an issue, or send me a message on [Twitter][twitter].
 
-_You should probably get a ticket for Alchemy Conf. All proceeds are for charity, and you get to see some of the best speakers around._
-
 ## So much left to do
 
 **Still** is just starting, but you can already do a lot with it. We are focused on making it extendable while ensuring that it includes everything necessary to build great websites out of the box. If you want to be an open-source contributor, [Still is also a great way to start][still_github].
 
 **If you liked our poster, in the beginning, we have a few more on our [website][stillstatic].**
+
+_You should probably get a ticket for Alchemy Conf. All proceeds are for charity, and you get to see some of the best speakers around._
 
 [stillstatic]: https://stillstatic.io/
 [docs]: https://hexdocs.pm/still/getting_started.html
