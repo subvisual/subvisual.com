@@ -28,7 +28,7 @@ Gatsby was great, but it soon became clear that our goals were not aligned. They
 
 If we were to build a “modern” and “professional” static site builder, what would we need? What would you expect? I know many people would say React, but do we really need a library that’s almost a new language, alongside its own runtime to write HTML? Let's simplify, stay focused, and on track. _What do we actually need?_
 
-- A development server that automatically compiles the website and refreshes the browser on change..
+- A development server that automatically compiles the website and refreshes the browser on change.
 - An error overlay on the browser to show what’s failing and where.
 - Support for all kinds of assets.
 - A way to generate responsive images from a source image.
