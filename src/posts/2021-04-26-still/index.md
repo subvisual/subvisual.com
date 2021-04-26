@@ -2,6 +2,7 @@
 path: /posts/announcing-still
 title: "Still building static websites in Elixir"
 author: gabriel-poca
+seoImage: ./seo.jpeg
 date: 2021-04-26
 tags:
   - community
