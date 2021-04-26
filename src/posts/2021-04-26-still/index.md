@@ -18,7 +18,7 @@ Things have come a long way, and now it’s easier than ever to make websites wi
 
 There are many “modern” and “professional” tools to get you up to speed in no time. I think that it's awesome that we can scaffold a project in a couple of seconds, write a React component, and there we have it, a static website super optimized for the modern “professional” world. But do we need all of that? Would it be possible to achieve the same thing without having to buy into a massive ecosystem of packages that keep breaking and making upgrades almost impossible? Should we be buying into those technologies just because that's what everyone does?
 
-I’ve had enough. Websites don’t have to be this complicated, and the browser already does a lot. We need simpler tools that don’t compromise on the developer experience and pack enough features to build a “modern” website while making it easier to extend with other ecosystems. Other tools fit the description, but Elixir would do a much better job than everything else, as you’ll see in a bit.
+Websites don’t have to be this complicated, and the browser already does a lot. We need simpler tools that don’t compromise on the developer experience and pack enough features to build a “modern” website. Other tools fit the description, but Elixir would do a much better job than everything else, as you’ll see in a bit.
 
 ## Modern development environment
 
