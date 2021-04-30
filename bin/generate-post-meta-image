@@ -28,7 +28,6 @@ done
 
 out=$1
 
-
 if [[ -f "$bg" ]]; then
   # bg is a file. scale & crop the image to intended dimensions,\
   # and add a transparent layer on top

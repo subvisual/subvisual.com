@@ -2,7 +2,8 @@
 path: /posts/large-scale-in-a-rush-utrust-ico
 title: "Large-scale in a rush: The Utrust ICO"
 author: miguel-palhas
-date: 2021-04-23
+seoImage: ./seo.png
+date: 2021-04-30
 tags:
   - general
   - elixir
