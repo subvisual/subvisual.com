@@ -73,6 +73,8 @@ const BlogPostTemplate = ({
       resolveImage({ file: coverFile, src: cover })
   )
 
+  console.log("image", image)
+
   return (
     <Layout>
       <SEO
