@@ -47,7 +47,7 @@ const prepareBlogPostSlug = ({ node }) => {
   if (!frontmatter.path) return undefined
 
   const urlBase =
-    process.env.DEPLOY_PRIME_URL || process.env.URL || "http://localhost:8000"
+    process.env.URL || process.env.DEPLOY_PRIME_URL || "http://localhost:8000"
   const urlPath = path.posix.join("/blog", frontmatter.path)
 
   return new URL(urlPath, urlBase).toString()
