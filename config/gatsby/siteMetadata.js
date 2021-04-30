@@ -1,4 +1,5 @@
-const siteUrl = process.env.URL || "http://localhost:8000"
+const siteUrl =
+  process.env.URL || process.env.DEPLOY_PRIME_URL || "http://localhost:8000"
 
 module.exports = {
   description: "We nurture ideas that empower people",
