@@ -58,13 +58,13 @@ And we honestly would have refused to do it in any other way.
 This included things such as: registering the business in Switzerland, where
 cryptocurrency companies had, at the time, a much better legal infrastructure
 than other countries; Ensuring all investments were done in a regulated manner,
-by enforcing a KYC process on every investor. And paying attention to the
-community, to make the whole process easy for them, as well as look out for
-potential issues or bad actors.
+by enforcing a KYC process on every investor (which wasn't yet a mandatory
+step). And paying attention to the community, to make the whole process easy for
+them, as well as look out for potential issues or bad actors.
 
 As it turns out, history benefited the good guys here. Other ICOs that happened
 around the same time, but didn't follow such a strict protocol went as far as
-having all their funds freezed. And the community also seemed to appreciate our
+having all their funds frozen. And the community also seemed to appreciate our
 efforts.
 
 But enough about legal-speak. The focus of this post is the tech...
