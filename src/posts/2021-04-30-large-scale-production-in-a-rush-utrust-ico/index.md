@@ -12,7 +12,6 @@ intro: >
     This is the story of how we ended up with an unrealistic time-frame to launch
     a platform, of the decisions we made along the way, and fortunately, of how it
     all turned out really well.
-seoImage: ./meta.png
 ---
 
 This is the story of how we ended up with an unrealistic time-frame to launch
