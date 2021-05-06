@@ -54,7 +54,7 @@
     "react-share": "^4.3.0",
     "sass": "^1.30.0",
     "scroll-lock": "^2.1.4",
-    "ua-parser-js": "^0.7.23",
+    "ua-parser-js": "^0.7.24",
     "webpack": "^4.44.2"
   },
   "devDependencies": {
