@@ -39,7 +39,7 @@
     "gatsby-transformer-yaml": "^2.7.0",
     "include-media": "^1.4.9",
     "intersection-observer": "0.11.0",
-    "lodash": "^4.17.20",
+    "lodash": "^4.17.21",
     "popmotion": "^8.7.0",
     "postcss-url": "^8.0.0",
     "prismjs": "^1.22.0",
