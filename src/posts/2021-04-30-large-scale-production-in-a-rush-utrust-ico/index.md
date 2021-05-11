@@ -9,7 +9,7 @@ tags:
   - elixir
   - blockchain
 intro: >
-    This is the story of how we ended up with an unrealistic time-frame to launch
+    This is the story of how we ended up with an ambitious time-frame to launch
     a platform, of the decisions we made along the way, and fortunately, of how it
     all turned out really well.
 ---
