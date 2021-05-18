@@ -38,11 +38,11 @@ Conf](https://alchemyconf.com/).
 
 ![](./alchemyconf.png)
 
-**Alchemy Conf is a one-day event where all Elixir, Erlang, and BEAM developers
-and enthusiasts come together, share knowledge and get to know who’s who in the
-community. Also, we decided to make it a non-profit, carbon-neutral conference.
-All proceeds go to charity and we will plant a tree for each attendee joining
-us.**
+Alchemy Conf is a one-day event where all Elixir, Erlang, and BEAM developers
+and enthusiasts come together, share knowledge, find out who is in the community
+and what is it about. Also, we decided to make it a non-profit, carbon-neutral
+conference. All proceeds go to charity and we will plant a tree for each
+attendee joining us.
 
 This is a call to action for all of you who care for belonging, nurturing
 a community, and leverage technology. [Come together!](https://alchemyconf.com/tickets) 
