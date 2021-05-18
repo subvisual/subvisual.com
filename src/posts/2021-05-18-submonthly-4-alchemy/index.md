@@ -30,7 +30,6 @@ while getting to know amazing people and talented professionals with so many
 diverse backgrounds. 
 
 ![](./rubyconf.jpeg)
-![](./mirrorconf.png)
 
 As community builders, we want to step forward and bring people back
 together, again. This time we thought we could start by calling out for the
