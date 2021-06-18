@@ -127,6 +127,19 @@
     github: "https://github.com/naps62"
     twitter: "https://twitter.com/naps62"
 
+- key: mirha-masala
+  name: "Mirha Masala"
+  email: mirha@subvisual.co
+  photo:
+    horizontal: "../images/team/mirha-masala-h.jpg"
+    vertical: "../images/team/mirha-masala-v.jpg"
+  role: "Developer"
+  bio: "Frontend developer who likes to dabble in the deep, dark back. Oddly interested in best coding practices and refactoring. She also writes."
+  social:
+    github: "https://github.com/mirhamasala"
+    linkedin: https://www.linkedin.com/in/mirhamasala/
+    web: "https://www.mirhamasala.com"
+
 - key: nuno-reis
   name: Nuno Reis
   photo:
