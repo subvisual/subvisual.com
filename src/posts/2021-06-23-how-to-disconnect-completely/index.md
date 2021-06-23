@@ -4,7 +4,7 @@ title: "SubMonthly #5 - How to disconnect completely"
 author: subvisual
 date: 2021-06-23
 cover: ./cover.png
-seoImage: ./seo.png
+seoImage: ./cover.png
 tags:
   - community
 intro: >
