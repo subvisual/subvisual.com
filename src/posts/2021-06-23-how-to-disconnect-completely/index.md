@@ -99,7 +99,7 @@ meet and extra tasks that you could be doing, but taking time for yourself is
 just as important. 
 
 Now that we have our time-off well-organised, it's time to get back to work and
-get ready for this year's [Summer Camp].
+get ready for this year's Summer Camp.
 
 **Summer Campers will form a team and build a product together to solve a
 pre-defined problem. If you're looking into a career in programming, design or
@@ -118,4 +118,3 @@ out our career opportunities [here](https://jobs.subvisual.com/)._
 [The Foundation Trilogy]: https://www.goodreads.com/book/show/46654.The_Foundation_Trilogy
 [V for Vendetta]: https://www.goodreads.com/book/show/5805.V_for_Vendetta
 [Dune]: https://www.goodreads.com/book/show/44767458-dune
-[Summer Camp]: https://jobs.subvisual.com/summer-camp-program/en
