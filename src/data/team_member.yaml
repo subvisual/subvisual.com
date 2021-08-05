@@ -7,6 +7,17 @@
   social:
     linkedin: https://www.linkedin.com/in/carlosalexandremendes/
 
+- key: alvaro-bezerra
+  name: "Alvaro Bezerra"
+  email: alvaro@subvisual.com
+  photo:
+    horizontal: "../images/team/alvaro-bezerra-h.jpg"
+    vertical: "../images/team/alvaro-bezerra-v.jpg"
+  role: "Product Manager"
+  social:
+    linkedin: "https://www.linkedin.com/in/alvarobezerra"
+    twitter: "https://twitter.com/alvarorrbezerra"
+
 - key: fernando-mendes
   name: "Fernando Mendes"
   email: mendes@subvisual.com
@@ -48,6 +59,17 @@
   social:
     web: "https://gabrielpoca.com"
     github: "https://github.com/gabrielpoca"
+
+- key: joana-gomes
+  name: "Joana Gomes"
+  email: joana@subvisual.com
+  photo:
+    horizontal: "../images/team/joana-gomes-h.jpg"
+    vertical: "../images/team/joana-gomes-v.jpg"
+  role: "Designer"
+  social:
+    linkedin: "https://www.linkedin.com/in/joanamsgomes/"
+    twitter: "https://twitter.com/Joanamsgomes"
 
 - key: joao-justo
   name: João Justo
@@ -129,7 +151,7 @@
 
 - key: mirha-masala
   name: "Mirha Masala"
-  email: mirha@subvisual.co
+  email: mirha@subvisual.com
   photo:
     horizontal: "../images/team/mirha-masala-h.jpg"
     vertical: "../images/team/mirha-masala-v.jpg"
