@@ -160,19 +160,6 @@
     github: https://github.com/apedrob
     linkedin: https://www.linkedin.com/in/apedromb/
 
-- key: pedro-costa
-  name: "Pedro Costa"
-  photo:
-    horizontal: "../images/team/pedro-costa-h.jpg"
-    vertical: "../images/team/pedro-costa-v.jpg"
-  role: "Developer"
-  bio: "Proudly weird, pedantic problem solver. Enjoys meta-programming a little
-  too much. Got a GameBoy&reg; when he was eight and hasn't shut up about
-  Pokémon&reg; since."
-  social:
-    github: "https://github.com/pfac"
-    twitter: "https://twitter.com/iampfac"
-
 - key: roberto-machado
   name: "Roberto Machado"
   photo:
