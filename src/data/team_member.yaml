@@ -150,16 +150,6 @@
     linkedin: https://www.linkedin.com/in/nunohvreis/
     twitter: https://twitter.com/onunoreis
 
-- key: pedro-barbosa
-  name: Pedro Barbosa
-  photo:
-    horizontal: ../images/team/pedro-barbosa-h.jpg
-    vertical: ../images/team/pedro-barbosa-v.jpg
-  role: Developer
-  social:
-    github: https://github.com/apedrob
-    linkedin: https://www.linkedin.com/in/apedromb/
-
 - key: roberto-machado
   name: "Roberto Machado"
   photo:
