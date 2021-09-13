@@ -34,6 +34,14 @@
     github: martinhoaragao
     twitter: martinhoaragao
 
+- key: pedro-costa
+  name: Pedro Costa
+  bio: >-
+    Proudly weird, pedantic problem solver. Enjoys meta-programming a little too much. Got a GameBoy&reg; when he was eight and hasn't shut up about Pokémon&reg; since.
+  social:
+    github: pfac
+    twitter: iampfac
+
 - key: subvisual
   name: The Subvisual Team
   social:
