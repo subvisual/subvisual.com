@@ -24,3 +24,7 @@ p,
 
   @import "./inline_code";
 }
+
+li > p {
+  padding: 0;
+}
