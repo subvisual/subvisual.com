@@ -1,7 +1,7 @@
 ---
 path: /whatajourneyithasbeen
 title: What A Journey It Has Been
-author: subvisual
+author: summer-campers
 date: 2021-09-22
 cover: blog-tw2-2x.jpg
 seoImage: blog-tw2-2x.jpg
