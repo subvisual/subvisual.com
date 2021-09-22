@@ -7,13 +7,13 @@ import styles from "./index.module.scss"
 
 export default () => (
   <div className={styles.root}>
-    {process.env.NODE_ENV === 'production' && <Announcement
+    <Announcement
       title="We're hiring!"
       subtitle="Would you like to join our team? Head over to our jobs page and read on our current openings."
       link="https://jobs.subvisual.com"
-      daysToLive={0}
+      daysToLive={30}
       secondsBeforeBannerShows={10}
       imageSource={Symbol}
-    />}
+    />
   </div>
 )
