@@ -1,0 +1,50 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - name: 'post'
+    label: 'Post'
+    folder: 'src/posts'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    path: '{{year}}-{{month}}-{{day}}-{{title}}/{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Path', name: 'path', widget: 'string' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - label: 'Author'
+        name: 'author'
+        widget: 'select'
+        options: [
+          'alex-mendes',
+          'alvaro-bezerra',
+          'fernando-mendes',
+          'francisco-baila',
+          'gabriel-poca',
+          'joana-gomes',
+          'joao-justo',
+          'joao-ferreira',
+          'jose-pedro-cabrita',
+          'laura-esteves',
+          'laura-esteves',
+          'miguel-palhas',
+          'mirha-masala',
+          'nuno-reis',
+          'roberto-machado',
+          'ronaldo-sousa',
+          'subvisual',
+          'pedro-costa',
+          'summer-campers'
+        ]
+      - { label: 'Publish Date', name: 'date', widget: 'date', format: 'YYYY-MM-DD' }
+      - { label: 'Cover', name: 'cover', widget: 'image', allow_multiple: false }
+      - { label: 'Social Media Cover', name: 'seoImage', widget: 'image', allow_multiple: false }
+      - { label: 'Intro', name: 'intro', widget: 'text' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
