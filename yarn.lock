@@ -4193,7 +4193,7 @@ colorette@^1.2.1, colorette@^1.2.2:
   resolved "https://registry.yarnpkg.com/colorette/-/colorette-1.2.2.tgz#cbcc79d5e99caea2dbf10eb3a26fd8b3e6acfa94"
   integrity sha512-MKGMzyfeuutC/ZJ1cba9NqcNpfeqMUcYmyF1ZFY6/Cn7CNSAKx6a+s48sqLqyAiZuaP2TcqMhoo+dlwFnVxT9w==
 
-colors@^1.1.2:
+colors@^1.1.2, colors@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/colors/-/colors-1.4.0.tgz#c50491479d4c1bdaed2c9ced32cf7c7dc2360f78"
   integrity sha512-a+UqTh4kgZg/SlGvfbzDHpgRu7AAQOmmqRHJnxhRZICKFUT91brVhNNt58CMWU9PsBbv3PDCZUHbVxuDiH2mtA==
@@ -7098,6 +7098,13 @@ gatsby-plugin-google-gtag@^3.0.0:
   dependencies:
     "@babel/runtime" "^7.12.5"
     minimatch "^3.0.4"
+
+gatsby-plugin-json-output@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-json-output/-/gatsby-plugin-json-output-1.2.0.tgz#6c82edf9879ca6cf159424adc251f3eb8374e6dd"
+  integrity sha512-JcIz0DkpVIqkc0FYalgTVHT706X2cxdlklt9U89REhdiIF+xvCQKXq833iWzAFRL3rCmUrMGD281PInUHhvFUA==
+  dependencies:
+    colors "^1.4.0"
 
 gatsby-plugin-manifest@^2.8.0:
   version "2.8.0"
