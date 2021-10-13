@@ -44,7 +44,7 @@ collections:
           'summer-campers'
         ]
       - { label: 'Publish Date', name: 'date', widget: 'date', format: 'YYYY-MM-DD' }
-      - { label: 'Cover', name: 'cover', widget: 'image', allow_multiple: false }
+      - { label: 'Cover', name: 'cover', widget: 'image', allow_multiple: false, required: false }
       - { label: 'Social Media Cover', name: 'seoImage', widget: 'image', allow_multiple: false }
       - { label: 'Intro', name: 'intro', widget: 'text' }
       - { label: 'Body', name: 'body', widget: 'markdown' }

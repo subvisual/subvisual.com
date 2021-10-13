@@ -3,7 +3,6 @@ path: /posts/netlify-cms-in-a-website-built-with-still-outside-of-netlify
 title: Adding Netlify CMS to a website built with Still outside of Netlify
 author: gabriel-poca
 date: 2021-10-12
-cover: blog-tw-2x.png
 seoImage: blog-tw-2x.png
 intro: A couple of days ago I added Netlify CMS to Subvisual's blog. I found the
   experience of using Netlify CMS so good that I had to get it on [my
