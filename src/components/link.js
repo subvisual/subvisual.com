@@ -5,7 +5,7 @@ import classNames from "classnames"
 
 import Text from "~/src/components/text"
 
-import styles from "./link.module.css"
+import * as styles from "./link.module.css"
 
 const Link = ({
   blank,

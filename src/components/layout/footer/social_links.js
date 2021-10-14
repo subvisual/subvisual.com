@@ -2,7 +2,7 @@ import React from "react"
 
 import SocialLink from "~/src/components/SocialLink"
 
-import styles from "./social_links.module.css"
+import * as styles from "./social_links.module.css"
 
 const socialDetails = {
   medium: "https://medium.com/subvisual",

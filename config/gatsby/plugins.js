@@ -110,12 +110,7 @@ module.exports = [
     },
   },
   "gatsby-plugin-twitter",
-  {
-    resolve: "gatsby-plugin-netlify-cache",
-    options: {
-      cachePublic: true,
-    },
-  },
+  "gatsby-plugin-netlify",
   `gatsby-plugin-netlify-cms`,
   {
     resolve: `gatsby-plugin-json-output`,

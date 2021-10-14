@@ -5,7 +5,7 @@ import classNames from "classnames"
 import Text from "~/src/components/text"
 import ImageLoader from "~/src/components/image_loader"
 
-import styles from "./venture.module.css"
+import * as styles from "./venture.module.css"
 
 const Venture = ({ delay, description, featured, image, name, url }) => {
   const className = classNames(styles.root, {

@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { disablePageScroll, enablePageScroll } from "scroll-lock"
 import _uniqueId from "lodash/uniqueId"
 
-import styles from "./splash_screen.module.css"
+import * as styles from "./splash_screen.module.css"
 
 const SplashScreen = ({ lockScrollFor, onHide, morph, showFor }) => {
   const [showing, setShowing] = useState(true)

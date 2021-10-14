@@ -7,10 +7,10 @@ import Norte2020 from "./footer/Norte2020"
 import SocialLinks from "./footer/social_links"
 import Text from "~/src/components/text"
 
-import styles from "./footer.module.css"
+import * as styles from "./footer.module.css"
 
 const Footer = () => (
-  <footer className={styles.root}>
+  <footer>
     <div className={styles.blue}>
       <div className={styles.content}>
         <div className={styles.logo}>
@@ -23,7 +23,7 @@ const Footer = () => (
           </p>
         </div>
         <div className={styles.locations}>
-          <div className={styles.location}>
+          <div>
             <Location
               align="left"
               name="Braga, Portugal"
@@ -32,7 +32,7 @@ const Footer = () => (
               mapsUrl="https://goo.gl/maps/ddvtn1Ez8N72"
             />
           </div>
-          <div className={styles.location}>
+          <div>
             <Location
               align="right"
               name="Boston, USA"

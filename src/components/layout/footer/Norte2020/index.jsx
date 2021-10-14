@@ -4,10 +4,10 @@ import Img from "gatsby-image"
 
 import Link from "~/src/components/link"
 
-import styles from "./index.module.scss"
+import * as styles from "./index.module.scss"
 
 const render = ({ logo, feder020919, fse000130 }) => (
-  <div className={styles.root}>
+  <div>
     <div className={styles.image}>
       <Img fadeIn fluid={logo.childImageSharp.fluid} />
     </div>

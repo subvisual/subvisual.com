@@ -7,7 +7,7 @@ import SubsectionTitle from "~/src/components/subsection_title"
 import TeamSubsection from "./about_section/team_subsection"
 import Text from "~/src/components/text"
 
-import styles from "./about_section.module.css"
+import * as styles from "./about_section.module.css"
 
 const AboutSection = ({ planetMorph }) => (
   <section className={styles.root}>

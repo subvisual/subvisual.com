@@ -3,20 +3,21 @@ import PropTypes from "prop-types"
 import { graphql } from "gatsby"
 import _get from "lodash/get"
 
-import Body from "~/src/components/blog/post/body"
-import BodyWrapper from "~/src/components/blog/post/body_wrapper"
-import Header from "~/src/components/blog/post/header"
 import Layout from "~/src/components/layout"
 import SEO from "~/src/components/SEO"
+import Header from "~/src/components/blog/post/header"
+import Body from "~/src/components/blog/post/body"
+import BodyWrapper from "~/src/components/blog/post/body_wrapper"
 import ShareLinks from "~/src/components/blog/post/body/share_links"
 import Wrapper from "~/src/components/blog/post/wrapper"
+
 import usePathToURL from "~/src/utils/usePathToURL"
 
 import "~/src/common/base.scss"
-import styles from "./post.module.scss"
+import * as styles from "./post.module.scss"
 
 export const query = graphql`
-  query($cover: String, $seoImage: String, $slug: String!) {
+  query ($cover: String, $seoImage: String, $slug: String!) {
     markdownRemark(frontmatter: { path: { eq: $slug } }) {
       fields {
         cover
@@ -112,7 +113,7 @@ BlogPostTemplate.propTypes = {
   title: PropTypes.string.isRequired,
 }
 
-export default ({ data }) => {
+const Template = ({ data }) => {
   const { markdownRemark, coverFile, seoImageFile } = data
   const { fields, frontmatter, html } = markdownRemark
   const { seoImage, cover, slug } = fields
@@ -136,3 +137,5 @@ export default ({ data }) => {
     />
   )
 }
+
+export default Template;

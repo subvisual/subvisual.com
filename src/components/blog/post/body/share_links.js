@@ -9,7 +9,7 @@ import {
 
 import useDetectJavascript from "~/src/utils/use_detect_javascript"
 
-import styles from "./share_links.module.scss"
+import * as styles from "./share_links.module.scss"
 
 const BlogPostShareLinks = ({ className, url }) => {
   const hasJavascript = useDetectJavascript()

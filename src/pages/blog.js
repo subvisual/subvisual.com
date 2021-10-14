@@ -6,7 +6,7 @@ import SEO from "~/src/components/SEO"
 import PostsList from "~/src/components/blog/PostsList"
 
 import "../common/base.scss"
-import styles from "./blog.module.scss"
+import * as styles from "./blog.module.scss"
 
 const query = graphql`
   {
@@ -52,7 +52,7 @@ const BlogPage = ({ posts }) => (
   </>
 )
 
-export default () => {
+const Page = () => {
   const {
     allMarkdownRemark: { nodes },
   } = useStaticQuery(query)
@@ -65,3 +65,5 @@ export default () => {
 
   return <BlogPage posts={posts} />
 }
+
+export default Page

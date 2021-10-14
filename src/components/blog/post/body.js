@@ -12,7 +12,7 @@ import {
 import BodyWrapper from "./body_wrapper"
 
 import "prismjs/themes/prism.css"
-import styles from "./body.module.scss"
+import * as styles from "./body.module.scss"
 
 const PostBody = ({ html }) => {
   const userAgent = useUserAgent()

@@ -9,7 +9,7 @@ import Text from "~/src/components/text"
 import useWindowSize from "~/src/utils/use_window_size"
 import Title from "./hero_section/title"
 
-import styles from "./hero_section.module.css"
+import * as styles from "./hero_section.module.css"
 
 const absoluteStyle = {
   position: "absolute",

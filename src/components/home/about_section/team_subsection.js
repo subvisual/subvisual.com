@@ -3,7 +3,7 @@ import { StaticQuery, graphql } from "gatsby"
 
 import Member from "./team_subsection/member"
 
-import styles from "./team_subsection.module.css"
+import * as styles from "./team_subsection.module.css"
 
 const teamQuery = graphql`
   query TeamQuery {

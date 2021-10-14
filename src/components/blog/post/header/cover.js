@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import Img from "gatsby-image"
 import classNames from "classnames"
 
-import styles from "./cover.module.scss"
+import * as styles from "./cover.module.scss"
 
 const renderFluidCover = ({ className, coverFile }) => {
   const {

@@ -7,7 +7,7 @@ import Planet from "~/src/components/planet"
 import useUserAgent from "~/src/utils/use_user_agent"
 import { isLinux } from "~/src/utils/user_agent_utils"
 
-import styles from "./animated_letters.module.scss"
+import * as styles from "./animated_letters.module.scss"
 
 const dragVariants = {
   in: {

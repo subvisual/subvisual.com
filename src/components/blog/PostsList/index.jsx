@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 
 import Entry from "./Entry"
 
-import styles from "./PostsList.module.scss"
+import * as styles from "./PostsList.module.scss"
 
 const renderItem = ({ author, date, intro, path, title }, index) => (
   <li key={index} className={styles.item}>
