@@ -138,4 +138,4 @@ const Template = ({ data }) => {
   )
 }
 
-export default Template;
+export default Template
