@@ -8,11 +8,7 @@ module.exports = (root) => [
     options: {
       implementation: sass,
       cssLoaderOptions: {
-        //esModule: false,
-        //localIdentName: "[folder]-[name]--[local]--[hash:base64:5]",
-        //modules: {
-          //namedExport: false,
-        //},
+        localIdentName: "[folder]-[name]--[local]--[hash:base64:5]",
       },
       sassOptions: {
         includePaths: [
