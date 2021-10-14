@@ -5,10 +5,10 @@ author: gabriel-poca
 date: 2021-10-12
 seoImage: blog-tw-2x.png
 intro: A couple of days ago I added Netlify CMS to Subvisual's blog. I found the
-  experience of using Netlify CMS so good that I had to get it on [my
-  blog](https://gabrielpoca.com). But, while Subvisual's blog is built with
+  experience of using Netlify CMS so good that I had to get it on my
+  blog. But, while Subvisual's blog is built with
   Gatsby and deployed to Netlify, mine is built with
-  [Still](https://stillstatic.io) and deployed to Github Pages, so getting it up
+  Still and deployed to Github Pages, so getting it up
   and running is not as straightforward.
 ---
 # Adding Netlify CMS to a website built with Still outside of Netlify
