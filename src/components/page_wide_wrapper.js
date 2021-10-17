@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import classNames from "classnames"
 
-import styles from "./page_wide_wrapper.module.css"
+import * as styles from "./page_wide_wrapper.module.css"
 
 const PageWideWrapper = ({ children, padded }) => {
   const className = classNames(styles.root, {

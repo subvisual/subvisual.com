@@ -7,7 +7,7 @@ import Logo from "./logo"
 import Header from "./layout/header"
 import Footer from "./layout/footer"
 
-import styles from "./layout.module.css"
+import * as styles from "./layout.module.css"
 
 const Layout = ({ children, currentPath, renderHeaderLogo }) => (
   <div className={styles.root}>

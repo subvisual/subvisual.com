@@ -6,14 +6,16 @@ module.exports = (root) => [
   {
     resolve: "gatsby-plugin-sass",
     options: {
+      implementation: sass,
       cssLoaderOptions: {
         localIdentName: "[folder]-[name]--[local]--[hash:base64:5]",
       },
-      implementation: sass,
-      includePaths: [
-        path.resolve(root, "node_modules"),
-        path.resolve(root, "src"),
-      ],
+      sassOptions: {
+        includePaths: [
+          path.resolve(root, "node_modules"),
+          path.resolve(root, "src"),
+        ],
+      },
       postCssPlugins: [
         postCssUrl([
           {

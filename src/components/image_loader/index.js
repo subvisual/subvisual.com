@@ -4,7 +4,7 @@ import Img from "gatsby-image"
 import _uniqueId from "lodash/uniqueId"
 
 import Placeholder from "~/src/components/load_placeholder/placeholder"
-import styles from "./index.module.css"
+import * as styles from "./index.module.css"
 
 export default (props) => {
   const { delay, darkOverlay, imgStyle, ...imgProps } = props

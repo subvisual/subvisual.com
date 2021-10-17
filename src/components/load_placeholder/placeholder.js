@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import classNames from "classnames"
 
-import styles from "./placeholder.module.css"
+import * as styles from "./placeholder.module.css"
 
 const Placeholder = ({ dark, delay, id, visible }) => {
   const className = classNames(styles.root, {

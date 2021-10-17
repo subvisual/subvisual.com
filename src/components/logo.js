@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import classnames from "classnames"
 import _uniqueId from "lodash/uniqueId"
 
-import styles from "./logo.module.css"
+import * as styles from "./logo.module.css"
 
 const Logo = ({ color }) => {
   const className = classnames(styles.root, styles[color])

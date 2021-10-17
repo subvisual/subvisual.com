@@ -7,7 +7,7 @@ import Cover from "./header/cover"
 import Title from "~/src/components/blog/title"
 import Wrapper from "./wrapper"
 
-import styles from "./header.module.css"
+import * as styles from "./header.module.css"
 
 const renderAuthor = ({ key, name }) => (
   <>

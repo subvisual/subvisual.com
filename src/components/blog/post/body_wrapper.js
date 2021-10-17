@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import classNames from "classnames"
 
-import styles from "./body_wrapper.module.scss"
+import * as styles from "./body_wrapper.module.scss"
 
 const BlogPostBodyWrapper = ({ className, children }) => {
   const rootClassName = classNames(styles.root, className)

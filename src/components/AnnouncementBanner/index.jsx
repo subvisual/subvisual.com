@@ -3,7 +3,7 @@ import Announcement from "react-announcement"
 
 import Symbol from "~/src/images/subvisual-symbol-blue.svg"
 
-import styles from "./index.module.scss"
+import * as styles from "./index.module.scss"
 
 export default () => (
   <div className={styles.root}>

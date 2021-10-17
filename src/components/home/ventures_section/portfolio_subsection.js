@@ -5,7 +5,7 @@ import { StaticQuery, graphql } from "gatsby"
 import Planet from "~/src/components/planet"
 import Venture from "./portfolio_subsection/venture"
 
-import styles from "./portfolio_subsection.module.css"
+import * as styles from "./portfolio_subsection.module.css"
 
 const baseDelay = 0.3
 

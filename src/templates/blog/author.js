@@ -6,10 +6,10 @@ import PostsList from "~/src/components/blog/PostsList"
 import SEO from "~/src/components/SEO"
 import Title from "~/src/components/blog/title"
 
-import styles from "./author.module.scss"
+import * as styles from "./author.module.scss"
 
 export const query = graphql`
-  query($authorKey: String!, $blogPostsPathRegex: String!) {
+  query ($authorKey: String!, $blogPostsPathRegex: String!) {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: {
@@ -46,14 +46,14 @@ const BlogAuthorTemplate = ({ authorName, authorBio, posts }) => (
       <div className={styles.root}>
         <div className={styles.content}>
           <Title className={styles.title}>By {authorName}</Title>
-          <PostsList className={styles.postsList} posts={posts} />
+          <PostsList posts={posts} />
         </div>
       </div>
     </Layout>
   </>
 )
 
-export default ({ data }) => {
+const Template = ({ data }) => {
   const {
     allMarkdownRemark: { edges },
     blogContributorYaml,
@@ -70,3 +70,5 @@ export default ({ data }) => {
 
   return <BlogAuthorTemplate {...{ authorName, authorBio, posts }} />
 }
+
+export default Template

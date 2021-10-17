@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 
 import NavLink from "./header/nav_link"
 
-import styles from "./header.module.scss"
+import * as styles from "./header.module.scss"
 
 const BLOG_PATH = "/blog/"
 

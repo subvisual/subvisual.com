@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 import SocialLink from "~/src/components/SocialLink"
 import Text from "~/src/components/text"
 
-import styles from "./member.module.css"
+import * as styles from "./member.module.css"
 
 const Member = ({ name, role, social, photo }) => (
   <div className={styles.root}>
@@ -23,11 +23,11 @@ const Member = ({ name, role, social, photo }) => (
         },
       ]}
     />
-    <div className={styles.info}>
-      <div className={styles.name}>
+    <div>
+      <div>
         <Text bold>{name}</Text>
       </div>
-      <div className={styles.role}>
+      <div>
         <Text>{role}</Text>
       </div>
     </div>

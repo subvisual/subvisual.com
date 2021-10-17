@@ -5,7 +5,7 @@ import _random from "lodash/random"
 import Planet from "~/src/components/planet"
 import colorCodes from "~/src/components/colors"
 
-import styles from "./icon.module.css"
+import * as styles from "./icon.module.css"
 
 const Icon = ({ color, planetMorph }) => {
   const colorCode = colorCodes[color]

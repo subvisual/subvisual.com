@@ -6,7 +6,7 @@ import Img from "gatsby-image"
 import Link from "~/src/components/link"
 import Text from "~/src/components/text"
 
-import styles from "./location.module.css"
+import * as styles from "./location.module.css"
 
 const query = graphql`
   query {
@@ -28,7 +28,7 @@ const query = graphql`
 `
 
 const Location = ({ align, geoUrl, image, mapsUrl, name }) => (
-  <address className={styles.root}>
+  <address>
     <div className={styles.image}>
       <Img fluid={image.childImageSharp.fluid} />
     </div>
