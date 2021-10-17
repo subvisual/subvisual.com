@@ -151,5 +151,6 @@ module.exports = [
       feedFilename: "blog/index",
       nodesPerFeedFile: 100,
     }
-  }
+  },
+  `seo-cover`
 ]
