@@ -9,7 +9,7 @@ registerFont(path.resolve(__dirname, "acta-headline-extra-bold.woff"), {
 
 const WIDTH = 2160
 const HEIGHT = 1080
-const FILE_NAME = "seo.jpeg"
+const FILE_NAME = "seo.png"
 
 const transform = ({ text, path: filePath }) => {
   const canvas = createCanvas(WIDTH, HEIGHT)
@@ -52,9 +52,7 @@ const transform = ({ text, path: filePath }) => {
     ctx.fillText(line, 100, HEIGHT - 50 - (lines.length - i - 1) * 210)
   })
 
-  const buffer = canvas.toBuffer("image/jpeg", {
-    quality: 0.75,
-  })
+  const buffer = canvas.toBuffer("image/png")
 
   const folderPath = path.dirname(filePath)
 
