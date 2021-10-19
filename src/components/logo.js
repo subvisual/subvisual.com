@@ -1,6 +1,5 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { Link } from "gatsby"
 import classnames from "classnames"
 import _uniqueId from "lodash/uniqueId"
 
@@ -11,7 +10,7 @@ const Logo = ({ color }) => {
   const radialId = _uniqueId("logo-")
 
   return (
-    <Link to="/" className={className}>
+    <a aria-label="Homepage" href="/" className={className}>
       <svg viewBox="0 0 245 42" fill="none" xmlns="http://www.w3.org/2000/svg">
         <ellipse
           cx="133.244"
@@ -38,7 +37,7 @@ const Logo = ({ color }) => {
           </radialGradient>
         </defs>
       </svg>
-    </Link>
+    </a>
   )
 }
 
