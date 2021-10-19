@@ -1,2 +1,26 @@
 [[plugins]]
 package = "@netlify/plugin-gatsby"
+
+[[redirects]]
+  from = "/"
+  to = "https://subvisual-redesign.webflow.io/"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/service"
+  to = "https://subvisual-redesign.webflow.io/service"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/ventures"
+  to = "https://subvisual-redesign.webflow.io/ventures"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/people"
+  to = "https://subvisual-redesign.webflow.io/people"
+  status = 200
+  force = true
