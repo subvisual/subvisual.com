@@ -1,7 +1,6 @@
 const path = require("path")
 const _ = require("lodash")
 const fs = require("fs")
-const { registerFont, createCanvas } = require("canvas")
 const util = require("util")
 const exec = util.promisify(require("child_process").exec)
 const mkdtemp = util.promisify(require("fs").mkdtemp)
