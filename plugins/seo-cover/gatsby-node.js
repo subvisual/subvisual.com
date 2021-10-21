@@ -6,7 +6,11 @@ const exec = util.promisify(require("child_process").exec)
 const mkdtemp = util.promisify(require("fs").mkdtemp)
 const os = require("os")
 
-const FONT_PATH = path.resolve(__dirname, "acta-headline-extra-bold.woff")
+const FONT_PATH_REGULAR = path.resolve(__dirname, "acta-regular.woff")
+const FONT_PATH_HEADLINE = path.resolve(
+  __dirname,
+  "acta-headline-extra-bold.woff"
+)
 const FILE_NAME = "seo.png"
 
 const makeTmpFolder = () => mkdtemp(path.join(os.tmpdir(), "seo-cover-"))
@@ -46,7 +50,7 @@ const transform = async ({ text, path: filePath }) => {
   await exec(`convert -size ${res} xc:${bg} ${tmp}/bg.png`)
 
   const { err } = await exec(
-    `convert -page +0+0 ${tmp}/bg.png -size ${res} xc:"#00000000" -fill white -pointsize 95 -gravity northwest -font Arial -annotate +100+160 'Blog Post' -gravity southwest -font ${FONT_PATH} -annotate +100+100 "${multilineText}" -layers merge +repage ${filePath}`
+    `convert -page +0+0 ${tmp}/bg.png -size ${res} xc:"#00000000" -fill white -pointsize 95 -gravity northwest -font ${FONT_PATH_REGULAR} -annotate +100+160 'Blog Post' -gravity southwest -font ${FONT_PATH_HEADLINE} -annotate +100+100 "${multilineText}" -layers merge +repage ${filePath}`
   )
 
   if (err) console.error(err)
