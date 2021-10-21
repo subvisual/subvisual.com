@@ -2,43 +2,31 @@ const path = require("path")
 const _ = require("lodash")
 const fs = require("fs")
 const { registerFont, createCanvas } = require("canvas")
+const util = require("util")
+const exec = util.promisify(require("child_process").exec)
+const mkdtemp = util.promisify(require("fs").mkdtemp)
+const os = require("os")
 
-registerFont(path.resolve(__dirname, "acta-headline-extra-bold.woff"), {
-  family: "Acta",
-})
-
-const WIDTH = 2160
-const HEIGHT = 1080
+const FONT_PATH = path.resolve(__dirname, "acta-headline-extra-bold.woff")
 const FILE_NAME = "seo.png"
 
-const transform = ({ text, path: filePath }) => {
-  const canvas = createCanvas(WIDTH, HEIGHT)
-  const ctx = canvas.getContext("2d")
+const makeTmpFolder = () => mkdtemp(path.join(os.tmpdir(), "seo-cover-"))
 
-  ctx.fillStyle = "#2421AB"
-  ctx.fillRect(0, 0, WIDTH, HEIGHT)
-
-  ctx.font = 'regular 80px "Arial"'
-  ctx.fillStyle = "#fff"
-  ctx.textAlign = "left"
-  ctx.textBaseline = "top"
-  ctx.fillText("Blog Post", 115, 95)
-
-  ctx.font = '170px "Acta"'
-  ctx.fillStyle = "#fff"
-  ctx.textAlign = "left"
-  ctx.textBaseline = "bottom"
+const transform = async ({ text, path: filePath }) => {
+  const bg = "#2421AB"
+  const res = "2160x1080"
+  const tmp = await makeTmpFolder()
 
   let lines = [text]
 
-  if (text.length > 20) {
+  if (text.length > 30) {
     lines = text.split(" ").reduce((memo, word) => {
       if (memo.length === 0) {
         memo.push(word)
         return memo
       }
 
-      if (memo[memo.length - 1].length + word.length < 20) {
+      if (memo[memo.length - 1].length + word.length < 30) {
         memo[memo.length - 1] += " " + word
       } else {
         memo.push(word)
@@ -48,11 +36,7 @@ const transform = ({ text, path: filePath }) => {
     }, [])
   }
 
-  lines.forEach((line, i) => {
-    ctx.fillText(line, 100, HEIGHT - 50 - (lines.length - i - 1) * 210)
-  })
-
-  const buffer = canvas.toBuffer("image/png")
+  const multilineText = lines.join("\n")
 
   const folderPath = path.dirname(filePath)
 
@@ -60,16 +44,22 @@ const transform = ({ text, path: filePath }) => {
     fs.mkdirSync(folderPath, { recursive: true })
   }
 
-  fs.writeFileSync(filePath, buffer)
+  await exec(`convert -size ${res} xc:${bg} ${tmp}/bg.png`)
+
+  const { err } = await exec(
+    `convert -page +0+0 ${tmp}/bg.png -size ${res} xc:"#00000000" -fill white -pointsize 95 -gravity northwest -annotate +100+160 'Blog Post' -gravity southwest -font ${FONT_PATH} -annotate +100+100 "${multilineText}" -layers merge +repage ${filePath}`
+  )
+
+  if (err) console.error(err)
 }
 
-module.exports.onCreatePage = ({ page, actions }) => {
+module.exports.onCreatePage = async ({ page, actions }) => {
   const { createPage, deletePage } = actions
 
   if (!page.context || !page.context.isBlogPost) return
   if (page.context.seoImage || page.context.cover) return
 
-  transform({
+  await transform({
     text: page.context.title,
     path: path.join("public", page.path, FILE_NAME),
   })
