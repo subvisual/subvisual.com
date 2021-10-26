@@ -45,6 +45,7 @@ const createBlogPostsPages = async ({ createPage, graphql }) => {
           }
           frontmatter {
             path
+            title
           }
         }
       }
@@ -59,7 +60,13 @@ const createBlogPostsPages = async ({ createPage, graphql }) => {
 
     createPage({
       component,
-      context: { cover, seoImage, slug },
+      context: {
+        cover,
+        seoImage,
+        slug,
+        title: frontmatter.title,
+        isBlogPost: true,
+      },
       path: path.posix.join("/blog", slug),
     })
   })

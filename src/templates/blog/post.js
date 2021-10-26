@@ -113,10 +113,11 @@ BlogPostTemplate.propTypes = {
   title: PropTypes.string.isRequired,
 }
 
-const Template = ({ data }) => {
+const Template = ({ data, pageContext }) => {
+  const { seoImage } = pageContext
   const { markdownRemark, coverFile, seoImageFile } = data
   const { fields, frontmatter, html } = markdownRemark
-  const { seoImage, cover, slug } = fields
+  const { cover, slug } = fields
   const { author, date, title, intro, seoDescription } = frontmatter
 
   return (

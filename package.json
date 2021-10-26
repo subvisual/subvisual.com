@@ -89,10 +89,11 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "start": "gatsby develop",
-    "serve": "gatsby serve",
     "lint": "eslint src",
     "lint-styles": "stylelint 'src/**/*.css' 'src/**/*.scss'",
+    "postinstall": "cd plugins/seo-cover/ && yarn install",
+    "serve": "gatsby serve",
+    "start": "gatsby develop",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "repository": {
