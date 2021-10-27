@@ -55,13 +55,6 @@ module.exports = ({ actions }) => {
         bio: String,
         social: Social,
       }
-
-      type VentureYaml implements Node @dontInfer {
-        name: String!,
-        description: String!,
-        image: File! @fileByRelativePath,
-        url: String!
-      }
     `,
   ]
 

@@ -1,9 +1,0 @@
-.description:not(:last-child) {
-  margin-bottom: 20px;
-}
-
-@media (min-width: 768px) {
-  .description:not(:last-child) {
-    margin-bottom: 28px;
-  }
-}
