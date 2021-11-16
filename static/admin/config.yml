@@ -17,7 +17,10 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: 'Path', name: 'path', widget: 'string' }
+      - label: 'Path'
+        name: 'path'
+        widget: 'string'
+        pattern: ['\/?posts\/[\w-_]+\/?$', "Must start with posts/ and cannot end with a space"]
       - { label: 'Title', name: 'title', widget: 'string' }
       - label: 'Author'
         name: 'author'
