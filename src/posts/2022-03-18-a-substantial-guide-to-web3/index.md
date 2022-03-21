@@ -55,17 +55,13 @@ Easy now, choose one link, follow that path and later you can choose another, le
 * [Master Web3](https://www.masterweb3.xyz/) 
 * [Rainbow Knowledge Base](https://learn.rainbow.me/)
 * [CoinGecko Glossary](https://www.coingecko.com/en/glossary) 
-* [Launching Web3UX Panel](https://web3creatives.notion.site/Launching-Web3UX-panel-8b4cc06935e8496794f106b14c6e36de)  \*\*\*\*
+* [Launching Web3UX Panel](https://web3creatives.notion.site/Launching-Web3UX-panel-8b4cc06935e8496794f106b14c6e36de)  
 
 **DAOs**
 This is an amazing way to learn and to become active on a community. Try these:
 
 * [RabbitHole](https://rabbithole.gg/)
-* [Odyssey DAO](https://www.odysseydao.com/)  \*\*\*\*
-
-  - - -
-
-
+* [Odyssey DAO](https://www.odysseydao.com/)  
 
 **Events, Communities & Offline Learning Opportunities**
 Community building is, in fact, quite a big thing in this industry so don’t forget to join events, meetups or hackathons to explore the tech, contribute and meet new people.
@@ -75,18 +71,12 @@ Also in April, we will be in Amsterdam for the <https://devconnect.org/> and we 
 
 If you need a while to get organized, consider joining <https://www.ethlisbon.org/> on the last 2022 quarter.
 
-- - -
-
 **How can I start building?**
 We already mentioned the possibility of cooperating with DAOs, but definitely we suggest that you explore the landscape of Bounties and Grants  at <https://gitcoin.co/> so that you can start your path.
-
-- - -
 
 **Are there only opportunities for developers?**
 Not at all. The more the industry grows the more different roles are needed: Team & Talent management, compliance, operations, marketing, business development, UX design, you name it. However, allow us to expose one critical opportunity that one might not expect: community building is essential for most web3 projects.
 Obviously, there’s a lot to be built by engineers and developers on the backend and frontend but the demand is not exclusive to these skills.
-
-- - -
 
 **What kind of job opportunities can I find in the industry?**
 This space is growing exponentially, reports even struggle to frame the amount of offers web3 companies are launching every month since there’s an absolute boom, an exciting frenzy of products to be built. Let’s sum it up to a generic: it’s a great space to be in, where you’ll find several opportunities that will provide you the context to grow as a professional and raise the standard of your technical capacities.
@@ -112,7 +102,7 @@ So if you, or anyone you know, would like to be a part of this journey alongside
 ## Substantial Mini-Doses
 
 **Blog:** **Key Learnings from building Utrust’s product** 
-\*\*\*\*Do you ever wonder what the people that work on a complex product take from it? What are some of their key learnings and how their experience helped them be better in what they do? [Check out our latest blog post and get those answers.](https://subvisual.com/blog/posts/building-utrust-how-to-scale-a-team-and-product) 
+Do you ever wonder what the people that work on a complex product take from it? What are some of their key learnings and how their experience helped them be better in what they do? [Check out our latest blog post and get those answers.](https://subvisual.com/blog/posts/building-utrust-how-to-scale-a-team-and-product) 
 
 **An incredible initiative for female empowerment**\
 Our friends from Onda did this amazing project and we want to make sure it lives beyond March 8th. [Find here fe](https://www.ondastudio.co/iwd)[mal](https://www.ondastudio.co/iwd)[e empowerment initiatives to support and add the ones that might be missing](https://www.ondastudio.co/iwd).
