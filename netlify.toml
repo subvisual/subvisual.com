@@ -24,3 +24,17 @@ package = "@netlify/plugin-gatsby"
   to = "https://subvisual-redesign.webflow.io/people"
   status = 200
   force = true
+
+[[redirects]]
+  from = "/"
+  to = "https://subvisual-redesign.webflow.io/services"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/smarttalks"
+  to = "https://subvisual.notion.site/Society-of-Mars-Advanced-Royal-Tech-Talks-28cf36c8beac41c9a9b01046f98b7c6c"
+
+[[redirects]]
+  from = "/smartereveryfriday"
+  to = "https://subvisual.notion.site/Smarter-Every-Friday-Conspiracy-b72e3389f87c4bac83b48fac2434c89a"
