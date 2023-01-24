@@ -3,8 +3,8 @@ path: /posts/2022-in-review
 title: 2022 in review
 author: subvisual
 date: 2023-01-17
-cover: fmmuiinxwaivwlu.jpeg
-seoImage: fmmuiinxwaivwlu.jpeg
+cover: blog-wrap-up-2022.png
+seoImage: blog-wrap-up-2022.png
 intro: With the right cocktail of hard work, dedication, talent from the team,
   and a strong focus on delivering, even complicated years like 2022 can be full
   of accomplishments to be proud of. Here’s a little recap of our business
