@@ -51,7 +51,7 @@
     "react-scroll-parallax": "^2.4.0",
     "react-share": "^4.4.0",
     "sass": "^1.43.2",
-    "ua-parser-js": "^0.7.28"
+    "ua-parser-js": "^0.7.33"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.15.8",
