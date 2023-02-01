@@ -75,7 +75,7 @@ A lot of this work was taken over by us in the beginning, which is exactly why w
 
 This includes everything, from normal technical work, the structuring and information retrieval that goes along with this. Roadmapping. Documentation writing. Gabriel even joined Twitter spaces to answer community questions.
 
-![subvisual-blog-post-sandclock-02.png](Blog%20Post%2066539ccfd17340cebc2336ffd71e376e/subvisual-blog-post-sandclock-02.png)
+![](subvisual-blog-post-sandclock-02.png)
 
 ### We ensured quality
 
@@ -105,7 +105,7 @@ Sandclock fully intends to be a multichain project. The team itself still doesn�
 
 Subvisual has coached both the founders and the team to be ready to steer their company through building this revolutionary product as its potential blossoms.
 
-It means helping everyone understand process. How to deal with the team, how to hire, what behaviors to have to ensure the team replicates them. Culturally, founder behavior is key, and we made sure Sandcock’s leadership knew exactly what to do from the very first moment all the way to now.
+It means helping everyone understand process. How to deal with the team, how to hire, what behaviors to have to ensure the team replicates them. Culturally, founder behavior is key, and we made sure Sandclock’s leadership knew exactly what to do from the very first moment all the way to now.
 
 ### Which is coming now
 
