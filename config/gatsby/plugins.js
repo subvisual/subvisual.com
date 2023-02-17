@@ -3,7 +3,7 @@ const normalizePathForRegExp = require("@subvisual/utils/normalizePathForRegExp"
 
 const ROOT = path.resolve(__dirname, "../..")
 const BLOG_POSTS_ABSOLUTE_PATH = path.resolve(ROOT, "src/posts")
-const siteUrl = process.env.URL || 'http://localhost:8000';
+const siteUrl = process.env.URL || "http://localhost:8000"
 const basePath = normalizePathForRegExp(BLOG_POSTS_ABSOLUTE_PATH)
 
 const sassConfig = require("./plugins/sass")(ROOT)
@@ -92,23 +92,6 @@ module.exports = [
       },
     },
   },
-  {
-    resolve: "gatsby-plugin-google-gtag",
-    options: {
-      trackingIds: ["UA-63400449-1"],
-      gtagConfig: {
-        anonymize_ip: true,
-        client_storage: "none",
-        // Set GTag cookies as session cookies, will go away when the current
-        // browser session ends.
-        cookie_expires: 0,
-      },
-      pluginConfig: {
-        head: false,
-        respectDNT: true,
-      },
-    },
-  },
   "gatsby-plugin-twitter",
   "gatsby-plugin-netlify",
   `gatsby-plugin-netlify-cms`,
@@ -141,16 +124,30 @@ module.exports = [
         }
       }
       `,
-      serializeFeed: results => results.data.allMarkdownRemark.nodes.map(({ frontmatter }) => ({
-        id: frontmatter.path,
-        url: siteUrl + path.join('/blog', frontmatter.path),
-        title: frontmatter.title,
-        date: new Date(frontmatter.date).toISOString(),
-        author: frontmatter.author.name
-      })),
+      serializeFeed: (results) =>
+        results.data.allMarkdownRemark.nodes.map(({ frontmatter }) => ({
+          id: frontmatter.path,
+          url: siteUrl + path.join("/blog", frontmatter.path),
+          title: frontmatter.title,
+          date: new Date(frontmatter.date).toISOString(),
+          author: frontmatter.author.name,
+        })),
       feedFilename: "blog/index",
       nodesPerFeedFile: 100,
-    }
+    },
   },
-  `seo-cover`
+  `seo-cover`,
+  {
+    resolve: `gatsby-plugin-goatcounter`,
+    options: {
+      code: "https://subvisual.goatcounter.com/count",
+      exclude: [],
+      pageTransitionDelay: 0,
+      head: false,
+      pixel: true,
+      allowLocal: false,
+      referrer: true,
+      urlCleanup: true,
+    },
+  },
 ]
