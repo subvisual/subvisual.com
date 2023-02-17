@@ -34,7 +34,7 @@ export default function HTML({
           data-goatcounter="https://subvisual.goatcounter.com/count"
           async
           src="//gc.zgo.at/count.js"
-        ></script>
+        />
       </body>
     </html>
   )
