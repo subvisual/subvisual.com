@@ -11,7 +11,7 @@ import * as styles from "./author.module.scss"
 export const query = graphql`
   query ($authorKey: String!, $blogPostsPathRegex: String!) {
     allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
+      sort: { frontmatter: { date: DESC } }
       filter: {
         fileAbsolutePath: { regex: $blogPostsPathRegex }
         frontmatter: { author: { key: { eq: $authorKey } } }
