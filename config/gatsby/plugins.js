@@ -137,17 +137,4 @@ module.exports = [
     },
   },
   `seo-cover`,
-  {
-    resolve: `gatsby-plugin-goatcounter`,
-    options: {
-      code: "https://subvisual.goatcounter.com/count",
-      exclude: [],
-      pageTransitionDelay: 0,
-      head: false,
-      pixel: true,
-      allowLocal: false,
-      referrer: true,
-      urlCleanup: true,
-    },
-  },
 ]

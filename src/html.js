@@ -30,6 +30,11 @@ export default function HTML({
           dangerouslySetInnerHTML={{ __html: body }}
         />
         {postBodyComponents}
+        <script
+          data-goatcounter="https://subvisual.goatcounter.com/count"
+          async
+          src="//gc.zgo.at/count.js"
+        ></script>
       </body>
     </html>
   )
