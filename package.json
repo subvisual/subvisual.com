@@ -4,6 +4,15 @@
   "description": "Subvisual's blog",
   "version": "0.1.0",
   "author": "Subvisual Team <contact@subvisual.co>",
+  "scripts": {
+    "build": "gatsby build",
+    "lint": "eslint src",
+    "lint-styles": "stylelint 'src/**/*.css' 'src/**/*.scss'",
+    "postinstall": "cd plugins/seo-cover/ && yarn install",
+    "serve": "gatsby serve",
+    "start": "gatsby develop",
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+  },
   "dependencies": {
     "@babel/core": "^7.15.8",
     "@subvisual/utils": "0.1.0",
@@ -68,7 +77,6 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.26.1",
     "eslint-plugin-react-hooks": "^4.2",
-    "gatsby-plugin-goatcounter": "^0.4.0",
     "prettier": "^2.4.1",
     "stylelint": "^13.13.1",
     "stylelint-config-prettier": "^8.0.1",
@@ -81,15 +89,6 @@
     "gatsby"
   ],
   "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "lint": "eslint src",
-    "lint-styles": "stylelint 'src/**/*.css' 'src/**/*.scss'",
-    "postinstall": "cd plugins/seo-cover/ && yarn install",
-    "serve": "gatsby serve",
-    "start": "gatsby develop",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/gatsbyjs/gatsby-starter-default"
