@@ -33,7 +33,7 @@ const query = graphql`
   }
 `
 
-export default ({ align, geoUrl, image, mapsUrl, name }) => {
+const Location = ({ align, geoUrl, image, mapsUrl, name }) => {
   const data = useStaticQuery(query)
 
   return (
@@ -66,22 +66,9 @@ export default ({ align, geoUrl, image, mapsUrl, name }) => {
 Location.propTypes = {
   align: PropTypes.string.isRequired,
   geoUrl: PropTypes.string.isRequired,
-  image: PropTypes.object.isRequired,
+  image: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   mapsUrl: PropTypes.string.isRequired,
 }
 
-// export default ({ align, geoUrl, image, mapsUrl, name }) => (
-//   <StaticQuery
-//     query={query}
-//     render={(data) => (
-//       <Location
-//         align={align}
-//         geoUrl={geoUrl}
-//         image={data[image]}
-//         mapsUrl={mapsUrl}
-//         name={name}
-//       />
-//     )}
-//   />
-// )
+export default Location
