@@ -12,9 +12,10 @@ it that much faster and painless."
 
 I have previously written about a [tech stack I've been feeling particularly
 productive with](https://subvisual.com/blog/posts/building-prototypes-with-liveview),
-which includes Phoenix LiveViews and Tailwind. As with any tech stack there some
-details on how to put all the parts together that are good to put in writing and
-share, in the hope it makes using it that much faster and painless.
+which includes [Phoenix](https://www.phoenixframework.org/) LiveViews and [Tailwind](https://tailwindcss.com/).
+As with any tech stack there some details on how to put all the parts together
+that are good to put in writing and share, in the hope it makes using it that
+much faster and painless.
 
 ## The Phoenix App
 
@@ -28,7 +29,8 @@ which comes with LiveView by default.
 
 ### Surface
 
-In my other article, I also mentioned Surface as a library that plays well with
+[In my other article](https://subvisual.com/blog/posts/building-prototypes-with-liveview), I
+also mentioned [Surface](https://surface-ui.org/) as a library that plays well with
 LiveView, we can install it pretty easily, by adding it to the deps in
 `mix.exs`:
 
@@ -276,6 +278,8 @@ Next thing is adding a switch to change the theme, which can be done like this:
 All those classes create a custom toggle, which can be copy and pasted anywhere
 and still work, which is pretty neat.
 
+![normal version of the app](subvisual-blog-post-tailwind-01.png)
+
 ## Handling events
 
 The next and final step for us, is to handle the event that happens when we
@@ -359,6 +363,8 @@ And then we update the  template, since the view can stay the same:
 Note the `dark:` variant to some of the utility classes. That means that they
 only are in effect when there is a `dark` class somewhere above them in the HTML
 tree.
+
+![dark mode version of the app](subvisual-blog-post-tailwind-02.png)
 
 ## Conclusion
 
