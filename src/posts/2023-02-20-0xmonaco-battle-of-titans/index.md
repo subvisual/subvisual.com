@@ -117,7 +117,7 @@ Here's the final Elo scores after all the test races:
 
 While running these simulations of all the permutations in foundry tests worked for a low number of strategies, we realised we would run out of gas with a bigger number of strategies. Furthermore, the noGasMetering modifier and vm.pauseGasMetering() parameters weren’t having any effect.
 
-At this point, we realised we had only one option: we decided to kill a fly with a cannon. We made a custom test runner using a foundry as a library. There are examples of a custom test runner in the library found here: [polytope-labs/solidity-merkle-trees](https://github.com/polytope-labs/solidity-merkle-trees/blob/main/tests/src/forge.rs).
+At this point, we realised we had only one option: we decided to kill a fly with a cannon. We made a custom test runner using foundry as a library. There are examples of a custom test runner in the library found here: [polytope-labs/solidity-merkle-trees](https://github.com/polytope-labs/solidity-merkle-trees/blob/main/tests/src/forge.rs).
 
 We started hacking, implemented a git extractor of all the car versions that we had created until this point and ran all the possible permutations of these cars on a powerful server.
 After that, we did the whole python notebook analysis again and chose our champion for the race.
