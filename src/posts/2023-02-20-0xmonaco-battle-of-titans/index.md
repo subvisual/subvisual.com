@@ -26,7 +26,7 @@ On January 5th, we took notice of MatchboxDAO’s event, [0xMonaco][0xmonaco].
 
 0xMonaco is a pvp racing game, originally designed by Paradigm for their annual CTF contest. The event is a Mario Kart-inspired racing game, where cars are controlled by a smart contract written by each competing team.
 
-The main mechanics are built around resource management, since each car needs to continuously make decision about resources to purchase (throw shells at other players, or even speed itself to advance in the race). Resource costs are controlled by a [GDA (gradual dutch auction)][gda], with prices floating up/down exponentially based on short-term demand.
+The main mechanics are built around resource management, since each car needs to continuously make decisions about resources to purchase (throw shells at other players, or even speed itself to advance in the race). Resource costs are controlled by a [GDA (gradual dutch auction)][gda], with prices floating up/down exponentially based on short-term demand.
 
 The MatchboxDAO event introduced some variations, such as bananas to attack cars behind us, and shields to protect from incoming shells. It also changed the format of the event itself, with two different days of competition, and groups and elimination stages along the way.
 How could we possibly not want in?
