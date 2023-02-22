@@ -1,16 +1,18 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import classNames from "classnames"
 
 import * as styles from "./cover.module.scss"
 
 const renderFluidCover = ({ className, coverFile }) => {
-  const {
-    childImageSharp: { fluid },
-  } = coverFile
-
-  return <Img {...{ className, fluid }} />
+  return (
+    <GatsbyImage
+      alt=""
+      image={coverFile.childImageSharp.gatsbyImageData}
+      className={className}
+    />
+  )
 }
 
 const BlogPostHeaderCover = ({ className, cover, coverFile }) => {

@@ -16,42 +16,40 @@ import usePathToURL from "~/src/utils/usePathToURL"
 import "~/src/common/base.scss"
 import * as styles from "./post.module.scss"
 
-export const query = graphql`
-  query ($cover: String, $seoImage: String, $slug: String!) {
-    markdownRemark(frontmatter: { path: { eq: $slug } }) {
-      fields {
-        cover
-        seoImage
-        slug
-      }
-      frontmatter {
-        author {
-          key
-          name
-        }
-        date
-        intro
-        seoDescription
-        title
-      }
-      html
+export const query = graphql`query ($cover: String, $seoImage: String, $slug: String!) {
+  markdownRemark(frontmatter: {path: {eq: $slug}}) {
+    fields {
+      cover
+      seoImage
+      slug
     }
-    coverFile: file(absolutePath: { eq: $cover }) {
-      childImageSharp {
-        fluid(grayscale: true, maxWidth: 980) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
+    frontmatter {
+      author {
+        key
+        name
       }
+      date
+      intro
+      seoDescription
+      title
     }
-    seoImageFile: file(absolutePath: { eq: $seoImage }) {
-      childImageSharp {
-        fixed(width: 2160, height: 1080) {
-          ...GatsbyImageSharpFixed_withWebp_noBase64
-        }
-      }
+    html
+  }
+  coverFile: file(absolutePath: {eq: $cover}) {
+    childImageSharp {
+      gatsbyImageData(
+        width: 980
+        transformOptions: {grayscale: true}
+        layout: CONSTRAINED
+      )
     }
   }
-`
+  seoImageFile: file(absolutePath: {eq: $seoImage}) {
+    childImageSharp {
+      gatsbyImageData(width: 2160, height: 1080, placeholder: NONE, layout: FIXED)
+    }
+  }
+}`
 
 const resolveImage = ({ file, src }) =>
   _get(file, "childImageSharp.fixed.src", src)

@@ -8,5 +8,5 @@ export interface Props {
 }
 
 export interface Component {
-  (readonly props: Props): JSX.Element
+  (props: Props): JSX.Element
 }

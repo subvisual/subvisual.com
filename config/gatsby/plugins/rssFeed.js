@@ -6,6 +6,7 @@ module.exports = () => [
         {
           match: "^/blog/",
           output: "/blog/rss.xml",
+          title: "Subvisual",
           query: `
             {
               allMarkdownRemark(

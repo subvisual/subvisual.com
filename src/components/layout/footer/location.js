@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { graphql, useStaticQuery } from "gatsby"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 import Link from "~/src/components/link"
 import Text from "~/src/components/text"
@@ -9,66 +9,66 @@ import Text from "~/src/components/text"
 import * as styles from "./location.module.css"
 
 const query = graphql`
-  query {
+  {
     boston: file(relativePath: { regex: "/boston.jpg/" }) {
       childImageSharp {
-        fluid(maxWidth: 725, quality: 85) {
-          ...GatsbyImageSharpFluid_withWebp_noBase64
-        }
+        gatsbyImageData(
+          width: 725
+          quality: 85
+          placeholder: NONE
+          layout: CONSTRAINED
+        )
       }
     }
     braga: file(relativePath: { regex: "/braga.jpg/" }) {
       childImageSharp {
-        fluid(maxWidth: 725, quality: 85) {
-          ...GatsbyImageSharpFluid_withWebp_noBase64
-        }
+        gatsbyImageData(
+          width: 725
+          quality: 85
+          placeholder: NONE
+          layout: CONSTRAINED
+        )
       }
     }
   }
 `
 
-const Location = ({ align, geoUrl, image, mapsUrl, name }) => (
-  <address>
-    <div className={styles.image}>
-      <Img fluid={image.childImageSharp.fluid} />
-    </div>
-    <div className={[styles.info, styles[align]].join(" ")}>
-      <span className={styles.name}>
-        <Text size="small">{name}</Text>
-      </span>
-      <span className={styles.mobile}>
-        <Link to={geoUrl} size="small" blank faded>
-          Directions
-        </Link>
-      </span>
-      <span className={styles.desktop}>
-        <Link to={mapsUrl} size="small" blank faded>
-          Directions
-        </Link>
-      </span>
-    </div>
-  </address>
-)
+const Location = ({ align, geoUrl, image, mapsUrl, name }) => {
+  const data = useStaticQuery(query)
+
+  return (
+    <address>
+      <div className={styles.image}>
+        <GatsbyImage
+          alt=""
+          image={data[image].childImageSharp.gatsbyImageData}
+        />
+      </div>
+      <div className={[styles.info, styles[align]].join(" ")}>
+        <span className={styles.name}>
+          <Text size="small">{name}</Text>
+        </span>
+        <span className={styles.mobile}>
+          <Link to={geoUrl} size="small" blank faded>
+            Directions
+          </Link>
+        </span>
+        <span className={styles.desktop}>
+          <Link to={mapsUrl} size="small" blank faded>
+            Directions
+          </Link>
+        </span>
+      </div>
+    </address>
+  )
+}
 
 Location.propTypes = {
   align: PropTypes.string.isRequired,
   geoUrl: PropTypes.string.isRequired,
-  image: PropTypes.object.isRequired,
+  image: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   mapsUrl: PropTypes.string.isRequired,
 }
 
-export default ({ align, geoUrl, image, mapsUrl, name }) => (
-  <StaticQuery
-    query={query}
-    render={(data) => (
-      <Location
-        align={align}
-        geoUrl={geoUrl}
-        image={data[image]}
-        mapsUrl={mapsUrl}
-        name={name}
-      />
-    )}
-  />
-)
+export default Location
