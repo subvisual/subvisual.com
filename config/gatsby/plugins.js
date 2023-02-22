@@ -12,6 +12,7 @@ const manifestConfig = require("./plugins/manifest")(ROOT)
 
 module.exports = [
   ...sassConfig,
+  "gatsby-plugin-image",
   "gatsby-plugin-react-helmet",
   "gatsby-transformer-yaml",
   {

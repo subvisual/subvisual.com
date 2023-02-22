@@ -15,7 +15,7 @@ const createBlogAuthorsPages = async ({ createPage, graphql }) => {
       allMarkdownRemark(
         filter: { fileAbsolutePath: { regex: "/^${basePath}/" } }
       ) {
-        distinct(field: frontmatter___author___key)
+        distinct(field: {frontmatter: {author: {key: SELECT}}})
       }
     }
   `
