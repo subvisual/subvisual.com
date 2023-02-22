@@ -348,7 +348,7 @@ module.exports = {
 And then we update the  template, since the view can stay the same:
 
 ```html
-<div class={if @darkmode, do: "dark", else: ""}>
+<div class={"dark": @darkmode}>
   <div class="flex flex-col items-center justify-center bg-gray-100 dark:bg-slate-800 h-screen">
     <h1 class="text-7xl dark:text-white">Hello World!</h1>
 
@@ -362,7 +362,7 @@ And then we update the  template, since the view can stay the same:
 
 Note the `dark:` variant to some of the utility classes. That means that they
 only are in effect when there is a `dark` class somewhere above them in the HTML
-tree.
+tree. Also, the Surface way of handling booleans that update classes.
 
 ![dark mode version of the app](subvisual-blog-post-tailwind-02.png)
 
