@@ -41,7 +41,7 @@ Of course, it was also interesting to read about the exploit. It primed our mind
 
 Coincidentally, just a couple of days prior, I happened upon the key to our car’s strategy, in the form of an old video:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/fAADWfJO2qM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lfQMJtilOGg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 Steven Bradbury won one of the luckiest Olympic medalists we’ve ever seen. His strategy relied heavily on chance, but applied to our problem, it could actually prove to be a much less risky fit.
 
