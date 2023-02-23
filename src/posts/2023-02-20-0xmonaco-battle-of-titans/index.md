@@ -2,7 +2,7 @@
 path: /posts/0xmonaco-battle-of-titans
 title: "0xMonaco - Battle of Titans"
 author: miguel-palhas
-date: 2023-02-20
+date: 2023-02-23
 cover:
 seoImage:
 intro: ""
