@@ -4,7 +4,7 @@ title: "0xMonaco - Battle of Titans"
 author: miguel-palhas
 date: 2023-02-23
 cover:
-seoImage:
+seoImage: ./cover.jpg
 intro: "On January 5th, we took notice of MatchboxDAO’s event, 0xMonaco."
 ---
 
@@ -22,8 +22,6 @@ intro: "On January 5th, we took notice of MatchboxDAO’s event, 0xMonaco."
 
 On January 5th, we took notice of MatchboxDAO’s event, [0xMonaco][0xmonaco].
 
-![](car.gif)
-
 0xMonaco is a pvp racing game, originally designed by Paradigm for their annual CTF contest. The event is a Mario Kart-inspired racing game, where cars are controlled by a smart contract written by each competing team.
 
 The main mechanics are built around resource management, since each car needs to continuously make decisions about resources to purchase (throw shells at other players, or even speed itself to advance in the race). Resource costs are controlled by a [GDA (gradual dutch auction)][gda], with prices floating up/down exponentially based on short-term demand.
@@ -33,15 +31,15 @@ How could we possibly not want in?
 
 So me and [Resende][resende] went at it.
 
+![](car.gif)
+
 ## Learning with speed skating
 
 We went through [all the write-ups][writeups-thread] from the previous edition. [Brock][brock]’s writeup was particularly insightful, as it explained a lot of ideas, some of which worked, some of which didn’t. A lot of initial code was heavily inspired by ideas that came after reading this.
 
 Of course, it was also interesting to read about the exploit. It primed our minds to be just a tad more scheming. We did have a couple of ideas, but sadly not much time to actually pursue them. In retrospect, we should have [thought about it some more][zellic].
 
-Coincidentally, just a couple of days prior, I happened upon the key to our car’s strategy, in the form of an old video:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/tYUjmEH9NNk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+Coincidentally, just a couple of days prior, I happened upon the key to our car’s strategy, [in the form of an old video](https://www.youtube.com/watch?v=tYUjmEH9NNk).
 
 Steven Bradbury won one of the luckiest Olympic medalists we’ve ever seen. His strategy relied heavily on chance, but applied to our problem, it could actually prove to be a much less risky fit.
 
