@@ -1,9 +1,11 @@
 backend:
-  name: git-gateway
+  # name: git-gateway
+  name: test-repo
   branch: master
 
 media_folder: static/img
 public_folder: /img
+publish_mode: editorial_workflow
 
 collections:
   - name: 'post'
@@ -14,6 +16,7 @@ collections:
     media_folder: ''
     public_folder: ''
     path: '{{year}}-{{month}}-{{day}}-{{title}}/{{slug}}'
+    preview_path: blog/posts/{{path}}
     editor:
       preview: false
     fields:
