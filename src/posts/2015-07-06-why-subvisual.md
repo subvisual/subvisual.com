@@ -1,5 +1,5 @@
 ---
-path: /posts/59-why-subvisual/
+path: /59-why-subvisual/
 title: "Why Subvisual?"
 author: joao-ferreira
 date: 2015-07-06

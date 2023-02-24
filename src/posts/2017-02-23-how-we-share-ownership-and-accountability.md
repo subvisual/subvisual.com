@@ -1,5 +1,5 @@
 ---
-path: /posts/123-how-we-share-ownership-and-accountability/
+path: /123-how-we-share-ownership-and-accountability/
 title: "How We Share Ownership and Accountability"
 author: roberto-machado
 date: 2017-02-23

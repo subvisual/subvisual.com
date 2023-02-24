@@ -1,5 +1,5 @@
 ---
-path: /posts/continuous-stuff-with-github-actions
+path: /continuous-stuff-with-github-actions
 title: "Continuous Stuff with Github Actions"
 author: miguel-palhas
 date: 2020-04-22

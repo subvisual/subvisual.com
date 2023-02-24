@@ -1,5 +1,5 @@
 ---
-path: /posts/145-upsert-statements-with-ecto/
+path: /145-upsert-statements-with-ecto/
 title: "Upsert statements with Ecto"
 author: luis-zamith
 date: 2020-01-15

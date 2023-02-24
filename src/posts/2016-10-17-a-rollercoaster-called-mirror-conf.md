@@ -1,5 +1,5 @@
 ---
-path: /posts/113-a-rollercoaster-called-mirror-conf/
+path: /113-a-rollercoaster-called-mirror-conf/
 title: "A rollercoaster called Mirror Conf"
 author: joao-ferreira
 date: 2016-10-17

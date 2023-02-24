@@ -1,5 +1,5 @@
 ---
-path: /posts/unsucking-your-project-onboarding
+path: /unsucking-your-project-onboarding
 title: Unsucking your project onboarding
 date: 2020-08-21
 author: fernando-mendes

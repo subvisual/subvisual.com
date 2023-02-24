@@ -1,5 +1,5 @@
 ---
-path: /posts/132-design-sprints-and-the-academia/
+path: /132-design-sprints-and-the-academia/
 title: "Design Sprints and the Academia"
 author: fernando-mendes
 date: 2017-04-24

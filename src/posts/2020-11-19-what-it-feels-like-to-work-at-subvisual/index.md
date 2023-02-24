@@ -1,5 +1,5 @@
 ---
-path: /posts/what-it-feels-like-to-work-at-subvisual/
+path: /what-it-feels-like-to-work-at-subvisual/
 title: What it feels like to work at Subvisual
 author: laura-esteves
 date: 2020-11-19

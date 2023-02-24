@@ -1,5 +1,5 @@
 ---
-path: /posts/a-substantial-guide-to-web3
+path: /a-substantial-guide-to-web3
 title: A Substantial Guide to Web3
 author: subvisual
 date: 2022-03-18

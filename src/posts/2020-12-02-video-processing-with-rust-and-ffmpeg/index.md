@@ -1,5 +1,5 @@
 ---
-path: /posts/real-time-video-processing-with-rust-ffmpeg-opencv/
+path: /real-time-video-processing-with-rust-ffmpeg-opencv/
 title: Real-time video processing with Rust, FFmpeg and OpenCV
 author: miguel-palhas
 date: 2020-12-02

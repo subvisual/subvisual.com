@@ -1,5 +1,5 @@
 ---
-path: /posts/110-subvisual-weekly-10/
+path: /110-subvisual-weekly-10/
 title: "Subvisual Weekly #10"
 author: summer-campers
 date: 2016-09-29

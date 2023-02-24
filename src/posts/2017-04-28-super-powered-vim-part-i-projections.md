@@ -1,5 +1,5 @@
 ---
-path: /posts/133-super-powered-vim-part-i-projections/
+path: /133-super-powered-vim-part-i-projections/
 title: "Super-powered Vim, part I: Projections"
 author: miguel-palhas
 date: 2017-04-28

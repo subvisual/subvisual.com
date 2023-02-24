@@ -1,5 +1,5 @@
 ---
-path: /posts/4-months-as-a-ginetti/
+path: /4-months-as-a-ginetti/
 title: "4 Months as a Ginetti"
 author: joao-ferreira
 date: 2020-05-29

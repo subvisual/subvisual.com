@@ -1,5 +1,5 @@
 ---
-path: /posts/jobs-and-timers-in-neovim-how-to-watch-your-builds-fail/
+path: /jobs-and-timers-in-neovim-how-to-watch-your-builds-fail/
 title: "Jobs and Timers in neovim: How to watch your builds fail"
 author: fernando-mendes
 date: 2019-06-07

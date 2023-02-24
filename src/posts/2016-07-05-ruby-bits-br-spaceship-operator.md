@@ -1,5 +1,5 @@
 ---
-path: /posts/90-ruby-bits-br-spaceship-operator/
+path: /90-ruby-bits-br-spaceship-operator/
 title: "Ruby Bits:  Spaceship Operator"
 author: luis-zamith
 date: 2016-07-05

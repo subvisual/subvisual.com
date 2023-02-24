@@ -1,5 +1,5 @@
 ---
-path: /posts/139-how-to-program-vim-using-ruby/
+path: /139-how-to-program-vim-using-ruby/
 title: "How to program Vim using Ruby"
 author: gabriel-poca
 date: 2017-09-04

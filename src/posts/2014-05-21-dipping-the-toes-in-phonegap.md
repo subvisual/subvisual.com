@@ -1,5 +1,5 @@
 ---
-path: /posts/35-dipping-the-toes-in-phonegap/
+path: /35-dipping-the-toes-in-phonegap/
 title: "Dipping the toes in Phonegap"
 author: gabriel-poca
 date: 2014-05-21

@@ -1,5 +1,5 @@
 ---
-path: /posts/subvisual-live-talks-one-month-in/
+path: /subvisual-live-talks-one-month-in/
 title: "Subvisual Live Talks: One Month In"
 author: fernando-mendes
 date: 2020-05-21

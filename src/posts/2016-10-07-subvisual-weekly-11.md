@@ -1,5 +1,5 @@
 ---
-path: /posts/112-subvisual-weekly-11/
+path: /112-subvisual-weekly-11/
 title: "Subvisual Weekly #11"
 author: gabriel-poca
 date: 2016-10-07

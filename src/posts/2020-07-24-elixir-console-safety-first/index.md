@@ -1,5 +1,5 @@
 ---
-path: /posts/elixir-console-safety-first
+path: /elixir-console-safety-first
 title: "Elixir console: Safety first"
 author: miguel-palhas
 date: 2020-07-23

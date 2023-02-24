@@ -1,5 +1,5 @@
 ---
-path: /posts/136-how-to-run-usability-tests-with-small-teams-crediflux/
+path: /136-how-to-run-usability-tests-with-small-teams-crediflux/
 title: "How to run Usability Tests with small teams: Crediflux"
 author: joao-ferreira
 date: 2017-05-04

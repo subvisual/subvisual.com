@@ -1,5 +1,5 @@
 ---
-path: /posts/74-ruby-bits-br-each-with-object/
+path: /74-ruby-bits-br-each-with-object/
 title: "Ruby Bits:  Each with object"
 author: luis-zamith
 date: 2016-03-15

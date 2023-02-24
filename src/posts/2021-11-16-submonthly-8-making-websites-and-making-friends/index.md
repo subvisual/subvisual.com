@@ -1,5 +1,5 @@
 ---
-path: "/posts/submonthly-8-making-websites-and-making-friends"
+path: /submonthly-8-making-websites-and-making-friends/
 title: "SubMonthly #8 - Making Websites and Making Friends"
 author: subvisual
 date: 2021-11-16

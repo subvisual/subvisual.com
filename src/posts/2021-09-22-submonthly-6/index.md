@@ -1,5 +1,5 @@
 ---
-path: /posts/submonthly-6-summer-camp
+path: /submonthly-6-summer-camp
 title: "SubMonthly #6 - A Tale of Subvisual's Summer Camp"
 author: subvisual
 date: 2021-09-22

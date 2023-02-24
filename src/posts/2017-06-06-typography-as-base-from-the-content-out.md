@@ -1,5 +1,5 @@
 ---
-path: /posts/138-typography-as-base-from-the-content-out/
+path: /138-typography-as-base-from-the-content-out/
 title: "Typography as Base: From the Content Out"
 author: francisco-baila
 date: 2017-06-06

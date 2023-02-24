@@ -1,5 +1,5 @@
 ---
-path: /posts/rebuilding-subvisual-com
+path: /rebuilding-subvisual-com
 title: Rebuilding subvisual.com
 author: pedro-costa
 date: 2020-06-25

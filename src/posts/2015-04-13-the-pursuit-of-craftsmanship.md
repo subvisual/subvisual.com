@@ -1,5 +1,5 @@
 ---
-path: /posts/54-the-pursuit-of-craftsmanship/
+path: /54-the-pursuit-of-craftsmanship/
 title: "The Pursuit of Craftsmanship "
 author: francisco-baila
 date: 2015-04-13

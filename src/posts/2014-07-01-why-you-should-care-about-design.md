@@ -1,5 +1,5 @@
 ---
-path: /posts/41-why-you-should-care-about-design/
+path: /41-why-you-should-care-about-design/
 title: "Why you should care about Design"
 author: joao-ferreira
 date: 2014-07-01

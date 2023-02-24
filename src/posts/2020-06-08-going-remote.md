@@ -1,5 +1,5 @@
 ---
-path: /posts/going-remote/
+path: /going-remote/
 title: "Going Remote: The Parts No One Tells You"
 author: fernando-mendes
 date: 2020-06-22

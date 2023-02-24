@@ -1,5 +1,5 @@
 ---
-path: /posts/78-rubyconf-portugal-br-is-back/
+path: /78-rubyconf-portugal-br-is-back/
 title: "RubyConf Portugal  is back!"
 author: roberto-machado
 date: 2016-04-08

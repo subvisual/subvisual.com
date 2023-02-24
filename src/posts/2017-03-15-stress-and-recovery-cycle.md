@@ -1,5 +1,5 @@
 ---
-path: /posts/127-stress-and-recovery-cycle/
+path: /127-stress-and-recovery-cycle/
 title: "Stress and Recovery Cycle"
 author: roberto-machado
 date: 2017-03-15

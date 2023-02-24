@@ -1,5 +1,5 @@
 ---
-path: /posts/submonthy-1-2020-its-a-wrap
+path: /submonthy-1-2020-its-a-wrap
 title: "SubMonthly #1 - 2020: it's a wrap!"
 author: subvisual
 date: 2020-12-18

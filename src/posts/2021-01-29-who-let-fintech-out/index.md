@@ -1,5 +1,5 @@
 ---
-path: /posts/who-let-fintech-out
+path: /who-let-fintech-out
 title: Who let fintech out?
 author: jose-gomes
 date: 2021-01-29

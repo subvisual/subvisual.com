@@ -1,5 +1,5 @@
 ---
-path: /posts/virtualchemy-conf-may-28-2021
+path: /virtualchemy-conf-may-28-2021
 title: "VirtuAlchemy Conf: May 28 2021"
 author: fernando-mendes
 date: 2021-03-24

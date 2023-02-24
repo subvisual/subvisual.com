@@ -1,5 +1,5 @@
 ---
-path: /posts/104-subvisual-weekly-7/
+path: /104-subvisual-weekly-7/
 title: "Subvisual Weekly #7"
 author: fernando-mendes
 date: 2016-09-05

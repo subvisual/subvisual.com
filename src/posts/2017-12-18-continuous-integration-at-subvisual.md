@@ -1,5 +1,5 @@
 ---
-path: /posts/140-continuous-integration-at-subvisual/
+path: /140-continuous-integration-at-subvisual/
 title: "Continuous Integration at Subvisual"
 author: miguel-palhas
 date: 2017-12-18

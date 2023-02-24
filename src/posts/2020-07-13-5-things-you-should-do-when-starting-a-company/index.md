@@ -1,5 +1,5 @@
 ---
-path: /posts/2020-07-13-5-things-you-should-do-when-starting-a-company
+path: /2020-07-13-5-things-you-should-do-when-starting-a-company
 title: 5 things you should do when starting a company
 author: roberto-machado
 date: 2020-07-13

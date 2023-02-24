@@ -1,5 +1,5 @@
 ---
-path: /posts/11-open-your-html-css-to-developers/
+path: /11-open-your-html-css-to-developers/
 title: "Open your HTML/CSS to Developers"
 author: joao-ferreira
 date: 2013-10-23

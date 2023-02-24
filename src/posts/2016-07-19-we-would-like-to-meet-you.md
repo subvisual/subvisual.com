@@ -1,5 +1,5 @@
 ---
-path: /posts/93-we-would-like-to-meet-you/
+path: /93-we-would-like-to-meet-you/
 title: "We would like to meet you"
 author: luis-zamith
 date: 2016-07-19

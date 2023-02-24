@@ -1,5 +1,5 @@
 ---
-path: /posts/submonthy-3-klp-on-working-remote
+path: /submonthy-3-klp-on-working-remote
 title: "SubMonthly #3 - Key Learnings on Remote Work"
 author: subvisual
 date: 2021-03-18

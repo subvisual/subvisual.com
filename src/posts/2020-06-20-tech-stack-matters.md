@@ -1,5 +1,5 @@
 ---
-path: /posts/your-tech-stack-matters/
+path: /your-tech-stack-matters/
 title: "Your tech stack matters"
 author: luis-zamith
 date: 2020-07-03

@@ -1,5 +1,5 @@
 ---
-path: /posts/102-the-pain-of-testing-with-3rd-party-integrations/
+path: /102-the-pain-of-testing-with-3rd-party-integrations/
 title: "The pain of testing with 3rd party integrations"
 author: miguel-palhas
 date: 2017-03-07

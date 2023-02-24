@@ -1,5 +1,5 @@
 ---
-path: /posts/helping-sandclock-build
+path: /helping-sandclock-build
 title: Helping Sandclock Build
 author: subvisual
 date: 2023-01-17

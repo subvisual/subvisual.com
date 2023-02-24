@@ -1,5 +1,5 @@
 ---
-path: /posts/67-newsletter-as-a-team-building-exercise/
+path: /67-newsletter-as-a-team-building-exercise/
 title: "Newsletter as a team building exercise"
 author: laura-esteves
 date: 2016-01-06

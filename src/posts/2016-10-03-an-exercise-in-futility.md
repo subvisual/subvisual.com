@@ -1,5 +1,5 @@
 ---
-path: /posts/111-an-exercise-in-futility/
+path: /111-an-exercise-in-futility/
 title: "An exercise in futility"
 author: miguel-palhas
 date: 2016-10-03

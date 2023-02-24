@@ -1,5 +1,5 @@
 ---
-path: /posts/39-tutorial-html-audio-capture-streaming-to-node-js-no-browser-extensions/
+path: /39-tutorial-html-audio-capture-streaming-to-node-js-no-browser-extensions/
 title: "Tutorial: HTML Audio Capture streaming to Node.js (no browser extensions)"
 author: gabriel-poca
 date: 2014-06-24

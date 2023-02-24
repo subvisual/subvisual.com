@@ -1,5 +1,5 @@
 ---
-path: /posts/30-open-source-fridays-2nd-edition/
+path: /30-open-source-fridays-2nd-edition/
 title: "Open Source Fridays - 2nd Edition"
 author: luis-zamith
 date: 2014-03-24

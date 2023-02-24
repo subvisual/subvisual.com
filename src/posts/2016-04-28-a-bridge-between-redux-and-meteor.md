@@ -1,5 +1,5 @@
 ---
-path: /posts/79-a-bridge-between-redux-and-meteor/
+path: /79-a-bridge-between-redux-and-meteor/
 title: "A bridge between Redux and Meteor"
 author: gabriel-poca
 date: 2016-04-28

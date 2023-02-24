@@ -1,5 +1,5 @@
 ---
-path: /posts/announcing-still
+path: /announcing-still
 title: "Still building static websites in Elixir"
 author: gabriel-poca
 seoImage: ./seo.jpeg
