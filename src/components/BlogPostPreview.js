@@ -1,5 +1,5 @@
 import { useState } from "react"
-import unified from "unified"
+import { unified } from "unified"
 import remarkParse from "remark-parse"
 import remarkHtml from "remark-html"
 import { useEffect } from "react"
@@ -20,12 +20,16 @@ const BlogPostPreview = (props) => {
 
   useEffect(() => {
     ;(async () => {
-      const { contents } = await unified()
-        .use(remarkParse)
-        .use(remarkHtml)
-        .process(md)
+      try {
+        const { value } = await unified()
+          .use(remarkParse)
+          .use(remarkHtml)
+          .process(md)
 
-      setHTML(contents)
+        setHTML(value)
+      } catch (e) {
+        console.error(e)
+      }
     })()
   }, [md])
 
