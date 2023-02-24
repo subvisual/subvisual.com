@@ -8,16 +8,17 @@ seoImage: meta.jpg
 intro: "So you’re interested in web3, but what could you be doing as a developer
   to get yourself further emerged in these technologies? "
 ---
-So you’re interested in web3, but what could you be doing as a developer to get yourself further emerged in these technologies? 
+
+So you’re interested in web3, but what could you be doing as a developer to get yourself further emerged in these technologies?
 We’ve been gathering a lot of information from people in the industry as well as common questions people have on how to start in the web3 space. Here’s how we address these common questions:
 
-* **Why web3?**
-* **Is it too late to join?**
-* **Does moving into web3 mean a career shift?**
-* **How can I learn the essentials to work on this industry?**
-* **How can I start building?**
-* **Are there only opportunities for developers?**
-* **What kind of job opportunities can I find in the industry?**
+- **Why web3?**
+- **Is it too late to join?**
+- **Does moving into web3 mean a career shift?**
+- **How can I learn the essentials to work on this industry?**
+- **How can I start building?**
+- **Are there only opportunities for developers?**
+- **What kind of job opportunities can I find in the industry?**
 
 **Why web3?**
 If you’re a problem solver, a builder, someone that wants to help push the web forward then, most likely, you’ll want to consider work on web3.
@@ -39,7 +40,7 @@ To start learning about web3 you might want to consider: books & videos, knowled
 [btw. stay tuned we have some big news about this. We’ll let you know on April, 5th)
 
 **Books & Videos**
-If nothing else read or watch [Andreas M. Antonopoulos](https://www.amazon.com/Andreas-M-Antonopoulos/e/B00MVAG8Z8/ref=pd_sbs_bl_15/145-0302008-5520521?pd_rd_w=WETmS&pf_rd_p=3676f086-9496-4fd7-8490-77cf7f43f846&pf_rd_r=9TV26KCKCZ6XHQK0JR35&pd_rd_r=924dc7f9-53ba-4eb7-a8ab-d85799210f87&pd_rd_wg=BQqGj&pd_rd_i=1491971940) material. Also you might want to consider: 
+If nothing else read or watch [Andreas M. Antonopoulos](https://www.amazon.com/Andreas-M-Antonopoulos/e/B00MVAG8Z8/ref=pd_sbs_bl_15/145-0302008-5520521?pd_rd_w=WETmS&pf_rd_p=3676f086-9496-4fd7-8490-77cf7f43f846&pf_rd_r=9TV26KCKCZ6XHQK0JR35&pd_rd_r=924dc7f9-53ba-4eb7-a8ab-d85799210f87&pd_rd_wg=BQqGj&pd_rd_i=1491971940) material. Also you might want to consider:
 [Mastering Blockchain : Unlocking the Power of Cryptocurrencies, Smart Contracts, and Decentralized Applications](https://www.bookdepository.com/Mastering-Blockchain-Lorne-Lantz/9781492054702?redirected=true&utm_medium=Google&utm_campaign=Base3&utm_source=PT&utm_content=Mastering-Blockchain&selectCurrency=EUR&w=AF7DAU96Q2NKZHA8V3YD&gclid=CjwKCAjwlcaRBhBYEiwAK341jZbXHgFCE8sQQXYs_ZcAtRIkvQN734qKddZuFhGhHwKN-cSQa5FsZRoCBNUQAvD_BwE)
 [How to Defi](https://www.amazon.com/How-DeFi-Beginner-Coin-Gecko/dp/B098GT2PSG/ref=pd_sbs_6/145-0302008-5520521?pd_rd_w=WETmS&pf_rd_p=3676f086-9496-4fd7-8490-77cf7f43f846&pf_rd_r=9TV26KCKCZ6XHQK0JR35&pd_rd_r=924dc7f9-53ba-4eb7-a8ab-d85799210f87&pd_rd_wg=BQqGj&pd_rd_i=B098GT2PSG&psc=1)
 [The infinite machine](https://www.amazon.com/Infinite-Machine-Crypto-Hackers-Building-Internet/dp/B07XJ7WKXL/ref=sr_1_14?crid=14O4EA5MCQEB9&keywords=web3&qid=1647429234&sprefix=web3%2Caps%2C156&sr=8-14)
@@ -49,19 +50,19 @@ Twitter always a winner in this race, but you might want to consider reddit,
 Mirror.xyz, medium or substack. Just type the keyword you have in mind on the search bar and start somewhere.
 
 **Knowledge bases & Communities**
-Easy now, choose one link, follow that path and later you can choose another, let’s try to avoid being overwhelmed and build grounded learning. 
+Easy now, choose one link, follow that path and later you can choose another, let’s try to avoid being overwhelmed and build grounded learning.
 
-* [Web3 Starter Pack](https://cryptosociety.notion.site/Web3-Starter-Pack-5a922714348e4a7cbaa45b2f0a8861bd)
-* [Master Web3](https://www.masterweb3.xyz/) 
-* [Rainbow Knowledge Base](https://learn.rainbow.me/)
-* [CoinGecko Glossary](https://www.coingecko.com/en/glossary) 
-* [Launching Web3UX Panel](https://web3creatives.notion.site/Launching-Web3UX-panel-8b4cc06935e8496794f106b14c6e36de)  
+- [Web3 Starter Pack](https://cryptosociety.notion.site/Web3-Starter-Pack-5a922714348e4a7cbaa45b2f0a8861bd)
+- [Master Web3](https://www.masterweb3.xyz/)
+- [Rainbow Knowledge Base](https://learn.rainbow.me/)
+- [CoinGecko Glossary](https://www.coingecko.com/en/glossary)
+- [Launching Web3UX Panel](https://web3creatives.notion.site/Launching-Web3UX-panel-8b4cc06935e8496794f106b14c6e36de)
 
 **DAOs**
 This is an amazing way to learn and to become active on a community. Try these:
 
-* [RabbitHole](https://rabbithole.gg/)
-* [Odyssey DAO](https://www.odysseydao.com/)  
+- [RabbitHole](https://rabbithole.gg/)
+- [Odyssey DAO](https://www.odysseydao.com/)
 
 **Events, Communities & Offline Learning Opportunities**
 Community building is, in fact, quite a big thing in this industry so don’t forget to join events, meetups or hackathons to explore the tech, contribute and meet new people.
@@ -72,7 +73,7 @@ Also in April, we will be in Amsterdam for the <https://devconnect.org/> and we 
 If you need a while to get organized, consider joining <https://www.ethlisbon.org/> on the last 2022 quarter.
 
 **How can I start building?**
-We already mentioned the possibility of cooperating with DAOs, but definitely we suggest that you explore the landscape of Bounties and Grants  at <https://gitcoin.co/> so that you can start your path.
+We already mentioned the possibility of cooperating with DAOs, but definitely we suggest that you explore the landscape of Bounties and Grants at <https://gitcoin.co/> so that you can start your path.
 
 **Are there only opportunities for developers?**
 Not at all. The more the industry grows the more different roles are needed: Team & Talent management, compliance, operations, marketing, business development, UX design, you name it. However, allow us to expose one critical opportunity that one might not expect: community building is essential for most web3 projects.
@@ -87,25 +88,26 @@ Spoiler alert: our friends from Utrust, Finiam, Onda, invisible Lab, Talent Prot
 
 ## Growing the web3 community: our commitment and contribution
 
-- - -
+---
 
-![](http://media.giphy.com/media/25OyfOmwZIARSYKSjL/giphy.gif)
+![](https://media.giphy.com/media/25OyfOmwZIARSYKSjL/giphy.gif)
 
-At Subvisual we’re always on the lookout for talented people to join us. Whether that’s by joining our team or a company within our Universe, we want to keep growing and be joined by the most amazing people out there. 
+At Subvisual we’re always on the lookout for talented people to join us. Whether that’s by joining our team or a company within our Universe, we want to keep growing and be joined by the most amazing people out there.
 
-The well-being of our team is something that plays a big role in our daily routines. We are a remote team, working from anywhere in the world and we try to make our people as comfortable as possible. We believe that transparency and autonomy are the best way to create a feeling of belonging and that they actually contribute to excellency when it comes to deliverables. 
+The well-being of our team is something that plays a big role in our daily routines. We are a remote team, working from anywhere in the world and we try to make our people as comfortable as possible. We believe that transparency and autonomy are the best way to create a feeling of belonging and that they actually contribute to excellency when it comes to deliverables.
 
-Take it from Joana, who joined us as a Product Designer last July and says “I was already a part of Subvisual’s Universe, which meant I already knew the team and that I shared their values. Thanks to that, becoming a part of the team was a no-brainer, and I couldn’t be happier with my work so far.”  As for Álvaro, our Project Manager, he said “I’m proud to work at Subvisual because I know my voice is heard and my opinions are valued. For me, it was essential to work at a company where the team’s mental health and well-being was deeply valued, and I definitely found that here”.  
+Take it from Joana, who joined us as a Product Designer last July and says “I was already a part of Subvisual’s Universe, which meant I already knew the team and that I shared their values. Thanks to that, becoming a part of the team was a no-brainer, and I couldn’t be happier with my work so far.” As for Álvaro, our Project Manager, he said “I’m proud to work at Subvisual because I know my voice is heard and my opinions are valued. For me, it was essential to work at a company where the team’s mental health and well-being was deeply valued, and I definitely found that here”.
 
-So if you, or anyone you know, would like to be a part of this journey alongside us, reach out or check the [our jobs page](https://jobs.subvisual.com/). 
+So if you, or anyone you know, would like to be a part of this journey alongside us, reach out or check the [our jobs page](https://jobs.subvisual.com/).
 
 ## Substantial Mini-Doses
 
-**Blog:** **Key Learnings from building Utrust’s product** 
-Do you ever wonder what the people that work on a complex product take from it? What are some of their key learnings and how their experience helped them be better in what they do? [Check out our latest blog post and get those answers.](https://subvisual.com/blog/posts/building-utrust-how-to-scale-a-team-and-product) 
+**Blog:** **Key Learnings from building Utrust’s product**
+Do you ever wonder what the people that work on a complex product take from it? What are some of their key learnings and how their experience helped them be better in what they do? [Check out our latest blog post and get those answers.](https://subvisual.com/blog/posts/building-utrust-how-to-scale-a-team-and-product)
 
 **An incredible initiative for female empowerment**\
 Our friends from Onda did this amazing project and we want to make sure it lives beyond March 8th. [Find here fe](https://www.ondastudio.co/iwd)[mal](https://www.ondastudio.co/iwd)[e empowerment initiatives to support and add the ones that might be missing](https://www.ondastudio.co/iwd).
 
-**Web3 is also a great field for memes and jokes find them here** 
+**Web3 is also a great field for memes and jokes find them here**
 **[https://web3isgoinggreat.com](https://web3isgoinggreat.com/)**
+
