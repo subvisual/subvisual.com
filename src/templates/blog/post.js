@@ -101,8 +101,6 @@ const Template = ({ data, pageContext }) => {
   const { url } = fields
   const { author, date, title, intro, seoDescription } = frontmatter
 
-  console.log(data, pageContext)
-
   return (
     <BlogPostTemplate
       {...{

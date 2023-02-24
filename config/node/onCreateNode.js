@@ -42,10 +42,6 @@ module.exports = async ({ node, actions }) => {
 
   const { createNodeField } = actions
 
-  console.log(
-    node.frontmatter.path,
-    getFullImage({ image: node.frontmatter.cover, node })
-  )
   createNodeField({
     node,
     name: "cover",
