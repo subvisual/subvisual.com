@@ -79,12 +79,15 @@
     "eslint-plugin-react": "^7.26.1",
     "eslint-plugin-react-hooks": "^4.2",
     "prettier": "^2.4.1",
+    "remark-html": "^15.0.2",
+    "remark-parse": "^10.0.1",
     "stylelint": "^15.1.0",
     "stylelint-config-prettier": "^9.0.5",
     "stylelint-order": "^6.0.2",
     "stylelint-prettier": "^2.0.0",
     "svgo": "^3.0.2",
-    "typescript": "^4.4.4"
+    "typescript": "^4.4.4",
+    "unified": "^10.1.2"
   },
   "keywords": [
     "gatsby"

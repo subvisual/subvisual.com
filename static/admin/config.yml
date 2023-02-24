@@ -17,8 +17,6 @@ collections:
     public_folder: ''
     path: '{{year}}-{{month}}-{{day}}-{{title}}/{{slug}}'
     preview_path: blog/posts/{{path}}
-    editor:
-      preview: false
     fields:
       - label: 'Path'
         name: 'path'
