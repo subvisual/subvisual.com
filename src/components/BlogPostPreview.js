@@ -19,7 +19,6 @@ const BlogPostPreview = (props) => {
   const [html, setHTML] = useState("")
 
   useEffect(() => {
-    console.log("jaskdlfjalsdf")
     ;(async () => {
       const { contents } = await unified()
         .use(remarkParse)
