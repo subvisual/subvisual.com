@@ -15,7 +15,7 @@ collections:
     media_folder: ''
     public_folder: ''
     path: '{{year}}-{{month}}-{{day}}-{{title}}/{{slug}}'
-    preview_path: blog/{{path}}
+    preview_path: blog/posts/{{path}}
     fields:
       - label: 'Path'
         name: 'path'
