@@ -62,9 +62,16 @@ module.exports.onCreatePage = async ({ page, actions }) => {
   if (!page.context || !page.context.isBlogPost) return
   if (page.context.seoImage || page.context.cover) return
 
+  const automaticSEOFile = path.join("public", page.path, FILE_NAME)
+
+  if (fs.existsSync(automaticSEOFile)) return
+
+  if (process.env.NODE_ENV !== "production")
+    return console.warn("SEO images are only generated in production")
+
   await transform({
     text: page.context.title,
-    path: path.join("public", page.path, FILE_NAME),
+    path: automaticSEOFile,
   })
 
   const oldPage = Object.assign({}, page)
