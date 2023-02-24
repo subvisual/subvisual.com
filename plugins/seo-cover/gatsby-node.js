@@ -1,5 +1,4 @@
 const path = require("path")
-const _ = require("lodash")
 const fs = require("fs")
 const util = require("util")
 const exec = util.promisify(require("child_process").exec)
@@ -60,23 +59,25 @@ module.exports.onCreatePage = async ({ page, actions }) => {
   const { createPage, deletePage } = actions
 
   if (!page.context || !page.context.isBlogPost) return
-  if (page.context.seoImage || page.context.cover) return
+  if (page.context.seoImage && fs.existsSync(page.context.seoImage)) return
 
   const automaticSEOFile = path.join("public", page.path, FILE_NAME)
 
-  if (fs.existsSync(automaticSEOFile)) return
+  if (!fs.existsSync(automaticSEOFile)) {
+    if (process.env.NODE_ENV !== "production")
+      return console.warn("SEO images are only generated in production")
 
-  if (process.env.NODE_ENV !== "production")
-    return console.warn("SEO images are only generated in production")
-
-  await transform({
-    text: page.context.title,
-    path: automaticSEOFile,
-  })
+    console.log(`Building SEO image for ${page.context.slug}`)
+    await transform({
+      text: page.context.title,
+      path: automaticSEOFile,
+    })
+  }
 
   const oldPage = Object.assign({}, page)
   deletePage(oldPage)
 
   page.context.seoImage = path.join(page.path, FILE_NAME)
+
   createPage(page)
 }
