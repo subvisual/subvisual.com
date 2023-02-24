@@ -59,7 +59,7 @@ module.exports.onCreatePage = async ({ page, actions }) => {
   const { createPage, deletePage } = actions
 
   if (!page.context || !page.context.isBlogPost) return
-  if (page.context.seoImage && fs.existsSync(page.context.seoImage)) return
+  if (page.context.seoImage) return
 
   const automaticSEOFile = path.join("public", page.path, FILE_NAME)
 

@@ -62,7 +62,7 @@ const createBlogPostsPages = async ({ createPage, graphql }) => {
       component,
       context: {
         cover,
-        seoImage,
+        seoImage: seoImage || cover,
         slug,
         title: frontmatter.title,
         isBlogPost: true,
