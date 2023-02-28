@@ -45,7 +45,7 @@ module.exports = () => [
                 description: intro,
                 guid: url,
                 title,
-                url: url,
+                url,
               }
             }),
         },
