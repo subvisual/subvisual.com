@@ -1,5 +1,5 @@
 ---
-path: /posts/126-the-root-of-all-evil/
+path: /126-the-root-of-all-evil/
 title: "The root of all evil"
 author: miguel-palhas
 date: 2017-03-13

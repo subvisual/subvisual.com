@@ -1,5 +1,5 @@
 ---
-path: /posts/2020-06-06-fixing-too-many-open-files
+path: /2020-06-06-fixing-too-many-open-files
 title: Fixing Too Many Open Files
 author: pedro-costa
 date: 2020-06-19

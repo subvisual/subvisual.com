@@ -1,5 +1,4 @@
 import React from "react"
-import PropTypes from "prop-types"
 import { graphql } from "gatsby"
 import _get from "lodash/get"
 
@@ -11,48 +10,50 @@ import BodyWrapper from "~/src/components/blog/post/body_wrapper"
 import ShareLinks from "~/src/components/blog/post/body/share_links"
 import Wrapper from "~/src/components/blog/post/wrapper"
 
-import usePathToURL from "~/src/utils/usePathToURL"
-
 import "~/src/common/base.scss"
 import * as styles from "./post.module.scss"
 
-export const query = graphql`query ($cover: String, $seoImage: String, $slug: String!) {
-  markdownRemark(frontmatter: {path: {eq: $slug}}) {
-    fields {
-      cover
-      seoImage
-      slug
-    }
-    frontmatter {
-      author {
-        key
-        name
+export const query = graphql`
+  query ($cover: String, $seoImage: String, $slug: String!) {
+    markdownRemark(frontmatter: { path: { eq: $slug } }) {
+      fields {
+        cover
+        seoImage
+        url
       }
-      date
-      intro
-      seoDescription
-      title
+      frontmatter {
+        author {
+          key
+          name
+        }
+        date
+        intro
+        seoDescription
+        title
+      }
+      html
     }
-    html
-  }
-  coverFile: file(absolutePath: {eq: $cover}) {
-    childImageSharp {
-      gatsbyImageData(
-        width: 980
-        transformOptions: {grayscale: true}
-        layout: CONSTRAINED
-      )
+    coverFile: file(absolutePath: { eq: $cover }) {
+      childImageSharp {
+        gatsbyImageData(
+          width: 980
+          transformOptions: { grayscale: true }
+          layout: CONSTRAINED
+        )
+      }
+    }
+    seoImageFile: file(absolutePath: { eq: $seoImage }) {
+      childImageSharp {
+        gatsbyImageData(
+          width: 2160
+          height: 1080
+          placeholder: NONE
+          layout: FIXED
+        )
+      }
     }
   }
-  seoImageFile: file(absolutePath: {eq: $seoImage}) {
-    childImageSharp {
-      gatsbyImageData(width: 2160, height: 1080, placeholder: NONE, layout: FIXED)
-    }
-  }
-}`
-
-const resolveImage = ({ file, src }) =>
-  _get(file, "childImageSharp.fixed.src", src)
+`
 
 const BlogPostTemplate = ({
   author,
@@ -64,21 +65,15 @@ const BlogPostTemplate = ({
   intro,
   seoDescription,
   seoImage,
-  seoImageFile,
-  slug,
+  url,
 }) => {
-  const image = usePathToURL(
-    resolveImage({ file: seoImageFile, src: seoImage }) ||
-      resolveImage({ file: coverFile, src: cover })
-  )
-
   return (
     <Layout>
       <SEO
         description={seoDescription || intro}
-        image={image}
+        image={seoImage}
         title={title}
-        url={slug}
+        url={url}
       />
       <div className={styles.root}>
         <article className={styles.article}>
@@ -90,7 +85,7 @@ const BlogPostTemplate = ({
               <BodyWrapper className={styles.innerWrapper}>
                 <Body html={html} />
               </BodyWrapper>
-              <ShareLinks className={styles.shareLinks} url={slug} />
+              <ShareLinks className={styles.shareLinks} url={url} />
             </Wrapper>
           </section>
         </article>
@@ -99,23 +94,11 @@ const BlogPostTemplate = ({
   )
 }
 
-BlogPostTemplate.propTypes = {
-  author: PropTypes.object.isRequired,
-  cover: PropTypes.string,
-  seoImage: PropTypes.string,
-  coverFile: PropTypes.object,
-  date: PropTypes.instanceOf(Date).isRequired,
-  html: PropTypes.string.isRequired,
-  intro: PropTypes.string.isRequired,
-  seoDescription: PropTypes.string,
-  title: PropTypes.string.isRequired,
-}
-
 const Template = ({ data, pageContext }) => {
-  const { seoImage } = pageContext
+  const { seoImage, cover } = pageContext
   const { markdownRemark, coverFile, seoImageFile } = data
   const { fields, frontmatter, html } = markdownRemark
-  const { cover, slug } = fields
+  const { url } = fields
   const { author, date, title, intro, seoDescription } = frontmatter
 
   return (
@@ -128,10 +111,13 @@ const Template = ({ data, pageContext }) => {
         html,
         intro,
         seoDescription,
-        seoImage,
-        seoImageFile,
+        seoImage: _get(
+          seoImageFile,
+          "childImageSharp.gatsbyImageData.images.fallback.src",
+          seoImage
+        ),
         title,
-        slug,
+        url,
       }}
     />
   )

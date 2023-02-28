@@ -1,5 +1,5 @@
 ---
-path: /posts/116-subvisual-weekly-14/
+path: /116-subvisual-weekly-14/
 title: "Subvisual Weekly #14"
 author: pedro-costa
 date: 2016-11-08

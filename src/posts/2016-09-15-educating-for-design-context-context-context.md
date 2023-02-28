@@ -1,5 +1,5 @@
 ---
-path: /posts/107-educating-for-design-context-context-context/
+path: /107-educating-for-design-context-context-context/
 title: "Educating for design: Context, context, context"
 author: joao-ferreira
 date: 2016-09-15

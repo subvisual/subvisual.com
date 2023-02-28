@@ -1,5 +1,5 @@
 ---
-path: /posts/52-game-on-rubyconf-portugal-is-back-in-2015/
+path: /52-game-on-rubyconf-portugal-is-back-in-2015/
 title: "Game On! RubyConf Portugal is back in 2015"
 author: roberto-machado
 date: 2015-02-27

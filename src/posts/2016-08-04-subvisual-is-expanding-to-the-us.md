@@ -1,5 +1,5 @@
 ---
-path: /posts/94-subvisual-is-expanding-to-the-us/
+path: /94-subvisual-is-expanding-to-the-us/
 title: "Subvisual is expanding to the US"
 author: roberto-machado
 date: 2016-08-04

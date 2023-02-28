@@ -1,5 +1,5 @@
 ---
-path: /posts/8-habits-to-help-you-through-the-pandemic-times/
+path: /8-habits-to-help-you-through-the-pandemic-times/
 title: 8 Habits To Help You Through The Pandemic Times
 author: laura-esteves
 date: 2020-05-13

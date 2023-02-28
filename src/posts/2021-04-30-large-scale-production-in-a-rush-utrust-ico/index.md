@@ -1,5 +1,5 @@
 ---
-path: /posts/large-scale-in-a-rush-utrust-ico
+path: /large-scale-in-a-rush-utrust-ico
 title: "Large-scale in a rush: The Utrust ICO"
 author: miguel-palhas
 seoImage: ./seo.png

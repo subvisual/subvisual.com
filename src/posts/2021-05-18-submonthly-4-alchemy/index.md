@@ -1,5 +1,5 @@
 ---
-path: /posts/submonthly-4-alchemy
+path: /submonthly-4-alchemy
 title: "SubMonthly #4 | Alchemy-ing with our community 🧙"
 author: subvisual
 date: 2021-05-18

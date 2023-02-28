@@ -1,5 +1,5 @@
 ---
-path: /posts/143-its-not-continuous-delivery-yet/
+path: /143-its-not-continuous-delivery-yet/
 title: "It's not Continuous Delivery (yet)"
 author: pedro-costa
 date: 2019-02-02

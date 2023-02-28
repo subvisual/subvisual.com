@@ -1,5 +1,5 @@
 ---
-path: /posts/51-getting-hooked/
+path: /51-getting-hooked/
 title: "Getting Hooked"
 author: miguel-palhas
 date: 2015-02-18

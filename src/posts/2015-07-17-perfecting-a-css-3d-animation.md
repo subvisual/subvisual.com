@@ -1,5 +1,5 @@
 ---
-path: /posts/62-perfecting-a-css-3d-animation/
+path: /62-perfecting-a-css-3d-animation/
 title: "Perfecting a CSS 3D animation "
 author: miguel-palhas
 date: 2015-07-17

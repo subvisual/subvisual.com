@@ -1,5 +1,5 @@
 ---
-path: /posts/announcing-alchemy-conf/
+path: /announcing-alchemy-conf/
 title: "Announcing Alchemy Conf"
 author: roberto-machado
 date: 2020-09-11

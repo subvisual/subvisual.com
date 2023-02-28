@@ -1,5 +1,5 @@
 ---
-path: /posts/72-trying-to-stop-the-madness/
+path: /72-trying-to-stop-the-madness/
 title: "Trying to stop the madness"
 author: francisco-baila
 date: 2016-09-28

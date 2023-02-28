@@ -1,5 +1,5 @@
 ---
-path: /posts/42-overview-of-meteor-cordova-phonegap-integration/
+path: /42-overview-of-meteor-cordova-phonegap-integration/
 title: "Overview of Meteor Cordova - PhoneGap integration"
 author: joao-justo
 date: 2014-09-25

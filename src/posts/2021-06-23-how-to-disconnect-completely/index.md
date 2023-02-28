@@ -1,5 +1,5 @@
 ---
-path: /posts/submonthly-5-how-to-disconnect-completely
+path: /submonthly-5-how-to-disconnect-completely
 title: "SubMonthly #5 - How to disconnect completely"
 author: subvisual
 date: 2021-06-23

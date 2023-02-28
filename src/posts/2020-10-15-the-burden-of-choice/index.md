@@ -1,5 +1,5 @@
 ---
-path: /posts/the-burden-of-choice/
+path: /the-burden-of-choice/
 title: The Burden of Choice
 author: martinho-aragao
 date: 2020-10-15

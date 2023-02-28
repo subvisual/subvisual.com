@@ -1,5 +1,5 @@
 ---
-path: /posts/96-a-look-into-bloom-filters-with-ruby/
+path: /96-a-look-into-bloom-filters-with-ruby/
 title: "A Look Into Bloom Filters with Ruby"
 author: fernando-mendes
 date: 2016-08-11

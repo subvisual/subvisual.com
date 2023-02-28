@@ -1,5 +1,5 @@
 ---
-path: /posts/react-state-management-and-side-effects-with-redux-and-rxjs/
+path: /react-state-management-and-side-effects-with-redux-and-rxjs/
 title: React state management and side-effects with Redux and RxJS
 author: gabriel-poca
 date: 2020-06-09

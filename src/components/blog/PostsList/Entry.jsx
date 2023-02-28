@@ -17,15 +17,14 @@ const renderAuthor = ({ className, key, name }) => {
 
 const Entry = ({ author, date, intro, path, title }) => {
   const formattedDate = dateFormat(date, "mmmm d, yyyy")
-  const to = path.startsWith("/") ? `/blog${path}` : `/blog/${path}`
 
   return (
     <div className={styles.root}>
       <div className={styles.title}>
-        <Link to={to}>{title}</Link>
+        <Link to={path}>{title}</Link>
       </div>
       <p className={styles.intro}>
-        <Link to={to}>
+        <Link to={path}>
           <span>{intro}</span>
         </Link>
       </p>

@@ -1,53 +1,37 @@
+const fs = require("fs")
 const path = require("path")
 const isString = require("lodash/isString")
 const isURL = require("@subvisual/utils/isURL")
 
-const resolveBlogPostCover = ({ cover, node }) => {
-  const { fileAbsolutePath } = node
+const getFullPath = ({ image, node }) => {
+  if (isURL(image) || path.isAbsolute(image)) return image
 
-  if (isURL(cover) || path.isAbsolute(cover)) return cover
+  const dirname = path.dirname(node.fileAbsolutePath)
 
-  const dirname = path.dirname(fileAbsolutePath)
-
-  return path.resolve(dirname, cover)
+  return path.resolve(dirname, image)
 }
 
-const resolveBlogPostSEOImage = ({ seoImage, node }) => {
-  const { fileAbsolutePath } = node
+const getFullImage = ({ image, node }) => {
+  if (!isString(image)) return image
 
-  if (isURL(seoImage) || path.isAbsolute(seoImage)) return seoImage
+  const fullPath = getFullPath({ image, node })
 
-  const dirname = path.dirname(fileAbsolutePath)
-
-  return path.resolve(dirname, seoImage)
+  return fs.existsSync(fullPath) ? fullPath : undefined
 }
 
-const prepareBlogPostCover = ({ node }) => {
-  const { frontmatter } = node
-  const { cover } = frontmatter
+const getBlogPostPath = ({ frontmatter }) => {
+  if (!frontmatter.path) return undefined
 
-  if (isString(cover)) return resolveBlogPostCover({ cover, node })
-
-  return cover
+  return path.posix.join("/blog", "posts", frontmatter.path, "/")
 }
 
-const prepareBlogPostSEOImage = ({ node }) => {
-  const { frontmatter } = node
-  const { seoImage } = frontmatter
-
-  if (isString(seoImage)) return resolveBlogPostSEOImage({ seoImage, node })
-
-  return seoImage
-}
-
-const prepareBlogPostSlug = ({ node }) => {
+const getBlogPostURL = (node) => {
   const { frontmatter } = node
 
-  // If `path` is not defined in this post's markdown, exit early
   if (!frontmatter.path) return undefined
 
   const urlBase = process.env.URL || "http://localhost:8000"
-  const urlPath = path.posix.join("/blog", frontmatter.path)
+  const urlPath = getBlogPostPath(node)
 
   return new URL(urlPath, urlBase).toString()
 }
@@ -57,11 +41,17 @@ module.exports = async ({ node, actions }) => {
   if (node.internal.type !== "MarkdownRemark") return
 
   const { createNodeField } = actions
-  const cover = prepareBlogPostCover({ node })
-  const seoImage = prepareBlogPostSEOImage({ node })
-  const slug = prepareBlogPostSlug({ node })
 
-  createNodeField({ node, name: "cover", value: cover })
-  createNodeField({ node, name: "seoImage", value: seoImage })
-  createNodeField({ node, name: "slug", value: slug })
+  createNodeField({
+    node,
+    name: "cover",
+    value: getFullImage({ image: node.frontmatter.cover, node }),
+  })
+  createNodeField({
+    node,
+    name: "seoImage",
+    value: getFullImage({ image: node.frontmatter.seoImage, node }),
+  })
+  createNodeField({ node, name: "url", value: getBlogPostURL(node) })
+  createNodeField({ node, name: "path", value: getBlogPostPath(node) })
 }

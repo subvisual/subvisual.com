@@ -4,6 +4,7 @@ backend:
 
 media_folder: static/img
 public_folder: /img
+publish_mode: editorial_workflow
 
 collections:
   - name: 'post'
@@ -14,13 +15,12 @@ collections:
     media_folder: ''
     public_folder: ''
     path: '{{year}}-{{month}}-{{day}}-{{title}}/{{slug}}'
-    editor:
-      preview: false
+    preview_path: blog/posts/{{path}}
     fields:
       - label: 'Path'
         name: 'path'
         widget: 'string'
-        pattern: ['\/?posts\/[\w-_]+\/?$', "Must start with posts/ and cannot end with a space"]
+        pattern: ['^[\d\w-_]+$', "You can only use letter, numbers, _ or -"]
       - { label: 'Title', name: 'title', widget: 'string' }
       - label: 'Author'
         name: 'author'
@@ -49,6 +49,6 @@ collections:
         ]
       - { label: 'Publish Date', name: 'date', widget: 'date', format: 'YYYY-MM-DD' }
       - { label: 'Cover', name: 'cover', widget: 'image', allow_multiple: false, required: false }
-      - { label: 'Social Media Cover', name: 'seoImage', widget: 'image', allow_multiple: false }
+      - { label: 'Social Media Cover', name: 'seoImage', widget: 'image', required: false, allow_multiple: false }
       - { label: 'Intro', name: 'intro', widget: 'text' }
       - { label: 'Body', name: 'body', widget: 'markdown' }

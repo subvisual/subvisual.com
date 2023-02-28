@@ -1,5 +1,5 @@
 ---
-path: /posts/77-culture-design/
+path: /77-culture-design/
 title: "Culture Design"
 author: joao-ferreira
 date: 2016-03-21

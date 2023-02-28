@@ -1,5 +1,5 @@
 ---
-path: /posts/34-the-keyword-arguments-falacy/
+path: /34-the-keyword-arguments-falacy/
 title: "The keyword arguments falacy"
 author: luis-zamith
 date: 2014-04-14

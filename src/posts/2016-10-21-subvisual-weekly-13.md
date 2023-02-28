@@ -1,5 +1,5 @@
 ---
-path: /posts/115-subvisual-weekly-13/
+path: /115-subvisual-weekly-13/
 title: "Subvisual Weekly #13"
 author: miguel-palhas
 date: 2016-10-21

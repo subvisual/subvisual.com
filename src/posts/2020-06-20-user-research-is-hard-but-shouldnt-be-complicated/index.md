@@ -1,5 +1,5 @@
 ---
-path: /posts/2020-06-23-user-research-is-hard-but-shouldnt-be-complicated
+path: /2020-06-23-user-research-is-hard-but-shouldnt-be-complicated
 title: User research is hard, but shouldn’t be complicated
 author: joao-ferreira
 date: 2020-06-23

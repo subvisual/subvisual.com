@@ -1,5 +1,5 @@
 ---
-path: /posts/47-for-makers/
+path: /47-for-makers/
 title: "For Makers"
 author: joao-ferreira
 date: 2014-12-10

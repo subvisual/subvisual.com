@@ -1,5 +1,5 @@
 ---
-path: /posts/20-clean-architecture/
+path: /20-clean-architecture/
 title: "Clean Architecture"
 author: luis-zamith
 date: 2013-12-27

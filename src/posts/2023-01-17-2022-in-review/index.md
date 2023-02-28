@@ -1,5 +1,5 @@
 ---
-path: /posts/2022-in-review
+path: /2022-in-review
 title: 2022 in review
 author: subvisual
 date: 2023-01-17
@@ -30,9 +30,9 @@ As if that wasn’t enough, we also managed to run the 7th edition of our Summer
 Fortunately, we got to be with everyone else from around the industry too. We hosted not one, not two, not three, but eleven community events in 2022:
 
 * Two Universe Summit;
-* T﻿hree Braga.Blockchain;
-* F﻿ive Coimbra.Blockchain;
-* T﻿he awesome Denites week in Lisbon.
+* Three Braga.Blockchain;
+* Five Coimbra.Blockchain;
+* The awesome Denites week in Lisbon.
 
 Not only that, but we were fortunate enough to attend four tremendous conferences:
 

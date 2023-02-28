@@ -1,5 +1,5 @@
 ---
-path: /posts/63-deploying-a-crystal-application-to-heroku/
+path: /63-deploying-a-crystal-application-to-heroku/
 title: "Deploying a Crystal application to Heroku"
 author: luis-zamith
 date: 2015-07-15

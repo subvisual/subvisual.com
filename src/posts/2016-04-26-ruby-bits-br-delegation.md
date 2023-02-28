@@ -1,5 +1,5 @@
 ---
-path: /posts/80-ruby-bits-br-delegation/
+path: /80-ruby-bits-br-delegation/
 title: "Ruby Bits:  Delegation"
 author: luis-zamith
 date: 2016-04-26

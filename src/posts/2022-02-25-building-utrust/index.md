@@ -1,5 +1,5 @@
 ---
-path: /posts/building-utrust-how-to-scale-a-team-and-product
+path: /building-utrust-how-to-scale-a-team-and-product
 title: Building Utrust And Advice On How To Scale A Product Team
 author: gabriel-poca
 date: 2022-02-25

@@ -1,5 +1,5 @@
 ---
-path: /posts/the-worst-decision-of-my-career/
+path: /the-worst-decision-of-my-career/
 title: "The Worst Decision Of My Career"
 author: gabriel-poca
 date: 2020-09-25

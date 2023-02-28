@@ -1,5 +1,5 @@
 ---
-path: /posts/elixir-for-startups/
+path: /elixir-for-startups/
 title: Elixir for Startups
 author: subvisual
 date: 2020-12-17

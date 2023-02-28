@@ -14,13 +14,15 @@ const query = graphql`
       sort: [{ frontmatter: { date: DESC } }, { frontmatter: { title: DESC } }]
     ) {
       nodes {
+        fields {
+          path
+        }
         frontmatter {
           author {
             key
             name
           }
           date
-          path
           title
           intro
         }
@@ -54,8 +56,9 @@ const Page = () => {
     allMarkdownRemark: { nodes },
   } = useStaticQuery(query)
   const posts = nodes.map((node) => {
-    const { frontmatter } = node
-    const { author, date, intro, path, title } = frontmatter
+    const { frontmatter, fields } = node
+    const { path } = fields
+    const { author, date, intro, title } = frontmatter
 
     return { author, date: new Date(date), intro, path, title }
   })

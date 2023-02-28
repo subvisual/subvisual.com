@@ -1,5 +1,5 @@
 ---
-path: /posts/23-using-calc-for-responsive-css/
+path: /23-using-calc-for-responsive-css/
 title: "Using calc() for responsive CSS"
 author: gabriel-poca
 date: 2014-01-07

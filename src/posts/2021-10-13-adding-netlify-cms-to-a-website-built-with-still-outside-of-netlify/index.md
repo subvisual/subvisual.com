@@ -1,5 +1,5 @@
 ---
-path: /posts/netlify-cms-in-a-website-built-with-still-outside-of-netlify
+path: /netlify-cms-in-a-website-built-with-still-outside-of-netlify
 title: Adding Netlify CMS to a website built with Still outside of Netlify
 author: gabriel-poca
 date: 2021-10-12

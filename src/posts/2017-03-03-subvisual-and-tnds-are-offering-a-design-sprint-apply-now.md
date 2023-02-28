@@ -1,5 +1,5 @@
 ---
-path: /posts/125-subvisual-and-tnds-are-offering-a-design-sprint-apply-now/
+path: /125-subvisual-and-tnds-are-offering-a-design-sprint-apply-now/
 title: "Subvisual and TNDS are offering a Design Sprint - Apply now!"
 author: francisco-baila
 date: 2017-03-03

@@ -42,6 +42,7 @@ const createBlogPostsPages = async ({ createPage, graphql }) => {
           fields {
             cover
             seoImage
+            path
           }
           frontmatter {
             path
@@ -55,8 +56,8 @@ const createBlogPostsPages = async ({ createPage, graphql }) => {
 
   results.data.allMarkdownRemark.nodes.forEach((node) => {
     const { fields, frontmatter } = node
-    const { cover, seoImage } = fields
-    const { path: slug } = frontmatter
+    const { cover, seoImage, path } = fields
+    const { path: slug, title } = frontmatter
 
     createPage({
       component,
@@ -64,10 +65,10 @@ const createBlogPostsPages = async ({ createPage, graphql }) => {
         cover,
         seoImage: seoImage || cover,
         slug,
-        title: frontmatter.title,
+        title,
         isBlogPost: true,
       },
-      path: path.posix.join("/blog", slug),
+      path,
     })
   })
 }

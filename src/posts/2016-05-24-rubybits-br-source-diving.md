@@ -1,5 +1,5 @@
 ---
-path: /posts/85-rubybits-br-source-diving/
+path: /85-rubybits-br-source-diving/
 title: "RubyBits:  Source Diving"
 author: luis-zamith
 date: 2016-05-24

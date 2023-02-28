@@ -1,5 +1,5 @@
 ---
-path: /posts/building-prototypes-with-liveview
+path: /building-prototypes-with-liveview
 title: "Building quick prototypes with Phoenix LiveView and Tailwind"
 author: luis-zamith
 date: 2023-02-07

@@ -1,5 +1,5 @@
 ---
-path: /posts/83-announcing-br-mirror-conf/
+path: /83-announcing-br-mirror-conf/
 title: "Announcing Mirror Conf"
 author: roberto-machado
 date: 2016-05-18

@@ -1,5 +1,5 @@
 ---
-path: /posts/87-smarter-heredoc-syntax-in-vim/
+path: /87-smarter-heredoc-syntax-in-vim/
 title: "Smarter heredoc syntax in vim"
 author: miguel-palhas
 date: 2016-06-02

@@ -1,5 +1,5 @@
 ---
-path: /posts/submonthy-2-the-fintech-20s
+path: /submonthy-2-the-fintech-20s
 title: "SubMonthly #2 - The Fintech 20s"
 author: subvisual
 date: 2021-02-05

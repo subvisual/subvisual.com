@@ -12,14 +12,17 @@ const buildTitle = (siteTitle: string, pageTitle?: string): string => {
   return [siteTitle, pageTitle].join(" | ")
 }
 
-const SEO : Component = ({ description, image, lang, keywords, title, url }) => {
+const SEO: Component = ({ description, image, lang, keywords, title, url }) => {
   // Gather the sitewide default metadata as fallback
   const siteMetadata = useSiteMetadata()
+  const metadataImage = image
+    ? new URL(image, siteMetadata.siteUrl)
+    : siteMetadata.image
 
   const metadata = _defaults(
     {
       description,
-      image,
+      image: metadataImage,
       lang,
       keywords,
       title: buildTitle(siteMetadata.title, title),

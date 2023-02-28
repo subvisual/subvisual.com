@@ -1,5 +1,5 @@
 ---
-path: /posts/37-random-and-probably-useless-rubyisms/
+path: /37-random-and-probably-useless-rubyisms/
 title: "Random (and probably useless) Rubyisms"
 author: miguel-palhas
 date: 2014-05-29

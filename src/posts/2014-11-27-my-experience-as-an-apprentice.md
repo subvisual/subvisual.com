@@ -1,5 +1,5 @@
 ---
-path: /posts/46-my-experience-as-an-apprentice/
+path: /46-my-experience-as-an-apprentice/
 title: "My experience as an apprentice"
 author: joao-justo
 date: 2014-11-27

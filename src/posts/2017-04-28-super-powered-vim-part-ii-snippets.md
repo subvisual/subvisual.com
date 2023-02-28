@@ -1,5 +1,5 @@
 ---
-path: /posts/134-super-powered-vim-part-ii-snippets/
+path: /134-super-powered-vim-part-ii-snippets/
 title: "Super-powered Vim, part II: Snippets"
 author: miguel-palhas
 date: 2017-04-28

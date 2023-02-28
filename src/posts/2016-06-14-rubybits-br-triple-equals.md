@@ -1,5 +1,5 @@
 ---
-path: /posts/88-rubybits-br-triple-equals/
+path: /88-rubybits-br-triple-equals/
 title: "RubyBits:  Triple Equals"
 author: luis-zamith
 date: 2016-06-14

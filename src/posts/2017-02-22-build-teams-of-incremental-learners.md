@@ -1,5 +1,5 @@
 ---
-path: /posts/122-build-teams-of-incremental-learners/
+path: /122-build-teams-of-incremental-learners/
 title: "Build Teams of Incremental Learners"
 author: roberto-machado
 date: 2017-02-22

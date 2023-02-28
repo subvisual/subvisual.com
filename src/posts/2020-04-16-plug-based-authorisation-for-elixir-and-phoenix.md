@@ -1,5 +1,5 @@
 ---
-path: /posts/147-plug-based-authorisation-for-elixir/
+path: /147-plug-based-authorisation-for-elixir/
 title: Plug-based authorisation for Elixir and Phoenix
 author: fernando-mendes
 date: 2020-04-16

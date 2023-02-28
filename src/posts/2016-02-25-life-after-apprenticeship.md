@@ -1,5 +1,5 @@
 ---
-path: /posts/70-life-after-apprenticeship/
+path: /70-life-after-apprenticeship/
 title: "Life After Apprenticeship"
 author: francisco-baila
 date: 2016-02-25

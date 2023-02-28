@@ -1,5 +1,5 @@
 ---
-path: /posts/how-we-set-and-track-goals/
+path: /how-we-set-and-track-goals/
 title: How we set and track goals
 author: laura-esteves
 date: 2020-06-04

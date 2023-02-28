@@ -1,5 +1,5 @@
 ---
-path: /posts/36-we-are-hiring/
+path: /36-we-are-hiring/
 title: "We are hiring!"
 author: roberto-machado
 date: 2014-05-14

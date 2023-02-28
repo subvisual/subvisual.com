@@ -1,5 +1,5 @@
 ---
-path: /posts/dear-future-summer-camper
+path: /dear-future-summer-camper
 title: "Dear Future Summer Camper..."
 author: summer-campers-2020
 date: 2021-05-27

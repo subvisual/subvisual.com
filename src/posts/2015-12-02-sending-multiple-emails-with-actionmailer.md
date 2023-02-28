@@ -1,5 +1,5 @@
 ---
-path: /posts/66-sending-multiple-emails-with-actionmailer/
+path: /66-sending-multiple-emails-with-actionmailer/
 title: "Sending multiple emails with ActionMailer"
 author: luis-zamith
 date: 2015-12-02

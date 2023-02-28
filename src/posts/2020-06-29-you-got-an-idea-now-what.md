@@ -1,5 +1,5 @@
 ---
-path: /posts/got-an-idea-now-what/
+path: /got-an-idea-now-what/
 title: "Got an idea, now what?"
 author: luis-zamith
 date: 2020-06-29

@@ -1,5 +1,5 @@
 ---
-path: /posts/13-when-an-experiment-blows-your-mind/
+path: /13-when-an-experiment-blows-your-mind/
 title: "When an experiment blows your mind"
 author: roberto-machado
 date: 2013-10-29

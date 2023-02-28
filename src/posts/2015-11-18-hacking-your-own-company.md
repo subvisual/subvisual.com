@@ -1,5 +1,5 @@
 ---
-path: /posts/64-hacking-your-own-company/
+path: /64-hacking-your-own-company/
 title: "Hacking your own company"
 author: joao-justo
 date: 2015-11-18
