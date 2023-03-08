@@ -26,7 +26,7 @@ Our mission is to turn web2 product agencies into web3 trusted builders - one co
 
 ### What's in it for you?
 
-H﻿ub 3 contributors:
+H﻿ub 3:
 
 * Help each other build web3 skills and network by regularly sharing knowledge on the Hub's communication platforms;
 * Connect with some of the web3 household names and most exciting startups;
