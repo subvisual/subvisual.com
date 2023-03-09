@@ -5,12 +5,12 @@ author: laura-esteves
 date: 2023-03-10
 cover: subvisual-blog-7-steps-to-a-better-company-culture.png
 seoImage: subvisual-blog-7-steps-to-a-better-company-culture.png
-intro: "Culture can be your less important task compared with all the priorities
+intro: Culture can be your less important task compared with all the priorities
   you are facing. But the truth is that culture is a strategic investment and
-  will impact everything in your company. Culture will define your company's
-  identity, impact your performance and team members' well-being, and play a big
-  part in attracting and retaining talent. "
+  will impact everything in your company.
 ---
+Culture can be your less important task compared with all the priorities you are facing. But the truth is that culture is a strategic investment and will impact everything in your company. Culture will define your company's identity, impact your performance and team members' well-being, and play a big part in attracting and retaining talent. 
+
 **Your culture transforms your company into a team.** This is hard to define objectively and quite impossible to quantify, but the effects of a good company culture are not hard to observe. A strong culture is what will turn your team from a group of individuals to a team aligned, it's what will enhance and ease good collaboration and communication, and it's what you will experience when everyone is worried not just about reaching individual results but also collective goals.
 
 In this blog post, I will explain the steps to construct this environment slowly but surely.
