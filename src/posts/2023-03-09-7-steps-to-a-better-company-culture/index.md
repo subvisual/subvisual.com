@@ -21,7 +21,7 @@ I will help you figure out how to define what kind of culture you want to implem
 
 You're probably wondering what we mean by a company's "way", right? That's the simple expression we use to discuss our existence's purpose and the unique way we achieve our goals. It is an overview of the Mission, Vision, Core Values, and Principles that guide us all along the way.
 
-A clear company way means that everyone in the team knows where we're going, how we work, and what success looks like. It will also help the team make trade-offs, make better decisions, and prioritize.
+**A clear company way means that everyone in the team knows where we're going, how we work, and what success looks like.** It will also help the team make trade-offs, make better decisions, and prioritize.
 
 It is something other than what you define once and keeps static. It must be reviewed from time to time. If you're leading a small team, involve everyone in defining and reviewing your company's way. That's something we discuss at least once per year during our retreats. Below are some questions to help guide your minds during this process.
 
@@ -65,7 +65,7 @@ Simon Sinek's book [](https://www.goodreads.com/book/show/7108725-start-with-why
 
 We mean more than just the most qualified or the most skilled. We mean the ones that are right for you.
 
-Every person you hire will impact your team and your company culture. And that's why at Subvisual, we invest in our hiring process (and try to involve the whole team). Yes, the process may be longer than the candidates would like. Still, we try to explain the entire process from the beginning and actively listen if they need a quick answer (we try to balance efficiency and the time we need to make an informed decision).
+**Every person you hire will impact your team and your company culture.** And that's why at Subvisual, we invest in our hiring process (and try to involve the whole team). Yes, the process may be longer than the candidates would like. Still, we try to explain the entire process from the beginning and actively listen if they need a quick answer (we try to balance efficiency and the time we need to make an informed decision).
 
 We don't have a long list of criteria; we only try to ensure an alignment between the candidate's values and ours. Not that we're looking for clones of our team members, we believe diversity is a strong resource, but it is crucial to have a cultural fit (otherwise, the person and the company will not get a good experience). We believe hiring curious people with a [](https://hbr.org/2016/01/what-having-a-growth-mindset-actually-means) *[growth mindset](https://hbr.org/2016/01/what-having-a-growth-mindset-actually-means)* will make a difference and positively impact the company and its culture.
 
@@ -81,9 +81,9 @@ At Subvisual, we started by organizing Friday Talks - a safe space and a playgro
 
 And we also have 20% of our time dedicated to Investment Time - a time to invest in ourselves, our company, and our communities. By "ourselves," we mean doing something that interests us and will impact our role in the company, like learning a new programming language or reading a book about a topic we want to learn. By "investing in our company," we mean creating new processes and ways of becoming better at what we do since improving something will also mean going through a learning journey. And, finally, "investing in our communities" like organizing conferences and meetups (as we've been doing with Braga.Blockchain, RubyConf, and MirrorConf, among others), contributing to an open-source project, or working on a pro-bono project. All these activities will not only create an impact on the community but also will contribute to personal growth.
 
-Keep in mind that's what works for us, and it's not necessarily what's suitable for you or your company. They are just two ideas. There are many ways to create a safe learning environment; the best one is specific to your team.
+Keep in mind that's what works for us, and it's not necessarily what's suitable for you or your company. They are just two ideas. **There are many ways to create a safe learning environment**; the best one is specific to your team.
 
-Be curious, listen to your team with an open mindset and without judgment, and create this continuous learning environment together.
+**Be curious, listen to your team with an open mindset and without judgment, and create this continuous learning environment together.**
 
 ## 4. Frequent Feedback & Radical Candor
 
@@ -91,7 +91,7 @@ Ensuring everyone in the team receives feedback is crucial for better company cu
 
 At Subvisual, a simple process (Peer Review) happens every quarter where all team members share a personalized form and ask for feedback from different team members. We believe anonymous feedback can breed a culture of distrust, and that's why every form starts with the question "who are you".
 
-There are a lot of different ways to create continuous feedback. Still, the most important is ensuring alignment regarding what's expected from the person who receives and gives feedback. Below you'll find the principles that guide us through this process.
+**There are a lot of different ways to create continuous feedback. Still, the most important is ensuring alignment regarding what's expected from the person who receives and gives feedback.** Below you'll find the principles that guide us through this process.
 
 **If you're receiving feedback:**
 
@@ -113,7 +113,7 @@ That meant learning how to produce the same kind of effects in a very different 
 
 Here are some examples: We have a Slack channel dedicated to cooking challenges, where we share our recipes and photos of our cooking skills. We do this async. We created something called The Good, The Bad, and The Ugly, where we fill in some cards (we do it async!) about all our positive, negative, and dubious experiences and then discuss them in a call. These are just two examples. 
 
-The key is to continue experimenting and rolling with ideas. Some of our initiatives disappeared as social contact normalized after the pandemic, and others we kept because they made sense in our new dynamic.
+**The key is to continue experimenting and rolling with ideas.** Some of our initiatives disappeared as social contact normalized after the pandemic, and others we kept because they made sense in our new dynamic.
 
 **Team building is important for more than one reason.**
 
@@ -135,7 +135,7 @@ Some of this may seem complicated to pull off with a remote team, but as long as
 
 ## 6. Create autonomy and promote work-life balance
 
-Autonomy in the workplace doesn't mean letting employees do whatever they want without guidance or collaboration. On the contrary, it's about acknowledging that team members are responsible individuals and everyone has their unique way of working. Creating an autonomous work environment requires empowering people to take charge of their responsibilities while offering support rather than imposing restrictions. It's essential to cultivate a culture that values respect, trust, integrity, and accountability rather than one rooted in fear.
+Autonomy in the workplace doesn't mean letting employees do whatever they want without guidance or collaboration. On the contrary, it's about acknowledging that team members are responsible individuals and everyone has their unique way of working. **Creating an autonomous work environment requires empowering people to take charge of their responsibilities while offering support rather than imposing restrictions.** It's essential to cultivate a culture that values respect, trust, integrity, and accountability rather than one rooted in fear.
 
 To foster autonomy, enable your team members to tailor their work to meet their individual and unique requirements. Standardized approaches are likely to impact some individuals negatively. By promoting autonomy, each person can find the work-life balance crucial for maintaining their well-being.
 
@@ -150,7 +150,7 @@ Here's what we do at Subvisual to help our team be more autonomous:
 
 Leaders who are reckless and inattentive will likely foster those same qualities in their team. If you don't respect the processes and don't submit yourself to the same kind of scrutiny and ownership that you expect from your team, they will follow your example.
 
-If you're in a leadership position, you inspire and motivate others to follow a particular direction. Leaders who lead by example demonstrate their commitment to their values and principles by embodying them in their actions and decisions.
+If you're in a leadership position, you inspire and motivate others to follow a particular direction. **Leaders who lead by example demonstrate their commitment to their values and principles by embodying them in their actions and decisions.**
 
 By leading by example, you can establish trust and credibility with your team, inspire motivation, and promote a culture of accountability and integrity, creating a positive and inspiring work environment.
 
@@ -164,6 +164,6 @@ Anything you do will be interpreted as permission to do the same. If you break a
 
 ## **In a nutshell**
 
-Building a strong company culture is vital to any successful organization. Given our environment's dynamic nature, continually refining it is essential. This involves finding new strategies, asking for feedback, iterating, and always finding new ways to improve your company culture. Building a company culture you're proud of is about the journey, not the destination. ;) 
+Building a strong company culture is vital to any successful organization. Given our environment's dynamic nature, continually refining it is essential. This involves finding new strategies, asking for feedback, iterating, and always finding new ways to improve your company culture. **Building a company culture you're proud of is about the journey, not the destination.** ;) 
 
 If you have any questions, comments, or anything to add, please drop us a line on *[Twitter](https://twitter.com/subvisual)* or *[LinkedIn](https://www.linkedin.com/company/subvisual---handcrafters-of-digital-experiences/)*. We'd love to hear your thoughts!
