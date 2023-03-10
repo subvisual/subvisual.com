@@ -164,6 +164,6 @@ Anything you do will be interpreted as permission to do the same. If you break a
 
 ## **In a nutshell**
 
-Building a strong company culture is vital to any successful organization. Given our environment's dynamic nature, continually refining it is essential. This involves finding new strategies, asking for feedback, iterating, and always finding new ways to improve your company culture. **Building a company culture you're proud of is about the journey, not the destination.** ;) 
+Building a strong company culture is vital to any successful organization. Given our environment's dynamic nature, continually refining it is essential. This involves finding new strategies, asking for feedback, iterating, and always finding new ways to improve your company culture. **Building a company culture you're proud of is about the journey, not the destination.** 😉
 
 If you have any questions, comments, or anything to add, please drop us a line on *[Twitter](https://twitter.com/subvisual)* or *[LinkedIn](https://www.linkedin.com/company/subvisual---handcrafters-of-digital-experiences/)*. We'd love to hear your thoughts!
