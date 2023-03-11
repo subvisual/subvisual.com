@@ -13,7 +13,7 @@ Culture can be your less important task compared with all the priorities you are
 
 **Your culture transforms your company into a team.** This is hard to define objectively and quite impossible to quantify, but the effects of a good company culture are not hard to observe. A strong culture is what will turn your team from a group of individuals to a team aligned, it's what will enhance and ease good collaboration and communication, and it's what you will experience when everyone is worried not just about reaching individual results but also collective goals.
 
-In this blog post, I will explain the steps to construct this environment slowly but surely.
+In this blog post, I will walk you through the steps to build the best company culture.
 
 I will help you figure out how to define what kind of culture you want to implement, how to hire to make this job both feasible and easy, how to develop the feedback loops that will help you make the process self-replicating and sustainable, and, last but not least, how to lead the entire process.
 
@@ -23,7 +23,7 @@ You're probably wondering what we mean by a company's "way", right? That's the s
 
 **A clear company way means that everyone in the team knows where we're going, how we work, and what success looks like.** It will also help the team make trade-offs, make better decisions, and prioritize.
 
-It is something other than what you define once and keeps static. It must be reviewed from time to time. If you're leading a small team, involve everyone in defining and reviewing your company's way. That's something we discuss at least once per year during our retreats. Below are some questions to help guide your minds during this process.
+It must be reviewed from time to time. If you're leading a small team, involve everyone in defining and reviewing your company's way. That's something we discuss at least once per year during our retreats. Below are some questions to help guide your minds during this process.
 
 **Mission (why)**
 
@@ -53,7 +53,7 @@ The Core Values describe our deeply held beliefs.
 
 **Principles (objective how)**
 
-Values and Principles may seem the same, they are firmly connected, but there's a difference. Values are subjective and provide a sense of direction, while Principles are objective and they define our daily behaviors.
+Values and Principles may seem the same, and they are firmly connected, but there's a difference. Values are subjective and provide a sense of direction, while Principles are objective and they define our daily behaviors.
 
 * What behaviors are never to be tolerated?
 * Conversely, what behaviors should always be encouraged?
