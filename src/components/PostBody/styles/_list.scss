@@ -1,0 +1,15 @@
+ol,
+ul {
+  max-width: var(--post-body-max-width);
+  padding: 0 20px 0 40px;
+  margin: 20px auto;
+
+  @include media(">=desktop") {
+    padding: 0 28px 0 56px;
+    margin: 28px auto;
+  }
+}
+
+li {
+  @import "./inline_code";
+}

@@ -1,10 +1,7 @@
 const path = require("path")
-const normalizePathForRegExp = require("@subvisual/utils/normalizePathForRegExp")
 
 const ROOT = path.resolve(__dirname, "../..")
-const BLOG_POSTS_ABSOLUTE_PATH = path.resolve(ROOT, "src/posts")
 const siteUrl = process.env.URL || "http://localhost:8000"
-const basePath = normalizePathForRegExp(BLOG_POSTS_ABSOLUTE_PATH)
 
 const sassConfig = require("./plugins/sass")(ROOT)
 const rssFeedConfig = require("./plugins/rssFeed")(ROOT)
@@ -110,11 +107,8 @@ module.exports = [
       {
         allMarkdownRemark(
           limit: 3,
-          filter: { fileAbsolutePath: { regex: "/^${basePath}/" } }
-          sort: {
-            fields: [frontmatter___date, frontmatter___title]
-            order: [DESC, DESC]
-          }
+          filter: { fileAbsolutePath: { regex: "/src\\/posts/" } }
+          sort: [{ frontmatter: { date: DESC } }, { frontmatter: { title: DESC } }]
         ) {
           nodes {
             frontmatter {

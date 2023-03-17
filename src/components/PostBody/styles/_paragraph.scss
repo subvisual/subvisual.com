@@ -1,0 +1,27 @@
+p,
+:global(.BlogPostParagraph) {
+  position: relative;
+
+  max-width: var(--post-body-max-width);
+    padding: 0 20px;
+  margin: 20px auto 28px;
+
+  @include media(">=desktop") {
+    padding: 0 28px;
+    margin: 28px auto 32px;
+  }
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @import "./inline_code";
+}
+
+li > p {
+  padding: 0;
+}
