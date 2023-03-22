@@ -1,0 +1,82 @@
+@import "common/breakpoints";
+
+.root {
+  @import "./styles/anchor";
+  @import "./styles/blockquote";
+  @import "./styles/bold";
+  @import "./styles/code";
+  @import "./styles/code_block";
+  @import "./styles/embedded_tweet";
+  @import "./styles/heading";
+  @import "./styles/horizontal_rule";
+  @import "./styles/iframe";
+  @import "./styles/image";
+  @import "./styles/italic";
+  @import "./styles/list";
+  @import "./styles/paragraph";
+
+  font-family: "Acta", serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+
+  @include media(">=desktop") {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  /* Drop cap */
+
+  & > p:first-of-type::first-letter {
+    float: left;
+    padding-right: 4px;
+    margin-top: 0;
+
+    font-family: "Acta Display subset", serif;
+    font-size: 56px;
+    line-height: 54px;
+
+    @include media(">=desktop") {
+      margin-top: 1px;
+
+      font-size: 66px;
+      line-height: 58px;
+    }
+
+    @-moz-document url-prefix() {
+      margin-top: 9px;
+    }
+  }
+
+  &.chrome > p:first-of-type::first-letter {
+    margin-top: 5px;
+  }
+
+  &.macos > p:first-of-type::first-letter {
+    @-moz-document url-prefix() {
+      margin-top: 10px;
+    }
+  }
+
+  &.safari > p:first-of-type::first-letter {
+    margin-top: 2px;
+  }
+
+  &.edge > p:first-of-type::first-letter {
+    margin-top: 4px;
+  }
+
+  /* Image placement */
+
+  & > p > img,
+  & > p > :global(.gatsby-resp-image-wrapper) {
+    position: relative;
+    left: 50%;
+
+    display: block;
+    width: 100vw;
+    max-width: var(--post-max-width) !important; /* override inline styles */
+
+    transform: translateX(-50%);
+  }
+}

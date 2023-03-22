@@ -58,9 +58,12 @@
     "react-intersection-observer": "^9.4.2",
     "react-scroll-parallax": "^3.3.2",
     "react-share": "^4.4.0",
+    "remark-html": "^15.0.2",
+    "remark-parse": "^10.0.1",
     "request": "^2.88.2",
     "sass": "^1.43.2",
-    "ua-parser-js": "^1.0.33"
+    "ua-parser-js": "^1.0.33",
+    "unified": "^10.1.2"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.15.8",
@@ -79,15 +82,12 @@
     "eslint-plugin-react": "^7.26.1",
     "eslint-plugin-react-hooks": "^4.2",
     "prettier": "^2.4.1",
-    "remark-html": "^15.0.2",
-    "remark-parse": "^10.0.1",
     "stylelint": "^15.1.0",
     "stylelint-config-prettier": "^9.0.5",
     "stylelint-order": "^6.0.2",
     "stylelint-prettier": "^2.0.0",
     "svgo": "^3.0.2",
-    "typescript": "^4.4.4",
-    "unified": "^10.1.2"
+    "typescript": "^4.4.4"
   },
   "keywords": [
     "gatsby"

@@ -1,19 +1,17 @@
 const path = require("path")
-const normalizePathForRegExp = require("@subvisual/utils/normalizePathForRegExp")
 
 const ROOT = path.resolve(__dirname, "../..")
-const BLOG_POSTS_ABSOLUTE_PATH = path.resolve(ROOT, "src/posts")
 
-const createBlogAuthorsPages = async ({ createPage, graphql }) => {
+const createAuthorPages = async ({ createPage, graphql }) => {
   const component = path.resolve(
     __dirname,
-    "../../src/templates/blog/author.js"
+    "../../src/templates/Author/index.jsx"
   )
-  const basePath = normalizePathForRegExp(BLOG_POSTS_ABSOLUTE_PATH)
+
   const query = `
     {
       allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/^${basePath}/" } }
+        filter: { fileAbsolutePath: { regex: "/src\\/posts/" } }
       ) {
         distinct(field: {frontmatter: {author: {key: SELECT}}})
       }
@@ -24,19 +22,19 @@ const createBlogAuthorsPages = async ({ createPage, graphql }) => {
   results.data.allMarkdownRemark.distinct.forEach((authorKey) =>
     createPage({
       component,
-      context: { authorKey, blogPostsPathRegex: `/^${basePath}/` },
+      context: { authorKey },
       path: path.posix.join("/blog/author", authorKey),
     })
   )
 }
 
-const createBlogPostsPages = async ({ createPage, graphql }) => {
-  const component = path.resolve(ROOT, "src/templates/blog/post.js")
-  const basePath = normalizePathForRegExp(BLOG_POSTS_ABSOLUTE_PATH)
+const createBlogPostPages = async ({ createPage, graphql }) => {
+  const component = path.resolve(ROOT, "src/templates/Post/index.jsx")
+
   const query = `
     {
       allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/^${basePath}/" } }
+        filter: { fileAbsolutePath: { regex: "/src\\/posts/" } }
       ) {
         nodes {
           fields {
@@ -56,7 +54,7 @@ const createBlogPostsPages = async ({ createPage, graphql }) => {
 
   results.data.allMarkdownRemark.nodes.forEach((node) => {
     const { fields, frontmatter } = node
-    const { cover, seoImage, path } = fields
+    const { cover, seoImage, path: postPath } = fields
     const { path: slug, title } = frontmatter
 
     createPage({
@@ -68,7 +66,7 @@ const createBlogPostsPages = async ({ createPage, graphql }) => {
         title,
         isBlogPost: true,
       },
-      path,
+      path: postPath,
     })
   })
 }
@@ -76,6 +74,6 @@ const createBlogPostsPages = async ({ createPage, graphql }) => {
 module.exports = async ({ actions, graphql }) => {
   const { createPage } = actions
 
-  await createBlogAuthorsPages({ createPage, graphql })
-  await createBlogPostsPages({ createPage, graphql })
+  await createAuthorPages({ createPage, graphql })
+  await createBlogPostPages({ createPage, graphql })
 }

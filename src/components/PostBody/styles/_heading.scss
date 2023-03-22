@@ -1,0 +1,53 @@
+h1 {
+  display: none;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  max-width: var(--post-body-max-width);
+  padding: 0 20px;
+
+  font-family: colfax-web, sans-serif;
+  font-weight: 500;
+
+  @include media(">=desktop") {
+    padding: 0 28px;
+  }
+}
+
+h2 {
+  margin: 84px auto 20px;
+
+  font-size: 20px;
+  line-height: 28px;
+
+  @include media(">=desktop") {
+    margin: 112px auto 28px;
+
+    font-size: 40px;
+    line-height: 56px;
+  }
+}
+
+h3 {
+  margin: 40px auto 20px;
+
+  font-size: 20px;
+  line-height: 28px;
+
+  @include media(">=desktop") {
+    margin: 56px auto 28px;
+
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+
+h4,
+h5,
+h6 {
+  margin: 0 auto;
+}

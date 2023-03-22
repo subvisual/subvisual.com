@@ -1,5 +1,6 @@
 module.exports = ({ actions }) => {
   const { createTypes } = actions
+
   const typeDefs = [
     `
       interface Author {
