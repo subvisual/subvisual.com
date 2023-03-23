@@ -1,0 +1,62 @@
+.root {
+  height: 586px;
+
+  background-image: url(../../images/footer.png);
+  background-size: cover;
+  border-bottom-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+}
+
+.content {
+  margin: 112px 16px;
+
+  color: var(--c-white-1);
+
+  font-family: "Acta";
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48px;
+
+  @media (min-width: 768px) {
+    margin-left: 56px;
+  }
+
+  @media (min-width: 950px) {
+    margin: 112px 117px;
+  }
+}
+
+.text {
+  margin-bottom: 84px;
+
+  span {
+    color: #ff7b9b;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 56px;
+    line-height: 64px;
+  }
+
+  @media (min-width: 950px) {
+    font-size: 84px;
+    line-height: 92.4px;
+  }
+}
+
+.button {
+  display: inline-flex;
+  padding: 29px 39px;
+
+  border: 1px solid currentColor;
+  border-radius: 50px;
+
+  text-transform: uppercase;
+
+  transition: background-color 0.2s, color 0.2s;
+
+  &:hover {
+    background-color: var(--c-white-1);
+    color: #ff7b9b;
+  }
+}

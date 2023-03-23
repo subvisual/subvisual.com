@@ -9,9 +9,9 @@
 
   @include media(">=tablet") {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 28px;
     align-items: stretch;
+    grid-column-gap: 28px;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -23,9 +23,6 @@
   @include media(">=desktop") {
     padding: 40px 0;
   }
-}
-
-.post {
 }
 
 .title {
@@ -40,6 +37,7 @@
 
   @include media(">=desktop") {
     margin-bottom: 40px;
+
     font-size: 28px;
     line-height: 40px;
   }
@@ -70,19 +68,28 @@
 }
 
 .info {
-  font-family: colfax-web;
-  opacity: 0.6;
   display: flex;
   align-items: center;
+
+  opacity: 0.6;
+
+  font-family: colfax-web;
 }
 
 .categories {
   margin-top: 28px;
+
+  color: var(--c-blue-1);
+
+  &:nth-child(2n) {
+    color: var(--c-purple-1);
+  }
 }
 
 .author,
 .date {
+  display: block;
+
   font-size: 16px;
   line-height: 21px;
-  display: block;
 }

@@ -46,13 +46,7 @@ function SocialLink({ name: userName, platform, size, url }) {
   const { label, name: platformName } = socialPlatforms[platform]
 
   return (
-    <Link
-      to={url}
-      title={`${userName} on ${platformName}`}
-      size={size}
-      blank
-      faded
-    >
+    <Link to={url} title={`${userName} on ${platformName}`} size={size} blank>
       <span aria-hidden="true">{label}</span>
     </Link>
   )

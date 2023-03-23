@@ -1,12 +1,12 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Layout from "~/src/components/Layout"
+import MainLayout from "~/src/components/MainLayout"
 import SEO from "~/src/components/SEO"
 import PostsList from "~/src/components/PostList"
 
 import "../common/base.scss"
-import * as styles from "./blog.module.scss"
+import * as styles from "./index.module.scss"
 
 const query = graphql`
   {
@@ -58,13 +58,13 @@ function Posts({ posts }) {
             and development, we try to give back by sharing.
           `}
       />
-      <Layout currentPath="/blog/">
+      <MainLayout>
         <div className={styles.root}>
           <div className={styles.content}>
             <PostsList posts={posts} />
           </div>
         </div>
-      </Layout>
+      </MainLayout>
     </>
   )
 }

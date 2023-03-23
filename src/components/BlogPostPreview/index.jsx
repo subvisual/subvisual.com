@@ -6,10 +6,9 @@ import remarkHtml from "remark-html"
 import "~/src/common/base.scss"
 
 import * as styles from "~/src/templates/Post/index.module.scss"
-import * as titleStyles from "~/src/components/PostHeader/index.module.css"
 
+import PostTitle from "~/src/components/PostTitle"
 import Body from "~/src/components/PostBody"
-import Title from "~/src/components/BlogTitle"
 
 function BlogPostPreview(props) {
   // eslint-disable-next-line react/destructuring-assignment
@@ -42,9 +41,7 @@ function BlogPostPreview(props) {
       <article className={styles.article}>
         <section>
           <header className={styles.header}>
-            <div className={titleStyles.title}>
-              <Title>{title}</Title>
-            </div>
+            <PostTitle>{title}</PostTitle>
           </header>
           <Body className={styles.innerWrapper} html={html} />
         </section>

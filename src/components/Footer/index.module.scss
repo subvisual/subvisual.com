@@ -1,0 +1,8 @@
+.root {
+  display: grid;
+  grid-gap: 84px;
+
+  @media (min-width: 950px) {
+    grid-gap: 112px;
+  }
+}

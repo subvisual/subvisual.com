@@ -1,0 +1,23 @@
+.root {
+  position: absolute;
+
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 28px;
+
+  width: 100%;
+
+  padding: 0 56px;
+
+  @media (min-width: 950px) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 118px;
+    align-items: center;
+  }
+}

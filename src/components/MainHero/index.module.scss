@@ -1,0 +1,16 @@
+.root {
+  height: 816px;
+  margin-bottom: 120px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border-bottom-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+
+  color: var(--c-white-1);
+}
+
+.content {
+  display: inline-block;
+}
