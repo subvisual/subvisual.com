@@ -1,0 +1,18 @@
+.root {
+  padding-right: 28px;
+  padding-bottom: 102px;
+  padding-left: 28px;
+}
+
+.title {
+  padding-left: 28px;
+  margin-top: 290px;
+
+  @media (min-width: 768px) {
+    padding-left: 100px;
+  }
+
+  @media (min-width: 1300px) {
+    padding-left: 235px;
+  }
+}

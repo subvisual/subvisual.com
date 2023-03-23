@@ -1,0 +1,30 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.menu {
+  padding: 0;
+  margin-bottom: 8px;
+
+  background-color: transparent;
+
+  border: 0;
+
+  color: currentColor;
+
+  cursor: pointer;
+
+  font-size: 20px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  list-style: none;
+
+  text-align: end;
+}

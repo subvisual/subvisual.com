@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import dateFormat from "dateformat"
 import { Link } from "gatsby"
-// import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import * as styles from "./index.module.scss"
 import Categories from "../Categories"
@@ -29,7 +29,7 @@ function Entry({ author, date, intro, path, title, categories }) {
         </Link>
       </p>
       <div className={styles.info}>
-        {/* {author?.photo && (
+        {author?.photo && (
           <GatsbyImage
             alt=""
             image={getImage(author.photo.vertical)}
@@ -40,7 +40,7 @@ function Entry({ author, date, intro, path, title, categories }) {
               borderRadius: "50%",
             }}
           />
-        )} */}
+        )}
         <div>
           {author && <Author className={styles.author} author={author} />}
           <span className={styles.date}>On {formattedDate}</span>

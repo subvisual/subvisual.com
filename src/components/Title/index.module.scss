@@ -1,0 +1,17 @@
+.root {
+  color: currentColor;
+
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 35px;
+
+  @media (min-width: 768px) {
+    font-size: 64px;
+    line-height: 70px;
+  }
+
+  @media (min-width: 950px) {
+    font-size: 84px;
+    line-height: 92.4px;
+  }
+}

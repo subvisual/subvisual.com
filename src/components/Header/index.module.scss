@@ -1,58 +1,61 @@
-@import "common/breakpoints";
-
 .root {
-  padding: 28px 20px 56px;
+  position: fixed;
 
-  @include media(">=desktop") {
-    padding: 56px 28px 112px;
+  top: 0;
+  z-index: 1;
+
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+
+  padding-top: 40px;
+  padding-left: 28px;
+  padding-right: 86px;
+
+  color: var(--c-white-1);
+
+  transition: color 1s;
+
+  @media (min-width: 768px) {
+    align-items: end;
   }
 }
 
-.content {
+.isScrolled {
+  position: fixed;
+
+  top: 0;
+  z-index: 1;
+
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  width: 100%;
-  max-width: 1184px;
-  margin: 0 auto;
+  width: 100vw;
+
+  padding-top: 40px;
+  padding-right: 86px;
+  padding-bottom: 40px;
+  padding-left: 28px;
+
+  background-color: var(--c-white-2);
+  color: var(--c-gray-1);
+
+  transition: color 1s;
+
+  @media (min-width: 768px) {
+    align-items: end;
+  }
 }
 
 .logo {
-  height: 20px;
+  padding-left: 28px;
 
-  font-size: 16px;
+  color: currentColor;
 
-  @include media(">=desktop") {
-    max-height: 28px;
+  font-family: "Acta Headline", serif;
+  font-weight: 800;
 
-    font-size: 20px;
-  }
-}
-
-.nav-links {
-  display: flex;
-  align-items: center;
-
-  height: 26px;
-  padding: 0;
-
-  margin: 0;
-
-  list-style: none;
-
-  @include media(">=desktop") {
-    height: 33px;
-  }
-}
-
-.nav-link {
-  margin-right: 20px;
-
-  @include media(">=desktop") {
-    margin-right: 28px;
-  }
-
-  &:last-child {
-    margin-right: 0;
+  @media (min-width: 950px) {
+    font-size: 40px;
+    line-height: 44px;
   }
 }

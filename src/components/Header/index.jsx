@@ -1,43 +1,25 @@
 import React from "react"
-import PropTypes from "prop-types"
 
-import NavLink from "./NavLink"
+import useWindowState from "../../hooks/useWindowState"
+
+import Logo from "../Logo"
+import NavLinks from "../NavLinks"
+import NavMenu from "../NavMenu"
 
 import * as styles from "./index.module.scss"
 
-const BLOG_PATH = "/blog/"
+function Header() {
+  const { scrollY, innerWidth } = useWindowState()
 
-function Header({ currentPath, renderLogo }) {
+  const isDesktop = innerWidth > 950
+  const isScrolled = scrollY > 756
+
   return (
-    <header className={styles.root}>
-      <div className={styles.content}>
-        <div className={styles.logo}>{renderLogo()}</div>
-        <nav>
-          <ul className={styles.navLinks}>
-            <li className={styles.navLink}>
-              <NavLink
-                active={currentPath === BLOG_PATH}
-                to={BLOG_PATH}
-                title="Blog"
-              >
-                Blog
-              </NavLink>
-            </li>
-            <li className={styles.navLink}>
-              <NavLink to="mailto:contact@subvisual.com" title="Contact" blank>
-                Contact
-              </NavLink>
-            </li>
-          </ul>
-        </nav>
-      </div>
+    <header className={isScrolled ? styles.isScrolled : styles.root}>
+      <Logo />
+      {isDesktop ? <NavLinks /> : <NavMenu />}
     </header>
   )
-}
-
-Header.propTypes = {
-  currentPath: PropTypes.string.isRequired,
-  renderLogo: PropTypes.func.isRequired,
 }
 
 export default Header
