@@ -1,64 +1,65 @@
 import React from "react"
 
-import CallToAction from "~/src/components/CallToAction"
 import Text from "~/src/components/Text"
-import Logo from "~/src/components/Logo"
-import Location from "./location"
-import Norte2020 from "./Norte2020"
+import Link from "~/src/components/Link"
 import SocialLinks from "./social_links"
+import Image from "../../images/footer.png"
 
 import * as styles from "./index.module.css"
 
 function Footer() {
   return (
     <footer>
-      <div className={styles.blue}>
-        <div className={styles.content}>
-          <div className={styles.logo}>
-            <Logo />
-          </div>
+      <div className={styles.container}>
+        <div className={styles.imageContainer}>
+          <img src={Image} alt="footer" className={styles.image} />
           <div className={styles.callToAction}>
-            <p>
-              <Text>Ready to bring your ideas to life?</Text>{" "}
-              <CallToAction color="white">Let&apos;s talk.</CallToAction>
-            </p>
+            <h1>
+              Dig <span>your</span>
+              <br /> curiosity with <span>us</span>
+            </h1>
+            <a className={styles.button} href="/">
+              Subscribe our newsletter
+            </a>
           </div>
-          <div className={styles.locations}>
-            <div>
-              <Location
-                align="left"
-                name="Braga, Portugal"
-                image="braga"
-                geoUrl="geo:41.543243,-8.399365"
-                mapsUrl="https://goo.gl/maps/ddvtn1Ez8N72"
-              />
-            </div>
-            <div>
-              <Location
-                align="right"
-                name="Boston, USA"
-                image="boston"
-                geoUrl="geo:42.356742,-71.057583"
-                mapsUrl="https://goo.gl/maps/zouxb7phyLz"
-              />
-            </div>
-          </div>
-          <div className={styles.social}>
-            <div className={styles.socialLabel}>
-              <Text size="small">Follow us</Text>
-            </div>
-            <SocialLinks />
-          </div>
-          <p>
-            <Text size="small" color="purple">
-              Handcrafted by Subvisual © {new Date().getFullYear()}
-            </Text>
-          </p>
         </div>
-      </div>
-      <div className={styles.white}>
         <div className={styles.content}>
-          <Norte2020 />
+          <div className={styles.information}>
+            <div className={styles.gridItem}>
+              <div className={styles.itemLabel}>
+                <Text size="large">Go to</Text>
+              </div>
+              <div className={styles.redirects}>
+                <Link to="https://subvisual.com/people">People</Link>
+                <Link to="https://jobs.subvisual.com/">Work</Link>
+                <Link to="https://subvisual.com/blog">Blog</Link>
+                <Link to="https://subvisual.com/ventures">Ventures</Link>
+              </div>
+            </div>
+            <div className={styles.gridItem}>
+              <div className={styles.itemLabel}>
+                <Text size="large">We&apos;re social</Text>
+              </div>
+              <SocialLinks />
+            </div>
+            <div className={styles.gridItem}>
+              <div className={styles.itemLabel}>
+                <Text size="large">Contact us</Text>
+              </div>
+              <Link to="mailto:contact@subvisual.com">
+                contact@subvisual.com
+              </Link>
+            </div>
+            <div className={styles.gridItem}>
+              <div className={styles.itemLabel}>
+                <Text size="large">Offices</Text>
+              </div>
+              <Text size="regular">
+                Remote. Work anywhere in the world. <br />
+                Or join our motherships, landed in Braga and Boston.
+              </Text>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
