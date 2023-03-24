@@ -4,6 +4,9 @@ title: Building Utrust And Advice On How To Scale A Product Team
 category:
   - engineering
   - product
+categories:
+  - engineering
+  - product
 author: gabriel-poca
 date: 2022-02-25
 intro: Building Utrust was one of the highlights of my career, and this is an
