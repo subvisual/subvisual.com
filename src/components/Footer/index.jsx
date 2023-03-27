@@ -1,9 +1,9 @@
 import React from "react"
 
+import Image from "./image"
 import Text from "~/src/components/Text"
 import Link from "~/src/components/Link"
 import SocialLinks from "./social_links"
-import Image from "../../images/footer.png"
 
 import * as styles from "./index.module.css"
 
@@ -11,18 +11,7 @@ function Footer() {
   return (
     <footer>
       <div className={styles.container}>
-        <div className={styles.imageContainer}>
-          <img src={Image} alt="footer" className={styles.image} />
-          <div className={styles.callToAction}>
-            <h1>
-              Dig <span>your</span>
-              <br /> curiosity with <span>us</span>
-            </h1>
-            <a className={styles.button} href="/">
-              Subscribe our newsletter
-            </a>
-          </div>
-        </div>
+        <Image />
         <div className={styles.content}>
           <div className={styles.information}>
             <div className={styles.gridItem}>
