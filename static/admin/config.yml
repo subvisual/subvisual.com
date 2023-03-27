@@ -22,6 +22,19 @@ collections:
         widget: 'string'
         pattern: ['^[\d\w-_]+$', "You can only use letter, numbers, _ or -"]
       - { label: 'Title', name: 'title', widget: 'string' }
+      - label: "Categories"
+        name: 'categories'
+        widget: 'select'
+        multiple: true
+        options:
+          - { value: 'case-studies', label: 'Case Studies' }
+          - { value: 'engineering', label: 'Engineering' }
+          - { value: 'design', label: 'Design' }
+          - { value: 'product', label: 'Product' }
+          - { value: 'research', label: 'Research' }
+          - { value: 'inside-subvisual', label: 'Inside Subvisual' }
+          - { value: 'academy', label: 'Academy' }
+          - { value: 'operations', label: 'Operations' }
       - label: 'Author'
         name: 'author'
         widget: 'select'
