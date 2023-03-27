@@ -1,0 +1,15 @@
+.root {
+  padding: 29px 39px;
+
+  border: 1px solid #fff;
+  border-radius: 50px;
+
+  text-transform: uppercase;
+
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.root:hover {
+  background-color: #fff;
+  color: #ff7b9b;
+}

@@ -1,22 +1,11 @@
 .container {
-  padding-bottom: 74px;
+  display: grid;
+  grid-gap: 84px;
 }
 
 .content {
-  align-self: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 1228px;
-  padding: 0 40px;
-  margin: 0 auto;
-}
-
-.information {
-  grid-row: auto auto;
   display: grid;
   grid-row-gap: 28px;
-  grid-template-columns: 1fr;
 }
 
 .itemLabel {
@@ -25,7 +14,7 @@
   color: #045cfc;
 }
 
-.redirects {
+.links {
   grid-row: auto auto;
   display: grid;
   grid-column-gap: 20px;
@@ -33,15 +22,21 @@
   grid-template-columns: 168px auto;
 }
 
-@media (min-width: 950px) {
-  .container {
-    padding-bottom: 102px;
-  }
-
-  .information {
+@media (min-width: 768px) {
+  .content {
     grid-column-gap: 28px;
     grid-row-gap: 56px;
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 950px) {
+  .container {
+    grid-gap: 112px;
+  }
+
+  .content {
+    margin: 0 auto;
   }
 
   .itemLabel {

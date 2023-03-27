@@ -1,0 +1,49 @@
+.container {
+  height: 586px;
+
+  background-image: url(../../images/footer.png);
+  background-size: cover;
+  border-bottom-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+}
+
+.content {
+  margin: 112px 16px;
+
+  color: #fff;
+
+  font-family: "Acta";
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48px;
+}
+
+.text {
+  margin-bottom: 84px;
+}
+
+.text span {
+  color: #ff7b9b;
+}
+
+@media (min-width: 768px) {
+  .content {
+    margin-left: 56px;
+  }
+
+  .text {
+    font-size: 56px;
+    line-height: 64px;
+  }
+}
+
+@media (min-width: 950px) {
+  .content {
+    margin: 112px 117px;
+  }
+
+  .text {
+    font-size: 84px;
+    line-height: 92.4px;
+  }
+}
