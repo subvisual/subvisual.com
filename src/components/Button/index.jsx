@@ -7,11 +7,9 @@ import * as styles from "./index.module.scss"
 
 function Button({ size, to, children }) {
   return (
-    <Text size={size}>
-      <a href={to} className={styles.root}>
-        {children}
-      </a>
-    </Text>
+    <a href={to} className={styles.root}>
+      <Text size={size}>{children}</Text>
+    </a>
   )
 }
 
