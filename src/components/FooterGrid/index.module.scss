@@ -1,0 +1,39 @@
+.root {
+  display: grid;
+  grid-row-gap: 28px;
+  grid-column-gap: 28px;
+
+  justify-content: stretch;
+
+  @media (min-width: 768px) {
+    grid-row-gap: 56px;
+    grid-template-columns: 1fr 1fr;
+    max-width: 80%;
+    justify-self: center;
+  }
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @media (min-width: 950px) {
+    gap: 28px;
+  }
+
+  @media (min-width: 1300px) {
+    width: 540px;
+  }
+}
+
+.label {
+  color: #045cfc;
+}
+
+.links {
+  display: grid;
+  grid-column-gap: 28px;
+  grid-row-gap: 16px;
+  grid-template-columns: 1fr 1fr;
+}

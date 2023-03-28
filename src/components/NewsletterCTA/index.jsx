@@ -1,11 +1,11 @@
 import React from "react"
 import Button from "../Button"
 
-import * as styles from "./index.module.css"
+import * as styles from "./index.module.scss"
 
 function NewsletterCTA() {
   return (
-    <div className={styles.container}>
+    <div className={styles.root}>
       <div className={styles.content}>
         <p className={styles.text}>
           Dig <span>your</span>

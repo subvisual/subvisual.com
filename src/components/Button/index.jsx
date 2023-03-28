@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 
 import Text from "~/src/components/Text"
 
-import * as styles from "./index.module.css"
+import * as styles from "./index.module.scss"
 
 function Button({ size, to, children }) {
   return (
