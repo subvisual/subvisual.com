@@ -11,7 +11,9 @@ function NewsletterCTA() {
           Dig <span>your</span>
           <br /> curiosity with <span>us</span>
         </p>
-        <Button to="/">Subscribe our newsletter</Button>
+        <Button to="mailto:contact@subvisual.com?subject=Hi%20Subvisual!%20I%20want%20to%20keep%20in%20touch">
+          Keep in touch with us
+        </Button>
       </div>
     </div>
   )
