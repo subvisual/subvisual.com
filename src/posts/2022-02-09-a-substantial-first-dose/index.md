@@ -1,6 +1,8 @@
 ---
-path: /a-substantial-first-dose
+path: a-substantial-first-dose
 title: A Substantial First Dose
+categories:
+  - inside-subvisual
 author: subvisual
 date: 2022-02-09
 cover: meta.jpg
