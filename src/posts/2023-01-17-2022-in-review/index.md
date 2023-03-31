@@ -1,6 +1,8 @@
 ---
-path: /2022-in-review
+path: 2022-in-review
 title: 2022 in review
+categories:
+  - inside-subvisual
 author: subvisual
 date: 2023-01-17
 cover: blog-wrap-up-2022.png
