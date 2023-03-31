@@ -1,11 +1,13 @@
 ---
-path: /0xmonaco-battle-of-titans
-title: "0xMonaco - Battle of Titans"
+path: 0xmonaco-battle-of-titans
+title: 0xMonaco - Battle of Titans
+categories:
+  - engineering
 author: miguel-palhas
 date: 2023-02-23
-cover:
+cover: null
 seoImage: ./cover.jpg
-intro: "On January 5th, we took notice of MatchboxDAO’s event, 0xMonaco."
+intro: On January 5th, we took notice of MatchboxDAO’s event, 0xMonaco.
 ---
 
 [0xmonaco]: https://www.google.com/url?q=https://mirror.xyz/matchboxdao.eth/-xVvvo36y-LHvrW99heb4VJ-xAOWQ-BQAx6MCwHLWnk&sa=D&source=docs&ust=1676917568372077&usg=AOvVaw2_oBhlTbilNdAPWV2uKQ8T
