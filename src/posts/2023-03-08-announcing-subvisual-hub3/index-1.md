@@ -1,6 +1,8 @@
 ---
 path: announcing-subvisual-hub-3
 title: Announcing Subvisual Hub3
+categories:
+  - inside-subvisual
 author: nuno-reis
 date: 2023-03-08
 cover: blog-subvisual-hub3.jpg
