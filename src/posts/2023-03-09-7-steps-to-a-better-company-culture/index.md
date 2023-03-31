@@ -1,6 +1,8 @@
 ---
 path: seven-steps-to-a-better-company-culture
 title: 7 Steps to a Better Company Culture
+categories:
+  - operations
 author: laura-esteves
 date: 2023-03-10
 cover: subvisual-blog-7-steps-to-a-better-company-culture.png
