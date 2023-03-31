@@ -1,6 +1,8 @@
 ---
-path: /helping-sandclock-build
+path: helping-sandclock-build
 title: Helping Sandclock Build
+categories:
+  - engineering
 author: subvisual
 date: 2023-01-17
 cover: subvisual-blog-post-sandclock.png
