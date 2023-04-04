@@ -22,6 +22,21 @@ const query = graphql`
           author {
             key
             name
+            photo {
+              vertical {
+                childImageSharp {
+                  gatsbyImageData(
+                    width: 50
+                    height: 50
+                    transformOptions: { fit: COVER, cropFocus: ATTENTION }
+                  )
+                }
+              }
+            }
+          }
+          categories {
+            key
+            label
           }
           date
           title
@@ -61,9 +76,9 @@ export default function Page() {
   const posts = nodes.map((node) => {
     const { frontmatter, fields } = node
     const { path } = fields
-    const { author, date, intro, title } = frontmatter
+    const { date, ...metadata } = frontmatter
 
-    return { author, date: new Date(date), intro, path, title }
+    return { ...metadata, date: new Date(date), path }
   })
 
   return <Posts posts={posts} />

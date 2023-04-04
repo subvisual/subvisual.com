@@ -1,5 +1,5 @@
 .root {
-  color: #045cfc;
+  color: var(--c-blue-1);
 
   font-family: "Acta Headline", serif;
   font-size: 28px;

@@ -1,0 +1,16 @@
+- key: case-studies
+  label: Case Studies
+- key: engineering
+  label: Engineering
+- key: design
+  label: Design
+- key: product
+  label: Product
+- key: research
+  label: Research
+- key: inside-subvisual
+  label: Inside Subvisual
+- key: academy
+  label: Academy
+- key: operations
+  label: Operations

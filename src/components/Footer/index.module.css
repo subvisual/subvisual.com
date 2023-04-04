@@ -1,7 +1,7 @@
 .blue {
   padding: 56px 20px 20px;
 
-  background-color: #045cfc;
+  background-color: var(--c-blue-1);
   color: #fcfcfc;
 }
 
