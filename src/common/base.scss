@@ -17,6 +17,9 @@ body {
   --post-max-width: 818px;
   --post-body-max-width: 516px;
 
+  --c-blue-1: #045cfc;
+  --c-purple-: #9463ff;
+
   @include media(">=desktop") {
     --post-max-width: 834px;
     --post-body-max-width: 734px;
