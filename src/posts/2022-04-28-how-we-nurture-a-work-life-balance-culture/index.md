@@ -1,6 +1,8 @@
 ---
-path: /how-to-nurture-a-worklife-balance
+path: how-to-nurture-a-worklife-balance
 title: "How we nurture a work/life balance culture "
+categories:
+  - operations
 author: subvisual
 date: 2022-04-28
 cover: meta.jpg
