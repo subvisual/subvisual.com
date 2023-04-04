@@ -1,6 +1,8 @@
 ---
-path: /submonthly-9-its-a-wrap
+path: submonthly-9-its-a-wrap
 title: "Submonthly #9 - It’s a wrap!"
+categories:
+  - inside-subvisual
 author: subvisual
 date: 2021-12-21
 cover: sub9.jpg
