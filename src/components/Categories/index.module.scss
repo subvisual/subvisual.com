@@ -1,0 +1,23 @@
+.root {
+  display: flex;
+
+  list-style-type: none;
+}
+
+.category {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  padding: 0 12px;
+  margin-right: 12px;
+
+  border: 1px solid currentColor;
+  border-radius: 10px;
+  color: var(--c-blue-1);
+
+  font-size: 12px;
+
+  &:nth-child(2n) {
+    color: var(--c-purple-1);
+  }
+}

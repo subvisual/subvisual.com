@@ -7,7 +7,7 @@
 }
 
 .root.blue {
-  color: #045cfc;
+  color: var(--c-blue-1);
 }
 
 .root svg {
