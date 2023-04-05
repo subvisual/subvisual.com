@@ -14,6 +14,11 @@ package = "@netlify/plugin-gatsby"
   force = true
 
 [[redirects]]
+  from = "/academy"
+  to = "https://jobs.subvisual.com/academy"
+  status = 200
+
+[[redirects]]
   from = "/ventures"
   to = "https://subvisual-redesign.webflow.io/ventures"
   status = 200
