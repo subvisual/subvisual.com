@@ -10,7 +10,9 @@ seoImage: subvisual-blog-post-sandclock.png
 intro: Sandclock is a DeFi product. What it does is new. No other product on the
   market does anything like it. Here's how we helped them create something the
   world had never seen before.
+highlight: true
 ---
+
 ### Why creating something entirely new requires tried and true methods
 
 Sandclock is a DeFi product. What it does is new. No other product on the market does anything like it.
@@ -67,11 +69,11 @@ Alongside Gabriel, Subvisual’s Álvaro Bezerra helped develop a framework, bas
 
 According to Gabriel, this is what any prospective CTO needs to instill in their team:
 
-* A six-week cycle has five weeks of development, but the first week is entirely dedicated to planning;
-* That week is the key to everything. You can argue about the timings (some teams prefer to do weekly cycles with one day dedicated to planning), but there needs to be one moment that’s fully dedicated to organizing the work, and it needs to be separate from execution;
-* Working with product is a lot more about saying “no” than saying “yes”. Typically, there is an overabundance of ideas, and figuring out what to collectively pursue is fundamental.
-* Work rhythm is completely disrupted if there is no adequate planning. You are continuously stopping to reevaluate what’s being done;
-* If you take a whole week every six weeks to exclusively plan, you can then take longer periods of pure execution that minimise context switching.
+- A six-week cycle has five weeks of development, but the first week is entirely dedicated to planning;
+- That week is the key to everything. You can argue about the timings (some teams prefer to do weekly cycles with one day dedicated to planning), but there needs to be one moment that’s fully dedicated to organizing the work, and it needs to be separate from execution;
+- Working with product is a lot more about saying “no” than saying “yes”. Typically, there is an overabundance of ideas, and figuring out what to collectively pursue is fundamental.
+- Work rhythm is completely disrupted if there is no adequate planning. You are continuously stopping to reevaluate what’s being done;
+- If you take a whole week every six weeks to exclusively plan, you can then take longer periods of pure execution that minimise context switching.
 
 A lot of this work was taken over by us in the beginning, which is exactly why we are valuable. Our team has the know-how to implement these methods in a seamless and consistent way that allows us to then dilute our participation and the team to take over as they start to become ready.
 

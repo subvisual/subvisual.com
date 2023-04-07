@@ -29,7 +29,7 @@ module.exports = ({ actions }) => {
         medium: String,
         twitter: String,
         web: String,
-      }      
+      }
 
       type MarkdownRemark implements Node {
         frontmatter: Frontmatter!,
@@ -38,18 +38,19 @@ module.exports = ({ actions }) => {
       type Frontmatter {
         author: Author! @link(by: "key"),
         categories: [Category!] @link(by: "key"),
-        cover: String,
+        cover: File @fileByRelativePath,
         date: Date!,
         path: String!,
         tags: [String]!,
         title: String!,
         seoDescription: String,
         seoImage: String,
+        highlight: Boolean,
       }
 
       type CategoryYaml implements Category & Node @dontInfer {
         key: String!,
-        label: String!  
+        label: String!
       }
 
       type BlogContributorYaml implements Author & Node @dontInfer {
@@ -57,7 +58,7 @@ module.exports = ({ actions }) => {
         bio: String,
         email: String,
         name: String!,
-        initials: String,     
+        initials: String,
         social: Social,
         photo: Photo
       }

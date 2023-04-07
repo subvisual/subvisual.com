@@ -1,23 +1,13 @@
 import React from "react"
 import PropTypes from "prop-types"
-import dateFormat from "dateformat"
 import { Link } from "gatsby"
 import Avatar from "../Avatar"
 
 import * as styles from "./index.module.scss"
 import Categories from "../Categories"
-
-function Author({ author: { key, name }, ...props }) {
-  return (
-    <Link {...props} to={`/blog/author/${key}`}>
-      {name}
-    </Link>
-  )
-}
+import Author from "../Author"
 
 function Entry({ author, date, intro, path, title, categories }) {
-  const formattedDate = dateFormat(date, "mmmm d, yyyy")
-
   return (
     <div>
       <div className={styles.title}>
@@ -29,11 +19,7 @@ function Entry({ author, date, intro, path, title, categories }) {
         </Link>
       </p>
       <div className={styles.info}>
-        <Avatar author={author} />
-        <div>
-          {author && <Author className={styles.author} author={author} />}
-          <span className={styles.date}>On {formattedDate}</span>
-        </div>
+        <Author author={author} date={date} />
       </div>
       {categories?.length && (
         <div className={styles.categories}>

@@ -4,13 +4,14 @@ title: Building Utrust And Advice On How To Scale A Product Team
 author: gabriel-poca
 date: 2022-02-25
 intro: "Building Utrust was one of the highlights of my career, and this is an attempt to document some of the key learning from the product and technology team."
+highlight: true
 ---
 
 My coworker [Miguel wrote about Utrust's ICO](https://subvisual.com/blog/posts/large-scale-in-a-rush-utrust-ico) from the point of view of the tech team, and that got me thinking that we did some of our finest work at [Utrust]. It's one of the highlights of my career, and I would love to keep those memories and learnings around for the future. This is my attempt to distill some of the key learning points from the product and technology side that I think can be interesting to others. If there's anything else you would like to know, feel free to [reach out to me on Twitter](https://twitter.com/gabrielgpoca).
 
 **What is Utrust?**
 
-Quick introduction: Utrust is an online payment gateway using cryptocurrencies. It's available in many online stores and marketplaces. It started from an ICO, and it's going full throttle. The main goal of  Utrust is to allow merchants to seamlessly accept crypto payments while buyers can be fully exposed to their ecosystem of choice and be protected by a trusted middleman.
+Quick introduction: Utrust is an online payment gateway using cryptocurrencies. It's available in many online stores and marketplaces. It started from an ICO, and it's going full throttle. The main goal of Utrust is to allow merchants to seamlessly accept crypto payments while buyers can be fully exposed to their ecosystem of choice and be protected by a trusted middleman.
 
 **My role**
 

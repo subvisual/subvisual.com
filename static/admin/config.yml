@@ -17,6 +17,7 @@ collections:
     path: '{{year}}-{{month}}-{{day}}-{{title}}/{{slug}}'
     preview_path: blog/posts/{{path}}
     fields:
+      - { label: 'Highlight', name: 'highlight', widget: 'boolean', default: true }
       - label: 'Path'
         name: 'path'
         widget: 'string'

@@ -1,10 +1,6 @@
 @import "common/breakpoints";
 
 .posts {
-  width: 100%;
-  max-width: 1039px;
-  margin: 0 auto;
-
   list-style: none;
 
   @include media(">=tablet") {
@@ -33,13 +29,15 @@
   }
 }
 
+.post {
+  max-width: 442px;
+}
+
 .title {
   display: block;
   margin-bottom: 20px;
 
-  color: #2421ab;
-
-  font-family: "Acta Headline";
+  font-family: "Acta";
   font-size: 20px;
   line-height: 28px;
 
@@ -92,12 +90,4 @@
   &:nth-child(2n) {
     color: var(--c-purple-1);
   }
-}
-
-.author,
-.date {
-  display: block;
-
-  font-size: 16px;
-  line-height: 21px;
 }
