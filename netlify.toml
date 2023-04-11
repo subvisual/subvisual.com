@@ -17,6 +17,7 @@ package = "@netlify/plugin-gatsby"
   from = "/academy"
   to = "https://jobs.subvisual.com/academy"
   status = 200
+  force = true
 
 [[redirects]]
   from = "/ventures"
