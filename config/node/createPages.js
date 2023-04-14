@@ -68,33 +68,33 @@ const createBlogPostPages = async ({ createPage, graphql }) => {
   })
 }
 
-const createTagPages = async ({ createPage, graphql }) => {
-  const component = path.resolve(ROOT, "src/templates/Tags/index.jsx")
+// const createTagPages = async ({ createPage, graphql }) => {
+//   const component = path.resolve(ROOT, "src/templates/Tags/index.jsx")
 
-  const query = `
-    {
-      allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/src\\/posts/" } }
-      ) {
-        distinct(field: {frontmatter: {tags: {key: SELECT}}})
-      }
-    }
-  `
-  const results = await graphql(query)
+//   const query = `
+//     {
+//       allMarkdownRemark(
+//         filter: { fileAbsolutePath: { regex: "/src\\/posts/" } }
+//       ) {
+//         distinct(field: {frontmatter: {tags: {key: SELECT}}})
+//       }
+//     }
+//   `
+//   const results = await graphql(query)
 
-  results.data.allMarkdownRemark.distinct.forEach((tagKey) =>
-    createPage({
-      component,
-      context: { tagKey },
-      path: path.posix.join("/tags/", tagKey),
-    })
-  )
-}
+//   results.data.allMarkdownRemark.distinct.forEach((tagKey) =>
+//     createPage({
+//       component,
+//       context: { tagKey },
+//       path: path.posix.join("/tags/", tagKey),
+//     })
+//   )
+// }
 
 module.exports = async ({ actions, graphql }) => {
   const { createPage } = actions
 
   await createAuthorPages({ createPage, graphql })
   await createBlogPostPages({ createPage, graphql })
-  await createTagPages({ createPage, graphql })
+  // await createTagPages({ createPage, graphql })
 }
