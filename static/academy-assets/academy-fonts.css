@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "alliance-no-2";
+  src: url("https://subvisual.com/academy-assets/fonts/AllianceNo.2-Light.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "gt-ultra-median";
+  src: url("https://subvisual.com/academy-assets/fonts/GT-Ultra-Median-Thin.ttf")
+    format("truetype"),
+    url("https://subvisual.com/academy-assets/fonts/GT-Ultra-Median-Thin.otf")
+    format("opentype")
+    url("https://subvisual.com/academy-assets/fonts/GT-Ultra-Median-Thin.woff")
+    format("woff"),
+    url("https://subvisual.com/academy-assets/fonts/GT-Ultra-Median-Thin.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "wkeverett-regular-web";
+  src: url("https://subvisual.com/academy-assets/fonts/TWKEverett-Regular-web.ttf")
+    format("truetype"),
+    url("https://subvisual.com/academy-assets/fonts/TWKEverett-Regular-web.woff")
+    format("woff"),
+    url("https://subvisual.com/academy-assets/fonts/TWKEverett-Regular-web.woff2")
+    format("woff2");
+}
