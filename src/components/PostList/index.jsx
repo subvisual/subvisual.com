@@ -15,6 +15,20 @@ function Author({ author: { key, name }, ...props }) {
   )
 }
 
+function firstName(name) {
+  return name.split(" ")[0] === "The"
+    ? name.split(" ").slice(1, -1).join(" ")
+    : name.split(" ").slice(0, -1).join(" ")
+}
+
+function lastName(name) {
+  return name.split(" ").slice(-1).join(" ")
+}
+
+function getRandomColor() {
+  return `#${`${Math.random().toString(16)}000000`.substring(2, 8)}`
+}
+
 function Entry({ author, date, intro, path, title, categories }) {
   const formattedDate = dateFormat(date, "mmmm d, yyyy")
 
@@ -29,17 +43,22 @@ function Entry({ author, date, intro, path, title, categories }) {
         </Link>
       </p>
       <div className={styles.info}>
-        {author?.photo && (
+        {author?.photo ? (
           <GatsbyImage
             alt=""
+            className={styles.photo}
             image={getImage(author.photo.vertical)}
-            style={{
-              marginRight: 16,
-              height: 40,
-              width: 40,
-              borderRadius: "50%",
-            }}
           />
+        ) : (
+          <div
+            className={styles.noPhoto}
+            style={{ backgroundColor: getRandomColor() }}
+          >
+            <p>
+              {firstName(author?.name)[0]}
+              {lastName(author?.name)[0]}
+            </p>
+          </div>
         )}
         <div>
           {author && <Author className={styles.author} author={author} />}

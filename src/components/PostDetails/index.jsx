@@ -9,7 +9,7 @@ function PostDetails({ author, date, categories }) {
   return (
     <div className={styles.root}>
       <Author author={author} date={date} />
-      <Categories categories={categories} />
+      <Categories categories={categories || []} />
     </div>
   )
 }
