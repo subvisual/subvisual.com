@@ -1,6 +1,11 @@
 [[plugins]]
 package = "@netlify/plugin-gatsby"
 
+[[headers]]
+  for = "/*"
+    [headers.values]
+    Access-Control-Allow-Origin = "*"
+
 [[redirects]]
   from = "/"
   to = "https://subvisual-redesign.webflow.io/"
