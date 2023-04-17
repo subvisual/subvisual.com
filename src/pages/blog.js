@@ -22,6 +22,7 @@ const query = graphql`
           author {
             key
             name
+            initials
             photo {
               vertical {
                 childImageSharp {

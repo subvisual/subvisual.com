@@ -82,6 +82,7 @@ PostsList.propTypes = {
       author: PropTypes.shape({
         key: PropTypes.string.isRequired,
         name: PropTypes.string.isRequired,
+        initials: PropTypes.string,
       }),
       date: PropTypes.instanceOf(Date).isRequired,
       intro: PropTypes.string,
