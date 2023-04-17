@@ -76,18 +76,16 @@
   font-family: colfax-web;
 }
 
-.photo,
-.noPhoto {
-  margin-right: 16px;
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-}
-
-.noPhoto {
+.avatar {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-right: 16px;
+
+  background-color: var(--c-blue-1);
+  border-radius: 50%;
   color: var(--c-white-1);
 }
 

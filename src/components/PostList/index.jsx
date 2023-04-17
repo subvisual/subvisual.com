@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import PropTypes from "prop-types"
 import dateFormat from "dateformat"
 import { Link } from "gatsby"
@@ -31,6 +31,7 @@ function getRandomColor() {
 
 function Entry({ author, date, intro, path, title, categories }) {
   const formattedDate = dateFormat(date, "mmmm d, yyyy")
+  const randomColor = useState(getRandomColor())[0]
 
   return (
     <div className={styles.post}>
@@ -42,29 +43,31 @@ function Entry({ author, date, intro, path, title, categories }) {
           <span>{intro}</span>
         </Link>
       </p>
-      <div className={styles.info}>
-        {author?.photo ? (
-          <GatsbyImage
-            alt=""
-            className={styles.photo}
-            image={getImage(author.photo.vertical)}
-          />
-        ) : (
-          <div
-            className={styles.noPhoto}
-            style={{ backgroundColor: getRandomColor() }}
-          >
-            <p>
-              {firstName(author?.name)[0]}
-              {lastName(author?.name)[0]}
-            </p>
+      {author && (
+        <div className={styles.info}>
+          {author.photo ? (
+            <GatsbyImage
+              alt=""
+              className={styles.avatar}
+              image={getImage(author.photo.vertical)}
+            />
+          ) : (
+            <div
+              className={styles.avatar}
+              style={{ backgroundColor: randomColor }}
+            >
+              <p>
+                {firstName(author?.name)[0]}
+                {lastName(author?.name)[0]}
+              </p>
+            </div>
+          )}
+          <div>
+            {author && <Author className={styles.author} author={author} />}
+            <span className={styles.date}>On {formattedDate}</span>
           </div>
-        )}
-        <div>
-          {author && <Author className={styles.author} author={author} />}
-          <span className={styles.date}>On {formattedDate}</span>
         </div>
-      </div>
+      )}
       {categories?.length && (
         <div className={styles.categories}>
           <Categories categories={categories || []} />
