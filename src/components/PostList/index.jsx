@@ -15,16 +15,6 @@ function Author({ author: { key, name }, ...props }) {
   )
 }
 
-function firstName(name) {
-  return name.split(" ")[0] === "The"
-    ? name.split(" ").slice(1, -1).join(" ")
-    : name.split(" ").slice(0, -1).join(" ")
-}
-
-function lastName(name) {
-  return name.split(" ").slice(-1).join(" ")
-}
-
 function getRandomColor() {
   return `#${`${Math.random().toString(16)}000000`.substring(2, 8)}`
 }
@@ -56,10 +46,7 @@ function Entry({ author, date, intro, path, title, categories }) {
               className={styles.avatar}
               style={{ backgroundColor: randomColor }}
             >
-              <p>
-                {firstName(author?.name)[0]}
-                {lastName(author?.name)[0]}
-              </p>
+              <p>{author.initials}</p>
             </div>
           )}
           <div>
