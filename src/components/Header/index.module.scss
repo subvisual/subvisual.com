@@ -6,10 +6,11 @@
 
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   width: 100vw;
 
   padding-top: 40px;
-  padding-right: 86px;
+  padding-right: 28px;
   padding-left: 28px;
 
   color: var(--c-white-1);
@@ -17,7 +18,7 @@
   transition: color 1s;
 
   @media (min-width: 768px) {
-    align-items: end;
+    padding-right: 86px;
   }
 }
 
@@ -29,11 +30,12 @@
 
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   width: 100vw;
 
   padding-top: 40px;
-  padding-right: 86px;
   padding-bottom: 40px;
+  padding-right: 28px;
   padding-left: 28px;
 
   background-color: var(--c-white-2);
@@ -42,7 +44,7 @@
   transition: color 1s;
 
   @media (min-width: 768px) {
-    align-items: end;
+    padding-right: 86px;
   }
 }
 

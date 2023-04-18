@@ -12,12 +12,21 @@
 
   width: 100%;
 
-  padding: 0 56px;
+  padding-top: 184px;
+  padding-right: 28px;
+  padding-bottom: 92px;
+  padding-left: 28px;
+
+  @media (min-width: 768px) {
+    padding-left: 56px;
+  }
 
   @media (min-width: 950px) {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 0 118px;
+    padding-right: 118px;
+    padding-bottom: 0;
+    padding-left: 118px;
   }
 }

@@ -1,5 +1,5 @@
 .root {
-  height: 816px;
+  height: 790px;
   margin-bottom: 120px;
 
   background-repeat: no-repeat;
@@ -9,6 +9,10 @@
   border-bottom-left-radius: 60px;
 
   color: var(--c-white-1);
+
+  @media (min-width: 950px) {
+    height: 816px;
+  }
 }
 
 .content {
