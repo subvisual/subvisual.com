@@ -1,8 +1,8 @@
-import React, { useState } from "react"
+import React from "react"
 import PropTypes from "prop-types"
 import dateFormat from "dateformat"
 import { Link } from "gatsby"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import Avatar from "../Avatar"
 
 import * as styles from "./index.module.scss"
 import Categories from "../Categories"
@@ -15,13 +15,8 @@ function Author({ author: { key, name }, ...props }) {
   )
 }
 
-function getRandomColor() {
-  return `#${`${Math.random().toString(16)}000000`.substring(2, 8)}`
-}
-
 function Entry({ author, date, intro, path, title, categories }) {
   const formattedDate = dateFormat(date, "mmmm d, yyyy")
-  const randomColor = useState(getRandomColor())[0]
 
   return (
     <div>
@@ -33,28 +28,13 @@ function Entry({ author, date, intro, path, title, categories }) {
           <span>{intro}</span>
         </Link>
       </p>
-      {author && (
-        <div className={styles.info}>
-          {author.photo ? (
-            <GatsbyImage
-              alt=""
-              className={styles.avatar}
-              image={getImage(author.photo.vertical)}
-            />
-          ) : (
-            <div
-              className={styles.avatar}
-              style={{ backgroundColor: randomColor }}
-            >
-              <p>{author.initials}</p>
-            </div>
-          )}
-          <div>
-            {author && <Author className={styles.author} author={author} />}
-            <span className={styles.date}>On {formattedDate}</span>
-          </div>
+      <div className={styles.info}>
+        <Avatar author={author} />
+        <div>
+          {author && <Author className={styles.author} author={author} />}
+          <span className={styles.date}>On {formattedDate}</span>
         </div>
-      )}
+      </div>
       {categories?.length && (
         <div className={styles.categories}>
           <Categories categories={categories || []} />

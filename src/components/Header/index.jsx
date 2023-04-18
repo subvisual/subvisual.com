@@ -1,5 +1,6 @@
 import React from "react"
 
+import useDetectJavascript from "~/src/utils/use_detect_javascript"
 import useWindowState from "../../hooks/useWindowState"
 
 import Logo from "../Logo"
@@ -9,10 +10,11 @@ import NavMenu from "../NavMenu"
 import * as styles from "./index.module.scss"
 
 function Header() {
+  const hasJavascript = useDetectJavascript()
   const { scrollY, innerWidth } = useWindowState()
 
-  const isDesktop = innerWidth > 950
-  const isScrolled = scrollY > 756
+  const isDesktop = hasJavascript ? innerWidth > 950 : 0
+  const isScrolled = hasJavascript ? scrollY > 756 : 0
 
   return (
     <header className={isScrolled ? styles.isScrolled : styles.root}>

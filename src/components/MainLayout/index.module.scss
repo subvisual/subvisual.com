@@ -10,18 +10,18 @@
 }
 
 .title {
-  padding-left: 28px;
   padding-right: 28px;
+  padding-left: 28px;
   margin-top: 163px;
 
   @media (min-width: 950px) {
-    margin-top: 290px;
-    padding-left: 56px;
     padding-right: 56px;
+    padding-left: 56px;
+    margin-top: 290px;
   }
 
   @media (min-width: 1300px) {
-    padding-left: 118px;
     padding-right: 118px;
+    padding-left: 118px;
   }
 }

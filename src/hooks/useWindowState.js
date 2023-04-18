@@ -1,13 +1,8 @@
 import { useState, useEffect } from "react"
-import useDetectJavascript from "~/src/utils/use_detect_javascript"
 
 function useWindowState() {
-  const hasJavascript = useDetectJavascript()
-
-  const [scrollY, setScrollY] = useState(hasJavascript ? window.scrollY : 0)
-  const [innerWidth, setInnerWidth] = useState(
-    hasJavascript ? window.innerWidth : 0
-  )
+  const [scrollY, setScrollY] = useState(window.scrollY)
+  const [innerWidth, setInnerWidth] = useState(window.innerWidth)
 
   useEffect(() => {
     function handleScroll() {
