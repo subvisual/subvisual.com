@@ -1,19 +1,33 @@
 import React from "react"
 import PropTypes from "prop-types"
+import classNames from "classnames"
 
 import Text from "~/src/components/Text"
 
-function Button({ size, to, className, children }) {
+import * as styles from "./index.module.scss"
+
+function Button({ onClick, href, children }) {
+  if (onClick) {
+    return (
+      <button className={styles.root} onClick={onClick} type="button">
+        <Text>{children}</Text>
+      </button>
+    )
+  }
+
+  if (!href) return null
+
   return (
-    <a href={to} className={className}>
-      <Text size={size}>{children}</Text>
+    <a to={href} className={classNames(styles.root, styles.link)}>
+      <Text>{children}</Text>
     </a>
   )
 }
 
 Button.propTypes = {
-  size: PropTypes.string,
-  to: PropTypes.string.isRequired,
+  children: PropTypes.string.isRequired,
+  href: PropTypes.string,
+  onClick: PropTypes.func,
 }
 
 export default Button

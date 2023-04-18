@@ -1,0 +1,26 @@
+.root {
+  display: inline-flex;
+  padding: 18px;
+
+  background-color: var(--c-white);
+
+  border: 1px solid var(--c-blue-1);
+  border-radius: 50px;
+  color: var(--c-blue-1);
+
+  cursor: pointer;
+
+  text-transform: uppercase;
+
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.link {
+  background-color: transparent;
+  border-color: currentColor;
+  color: currentColor;
+}

@@ -24,9 +24,7 @@ function NavLinks() {
           )
         )}
         <li>
-          <Button className={styles.button} to="mailto:contact@subvisual.com">
-            Contact Us
-          </Button>
+          <Button href="mailto:contact@subvisual.com">Contact Us</Button>
         </li>
       </ul>
     </nav>
