@@ -37,7 +37,11 @@ function Author({ date, author }) {
 }
 
 Author.propTypes = {
-  author: PropTypes.string,
+  author: PropTypes.shape({
+    key: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    photo: PropTypes.any.isRequired,
+  }),
   date: PropTypes.instanceOf(Date).isRequired,
 }
 
