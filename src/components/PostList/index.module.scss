@@ -18,7 +18,15 @@
 .item {
   padding: 28px 0;
 
-  border-bottom: 1px solid currentColor;
+  &:not(:first-child) {
+    border-top: 1px solid currentColor;
+  }
+
+  @include media(">=tablet") {
+    &:nth-child(-n + 2) {
+      border-top: none;
+    }
+  }
 
   @include media(">=desktop") {
     padding: 40px 0;

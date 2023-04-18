@@ -1,12 +1,16 @@
-import React from "react"
+import React, { useState, useMemo } from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import { slice } from "lodash"
 
+import Button from "~/src/components/Button"
 import MainLayout from "~/src/components/MainLayout"
-import SEO from "~/src/components/SEO"
+import PageWideWrapper from "~/src/components/PageWideWrapper"
 import PostsList from "~/src/components/PostList"
+import SEO from "~/src/components/SEO"
 
 import "../common/base.scss"
-import * as styles from "./index.module.scss"
+
+import * as styles from "./blog.module.scss"
 
 const query = graphql`
   {
@@ -49,6 +53,9 @@ const query = graphql`
 `
 
 function Posts({ posts }) {
+  const [postsShown, setPostsShown] = useState(6)
+  const currentPosts = useMemo(() => slice(posts, 0, postsShown), [postsShown])
+
   return (
     <>
       <SEO
@@ -60,11 +67,16 @@ function Posts({ posts }) {
           `}
       />
       <MainLayout>
-        <div className={styles.root}>
-          <div className={styles.content}>
-            <PostsList posts={posts} />
-          </div>
-        </div>
+        <PageWideWrapper>
+          <PostsList posts={currentPosts} />
+          {posts.length >= postsShown && (
+            <div className={styles.loadMore}>
+              <Button onClick={() => setPostsShown(postsShown + 6)}>
+                Load More Blog Posts
+              </Button>
+            </div>
+          )}
+        </PageWideWrapper>
       </MainLayout>
     </>
   )
