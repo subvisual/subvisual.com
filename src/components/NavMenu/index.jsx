@@ -35,10 +35,8 @@ function NavMenu() {
               </li>
             )
           )}
-          <li className={styles.link}>
-            <Button className={styles.button} to="mailto:contact@subvisual.com">
-              Contact Us
-            </Button>
+          <li>
+            <Button to="mailto:contact@subvisual.com">Contact Us</Button>
           </li>
         </ul>
       )}

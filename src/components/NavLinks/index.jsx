@@ -12,13 +12,13 @@ function NavLinks() {
       <ul className={styles.root}>
         {PATHS.map(({ name, path }) =>
           name === "Blog" ? (
-            <li>
+            <li key={name}>
               <NavLink active to={path}>
                 {name}
               </NavLink>
             </li>
           ) : (
-            <li>
+            <li key={name}>
               <NavLink to={path}>{name}</NavLink>
             </li>
           )

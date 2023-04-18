@@ -24,7 +24,7 @@ function Entry({ author, date, intro, path, title, categories }) {
   const randomColor = useState(getRandomColor())[0]
 
   return (
-    <div className={styles.post}>
+    <div>
       <div className={styles.title}>
         <Link to={path}>{title}</Link>
       </div>
