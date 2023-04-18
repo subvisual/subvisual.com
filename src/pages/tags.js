@@ -5,8 +5,9 @@ import { Link, graphql } from "gatsby"
 
 import SEO from "~/src/components/SEO"
 import MainLayout from "~/src/components/MainLayout"
+import PageWideWrapper from "~/src/components/PageWideWrapper"
 
-import * as styles from "./index.module.scss"
+import * as styles from "./tags.module.scss"
 
 export const pageQuery = graphql`
   query {
@@ -40,19 +41,17 @@ function TagsPage({
           `}
       />
       <MainLayout>
-        <div className={styles.root}>
-          <div className={styles.content}>
-            <ul className={styles.list}>
-              {group.map((tag) => (
-                <li className={styles.tag} key={tag.fieldValue}>
-                  <Link to={`/tags/${tag.fieldValue}/`}>
-                    {tag.fieldValue} - ({tag.totalCount})
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
+        <PageWideWrapper>
+          <ul className={styles.list}>
+            {group.map((tag) => (
+              <li className={styles.tag} key={tag.fieldValue}>
+                <Link to={`/tags/${tag.fieldValue}/`}>
+                  {tag.fieldValue} - ({tag.totalCount})
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </PageWideWrapper>
       </MainLayout>
     </>
   )
