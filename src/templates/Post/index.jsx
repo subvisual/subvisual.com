@@ -2,11 +2,11 @@ import React from "react"
 import { graphql } from "gatsby"
 import _get from "lodash/get"
 
-import ShareLinks from "../../components/PostShareLinks"
+import PageWideWrapper from "../../components/PageWideWrapper"
 import PostBody from "../../components/PostBody"
 import PostLayout from "../../components/PostLayout"
+import PostShareLinks from "../../components/PostShareLinks"
 import SEO from "../../components/SEO"
-import PageWideWrapper from "../../components/PageWideWrapper"
 
 import "~/src/common/base.scss"
 import * as styles from "./index.module.scss"
@@ -99,7 +99,7 @@ function BlogPostTemplate({
             <PageWideWrapper>
               <div className={styles.outerWrapper}>
                 <PostBody className={styles.innerWrapper} html={html} />
-                <ShareLinks className={styles.shareLinks} url={url} />
+                <PostShareLinks className={styles.shareLinks} url={url} />
               </div>
             </PageWideWrapper>
           </section>
