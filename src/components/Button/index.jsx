@@ -18,7 +18,7 @@ function Button({ onClick, href, children }) {
   if (!href) return null
 
   return (
-    <a to={href} className={classNames(styles.root, styles.link)}>
+    <a href={href} className={classNames(styles.root, styles.link)}>
       <Text>{children}</Text>
     </a>
   )
