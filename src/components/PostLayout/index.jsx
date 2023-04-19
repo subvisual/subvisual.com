@@ -20,10 +20,12 @@ function PostLayout({ title, author, date, categories, children }) {
       <AnnouncementBanner />
       <Header />
       <MainHero>
-        <div className={styles.title}>
-          <PostTitle>{title}</PostTitle>
+        <div className={styles.inner}>
+          <div className={styles.title}>
+            <PostTitle>{title}</PostTitle>
+          </div>
+          <PostDetails author={author} date={date} categories={categories} />
         </div>
-        <PostDetails author={author} date={date} categories={categories} />
       </MainHero>
       <main>{children}</main>
       <Footer />

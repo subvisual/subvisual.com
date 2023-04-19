@@ -1,32 +1,11 @@
 .root {
-  position: absolute;
-
-  right: 0;
-  bottom: 0;
-  left: 0;
-
   display: flex;
   flex-direction: column;
-
   gap: 28px;
-
-  width: 100%;
-
-  padding-top: 184px;
-  padding-right: 28px;
-  padding-bottom: 92px;
-  padding-left: 28px;
-
-  @media (min-width: 768px) {
-    padding-left: 56px;
-  }
 
   @media (min-width: 950px) {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding-right: 118px;
-    padding-bottom: 0;
-    padding-left: 118px;
   }
 }

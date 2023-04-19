@@ -1,25 +1,35 @@
 .root {
-  padding-bottom: 102px;
-
   @media (min-width: 768px) {
     padding-right: 28px;
     padding-left: 28px;
   }
 }
 
-.title {
+.inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
   padding-right: 28px;
+  padding-bottom: 92px;
   padding-left: 28px;
-  margin-top: 163px;
 
   @media (min-width: 950px) {
     padding-right: 56px;
+    padding-bottom: 65px;
     padding-left: 56px;
-    margin-top: 290px;
   }
 
   @media (min-width: 1300px) {
     padding-right: 118px;
     padding-left: 118px;
+  }
+}
+
+.title {
+  padding-top: 163px;
+
+  @media (min-width: 950px) {
+    padding-top: 290px;
   }
 }
