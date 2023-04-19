@@ -1,5 +1,8 @@
 .root {
   display: inline-flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 370px;
   padding: 18px;
 
   background-color: var(--c-white);
