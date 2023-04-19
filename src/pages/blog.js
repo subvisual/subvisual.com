@@ -67,7 +67,7 @@ function Posts({ posts }) {
           `}
       />
       <MainLayout>
-        <PageWideWrapper>
+        <PageWideWrapper padded>
           <PostsList posts={currentPosts} />
           {posts.length >= postsShown && (
             <div className={styles.loadMore}>
