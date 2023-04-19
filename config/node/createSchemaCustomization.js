@@ -50,7 +50,6 @@ module.exports = ({ actions }) => {
       type CategoryYaml implements Category & Node @dontInfer {
         key: String!,
         label: String!  
-        initials: String,     
       }
 
       type BlogContributorYaml implements Author & Node @dontInfer {
