@@ -1,4 +1,5 @@
 import React from "react"
+import classNames from "classnames"
 
 import useDetectJavaScript from "~/src/hooks/useDetectJavaScript"
 import useWindowState from "../../hooks/useWindowState"
@@ -16,7 +17,9 @@ function Header() {
   const isScrolled = scrollY > 756
 
   return (
-    <header className={isScrolled ? styles.isScrolled : styles.root}>
+    <header
+      className={classNames(styles.root, { [styles.isScrolled]: isScrolled })}
+    >
       <Logo />
       {isDesktop ? <NavLinks /> : <NavMenu />}
     </header>

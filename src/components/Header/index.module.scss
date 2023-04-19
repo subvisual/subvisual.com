@@ -23,29 +23,12 @@
 }
 
 .isScrolled {
-  position: fixed;
-
-  top: 0;
-  z-index: 1;
-
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  width: 100vw;
-
-  padding-top: 40px;
-  padding-right: 28px;
   padding-bottom: 40px;
-  padding-left: 28px;
 
   background-color: var(--c-white-2);
   color: var(--c-gray-1);
 
   transition: color 1s;
-
-  @media (min-width: 768px) {
-    padding-right: 86px;
-  }
 }
 
 .logo {
