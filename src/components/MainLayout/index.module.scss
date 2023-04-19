@@ -1,11 +1,15 @@
 .root {
-  padding-bottom: 102px;
+  padding-bottom: 84px;
 
   @media (min-width: 768px) {
     display: flex;
     flex-direction: column;
     padding-right: 28px;
     padding-left: 28px;
+  }
+
+  @media (min-width: 950px) {
+    padding-bottom: 140px;
   }
 }
 
