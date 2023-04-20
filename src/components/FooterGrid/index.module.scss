@@ -5,17 +5,14 @@
   grid-column-gap: 28px;
   grid-row-gap: 28px;
 
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: var(--page-wide-spacing);
+  padding-left: var(--page-wide-spacing);
 
   @media (min-width: 768px) {
     justify-self: center;
     grid-row-gap: 56px;
     grid-template-columns: 1fr 1fr;
     max-width: 80%;
-
-    padding-right: 0;
-    padding-left: 0;
   }
 }
 
