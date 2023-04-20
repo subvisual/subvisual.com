@@ -1,0 +1,17 @@
+.root {
+  display: flex;
+  flex-direction: column;
+
+  list-style: none;
+
+  text-align: end;
+  gap: 8px;
+}
+
+.isDesktop {
+  flex-direction: row;
+  align-items: center;
+  gap: 28px;
+
+  height: 33px;
+}

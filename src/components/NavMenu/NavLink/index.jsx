@@ -6,7 +6,7 @@ import Link from "~/src/components/Link"
 
 import * as styles from "./index.module.scss"
 
-function HeaderNavLink({ active, children, to }) {
+function NavLink({ active, children, to }) {
   const className = classNames(styles.root, {
     [styles.active]: active,
   })
@@ -18,10 +18,10 @@ function HeaderNavLink({ active, children, to }) {
   )
 }
 
-HeaderNavLink.propTypes = {
+NavLink.propTypes = {
   active: PropTypes.bool,
   children: PropTypes.node.isRequired,
   to: PropTypes.string.isRequired,
 }
 
-export default HeaderNavLink
+export default NavLink

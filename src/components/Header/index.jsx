@@ -5,7 +5,6 @@ import useDetectJavaScript from "~/src/hooks/useDetectJavaScript"
 import useWindowState from "../../hooks/useWindowState"
 
 import Logo from "../Logo"
-import NavLinks from "../NavLinks"
 import NavMenu from "../NavMenu"
 
 import * as styles from "./index.module.scss"
@@ -21,7 +20,7 @@ function Header() {
       className={classNames(styles.root, { [styles.isScrolled]: isScrolled })}
     >
       <Logo />
-      {isDesktop ? <NavLinks /> : <NavMenu />}
+      <NavMenu isDesktop={isDesktop} />
     </header>
   )
 }

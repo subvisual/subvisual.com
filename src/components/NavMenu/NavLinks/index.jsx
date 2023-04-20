@@ -1,15 +1,25 @@
 import React from "react"
+import PropTypes from "prop-types"
+import classNames from "classnames"
 
-import Button from "../Button"
+import Button from "../../Button"
 import NavLink from "../NavLink"
 
 import * as styles from "./index.module.scss"
-import { PATHS } from "../../constants"
 
-function NavLinks() {
+const PATHS = [
+  { name: "Services", path: "/services/" },
+  { name: "Ventures", path: "/ventures/" },
+  { name: "People", path: "/people/" },
+  { name: "Blog", path: "/blog/" },
+]
+
+function NavLinks({ isDesktop }) {
   return (
     <nav>
-      <ul className={styles.root}>
+      <ul
+        className={classNames(styles.root, { [styles.isDesktop]: isDesktop })}
+      >
         {PATHS.map(({ name, path }) =>
           name === "Blog" ? (
             <li key={name}>
@@ -29,6 +39,10 @@ function NavLinks() {
       </ul>
     </nav>
   )
+}
+
+NavLinks.propTypes = {
+  isDesktop: PropTypes.bool.isRequired,
 }
 
 export default NavLinks
