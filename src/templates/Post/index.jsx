@@ -2,12 +2,11 @@ import React from "react"
 import { graphql } from "gatsby"
 import _get from "lodash/get"
 
-import Header from "../../components/PostHeader"
-import ShareLinks from "../../components/PostShareLinks"
-import PostBody from "../../components/PostBody"
-import Layout from "../../components/Layout"
-import SEO from "../../components/SEO"
 import PageWideWrapper from "../../components/PageWideWrapper"
+import PostBody from "../../components/PostBody"
+import PostLayout from "../../components/PostLayout"
+import PostShareLinks from "../../components/PostShareLinks"
+import SEO from "../../components/SEO"
 
 import "~/src/common/base.scss"
 import * as styles from "./index.module.scss"
@@ -24,6 +23,22 @@ export const query = graphql`
         author {
           key
           name
+          initials
+          photo {
+            vertical {
+              childImageSharp {
+                gatsbyImageData(
+                  width: 50
+                  height: 50
+                  transformOptions: { fit: COVER, cropFocus: ATTENTION }
+                )
+              }
+            }
+          }
+        }
+        categories {
+          key
+          label
         }
         date
         intro
@@ -55,19 +70,23 @@ export const query = graphql`
 `
 
 function BlogPostTemplate({
+  title,
   author,
-  cover,
-  coverFile,
+  categories,
   date,
   html,
-  title,
   intro,
   seoDescription,
   seoImage,
   url,
 }) {
   return (
-    <Layout>
+    <PostLayout
+      title={title}
+      author={author}
+      date={date}
+      categories={categories}
+    >
       <SEO
         description={seoDescription || intro}
         image={seoImage}
@@ -76,20 +95,17 @@ function BlogPostTemplate({
       />
       <div className={styles.root}>
         <article className={styles.article}>
-          <header className={styles.header}>
-            <Header {...{ author, cover, coverFile, date, title }} />
-          </header>
           <section>
             <PageWideWrapper>
               <div className={styles.outerWrapper}>
                 <PostBody className={styles.innerWrapper} html={html} />
-                <ShareLinks className={styles.shareLinks} url={url} />
+                <PostShareLinks className={styles.shareLinks} url={url} />
               </div>
             </PageWideWrapper>
           </section>
         </article>
       </div>
-    </Layout>
+    </PostLayout>
   )
 }
 
@@ -98,15 +114,16 @@ function Template({ data, pageContext }) {
   const { markdownRemark, coverFile, seoImageFile } = data
   const { fields, frontmatter, html } = markdownRemark
   const { url } = fields
-  const { author, date, title, intro, seoDescription } = frontmatter
+  const { author, date, categories, title, intro, seoDescription } = frontmatter
 
   return (
     <BlogPostTemplate
       {...{
         author,
+        date: new Date(date),
+        categories,
         cover,
         coverFile,
-        date: new Date(date),
         html,
         intro,
         seoDescription,

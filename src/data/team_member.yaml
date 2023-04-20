@@ -1,5 +1,6 @@
 - key: alex-mendes
   name: Alexandre Mendes
+  initials: AM
   photo:
     horizontal: ../images/team/alex-mendes-h.jpg
     vertical: ../images/team/alex-mendes-v.jpg
@@ -9,6 +10,7 @@
 
 - key: alvaro-bezerra
   name: "Alvaro Bezerra"
+  initials: AB
   email: alvaro@subvisual.com
   photo:
     horizontal: "../images/team/alvaro-bezerra-h.jpg"
@@ -20,6 +22,7 @@
 
 - key: fernando-mendes
   name: "Fernando Mendes"
+  initials: FM
   email: mendes@subvisual.com
   photo:
     horizontal: "../images/team/fernando-mendes-h.jpg"
@@ -36,6 +39,7 @@
 
 - key: francisco-baila
   name: "Francisco Baila"
+  initials: FB
   photo:
     horizontal: "../images/team/francisco-baila-h.jpg"
     vertical: "../images/team/francisco-baila-v.jpg"
@@ -49,6 +53,7 @@
 
 - key: gabriel-poca
   name: "Gabriel Poça"
+  initials: GP
   photo:
     horizontal: "../images/team/gabriel-poca-h.jpg"
     vertical: "../images/team/gabriel-poca-v.jpg"
@@ -62,6 +67,7 @@
 
 - key: joana-gomes
   name: "Joana Gomes"
+  initials: JG
   email: joana@subvisual.com
   photo:
     horizontal: "../images/team/joana-gomes-h.jpg"
@@ -73,6 +79,7 @@
 
 - key: joao-justo
   name: João Justo
+  initials: JJ
   photo:
     horizontal: "../images/team/joao-justo-h.jpg"
     vertical: "../images/team/joao-justo-v.jpg"
@@ -87,6 +94,7 @@
 
 - key: joao-ferreira
   name: "João Ferreira"
+  initials: JF
   photo:
     horizontal: "../images/team/joao-ferreira-h.jpg"
     vertical: "../images/team/joao-ferreira-v.jpg"
@@ -100,6 +108,7 @@
 
 - key: jose-pedro-cabrita
   name: José Pedro Cabrita
+  initials: ZP
   photo:
     horizontal: ../images/team/jose-pedro-cabrita-h.jpg
     vertical: ../images/team/jose-pedro-cabrita-v.jpg
@@ -109,6 +118,7 @@
 
 - key: laura-esteves
   name: "Laura Esteves"
+  initials: LE
   photo:
     horizontal: "../images/team/laura-esteves-h.jpg"
     vertical: "../images/team/laura-esteves-v.jpg"
@@ -124,6 +134,7 @@
 
 - key: luis-zamith
   name: "Luis Ferreira"
+  initials: LF
   photo:
     horizontal: "../images/team/luis-ferreira-h.jpg"
     vertical: "../images/team/luis-ferreira-v.jpg"
@@ -137,6 +148,7 @@
 
 - key: miguel-palhas
   name: "Miguel Palhas"
+  initials: MP
   email: miguel@subvisual.com
   photo:
     horizontal: "../images/team/miguel-palhas-h.jpg"
@@ -151,6 +163,7 @@
 
 - key: mirha-masala
   name: "Mirha Masala"
+  initials: MM
   email: mirha@subvisual.com
   photo:
     horizontal: "../images/team/mirha-masala-h.jpg"
@@ -164,6 +177,7 @@
 
 - key: nuno-reis
   name: Nuno Reis
+  initials: NR
   photo:
     horizontal: "../images/team/nuno-reis-h.jpg"
     vertical: "../images/team/nuno-reis-v.jpg"
@@ -174,6 +188,7 @@
 
 - key: roberto-machado
   name: "Roberto Machado"
+  initials: RM
   photo:
     horizontal: "../images/team/roberto-machado-h.jpg"
     vertical: "../images/team/roberto-machado-v.jpg"
@@ -186,6 +201,7 @@
 
 - key: ronaldo-sousa
   name: "Ronaldo Sousa"
+  initials: RS
   photo:
     horizontal: "../images/team/ronaldo-sousa-h.jpg"
     vertical: "../images/team/ronaldo-sousa-v.jpg"

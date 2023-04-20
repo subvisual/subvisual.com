@@ -1,0 +1,15 @@
+.root {
+  font-family: "Acta Headline", serif;
+  font-size: 28px;
+  line-height: 30.8px;
+
+  @media (min-width: 768px) {
+    font-size: 32px;
+    line-height: 35px;
+  }
+
+  @media (min-width: 950px) {
+    font-size: 40px;
+    line-height: 44px;
+  }
+}

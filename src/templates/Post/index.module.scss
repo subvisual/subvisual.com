@@ -7,10 +7,10 @@
 }
 
 .article {
-  padding: 56px 0 84px;
+  padding-bottom: 84px;
 
   @include media(">=desktop") {
-    padding: 0 0 224px;
+    padding-bottom: 224px;
   }
 }
 
@@ -24,9 +24,10 @@
 
 .outer-wrapper {
   position: relative;
+
   max-width: 980px;
-  margin-bottom: 84px;
   margin-right: auto;
+  margin-bottom: 84px;
 
   @include media(">=800px") {
     margin-bottom: 0;

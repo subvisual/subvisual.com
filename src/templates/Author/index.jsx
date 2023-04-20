@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Title from "~/src/components/BlogTitle"
-import Layout from "~/src/components/Layout"
+import MainLayout from "~/src/components/MainLayout"
 import PostsList from "~/src/components/PostList"
 import SEO from "~/src/components/SEO"
 
@@ -47,14 +47,14 @@ function AuthorPostsList({ authorName, authorBio, posts }) {
   return (
     <>
       <SEO title={`${authorName} — Subvisual`} description={authorBio} />
-      <Layout>
+      <MainLayout>
         <div className={styles.root}>
           <div className={styles.content}>
             <Title className={styles.title}>By {authorName}</Title>
             <PostsList posts={posts} />
           </div>
         </div>
-      </Layout>
+      </MainLayout>
     </>
   )
 }

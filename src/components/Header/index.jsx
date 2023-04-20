@@ -1,43 +1,36 @@
 import React from "react"
-import PropTypes from "prop-types"
+import classNames from "classnames"
 
-import NavLink from "./NavLink"
+import useDetectJavaScript from "~/src/hooks/useDetectJavaScript"
+import useWindowState from "../../hooks/useWindowState"
+
+import Logo from "../Logo"
+import NavMenu from "../NavMenu"
 
 import * as styles from "./index.module.scss"
 
-const BLOG_PATH = "/blog/"
+function Header() {
+  const { scrollY, innerWidth } = useWindowState()
 
-function Header({ currentPath, renderLogo }) {
+  const isDesktop = innerWidth > 950
+  const isScrolled = scrollY > 756
+
   return (
-    <header className={styles.root}>
-      <div className={styles.content}>
-        <div className={styles.logo}>{renderLogo()}</div>
-        <nav>
-          <ul className={styles.navLinks}>
-            <li className={styles.navLink}>
-              <NavLink
-                active={currentPath === BLOG_PATH}
-                to={BLOG_PATH}
-                title="Blog"
-              >
-                Blog
-              </NavLink>
-            </li>
-            <li className={styles.navLink}>
-              <NavLink to="mailto:contact@subvisual.com" title="Contact" blank>
-                Contact
-              </NavLink>
-            </li>
-          </ul>
-        </nav>
-      </div>
+    <header
+      className={classNames(styles.root, { [styles.isScrolled]: isScrolled })}
+    >
+      <Logo />
+      <NavMenu isDesktop={isDesktop} />
     </header>
   )
 }
 
-Header.propTypes = {
-  currentPath: PropTypes.string.isRequired,
-  renderLogo: PropTypes.func.isRequired,
+function WrappedHeader() {
+  const hasJavaScript = useDetectJavaScript()
+
+  if (!hasJavaScript) return null
+
+  return <Header />
 }
 
-export default Header
+export default WrappedHeader

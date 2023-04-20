@@ -1,15 +1,5 @@
-@import "common/breakpoints";
+.loadMore {
+  margin-top: 124px;
 
-.root {
-  padding: 28px 20px 56px;
-
-  @include media(">=desktop") {
-    padding: 28px 28px 56px;
-  }
-}
-
-.content {
-  width: 100%;
-  max-width: 1184px;
-  margin: 0 auto;
+  text-align: center;
 }

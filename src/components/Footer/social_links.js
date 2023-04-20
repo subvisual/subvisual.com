@@ -25,7 +25,7 @@ function SocialLinks() {
             name="Subvisual"
             platform={platform}
             url={socialDetails[platform]}
-            size="small"
+            size="regular"
           />
         </li>
       ))}

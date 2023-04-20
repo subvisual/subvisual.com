@@ -7,15 +7,15 @@ import {
   TwitterShareButton,
 } from "react-share"
 
-import useDetectJavascript from "~/src/utils/use_detect_javascript"
+import useDetectJavaScript from "~/src/hooks/useDetectJavaScript"
 
 import * as styles from "./index.module.scss"
 
-function BlogPostShareLinks({ className, url }) {
-  const hasJavascript = useDetectJavascript()
+function PostShareLinks({ className, url }) {
+  const hasJavaScript = useDetectJavaScript()
 
   // react-share links do not work with JavaScript disabled
-  if (!hasJavascript) return null
+  if (!hasJavaScript) return null
 
   const rootClassName = classNames(styles.root, className)
 
@@ -39,9 +39,9 @@ function BlogPostShareLinks({ className, url }) {
   )
 }
 
-BlogPostShareLinks.propTypes = {
+PostShareLinks.propTypes = {
   className: PropTypes.string,
   url: PropTypes.string.isRequired,
 }
 
-export default BlogPostShareLinks
+export default PostShareLinks

@@ -1,0 +1,21 @@
+.root {
+  height: 790px;
+  margin-bottom: 120px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border-bottom-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+
+  color: var(--c-white-1);
+
+  @media (min-width: 950px) {
+    height: 816px;
+  }
+}
+
+.content {
+  display: inline-block;
+  height: 100%;
+}

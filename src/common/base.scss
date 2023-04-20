@@ -3,23 +3,38 @@
 @import "common/reset";
 @import "common/react-scroll-parallax";
 
+:root {
+  --c-white-1: #fff;
+  --c-white-2: #fcfcfc;
+  --c-gray-1: #403f4c;
+  --c-blue-1: #045cfc;
+  --c-purple-1: #9563ff;
+  --c-pink-1: #ff7b9b;
+}
+
 body {
+  --post-max-width: 818px;
+  --post-body-max-width: 516px;
+  --page-wide-spacing: 20px;
+
   overflow-x: hidden;
 
-  background-color: #fcfcfc;
-  color: #403f4c;
+  background-color: var(--c-white-2);
+  color: var(--c-gray-1);
 
   font-family: colfax-web, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
 
-  --post-max-width: 818px;
-  --post-body-max-width: 516px;
+  @media (min-width: 768px) {
+    --page-wide-spacing: 0;
+  }
 
   @include media(">=desktop") {
     --post-max-width: 834px;
     --post-body-max-width: 734px;
+
     font-size: 20px;
     line-height: 28px;
   }
