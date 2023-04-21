@@ -71,6 +71,7 @@ export default function HighlightedPosts({ posts }) {
           dots: false,
           infinite: true,
           arrows: true,
+          fade: true,
           speed: 500,
           slidesToShow: 1,
           slidesToScroll: 1,
