@@ -1,5 +1,13 @@
 @import "common/breakpoints";
 
+/**
+ * Workaround for a bug with the fade animation.
+ * https://github.com/akiran/react-slick/issues/2201
+ */
+:global(.slick-slide.slick-active) {
+  z-index: 1;
+}
+
 .root {
   position: relative;
 

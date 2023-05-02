@@ -6,22 +6,19 @@ import Avatar from "../Avatar"
 
 import * as styles from "./index.module.scss"
 
-function renderAuthor({ key, name }) {
-  return <Link to={`/blog/author/${key}`}>{name}</Link>
-}
-
 function Author({ date, author }) {
   const formattedDate = dateFormat(date, "mmmm d, yyyy")
+  const { key, name } = author
 
   return (
-    <div className={styles.root}>
+    <Link to={`/blog/author/${key}`} className={styles.root}>
       <Avatar author={author} />
 
       <div>
-        <p>{renderAuthor(author)}</p>
+        <p>{name}</p>
         <p>{formattedDate}</p>
       </div>
-    </div>
+    </Link>
   )
 }
 
