@@ -10,6 +10,7 @@ seoImage: subvisual-blog-7-steps-to-a-better-company-culture.png
 intro: Culture can be your less important task compared with all the priorities
   you are facing. But the truth is that culture is a strategic investment and
   will impact everything in your company.
+highlight: true
 ---
 Culture can be your less important task compared with all the priorities you are facing. But the truth is that culture is a strategic investment and will impact everything in your company. Culture will define your company's identity, impact your performance and team members' well-being, and play a big part in attracting and retaining talent. 
 

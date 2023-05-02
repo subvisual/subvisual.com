@@ -94,9 +94,7 @@ export default function HighlightedPosts({ posts }) {
                     <Author author={author} date={date} />
                   </div>
                   {categories?.length && (
-                    <div className={styles.categories}>
-                      <Categories categories={categories || []} />
-                    </div>
+                    <Categories categories={categories || []} />
                   )}
                 </div>
                 {cover && (

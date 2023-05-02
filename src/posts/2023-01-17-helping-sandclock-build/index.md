@@ -10,7 +10,6 @@ seoImage: subvisual-blog-post-sandclock.png
 intro: Sandclock is a DeFi product. What it does is new. No other product on the
   market does anything like it. Here's how we helped them create something the
   world had never seen before.
-highlight: true
 ---
 
 ### Why creating something entirely new requires tried and true methods

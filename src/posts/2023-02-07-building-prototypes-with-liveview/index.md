@@ -10,7 +10,6 @@ projects. It allows for quicker iterations and faster learning, enabling
 developers to make changes and refine their ideas quickly. We have been
 exploring a new technology stack that includes Elixir, Phoenix, LiveView,
 Surface, and Tailwind for rapid prototyping."
-highlight: true
 ---
 
 Quick prototyping plays a vital role in the development process of new projects.
