@@ -2,27 +2,13 @@ import React from "react"
 import { useLocation } from "@reach/router"
 import { StaticImage } from "gatsby-plugin-image"
 
-// import HomeBackground from "../../images/header-home.jpg"
-// import PostBackground from "../../images/header-post.jpg"
-
 import * as styles from "./index.module.scss"
 
 function MainHero({ children }) {
   const location = useLocation()
 
-  console.log(location.pathname)
-
   return (
-    <div
-      className={styles.root}
-      style={
-        {
-          // backgroundImage: `url(${
-          //   location.pathname === "/blog/" ? HomeBackground : PostBackground
-          // })`,
-        }
-      }
-    >
+    <div className={styles.root}>
       {location.pathname === "/blog/" ? (
         <StaticImage
           src="../../images/header-home.jpg"
