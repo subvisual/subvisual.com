@@ -3,6 +3,7 @@ path: seven-steps-to-a-better-company-culture
 title: 7 Steps to a Better Company Culture
 categories:
   - operations
+  - inside-subvisual
 author: laura-esteves
 date: 2023-03-10
 cover: subvisual-blog-7-steps-to-a-better-company-culture.png
@@ -12,7 +13,8 @@ intro: Culture can be your less important task compared with all the priorities
   will impact everything in your company.
 highlight: true
 ---
-Culture can be your less important task compared with all the priorities you are facing. But the truth is that culture is a strategic investment and will impact everything in your company. Culture will define your company's identity, impact your performance and team members' well-being, and play a big part in attracting and retaining talent. 
+
+Culture can be your less important task compared with all the priorities you are facing. But the truth is that culture is a strategic investment and will impact everything in your company. Culture will define your company's identity, impact your performance and team members' well-being, and play a big part in attracting and retaining talent.
 
 **Your culture transforms your company into a team.** This is hard to define objectively and quite impossible to quantify, but the effects of a good company culture are not hard to observe. A strong culture is what will turn your team from a group of individuals to a team aligned, it's what will enhance and ease good collaboration and communication, and it's what you will experience when everyone is worried not just about reaching individual results but also collective goals.
 
@@ -32,37 +34,37 @@ It must be reviewed from time to time. If you're leading a small team, involve e
 
 The Mission is the fundamental reason for the company's existence.
 
-* Why do we do what we do?
-* What's our purpose?
-* What is the cause we're working towards?
-* Why does the company exist?
-* Why do we get out of bed every morning?
+- Why do we do what we do?
+- What's our purpose?
+- What is the cause we're working towards?
+- Why does the company exist?
+- Why do we get out of bed every morning?
 
 **Vision (what)**
 
 The Vision describes what we're trying to achieve. It's a clear goal to guide the team.
 
-* What would we like our team to be known for?
-* What would we love to see our team accomplish in the next few years?
+- What would we like our team to be known for?
+- What would we love to see our team accomplish in the next few years?
 
 **Core values (subjective how)**
 
 The Core Values describe our deeply held beliefs.
 
-* What's important to us?
-* What brought us all together and continues to hold us together?
-* What will help guide us when we are facing a difficult decision?
-* What parts of our company are we proud of?
+- What's important to us?
+- What brought us all together and continues to hold us together?
+- What will help guide us when we are facing a difficult decision?
+- What parts of our company are we proud of?
 
 **Principles (objective how)**
 
 Values and Principles may seem the same, and they are firmly connected, but there's a difference. Values are subjective and provide a sense of direction, while Principles are objective and they define our daily behaviors.
 
-* What behaviors are never to be tolerated?
-* Conversely, what behaviors should always be encouraged?
-* What qualities do we value in employees?
+- What behaviors are never to be tolerated?
+- Conversely, what behaviors should always be encouraged?
+- What qualities do we value in employees?
 
-Simon Sinek's book [](https://www.goodreads.com/book/show/7108725-start-with-why) *[Start With Why](https://www.goodreads.com/book/show/7108725-start-with-why)* inspired this step and its structure.
+Simon Sinek's book [](https://www.goodreads.com/book/show/7108725-start-with-why) _[Start With Why](https://www.goodreads.com/book/show/7108725-start-with-why)_ inspired this step and its structure.
 
 ## 2. Hire The Right People
 
@@ -70,7 +72,7 @@ We mean more than just the most qualified or the most skilled. We mean the ones 
 
 **Every person you hire will impact your team and your company culture.** And that's why at Subvisual, we invest in our hiring process (and try to involve the whole team). Yes, the process may be longer than the candidates would like. Still, we try to explain the entire process from the beginning and actively listen if they need a quick answer (we try to balance efficiency and the time we need to make an informed decision).
 
-We don't have a long list of criteria; we only try to ensure an alignment between the candidate's values and ours. Not that we're looking for clones of our team members, we believe diversity is a strong resource, but it is crucial to have a cultural fit (otherwise, the person and the company will not get a good experience). We believe hiring curious people with a [](https://hbr.org/2016/01/what-having-a-growth-mindset-actually-means) *[growth mindset](https://hbr.org/2016/01/what-having-a-growth-mindset-actually-means)* will make a difference and positively impact the company and its culture.
+We don't have a long list of criteria; we only try to ensure an alignment between the candidate's values and ours. Not that we're looking for clones of our team members, we believe diversity is a strong resource, but it is crucial to have a cultural fit (otherwise, the person and the company will not get a good experience). We believe hiring curious people with a [](https://hbr.org/2016/01/what-having-a-growth-mindset-actually-means) _[growth mindset](https://hbr.org/2016/01/what-having-a-growth-mindset-actually-means)_ will make a difference and positively impact the company and its culture.
 
 And we also believe in growing the team sustainably. So even if we have a lot of leads with interesting and urgent projects to develop, we don't hire to be able to accept those projects (fortunately, we have a [list](https://subvisual.com/blog/posts/announcing-subvisual-hub-3/) of great partners and freelancers we can count on for these occasions).
 
@@ -90,7 +92,7 @@ Keep in mind that's what works for us, and it's not necessarily what's suitable 
 
 ## 4. Frequent Feedback & Radical Candor
 
-Ensuring everyone in the team receives feedback is crucial for better company culture. It is part of every effective learning process, can motivate and improve performance, and, most importantly, will allow everyone to increase their self-awareness. 
+Ensuring everyone in the team receives feedback is crucial for better company culture. It is part of every effective learning process, can motivate and improve performance, and, most importantly, will allow everyone to increase their self-awareness.
 
 At Subvisual, a simple process (Peer Review) happens every quarter where all team members share a personalized form and ask for feedback from different team members. We believe anonymous feedback can breed a culture of distrust, and that's why every form starts with the question "who are you".
 
@@ -104,7 +106,7 @@ At Subvisual, a simple process (Peer Review) happens every quarter where all tea
 
 **If you're giving feedback:**
 
-1. Focus on the behavior, not the person - remember to share information about what they're doing right or wrong to accelerate their learning process and not breed conflicts. 
+1. Focus on the behavior, not the person - remember to share information about what they're doing right or wrong to accelerate their learning process and not breed conflicts.
 2. Stop bullshitting and be honest - feedback works well when providing helpful information to guide future learning. If your observations are too vague, it can seem that you are scared to get too deep into them.
 3. Put yourself in the other person's shoes - remember to have empathy when sharing feedback.
 
@@ -114,7 +116,7 @@ Team building and bonding have been unique challenges in the last few years. [We
 
 That meant learning how to produce the same kind of effects in a very different way. The strategies used to encourage communication, friendliness, closeness, etc., in an office must differ when the team works remotely.
 
-Here are some examples: We have a Slack channel dedicated to cooking challenges, where we share our recipes and photos of our cooking skills. We do this async. We created something called The Good, The Bad, and The Ugly, where we fill in some cards (we do it async!) about all our positive, negative, and dubious experiences and then discuss them in a call. These are just two examples. 
+Here are some examples: We have a Slack channel dedicated to cooking challenges, where we share our recipes and photos of our cooking skills. We do this async. We created something called The Good, The Bad, and The Ugly, where we fill in some cards (we do it async!) about all our positive, negative, and dubious experiences and then discuss them in a call. These are just two examples.
 
 **The key is to continue experimenting and rolling with ideas.** Some of our initiatives disappeared as social contact normalized after the pandemic, and others we kept because they made sense in our new dynamic.
 
@@ -126,9 +128,9 @@ But it's not all about the interpersonal aspect. Team bonding activities have be
 
 Here are some of our favorite team-building strategies at Subvisual:
 
-1. **Weekly call on Mondays** - Casual session to share what we've been up to last week, our focus for the week starting, and share what we did during the weekend. 
+1. **Weekly call on Mondays** - Casual session to share what we've been up to last week, our focus for the week starting, and share what we did during the weekend.
 2. **Subvisual Morning every** (end of the quarter) - We review our last three months and annual goals.
-3. **The Good, the Bad, and the Ugly** (middle of the quarter) - This is a forum to share and discuss any topic, question, or controversial issue. 
+3. **The Good, the Bad, and the Ugly** (middle of the quarter) - This is a forum to share and discuss any topic, question, or controversial issue.
 4. **Two retreats/year** - These have grown in importance since we're working remotely. They fill that void of human contact teams sometimes experience and help everyone get to know the people they work with.
 5. **Celebrate successes, big or small** - Even if it's just the end of a project, remember your team is made of people, and we humans need recognition for our excellent work. [Make sure the team knows you're paying attention and appreciate them](https://hbr.org/2022/10/a-better-way-to-recognize-your-employees).
 
@@ -146,7 +148,7 @@ Here's what we do at Subvisual to help our team be more autonomous:
 
 1. **No schedules** - As long as everything is delivered and shipped on time, everyone can make up their schedules in harmony with the people they are working with.
 2. **Vacations and free time are limitless -** Again, as long as everything is delivered and shipped on time and all responsibilities are taken care of with the team.
-3. **We define *[DRIs](https://about.gitlab.com/handbook/people-group/directly-responsible-individuals/)* for everything we define as important** - Not only team leads or managers are responsible. Everyone takes care of their patch of grass.
+3. **We define _[DRIs](https://about.gitlab.com/handbook/people-group/directly-responsible-individuals/)_ for everything we define as important** - Not only team leads or managers are responsible. Everyone takes care of their patch of grass.
 4. **We trust our team** - No micromanagement, ever. We check in regularly to ask how everyone's doing, and that's it.
 
 ## 7. Lead by example
@@ -169,4 +171,5 @@ Anything you do will be interpreted as permission to do the same. If you break a
 
 Building a strong company culture is vital to any successful organization. Given our environment's dynamic nature, continually refining it is essential. This involves finding new strategies, asking for feedback, iterating, and always finding new ways to improve your company culture. **Building a company culture you're proud of is about the journey, not the destination.** 😉
 
-If you have any questions, comments, or anything to add, please drop us a line on *[Twitter](https://twitter.com/subvisual)* or *[LinkedIn](https://www.linkedin.com/company/subvisual---handcrafters-of-digital-experiences/)*. We'd love to hear your thoughts!
+If you have any questions, comments, or anything to add, please drop us a line on _[Twitter](https://twitter.com/subvisual)_ or _[LinkedIn](https://www.linkedin.com/company/subvisual---handcrafters-of-digital-experiences/)_. We'd love to hear your thoughts!
+
