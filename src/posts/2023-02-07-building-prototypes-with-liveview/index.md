@@ -32,7 +32,7 @@ includes [Elixir](https://elixir-lang.org/),
 This new stack offers new possibilities for rapid prototyping and I'm personally
 very excited to see what results it will yield.
 
-##  Why Elixir and Phoenix?
+## Why Elixir and Phoenix?
 
 We've been using Elixir for many years in different capacities, to build various
 types of applications, although mostly not with this particular stack, since a
@@ -201,12 +201,22 @@ you can see the effects of your modifications right in the HTML code.
 
 ```html
 <div>
-  <label for="price" class="block text-sm font-medium text-gray-700">Price</label>
+  <label for="price" class="block text-sm font-medium text-gray-700"
+    >Price</label
+  >
   <div class="relative mt-1 rounded-md shadow-sm">
-    <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+    <div
+      class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"
+    >
       <span class="text-gray-500 sm:text-sm">$</span>
     </div>
-    <input type="text" name="price" id="price" class="block w-full rounded-md border-gray-300 pl-7 pr-12 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="0.00">
+    <input
+      type="text"
+      name="price"
+      id="price"
+      class="block w-full rounded-md border-gray-300 pl-7 pr-12 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+      placeholder="0.00"
+    />
   </div>
 </div>
 ```

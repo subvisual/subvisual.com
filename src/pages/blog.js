@@ -7,6 +7,7 @@ import MainLayout from "~/src/components/MainLayout"
 import PageWideWrapper from "~/src/components/PageWideWrapper"
 import PostsList from "~/src/components/PostList"
 import SEO from "~/src/components/SEO"
+import HighlightedPosts from "~/src/components/HighlightedPosts"
 
 import "../common/base.scss"
 
@@ -46,6 +47,12 @@ const query = graphql`
           date
           title
           intro
+          highlight
+          cover {
+            childImageSharp {
+              gatsbyImageData(width: 442)
+            }
+          }
         }
       }
     }
@@ -68,6 +75,7 @@ function Posts({ posts }) {
       />
       <MainLayout>
         <PageWideWrapper padded>
+          <HighlightedPosts posts={posts.filter((post) => post.highlight)} />
           <PostsList posts={currentPosts} />
           {posts.length >= postsShown && (
             <div className={styles.loadMore}>
@@ -88,10 +96,9 @@ export default function Page() {
   } = useStaticQuery(query)
   const posts = nodes.map((node) => {
     const { frontmatter, fields } = node
-    const { path } = fields
     const { date, ...metadata } = frontmatter
 
-    return { ...metadata, date: new Date(date), path }
+    return { ...metadata, date: new Date(date), ...fields }
   })
 
   return <Posts posts={posts} />

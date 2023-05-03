@@ -9,7 +9,9 @@ cover: blog-subvisual-hub3.jpg
 seoImage: blog-subvisual-hub3.jpg
 intro: "We are announcing Subvisual Hub3: a collaborative hub that creates Web3
   business opportunities for talented builders and agencies. "
+highlight: true
 ---
+
 ### Join the Subvisual Hub3: a collaborative hub that creates Web3 business opportunities.
 
 We've been connecting our partners with talented builders for a long time. It proved that it's possible, through collaboration, to build a platform matching qualified builders and agencies with top-notch Web3 companies.
@@ -30,16 +32,16 @@ Our mission is to turn web2 product agencies into Web3 trusted builders - one co
 
 H﻿ub 3:
 
-* Help each other build Web3 skills and network by regularly sharing knowledge on the Hub's communication platforms;
-* Connect with some of the Web3 household names and most exciting startups;
-* We promise infinite value-added, with no costs except your invested time (which will compound);
-* We can help each other thrive in these financially challenging times by sharing projects that could benefit from your extra knowledge.
+- Help each other build Web3 skills and network by regularly sharing knowledge on the Hub's communication platforms;
+- Connect with some of the Web3 household names and most exciting startups;
+- We promise infinite value-added, with no costs except your invested time (which will compound);
+- We can help each other thrive in these financially challenging times by sharing projects that could benefit from your extra knowledge.
 
 E﻿cosystem partners and customers:
 
-* We ensure all the companies in the Hub have a trustworthy track record in product-building and the Web3 knowledge level is clearly stated;
-* Hub3 will help you save time and money by sharing what you need with all the relevant companies, almost with no effort;
-* We'll help you focus on your product or business core needs while handling your outsourcing challenges to talent with decades of experience building all sorts of digital products and services.
+- We ensure all the companies in the Hub have a trustworthy track record in product-building and the Web3 knowledge level is clearly stated;
+- Hub3 will help you save time and money by sharing what you need with all the relevant companies, almost with no effort;
+- We'll help you focus on your product or business core needs while handling your outsourcing challenges to talent with decades of experience building all sorts of digital products and services.
 
 ### Why?
 
@@ -57,9 +59,9 @@ Web3 is a term that comprises many concepts, from principles such as governance 
 
 As with any technological disruption, changing how the internet is used comes with challenges and opportunities. First, let's take a look at a few [market stats](https://metav.rs/blog/web3-market-statistics-2022-2023/):
 
-* Current Web3 market capitalization is estimated at $27.5 billion, and it is expected to grow up to $81.5 billion by 2030, increasing at a compound annual rate of 43.7%;
-* Between the first quarter of 2021 and the first quarter of 2022, the growth of blockchain games skyrocketed by 2,000%, and it is expected that ~46% of finance apps already take advantage of Web3 technologies;
-* The Metaverse market alone is already experiencing an annual expansion rate of 13.1%, while NFTs are said to have generated more than $40 billion in cryptocurrency sales;
+- Current Web3 market capitalization is estimated at $27.5 billion, and it is expected to grow up to $81.5 billion by 2030, increasing at a compound annual rate of 43.7%;
+- Between the first quarter of 2021 and the first quarter of 2022, the growth of blockchain games skyrocketed by 2,000%, and it is expected that ~46% of finance apps already take advantage of Web3 technologies;
+- The Metaverse market alone is already experiencing an annual expansion rate of 13.1%, while NFTs are said to have generated more than $40 billion in cryptocurrency sales;
 
 Not surprisingly, the need for competent product builders, incredibly when familiar with Web3 technologies and vision, is also rising, following the market growth and companies' urge to shape their products for the next generation of the internet.
 
@@ -71,9 +73,9 @@ On the other hand, with recent market crashes such as the [FTX collapse](https:
 
 By putting ourselves in an investor's or founder's shoes, quality and trust are precious assets when doing business - now more than ever. That's where, most of the time, product agencies and "dev shops" come up with a solution, especially if:
 
-* We keep a track record of happy customers;
-* We push innovation and dig into new technologies, following the market's predictions and opportunities;
-* We know what businesses look like. We've met hundreds of founders and teams across the last 10 years, and we are ready to adapt and explore new ideas and projects.
+- We keep a track record of happy customers;
+- We push innovation and dig into new technologies, following the market's predictions and opportunities;
+- We know what businesses look like. We've met hundreds of founders and teams across the last 10 years, and we are ready to adapt and explore new ideas and projects.
 
 But that's not enough. We need to be known. And there's no better way to have a strong presence in the space than having the best people to back you up.
 
@@ -97,9 +99,9 @@ That's why we believe that we need to cooperate: to build more opportunities, to
 
 **Here's our take on how this kind of collaboration should work:**
 
-* We're actively vouching for innovation and focusing on contributing to Web3 technologies, but there is much more out there that needs to be done, so we shouldn't focus solely on finding Web3 projects and opportunities;
-* What doesn't work for someone can be a fantastic opportunity for someone else: share always. Opinions should be asked before stated;
-* We don't believe finder's fees are a suitable incentive mechanism for collaboration between agencies, so we don't want to use it. Rewarding the act of finding projects to be explored by others removes focus from what agencies need to be worried about: delivering great products. We encourage pure collaboration: "here's an opportunity to join a project I need help with. Tell me your price and let's find a way to work together".
+- We're actively vouching for innovation and focusing on contributing to Web3 technologies, but there is much more out there that needs to be done, so we shouldn't focus solely on finding Web3 projects and opportunities;
+- What doesn't work for someone can be a fantastic opportunity for someone else: share always. Opinions should be asked before stated;
+- We don't believe finder's fees are a suitable incentive mechanism for collaboration between agencies, so we don't want to use it. Rewarding the act of finding projects to be explored by others removes focus from what agencies need to be worried about: delivering great products. We encourage pure collaboration: "here's an opportunity to join a project I need help with. Tell me your price and let's find a way to work together".
 
 ### Existing alternatives
 
@@ -116,3 +118,4 @@ Another classic option is to hire businesses that "sell" leads. It's a model tha
 We're openly collecting interest through [this form](https://forms.gle/Sit15GZGkHwTqt6h9).
 
 💡 **Let's build together?** We'd love to know what you think about the Hub3. Forward all your ideas, opinions, and suggestions to [contact@subvisual.com](mailto:contact@subvisual.com).
+

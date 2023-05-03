@@ -1,0 +1,124 @@
+@import "common/breakpoints";
+
+/**
+ * Workaround for a bug with the fade animation.
+ * https://github.com/akiran/react-slick/issues/2201
+ */
+:global(.slick-slide.slick-active) {
+  z-index: 1;
+}
+
+.root {
+  position: relative;
+
+  margin-bottom: 89px;
+}
+
+.nextArrow,
+.prevArrow {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+
+  background: transparent;
+  border: 1px solid var(--c-blue-1);
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.nextArrow {
+  right: 0;
+}
+
+.prevArrow {
+  right: 72px;
+}
+
+.post {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-bottom: 72px;
+
+  @include media(">=tablet") {
+    display: grid;
+    grid-column-gap: 28px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.details {
+  max-width: 442px;
+}
+
+.image {
+  justify-self: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  max-width: 442px;
+  padding: 36px 16px 26px;
+
+  @include media(">=tablet") {
+    padding: 16px 16px 0 0;
+  }
+}
+
+.cover {
+  width: 100%;
+  max-width: 100%;
+
+  border-radius: 20px;
+
+  transform: rotate(5deg);
+}
+
+.intro,
+.author {
+  display: block;
+  margin-bottom: 40px;
+}
+
+.author {
+  color: var(--c-blue-1);
+}
+
+.title {
+  margin-bottom: 40px;
+
+  font-family: "Acta", serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 120%;
+
+  @include media(">=desktop") {
+    font-size: 56px;
+  }
+}
+
+.dots {
+  display: flex !important;
+  justify-content: flex-end;
+
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    margin-left: 16px;
+
+    border: 1px solid var(--c-blue-1);
+    border-radius: 100%;
+  }
+
+  button {
+    background-color: transparent;
+    border: 0;
+  }
+}

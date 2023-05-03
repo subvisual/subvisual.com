@@ -10,7 +10,7 @@ My coworker [Miguel wrote about Utrust's ICO](https://subvisual.com/blog/posts/l
 
 **What is Utrust?**
 
-Quick introduction: Utrust is an online payment gateway using cryptocurrencies. It's available in many online stores and marketplaces. It started from an ICO, and it's going full throttle. The main goal of  Utrust is to allow merchants to seamlessly accept crypto payments while buyers can be fully exposed to their ecosystem of choice and be protected by a trusted middleman.
+Quick introduction: Utrust is an online payment gateway using cryptocurrencies. It's available in many online stores and marketplaces. It started from an ICO, and it's going full throttle. The main goal of Utrust is to allow merchants to seamlessly accept crypto payments while buyers can be fully exposed to their ecosystem of choice and be protected by a trusted middleman.
 
 **My role**
 

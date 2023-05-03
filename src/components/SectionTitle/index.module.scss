@@ -1,0 +1,35 @@
+@import "common/breakpoints";
+
+.root {
+  position: relative;
+
+  padding-left: 51px;
+
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+
+  @include media(">=tablet") {
+    padding-left: 82px;
+  }
+
+  &:before {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    width: 31px;
+    height: 1px;
+
+    background-color: var(--c-purple-1);
+
+    transform: translateY(-50%);
+
+    @include media(">=tablet") {
+      width: 62px;
+    }
+  }
+}
