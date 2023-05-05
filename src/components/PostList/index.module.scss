@@ -14,15 +14,7 @@
 .item {
   padding: 28px 0;
 
-  &:not(:first-child) {
-    border-top: 1px solid currentColor;
-  }
-
-  @include media(">=tablet") {
-    &:nth-child(-n + 2) {
-      border-top: none;
-    }
-  }
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
 
   @include media(">=desktop") {
     padding: 40px 0;
