@@ -1,13 +1,16 @@
-import React, { useState, useMemo } from "react"
+import React, { useState } from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { slice } from "lodash"
+import { intersection, isEmpty, map, slice, uniqBy } from "lodash"
 
+import HighlightedPosts from "~/src/components/HighlightedPosts"
 import Button from "~/src/components/Button"
 import MainLayout from "~/src/components/MainLayout"
 import PageWideWrapper from "~/src/components/PageWideWrapper"
 import PostsList from "~/src/components/PostList"
 import SEO from "~/src/components/SEO"
-import HighlightedPosts from "~/src/components/HighlightedPosts"
+import Filter from "../components/Filter"
+import useURLParams from "../utils/useURLParams"
+import useUpdateQueryParams from "../utils/useUpdateQueryParams"
 
 import "../common/base.scss"
 
@@ -59,9 +62,41 @@ const query = graphql`
   }
 `
 
+function filterByCategories(posts, categories) {
+  if (isEmpty(categories)) return posts
+
+  return posts.filter(
+    (post) => !isEmpty(intersection(map(post.categories, "key"), categories))
+  )
+}
+
+function getAllCategories(posts) {
+  const allCategories = posts
+    .map((post) => post.categories)
+    .filter((postCategories) => !!postCategories)
+    .flat()
+
+  return uniqBy(allCategories, "key")
+}
+
 function Posts({ posts }) {
-  const [postsShown, setPostsShown] = useState(6)
-  const currentPosts = useMemo(() => slice(posts, 0, postsShown), [postsShown])
+  const { filter, loadedPosts } = useURLParams()
+
+  const [postsShown, setPostsShown] = useState(loadedPosts || 6)
+  const [selectedCategories, setSelectedCategories] = useState(
+    filter?.split(",") || []
+  )
+
+  useUpdateQueryParams({ name: "filter", value: selectedCategories })
+  useUpdateQueryParams({
+    name: "loadedPosts",
+    value: postsShown,
+    disabled: postsShown <= 6,
+  })
+
+  const categories = getAllCategories(posts)
+  const filteredPosts = filterByCategories(posts, selectedCategories)
+  const visiblePosts = slice(filteredPosts, 0, postsShown)
 
   return (
     <>
@@ -76,8 +111,13 @@ function Posts({ posts }) {
       <MainLayout>
         <PageWideWrapper padded>
           <HighlightedPosts posts={posts.filter((post) => post.highlight)} />
-          <PostsList posts={currentPosts} />
-          {posts.length >= postsShown && (
+          <Filter
+            categories={categories}
+            selected={selectedCategories}
+            onChange={setSelectedCategories}
+          />
+          <PostsList posts={visiblePosts} />
+          {filteredPosts.length > postsShown && (
             <div className={styles.loadMore}>
               <Button onClick={() => setPostsShown(postsShown + 6)}>
                 Load More Blog Posts

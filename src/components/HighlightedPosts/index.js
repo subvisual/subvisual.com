@@ -75,7 +75,7 @@ export default function HighlightedPosts({ posts }) {
           speed: 500,
           slidesToShow: 1,
           slidesToScroll: 1,
-          adaptiveHeight: true,
+          adaptiveHeight: false,
           nextArrow: <NextArrow />,
           prevArrow: <PrevArrow />,
         }}

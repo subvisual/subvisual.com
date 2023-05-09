@@ -78,6 +78,10 @@
   transform: rotate(5deg);
 }
 
+:global(.slick-slide):nth-child(2n) .cover {
+  transform: rotate(-5deg);
+}
+
 .intro,
 .author {
   display: block;

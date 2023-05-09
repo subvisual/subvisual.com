@@ -1,0 +1,43 @@
+@import "common/breakpoints";
+
+.root {
+  margin-bottom: 54px;
+}
+
+.title {
+  position: relative;
+
+  padding-left: 52px;
+  margin-bottom: 20px;
+
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    width: 32px;
+    height: 1px;
+
+    background-color: var(--c-purple-1);
+
+    transform: translateY(-50%);
+  }
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 9px;
+  column-gap: 6px;
+
+  list-style-type: none;
+
+  @include media(">=desktop") {
+    column-gap: 12px;
+    row-gap: 12px;
+  }
+}

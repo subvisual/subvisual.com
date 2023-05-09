@@ -1,46 +1,28 @@
-import React, { useMemo } from "react"
+import React from "react"
 import PropTypes from "prop-types"
-import { random } from "lodash"
+
+import Category from "../Category"
 
 import * as styles from "./index.module.scss"
 
-function isSquareCorner() {
-  return random(100) < 30
-}
-
-function Categories({ categories }) {
-  const { topRightSquare, topLeftSquare, bottomRightSquare, bottomLeftSquare } =
-    useMemo(
-      () => ({
-        topLeftSquare: isSquareCorner(),
-        topRightSquare: isSquareCorner(),
-        bottomLeftSquare: isSquareCorner(),
-        bottomRightSquare: isSquareCorner(),
-      }),
-      []
-    )
-
+function Categories({ categories, color }) {
   return (
     <ul className={styles.root}>
-      {categories.map((category) => (
-        <li
-          style={{
-            borderTopLeftRadius: topLeftSquare && 0,
-            borderTopRightRadius: topRightSquare && 0,
-            borderBottomLeftRadius: bottomLeftSquare && 0,
-            borderBottomRightRadius: bottomRightSquare && 0,
-          }}
+      {categories.map((category, index) => (
+        <Category
+          color={color}
+          index={index}
           key={category.key}
-          className={styles.category}
-        >
-          {category.label}
-        </li>
+          el="li"
+          {...category}
+        />
       ))}
     </ul>
   )
 }
 
 Categories.propTypes = {
+  color: PropTypes.string,
   categories: PropTypes.arrayOf(
     PropTypes.shape({
       key: PropTypes.string.isRequired,
