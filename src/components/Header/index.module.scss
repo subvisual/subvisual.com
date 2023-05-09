@@ -9,16 +9,16 @@
   justify-content: space-between;
   width: 100vw;
 
-  padding-top: 40px;
+  padding-top: 30px;
   padding-right: 28px;
-  padding-left: 28px;
+  padding-left: 14px;
 
   color: var(--c-white-1);
 
   transition: color 1s;
 
   @media (min-width: 768px) {
-    padding-right: 86px;
+    padding-right: 58px;
   }
 }
 
@@ -29,18 +29,4 @@
   color: var(--c-gray-1);
 
   transition: color 1s;
-}
-
-.logo {
-  padding-left: 28px;
-
-  color: currentColor;
-
-  font-family: "Acta Headline", serif;
-  font-weight: 800;
-
-  @media (min-width: 950px) {
-    font-size: 40px;
-    line-height: 44px;
-  }
 }
