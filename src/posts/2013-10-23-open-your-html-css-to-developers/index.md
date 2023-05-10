@@ -1,11 +1,14 @@
 ---
-path: /11-open-your-html-css-to-developers/
-title: "Open your HTML/CSS to Developers"
+highlight: false
+path: 11-open-your-html-css-to-developers
+title: Open your HTML/CSS to Developers
+categories:
+  - engineering
 author: joao-ferreira
 date: 2013-10-23
+intro: Have you ever showed your HTML/CSS to a Developer?
 tags:
   - design
-intro: "Have you ever showed your HTML/CSS to a Developer?"
 ---
 
 Have you ever showed your HTML/CSS to a Developer?
