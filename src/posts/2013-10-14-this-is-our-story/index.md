@@ -1,11 +1,16 @@
 ---
-path: /8-this-is-our-story/
-title: "This is Our Story"
+highlight: false
+path: 8-this-is-our-story
+title: This is Our Story
+categories:
+  - inside-subvisual
 author: roberto-machado
 date: 2013-10-14
+intro: We have been wanting to bring our blog to life for a while now, and that
+  day has finally come. Let me take this opportunity to tell you how we got to
+  where we are today.
 tags:
   - general
-intro: "We have been wanting to bring our blog to life for a while now, and that day has finally come. Let me take this opportunity to tell you how we got to where we are today."
 ---
 
 We have been wanting to bring our blog to life for a while now, and that day has finally come. Let me take this opportunity to tell you how we got to where we are today.
