@@ -1,13 +1,16 @@
 ---
-path: /10-portuguese-ruby-community-renaissance/
-title: "Portuguese Ruby Community Renaissance"
+highlight: false
+path: 10-portuguese-ruby-community-renaissance
+title: Portuguese Ruby Community Renaissance
+categories:
+  - inside-subvisual
 author: roberto-machado
 date: 2013-10-21
-tags:
-  - community
 intro: >
   Last Friday, me and some folks from the Minho Ruby Brigade went to the very
   first Coimbra.rb meetup.
+tags:
+  - community
 ---
 
 Last Friday, me and some folks from the [Minho Ruby Brigade](https://www.meetup.com/Minho-rb/) went to the very first [Coimbra.rb](https://www.meetup.com/Coimbra-rb/) meetup. 
