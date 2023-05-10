@@ -4,6 +4,7 @@ path: 11-open-your-html-css-to-developers
 title: Open your HTML/CSS to Developers
 categories:
   - engineering
+  - design
 author: joao-ferreira
 date: 2013-10-23
 intro: Have you ever showed your HTML/CSS to a Developer?
