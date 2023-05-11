@@ -1,5 +1,5 @@
-import React, { useState } from "react"
 import PropTypes from "prop-types"
+import React, { useState } from "react"
 
 import MenuClose from "./MenuClose"
 import MenuOpen from "./MenuOpen"
@@ -21,7 +21,7 @@ function NavMenu({ isDesktop }) {
           >
             {toggle ? <MenuClose /> : <MenuOpen />}
           </button>
-          {toggle && <NavLinks isDesktop />}
+          {toggle && <NavLinks />}
         </>
       )}
       {isDesktop && <NavLinks isDesktop />}
