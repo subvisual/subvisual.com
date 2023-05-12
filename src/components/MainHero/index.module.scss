@@ -20,7 +20,7 @@
 }
 
 .imageWrapper {
-  position: absolute;
+  position: absolute !important;
   z-index: -1;
 
   width: 100%;
