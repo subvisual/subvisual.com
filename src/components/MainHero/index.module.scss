@@ -1,11 +1,13 @@
 .root {
   position: relative;
+
   height: 790px;
   margin-bottom: 120px;
-  color: var(--c-white-1);
   overflow: hidden;
+
   border-bottom-right-radius: 60px;
   border-bottom-left-radius: 60px;
+  color: var(--c-white-1);
 
   @media (min-width: 950px) {
     height: 816px;
@@ -18,10 +20,11 @@
 }
 
 .imageWrapper {
-  width: 100%;
-  height: 100%;
   position: absolute;
   z-index: -1;
+
+  width: 100%;
+  height: 100%;
 }
 
 .image {

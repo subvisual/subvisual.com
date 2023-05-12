@@ -14,7 +14,7 @@ function MainHero({ children }) {
           src="../../images/header-home.jpg"
           className={styles.imageWrapper}
           imgClassName={styles.image}
-          layout="fixed"
+          layout="fullWidth"
           height={816}
           quality={90}
         />
@@ -23,7 +23,7 @@ function MainHero({ children }) {
           src="../../images/header-post.jpg"
           className={styles.imageWrapper}
           imgClassName={styles.image}
-          layout="fixed"
+          layout="fullWidth"
           height={816}
           quality={90}
         />
