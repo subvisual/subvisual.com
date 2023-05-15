@@ -1,9 +1,14 @@
 ---
-path: /building-utrust-how-to-scale-a-team-and-product
+path: building-utrust-how-to-scale-a-team-and-product
 title: Building Utrust And Advice On How To Scale A Product Team
+categories:
+  - engineering
+  - product
 author: gabriel-poca
 date: 2022-02-25
-intro: "Building Utrust was one of the highlights of my career, and this is an attempt to document some of the key learning from the product and technology team."
+intro: Building Utrust was one of the highlights of my career, and this is an
+  attempt to document some of the key learning from the product and technology
+  team.
 ---
 
 My coworker [Miguel wrote about Utrust's ICO](https://subvisual.com/blog/posts/large-scale-in-a-rush-utrust-ico) from the point of view of the tech team, and that got me thinking that we did some of our finest work at [Utrust]. It's one of the highlights of my career, and I would love to keep those memories and learnings around for the future. This is my attempt to distill some of the key learning points from the product and technology side that I think can be interesting to others. If there's anything else you would like to know, feel free to [reach out to me on Twitter](https://twitter.com/gabrielgpoca).
