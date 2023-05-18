@@ -10,11 +10,12 @@ intro: Let me tell you a *short* story of how we built the [HD
   Wallet](https://www.investopedia.com/terms/h/hd-wallet-hierarchical-deterministic-wallet.asp)
   that powers [Utrust](https://utrust.com/).
 ---
+
 Let me tell you a _short_ story of how we built the [HD Wallet][hdwallet] that powers [Utrust]. For context, Utrust is a payment gateway that online stores can integrate to allow buyers to pay with cryptocurrencies. Buyers pick a currency during checkout, and Utrust generates an address for that purchase.
 
 The year was 2017, and we were preparing for the [ICO]. Things were different back then: there weren’t any ICO platforms, smart contracts were dark magic, and people participated in ICOs using Bitcoin.
 
-We had to build our own ICO platform. The plan was to have an address for each person looking to invest and, later, airdrop the tokens to an address of their choosing. Not a very trustless solution, but it made sense back then. To make this work, we didn’t build any on-demand address derivation solution; we pre-generated many addresses for Ethereum and Bitcoin. Simple and efficient. Well, not so simple. 
+We had to build our own ICO platform. The plan was to have an address for each person looking to invest and, later, airdrop the tokens to an address of their choosing. Not a very trustless solution, but it made sense back then. To make this work, we didn’t build any on-demand address derivation solution; we pre-generated many addresses for Ethereum and Bitcoin. Simple and efficient. Well, not so simple.
 
 We also had to secure the seed that generated those addresses. We wanted to use technology we could understand and trust. So we used GPG. There were four of us, and we encrypted the seed so any combination of two people could recover it. And now we were done.
 
@@ -32,7 +33,7 @@ First, you generate entropy, which is just random noise. Then, you can take a di
 
 The computer in charge is running a live CD. The code was written by you using as few libraries as you can (don't implement Sharmir SS yourself). You put everything in a docker container to ensure the build is reproducible. The mnemonics never leave the computer; you erase and turn it off when you have everything on paper. There are no phones or cameras in the room.
 
-
+![Photo of the label maker](./labelmaker.jpeg)
 
 Once you have the mnemonics on paper, you start carving them out on metal plates. This process will take a few hours. When finished, you quadruple-check them and put the metal plates in different sealed envelopes. Now tear apart the paper and give each person in the room a piece to burn somewhere else (you don't want to start an office fire). Finally, deliver the envelopes to different people and places according to your requirements—the end.
 
@@ -54,4 +55,3 @@ This story happened in 2018, and I left Utrust more than 3 years ago, so I can't
 [ICO]: https://medium.com/@UTRUST/utrust-ico-guide-1847fbfc40d7
 [sss]: https://en.wikipedia.org/wiki/Shamir%27s_Secret_Sharing
 [other-post]: https://subvisual.com/blog/posts/building-utrust-how-to-scale-a-team-and-product/
-
