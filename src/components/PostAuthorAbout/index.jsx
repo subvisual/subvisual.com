@@ -11,13 +11,7 @@ function PostAuthorAbout({ author, date }) {
         <Author author={author} date={date} />
       </div>
       <p className={styles.about}>About the author</p>
-      <p className={styles.bio}>
-        Lorem ipsum dolor sit amet consectetur. Facilisis eu placerat accumsan
-        lorem morbi diam. Senectus quam mollis dui augue neque est suspendisse
-        gravida odio. Lorem ipsum dolor sit amet consectetur. Facilisis eu
-        placerat accumsan lorem morbi diam. Senectus quam mollis dui augue neque
-        est suspendisse.
-      </p>
+      <p className={styles.bio}>{author.bio}</p>
     </div>
   )
 }
