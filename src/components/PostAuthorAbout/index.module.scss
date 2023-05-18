@@ -1,0 +1,29 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  max-width: var(--post-body-max-width);
+  padding: 0 20px;
+  margin: 0 auto;
+
+  &::before {
+    content: "";
+
+    width: 62px;
+    height: 1px;
+    margin-bottom: 20px;
+
+    background-color: var(--c-gray-1);
+
+    transform: translateY(-50%);
+  }
+}
+
+.author {
+  margin-bottom: 36px;
+}
+
+.about {
+  margin-bottom: 18px;
+
+  text-transform: uppercase;
+}
