@@ -6,9 +6,7 @@ categories:
   - engineering
 author: gabriel-poca
 date: 2023-05-22
-intro: Let me tell you a *short* story of how we built the [HD
-  Wallet](https://www.investopedia.com/terms/h/hd-wallet-hierarchical-deterministic-wallet.asp)
-  that powers [Utrust](https://utrust.com/).
+intro: Let me tell you a short story of how we built the HD Wallet that powers Utrust.
 ---
 
 Let me tell you a _short_ story of how we built the [HD Wallet][hdwallet] that powers [Utrust]. For context, Utrust is a payment gateway that online stores can integrate to allow buyers to pay with cryptocurrencies. Buyers pick a currency during checkout, and Utrust generates an address for that purchase.
