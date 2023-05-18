@@ -29,7 +29,7 @@ function PostLayout({ title, author, date, categories, children }) {
         </div>
       </MainHero>
       <main>{children}</main>
-      <PostAuthorAbout author={author} date={date} />
+      {author.bio && <PostAuthorAbout author={author} date={date} />}
       <Footer />
     </div>
   )
