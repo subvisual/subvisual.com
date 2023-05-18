@@ -11,7 +11,7 @@ function PostAuthorAbout({ author, date }) {
         <Author author={author} date={date} />
       </div>
       <p className={styles.heading}>About the author</p>
-      <p className={styles.bio}>{author.bio}</p>
+      <p>{author.bio}</p>
     </div>
   )
 }
