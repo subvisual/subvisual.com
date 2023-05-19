@@ -42,7 +42,6 @@ module.exports = [
     options: {
       plugins: [
         "gatsby-remark-copy-linked-files",
-        "gatsby-remark-embedder",
         {
           resolve: "gatsby-remark-embed-video",
           options: {
@@ -56,12 +55,6 @@ module.exports = [
             maxWidth: 834,
             linkImagesToOriginal: false,
             quality: 85,
-          },
-        },
-        {
-          resolve: `gatsby-remark-image-attributes`,
-          options: {
-            dataAttributes: true,
           },
         },
         "gatsby-remark-external-links",
