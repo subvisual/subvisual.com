@@ -1,6 +1,6 @@
-import React from "react"
 import { graphql } from "gatsby"
 import _get from "lodash/get"
+import React from "react"
 
 import PageWideWrapper from "../../components/PageWideWrapper"
 import PostBody from "../../components/PostBody"
@@ -24,6 +24,7 @@ export const query = graphql`
           key
           name
           initials
+          bio
           photo {
             vertical {
               childImageSharp {

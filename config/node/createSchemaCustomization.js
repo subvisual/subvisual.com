@@ -9,6 +9,7 @@ module.exports = ({ actions }) => {
         initials: String,
         email: String,
         photo: Photo
+        bio: String,
       }
 
       interface Category {
