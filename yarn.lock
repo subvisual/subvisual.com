@@ -5881,11 +5881,6 @@ fd@~0.0.2:
   resolved "https://registry.npmjs.org/fd/-/fd-0.0.3.tgz"
   integrity sha512-iAHrIslQb3U68OcMSP0kkNWabp7sSN6d2TBSb2JO3gcLJVDd4owr/hKM4SFJovFOUeeXeItjYgouEDTMWiVAnA==
 
-fetch-retry@^5.0.2:
-  version "5.0.3"
-  resolved "https://registry.npmjs.org/fetch-retry/-/fetch-retry-5.0.3.tgz"
-  integrity sha512-uJQyMrX5IJZkhoEUBQ3EjxkeiZkppBd5jS/fMTJmfZxLSiaQjv2zD0kTvuvkSH89uFvgSlB6ueGpjD3HWN7Bxw==
-
 figures@^3.0.0:
   version "3.2.0"
   resolved "https://registry.npmjs.org/figures/-/figures-3.2.0.tgz"
@@ -6507,18 +6502,6 @@ gatsby-remark-embed-video@^3.1.1:
     remark-burger "^1.0.1"
     unist-util-visit "^2.0.3"
 
-gatsby-remark-embedder@^6.0.1:
-  version "6.0.1"
-  resolved "https://registry.npmjs.org/gatsby-remark-embedder/-/gatsby-remark-embedder-6.0.1.tgz"
-  integrity sha512-bzhlc6cMeBkdyZ2XGQbNw/OVXxA0ETL7cqltUxmixCe+z1ziEXw83SHL62ETjQGg/vPOTqlv8vp14mUjENbbHw==
-  dependencies:
-    "@babel/runtime" "^7.18.3"
-    fetch-retry "^5.0.2"
-    hast-util-from-parse5 "^6.0.1"
-    node-fetch "^2.6.7"
-    parse5 "^6.0.1"
-    unist-util-visit "^2.0.3"
-
 gatsby-remark-external-links@^0.0.4:
   version "0.0.4"
   resolved "https://registry.npmjs.org/gatsby-remark-external-links/-/gatsby-remark-external-links-0.0.4.tgz"
@@ -6528,13 +6511,6 @@ gatsby-remark-external-links@^0.0.4:
     is-relative-url "^2.0.0"
     unist-util-find "^1.0.1"
     unist-util-visit "^1.1.3"
-
-gatsby-remark-image-attributes@^1.0.1:
-  version "1.1.0"
-  resolved "https://registry.npmjs.org/gatsby-remark-image-attributes/-/gatsby-remark-image-attributes-1.1.0.tgz"
-  integrity sha512-W+E1AUvWmbgorC4MkBaJafNACeg59R8c/D6p76v182jqdde0xpTzbNQd7pbGK1ey677oat8FzGet3JQdVW919Q==
-  dependencies:
-    unist-util-visit "^2.0.3"
 
 gatsby-remark-images@^7.6.0:
   version "7.6.0"
@@ -7265,7 +7241,7 @@ hast-util-from-parse5@^5.0.0:
     web-namespaces "^1.1.2"
     xtend "^4.0.1"
 
-hast-util-from-parse5@^6.0.0, hast-util-from-parse5@^6.0.1:
+hast-util-from-parse5@^6.0.0:
   version "6.0.1"
   resolved "https://registry.npmjs.org/hast-util-from-parse5/-/hast-util-from-parse5-6.0.1.tgz"
   integrity sha512-jeJUWiN5pSxW12Rh01smtVkZgZr33wBokLzKLwinYOUfSzm1Nl/c3GUGebDyOKjdsRgMvoVbV0VpAcpjF4NrJA==
@@ -10114,7 +10090,7 @@ node-fetch@2.6.7:
   dependencies:
     whatwg-url "^5.0.0"
 
-node-fetch@^2.6.7, node-fetch@^2.6.8:
+node-fetch@^2.6.8:
   version "2.6.9"
   resolved "https://registry.npmjs.org/node-fetch/-/node-fetch-2.6.9.tgz"
   integrity sha512-DJm/CJkZkRjKKj4Zi4BsKVZh3ValV5IR5s7LVZnW+6YMh0W1BfNA8XSs6DLMGYlId5F3KnA70uu2qepcR08Qqg==
@@ -10635,7 +10611,7 @@ parse5@^5.0.0:
   resolved "https://registry.npmjs.org/parse5/-/parse5-5.1.1.tgz"
   integrity sha512-ugq4DFI0Ptb+WWjAdOK16+u/nHfiIrcE+sh8kZMaM0WllQKLI9rOUq6c2b7cwPkXdzfQESqvoqK6ug7U/Yyzug==
 
-parse5@^6.0.0, parse5@^6.0.1:
+parse5@^6.0.0:
   version "6.0.1"
   resolved "https://registry.npmjs.org/parse5/-/parse5-6.0.1.tgz"
   integrity sha512-Ofn/CTFzRGTTxwpNEs9PP93gXShHcTq255nzRYSKe8AkVpZY7e1fpmTfOyoIvjP5HG7Z2ZM7VS9PPhQGW2pOpw==
