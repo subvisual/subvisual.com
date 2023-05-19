@@ -43,26 +43,10 @@
 }
 
 .share-links {
-  display: block;
+  padding: 0 20px;
   margin: 0 auto;
+}
 
-  @include media(">=800px") {
-    position: absolute;
-    top: 0;
-    left: 20px;
-
-    max-width: 14%;
-  }
-
-  @include media(">=desktop") {
-    left: 28px;
-  }
-
-  @include media(">=1182px") {
-    left: calc(619px - 50vw);
-  }
-
-  @include media(">=1238px") {
-    left: 0;
-  }
+.bio {
+  margin-bottom: 62px;
 }
