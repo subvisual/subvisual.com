@@ -6,7 +6,6 @@ import AnnouncementBanner from "../AnnouncementBanner"
 import Footer from "../Footer"
 import Header from "../Header"
 import MainHero from "../MainHero"
-import PostAuthorAbout from "../PostAuthorAbout"
 import PostDetails from "../PostDetails"
 import PostTitle from "../PostTitle"
 
@@ -29,7 +28,6 @@ function PostLayout({ title, author, date, categories, children }) {
         </div>
       </MainHero>
       <main>{children}</main>
-      {author.bio && <PostAuthorAbout author={author} date={date} />}
       <Footer />
     </div>
   )

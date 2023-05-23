@@ -17,58 +17,30 @@ $breakpoint: 800;
 }
 
 .title {
-  margin-bottom: 20px;
+  margin-bottom: 13px;
 
-  color: #2421ab;
-
-  line-height: 20px;
-
-  @include media(">=#{$breakpoint}px") {
-    margin-bottom: 28px;
-
-    line-height: 28px;
-  }
-
-  @include media(">=desktop") {
-    margin-bottom: 32px;
-
-    line-height: 32px;
-  }
+  font-size: 16px;
+  text-transform: uppercase;
 }
 
 .links {
+  display: flex;
+  gap: 26px;
+
   list-style: none;
+
+  font-size: 20px;
+  line-height: 28px;
+
+  @media (min-width: 950px) {
+    font-size: 28px;
+    line-height: 34px;
+  }
 }
 
 .link {
-  display: inline-block;
-  margin-right: 28px;
-
-  color: #2421ab;
-  opacity: 0.6;
-
-  line-height: 20px;
-
-  @include media(">=#{$breakpoint}px") {
-    display: block;
-    margin-right: 0;
-    margin-bottom: 28px;
-
-    line-height: 28px;
-  }
-
-  @include media(">=desktop") {
-    margin-bottom: 32px;
-
-    line-height: 32px;
-  }
-
+  transition: opacity 0.2s ease-in-out;
   &:hover {
-    opacity: 1;
-  }
-
-  &:last-child {
-    margin-right: 0;
-    margin-bottom: 0;
+    opacity: 0.5;
   }
 }

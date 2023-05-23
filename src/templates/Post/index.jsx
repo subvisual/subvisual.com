@@ -3,6 +3,7 @@ import _get from "lodash/get"
 import React from "react"
 
 import PageWideWrapper from "../../components/PageWideWrapper"
+import PostAuthorAbout from "../../components/PostAuthorAbout"
 import PostBody from "../../components/PostBody"
 import PostLayout from "../../components/PostLayout"
 import PostShareLinks from "../../components/PostShareLinks"
@@ -100,11 +101,14 @@ function BlogPostTemplate({
             <PageWideWrapper>
               <div className={styles.outerWrapper}>
                 <PostBody className={styles.innerWrapper} html={html} />
-                <PostShareLinks className={styles.shareLinks} url={url} />
               </div>
             </PageWideWrapper>
           </section>
         </article>
+        <div className={styles.bio}>
+          {author.bio && <PostAuthorAbout author={author} date={date} />}
+        </div>
+        <PostShareLinks className={styles.shareLinks} url={url} />
       </div>
     </PostLayout>
   )
