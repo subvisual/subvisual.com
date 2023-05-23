@@ -1,5 +1,5 @@
-import React from "react"
 import { graphql } from "gatsby"
+import React from "react"
 
 import Title from "~/src/components/BlogTitle"
 import MainLayout from "~/src/components/MainLayout"
@@ -27,7 +27,7 @@ export const query = graphql`
             name
             initials
             photo {
-              vertical {
+              avatar {
                 childImageSharp {
                   gatsbyImageData(
                     width: 50

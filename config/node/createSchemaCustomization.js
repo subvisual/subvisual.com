@@ -18,8 +18,7 @@ module.exports = ({ actions }) => {
       }
 
       type Photo {
-        horizontal: File! @fileByRelativePath,
-        vertical: File! @fileByRelativePath,
+        avatar: File! @fileByRelativePath,
       }
 
       type Social {

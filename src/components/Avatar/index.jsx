@@ -1,5 +1,5 @@
-import React, { useState } from "react"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import React, { useState } from "react"
 
 import * as styles from "./index.module.scss"
 
@@ -17,7 +17,7 @@ function Avatar({ author }) {
         <GatsbyImage
           alt=""
           className={styles.avatar}
-          image={getImage(author.photo.vertical)}
+          image={getImage(author.photo.avatar)}
         />
       ) : (
         <div className={styles.avatar} style={{ backgroundColor: randomColor }}>

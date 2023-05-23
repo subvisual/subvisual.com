@@ -27,7 +27,7 @@ export const query = graphql`
           initials
           bio
           photo {
-            vertical {
+            avatar {
               childImageSharp {
                 gatsbyImageData(
                   width: 50

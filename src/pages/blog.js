@@ -1,9 +1,9 @@
-import React, { useState } from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import { intersection, isEmpty, map, slice, uniqBy } from "lodash"
+import React, { useState } from "react"
 
-import HighlightedPosts from "~/src/components/HighlightedPosts"
 import Button from "~/src/components/Button"
+import HighlightedPosts from "~/src/components/HighlightedPosts"
 import MainLayout from "~/src/components/MainLayout"
 import PageWideWrapper from "~/src/components/PageWideWrapper"
 import PostsList from "~/src/components/PostList"
@@ -32,7 +32,7 @@ const query = graphql`
             name
             initials
             photo {
-              vertical {
+              avatar {
                 childImageSharp {
                   gatsbyImageData(
                     width: 50
