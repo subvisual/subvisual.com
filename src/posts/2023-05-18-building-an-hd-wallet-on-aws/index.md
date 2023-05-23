@@ -32,7 +32,7 @@ First, you generate entropy, which is just random noise. Then, you can take a di
 
 The computer in charge is running a live CD. The code was written by you using as few libraries as you can (don't implement Sharmir SS yourself). You put everything in a docker container to ensure the build is reproducible. The mnemonics never leave the computer; you erase and turn it off when you have everything on paper. There are no phones or cameras in the room.
 
-![Photo of the label maker](./labelmaker.jpeg)
+![Photo of the label maker](./labelmaker.jpeg "Subvisual Blog Building An HD Wallet On AWS Article - Photo of the label maker")
 
 Once you have the mnemonics on paper, you start carving them out on metal plates. This process will take a few hours. When finished, you quadruple-check them and put the metal plates in different sealed envelopes. Now tear apart the paper and give each person in the room a piece to burn somewhere else (you don't want to start an office fire). Finally, deliver the envelopes to different people and places according to your requirements—the end.
 
