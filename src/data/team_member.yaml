@@ -2,7 +2,7 @@
   name: Alexandre Mendes
   initials: AM
   photo:
-    avatar: ../images/team/alex-mendes-v.jpg
+    avatar: ../images/team/alex-mendes.jpg
   role: Head of Ventures
   social:
     linkedin: https://www.linkedin.com/in/carlosalexandremendes/
@@ -12,7 +12,7 @@
   initials: AB
   email: alvaro@subvisual.com
   photo:
-    avatar: "../images/team/alvaro-bezerra-v.jpg"
+    avatar: "../images/team/alvaro-bezerra.jpg"
   role: "Product Manager"
   social:
     linkedin: "https://www.linkedin.com/in/alvarobezerra"
@@ -23,7 +23,7 @@
   initials: FM
   email: mendes@subvisual.com
   photo:
-    avatar: "../images/team/fernando-mendes-v.jpg"
+    avatar: "../images/team/fernando-mendes.jpg"
   role: "Developer"
   bio: >-
     Tech lover, with a background in Distributed Systems and Cryptography and a
@@ -38,7 +38,7 @@
   name: "Francisco Baila"
   initials: FB
   photo:
-    avatar: "../images/team/francisco-baila-v.jpg"
+    avatar: "../images/team/francisco-baila.jpg"
   role: "Designer"
   bio: >-
     Cares about overcoming self limitations. Working to turn technology into a
@@ -51,7 +51,7 @@
   name: "Gabriel Poça"
   initials: GP
   photo:
-    avatar: "../images/team/gabriel-poca-v.jpg"
+    avatar: "../images/team/gabriel-poca.jpg"
   role: "Developer"
   bio: >-
     There is no time for introductions, but if there was, you would instantly
@@ -65,7 +65,7 @@
   initials: JG
   email: joana@subvisual.com
   photo:
-    avatar: "../images/team/joana-gomes-v.jpg"
+    avatar: "../images/team/joana-gomes.jpg"
   role: "Designer"
   social:
     linkedin: "https://www.linkedin.com/in/joanamsgomes/"
@@ -75,7 +75,7 @@
   name: João Justo
   initials: JJ
   photo:
-    avatar: "../images/team/joao-justo-v.jpg"
+    avatar: "../images/team/joao-justo.jpg"
   bio: >-
     Always gets way too excited about a new idea. Downhill amateur and Android
     fanboy. Avoid talking to him about Game of Thrones unless you have serious
@@ -89,7 +89,7 @@
   name: "João Ferreira"
   initials: JF
   photo:
-    avatar: "../images/team/joao-ferreira-v.jpg"
+    avatar: "../images/team/joao-ferreira.jpg"
   role: "Designer"
   bio: >-
     Believes Design is not about mastering tools but about mastering people.
@@ -102,7 +102,7 @@
   name: José Pedro Cabrita
   initials: ZP
   photo:
-    avatar: ../images/team/jose-pedro-cabrita-v.jpg
+    avatar: ../images/team/jose-pedro-cabrita.jpg
   role: Talent Manager
   social:
     linkedin: "https://www.linkedin.com/in/Josepedrocabrita"
@@ -111,7 +111,7 @@
   name: "Laura Esteves"
   initials: LE
   photo:
-    avatar: "../images/team/laura-esteves-v.jpg"
+    avatar: "../images/team/laura-esteves.jpg"
   role: COO
   bio: >-
     Obsessive about organization and productivity, she'll take control and
@@ -126,7 +126,7 @@
   name: "Luis Ferreira"
   initials: LF
   photo:
-    avatar: "../images/team/luis-ferreira-v.jpg"
+    avatar: "../images/team/luis-ferreira.jpg"
   role: "Founder & Developer"
   bio: "Has worked on the web for a while now, mainly using Ruby and Ruby on
   Rails. Enjoys open source and giving back to the community, having taught
@@ -140,7 +140,7 @@
   initials: MP
   email: miguel@subvisual.com
   photo:
-    avatar: "../images/team/miguel-palhas-v.jpg"
+    avatar: "../images/team/miguel-palhas.jpg"
   role: "Developer & SysAdmin"
   bio: "All-round developer with a background in High Performance Computing
   and a passion for the Open Source world. Still dreams about becoming a real
@@ -154,7 +154,7 @@
   initials: MM
   email: mirha@subvisual.com
   photo:
-    avatar: "../images/team/mirha-masala-v.jpg"
+    avatar: "../images/team/mirha-masala.jpg"
   role: "Developer"
   bio: "Frontend developer who likes to dabble in the deep, dark back. Oddly interested in best coding practices and refactoring. She also writes."
   social:
@@ -166,7 +166,7 @@
   name: Nuno Reis
   initials: NR
   photo:
-    avatar: "../images/team/nuno-reis-v.jpg"
+    avatar: "../images/team/nuno-reis.jpg"
   role: Business Developer
   social:
     linkedin: https://www.linkedin.com/in/nunohvreis/
@@ -176,7 +176,7 @@
   name: "Roberto Machado"
   initials: RM
   photo:
-    avatar: "../images/team/roberto-machado-v.jpg"
+    avatar: "../images/team/roberto-machado.jpg"
   role: "Founder & CEO"
   bio: "Breathes technology and deeply believes, hence the creation of Subvisual,
   that it is the medium for a better future. Always has 5 minutes to listen to you."
@@ -188,7 +188,7 @@
   name: "Ronaldo Sousa"
   initials: RS
   photo:
-    avatar: "../images/team/ronaldo-sousa-v.jpg"
+    avatar: "../images/team/ronaldo-sousa.jpg"
   role: "Developer"
   bio: "Restless tech, design and music lover that likes to build software
   for people. Usually you can find him in front of a computer, behind a
