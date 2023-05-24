@@ -6,6 +6,7 @@ import PageWideWrapper from "../../components/PageWideWrapper"
 import PostAuthorAbout from "../../components/PostAuthorAbout"
 import PostBody from "../../components/PostBody"
 import PostLayout from "../../components/PostLayout"
+import PostRelatedArticles from "../../components/PostRelatedArticles"
 import PostShareLinks from "../../components/PostShareLinks"
 import SEO from "../../components/SEO"
 
@@ -109,6 +110,9 @@ function BlogPostTemplate({
           {author.bio && <PostAuthorAbout author={author} date={date} />}
         </div>
         <PostShareLinks className={styles.shareLinks} url={url} />
+        <div className={styles.relatedArticles}>
+          <PostRelatedArticles related={[]} />
+        </div>
       </div>
     </PostLayout>
   )

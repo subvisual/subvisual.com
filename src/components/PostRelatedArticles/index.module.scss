@@ -1,0 +1,57 @@
+@import "common/breakpoints";
+
+.root {
+  margin-bottom: 54px;
+}
+
+.title {
+  position: relative;
+
+  padding-left: 52px;
+  margin-bottom: 42px;
+
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    width: 32px;
+    height: 1px;
+
+    background-color: var(--c-purple-1);
+
+    transform: translateY(-50%);
+  }
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 368px;
+  height: 235px;
+  padding: 40px 33px;
+
+  background-color: var(--c-blue-2);
+  border-radius: 28px;
+}
+
+.articleTitle {
+  @media (min-width: 950px) {
+    font-size: 28px;
+    line-height: 34px;
+  }
+}
+
+.articleLink {
+  color: var(--c-blue-1);
+}
+
+.articles {
+  display: flex;
+  gap: 23px;
+}
