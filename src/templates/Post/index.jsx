@@ -111,7 +111,7 @@ function BlogPostTemplate({
         </div>
         <PostShareLinks className={styles.shareLinks} url={url} />
         <div className={styles.relatedArticles}>
-          <PostRelatedArticles related={[]} />
+          <PostRelatedArticles currentArticleTitle={title} />
         </div>
       </div>
     </PostLayout>
