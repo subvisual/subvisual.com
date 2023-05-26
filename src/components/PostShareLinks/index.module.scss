@@ -4,7 +4,6 @@ $breakpoint: 800;
 
 .root {
   max-width: var(--post-body-max-width);
-  padding: 0 20px;
 
   @include media(">=800px") {
     padding: 0;
