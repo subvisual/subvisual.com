@@ -30,7 +30,7 @@
 
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
   gap: 8px;
 
   @media (min-width: 950px) {
@@ -42,17 +42,16 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 40px;
-
-  width: 100%;
-  height: 147px;
+  max-width: 368px;
+  min-height: 147px;
   padding: 21px 17px;
 
   background-color: var(--c-blue-2);
   border-radius: 28px;
+  gap: 40px;
 
   @media (min-width: 950px) {
-    height: 235px;
+    min-height: 235px;
     padding: 40px 33px;
     gap: 28px;
   }
