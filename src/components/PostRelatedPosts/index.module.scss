@@ -1,16 +1,16 @@
 @import "common/breakpoints";
 
-.root {
-  margin-bottom: 54px;
-}
-
-.title {
+.heading {
   position: relative;
 
   padding-left: 52px;
-  margin-bottom: 42px;
+  margin-bottom: 28px;
 
   text-transform: uppercase;
+
+  @media (min-width: 950px) {
+    margin-bottom: 42px;
+  }
 
   &::before {
     content: "";
@@ -28,30 +28,47 @@
   }
 }
 
-.article {
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 8px;
+
+  @media (min-width: 950px) {
+    gap: 23px;
+  }
+}
+
+.card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 368px;
-  height: 235px;
-  padding: 40px 33px;
+  gap: 40px;
+
+  width: 100%;
+  height: 147px;
+  padding: 21px 17px;
 
   background-color: var(--c-blue-2);
   border-radius: 28px;
+
+  @media (min-width: 950px) {
+    width: 368px;
+    height: 235px;
+    padding: 40px 33px;
+    gap: 28px;
+  }
 }
 
-.articleTitle {
+.title {
+  font-size: 20px;
+  line-height: 24px;
+
   @media (min-width: 950px) {
     font-size: 28px;
     line-height: 34px;
   }
 }
 
-.articleLink {
+.cta {
   color: var(--c-blue-1);
-}
-
-.articles {
-  display: flex;
-  gap: 23px;
 }
