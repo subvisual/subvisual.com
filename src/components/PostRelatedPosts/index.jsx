@@ -1,5 +1,6 @@
 import { Link, graphql, useStaticQuery } from "gatsby"
 import { intersection, isEmpty, map } from "lodash"
+import PropTypes from "prop-types"
 import React from "react"
 
 import * as styles from "./index.module.scss"
@@ -58,6 +59,16 @@ function PostRelatedPosts({ categories, title }) {
       </>
     )
   )
+}
+
+PostRelatedPosts.propTypes = {
+  title: PropTypes.string.isRequired,
+  categories: PropTypes.arrayOf(
+    PropTypes.shape({
+      key: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+    })
+  ).isRequired,
 }
 
 export default PostRelatedPosts
