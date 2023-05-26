@@ -109,8 +109,8 @@ function BlogPostTemplate({
         <div className={styles.bio}>
           {author.bio && <PostAuthorAbout author={author} date={date} />}
         </div>
-        <PostShareLinks className={styles.shareLinks} url={url} />
-        <PageWideWrapper>
+        <PageWideWrapper padded>
+          <PostShareLinks className={styles.shareLinks} url={url} />
           <PostRelatedPosts categories={categories} title={title} />
         </PageWideWrapper>
       </div>
