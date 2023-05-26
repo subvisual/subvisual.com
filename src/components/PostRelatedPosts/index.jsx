@@ -1,4 +1,4 @@
-import { graphql, useStaticQuery, Link } from "gatsby"
+import { Link, graphql, useStaticQuery } from "gatsby"
 import { intersection, isEmpty, map } from "lodash"
 import React from "react"
 
@@ -40,21 +40,23 @@ function PostRelatedPosts({ categories, title: parentTitle }) {
   })
 
   return (
-    <>
-      <p className={styles.heading}>Related Articles</p>
-      <div className={styles.container}>
-        {relatedPosts?.slice(0, 3).map((post) => (
-          <Link
-            key={post.fields.path}
-            href={post.fields.path}
-            className={styles.card}
-          >
-            <p className={styles.title}>{post.frontmatter.title}</p>
-            <p className={styles.cta}>Read more</p>
-          </Link>
-        ))}
-      </div>
-    </>
+    !isEmpty(relatedPosts) && (
+      <>
+        <p className={styles.heading}>Related Articles</p>
+        <div className={styles.container}>
+          {relatedPosts?.slice(0, 3).map((post) => (
+            <Link
+              key={post.fields.path}
+              href={post.fields.path}
+              className={styles.card}
+            >
+              <p className={styles.title}>{post.frontmatter.title}</p>
+              <p className={styles.cta}>Read more</p>
+            </Link>
+          ))}
+        </div>
+      </>
+    )
   )
 }
 
