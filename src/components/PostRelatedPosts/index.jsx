@@ -26,12 +26,12 @@ export const query = graphql`
   }
 `
 
-function PostRelatedPosts({ categories, title: parentTitle }) {
+function PostRelatedPosts({ categories, title }) {
   const data = useStaticQuery(query)
   const posts = data.allMarkdownRemark.nodes
 
   const relatedPosts = posts.filter((post) => {
-    const isNotParentPost = post.frontmatter.title !== parentTitle
+    const isNotParentPost = post.frontmatter.title !== title
     const parentCategories = map(categories, "key")
     const postCategories = map(post.frontmatter.categories, "key")
     const commonCategories = intersection(postCategories, parentCategories)
