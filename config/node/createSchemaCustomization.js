@@ -8,7 +8,7 @@ module.exports = ({ actions }) => {
         name: String!,
         initials: String,
         email: String,
-        photo: File! @fileByRelativePath,
+        photo: File @fileByRelativePath,
         bio: String,
       }
 
@@ -56,7 +56,7 @@ module.exports = ({ actions }) => {
         name: String!,
         initials: String,
         social: Social,
-        photo: File! @fileByRelativePath
+        photo: File @fileByRelativePath
       }
 
       type TeamMemberYaml implements Author & Node @dontInfer {
