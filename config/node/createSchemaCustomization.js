@@ -8,17 +8,13 @@ module.exports = ({ actions }) => {
         name: String!,
         initials: String,
         email: String,
-        photo: Photo
+        photo: File! @fileByRelativePath,
         bio: String,
       }
 
       interface Category {
         key: String!,
         label: String!
-      }
-
-      type Photo {
-        avatar: File! @fileByRelativePath,
       }
 
       type Social {
@@ -60,7 +56,7 @@ module.exports = ({ actions }) => {
         name: String!,
         initials: String,
         social: Social,
-        photo: Photo
+        photo: File! @fileByRelativePath
       }
 
       type TeamMemberYaml implements Author & Node @dontInfer {
@@ -68,7 +64,7 @@ module.exports = ({ actions }) => {
         email: String,
         name: String!,
         initials: String,
-        photo: Photo!,
+        photo: File! @fileByRelativePath,
         role: String!,
         bio: String,
         social: Social,

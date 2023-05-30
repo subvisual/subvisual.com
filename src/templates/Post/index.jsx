@@ -27,14 +27,12 @@ export const query = graphql`
           initials
           bio
           photo {
-            avatar {
-              childImageSharp {
-                gatsbyImageData(
-                  width: 50
-                  height: 50
-                  transformOptions: { fit: COVER, cropFocus: ATTENTION }
-                )
-              }
+            childImageSharp {
+              gatsbyImageData(
+                width: 50
+                height: 50
+                transformOptions: { fit: COVER, cropFocus: ATTENTION }
+              )
             }
           }
         }

@@ -32,14 +32,12 @@ const query = graphql`
             name
             initials
             photo {
-              avatar {
-                childImageSharp {
-                  gatsbyImageData(
-                    width: 50
-                    height: 50
-                    transformOptions: { fit: COVER, cropFocus: ATTENTION }
-                  )
-                }
+              childImageSharp {
+                gatsbyImageData(
+                  width: 50
+                  height: 50
+                  transformOptions: { fit: COVER, cropFocus: ATTENTION }
+                )
               }
             }
           }

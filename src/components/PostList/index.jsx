@@ -1,11 +1,10 @@
-import React from "react"
-import PropTypes from "prop-types"
 import { Link } from "gatsby"
-import Avatar from "../Avatar"
+import PropTypes from "prop-types"
+import React from "react"
 
-import * as styles from "./index.module.scss"
-import Categories from "../Categories"
 import Author from "../Author"
+import Categories from "../Categories"
+import * as styles from "./index.module.scss"
 
 function Entry({ author, date, intro, path, title, categories }) {
   return (

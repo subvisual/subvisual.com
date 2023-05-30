@@ -17,7 +17,7 @@ function Avatar({ author }) {
         <GatsbyImage
           alt=""
           className={styles.avatar}
-          image={getImage(author.photo.avatar)}
+          image={getImage(author.photo)}
         />
       ) : (
         <div className={styles.avatar} style={{ backgroundColor: randomColor }}>
