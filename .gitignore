@@ -53,6 +53,8 @@ typings/
 
 # dotenv and envrc environment variables file
 .env
+.env.development
+.env.production
 .envrc
 
 # gatsby files

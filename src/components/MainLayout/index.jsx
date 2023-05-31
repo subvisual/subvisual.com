@@ -1,13 +1,15 @@
-import React from "react"
 import PropTypes from "prop-types"
+import React from "react"
 import Helmet from "react-helmet"
 
 import AnnouncementBanner from "../AnnouncementBanner"
-import MainHero from "../MainHero"
-import Header from "../Header"
-import Title from "../Title"
 import Footer from "../Footer"
+import Header from "../Header"
+import MainHero from "../MainHero"
+import Title from "../Title"
 
+import PageWideWrapper from "../PageWideWrapper"
+import Podcasts from "../Podcasts"
 import * as styles from "./index.module.scss"
 
 function MainLayout({ children }) {
@@ -27,6 +29,11 @@ function MainLayout({ children }) {
         </div>
       </MainHero>
       <main>{children}</main>
+      <div className={styles.podcasts}>
+        <PageWideWrapper padded>
+          <Podcasts />
+        </PageWideWrapper>
+      </div>
       <Footer />
     </div>
   )

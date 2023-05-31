@@ -1,0 +1,61 @@
+@import "common/breakpoints";
+
+.root {
+  position: relative;
+}
+
+.nextArrow,
+.prevArrow {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+
+  background: transparent;
+  border: 1px solid var(--c-blue-1);
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.nextArrow {
+  right: 0;
+}
+
+.prevArrow {
+  right: 72px;
+}
+
+.heading {
+  margin-bottom: 28px;
+
+  @media (min-width: 950px) {
+    margin-bottom: 42px;
+  }
+}
+
+.container {
+  margin-bottom: 74px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 432px;
+  min-height: 147px;
+
+  border: 1px solid var(--c-blue-1);
+  border-radius: 28px;
+  gap: 40px;
+
+  @media (min-width: 950px) {
+    min-height: 235px;
+    padding: 40px 33px;
+    gap: 28px;
+  }
+}

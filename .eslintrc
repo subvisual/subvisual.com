@@ -1,12 +1,6 @@
 {
-  "extends": [
-    "airbnb",
-    "prettier"
-  ],
-  "plugins": [
-    "prettier",
-    "react-hooks"
-  ],
+  "extends": ["airbnb", "prettier"],
+  "plugins": ["prettier", "react-hooks"],
   "parser": "@babel/eslint-parser",
   "parserOptions": {
     "ecmaFeatures": {
@@ -22,10 +16,7 @@
   },
   "rules": {
     "prettier/prettier": "error",
-    "curly": [
-      "error",
-      "multi-line"
-    ],
+    "curly": ["error", "multi-line"],
     "padding-line-between-statements": [
       "error",
       {
@@ -45,25 +36,13 @@
       },
       {
         "blankLine": "always",
-        "prev": [
-          "const",
-          "let",
-          "var"
-        ],
+        "prev": ["const", "let", "var"],
         "next": "*"
       },
       {
         "blankLine": "any",
-        "prev": [
-          "const",
-          "let",
-          "var"
-        ],
-        "next": [
-          "const",
-          "let",
-          "var"
-        ]
+        "prev": ["const", "let", "var"],
+        "next": ["const", "let", "var"]
       }
     ],
     "no-param-reassign": [
@@ -84,17 +63,10 @@
     "id-length": [
       "error",
       {
-        "exceptions": [
-          "_",
-          "x",
-          "y"
-        ]
+        "exceptions": ["_", "x", "y"]
       }
     ],
-    "no-use-before-define": [
-      "error",
-      "nofunc"
-    ],
+    "no-use-before-define": ["error", "nofunc"],
     "no-unused-vars": [
       "error",
       {
@@ -104,12 +76,8 @@
     "jsx-a11y/anchor-is-valid": [
       "error",
       {
-        "components": [
-          "Link"
-        ],
-        "specialLink": [
-          "to"
-        ]
+        "components": ["Link"],
+        "specialLink": ["to"]
       }
     ],
     "react/jsx-filename-extension": "off",
@@ -119,11 +87,10 @@
     "import/no-unresolved": [
       2,
       {
-        "ignore": [
-          "~/"
-        ]
+        "ignore": ["~/"]
       }
     ],
+    "import/no-extraneous-dependencies": ["error", { "dependencies": true }],
     "import/extensions": 0,
     "react/jsx-props-no-spreading": "off",
     "react/static-property-placement": "off",
