@@ -1,9 +1,7 @@
 - key: alex-mendes
   name: Alexandre Mendes
   initials: AM
-  photo:
-    horizontal: ../images/team/alex-mendes-h.jpg
-    vertical: ../images/team/alex-mendes-v.jpg
+  photo: "../images/team/alex-mendes.jpg"
   role: Head of Ventures
   social:
     linkedin: https://www.linkedin.com/in/carlosalexandremendes/
@@ -12,9 +10,7 @@
   name: "Alvaro Bezerra"
   initials: AB
   email: alvaro@subvisual.com
-  photo:
-    horizontal: "../images/team/alvaro-bezerra-h.jpg"
-    vertical: "../images/team/alvaro-bezerra-v.jpg"
+  photo: "../images/team/alvaro-bezerra.jpg"
   role: "Product Manager"
   social:
     linkedin: "https://www.linkedin.com/in/alvarobezerra"
@@ -24,9 +20,7 @@
   name: "Fernando Mendes"
   initials: FM
   email: mendes@subvisual.com
-  photo:
-    horizontal: "../images/team/fernando-mendes-h.jpg"
-    vertical: "../images/team/fernando-mendes-v.jpg"
+  photo: "../images/team/fernando-mendes.jpg"
   role: "Developer"
   bio: >-
     Tech lover, with a background in Distributed Systems and Cryptography and a
@@ -40,9 +34,7 @@
 - key: francisco-baila
   name: "Francisco Baila"
   initials: FB
-  photo:
-    horizontal: "../images/team/francisco-baila-h.jpg"
-    vertical: "../images/team/francisco-baila-v.jpg"
+  photo: "../images/team/francisco-baila.jpg"
   role: "Designer"
   bio: >-
     Cares about overcoming self limitations. Working to turn technology into a
@@ -54,9 +46,7 @@
 - key: gabriel-poca
   name: "Gabriel Poça"
   initials: GP
-  photo:
-    horizontal: "../images/team/gabriel-poca-h.jpg"
-    vertical: "../images/team/gabriel-poca-v.jpg"
+  photo: "../images/team/gabriel-poca.jpg"
   role: "Developer"
   bio: >-
     There is no time for introductions, but if there was, you would instantly
@@ -69,9 +59,7 @@
   name: "Joana Gomes"
   initials: JG
   email: joana@subvisual.com
-  photo:
-    horizontal: "../images/team/joana-gomes-h.jpg"
-    vertical: "../images/team/joana-gomes-v.jpg"
+  photo: "../images/team/joana-gomes.jpg"
   role: "Designer"
   social:
     linkedin: "https://www.linkedin.com/in/joanamsgomes/"
@@ -80,9 +68,7 @@
 - key: joao-justo
   name: João Justo
   initials: JJ
-  photo:
-    horizontal: "../images/team/joao-justo-h.jpg"
-    vertical: "../images/team/joao-justo-v.jpg"
+  photo: "../images/team/joao-justo.jpg"
   bio: >-
     Always gets way too excited about a new idea. Downhill amateur and Android
     fanboy. Avoid talking to him about Game of Thrones unless you have serious
@@ -95,9 +81,7 @@
 - key: joao-ferreira
   name: "João Ferreira"
   initials: JF
-  photo:
-    horizontal: "../images/team/joao-ferreira-h.jpg"
-    vertical: "../images/team/joao-ferreira-v.jpg"
+  photo: "../images/team/joao-ferreira.jpg"
   role: "Designer"
   bio: >-
     Believes Design is not about mastering tools but about mastering people.
@@ -109,9 +93,7 @@
 - key: jose-pedro-cabrita
   name: José Pedro Cabrita
   initials: ZP
-  photo:
-    horizontal: ../images/team/jose-pedro-cabrita-h.jpg
-    vertical: ../images/team/jose-pedro-cabrita-v.jpg
+  photo: ../images/team/jose-pedro-cabrita.jpg
   role: Talent Manager
   social:
     linkedin: "https://www.linkedin.com/in/Josepedrocabrita"
@@ -119,9 +101,7 @@
 - key: laura-esteves
   name: "Laura Esteves"
   initials: LE
-  photo:
-    horizontal: "../images/team/laura-esteves-h.jpg"
-    vertical: "../images/team/laura-esteves-v.jpg"
+  photo: "../images/team/laura-esteves.jpg"
   role: COO
   bio: >-
     Obsessive about organization and productivity, she'll take control and
@@ -135,9 +115,7 @@
 - key: luis-zamith
   name: "Luis Ferreira"
   initials: LF
-  photo:
-    horizontal: "../images/team/luis-ferreira-h.jpg"
-    vertical: "../images/team/luis-ferreira-v.jpg"
+  photo: "../images/team/luis-ferreira.jpg"
   role: "Founder & Developer"
   bio: "Has worked on the web for a while now, mainly using Ruby and Ruby on
   Rails. Enjoys open source and giving back to the community, having taught
@@ -150,9 +128,7 @@
   name: "Miguel Palhas"
   initials: MP
   email: miguel@subvisual.com
-  photo:
-    horizontal: "../images/team/miguel-palhas-h.jpg"
-    vertical: "../images/team/miguel-palhas-v.jpg"
+  photo: "../images/team/miguel-palhas.jpg"
   role: "Developer & SysAdmin"
   bio: "All-round developer with a background in High Performance Computing
   and a passion for the Open Source world. Still dreams about becoming a real
@@ -165,9 +141,7 @@
   name: "Mirha Masala"
   initials: MM
   email: mirha@subvisual.com
-  photo:
-    horizontal: "../images/team/mirha-masala-h.jpg"
-    vertical: "../images/team/mirha-masala-v.jpg"
+  photo: "../images/team/mirha-masala.jpg"
   role: "Developer"
   bio: "Frontend developer who likes to dabble in the deep, dark back. Oddly interested in best coding practices and refactoring. She also writes."
   social:
@@ -178,9 +152,7 @@
 - key: nuno-reis
   name: Nuno Reis
   initials: NR
-  photo:
-    horizontal: "../images/team/nuno-reis-h.jpg"
-    vertical: "../images/team/nuno-reis-v.jpg"
+  photo: "../images/team/nuno-reis.jpg"
   role: Business Developer
   social:
     linkedin: https://www.linkedin.com/in/nunohvreis/
@@ -189,9 +161,7 @@
 - key: roberto-machado
   name: "Roberto Machado"
   initials: RM
-  photo:
-    horizontal: "../images/team/roberto-machado-h.jpg"
-    vertical: "../images/team/roberto-machado-v.jpg"
+  photo: "../images/team/roberto-machado.jpg"
   role: "Founder & CEO"
   bio: "Breathes technology and deeply believes, hence the creation of Subvisual,
   that it is the medium for a better future. Always has 5 minutes to listen to you."
@@ -202,9 +172,7 @@
 - key: ronaldo-sousa
   name: "Ronaldo Sousa"
   initials: RS
-  photo:
-    horizontal: "../images/team/ronaldo-sousa-h.jpg"
-    vertical: "../images/team/ronaldo-sousa-v.jpg"
+  photo: "../images/team/ronaldo-sousa.jpg"
   role: "Developer"
   bio: "Restless tech, design and music lover that likes to build software
   for people. Usually you can find him in front of a computer, behind a
