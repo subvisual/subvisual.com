@@ -29,11 +29,9 @@ function MainLayout({ children }) {
         </div>
       </MainHero>
       <main>{children}</main>
-      <div className={styles.podcasts}>
-        <PageWideWrapper padded>
-          <Podcasts />
-        </PageWideWrapper>
-      </div>
+      <PageWideWrapper padded alternative>
+        <Podcasts />
+      </PageWideWrapper>
       <Footer />
     </div>
   )

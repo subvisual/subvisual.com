@@ -42,31 +42,24 @@
   margin-bottom: 74px;
 }
 
-.card {
-  max-width: 432px;
-  min-height: 147px;
-  margin-right: 28px;
-
-  border: 1px solid var(--c-blue-1);
-  border-radius: 28px;
-  gap: 40px;
+.imageContainer {
+  display: flex;
+  width: 400px;
+  height: 432px;
+  margin-bottom: 28px;
 
   @media (min-width: 950px) {
-    min-height: 235px;
-    padding: 40px 33px;
-    gap: 28px;
+    max-width: 442px;
+    max-height: 432px;
   }
 }
 
 .image {
-  justify-self: flex-end;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  max-width: 442px;
-  padding: 36px 16px 26px;
+  border-radius: 28px;
+}
 
-  @include media(">=tablet") {
-    padding: 16px 16px 0 0;
-  }
+.title {
+  margin-right: 28px;
+
+  text-transform: uppercase;
 }

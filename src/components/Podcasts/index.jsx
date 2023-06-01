@@ -1,4 +1,3 @@
-import { GatsbyImage } from "gatsby-plugin-image"
 import React, { useEffect, useState } from "react"
 import Slider from "react-slick"
 import SectionTitle from "../SectionTitle"
@@ -66,8 +65,6 @@ export async function getPodcasts() {
   })
   const data = await res.json()
 
-  console.log(data.collection)
-
   const podcasts = data.collection.map((podcast) => ({
     id: podcast.id,
     title: podcast.title,
@@ -100,24 +97,22 @@ function Podcasts() {
           }
         )
         const data = await res.json()
-        console.log(data.collection)
 
+        console.log(data.collection)
         const episodes = data.collection.map((episode) => ({
           id: episode.id,
           title: episode.title,
           date: episode.published_at,
-          image: podcastImage[0],
+          image: episode.image_url,
         }))
 
         allEpisodes = [...allEpisodes, ...episodes]
 
-        setAllEpisodes(allEpisodes.sort((a, b) => a.date - b.date))
+        setAllEpisodes(allEpisodes)
       })
     }
     getEpisodes()
   }, [])
-
-  console.log(allEpisodes)
 
   return (
     <div className={styles.root}>
@@ -136,15 +131,23 @@ function Podcasts() {
           prevArrow: <PrevArrow />,
         }}
       >
-        {allEpisodes.map((episode) => (
-          <div>
-            <div className={styles.container}>
-              <div key={episode.id} className={styles.card}>
-                <div className={styles.podcastImage}>{episode.title}</div>
+        {allEpisodes.map(
+          (episode) =>
+            episode.image && (
+              <div>
+                <div className={styles.container}>
+                  <div className={styles.imageContainer}>
+                    <img
+                      src={episode.image}
+                      alt={episode.title}
+                      className={styles.image}
+                    />
+                  </div>
+                  <div className={styles.title}>{episode.title}</div>
+                </div>
               </div>
-            </div>
-          </div>
-        ))}
+            )
+        )}
       </Slider>
     </div>
   )
