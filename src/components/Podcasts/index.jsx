@@ -1,5 +1,5 @@
 import { GatsbyImage } from "gatsby-plugin-image"
-import React from "react"
+import React, { useEffect, useState } from "react"
 import Slider from "react-slick"
 import SectionTitle from "../SectionTitle"
 
@@ -58,7 +58,7 @@ function PrevArrow({ onClick }) {
   )
 }
 
-export async function getPodcastsFromSimplecast() {
+export async function getPodcasts() {
   const res = await fetch("https://api.simplecast.com/podcasts", {
     headers: {
       Authorization: `Bearer ${process.env.GATSBY_SIMPLECAST_TOKEN}`,
@@ -66,26 +66,58 @@ export async function getPodcastsFromSimplecast() {
   })
   const data = await res.json()
 
+  console.log(data.collection)
+
   const podcasts = data.collection.map((podcast) => ({
     id: podcast.id,
     title: podcast.title,
     image: podcast.image_url,
+    slug: podcast.slug,
   }))
 
   return podcasts
 }
 
 function Podcasts() {
-  const [podcasts, setPodcasts] = React.useState([])
+  const [allEpisodes, setAllEpisodes] = useState([])
 
-  React.useEffect(() => {
-    async function getPodcasts() {
-      const podcasts = await getPodcastsFromSimplecast()
-      setPodcasts(podcasts)
+  useEffect(() => {
+    async function getEpisodes() {
+      const podcasts = await getPodcasts()
+
+      const podcastIds = podcasts.map((podcast) => podcast.id)
+      const podcastImage = podcasts.map((podcast) => podcast.image)
+
+      let allEpisodes = []
+
+      podcastIds.forEach(async (podcastId) => {
+        const res = await fetch(
+          `https://api.simplecast.com/podcasts/${podcastId}/episodes`,
+          {
+            headers: {
+              Authorization: `Bearer ${process.env.GATSBY_SIMPLECAST_TOKEN}`,
+            },
+          }
+        )
+        const data = await res.json()
+        console.log(data.collection)
+
+        const episodes = data.collection.map((episode) => ({
+          id: episode.id,
+          title: episode.title,
+          date: episode.published_at,
+          image: podcastImage[0],
+        }))
+
+        allEpisodes = [...allEpisodes, ...episodes]
+
+        setAllEpisodes(allEpisodes.sort((a, b) => a.date - b.date))
+      })
     }
-
-    getPodcasts()
+    getEpisodes()
   }, [])
+
+  console.log(allEpisodes)
 
   return (
     <div className={styles.root}>
@@ -96,7 +128,7 @@ function Podcasts() {
         {...{
           infinite: true,
           arrows: true,
-          fade: true,
+          fade: false,
           speed: 500,
           slidesToShow: 3,
           slidesToScroll: 1,
@@ -104,10 +136,12 @@ function Podcasts() {
           prevArrow: <PrevArrow />,
         }}
       >
-        {podcasts.map((podcast) => (
-          <div className={styles.container}>
-            <div key={podcast.id} className={styles.card}>
-              <p>{podcast.title}</p>
+        {allEpisodes.map((episode) => (
+          <div>
+            <div className={styles.container}>
+              <div key={episode.id} className={styles.card}>
+                <div className={styles.podcastImage}>{episode.title}</div>
+              </div>
             </div>
           </div>
         ))}

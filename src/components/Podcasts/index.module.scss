@@ -43,11 +43,9 @@
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   max-width: 432px;
   min-height: 147px;
+  margin-right: 28px;
 
   border: 1px solid var(--c-blue-1);
   border-radius: 28px;
@@ -57,5 +55,18 @@
     min-height: 235px;
     padding: 40px 33px;
     gap: 28px;
+  }
+}
+
+.image {
+  justify-self: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  max-width: 442px;
+  padding: 36px 16px 26px;
+
+  @include media(">=tablet") {
+    padding: 16px 16px 0 0;
   }
 }
