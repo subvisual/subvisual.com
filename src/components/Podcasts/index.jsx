@@ -1,4 +1,4 @@
-import * as htmlparser2 from "htmlparser2"
+import { extractFromXml } from "@extractus/feed-extractor"
 import React, { useEffect, useState } from "react"
 import Slider from "react-slick"
 import SectionTitle from "../SectionTitle"
@@ -6,7 +6,6 @@ import SectionTitle from "../SectionTitle"
 import "slick-carousel/slick/slick-theme.css"
 import "slick-carousel/slick/slick.css"
 
-import { get } from "lodash"
 import * as styles from "./index.module.scss"
 
 function NextArrow({ onClick }) {
@@ -68,28 +67,14 @@ async function getFeed(id) {
   return xml
 }
 
-async function getPodcastImage(id) {
-  const response = await fetch(`https://feeds.simplecast.com/${id}`)
-  const xml = await response.text()
-
-  const image = xml
-    .match(/<image>([\s\S]*?)<\/image>/)[0]
-    .match(/<url>([\s\S]*?)<\/url>/)[0]
-    .replace(/<url>|<\/url>/g, "")
-
-  return image
-}
-
 async function getEpisodes(id) {
-  const feed = htmlparser2.parseFeed(await getFeed(id), { xmlMode: true })
-  const image = await getPodcastImage(id)
+  const feed = extractFromXml(await getFeed(id), { normalization: false })
 
-  const episodes = feed.items.map((episode) => ({
-    id: get(episode, "id", ""),
-    title: get(episode, "title", ""),
-    published: get(episode, "pubDate", ""),
-    link: get(episode, "link", ""),
-    image: image,
+  const episodes = feed.item.map((episode) => ({
+    title: episode.title,
+    link: episode.link,
+    published: episode.pubDate,
+    image: feed.image.url,
   }))
 
   return episodes
@@ -128,7 +113,7 @@ function Podcasts() {
           .map(
             (episode) =>
               episode.published && (
-                <div key={episode.id}>
+                <div key={episode.title}>
                   <a href={episode.link} target="_blank">
                     <div className={styles.container}>
                       <div className={styles.imageContainer}>

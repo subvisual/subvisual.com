@@ -16,6 +16,7 @@
   "dependencies": {
     "-": "^0.0.1",
     "@babel/core": "^7.15.8",
+    "@extractus/feed-extractor": "^6.2.2",
     "@subvisual/utils": "0.1.0",
     "classnames": "^2.3.1",
     "core-js": "^3.18.3",
@@ -44,7 +45,6 @@
     "gatsby-transformer-remark": "^6.6.0",
     "gatsby-transformer-sharp": "^5.6.0",
     "gatsby-transformer-yaml": "^5.6.0",
-    "htmlparser2": "^9.0.0",
     "include-media": "^2.0.0",
     "intersection-observer": "0.12.2",
     "lodash": "^4.17.21",
