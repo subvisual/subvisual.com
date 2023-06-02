@@ -1,3 +1,4 @@
+import * as htmlparser2 from "htmlparser2"
 import React, { useEffect, useState } from "react"
 import Slider from "react-slick"
 import SectionTitle from "../SectionTitle"
@@ -5,6 +6,7 @@ import SectionTitle from "../SectionTitle"
 import "slick-carousel/slick/slick-theme.css"
 import "slick-carousel/slick/slick.css"
 
+import { get } from "lodash"
 import * as styles from "./index.module.scss"
 
 function NextArrow({ onClick }) {
@@ -57,61 +59,51 @@ function PrevArrow({ onClick }) {
   )
 }
 
-export async function getPodcasts() {
-  const res = await fetch("https://api.simplecast.com/podcasts", {
-    headers: {
-      Authorization: `Bearer ${process.env.GATSBY_SIMPLECAST_TOKEN}`,
-    },
-  })
-  const data = await res.json()
+const podcastRSSIds = ["_7fv6zD4", "26SKyPM6", "M7Iqz4PG", "jDClsfPu"]
 
-  const podcasts = data.collection.map((podcast) => ({
-    id: podcast.id,
-    title: podcast.title,
-    image: podcast.image_url,
-    slug: podcast.slug,
+async function getFeed(id) {
+  const response = await fetch(`https://feeds.simplecast.com/${id}`)
+  const xml = await response.text()
+
+  return xml
+}
+
+async function getPodcastImage(id) {
+  const response = await fetch(`https://feeds.simplecast.com/${id}`)
+  const xml = await response.text()
+
+  const image = xml
+    .match(/<image>([\s\S]*?)<\/image>/)[0]
+    .match(/<url>([\s\S]*?)<\/url>/)[0]
+    .replace(/<url>|<\/url>/g, "")
+
+  return image
+}
+
+async function getEpisodes(id) {
+  const feed = htmlparser2.parseFeed(await getFeed(id), { xmlMode: true })
+  const image = await getPodcastImage(id)
+
+  const episodes = feed.items.map((episode) => ({
+    id: get(episode, "id", ""),
+    title: get(episode, "title", ""),
+    published: get(episode, "pubDate", ""),
+    link: get(episode, "link", ""),
+    image: image,
   }))
 
-  return podcasts
+  return episodes
 }
 
 function Podcasts() {
   const [allEpisodes, setAllEpisodes] = useState([])
-
   useEffect(() => {
-    async function getEpisodes() {
-      const podcasts = await getPodcasts()
-
-      const podcastIds = podcasts.map((podcast) => podcast.id)
-      const podcastImage = podcasts.map((podcast) => podcast.image)
-
-      let allEpisodes = []
-
-      podcastIds.forEach(async (podcastId) => {
-        const res = await fetch(
-          `https://api.simplecast.com/podcasts/${podcastId}/episodes`,
-          {
-            headers: {
-              Authorization: `Bearer ${process.env.GATSBY_SIMPLECAST_TOKEN}`,
-            },
-          }
-        )
-        const data = await res.json()
-
-        console.log(data.collection)
-        const episodes = data.collection.map((episode) => ({
-          id: episode.id,
-          title: episode.title,
-          date: episode.published_at,
-          image: episode.image_url,
-        }))
-
-        allEpisodes = [...allEpisodes, ...episodes]
-
-        setAllEpisodes(allEpisodes)
-      })
+    async function fetchEpisodes() {
+      const episodes = await Promise.all(podcastRSSIds.map(getEpisodes))
+      setAllEpisodes(episodes.flat())
     }
-    getEpisodes()
+
+    fetchEpisodes()
   }, [])
 
   return (
@@ -131,23 +123,27 @@ function Podcasts() {
           prevArrow: <PrevArrow />,
         }}
       >
-        {allEpisodes.map(
-          (episode) =>
-            episode.image && (
-              <div>
-                <div className={styles.container}>
-                  <div className={styles.imageContainer}>
-                    <img
-                      src={episode.image}
-                      alt={episode.title}
-                      className={styles.image}
-                    />
-                  </div>
-                  <div className={styles.title}>{episode.title}</div>
+        {allEpisodes
+          .sort((a, b) => b.published - a.published)
+          .map(
+            (episode) =>
+              episode.published && (
+                <div key={episode.id}>
+                  <a href={episode.link} target="_blank">
+                    <div className={styles.container}>
+                      <div className={styles.imageContainer}>
+                        <img
+                          src={episode.image}
+                          alt={episode.title}
+                          className={styles.image}
+                        />
+                      </div>
+                      <div className={styles.title}>{episode.title}</div>
+                    </div>
+                  </a>
                 </div>
-              </div>
-            )
-        )}
+              )
+          )}
       </Slider>
     </div>
   )
