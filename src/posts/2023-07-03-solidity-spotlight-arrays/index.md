@@ -89,8 +89,35 @@ contract MagicData {
 ```
 
 See how it resembles the first example I gave that was written in Ruby? Quite
-ergonomic as well, but if you try this with a memory Array you'll get an error,
-a memory Array needs to be interacted with like if it was a fixed size Array.
+ergonomic as well, but if you try this with a memory Array you'll get an error
+at compile time.
+
+```solidity
+function populate() public {
+    uint8[] memory array = [1, 2];
+    array.push(3);
+}
+
+/*
+Compiler run failed:
+Error (9574): Type uint8[2] memory is not implicitly convertible to expected type uint8[] memory.
+    |
+    |         uint8[] memory array = [1, 2];
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error (4994): Member "push" is not available in uint8[] memory outside of storage.
+    |
+    |         array.push(3);
+    |         ^^^^^^^^^^
+*/
+```
+
+As you can see it complains that the type cannot be `uint8[]`, but needs to be
+`uint8[2]`, which is the first indicator that it cannot be initialized like this
+in memory and still be dynamic. The other error is even clearer, it tells us
+that we cannot use `push` on Arrays that are not in storage.
+
+A memory Array needs to be interacted with like if it was a fixed size Array.
 
 ```solidity
 uint8[] memory array = new uint8[](3);
