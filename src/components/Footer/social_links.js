@@ -5,8 +5,8 @@ import SocialLink from "~/src/components/SocialLink"
 import * as styles from "./social_links.module.css"
 
 const socialDetails = {
-  medium: "https://medium.com/subvisual",
-  behance: "https://www.behance.net/subvisual",
+  // medium: "https://medium.com/subvisual",
+  // behance: "https://www.behance.net/subvisual",
   github: "https://github.com/subvisual",
   dribbble: "https://dribbble.com/subvisual",
   linkedin:
