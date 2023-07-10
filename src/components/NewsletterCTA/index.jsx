@@ -11,9 +11,11 @@ function NewsletterCTA() {
           Dig <span>your</span>
           <br /> curiosity with <span>us</span>
         </p>
-        <Button href="mailto:contact@subvisual.com?subject=Hi%20Subvisual!%20I%20want%20to%20keep%20in%20touch">
-          Keep in touch
-        </Button>
+        <div className={styles.button}>
+          <Button href="mailto:contact@subvisual.com?subject=Hi%20Subvisual!%20I%20want%20to%20keep%20in%20touch">
+            Keep in touch
+          </Button>
+        </div>
       </div>
     </div>
   )

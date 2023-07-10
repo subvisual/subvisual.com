@@ -3,7 +3,7 @@
 }
 
 .content {
-  max-width: 1148px;
+  max-width: var(--content-max-width);
   margin: 0 auto;
 }
 
