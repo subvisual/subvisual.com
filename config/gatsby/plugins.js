@@ -72,7 +72,14 @@ module.exports = [
     },
   },
   "gatsby-transformer-sharp",
-  "gatsby-plugin-sharp",
+  {
+    resolve: "gatsby-plugin-sharp",
+    options: {
+      defaults: {
+        quality: 90,
+      },
+    },
+  },
   ...manifestConfig,
   ...rssFeedConfig,
   {
