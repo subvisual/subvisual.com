@@ -2,6 +2,7 @@
   position: fixed;
 
   top: 0;
+  left: 0;
   z-index: 2;
 
   display: flex;
@@ -9,16 +10,14 @@
   justify-content: space-between;
   width: 100vw;
 
-  padding-top: 30px;
-  padding-right: 28px;
-  padding-left: 14px;
+  padding: 20px 20px;
 
   color: var(--c-white-1);
 
   transition: color 1s;
 
   @media (min-width: 768px) {
-    padding-right: 56px;
+    padding: 30px 56px;
   }
 }
 

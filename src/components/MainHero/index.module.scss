@@ -15,7 +15,9 @@
 }
 
 .content {
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
   height: 100%;
 }
 
