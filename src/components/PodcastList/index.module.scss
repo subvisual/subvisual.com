@@ -1,0 +1,38 @@
+.root {
+  :global(.slick-list) {
+    overflow: visible;
+  }
+}
+
+.sectionTitle {
+  padding-top: 84px;
+  padding-bottom: 28px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 84px;
+  margin-right: 28px;
+}
+
+.image {
+  max-width: 442px;
+  max-height: 432px;
+  object-fit: cover;
+
+  margin-bottom: 24px;
+
+  border-radius: 28px;
+}
+
+.title {
+  max-width: 400px;
+  margin: 0;
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+
+  text-transform: uppercase;
+  white-space: nowrap;
+}
