@@ -29,21 +29,23 @@ function PodcastList({ podcasts }) {
         }}
       >
         {podcasts.map((podcast) => (
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href={podcast.url}
-            className={styles.item}
-            key={podcast.url}
-          >
-            <img
-              className={styles.image}
-              alt=""
-              src={podcast.image}
-              aria-hidden="true"
-            />
-            <p className={styles.title}>{podcast.title}</p>
-          </a>
+          <div>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href={podcast.url}
+              className={styles.item}
+              key={podcast.url}
+            >
+              <img
+                className={styles.image}
+                alt=""
+                src={podcast.image}
+                aria-hidden="true"
+              />
+              <p className={styles.title}>{podcast.title}</p>
+            </a>
+          </div>
         ))}
       </Slider>
     </div>
