@@ -117,9 +117,9 @@
   initials: LF
   photo: "../images/team/luis-ferreira.jpg"
   role: "Founder & Developer"
-  bio: "Has worked on the web for a while now, mainly using Ruby and Ruby on
-  Rails. Enjoys open source and giving back to the community, having taught
-  Rails to hundreds of people."
+  bio: "Has worked on the web for over 10 years, mainly using Ruby on
+  Rails, Elixir and more recently Solidity. Enjoys open source and giving back
+  to the community, having taught web development to hundreds of people."
   social:
     github: "https://github.com/zamith"
     twitter: "https://twitter.com/zamith"
