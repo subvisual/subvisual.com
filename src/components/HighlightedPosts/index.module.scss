@@ -14,32 +14,6 @@
   margin-bottom: 89px;
 }
 
-.nextArrow,
-.prevArrow {
-  position: absolute;
-  bottom: 0;
-  z-index: 1;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 56px;
-  height: 56px;
-
-  background: transparent;
-  border: 1px solid var(--c-blue-1);
-  border-radius: 100%;
-  cursor: pointer;
-}
-
-.nextArrow {
-  right: 0;
-}
-
-.prevArrow {
-  right: 72px;
-}
-
 .post {
   display: flex;
   flex-direction: column-reverse;

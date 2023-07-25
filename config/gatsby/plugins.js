@@ -80,6 +80,27 @@ module.exports = [
       },
     },
   },
+  {
+    resolve: `gatsby-source-rss-feed`,
+    options: {
+      url: `https://feeds.simplecast.com/_7fv6zD4`,
+      name: `CanIHaveItInBlue`,
+    },
+  },
+  {
+    resolve: `gatsby-source-rss-feed`,
+    options: {
+      url: `https://feeds.simplecast.com/26SKyPM6`,
+      name: `TaGravar`,
+    },
+  },
+  {
+    resolve: `gatsby-source-rss-feed`,
+    options: {
+      url: `https://feeds.simplecast.com/M7Iqz4PG`,
+      name: `ProductRocks`,
+    },
+  },
   ...manifestConfig,
   ...rssFeedConfig,
   {

@@ -5,6 +5,7 @@ import { includes, sortBy } from "lodash"
 import Category from "../Category"
 
 import * as styles from "./index.module.scss"
+import SectionTitle from "../SectionTitle"
 
 function Filter({ categories, selected, onChange }) {
   function toggleSelectedCategory({ key }) {
@@ -17,7 +18,9 @@ function Filter({ categories, selected, onChange }) {
 
   return (
     <div className={styles.root}>
-      <p className={styles.title}>Filter by</p>
+      <div className={styles.title}>
+        <SectionTitle>Filter by</SectionTitle>
+      </div>
       <ul className={styles.list}>
         {sortBy(categories, "label").map((category, index) => (
           <li>

@@ -1,11 +1,12 @@
 import { graphql, useStaticQuery } from "gatsby"
-import { intersection, isEmpty, map, slice, uniqBy } from "lodash"
+import { intersection, isEmpty, map, slice, uniqBy, sortBy } from "lodash"
 import React, { useState } from "react"
 
-import Button from "~/src/components/Button"
 import HighlightedPosts from "~/src/components/HighlightedPosts"
+import Button from "~/src/components/Button"
 import MainLayout from "~/src/components/MainLayout"
 import PageWideWrapper from "~/src/components/PageWideWrapper"
+import PodcastList from "../components/PodcastList"
 import PostsList from "~/src/components/PostList"
 import SEO from "~/src/components/SEO"
 import Filter from "../components/Filter"
@@ -18,6 +19,48 @@ import * as styles from "./blog.module.scss"
 
 const query = graphql`
   {
+    feedCanIHaveItInBlueMeta {
+      image {
+        url
+      }
+    }
+
+    feedProductRocksMeta {
+      image {
+        url
+      }
+    }
+
+    feedTaGravarMeta {
+      image {
+        url
+      }
+    }
+
+    allFeedTaGravar(limit: 3) {
+      nodes {
+        title
+        link
+        pubDate
+      }
+    }
+
+    allFeedProductRocks(limit: 3) {
+      nodes {
+        title
+        link
+        pubDate
+      }
+    }
+
+    allFeedCanIHaveItInBlue(limit: 3) {
+      nodes {
+        title
+        link
+        pubDate
+      }
+    }
+
     allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/src.posts/" } }
       sort: [{ frontmatter: { date: DESC } }, { frontmatter: { title: DESC } }]
@@ -77,7 +120,16 @@ function getAllCategories(posts) {
   return uniqBy(allCategories, "key")
 }
 
-function Posts({ posts }) {
+function transformPodcastNodes(nodes, meta) {
+  return nodes.map(({ link, title, pubDate }) => ({
+    date: new Date(pubDate),
+    image: meta.image.url,
+    title,
+    url: link,
+  }))
+}
+
+function Posts({ posts, podcasts }) {
   const { filter, loadedPosts } = useURLParams()
 
   const [postsShown, setPostsShown] = useState(loadedPosts || 6)
@@ -122,6 +174,7 @@ function Posts({ posts }) {
               </Button>
             </div>
           )}
+          <PodcastList podcasts={podcasts} />
         </PageWideWrapper>
       </MainLayout>
     </>
@@ -131,6 +184,12 @@ function Posts({ posts }) {
 export default function Page() {
   const {
     allMarkdownRemark: { nodes },
+    allFeedCanIHaveItInBlue,
+    allFeedTaGravar,
+    feedTaGravarMeta,
+    feedCanIHaveItInBlueMeta,
+    feedProductRocksMeta,
+    allFeedProductRocks,
   } = useStaticQuery(query)
   const posts = nodes.map((node) => {
     const { frontmatter, fields } = node
@@ -139,5 +198,17 @@ export default function Page() {
     return { ...metadata, date: new Date(date), ...fields }
   })
 
-  return <Posts posts={posts} />
+  const podcasts = sortBy(
+    [
+      ...transformPodcastNodes(
+        allFeedCanIHaveItInBlue.nodes,
+        feedCanIHaveItInBlueMeta
+      ),
+      ...transformPodcastNodes(allFeedTaGravar.nodes, feedTaGravarMeta),
+      ...transformPodcastNodes(allFeedProductRocks.nodes, feedProductRocksMeta),
+    ],
+    "date"
+  ).reverse()
+
+  return <Posts posts={posts} podcasts={podcasts} />
 }
