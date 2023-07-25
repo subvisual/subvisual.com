@@ -180,3 +180,12 @@
   social:
     github: "https://github.com/ronaldofs"
     twitter: "https://twitter.com/ronaldofsousa"
+
+- key: pedro-oliveira
+  name: Pedro Oliveira
+  initials: PO
+  photo: ../images/team/pedro-oliveira.jpg
+  role: Developer
+  social:
+    github: "https://github.com/jopedroliveira"
+    twitter: "https://twitter.com/jopedroliveira_"

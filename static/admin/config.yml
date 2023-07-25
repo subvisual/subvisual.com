@@ -59,7 +59,8 @@ collections:
           'subvisual',
           'pedro-costa',
           'luis-zamith',
-          'summer-campers'
+          'summer-campers',
+          'pedro-oliveira'
         ]
       - { label: 'Publish Date', name: 'date', widget: 'date', format: 'YYYY-MM-DD' }
       - { label: 'Cover', name: 'cover', widget: 'image', allow_multiple: false, required: false }
