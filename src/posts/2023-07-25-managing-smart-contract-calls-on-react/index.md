@@ -16,7 +16,7 @@ When it comes to integrating smart contract calls, the codebase of the component
 
 Consider an ERC20 contract as an example, and the `allowance` function as example:
 
-```
+```solidity
 contract MyToken is ERC20 {
     (...)
 
@@ -30,7 +30,7 @@ contract MyToken is ERC20 {
 
 A simple call to this contract, using [wagmi generated hooks](https://wagmi.sh/cli/getting-started#run-code-generation) for instance, would look something like:
 
-```
+```javascript
 const [contractAllowance, setContractAllowance] = useState(0)
 const { address: account } = useAccount();
 const myTokenContractAddr = "0x..."
@@ -55,7 +55,7 @@ Fortunately, React provides the flexibility to create custom hooks by using the 
 
 Consider a basic component as an example:
 
-```
+```javascript
 const MyComponent = () => {
   const {address, allowance, approveAllowance } = useMyTokenHook();
 
@@ -71,7 +71,7 @@ const MyComponent = () => {
 
 By leveraging those hooks, creating specific hooks based on the contract or function call becomes straightforward:
 
-```
+```javascript
 const useMyTokenHook = () => {
   const { address: account } = useAccount();
   const myTokenContractAddr = "0x..."
@@ -97,7 +97,7 @@ Here is a quick and conceptual example on how testing could work with [React Tes
 
 In a component perspective, the test would mock the hook call and yield a known result and then assert the component is properly getting and rendering that expected result.
 
-```
+```javascript
 describe("test component with mock results", () => {
   let mockedData;
 
