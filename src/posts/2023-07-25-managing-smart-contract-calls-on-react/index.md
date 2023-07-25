@@ -116,7 +116,7 @@ describe("test component with mock results", () => {
 
 The hook, in the other hand, is similar, but the mocked call this time is `useMyTokenAllowance` (and other contract calls), in order to assert that it's handling the response properly and setting the internal states accordingly:
 
-```
+```javascript
 describe("test hook with mock call", () => {
   let mockedData;
 
