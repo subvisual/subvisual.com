@@ -1,7 +1,7 @@
 ---
 highlight: false
-path: managing-smart-contract-calls-on-react
-title: Managing smart contract calls on react
+path: keeping-your-smart-contract-calls-under-control-with-react-hooks
+title: Keeping your smart contract calls under control with react hooks
 categories:
   - engineering
 author: pedro-oliveira
