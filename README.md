@@ -32,6 +32,13 @@ _Have another more specific idea? You may want to check out our vibrant collecti
     gatsby develop
     ```
 
+    To run the CMS locally, you will need to instanciate a proxy server
+    ```
+    npx netlify-cms-proxy-server
+    ```
+
+    and on your config file `static/admin/config.yml` add `local_backend: true`
+
 1.  **Open the source code and start editing!**
 
     Your site is now running at `http://localhost:8000`!
