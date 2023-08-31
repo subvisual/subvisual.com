@@ -39,29 +39,28 @@ collections:
       - label: 'Author'
         name: 'author'
         widget: 'select'
-        options: [
-          'alex-mendes',
-          'alvaro-bezerra',
-          'fernando-mendes',
-          'francisco-baila',
-          'gabriel-poca',
-          'joana-gomes',
-          'joao-justo',
-          'joao-ferreira',
-          'jose-pedro-cabrita',
-          'laura-esteves',
-          'laura-esteves',
-          'miguel-palhas',
-          'mirha-masala',
-          'nuno-reis',
-          'roberto-machado',
-          'ronaldo-sousa',
-          'subvisual',
-          'pedro-costa',
-          'luis-zamith',
-          'summer-campers',
-          'pedro-oliveira'
-        ]
+        options:
+          - 'alex-mendes'
+          - 'alvaro-bezerra'
+          - 'davide-silva'
+          - 'fernando-mendes'
+          - 'francisco-baila'
+          - 'gabriel-poca'
+          - 'joana-gomes'
+          - 'joao-ferreira'
+          - 'joao-justo'
+          - 'jose-pedro-cabrita'
+          - 'laura-esteves'
+          - 'luis-zamith'
+          - 'miguel-palhas'
+          - 'mirha-masala'
+          - 'nuno-reis'
+          - 'pedro-costa'
+          - 'pedro-oliveira'
+          - 'roberto-machado'
+          - 'ronaldo-sousa'
+          - 'subvisual'
+          - 'summer-campers'
       - { label: 'Publish Date', name: 'date', widget: 'date', format: 'YYYY-MM-DD' }
       - { label: 'Cover', name: 'cover', widget: 'image', allow_multiple: false, required: false }
       - { label: 'Social Media Cover', name: 'seoImage', widget: 'image', required: false, allow_multiple: false }
