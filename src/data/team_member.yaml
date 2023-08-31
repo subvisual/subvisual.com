@@ -16,13 +16,27 @@
     linkedin: "https://www.linkedin.com/in/alvarobezerra"
     twitter: "https://twitter.com/alvarorrbezerra"
 
+- key: davide-silva
+  name: "Davide Silva"
+  initials: DS
+  email: davide@subvisual.co
+  photo: "../images/team/davide-silva.jpg"
+  role: "Developer"
+  bio:
+    Lifelong computer nerd and dedicated metal enthusiast. Currently exploring
+    the ever-evolving Web3 space. Finds immense joy in learning and the
+    exciting world of Formula 1
+  social:
+    github: "https://github.com/davidesilva"
+    twitter: "https://twitter.com/0xdavidesilva"
+
 - key: fernando-mendes
   name: "Fernando Mendes"
   initials: FM
   email: mendes@subvisual.com
   photo: "../images/team/fernando-mendes.jpg"
   role: "Developer"
-  bio: >-
+  bio:
     Tech lover, with a background in Distributed Systems and Cryptography and a
     knack for "accidentally" breaking things. Always trying out new things,
     like '); DROP TABLE staff; --
@@ -36,7 +50,7 @@
   initials: FB
   photo: "../images/team/francisco-baila.jpg"
   role: "Designer"
-  bio: >-
+  bio:
     Cares about overcoming self limitations. Working to turn technology into a
     friend.
   social:
@@ -48,7 +62,7 @@
   initials: GP
   photo: "../images/team/gabriel-poca.jpg"
   role: "Developer"
-  bio: >-
+  bio:
     There is no time for introductions, but if there was, you would instantly
     understand that this guy is a developer and he loves every aspect of it.
   social:
@@ -69,7 +83,7 @@
   name: João Justo
   initials: JJ
   photo: "../images/team/joao-justo.jpg"
-  bio: >-
+  bio:
     Always gets way too excited about a new idea. Downhill amateur and Android
     fanboy. Avoid talking to him about Game of Thrones unless you have serious
     time to spend.
@@ -83,7 +97,7 @@
   initials: JF
   photo: "../images/team/joao-ferreira.jpg"
   role: "Designer"
-  bio: >-
+  bio:
     Believes Design is not about mastering tools but about mastering people.
     Passionate about music, movies and whisky.
   social:
@@ -103,7 +117,7 @@
   initials: LE
   photo: "../images/team/laura-esteves.jpg"
   role: COO
-  bio: >-
+  bio:
     Obsessive about organization and productivity, she'll take control and
     make sure things actually happen.
     The only way to stop her is with a good book and a fireplace.
@@ -117,9 +131,10 @@
   initials: LF
   photo: "../images/team/luis-ferreira.jpg"
   role: "Founder & Developer"
-  bio: "Has worked on the web for over 10 years, mainly using Ruby on
-  Rails, Elixir and more recently Solidity. Enjoys open source and giving back
-  to the community, having taught web development to hundreds of people."
+  bio:
+    Has worked on the web for over 10 years, mainly using Ruby on
+    Rails, Elixir and more recently Solidity. Enjoys open source and giving back
+    to the community, having taught web development to hundreds of people.
   social:
     github: "https://github.com/zamith"
     twitter: "https://twitter.com/zamith"
@@ -130,9 +145,10 @@
   email: miguel@subvisual.com
   photo: "../images/team/miguel-palhas.jpg"
   role: "Developer & SysAdmin"
-  bio: "All-round developer with a background in High Performance Computing
-  and a passion for the Open Source world. Still dreams about becoming a real
-  game developer someday."
+  bio:
+    All-round developer with a background in High Performance Computing
+    and a passion for the Open Source world. Still dreams about becoming a real
+    game developer someday.
   social:
     github: "https://github.com/naps62"
     twitter: "https://twitter.com/naps62"
@@ -143,7 +159,9 @@
   email: mirha@subvisual.com
   photo: "../images/team/mirha-masala.jpg"
   role: "Developer"
-  bio: "Frontend developer who likes to dabble in the deep, dark back. Oddly interested in best coding practices and refactoring. She also writes."
+  bio:
+    Frontend developer who likes to dabble in the deep, dark back.
+    Oddly interested in best coding practices and refactoring. She also writes.
   social:
     github: "https://github.com/mirhamasala"
     linkedin: https://www.linkedin.com/in/mirhamasala/
@@ -163,8 +181,9 @@
   initials: RM
   photo: "../images/team/roberto-machado.jpg"
   role: "Founder & CEO"
-  bio: "Breathes technology and deeply believes, hence the creation of Subvisual,
-  that it is the medium for a better future. Always has 5 minutes to listen to you."
+  bio:
+    Breathes technology and deeply believes, hence the creation of Subvisual,
+    that it is the medium for a better future. Always has 5 minutes to listen to you.
   social:
     linkedin: "https://www.linkedin.com/in/robertomachado"
     twitter: "https://twitter.com/rmdgb"
@@ -174,9 +193,10 @@
   initials: RS
   photo: "../images/team/ronaldo-sousa.jpg"
   role: "Developer"
-  bio: "Restless tech, design and music lover that likes to build software
-  for people. Usually you can find him in front of a computer, behind a
-  guitar or lying on a couch. Or you can’t."
+  bio:
+    Restless tech, design and music lover that likes to build software
+    for people. Usually you can find him in front of a computer, behind a
+    guitar or lying on a couch. Or you can’t.
   social:
     github: "https://github.com/ronaldofs"
     twitter: "https://twitter.com/ronaldofsousa"
@@ -186,7 +206,9 @@
   initials: PO
   photo: ../images/team/pedro-oliveira.jpg
   role: Developer
-  bio: "Former biomedical engineer, currently a developer with a passion for the web, automation, and smart homes. Always pairing life with wine."
+  bio:
+    Former biomedical engineer, currently a developer with a passion for
+    the web, automation, and smart homes. Always pairing life with wine.
   social:
     github: "https://github.com/jopedroliveira"
     twitter: "https://twitter.com/jopedroliveira_"
