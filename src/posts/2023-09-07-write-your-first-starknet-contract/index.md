@@ -64,7 +64,7 @@ Let's `cd` into the new folder and get ready to write our first Starknet contrac
 
 ### Starknet dependency
 
-Since Cairo is a general-purpose language, we need to [make a few changes](https://docs.swmansion.com/scarb/docs/starknet/contract-target#usage) to our project to access Starknet functionality.
+Since Cairo is a general-purpose language, we need to [make a few changes](https://docs.swmansion.com/scarb/docs/extensions/starknet/contract-target.html) to our project to access Starknet functionality.
 
 Open the `Scarb.toml` file and add the following line:
 ```
