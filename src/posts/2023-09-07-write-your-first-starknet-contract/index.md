@@ -1,11 +1,11 @@
 ---
-highlight: false
+highlight: true
 path: write-your-first-starknet-contract
 title: Write your first Starknet contract
 categories:
   - engineering
 author: davide-silva
-date: 2023-09-08
+date: 2023-09-11
 intro: Are you interested in Cairo and Starknet but need help figuring out where
   to start? Have you been hearing about the new Rust-like Cairo syntax but have
   yet to have the chance to look into it?
