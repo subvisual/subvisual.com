@@ -92,7 +92,6 @@ With this in place, we can create a file `my_first_contract.cairo` in the `src/`
 
 ### Defining a Trait
 
-A Trait is a way to define and enforce what specific functionality we need to implement. 
 
 A Trait is a way to define and enforce what specific functionality we need to implement. It specifies the signature of the functions we want to implement, and it's essential for developing in Cairo. There are many ways to use Traits, but this Trait will serve as a way to expose the public interface of our smart contract, similar to how an interface works in Solidity.
 
