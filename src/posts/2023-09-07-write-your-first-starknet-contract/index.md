@@ -6,6 +6,7 @@ categories:
   - engineering
 author: davide-silva
 date: 2023-09-11
+cover: blog__how_to_write_your_first_starknet_contract.jpg
 intro: Are you interested in Cairo and Starknet but need help figuring out where
   to start? Have you been hearing about the new Rust-like Cairo syntax but have
   yet to have the chance to look into it?
