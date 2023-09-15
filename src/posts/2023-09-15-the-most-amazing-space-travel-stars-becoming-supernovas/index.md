@@ -16,7 +16,7 @@ intro: >-
 ---
 Summer Camp 2023 has come to an end. Before we say goodbye, we want to share a personal message from the Summer Camp 2023 team with everyone!
 
-![Masha Mentee at 2023 Summer Camp ](subvisual-masha-summer-camp-2023.jpg "Masha Mentee at 2023 Summer Camp ")
+![Masha Mentee at 2023 Summer Camp ](article_summer_camp_img_01.png "Masha Mentee at 2023 Summer Camp ")
 
 Masha, do you want to go first? 
 
