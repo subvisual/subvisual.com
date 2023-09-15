@@ -6,6 +6,7 @@ categories:
   - engineering
 author: pedro-oliveira
 date: 2023-07-25
+cover: blog__keeping_your_smart_contract_calls_under_control_with_react_hooks.jpg
 intro: Using custom react hooks to perform smart contract calls
 ---
 When developing a React component, it is common for us developers to include both the logic and markup in the same file. This approach serves the purpose of bootstrapping and containing the scope. It is particularly useful when our goal is to rapidly prototype and test, as it allows us to conveniently write the code without scattering the scope across multiple files.
