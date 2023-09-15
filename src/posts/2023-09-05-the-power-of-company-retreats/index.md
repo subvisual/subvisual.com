@@ -6,6 +6,7 @@ categories:
   - operations
 author: laura-esteves
 date: 2023-09-05
+cover: blog_-_the_power_of_company_retreats.jpg
 intro: Boosting Team Potential and Fostering Collaboration
 ---
 Company retreats have become a popular strategy for organizations seeking to enhance teamwork, alignment with the company strategy, boost team morale, and drive productivity. 
