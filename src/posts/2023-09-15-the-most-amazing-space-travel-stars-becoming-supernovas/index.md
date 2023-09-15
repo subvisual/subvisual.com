@@ -26,7 +26,7 @@ It was cool to actually work in a team, communicate every day, and resolve issue
 
 And now, I pass the floor to Tiago.
 
-![Tiago Mentee at 2023 Summer Camp ](subvisual-tiago-summer-camp-2023.jpg "Tiago Mentee at 2023 Summer Camp ")
+![Tiago Mentee at 2023 Summer Camp ](article_summer_camp_img_2.png "Tiago Mentee at 2023 Summer Camp ")
 
 I joined this experience with the goal of improving and learning a lot about programming. I'm glad to say I achieved my objective. In these 10 weeks, I feel like I absorbed a tremendous amount of knowledge – probably the maximum possible within this time frame. The mentors played a significant role, helping with their vast experience to guide us, often propelling us forward. Their input was invaluable compared to trying to navigate everything on our own.
 
@@ -38,7 +38,7 @@ Overall, this experience has been incredible. It's been a rewarding and enjoyabl
 
 Natália, do you want to go next?
 
-![Natalia Mentee at 2023 Summer Camp ](subvisual-natalia-summer-camp-2023.jpg "Natalia Mentee at 2023 Summer Camp")
+![Natalia Mentee at 2023 Summer Camp ](article_summer_camp_img_3.png "Natalia Mentee at 2023 Summer Camp")
 
 Of course.
 
@@ -52,7 +52,7 @@ I’m leaving the summer camp with a bittersweet feeling. Even though I’m feel
 
 And last but not least, Jess, the floor is yours.
 
-![Jessica Mentee at 2023 Summer Camp](subvisual-jessica-summer-camp-2023.jpg "Jessica Mentee at 2023 Summer Camp")
+![Jessica Mentee at 2023 Summer Camp](article_summer_camp_img_4.png "Jessica Mentee at 2023 Summer Camp")
 
 There are so many things about this experience that I’d like to say that I don’t even know where to begin. 
 
