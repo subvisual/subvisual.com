@@ -1,16 +1,18 @@
 ---
-path: /80-ruby-bits-br-delegation/
+highlight: false
+path: 80-ruby-bits-br-delegation
 title: "Ruby Bits:  Delegation"
+categories:
+  - engineering
 author: luis-zamith
 date: 2016-04-26
 cover: cover.jpg
-tags:
-  - development
-intro:
-  If you've been writing Object Oriented code for a while, you're probably
+intro: If you've been writing Object Oriented code for a while, you're probably
   familiar with expressions such as DRY, the Law of Demeter or Composition over
   Inheritance. One thing they all have in common is that the can be followed by
   using delegation.
+tags:
+  - development
 ---
 
 If you've been writing Object Oriented code for a while (or any code really),
