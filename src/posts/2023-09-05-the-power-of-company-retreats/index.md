@@ -3,7 +3,7 @@ highlight: true
 path: The-Power-of-Company-Retreats
 title: The Power of Company Retreats
 categories:
-  - operations
+  - company-building
 author: laura-esteves
 date: 2023-09-05
 cover: blog_-_the_power_of_company_retreats.jpg
