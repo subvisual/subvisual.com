@@ -48,7 +48,7 @@ The best part about using gasless transactions is that you can be very specific 
 - You can have users pay for their own transactions off-chain. For instance, users may have to buy a subscription through Stripe before you start paying the fees for their transactions.
 - If the user is exchanging something of value, you can take a fee out of it while paying the gas fees. For instance, if the user buys an NFT with USDC, you can take a fee from their USDC amount.
 
-You’ll need to design your business model around the limitations some of the limitations. However, with these examples, I hope you see that there are many ways to leverage gasless transactions to build a rich experience for your users while they are still in control of their wallets.
+You’ll need to design your business model around the limitations. However, with these examples, I hope you see that there are many ways to leverage gasless transactions to build a rich experience for your users while they are still in control of their wallets.
 
 If you want to build using gasless transactions, integrating with the [Gas Station Network (GSN)](https://docs.opengsn.org/) is the best way to start, as you only have to write the contract to approve or reject a transaction.  And if this all sounds very expensive, there are many ways to lower costs, such as picking a cheaper blockchain: L2, such as [Arbitrum](https://arbitrum.io/) and [zkSync](https://zksync.io/), are the future.
 
