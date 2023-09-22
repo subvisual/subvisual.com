@@ -35,7 +35,7 @@ collections:
           - { value: 'research', label: 'Research' }
           - { value: 'inside-subvisual', label: 'Inside Subvisual' }
           - { value: 'academy', label: 'Academy' }
-          - { value: 'operations', label: 'Operations' }
+          - { value: 'company-building', label: 'Company Building' }
       - label: 'Author'
         name: 'author'
         widget: 'select'
