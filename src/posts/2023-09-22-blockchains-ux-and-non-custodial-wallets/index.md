@@ -1,11 +1,11 @@
 ---
 highlight: true
-path: blockchains-ux-non-custodial-wallets
-title: Blockchains, UX And Non-Custodial Wallets
+path: breaking-the-boundaries-between-web2-Web3
+title: Breaking the Boundaries Between Web2 and Web3
 categories:
   - engineering
 author: gabriel-poca
-date: 2023-09-22
+date: 2023-10-04
 intro: If you ever had to build an accounting system, you know that it's not
   easy. Besides the technical difficulties, you must consider the complicated
   legal requirements when dealing with someone else's money. These are some of
