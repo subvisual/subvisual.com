@@ -1,6 +1,6 @@
 ---
 highlight: true
-path: poor-mans-orchestration-for-devs
+path: poor-mans-multi-process-development
 title: Poor man's multi-process development
 categories:
   - engineering
