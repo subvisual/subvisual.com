@@ -16,6 +16,17 @@
     linkedin: "https://www.linkedin.com/in/alvarobezerra"
     twitter: "https://twitter.com/alvarorrbezerra"
 
+- key: david-lange
+  name: "David Lange"
+  initials: DL
+  email: lange@subvisual.co
+  photo: "../images/team/david-lange.jpg"
+  role: "Developer"
+  social:
+    linkedin: "https://www.linkedin.com/in/david-lange-silva/"
+    github: "https://github.com/davelange"
+
+
 - key: davide-silva
   name: "Davide Silva"
   initials: DS
