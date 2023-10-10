@@ -6,7 +6,8 @@ categories:
   - engineering
 author: david-lange
 date: 2023-10-10
-intro: Create page-wide animated gradients with CSS and SVG.
+intro: Exploring how to get a bunch of HTML and SVG elements to all share a
+  single animated CSS gradient.
 ---
 Recently I came upon a pretty interesting request: a landing page with a bunch of elements - which could be text, backgrounds, SVGs - that share a gradient background. The gradient should also be animated across all the elements in sync. 
 
