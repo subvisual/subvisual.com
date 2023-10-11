@@ -6,6 +6,7 @@ categories:
   - engineering
 author: gabriel-poca
 date: 2023-10-04
+cover: subvisual_blog-—-breaking-the-boundaries-between-web2-and-web3.png
 intro: If you ever had to build an accounting system, you know that it's not
   easy. Besides the technical difficulties, you must consider the complicated
   legal requirements when dealing with someone else's money. These are some of
