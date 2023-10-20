@@ -1,5 +1,5 @@
 ---
-highlight: true
+highlight: false
 path: building-cosmicwaves
 title: Building CosmicWaves
 categories:
