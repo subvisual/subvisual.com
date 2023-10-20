@@ -5,7 +5,7 @@ title: Building CosmicWaves
 categories:
   - engineering
 author: subvisual
-date: 2023-10-27
+date: 2023-10-20
 intro: In the urgency of a Hackathon, everything becomes about how much you
   care, and how personal the problem is to you. So, when we had the chance to
   create the experience of vibing to good music, it was a no-brainer. What
