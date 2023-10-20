@@ -17,6 +17,8 @@ In the urgency of a Hackathon, everything becomes about how much you care, and h
 
 And this is how we built it in 3 weeks at [ETHGlobal HackFS 2023](https://ethglobal.com/events/hackfs2023).
 
+![Cosmic Waves landing page](cosmicwaves.png "landing page of cosmic waves")
+
 ## Permission-based Access
 
 Our end goal was to allow everyone to add their songs to playlists and broadcast them at some point in the near future, almost like having a queue of playlists from different people. The thing is that this was a complex idea to achieve in a hackathon, so we decided that we would only have one streamer and the rest of the users would be listeners.
