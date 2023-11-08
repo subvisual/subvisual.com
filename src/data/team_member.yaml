@@ -56,6 +56,16 @@
     github: "https://github.com/frm"
     twitter: "https://twitter.com/frmcodes"
 
+- key: filipa-ribeiro
+  name: "Filipa Ribeiro"
+  initials: FR
+  email: "filipa@subvisual.co"
+  photo: "../images/team/filipa-ribeiro.jpg"
+  role: "Designer"
+  social:
+    linkedin: "https://www.linkedin.com/in/filipagribeiro"
+    twitter: "https://twitter.com/heyitsfilipa"
+
 - key: francisco-baila
   name: "Francisco Baila"
   initials: FB
