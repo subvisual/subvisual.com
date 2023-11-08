@@ -34,8 +34,6 @@ The big idea behind this new phase of the Internet is to allow the existence of 
 
 #### (or what is inherited from what has been done) 
 
-
-
 Despite the inevitable differences, when we think and design user experiences for Web3, we must still take into account what we have learned so far and the best design practices for Web2.
 
 There are certain timeless concepts and they should therefore influence all decisions we make. The list of best practices to consider is extensive, but the most important ones to highlight here are perhaps:
@@ -54,7 +52,7 @@ There are certain timeless concepts and they should therefore influence all deci
 
 ## The differences 
 
-(or what we need to consider to create change) 
+#### (or what we need to consider to create change) 
 
 One of the key challenges of being a designer in web3 is creating user interfaces and experiences that are intuitive and easy to use, despite the complex underlying technology. This requires a strong understanding of both design principles and blockchain technology.
 
@@ -74,7 +72,7 @@ Based on this and the topics mentioned above, there are certain topics we need t
 
 ## The ethical issues 
 
-(or looking inward to find answers) 
+#### (or looking inward to find answers) 
 
 The topic of ethical issues surrounding Web3 would be a theme for a full article in and of itself. There is a lot to discuss on this subject, but in this context, I would like to focus on two points that, in my opinion, are a good starting point for a deeper analysis of this topic. 
 
