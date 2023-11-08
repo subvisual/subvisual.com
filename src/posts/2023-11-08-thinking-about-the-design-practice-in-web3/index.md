@@ -5,7 +5,7 @@ title: "Thinking about the design practice in Web3 "
 categories:
   - design
   - product
-author: subvisual
+author: filipa-ribeiro
 date: 2023-11-14
 intro: "In the last few years, there has been a lot of discussion about Web3,
   blockchain, and cryptocurrencies. Even more so, about the potential changes in
