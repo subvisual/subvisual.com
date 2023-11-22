@@ -14,8 +14,6 @@ A common way of adding some life to a UI is through movement, especially when th
 
 https://device-orientation-demo.vercel.app ([Github](https://github.com/davelange/device-orientation-demo))
 
-
-
 ![Transforming an image with mousemove](ezgif.com-video-to-gif-1-.gif "Transforming an image with mousemove")
 
 What's happening under the hood here? Basically we track the mouse position (for desktop) and device orientation (for mobile), and based on the provided values we shift and rotate an image.
@@ -61,7 +59,7 @@ window.addEventListener("deviceorientation", handleOrientationEvent);
 
 Note that the event listener has to be attached specifically to the `window`. 
 
-As the gamma rotation is `0` when the device is "centered", this will shift the image left or right when you turn your your device either way.
+As the gamma rotation is `0` when the device is "centered", this will shift the image left or right when you turn your device either way.
 
 In reality, you probably want to process the gamma value into some other value rather than use it directly in the CSS, but the basic idea is the same. 
 
@@ -207,4 +205,4 @@ You can find the full code in [the demo repo](https://github.com/davelange/devic
 
 ## Wrapping up
 
-These are just some of the many ways to subtly add some life and movement to your UI. CSS transforms, along with properties like filter and opacity, are a powerful tool. Just remember not to take things too far, you don't want to make your users feel seasick :)
+These are just some of the many ways to subtly add some life and movement to your UI. CSS transforms, along with properties like filter and opacity, are a powerful tool. Just remember not to take things too far. You don't want to make your users feel seasick. 🙂
