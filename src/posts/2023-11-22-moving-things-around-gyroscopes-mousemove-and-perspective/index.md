@@ -14,7 +14,9 @@ A common way of adding some life to a UI is through movement, especially when th
 
 https://device-orientation-demo.vercel.app ([Github](https://github.com/davelange/device-orientation-demo))
 
-![Example of transforming an image with mousemove](ezgif-5-6b62b236ab.gif "Transforming an image with mousemove")
+
+
+![Transforming an image with mousemove](ezgif.com-video-to-gif-1-.gif "Transforming an image with mousemove")
 
 What's happening under the hood here? Basically we track the mouse position (for desktop) and device orientation (for mobile), and based on the provided values we shift and rotate an image.
 
