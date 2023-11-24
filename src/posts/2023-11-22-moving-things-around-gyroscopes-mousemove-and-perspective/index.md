@@ -1,7 +1,7 @@
 ---
 highlight: true
-path: moving-things-gyroscopes-mousemove-css-perspective
-title: Moving things around - gyroscopes, mousemove, and perspective
+path: guide-move-things-gyroscopes-mousemove-css-perspective
+title: A guide to move things around - gyroscopes, mousemove, and perspective
 categories:
   - engineering
 author: david-lange
