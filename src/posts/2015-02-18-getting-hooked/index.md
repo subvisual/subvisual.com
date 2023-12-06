@@ -1,11 +1,14 @@
 ---
-path: /51-getting-hooked/
-title: "Getting Hooked"
+highlight: false
+path: 51-getting-hooked
+title: Getting Hooked
+categories:
+  - engineering
 author: miguel-palhas
 date: 2015-02-18
+intro: "I said it before and I'll say it again, several times: Automation is awesome."
 tags:
   - development
-intro: "I said it before and I'll say it again, several times: Automation is awesome."
 ---
 
 I said it before and I'll say it again, several times: Automation is awesome.
