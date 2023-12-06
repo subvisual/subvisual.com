@@ -1,12 +1,18 @@
 ---
-path: /the-worst-decision-of-my-career/
-title: "The Worst Decision Of My Career"
+highlight: false
+path: the-worst-decision-of-my-career
+title: The Worst Decision Of My Career
+categories:
+  - inside-subvisual
 author: gabriel-poca
 date: 2020-09-25
 seoImage: ./seo.png
+intro: A complex system that works is invariably found to have evolved from a
+  simple system that worked. A complex system designed from scratch never works
+  and cannot be patched up to make it work. You have to start over with a
+  working simple system
 tags:
   - development
-intro: "A complex system that works is invariably found to have evolved from a simple system that worked. A complex system designed from scratch never works and cannot be patched up to make it work. You have to start over with a working simple system"
 ---
 
 This is a reflection on software development and complexity. Let's start with
