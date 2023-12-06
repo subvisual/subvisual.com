@@ -1,9 +1,19 @@
 ---
-path: /69-undersampling-of-failure/
-title: "Undersampling of Failure"
+highlight: false
+path: 69-undersampling-of-failure
+title: Undersampling of Failure
+categories:
+  - company-building
 author: roberto-machado
 date: 2016-01-22
 cover: cover.jpg
+intro: We all hear or read stories of success, they are everywhere. What most of
+  these materials fail to give you is the scope. What was the scope of their
+  research? How big is their sample to prove you that their recipe is the right
+  one? Have they compared the habits of successful people with the ones of folks
+  that only had failure in their lives? Is there any correlation between the
+  groups, successful individuals vs. unsuccessful individuals? I will not even
+  mention their definition of success. Let’s just talk about the scope.
 tags:
   - general
 ---
