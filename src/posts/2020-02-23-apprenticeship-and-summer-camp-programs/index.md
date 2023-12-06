@@ -1,14 +1,17 @@
 ---
-path: /apprenticeship-and-summer-camp-programs/
+highlight: false
+path: apprenticeship-and-summer-camp-programs
 title: Apprenticeship and Summer Camp programs
+categories:
+  - academy
 author: laura-esteves
 date: 2020-02-23
 cover: ./cover.png
 seoImage: ./cover.png
+intro: |
+  In 2020 we want to keep crafting our training opportunities.
 tags:
   - general
-intro: >
-  In 2020 we want to keep crafting our training opportunities.
 ---
 
 At Subvisual, we never assume we know everything. We know there's something new
