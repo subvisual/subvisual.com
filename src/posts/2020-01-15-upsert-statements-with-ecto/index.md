@@ -1,17 +1,21 @@
 ---
-path: /145-upsert-statements-with-ecto/
-title: "Upsert statements with Ecto"
+highlight: false
+path: 145-upsert-statements-with-ecto
+title: Upsert statements with Ecto
+categories:
+  - engineering
 author: luis-zamith
 date: 2020-01-15
 cover: cover.jpg
-tags:
-  - development
 intro: >
-  Narrator: Update and Insert at the same time? That sounds groovy! In comes the Upsert!
+  Narrator: Update and Insert at the same time? That sounds groovy! In comes the
+  Upsert!
 
   Ecto: What about me?
 
   Narrator: You can come too, I guess.
+tags:
+  - development
 ---
 
 From the Postgres documentation we define an upsert as:
