@@ -1,14 +1,17 @@
 ---
-path: /announcing-subvisual-live-talks/
+highlight: false
+path: announcing-subvisual-live-talks
 title: "Announcing Subvisual Live Talks: Zamith, Josh Clayton, Saša Jurić and others"
+categories:
+  - inside-subvisual
 author: fernando-mendes
 date: 2020-04-17
 intro: >
   Last Friday we premiered the first edition of the Subvisual Live Talks, a live
-  stream with a very simple concept: a conversation with interesting guests.
-  The first stream features an hour of exciting conversation between our own
-  host, Zamith and thoughtbot's Boston Managing Director Josh Clayton. There's
-  more to come.
+  stream with a very simple concept: a conversation with interesting guests. The
+  first stream features an hour of exciting conversation between our own host,
+  Zamith and thoughtbot's Boston Managing Director Josh Clayton. There's more to
+  come.
 ---
 
 We just had our first [Subvisual Live Talk](https://www.twitch.tv/videos/594487926). Besides our usual [podcast](https://podcast.subvisual.com/), we wanted to try the concept of sharing some of our talks for a while now. Then Zamith took charge. Last Friday we premiered the first edition of a live stream with a very simple concept: **a conversation with interesting guests**. For us, simplicity is key.
