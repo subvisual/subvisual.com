@@ -1,12 +1,15 @@
 ---
-path: /114-subvisual-weekly-12/
+highlight: false
+path: 114-subvisual-weekly-12
 title: "Subvisual Weekly #12"
+categories:
+  - inside-subvisual
 author: gabriel-poca
 date: 2016-10-14
 cover: cover.jpg
+intro: "I'm proud to introduce the top geeks: Miguel and Fernando."
 tags:
   - general
-intro: "I'm proud to introduce the top geeks: Miguel and Fernando."
 ---
 
 I'm proud to introduce the top geeks: Miguel and Fernando.
