@@ -1,15 +1,18 @@
 ---
-path: /66-sending-multiple-emails-with-actionmailer/
-title: "Sending multiple emails with ActionMailer"
+highlight: false
+path: 66-sending-multiple-emails-with-actionmailer
+title: Sending multiple emails with ActionMailer
+categories:
+  - engineering
 author: luis-zamith
 date: 2015-12-02
 cover: cover.jpg
-tags:
-  - development
 intro: >
   If you have ever built a Rails application, you probably have encountered
   ActionMailer for sending emails. But what if we wanted to send a notification
   to multiple users all at once?
+tags:
+  - development
 ---
 
 If you have ever built a Rails application, you probably have encountered
