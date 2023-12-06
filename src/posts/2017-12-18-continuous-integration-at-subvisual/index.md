@@ -1,12 +1,16 @@
 ---
-path: /140-continuous-integration-at-subvisual/
-title: "Continuous Integration at Subvisual"
+highlight: false
+path: 140-continuous-integration-at-subvisual
+title: Continuous Integration at Subvisual
+categories:
+  - engineering
 author: miguel-palhas
 date: 2017-12-18
 cover: cover.jpg
+intro: Learn how we do Continuous Integration, and what tools we use at each
+  step of the way
 tags:
   - development
-intro: "Learn how we do Continuous Integration, and what tools we use at each step of the way"
 ---
 
 We're often approached by other companies or developers who want to know more about how we handle our projects' testing and deployment. They want to know how we ship multiple times a day while having multiple developers working at the same time.
