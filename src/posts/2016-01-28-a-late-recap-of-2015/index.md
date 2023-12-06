@@ -1,12 +1,21 @@
 ---
-path: /68-a-late-recap-of-2015/
-title: "A Late Recap of 2015"
+highlight: false
+path: 68-a-late-recap-of-2015
+title: A Late Recap of 2015
+categories:
+  - inside-subvisual
 author: roberto-machado
 date: 2016-01-28
 cover: cover.jpg
+intro: A lot happened in 2015 around here at the now called Subvisual. I thought
+  that I should share a recap with all of you, not only to boost our egos a bit
+  by reviewing all the astonishing work accomplished last year, but also to lift
+  the veil for what's coming in 2016. We have set bold goals for the current
+  year, and as scary as it seems to share them with you, it will add an extra
+  layer of commitment since we expect to be held accountable by all of you.
+  Let's start by briefly recapping our last year.
 tags:
   - general
-intro: "A lot happened in 2015 around here at the now called Subvisual. I thought that I should share a recap with all of you, not only to boost our egos a bit by reviewing all the astonishing work accomplished last year, but also to lift the veil for what's coming in 2016. We have set bold goals for the current year, and as scary as it seems to share them with you, it will add an extra layer of commitment since we expect to be held accountable by all of you. Let's start by briefly recapping our last year."
 ---
 
 A lot happened in 2015 around here at the now called Subvisual. I thought that I should share a recap with all of you, not only to boost our egos a bit by reviewing all the astonishing work accomplished last year, but also to lift the veil for what's coming in 2016. We have set bold goals for the current year, and as scary as it seems to share them with you, it will add an extra layer of commitment since we expect to be held accountable by all of you. Let's start by briefly recapping our last year.
