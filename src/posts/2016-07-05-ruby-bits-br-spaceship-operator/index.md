@@ -1,17 +1,20 @@
 ---
-path: /90-ruby-bits-br-spaceship-operator/
+highlight: false
+path: 90-ruby-bits-br-spaceship-operator
 title: "Ruby Bits:  Spaceship Operator"
+categories:
+  - engineering
 author: luis-zamith
 date: 2016-07-05
 cover: cover.jpg
+intro: >
+  This week on Ruby Bits we've decided to honour the Juno mission entering
+  Jupiter's orbit by discussing another special operator in Ruby, commonly known
+  as the spaceship operator.
 tags:
   - ruby-bits
   - development
   - ruby
-intro: >
-  This week on Ruby Bits we've decided to honour the Juno mission entering
-  Jupiter's orbit by discussing another special operator in Ruby, commonly
-  known as the spaceship operator.
 ---
 
 This week on Ruby Bits we've decided to honour the [Juno mission entering
