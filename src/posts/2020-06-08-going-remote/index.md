@@ -1,10 +1,17 @@
 ---
-path: /going-remote/
+highlight: false
+path: going-remote
 title: "Going Remote: The Parts No One Tells You"
+categories:
+  - inside-subvisual
 author: fernando-mendes
 date: 2020-06-22
 intro: >
-  A lot of companies are allowing their workers to stay remote. Which is awesome. But the situation will now be drastically different. You see, before, everyone was remote. Now, however, you'll have part of your team in office and part of it remote. If not done properly, it won't quite be the best time of your life.
+  A lot of companies are allowing their workers to stay remote. Which is
+  awesome. But the situation will now be drastically different. You see, before,
+  everyone was remote. Now, however, you'll have part of your team in office and
+  part of it remote. If not done properly, it won't quite be the best time of
+  your life.
 ---
 
 As the quarantine wears off in several countries and the flurry of "now everyone will see how cool remote work is!!!" tweets disappears from my timeline, it's time for us all to sit down and have a little chat on what it *truly* means going remote.
