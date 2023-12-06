@@ -1,11 +1,18 @@
 ---
-path: /20-clean-architecture/
-title: "Clean Architecture"
+highlight: false
+path: 20-clean-architecture
+title: Clean Architecture
+categories:
+  - engineering
 author: luis-zamith
 date: 2013-12-27
+intro: One of the hottest topics of the moment in the rails community is
+  application design or architecture. There is an obsession (a good one, I
+  think) with clean, decoupled code, that is easy to maintain and extend. This
+  has led to things such as presenters, service objects, to some extent even
+  rails concerns.
 tags:
   - development
-intro: "One of the hottest topics of the moment in the rails community is application design or architecture. There is an obsession (a good one, I think) with clean, decoupled code, that is easy to maintain and extend. This has led to things such as presenters, service objects, to some extent even rails concerns."
 ---
 
 One of the hottest topics of the moment in the rails community is application design or architecture. There is an obsession (a good one, I think) with clean, decoupled code, that is easy to maintain and extend. This has led to things such as presenters, service objects, to some extent even rails concerns.
