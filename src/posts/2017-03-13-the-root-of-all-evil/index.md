@@ -1,12 +1,15 @@
 ---
-path: /126-the-root-of-all-evil/
-title: "The root of all evil"
+highlight: false
+path: 126-the-root-of-all-evil
+title: The root of all evil
+categories:
+  - engineering
 author: miguel-palhas
 date: 2017-03-13
+intro: |
+  Spoiler alert: it's premature optimizations.
 tags:
   - development
-intro: >
-  Spoiler alert: it's premature optimizations.
 ---
 
 **Spoiler alert:** it's premature optimizations.
