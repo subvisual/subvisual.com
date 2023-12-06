@@ -1,11 +1,15 @@
 ---
-path: /47-for-makers/
-title: "For Makers"
+highlight: false
+path: 47-for-makers
+title: For Makers
+categories:
+  - academy
 author: joao-ferreira
 date: 2014-12-10
+intro: There's only so much you can do in life. Your time is limited, as well as
+  your focus and your energy.
 tags:
   - design
-intro: "There's only so much you can do in life. Your time is limited, as well as your focus and your energy."
 ---
 
 There's only so much you can do in life. Your time is limited, as well as your focus and your energy. 
