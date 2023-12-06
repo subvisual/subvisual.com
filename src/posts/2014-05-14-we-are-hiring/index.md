@@ -1,11 +1,14 @@
 ---
-path: /36-we-are-hiring/
-title: "We are hiring!"
+highlight: false
+path: 36-we-are-hiring
+title: We are hiring!
+categories:
+  - inside-subvisual
 author: roberto-machado
 date: 2014-05-14
+intro: Join our talented team at sunny Braga, Portugal.
 tags:
   - general
-intro: "Join our talented team at sunny Braga, Portugal."
 ---
 
 Join our talented team at sunny Braga, Portugal.
