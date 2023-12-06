@@ -1,17 +1,19 @@
 ---
-path: /125-subvisual-and-tnds-are-offering-a-design-sprint-apply-now/
-title: "Subvisual and TNDS are offering a Design Sprint - Apply now!"
+highlight: false
+path: 125-subvisual-and-tnds-are-offering-a-design-sprint-apply-now
+title: Subvisual and TNDS are offering a Design Sprint - Apply now!
+categories:
+  - academy
 author: francisco-baila
 date: 2017-03-03
 cover: cover.jpg
+intro: >
+  Design Sprints are a great deal for us here at Subvisual. We do them when
+  starting a project, when doing a redesign, when adding new features, and more.
+  They are rooted in our processes now and are the base that sustains our work. 
 tags:
   - design
   - community
-intro: >
-  Design Sprints are a great deal for us here at Subvisual. We do them when
-  starting a project, when doing a redesign, when adding new features, and
-  more. They are rooted in our processes now and are the base that sustains our
-  work. 
 ---
 
 Subvisual and The New Digital School are offering a Design Sprint - [Apply now!](https://subvisual.typeform.com/to/KJonG6)
