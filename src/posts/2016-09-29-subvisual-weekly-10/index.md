@@ -1,12 +1,15 @@
 ---
-path: /110-subvisual-weekly-10/
+highlight: false
+path: 110-subvisual-weekly-10
 title: "Subvisual Weekly #10"
+categories:
+  - inside-subvisual
 author: summer-campers
 date: 2016-09-29
 cover: cover.jpg
+intro: We did it. We made it happen. MirrorConf is done.
 tags:
   - community
-intro: "We did it. We made it happen. MirrorConf is done."
 ---
 
 We did it. We made it happen. MirrorConf is done.
