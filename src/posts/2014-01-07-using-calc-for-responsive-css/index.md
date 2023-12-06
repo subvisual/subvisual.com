@@ -1,12 +1,15 @@
 ---
-path: /23-using-calc-for-responsive-css/
-title: "Using calc() for responsive CSS"
+highlight: false
+path: 23-using-calc-for-responsive-css
+title: Using calc() for responsive CSS
+categories:
+  - engineering
 author: gabriel-poca
 date: 2014-01-07
+intro: |
+  If you implement responsive design then CSS's calc() is a must-know feature.
 tags:
   - development
-intro: >
-  If you implement responsive design then CSS's calc() is a must-know feature.
 ---
 
 If you implement responsive design then CSS's calc() is a must know feature. If you've never heard of it, here's a description from MDN:
