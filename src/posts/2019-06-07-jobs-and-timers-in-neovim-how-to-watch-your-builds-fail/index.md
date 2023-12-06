@@ -1,15 +1,18 @@
 ---
-path: /jobs-and-timers-in-neovim-how-to-watch-your-builds-fail/
+highlight: false
+path: jobs-and-timers-in-neovim-how-to-watch-your-builds-fail
 title: "Jobs and Timers in neovim: How to watch your builds fail"
+categories:
+  - engineering
 author: fernando-mendes
 date: 2019-06-07
-tags:
-  - development
 intro: >
   Our git flow revolves around a lot of small-ish PRs. We have builds running
   constantly. Eventually, they’ll fail. And I hate leaving (neo)vim. Especially
   to watch a red sign telling I did the dum-dumbs. So I did a thing to tell me
   when the I did the dum-dumbs without ever leaving the cozy comfort of vim.
+tags:
+  - development
 ---
 
 Jobs and Timers in neovim: How to watch your builds fail
