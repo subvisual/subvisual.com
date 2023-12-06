@@ -1,13 +1,17 @@
 ---
-path: /rebuilding-subvisual-com
+highlight: false
+path: rebuilding-subvisual-com
 title: Rebuilding subvisual.com
+categories:
+  - inside-subvisual
+  - engineering
 author: pedro-costa
 date: 2020-06-25
 cover: ./dane-deaner-d0AcxMk33is-unsplash.jpg
 intro: >
   In the end of 2018 we started working on a rebranding process for Subvisual.
-  We grew beyond the identity we coined in 2015, and the brand needed to
-  reflect it and our ambition for the future. We now have a story to tell.
+  We grew beyond the identity we coined in 2015, and the brand needed to reflect
+  it and our ambition for the future. We now have a story to tell.
 ---
 
 In the end of 2018 we started working on the rebranding process for Subvisual.
