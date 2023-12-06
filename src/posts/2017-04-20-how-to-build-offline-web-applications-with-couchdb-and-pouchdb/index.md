@@ -1,16 +1,19 @@
 ---
-path: /130-how-to-build-offline-web-applications-with-couchdb-and-pouchdb/
-title: "How to build offline web applications with CouchDB and PouchDB"
+highlight: false
+path: 130-how-to-build-offline-web-applications-with-couchdb-and-pouchdb
+title: How to build offline web applications with CouchDB and PouchDB
+categories:
+  - engineering
 author: gabriel-poca
 date: 2017-04-20
 cover: cover.jpg
-tags:
-  - development
 intro: >
   You may have heard about Progressive Web Apps (PWAs). These are web
   applications that leverage the new Web APIs to look and feel like native
   applications. There is plenty the web can do today that was only available to
   native applications before.
+tags:
+  - development
 ---
 
 You may have heard about [Progressive Web Apps
