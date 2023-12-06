@@ -1,11 +1,18 @@
 ---
-path: /24-why-provisioning-matters/
-title: "Why Provisioning Matters"
+highlight: false
+path: 24-why-provisioning-matters
+title: Why Provisioning Matters
+categories:
+  - engineering
 author: miguel-palhas
 date: 2014-01-14
+intro: If you were ever in charge of configuring a web server, you must know how
+  painful it can be sometimes. During your first learning days, you probably
+  spent an awful lot of time SSH'ing into the server, trying out something you
+  just found online. It probably ended up being a slow trial-and-error process
+  before you got your first server up and running.
 tags:
   - development
-intro: "If you were ever in charge of configuring a web server, you must know how painful it can be sometimes. During your first learning days, you probably spent an awful lot of time SSH'ing into the server, trying out something you just found online. It probably ended up being a slow trial-and-error process before you got your first server up and running."
 ---
 
 If you were ever in charge of configuring a web server, you must know how painful it can be sometimes. During your first learning days, you probably spent an awful lot of time SSH'ing into the server, trying out something you just found online. It probably ended up being a slow trial-and-error process before you got your first server up and running.
