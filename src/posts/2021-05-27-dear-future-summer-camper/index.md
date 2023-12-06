@@ -1,16 +1,18 @@
 ---
-path: /dear-future-summer-camper
-title: "Dear Future Summer Camper..."
+highlight: false
+path: dear-future-summer-camper
+title: Dear Future Summer Camper...
+categories:
+  - academy
 author: summer-campers-2020
 date: 2021-05-27
 seoImage: ./meta.png
+intro: >
+  We asked our 2020 Summer Campers to write a letter about their experience with
+  Subvisual and the Universe. Here's a first-person take on what to expect from
+  the Subvisual Summer Camp and what you may learn throughout the experience.
 tags:
   - community
-intro: >
-  We asked our 2020 Summer Campers to write a letter about their experience
-  with Subvisual and the Universe. Here's a first-person take on what to expect
-  from the Subvisual Summer Camp and what you may learn throughout the
-  experience.
 ---
 
 Dear future Summer Camper,
