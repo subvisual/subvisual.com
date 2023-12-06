@@ -1,11 +1,15 @@
 ---
-path: /continuous-stuff-with-github-actions
-title: "Continuous Stuff with Github Actions"
+highlight: false
+path: continuous-stuff-with-github-actions
+title: Continuous Stuff with Github Actions
+categories:
+  - engineering
 author: miguel-palhas
 date: 2020-04-22
+intro: Last year, I did a huge migration to GithubActions over at Utrust. Here's
+  a summary some of my main takeaways
 tags:
   - devops
-intro: Last year, I did a huge migration to GithubActions over at Utrust. Here's a summary some of my main takeaways
 ---
 
 [slides]: https://slides.com/naps62/continuous-stuff
