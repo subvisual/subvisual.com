@@ -1,16 +1,19 @@
 ---
-path: /143-its-not-continuous-delivery-yet/
-title: "It's not Continuous Delivery (yet)"
+highlight: false
+path: 143-its-not-continuous-delivery-yet
+title: It's not Continuous Delivery (yet)
+categories:
+  - engineering
 author: pedro-costa
 date: 2019-02-02
 cover: cover.jpg
+intro: >
+  At Subvisual we have always advocated for Continuous Delivery in our projects.
+  Recently we decided to teach this approach.  But it so happened that, in our
+  effort to learn more about Continuous Delivery, we learned that we ourselves
+  are not actually doing it.
 tags:
   - development
-intro: >
-  At Subvisual we have always advocated for Continuous Delivery in our
-  projects. Recently we decided to teach this approach.  But it so happened
-  that, in our effort to learn more about Continuous Delivery, we learned that
-  we ourselves are not actually doing it.
 ---
 
 Any project started at Subvisual has always been demanded the best development
