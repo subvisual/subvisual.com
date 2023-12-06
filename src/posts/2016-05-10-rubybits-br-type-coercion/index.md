@@ -1,15 +1,18 @@
 ---
-path: /81-rubybits-br-type-coercion/
+highlight: false
+path: 81-rubybits-br-type-coercion
 title: "RubyBits:  Type coercion"
+categories:
+  - engineering
 author: luis-zamith
 date: 2016-05-10
 cover: cover.jpg
-tags:
-  - development
 intro: >
   Have you ever had to implement arithmetic operations for an object? If so,
   there is one little method you probably should be aware of, and it's called
   coerce.
+tags:
+  - development
 ---
 
 Have you ever had to implement arithmetic operations for an object? If so, there
