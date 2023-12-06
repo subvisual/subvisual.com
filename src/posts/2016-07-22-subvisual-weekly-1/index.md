@@ -1,12 +1,18 @@
 ---
-path: /92-subvisual-weekly-1/
+highlight: false
+path: 92-subvisual-weekly-1
 title: "Subvisual Weekly #1"
+categories:
+  - inside-subvisual
 author: gabriel-poca
 date: 2016-07-22
 cover: cover.jpg
+intro: Our journey begins in the sunny city of Braga, as we adventure ourselves
+  through the tall, green, grass. We were not prepared for this. But we pushed
+  through. An empty Pokédex and just one Pokéball in our pockets, ready to take
+  on the world.
 tags:
   - community
-intro: "Our journey begins in the sunny city of Braga, as we adventure ourselves through the tall, green, grass. We were not prepared for this. But we pushed through. An empty Pokédex and just one Pokéball in our pockets, ready to take on the world."
 ---
 
 Our journey begins in the sunny city of Braga, as we adventure ourselves through the tall, green, grass. We were not prepared for this. But we pushed through. An empty Pokédex and just one Pokéball in our pockets, ready to take on the world.
