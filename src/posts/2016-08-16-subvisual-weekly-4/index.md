@@ -1,13 +1,20 @@
 ---
-path: /99-subvisual-weekly-4/
+highlight: false
+path: 99-subvisual-weekly-4
 title: "Subvisual Weekly #4"
+categories:
+  - inside-subvisual
 author: joao-justo
 date: 2016-08-16
 cover: cover.jpg
+intro: "The secret sauce: isn’t it what everyone is looking for? To find some
+  kind of secret sauce? Imagine how amazing it would be if you could just grab a
+  bottle of an exotic substance, and then add a few drops of it to anything.
+  This strange liquid would somehow turn an absolutely normal object into an
+  amazing, delightful, joyful item."
 tags:
   - general
   - community
-intro: "The secret sauce: isn’t it what everyone is looking for? To find some kind of secret sauce? Imagine how amazing it would be if you could just grab a bottle of an exotic substance, and then add a few drops of it to anything. This strange liquid would somehow turn an absolutely normal object into an amazing, delightful, joyful item."
 ---
 
 The secret sauce: isn’t it what everyone is looking for? To find some kind of secret sauce? Imagine how amazing it would be if you could just grab a bottle of an exotic substance, and then add a few drops of it to anything. This strange liquid would somehow turn an absolutely normal object into an amazing, delightful, joyful item.
