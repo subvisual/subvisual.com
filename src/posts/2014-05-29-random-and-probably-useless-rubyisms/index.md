@@ -1,11 +1,16 @@
 ---
-path: /37-random-and-probably-useless-rubyisms/
-title: "Random (and probably useless) Rubyisms"
+highlight: false
+path: 37-random-and-probably-useless-rubyisms
+title: Random (and probably useless) Rubyisms
+categories:
+  - engineering
 author: miguel-palhas
 date: 2014-05-29
+intro: Having written and read a lot of Ruby code, I occasionally come across
+  some not-so-well-known features. Or even just a tiny detail that, as useless
+  as it may be, I still find interesting.
 tags:
   - development
-intro: "Having written and read a lot of Ruby code, I occasionally come across some not-so-well-known features. Or even just a tiny detail that, as useless as it may be, I still find interesting."
 ---
 
 Having written and read a lot of Ruby code, I occasionally come across some not-so-well-known features. Or even just a tiny detail that, as useless as it may be, I still find interesting.
