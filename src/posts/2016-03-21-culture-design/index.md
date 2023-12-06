@@ -1,16 +1,21 @@
 ---
-path: /77-culture-design/
-title: "Culture Design"
+highlight: false
+path: 77-culture-design
+title: Culture Design
+categories:
+  - design
+  - inside-subvisual
+  - company-building
 author: joao-ferreira
 date: 2016-03-21
 cover: cover.jpg
-tags:
-  - design
-  - general
 intro: >
   Subvisual started out in 2012 with a team of four. All of us fresh out of
   college. We also had to account for our team's different cultural background.
   This posed a challenging context which we failed to understand at first.
+tags:
+  - design
+  - general
 ---
 
 ![file](https://subvisual.s3.amazonaws.com/blog/post_image/99/image-1458578163461.jpg)
