@@ -1,16 +1,19 @@
 ---
-path: /123-how-we-share-ownership-and-accountability/
-title: "How We Share Ownership and Accountability"
+highlight: false
+path: 123-how-we-share-ownership-and-accountability
+title: How We Share Ownership and Accountability
+categories:
+  - inside-subvisual
 author: roberto-machado
 date: 2017-02-23
 cover: cover.jpg
-tags:
-  - general
 intro: >
   Often people ask me how a small team like ours can have relative financial
   success and still have time to organize two international conferences and
   several meet-ups while keeping a sustainable work environment where people
   like to work. I always struggle to answer this.
+tags:
+  - general
 ---
 
 Often people ask me how a small [team](https://subvisual.co/company/#team) like ours can have relative financial success and still have time to organize two international conferences, [MirrorConf](http://mirrorconf.com/) and [RubyConf Portugal](http://rubyconf.pt/), several meetups through the year while keeping a sustainable work environment where people like to work. I always struggle to answer this because I don’t have the contradictory, and for us it’s challenging, but it never felt like a Herculean task to pull off. After putting some thought on the subject, I believe that the primary justification is how we share responsibilities throughout the team, keeping a flat structure, while still have a culture of accountability. 
