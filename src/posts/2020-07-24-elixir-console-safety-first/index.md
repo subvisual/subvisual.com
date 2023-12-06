@@ -1,15 +1,18 @@
 ---
-path: /elixir-console-safety-first
+highlight: false
+path: elixir-console-safety-first
 title: "Elixir console: Safety first"
+categories:
+  - engineering
 author: miguel-palhas
 date: 2020-07-23
+intro: >
+  I suspect that every developer who has dealt with production systems, has also
+  messed up a production system. At least once.
 tags:
   - development
   - elixir
   - devops
-intro: >
-  I suspect that every developer who has dealt with production systems,
-  has also messed up a production system. At least once.
 ---
 
 I suspect that every developer who has dealt with production systems, has also
