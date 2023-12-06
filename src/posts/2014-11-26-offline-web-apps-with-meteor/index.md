@@ -1,11 +1,16 @@
 ---
-path: /45-offline-web-apps-with-meteor/
-title: "Offline Web Apps with Meteor"
+highlight: false
+path: 45-offline-web-apps-with-meteor
+title: Offline Web Apps with Meteor
+categories:
+  - engineering
 author: gabriel-poca
 date: 2014-11-26
+intro: In this blog post I'm presenting a solution to make Meteor apps work
+  completely offline. In fact, Meteor apps already work offline, as long as the
+  user doesn't close the browser.
 tags:
   - development
-intro: "In this blog post I'm presenting a solution to make Meteor apps work completely offline. In fact, Meteor apps already work offline, as long as the user doesn't close the browser."
 ---
 
 In this blog post I'm presenting a solution to make Meteor apps work completely offline. In fact, Meteor apps already work offline, as long as the user doesn't close the browser.
