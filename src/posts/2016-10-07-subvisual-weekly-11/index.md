@@ -1,15 +1,18 @@
 ---
-path: /112-subvisual-weekly-11/
+highlight: false
+path: 112-subvisual-weekly-11
 title: "Subvisual Weekly #11"
+categories:
+  - inside-subvisual
 author: gabriel-poca
 date: 2016-10-07
 cover: cover.jpg
-tags:
-  - community
 intro: >
   Last week was awesome. On Friday, everyone got together for a company
   hackathon. There was paper, code, and food all over the place. We even had a
   delicious meal prepared by a guest.
+tags:
+  - community
 ---
 
 Last week was awesome. On Friday, everyone got together for a company hackathon. There was paper, code, and food all over the place. We even had a delicious meal prepared by our guest [Ben](https://twitter.com/howebenhowe). 
