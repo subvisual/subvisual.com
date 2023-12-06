@@ -1,13 +1,16 @@
 ---
-path: /submonthy-3-klp-on-working-remote
+highlight: false
+path: submonthy-3-klp-on-working-remote
 title: "SubMonthly #3 - Key Learnings on Remote Work"
+categories:
+  - inside-subvisual
 author: subvisual
 date: 2021-03-18
 seoImage: ./seo.png
+intro: |
+  A year on after the lockdown here's our lessons learned on working remotely.
 tags:
   - community
-intro: >
-  A year on after the lockdown here's our lessons learned on working remotely.
 ---
 
 We've been remote-friendly since the beginning of the company but, until 2020,
