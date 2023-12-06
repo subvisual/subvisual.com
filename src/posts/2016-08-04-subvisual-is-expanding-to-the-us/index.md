@@ -1,12 +1,18 @@
 ---
-path: /94-subvisual-is-expanding-to-the-us/
-title: "Subvisual is expanding to the US"
+highlight: false
+path: 94-subvisual-is-expanding-to-the-us
+title: Subvisual is expanding to the US
+categories:
+  - inside-subvisual
 author: roberto-machado
 date: 2016-08-04
 cover: cover.jpg
+intro: We have been working on expanding to a new location for a while now. We
+  love Braga, and it will continue to be to be our home and HQ, but now we have
+  a new office in Boston, MA. I will explain our motivations to do so, and our
+  plans for the following months.
 tags:
   - general
-intro: "We have been working on expanding to a new location for a while now. We love Braga, and it will continue to be to be our home and HQ, but now we have a new office in Boston, MA. I will explain our motivations to do so, and our plans for the following months."
 ---
 
 We have been working on expanding to a new location for a while now. We love Braga, and it will continue to be to be our home and HQ, but now we have a new office in Boston, MA. I will explain our motivations to do so, and our plans for the following months.
