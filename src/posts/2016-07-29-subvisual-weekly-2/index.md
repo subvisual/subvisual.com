@@ -1,12 +1,18 @@
 ---
-path: /95-subvisual-weekly-2/
+highlight: false
+path: 95-subvisual-weekly-2
 title: "Subvisual Weekly #2"
+categories:
+  - inside-subvisual
 author: gabriel-poca
 date: 2016-07-29
 cover: cover.jpg
+intro: Last night I left home to have a drink with a friend. Next thing I know
+  I'm at the office's door. This has been happening a lot. My mind wanders into
+  the future, and my body goes into auto-pilot. Sometimes the mind wanders so
+  deeply that you forget what you were up to in the first place.
 tags:
   - community
-intro: "Last night I left home to have a drink with a friend. Next thing I know I'm at the office's door. This has been happening a lot. My mind wanders into the future, and my body goes into auto-pilot. Sometimes the mind wanders so deeply that you forget what you were up to in the first place."
 ---
 
 Last night I left home to have a drink with a friend. Next thing I know I'm at the office's door. This has been happening a lot. My mind wanders into the future, and my body goes into auto-pilot. Sometimes the mind wanders so deeply that you forget what you were up to in the first place.
