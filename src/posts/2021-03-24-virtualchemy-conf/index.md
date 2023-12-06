@@ -1,13 +1,16 @@
 ---
-path: /virtualchemy-conf-may-28-2021
+highlight: false
+path: virtualchemy-conf-may-28-2021
 title: "VirtuAlchemy Conf: May 28 2021"
+categories:
+  - inside-subvisual
 author: fernando-mendes
 date: 2021-03-24
+seoImage: ./meta.png
+intro: |
+  Alchemy Conf is dead, long live VirtuAlchemy Conf. May 28 2021, save the date.
 tags:
   - community
-intro: >
-  Alchemy Conf is dead, long live VirtuAlchemy Conf. May 28 2021, save the date.
-seoImage: ./meta.png
 ---
 
 There's something special about organising conferences that has always been a
