@@ -1,13 +1,19 @@
 ---
-path: /108-educating-for-design-design-discipline/
+highlight: false
+path: 108-educating-for-design-design-discipline
 title: "Educating for design: Design discipline"
+categories:
+  - design
 author: joao-ferreira
 date: 2016-10-19
 cover: cover.jpg
+intro: "Over the last 4 years, I've had the pleasure of helping out designers on
+  their first experiences in the web. Typically they come with a lot of
+  questions and insecurities, usually all concerning two things: Typography and
+  colors."
 tags:
   - design
   - general
-intro: "Over the last 4 years, I've had the pleasure of helping out designers on their first experiences in the web. Typically they come with a lot of questions and insecurities, usually all concerning two things: Typography and colors."
 ---
 
 Over the last 4 years, I've had the pleasure of helping out designers on their first experiences in the web. Typically they come with a lot of questions and insecurities, usually all concerning two things: Typography and colors. 
