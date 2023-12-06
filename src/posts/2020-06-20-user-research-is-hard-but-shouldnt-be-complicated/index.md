@@ -1,14 +1,17 @@
 ---
-path: /2020-06-23-user-research-is-hard-but-shouldnt-be-complicated
+highlight: false
+path: 2020-06-23-user-research-is-hard-but-shouldnt-be-complicated
 title: User research is hard, but shouldn’t be complicated
+categories:
+  - product
 author: joao-ferreira
 date: 2020-06-23
+intro: >
+  When I ask someone why they don’t do User Research regularly, usually the
+  arguments revolve around it being very time consuming, extremely complicated
+  to organize, and very hard to get actionable insights out of it.
 tags:
   - design
-intro: >
-  When I ask someone why they don’t do User Research regularly, usually
-  the arguments revolve around it being very time consuming, extremely
-  complicated to organize, and very hard to get actionable insights out of it.
 ---
 
 When I ask someone why they don’t do User Research regularly, usually the arguments revolve around it being very time consuming, extremely complicated to organize, and very hard to get actionable insights out of it.
