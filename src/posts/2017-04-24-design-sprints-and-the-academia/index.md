@@ -1,16 +1,19 @@
 ---
-path: /132-design-sprints-and-the-academia/
-title: "Design Sprints and the Academia"
+highlight: false
+path: 132-design-sprints-and-the-academia
+title: Design Sprints and the Academia
+categories:
+  - product
 author: fernando-mendes
 date: 2017-04-24
 cover: cover.jpg
-tags:
-  - design
-  - general
 intro: >
   To be honest, before this fall I had never taken part of a Design Sprint. It
   always seemed like a toy for the big boys in startups to play with. Then Eaze
   happened...
+tags:
+  - design
+  - general
 ---
 
 To be honest, before this fall I had never taken part of a Design Sprint. It
