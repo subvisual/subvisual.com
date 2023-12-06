@@ -1,11 +1,19 @@
 ---
-path: /41-why-you-should-care-about-design/
-title: "Why you should care about Design"
+highlight: false
+path: 41-why-you-should-care-about-design
+title: Why you should care about Design
+categories:
+  - design
 author: joao-ferreira
 date: 2014-07-01
+intro: Design is a way of thinking, a way of looking at things and trying to
+  understand them and to find a different, better way of achieving
+  something.  Not everyone is a designer but everyone would benefit from having
+  a design perspective, a sort of disruptive approach to the world, a
+  non-conformed state of mind. It’s about being critical and brave enough to do
+  things differently.
 tags:
   - design
-intro: "Design is a way of thinking, a way of looking at things and trying to understand them and to find a different, better way of achieving something.  Not everyone is a designer but everyone would benefit from having a design perspective, a sort of disruptive approach to the world, a non-conformed state of mind. It’s about being critical and brave enough to do things differently."
 ---
 
 Design is a way of thinking, a way of looking at things and trying to understand them and to find a different, better way of achieving something.  Not everyone is a designer but everyone would benefit from having a design perspective, a sort of disruptive approach to the world, a non-conformed state of mind. It’s about being critical and brave enough to do things differently. 
