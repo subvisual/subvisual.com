@@ -1,11 +1,15 @@
 ---
-path: /your-tech-stack-matters/
-title: "Your tech stack matters"
+highlight: false
+path: your-tech-stack-matters
+title: Your tech stack matters
+categories:
+  - engineering
 author: luis-zamith
 date: 2020-07-03
+intro: Your about to start building a digital product? Here's some consideration
+  to consider before defining your tech stack.
 tags:
   - development
-intro: Your about to start building a digital product? Here's some consideration to consider before defining your tech stack.
 ---
 
 There's a common idea that when building a digital product, particularly online,
