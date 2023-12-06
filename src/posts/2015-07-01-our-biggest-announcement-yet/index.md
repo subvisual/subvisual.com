@@ -1,12 +1,23 @@
 ---
-path: /58-our-biggest-announcement-yet/
-title: "Our Biggest Announcement Yet"
+highlight: false
+path: 58-our-biggest-announcement-yet
+title: Our Biggest Announcement Yet
+categories:
+  - inside-subvisual
 author: roberto-machado
 date: 2015-07-01
 cover: cover.jpg
+intro: Why would a group of people as young as we were start a company? We had
+  no relevant entrepreneurial experience, we were young and straight out of
+  university, so we’ve come to expect that question. Part of the answer is that
+  we couldn’t find a company that would allow us to work on the things that we
+  were passionate about, while obsessively honing our skills. But also, and
+  maybe even more importantly, we were friends. Talent and ambition played a
+  part too, but that friendship became the cornerstone of everything we’ve
+  built. Three years on, and that remains true. We are proud of these roots,
+  humbled even.
 tags:
   - general
-intro: "Why would a group of people as young as we were start a company? We had no relevant entrepreneurial experience, we were young and straight out of university, so we’ve come to expect that question. Part of the answer is that we couldn’t find a company that would allow us to work on the things that we were passionate about, while obsessively honing our skills. But also, and maybe even more importantly, we were friends. Talent and ambition played a part too, but that friendship became the cornerstone of everything we’ve built. Three years on, and that remains true. We are proud of these roots, humbled even."
 ---
 
 Why would a group of people as young as we were start a company? We had no relevant entrepreneurial experience, we were young and straight out of university, so we’ve come to expect that question. Part of the answer is that we couldn’t find a company that would allow us to work on the things that we were passionate about, while obsessively honing our skills. But also, and maybe even more importantly, we were friends. Talent and ambition played a part too, but that friendship became the cornerstone of everything we’ve built. Three years on, and that remains true. We are proud of these roots, humbled even.
