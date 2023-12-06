@@ -1,16 +1,19 @@
 ---
-path: /submonthly-4-alchemy
+highlight: false
+path: submonthly-4-alchemy
 title: "SubMonthly #4 | Alchemy-ing with our community 🧙"
+categories:
+  - inside-subvisual
 author: subvisual
 date: 2021-05-18
 seoImage: ./meta.png
+intro: >
+  Pandemics brought us apart, so many other circumstances seem to focus so much
+  on splitting us, rather than connecting us to each other, and yet, perhaps,
+  this is a time where getting together makes more sense than ever.
 tags:
   - community
   - elixir
-intro: >
-    Pandemics brought us apart, so many other circumstances seem to focus so
-    much on splitting us, rather than connecting us to each other, and yet,
-    perhaps, this is a time where getting together makes more sense than ever.
 ---
 
 
