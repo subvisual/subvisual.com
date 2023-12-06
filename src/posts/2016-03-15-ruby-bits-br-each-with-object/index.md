@@ -1,15 +1,18 @@
 ---
-path: /74-ruby-bits-br-each-with-object/
+highlight: false
+path: 74-ruby-bits-br-each-with-object
 title: "Ruby Bits:  Each with object"
+categories:
+  - engineering
 author: luis-zamith
 date: 2016-03-15
 cover: cover.jpg
+intro: >
+  The Enumerable module is the core of everything in Ruby. It is often said that
+  if you know this module, then you know Ruby and that's not far from the truth,
+  in my opinion.
 tags:
   - development
-intro: >
-  The Enumerable module is the core of everything in Ruby. It is often said
-  that if you know this module, then you know Ruby and that's not far from the
-  truth, in my opinion.
 ---
 
 The`Enumerable` module is the core of everything in Ruby. It is often said that
