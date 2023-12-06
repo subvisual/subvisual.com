@@ -1,15 +1,18 @@
 ---
-path: /85-rubybits-br-source-diving/
+highlight: false
+path: 85-rubybits-br-source-diving
 title: "RubyBits:  Source Diving"
+categories:
+  - engineering
 author: luis-zamith
 date: 2016-05-24
 cover: cover.jpg
-tags:
-  - development
 intro: >
   Debugging is something that (un)fortunately we as developers are all used to
   doing, but depending on the language, the techniques and tools might differ,
   if ever so slightly.
+tags:
+  - development
 ---
 
 Debugging is something that (un)fortunately we as developers are all used to
