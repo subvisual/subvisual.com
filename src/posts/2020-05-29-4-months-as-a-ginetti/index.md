@@ -1,10 +1,16 @@
 ---
-path: /4-months-as-a-ginetti/
-title: "4 Months as a Ginetti"
+highlight: false
+path: 4-months-as-a-ginetti
+title: 4 Months as a Ginetti
+categories:
+  - product
+  - inside-subvisual
+  - design
 author: joao-ferreira
 date: 2020-05-29
 intro: >
-  When I first started running usability tests and conducting interviews, I didn’t know what the hell I was doing.
+  When I first started running usability tests and conducting interviews, I
+  didn’t know what the hell I was doing.
 ---
 
 ## "The more you know, the more you know you don't know." - Aristotle
