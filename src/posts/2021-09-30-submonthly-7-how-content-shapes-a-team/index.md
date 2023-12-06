@@ -1,6 +1,9 @@
 ---
+highlight: false
 path: submonthly-7-how-content-shapes-a-team
 title: "SubMonthly #7 - How Content Shapes A Team"
+categories:
+  - inside-subvisual
 author: subvisual
 date: 2021-09-30
 cover: meta-2x.jpg
