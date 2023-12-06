@@ -1,18 +1,21 @@
 ---
-path: /38-announcing-our-summer-apprenticeship-program/
-title: "Announcing our Summer Apprenticeship Program"
+highlight: false
+path: 38-announcing-our-summer-apprenticeship-program
+title: Announcing our Summer Apprenticeship Program
+categories:
+  - academy
 author: roberto-machado
 date: 2014-06-17
-tags:
-  - community
 intro: >
   We are launching two apprenticeships for this summer starting in the end of
   June. We are looking for highly curious people that are eager to learn more
   about the magic world of the Web and Mobile. If you are a newly-graduate,
-  finishing your master's degree or just trying to improve your craft, this is
-  a unique opportunity to learn side by side with our amazing team. We don't
+  finishing your master's degree or just trying to improve your craft, this is a
+  unique opportunity to learn side by side with our amazing team. We don't
   believe anyone should work for free, so this will be a remunerated
   apprenticeship.
+tags:
+  - community
 ---
 
 We are launching two apprenticeships for this summer starting in the end of June. We are looking for highly curious people that are eager to learn more about the magic world of the Web and Mobile. If you are a newly-graduate, finishing your master's degree or just trying to improve your craft, this is a unique opportunity to learn side by side with our amazing team. We don't believe anyone should work for free, so this will be a **remunerated apprenticeship**.
