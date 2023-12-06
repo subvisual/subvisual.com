@@ -1,12 +1,16 @@
 ---
-path: /2020-07-13-5-things-you-should-do-when-starting-a-company
+highlight: false
+path: 2020-07-13-5-things-you-should-do-when-starting-a-company
 title: 5 things you should do when starting a company
+categories:
+  - company-building
 author: roberto-machado
 date: 2020-07-13
+intro: >
+  Adverse times can present opportunities. Harnessed correctly, they can boost
+  entrepreneurship and the creation of new business.
 tags:
   - product
-intro: >
-  Adverse times can present opportunities. Harnessed correctly, they can boost entrepreneurship and the creation of new business.
 ---
 
 Adverse times can present opportunities. Harnessed correctly, they can boost entrepreneurship and the creation of new business. The state in which we are all living, confined to small spaces, restrained from leisure, will spark the imagination. Also, with rising unemployment people will be encouraged to create their job. There can be a positive outcome to trying times. We have seen manifestos for building, suggesting that the best way to prevent a new pandemic is by building a solution to fight it. The most exciting piece was probably Marc Andersen's article [It's Time to Build](https://a16z.com/2020/04/18/its-time-to-build).
