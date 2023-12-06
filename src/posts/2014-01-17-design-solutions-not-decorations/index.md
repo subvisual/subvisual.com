@@ -1,9 +1,16 @@
 ---
-path: /25-design-solutions-not-decorations/
-title: "Design solutions, not decorations"
+highlight: false
+path: 25-design-solutions-not-decorations
+title: Design solutions, not decorations
+categories:
+  - product
+  - design
 author: joao-ferreira
 date: 2014-01-17
 cover: cover.jpg
+intro: Design is not about creating something for your viewing pleasure. It’s
+  about the challenge of solving a problem, something that doesn’t quite work or
+  just feels ‘wrong’.
 tags:
   - design
 ---
