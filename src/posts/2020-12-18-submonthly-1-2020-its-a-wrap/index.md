@@ -1,13 +1,16 @@
 ---
-path: /submonthy-1-2020-its-a-wrap
+highlight: false
+path: submonthy-1-2020-its-a-wrap
 title: "SubMonthly #1 - 2020: it's a wrap!"
+categories:
+  - inside-subvisual
 author: subvisual
 date: 2020-12-18
 seoImage: ./seo.png
+intro: |
+  2020 ... quite a year, right?
 tags:
   - community
-intro: >
-  2020 ... quite a year, right?
 ---
 
 So, 2020... quite a year, right? Somehow it feels like ages but we're writing
