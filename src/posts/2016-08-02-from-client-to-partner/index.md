@@ -1,12 +1,17 @@
 ---
-path: /91-from-client-to-partner/
-title: "From Client to Partner"
+highlight: false
+path: 91-from-client-to-partner
+title: From Client to Partner
+categories:
+  - inside-subvisual
 author: joao-ferreira
 date: 2016-08-02
 cover: cover.jpg
+intro: Starting a fresh, new project is a wonderful feeling. It is immaculate,
+  filled with ambitious expectations, with an endless world of exciting
+  possibilities that tingle our creative brains.
 tags:
   - general
-intro: "Starting a fresh, new project is a wonderful feeling. It is immaculate, filled with ambitious expectations, with an endless world of exciting possibilities that tingle our creative brains."
 ---
 
 Starting a fresh, new project is a wonderful feeling. It is immaculate, filled with ambitious expectations, with an endless world of exciting possibilities that tingle our creative brains. 
