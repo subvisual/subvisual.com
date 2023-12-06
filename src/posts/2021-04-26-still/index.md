@@ -1,13 +1,16 @@
 ---
-path: /announcing-still
-title: "Still building static websites in Elixir"
+highlight: false
+path: announcing-still
+title: Still building static websites in Elixir
+categories:
+  - engineering
 author: gabriel-poca
-seoImage: ./seo.jpeg
 date: 2021-04-26
+seoImage: ./seo.jpeg
+intro: |
+  We are announcing Still, a new tools to build static sites in Elixr.
 tags:
   - community
-intro: >
-  We are announcing Still, a new tools to build static sites in Elixr.
 ---
 
 You know the saying: _You don't get to 500 million users without making a few static sites_.
