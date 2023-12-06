@@ -1,11 +1,16 @@
 ---
-path: /141-summer-camp-2018/
-title: "Subvisual's Summer Camp"
+highlight: false
+path: 141-summer-camp-2018
+title: Subvisual's Summer Camp
+categories:
+  - academy
 author: helena-muniz
 date: 2018-06-01
+intro: At Subvisual, everyday is a day to learn something new. Everyday is an
+  intense experience. Everyday is a day for exploring a new topic, a new
+  subject, a new idea.
 tags:
   - community
-intro: "At Subvisual, everyday is a day to learn something new. Everyday is an intense experience. Everyday is a day for exploring a new topic, a new subject, a new idea."
 ---
 
 At Subvisual, everyday is a day to learn something new. Everyday is an intense experience. Everyday is a day for exploring a new topic, a new subject, a new idea. Therefore, and because we believe in giving back by sharing, we are announcing the return of our Summer Camp!
