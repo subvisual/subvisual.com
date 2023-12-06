@@ -1,11 +1,17 @@
 ---
-path: /28-designer-s-secret-sauce/
-title: "Designer's secret sauce"
+highlight: false
+path: 28-designer-s-secret-sauce
+title: Designer's secret sauce
+categories:
+  - design
+  - product
 author: joao-ferreira
 date: 2014-02-11
+intro: "When you ask someone about the main ingredient of a good design, most
+  people will probably roam around  concepts such as usability, functionality,
+  cleanliness or the one that get’s thrown around most often: simplicity."
 tags:
   - design
-intro: "When you ask someone about the main ingredient of a good design, most people will probably roam around  concepts such as usability, functionality, cleanliness or the one that get’s thrown around most often: simplicity."
 ---
 
 When you ask someone about the main ingredient of a good design, most people will probably roam around  concepts such as usability, functionality, cleanliness or the one that get’s thrown around most often: simplicity.
