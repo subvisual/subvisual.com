@@ -1,12 +1,18 @@
 ---
-path: /116-subvisual-weekly-14/
+highlight: false
+path: 116-subvisual-weekly-14
 title: "Subvisual Weekly #14"
+categories:
+  - inside-subvisual
 author: pedro-costa
 date: 2016-11-08
 cover: cover.jpg
+intro: We've all been there. We spend days, maybe weeks, planning something. We
+  gather all the information and devise the ideal solution for that particular
+  problem. But something happens, and our solution is no longer viable. It no
+  longer solves the problem. The question now is, what's your backup plan?
 tags:
   - general
-intro: "We've all been there. We spend days, maybe weeks, planning something. We gather all the information and devise the ideal solution for that particular problem. But something happens, and our solution is no longer viable. It no longer solves the problem. The question now is, what's your backup plan?"
 ---
 
 We've all been there. We spend days, maybe weeks, planning something. We gather all the information and devise the ideal solution for that particular problem. But something happens, and our solution is no longer viable. It no longer solves the problem. The question now is, what's your backup plan?
