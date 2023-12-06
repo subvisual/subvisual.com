@@ -1,17 +1,20 @@
 ---
-path: /large-scale-in-a-rush-utrust-ico
+highlight: false
+path: large-scale-in-a-rush-utrust-ico
 title: "Large-scale in a rush: The Utrust ICO"
+categories:
+  - engineering
 author: miguel-palhas
-seoImage: ./seo.png
 date: 2021-04-30
+seoImage: ./seo.png
+intro: >
+  This is the story of how we ended up with an ambitious time-frame to launch a
+  platform, of the decisions we made along the way, and fortunately, of how it
+  all turned out really well.
 tags:
   - general
   - elixir
   - blockchain
-intro: >
-    This is the story of how we ended up with an ambitious time-frame to launch
-    a platform, of the decisions we made along the way, and fortunately, of how it
-    all turned out really well.
 ---
 
 This is the story of how we ended up with an unrealistic time-frame to launch
