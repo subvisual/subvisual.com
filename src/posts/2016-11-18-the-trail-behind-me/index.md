@@ -1,12 +1,20 @@
 ---
-path: /117-the-trail-behind-me/
-title: "The Trail Behind Me"
+highlight: false
+path: 117-the-trail-behind-me
+title: The Trail Behind Me
+categories:
+  - inside-subvisual
 author: pedro-costa
 date: 2016-11-18
 cover: cover.jpg
+intro: It has already been a year since my first day at Subvisual. I was no
+  stranger to working with this team then. I made a point of joining the
+  RubyConf Portugal organisation team ever since the idea first came up and I've
+  been involved in all the meetups and activities that I could. Nonetheless, I
+  thought a recap of the events, both those that led me here and those since
+  I've been here, would be a fit way to celebrate the achievement.
 tags:
   - general
-intro: "It has already been a year since my first day at Subvisual. I was no stranger to working with this team then. I made a point of joining the RubyConf Portugal organisation team ever since the idea first came up and I've been involved in all the meetups and activities that I could. Nonetheless, I thought a recap of the events, both those that led me here and those since I've been here, would be a fit way to celebrate the achievement."
 ---
 
 It has already been a year since my first day at Subvisual. I was no stranger to working with this team then. I made a point of joining the RubyConf Portugal organisation team ever since the idea first came up and I've been involved in all the meetups and activities that I could. Nonetheless, I thought a recap of the events, both those that led me here and those since I've been here, would be a fit way to celebrate the achievement.
