@@ -1,13 +1,17 @@
 ---
-path: /vim-elixir-ide
+highlight: false
+path: vim-elixir-ide
 title: Vim as an Elixir IDE
+categories:
+  - engineering
 author: miguel-palhas
 date: 2020-07-17
+intro: I would like to talk about how to turn vim into an IDE, with some special
+  focus towards Elixir
 tags:
   - development
   - elixir
   - vim
-intro: "I would like to talk about how to turn vim into an IDE, with some special focus towards Elixir"
 ---
 
 [last-post]: https://subvisual.com/blog/posts/133-super-powered-vim-part-i-projections/
