@@ -1,12 +1,21 @@
 ---
-path: /113-a-rollercoaster-called-mirror-conf/
-title: "A rollercoaster called Mirror Conf"
+highlight: false
+path: 113-a-rollercoaster-called-mirror-conf
+title: A rollercoaster called Mirror Conf
+categories:
+  - inside-subvisual
 author: joao-ferreira
 date: 2016-10-17
 cover: cover.jpg
+intro: Imagine you decided to organize an international  conference starting 7
+  months from now. If you've ever been involved in organizing something like
+  this, you know what I'm talking about. Going through all the bureaucracies and
+  logistics, in a race against time.  Imagine you'd optimistically planned for
+  around 200 attendees and you had only sold around 50 tickets about a month and
+  a half away from the conference. Picture your budget being vibrant red with
+  those 50 tickets, and the pressure mounting.
 tags:
   - community
-intro: "Imagine you decided to organize an international  conference starting 7 months from now. If you've ever been involved in organizing something like this, you know what I'm talking about. Going through all the bureaucracies and logistics, in a race against time.  Imagine you'd optimistically planned for around 200 attendees and you had only sold around 50 tickets about a month and a half away from the conference. Picture your budget being vibrant red with those 50 tickets, and the pressure mounting."
 ---
 
 Imagine you decided to organize an international  conference starting 7 months from now. If you've ever been involved in organizing something like this, you know what I'm talking about. Going through all the bureaucracies and logistics, in a race against time.  Imagine you'd optimistically planned for around 200 attendees and you had only sold around 50 tickets about a month and a half away from the conference. Picture your budget being vibrant red with those 50 tickets, and the pressure mounting. 
