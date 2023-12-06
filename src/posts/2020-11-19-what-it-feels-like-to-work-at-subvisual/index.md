@@ -1,15 +1,18 @@
 ---
-path: /what-it-feels-like-to-work-at-subvisual/
+highlight: false
+path: what-it-feels-like-to-work-at-subvisual
 title: What it feels like to work at Subvisual
+categories:
+  - inside-subvisual
 author: laura-esteves
 date: 2020-11-19
 seoImage: ./seo.png
-tags:
-  - general
 intro: >
   This is a blog post about my personal experience where I share how it feels
   like to work at Subvisual. Maybe it will inspire you to be an agent of change
   in your organization.
+tags:
+  - general
 ---
 
 At Subvisual, we've been working to become a *[Calm Company]*. This concept was
