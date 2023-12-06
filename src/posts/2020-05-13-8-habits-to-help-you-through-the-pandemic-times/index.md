@@ -1,6 +1,9 @@
 ---
-path: /8-habits-to-help-you-through-the-pandemic-times/
+highlight: false
+path: 8-habits-to-help-you-through-the-pandemic-times
 title: 8 Habits To Help You Through The Pandemic Times
+categories:
+  - inside-subvisual
 author: laura-esteves
 date: 2020-05-13
 intro: >
