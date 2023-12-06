@@ -1,12 +1,17 @@
 ---
-path: /59-why-subvisual/
-title: "Why Subvisual?"
+highlight: false
+path: 59-why-subvisual
+title: Why Subvisual?
+categories:
+  - inside-subvisual
 author: joao-ferreira
 date: 2015-07-06
 cover: cover.jpg
+intro: Rebranding our company was our biggest challenge yet.  Figuring out how
+  to convey our values and ambitions through a new brand while honouring our
+  roots was frightening.
 tags:
   - design
-intro: "Rebranding our company was our biggest challenge yet.  Figuring out how to convey our values and ambitions through a new brand while honouring our roots was frightening."
 ---
 
 Rebranding our company was our biggest challenge yet.  Figuring out how to convey our values and ambitions through a new brand while honouring our roots was frightening.
