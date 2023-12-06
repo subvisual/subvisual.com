@@ -1,12 +1,18 @@
 ---
-path: /106-weekly-8/
+highlight: false
+path: 106-weekly-8
 title: "Weekly #8"
+categories:
+  - inside-subvisual
 author: gabriel-poca
 date: 2016-09-13
 cover: cover.jpg
+intro: "There's just one thing I need to be ok: alone time. Being by myself is
+  how I recharge and find the motivation to keep going. Knowing this, just
+  imagine how sweet it sounded when I was invited to go to the UK to work with a
+  client at his office. It happened last week, and it was music to my ears."
 tags:
   - general
-intro: "There's just one thing I need to be ok: alone time. Being by myself is how I recharge and find the motivation to keep going. Knowing this, just imagine how sweet it sounded when I was invited to go to the UK to work with a client at his office. It happened last week, and it was music to my ears."
 ---
 
 There's just one thing I need to be ok: alone time. Being by myself is how I recharge and find the motivation to keep going. Knowing this, just imagine how sweet it sounded when I was invited to go to the UK to work with a client at his office. It happened last week, and it was music to my ears.
