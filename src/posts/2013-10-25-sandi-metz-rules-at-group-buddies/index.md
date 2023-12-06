@@ -1,15 +1,18 @@
 ---
-path: /12-sandi-metz-rules-at-group-buddies/
-title: "Sandi Metz rules at Group Buddies"
+highlight: false
+path: 12-sandi-metz-rules-at-group-buddies
+title: Sandi Metz rules at Group Buddies
+categories:
+  - engineering
 author: luis-zamith
 date: 2013-10-25
-tags:
-  - development
 intro: >
   A lot has been said in the past months, especially in the Ruby community,
-  about the "Sandi Metz rules for developers", so the purpose of this article
-  is not as much to explain them as it is to show how we apply them here, at
-  Group Buddies.
+  about the "Sandi Metz rules for developers", so the purpose of this article is
+  not as much to explain them as it is to show how we apply them here, at Group
+  Buddies.
+tags:
+  - development
 ---
 
 A lot has been said in the past months, especially in the Ruby community, about the [Sandi Metz rules for developers](https://robots.thoughtbot.com/post/50655960596/sandi-metz-rules-for-developers), so the purpose of this article is not as much to explain them as it is to show how we apply them here, at Group Buddies.
