@@ -1,16 +1,19 @@
 ---
-path: /elixir-for-startups/
+highlight: false
+path: elixir-for-startups
 title: Elixir for Startups
+categories:
+  - engineering
 author: subvisual
 date: 2020-12-17
 seoImage: ./seo.png
+intro: >
+  We believe that Elixir is more than capable of providing the same agility as
+  Ruby for new teams, while also laying the foundation for a highly scalable
+  system.
 tags:
   - development
   - elixir
-intro: >
-  We believe that Elixir is more than capable of providing the same agility
-  as Ruby for new teams, while also laying the foundation for a highly scalable
-  system.
 ---
 
 We started out as a consultancy company, working mainly with [Ruby on
