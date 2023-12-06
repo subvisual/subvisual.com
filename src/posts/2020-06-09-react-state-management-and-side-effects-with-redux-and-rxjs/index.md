@@ -1,9 +1,14 @@
 ---
-path: /react-state-management-and-side-effects-with-redux-and-rxjs/
+highlight: false
+path: react-state-management-and-side-effects-with-redux-and-rxjs
 title: React state management and side-effects with Redux and RxJS
+categories:
+  - engineering
 author: gabriel-poca
 date: 2020-06-09
-intro: Over the years I worked on many front-end projects. I don't always enjoy it, but I've found some libraries that make it more pleasant. One of those libraries is RxJS.
+intro: Over the years I worked on many front-end projects. I don't always enjoy
+  it, but I've found some libraries that make it more pleasant. One of those
+  libraries is RxJS.
 ---
 
 In React, state management can take many shapes. I remember when the [Flux architecture](https://facebook.github.io/flux/) was the hot new thing. Eventually Redux became the standard, but new libraries are published all the time, especially when we get React APIs that fundamentally change how we build applications. React Hooks are the most recent example of that, and I believe Redux adapted itself nicely to it.
