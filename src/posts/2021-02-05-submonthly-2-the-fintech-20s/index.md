@@ -1,14 +1,17 @@
 ---
-path: /submonthy-2-the-fintech-20s
+highlight: false
+path: submonthy-2-the-fintech-20s
 title: "SubMonthly #2 - The Fintech 20s"
+categories:
+  - inside-subvisual
 author: subvisual
 date: 2021-02-05
 seoImage: ./seo.png
-tags:
-  - community
 intro: >
   With the new 20s just starting, it's time to look at the future trends. The
   Fintech world is definitely booming and we're sharing some insights about it.
+tags:
+  - community
 ---
 
 Happy 2021, everyone! 🥳 As a new year unfolds, and with it, a new decade
