@@ -1,14 +1,18 @@
 ---
-path: /137-tutorial-deploying-elixir-applications-with-docker-and-digital-ocean/
+highlight: false
+path: 137-tutorial-deploying-elixir-applications-with-docker-and-digital-ocean
 title: "Tutorial: Deploying Elixir applications with Docker and Digital Ocean"
+categories:
+  - engineering
 author: miguel-palhas
 date: 2017-05-24
 cover: cover.jpg
+intro: "While Elixir is becoming a popular language for web development, there
+  is at least one topic that I still find lacking: Deploys."
 tags:
   - elixir
   - docker
   - development
-intro: "While Elixir is becoming a popular language for web development, there is at least one topic that I still find lacking: Deploys."
 ---
 
 While Elixir is becoming a popular language for web development, there is at least one topic that I still find lacking: Deploys.
