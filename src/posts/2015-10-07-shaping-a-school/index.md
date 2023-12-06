@@ -1,13 +1,18 @@
 ---
-path: /65-shaping-a-school/
-title: "Shaping a School"
+highlight: false
+path: 65-shaping-a-school
+title: Shaping a School
+categories:
+  - academy
 author: francisco-baila
 date: 2015-10-07
 cover: cover.jpg
+intro: The new edition of Creators School had unprecedented ambitions which
+  required a profound rebrand. Before I get into details about the rebrand, let
+  me introduce you briefly to the project.
 tags:
   - design
   - community
-intro: "The new edition of Creators School had unprecedented ambitions which required a profound rebrand. Before I get into details about the rebrand, let me introduce you briefly to the project."
 ---
 
 The new edition of Creators School had unprecedented ambitions which required a profound rebrand. Before I get into details about the rebrand, let me introduce you briefly to the project. 
