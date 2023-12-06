@@ -1,16 +1,19 @@
 ---
-path: /70-life-after-apprenticeship/
-title: "Life After Apprenticeship"
+highlight: false
+path: 70-life-after-apprenticeship
+title: Life After Apprenticeship
+categories:
+  - academy
 author: francisco-baila
 date: 2016-02-25
 cover: cover.jpg
-tags:
-  - design
 intro: >
   When I was finishing my apprenticeship here at Subvisual I wrote a blog post
   about how it went and especially about what I learned during that period. It
   has been quite some time now, and I felt it was the right moment to write
   about how this experience has been.
+tags:
+  - design
 ---
 
 When I was finishing my apprenticeship here at Subvisual I wrote a [blog post](https://subvisual.co/blog/posts/54-the-pursuit-of-craftsmanship) about how it went and especially about what I learned during that period. It has been quite some time now, and I felt it was the right moment to write about how this experience has been.
