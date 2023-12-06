@@ -1,16 +1,19 @@
 ---
-path: /84-launching-subvisual-s-summer-camp/
-title: "Launching Subvisual's Summer Camp"
+highlight: false
+path: 84-launching-subvisual-s-summer-camp
+title: Launching Subvisual's Summer Camp
+categories:
+  - academy
 author: roberto-machado
 date: 2016-06-01
 cover: cover.jpg
-tags:
-  - general
 intro: >
   Summer is coming, and most of us are looking for things to do during the
-  summer when we have way too much free time. That's why we decided to create
-  an opportunity for you to spend that time investing in yourself by learning
-  and practicing the craft of software design and development.
+  summer when we have way too much free time. That's why we decided to create an
+  opportunity for you to spend that time investing in yourself by learning and
+  practicing the craft of software design and development.
+tags:
+  - general
 ---
 
 Summer is coming, and most of us are looking for things to do during the summer
