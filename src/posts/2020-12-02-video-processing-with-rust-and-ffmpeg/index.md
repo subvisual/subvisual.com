@@ -1,15 +1,18 @@
 ---
-path: /real-time-video-processing-with-rust-ffmpeg-opencv/
+highlight: false
+path: real-time-video-processing-with-rust-ffmpeg-opencv
 title: Real-time video processing with Rust, FFmpeg and OpenCV
+categories:
+  - engineering
 author: miguel-palhas
 date: 2020-12-02
 seoImage: ./seo.png
+intro: >
+  I fell into a rabbit hole. It all started with quarantine, and too many Zoom
+  calls.
 tags:
   - development
   - rust
-intro: >
-  I fell into a rabbit hole. It all started with quarantine, and too many
-  Zoom calls.
 ---
 
 [rust]: https://www.rust-lang.org
