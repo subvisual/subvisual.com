@@ -1,13 +1,18 @@
 ---
-path: /102-the-pain-of-testing-with-3rd-party-integrations/
-title: "The pain of testing with 3rd party integrations"
+highlight: false
+path: 102-the-pain-of-testing-with-3rd-party-integrations
+title: The pain of testing with 3rd party integrations
+categories:
+  - engineering
 author: miguel-palhas
 date: 2017-03-07
+intro: Whenever a web app has integrations with external APIs (which, let's
+  face, happens most of the time nowadays), there's usually an increased
+  complexity about it when it comes to testing.
 tags:
   - development
   - rspec
   - ruby
-intro: "Whenever a web app has integrations with external APIs (which, let's face, happens most of the time nowadays), there's usually an increased complexity about it when it comes to testing."
 ---
 
 Whenever a web app has integrations with external APIs (which, let's face, happens most of the time nowadays), there's usually an increased complexity about it when it comes to testing.
