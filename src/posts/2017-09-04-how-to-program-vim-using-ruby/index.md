@@ -1,12 +1,15 @@
 ---
-path: /139-how-to-program-vim-using-ruby/
-title: "How to program Vim using Ruby"
+highlight: false
+path: 139-how-to-program-vim-using-ruby
+title: How to program Vim using Ruby
+categories:
+  - engineering
 author: gabriel-poca
 date: 2017-09-04
 cover: cover.jpg
+intro: In this article, I hope to demonstrate how you can program Vim using Ruby.
 tags:
   - development
-intro: "In this article, I hope to demonstrate how you can program Vim using Ruby."
 ---
 
 I recently started working in an Angular project where I'm not able to use [vim-projectionist](https://github.com/tpope/vim-projectionist) to navigate the code. vim-projectionist is awesome, and I've grown used to it. Searching for files by name, in a code base with hundreds of files, started to become painful and I needed an alternative. Because I couldn't find a plug-in that satisfied my needs, I decided to do it myself. In this article, I hope to demonstrate how you can program Vim using Ruby.
