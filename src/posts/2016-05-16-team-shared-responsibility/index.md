@@ -1,9 +1,17 @@
 ---
-path: /82-team-shared-responsibility/
-title: "Team-shared Responsibility"
+highlight: false
+path: 82-team-shared-responsibility
+title: Team-shared Responsibility
+categories:
+  - inside-subvisual
+  - company-building
 author: joao-ferreira
 date: 2016-05-16
 cover: cover.jpg
+intro: A great product is the outcome of an excellent partnership between great
+  designers and great developers. If you're lucky enough to work with great
+  designers and developers but you're not making great products, you're probably
+  lacking the "excellent partnership" part.
 tags:
   - design
   - general
