@@ -1,14 +1,16 @@
 ---
-path: /2020-06-06-fixing-too-many-open-files
+highlight: false
+path: 2020-06-06-fixing-too-many-open-files
 title: Fixing Too Many Open Files
+categories:
+  - engineering
 author: pedro-costa
 date: 2020-06-19
+intro: >
+  Your production environment is yelling out messages with "Too many open files"
+  and nothing worked so far. Let me show you how to bump those limits up.
 tags:
   - devops
-intro: >
-  Your production environment is yelling out messages with "Too many open
-  files" and nothing worked so far. Let me show you how to bump those limits
-  up.
 ---
 
 
