@@ -1,14 +1,17 @@
 ---
-path: /124-announcing-mirrorconf-2017-the-ultimate-digital-paradise/
+highlight: false
+path: 124-announcing-mirrorconf-2017-the-ultimate-digital-paradise
 title: "Announcing MirrorConf 2017: the ultimate digital paradise"
+categories:
+  - inside-subvisual
 author: roberto-machado
 date: 2017-02-27
 cover: cover.jpg
-tags:
-  - community
 intro: >
   We're ready to announce that the 2nd edition of MirrorConf is happening on
   October 12-13!
+tags:
+  - community
 ---
 
 We’re ready to announce that the [2nd edition of MirrorConf](http://mirrorconf.com/) is happening on October 12-13!
