@@ -1,14 +1,17 @@
 ---
-path: /62-perfecting-a-css-3d-animation/
+highlight: false
+path: 62-perfecting-a-css-3d-animation
 title: "Perfecting a CSS 3D animation "
+categories:
+  - engineering
 author: miguel-palhas
 date: 2015-07-17
+intro: >
+  With recent advances in front-end technologies, front end developers have been
+  going crazy, pushing CSS to its limits and doing all sorts of beautiful
+  animations. Seriously, there are some crazy things out there.
 tags:
   - development
-intro: >
-  With recent advances in front-end technologies, front end developers have
-  been going crazy, pushing CSS to its limits and doing all sorts of beautiful
-  animations. Seriously, there are some crazy things out there.
 ---
 
 With recent advances in front end technologies, front end developers have been going crazy, pushing CSS to its limits and doing all sorts of [beautiful animations](http://codepen.io/azevedo-252/pen/rVvMXX). Seriously, there are some [crazy things](http://codepen.io/fbrz/pen/whxbF) out there.
