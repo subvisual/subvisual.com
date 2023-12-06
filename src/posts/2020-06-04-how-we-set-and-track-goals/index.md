@@ -1,13 +1,15 @@
 ---
-path: /how-we-set-and-track-goals/
+highlight: false
+path: how-we-set-and-track-goals
 title: How we set and track goals
+categories:
+  - inside-subvisual
 author: laura-esteves
 date: 2020-06-04
 intro: >
-  Have an inside glance at our goal setting and tracking process, and some
-  extra insights about how we define our goals at the beginning of each year.
-  This is the first of a series of blog posts about how we work our goals at
-  Subvisual.
+  Have an inside glance at our goal setting and tracking process, and some extra
+  insights about how we define our goals at the beginning of each year. This is
+  the first of a series of blog posts about how we work our goals at Subvisual.
 ---
 
 This is the first of a series of blog posts about how we set and track goals at
