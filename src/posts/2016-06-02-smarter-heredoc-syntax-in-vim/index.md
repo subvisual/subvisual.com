@@ -1,13 +1,16 @@
 ---
-path: /87-smarter-heredoc-syntax-in-vim/
-title: "Smarter heredoc syntax in vim"
+highlight: false
+path: 87-smarter-heredoc-syntax-in-vim
+title: Smarter heredoc syntax in vim
+categories:
+  - engineering
 author: miguel-palhas
 date: 2016-06-02
+intro: >
+  I have lately run into a problem with my editor of choice, Vim, and the syntax
+  highlighting in Ruby files.
 tags:
   - development
-intro: >
-  I have lately run into a problem with my editor of choice, Vim, and the
-  syntax highlighting in Ruby files.
 ---
 
 I have lately run into a problem with my editor of choice, vim (well, actually, it's [neovim](https://github.com/neovim/neovim)), and the syntax highlighting in Ruby files.
