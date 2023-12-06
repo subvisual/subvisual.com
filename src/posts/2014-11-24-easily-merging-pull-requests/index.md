@@ -1,11 +1,15 @@
 ---
-path: /44-easily-merging-pull-requests/
-title: "Easily Merging Pull Requests"
+highlight: false
+path: 44-easily-merging-pull-requests
+title: Easily Merging Pull Requests
+categories:
+  - engineering
 author: miguel-palhas
 date: 2014-11-24
+intro: I try to automate all the annoying repetitive things I can. And not long
+  ago, merging Pull Request was certainly on top of my list.
 tags:
   - development
-intro: "I try to automate all the annoying repetitive things I can. And not long ago, merging Pull Request was certainly on top of my list."
 ---
 
 I try to automate all the annoying repetitive things I can. And not long ago, merging Pull Request was certainly on top of my list.
