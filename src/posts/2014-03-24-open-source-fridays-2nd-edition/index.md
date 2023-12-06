@@ -1,12 +1,15 @@
 ---
-path: /30-open-source-fridays-2nd-edition/
-title: "Open Source Fridays - 2nd Edition"
+highlight: false
+path: 30-open-source-fridays-2nd-edition
+title: Open Source Fridays - 2nd Edition
+categories:
+  - inside-subvisual
 author: luis-zamith
 date: 2014-03-24
+intro: |
+  On the second edition of the Open Source Fridays, here's what we've done.
 tags:
   - development
-intro: >
-  On the second edition of the Open Source Fridays, here's what we've done.
 ---
 
 On the second edition of the Open Source Fridays, here's what we've done:
