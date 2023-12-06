@@ -1,15 +1,18 @@
 ---
-path: /21-a-toast-to-2013-welcome-2014/
-title: "A Toast To 2013! Welcome 2014"
+highlight: false
+path: 21-a-toast-to-2013-welcome-2014
+title: A Toast To 2013! Welcome 2014
+categories:
+  - inside-subvisual
 author: roberto-machado
 date: 2014-01-03
-tags:
-  - general
 intro: >
   This was the first year of Group Buddies.  One whole year creating web
   applications, dealing with clients, teaching people and having loads of fun
   while doing it. At the time of making a balance, I have to say: this was a
   great year for us.
+tags:
+  - general
 ---
 
 This was the first year of [Group Buddies](https://www.groupbuddies.com/). One whole year creating web applications, dealing with clients, teaching people and having loads of fun while doing it. At the time of making a balance, I have to say: this was a great year for us. I already wrote about how we got here in ["This is our story"](https://blog.groupbuddies.com/posts/8-this-is-our-story). Let me now embrace this opportunity to tell you what we've been through in 2013.
