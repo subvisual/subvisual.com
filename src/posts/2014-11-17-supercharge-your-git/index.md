@@ -1,8 +1,19 @@
 ---
-path: /43-supercharge-your-git/
-title: "Supercharge your git"
+highlight: false
+path: 43-supercharge-your-git
+title: Supercharge your git
+categories:
+  - engineering
 author: luis-zamith
 date: 2014-11-17
+intro: >-
+  Git is so awesome and packs so much power that I could hardly fit it all in a
+
+  blog post (or 100 for that matter). What this post will talk about though, are a
+
+  couple of ways to extend your git for it to better serve you on your everyday
+
+  tasks.
 tags:
   - development
 ---
