@@ -1,11 +1,17 @@
 ---
-path: /35-dipping-the-toes-in-phonegap/
-title: "Dipping the toes in Phonegap"
+highlight: false
+path: 35-dipping-the-toes-in-phonegap
+title: Dipping the toes in Phonegap
+categories:
+  - engineering
 author: gabriel-poca
 date: 2014-05-21
+intro: Like most developers I know, there is a list of things I want to learn
+  and experiment with. Mobile development was on the top of that list until last
+  December, when we took a day off for an internal hackathon and some of us got
+  to work on a mobile app.
 tags:
   - development
-intro: "Like most developers I know, there is a list of things I want to learn and experiment with. Mobile development was on the top of that list until last December, when we took a day off for an internal hackathon and some of us got to work on a mobile app."
 ---
 
 Like most developers I know, there is a list of things I want to learn and experiment with. Mobile development was on the top of that list until last December, when we took a day off for an internal hackathon and some of us got to work on a mobile app.
