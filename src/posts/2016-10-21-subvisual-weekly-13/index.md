@@ -1,14 +1,17 @@
 ---
-path: /115-subvisual-weekly-13/
+highlight: false
+path: 115-subvisual-weekly-13
 title: "Subvisual Weekly #13"
+categories:
+  - inside-subvisual
 author: miguel-palhas
 date: 2016-10-21
 cover: cover.jpg
-tags:
-  - general
 intro: >
   Have you ever found yourself working alone for what appears to be too damn
   long?
+tags:
+  - general
 ---
 
 Have you ever found yourself working alone for what appears to be **too damn long** ?
