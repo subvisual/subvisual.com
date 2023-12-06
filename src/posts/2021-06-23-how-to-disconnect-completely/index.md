@@ -1,16 +1,19 @@
 ---
-path: /submonthly-5-how-to-disconnect-completely
+highlight: false
+path: submonthly-5-how-to-disconnect-completely
 title: "SubMonthly #5 - How to disconnect completely"
+categories:
+  - inside-subvisual
 author: subvisual
 date: 2021-06-23
 cover: ./cover.png
 seoImage: ./cover.png
-tags:
-  - community
 intro: >
   Summer is officially here and with it come longer days, warmer weather and
-  overall more things to do. Summer is always a good time to take some days
-  off, but this year this has become more important than ever.
+  overall more things to do. Summer is always a good time to take some days off,
+  but this year this has become more important than ever.
+tags:
+  - community
 ---
 
 
