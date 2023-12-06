@@ -1,14 +1,21 @@
 ---
-path: /submonthly-6-summer-camp
+highlight: false
+path: submonthly-6-summer-camp
 title: "SubMonthly #6 - A Tale of Subvisual's Summer Camp"
+categories:
+  - inside-subvisual
+  - academy
 author: subvisual
 date: 2021-09-22
 cover: ./cover.png
 seoImage: ./cover.png
+intro: >
+  Is it just us or do you also feel like this summer has gone by in the blink of
+  an eye? It’s late August already, can you believe it? Time flew by for our
+  campers who have been actively engaging in all their Subvisual Summer Camp
+  activities.  
 tags:
   - community
-intro: >
-  Is it just us or do you also feel like this summer has gone by in the blink of an eye? It’s late August already, can you believe it? Time flew by for our campers who have been actively engaging in all their Subvisual Summer Camp activities.  
 ---
 
 Is it just us or do you also feel like this summer has gone by in the blink of an eye? It’s late August already, can you believe it? Time flew by for our campers who have been actively engaging in all their Subvisual Summer Camp activities.
