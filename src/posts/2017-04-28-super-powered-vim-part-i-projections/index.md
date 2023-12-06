@@ -1,14 +1,17 @@
 ---
-path: /133-super-powered-vim-part-i-projections/
+highlight: false
+path: 133-super-powered-vim-part-i-projections
 title: "Super-powered Vim, part I: Projections"
+categories:
+  - engineering
 author: miguel-palhas
 date: 2017-04-28
-tags:
-  - development
-  - vim
 intro: >
   One of my main focus of the past few months has been my productivity with my
   text editor.
+tags:
+  - development
+  - vim
 ---
 
 One of my main focus of the past few months has been my productivity with my text editor.
