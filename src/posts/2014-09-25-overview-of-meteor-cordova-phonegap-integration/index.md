@@ -1,13 +1,16 @@
 ---
-path: /42-overview-of-meteor-cordova-phonegap-integration/
-title: "Overview of Meteor Cordova - PhoneGap integration"
+highlight: false
+path: 42-overview-of-meteor-cordova-phonegap-integration
+title: Overview of Meteor Cordova - PhoneGap integration
+categories:
+  - engineering
 author: joao-justo
 date: 2014-09-25
-tags:
-  - development
 intro: >
   I recently started working on the second version of Tripl.it, a mobile app we
   built with PhoneGap.
+tags:
+  - development
 ---
 
 I recently started working on the second version of [Tripl.it](https://www.tripl.it/), a [mobile app](https://blog.groupbuddies.com/posts/35-dipping-the-toes-in-phonegap) we built with [PhoneGap](https://phonegap.com/). 
