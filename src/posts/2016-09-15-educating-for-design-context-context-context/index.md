@@ -1,13 +1,21 @@
 ---
-path: /107-educating-for-design-context-context-context/
+highlight: false
+path: 107-educating-for-design-context-context-context
 title: "Educating for design: Context, context, context"
+categories:
+  - design
 author: joao-ferreira
 date: 2016-09-15
 cover: cover.jpg
+intro: As designers, we get to learn new things every day. Most of them are
+  usually related to the way we discuss design with others, which tends to be a
+  bit chaotic most of the times. Although I'm far from being an expert in these
+  matters, I've come a long way since my fresh-out-of-college design years and
+  I'd like to share some of the little things that we can do/say/think to
+  communicate better with the rest of the team.
 tags:
   - design
   - general
-intro: "As designers, we get to learn new things every day. Most of them are usually related to the way we discuss design with others, which tends to be a bit chaotic most of the times. Although I'm far from being an expert in these matters, I've come a long way since my fresh-out-of-college design years and I'd like to share some of the little things that we can do/say/think to communicate better with the rest of the team."
 ---
 
 As designers, we get to learn new things every day. Most of them are usually related to the way we discuss design with others, which tends to be a bit chaotic most of the times. Although I'm far from being an expert in these matters, I've come a long way since my fresh-out-of-college design years and I'd like to share some of the little things that we can do/say/think to communicate better with the rest of the team.
