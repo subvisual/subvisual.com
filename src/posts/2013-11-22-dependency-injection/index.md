@@ -1,13 +1,16 @@
 ---
-path: /16-dependency-injection/
-title: "Dependency Injection"
+highlight: false
+path: 16-dependency-injection
+title: Dependency Injection
+categories:
+  - engineering
 author: luis-zamith
 date: 2013-11-22
-tags:
-  - development
 intro: >
   Imagine you have a class which gets XML data, parses it and then stores the
   parsed data on a database.
+tags:
+  - development
 ---
 
 Imagine you have a class which gets XML data, parses it and then stores the
