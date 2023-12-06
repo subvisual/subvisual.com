@@ -1,15 +1,18 @@
 ---
-path: /103-subvisual-weekly-6/
+highlight: false
+path: 103-subvisual-weekly-6
 title: "Subvisual Weekly #6"
+categories:
+  - inside-subvisual
 author: gabriel-poca
 date: 2016-08-29
 cover: cover.jpg
-tags:
-  - general
 intro: >
   Our new office is great. The team is growing, so the extra space and meeting
   rooms help maintain our sanity. We'll be hosting the next editions of BragaJS
   and BragaUX, so it's the perfect excuse for you to visit us and see it.
+tags:
+  - general
 ---
 
 Our new office is great. The team is growing, so the extra space and meeting rooms help maintain our sanity. We'll be hosting the next editions of [BragaJS][bragajs] and [BragaUX][bragaux], so it's the perfect excuse for you to visit us and see it.
