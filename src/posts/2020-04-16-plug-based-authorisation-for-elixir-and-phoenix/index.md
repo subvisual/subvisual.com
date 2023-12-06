@@ -1,16 +1,19 @@
 ---
-path: /147-plug-based-authorisation-for-elixir/
+highlight: false
+path: 147-plug-based-authorisation-for-elixir
 title: Plug-based authorisation for Elixir and Phoenix
+categories:
+  - engineering
 author: fernando-mendes
 date: 2020-04-16
+intro: >
+  A while ago I felt the shame of copying and pasting code around from projects.
+  Eventually, I decided to stop being lazy, extract it and make a hex package
+  out of it. This is story of that project and a walkthrough all the awesome
+  things it does, with very little code. Yay Elixir!
 tags:
   - development
   - elixir
-intro: >
-  A while ago I felt the shame of copying and pasting code around from projects.
-  Eventually, I decided to stop being lazy, extract it and make a hex
-  package out of it. This is story of that project and a walkthrough all the
-  awesome things it does, with very little code. Yay Elixir!
 ---
 
 Some years ago, most of us here at Subvisual got *really-perhaps-a-bit-too-much* into Elixir. Ever since then, whenever we are free to choose the technology to work with, we've pretty much been going Elixir all the way.
