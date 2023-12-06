@@ -1,11 +1,15 @@
 ---
-path: /got-an-idea-now-what/
-title: "Got an idea, now what?"
+highlight: false
+path: got-an-idea-now-what
+title: Got an idea, now what?
+categories:
+  - product
 author: luis-zamith
 date: 2020-06-29
+intro: Having an idea for a digital product might be the start of something
+  beautiful, but it has to be nourished
 tags:
   - development
-intro: Having an idea for a digital product might be the start of something beautiful, but it has to be nourished
 ---
 
 First of all let me say right out of the gate that ideas are overrated. Having a
