@@ -1,11 +1,17 @@
 ---
-path: /72-trying-to-stop-the-madness/
-title: "Trying to stop the madness"
+highlight: false
+path: 72-trying-to-stop-the-madness
+title: Trying to stop the madness
+categories:
+  - design
 author: francisco-baila
 date: 2016-09-28
+intro: Designers are responsible for a load of tasks during a project and most
+  of the times they juggle several projects at the same time. I struggled with
+  this at first, but with a note here and there, I was able to get things done
+  with only minor flaws once in awhile.
 tags:
   - design
-intro: "Designers are responsible for a load of tasks during a project and most of the times they juggle several projects at the same time. I struggled with this at first, but with a note here and there, I was able to get things done with only minor flaws once in awhile."
 ---
 
 Designers are responsible for a load of tasks during a project and most of the times they juggle several projects at the same time. I struggled with this at first, but with a note here and there, I was able to get things done with only minor flaws once in awhile.
