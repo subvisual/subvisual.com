@@ -1,16 +1,19 @@
 ---
-path: /unsucking-your-project-onboarding
+highlight: false
+path: unsucking-your-project-onboarding
 title: Unsucking your project onboarding
-date: 2020-08-21
+categories:
+  - engineering
 author: fernando-mendes
+date: 2020-08-21
 seoImage: ./seo.png
-tags:
-  - development
-  - devops
 intro: >
   So you have a new developer joining your project. And, as usual, everything
   changed in Javascript landscape since 37s ago. At Subvisual we have a system
   to handle this.
+tags:
+  - development
+  - devops
 ---
 
 So you have a new developer joining your project. And, as usual, everything
