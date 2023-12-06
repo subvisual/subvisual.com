@@ -1,11 +1,19 @@
 ---
-path: /53-a-better-reset-for-the-mobile-web/
-title: "A better reset for the mobile web"
+highlight: false
+path: 53-a-better-reset-for-the-mobile-web
+title: A better reset for the mobile web
+categories:
+  - engineering
 author: gabriel-poca
 date: 2015-04-09
+intro: Mobile web applications are expected to work differently from desktop
+  applications. They need to feel responsive to the user's touch. Having worked
+  on a couple of mobile web applications in the last year, I found that I always
+  start by changing the browser's default appearance and behaviour. This article
+  contains my setup to make a mobile web application feel more like a native
+  one.
 tags:
   - development
-intro: "Mobile web applications are expected to work differently from desktop applications. They need to feel responsive to the user's touch. Having worked on a couple of mobile web applications in the last year, I found that I always start by changing the browser's default appearance and behaviour. This article contains my setup to make a mobile web application feel more like a native one."
 ---
 
 Mobile web applications are expected to work differently from desktop applications. They need to feel responsive to the user's touch. Having worked on a couple of mobile web applications in the last year, I found that I always start by changing the browser's default appearance and behaviour. This article contains my setup to make a mobile web application feel more like a native one.
