@@ -1,15 +1,18 @@
 ---
-path: /76-ruby-bits-br-enumerators/
+highlight: false
+path: 76-ruby-bits-br-enumerators
 title: "Ruby Bits:  Enumerators"
+categories:
+  - engineering
 author: luis-zamith
 date: 2016-04-12
 cover: cover.jpg
-tags:
-  - development
 intro: >
   Welcome back to the world of `Enumerable` my friend. This time we will be
   looking at a somewhat hidden feature of most of its methods, they can be used
   without a block and have a return value that is itself an enumerator.
+tags:
+  - development
 ---
 
 Welcome back to the world of `Enumerable` my friend. As Rubyists we are used to
