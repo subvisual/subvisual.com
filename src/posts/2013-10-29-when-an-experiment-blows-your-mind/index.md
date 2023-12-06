@@ -1,13 +1,16 @@
 ---
-path: /13-when-an-experiment-blows-your-mind/
-title: "When an experiment blows your mind"
+highlight: false
+path: 13-when-an-experiment-blows-your-mind
+title: When an experiment blows your mind
+categories:
+  - academy
 author: roberto-machado
 date: 2013-10-29
-tags:
-  - community
 intro: >
   Creators School's first edition took place in September and I have to say, it
   was mind-blowing.
+tags:
+  - community
 ---
 
 [Creators School](https://cs.groupbuddies.com/)'s first edition took place in September and I have to say, it was mind-blowing.
