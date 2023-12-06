@@ -1,13 +1,19 @@
 ---
-path: /97-subvisual-weekly-3/
+highlight: false
+path: 97-subvisual-weekly-3
 title: "Subvisual Weekly #3"
+categories:
+  - inside-subvisual
 author: gabriel-poca
 date: 2016-08-08
 cover: cover.jpg
+intro: I'm lucky to have a friend who really knows how to bring people together.
+  He is the brains behind everything our group of friends does, whether it's a
+  Christmas dinner, a summer picnic, or a trip somewhere. We know that he makes
+  sure it happens.
 tags:
   - general
   - community
-intro: "I'm lucky to have a friend who really knows how to bring people together. He is the brains behind everything our group of friends does, whether it's a Christmas dinner, a summer picnic, or a trip somewhere. We know that he makes sure it happens."
 ---
 
 I'm lucky to have a friend who really knows how to bring people together. He is the brains behind everything our group of friends does, whether it's a Christmas dinner, a summer picnic, or a trip somewhere. We know that he makes sure it happens.
