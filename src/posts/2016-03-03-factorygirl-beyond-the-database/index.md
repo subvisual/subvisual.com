@@ -1,13 +1,16 @@
 ---
-path: /73-factorygirl-beyond-the-database/
-title: "FactoryGirl Beyond the Database"
+highlight: false
+path: 73-factorygirl-beyond-the-database
+title: FactoryGirl Beyond the Database
+categories:
+  - engineering
 author: miguel-palhas
 date: 2016-03-03
-tags:
-  - development
 intro: >
   I've been experimenting with FactoryGirl lately, particularly to deal with
   test data that's not necessarily tied to the database.
+tags:
+  - development
 ---
 
 I've been experimenting with [`factory_girl`](https://github.com/thoughtbot/factory_girl) lately, particularly to deal with test data that's not necessarily tied to the database. Did you know you can use it to instantiate any Ruby object, and not only `ActiveRecord` models?
