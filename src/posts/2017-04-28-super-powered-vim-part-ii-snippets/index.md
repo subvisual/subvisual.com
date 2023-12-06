@@ -1,8 +1,16 @@
 ---
-path: /134-super-powered-vim-part-ii-snippets/
+highlight: false
+path: 134-super-powered-vim-part-ii-snippets
 title: "Super-powered Vim, part II: Snippets"
+categories:
+  - engineering
 author: miguel-palhas
 date: 2017-04-28
+intro: >-
+  This post is a follow-up to Super-powered Vim, part I: Projections
+
+
+  Keeping the same line of thought of the previous post, about taking the effort out of the boring tasks that come with writing code, let's now talk about a simple yet powerful concept: snippets.
 tags:
   - development
   - vim
