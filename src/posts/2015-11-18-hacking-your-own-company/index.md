@@ -1,12 +1,15 @@
 ---
-path: /64-hacking-your-own-company/
-title: "Hacking your own company"
+highlight: false
+path: 64-hacking-your-own-company
+title: Hacking your own company
+categories:
+  - inside-subvisual
 author: joao-justo
 date: 2015-11-18
 cover: cover.jpg
+intro: I have a confession to make. A while ago I hacked my own company.
 tags:
   - development
-intro: "I have a confession to make. A while ago I hacked my own company."
 ---
 
 I have a confession to make. A while ago I hacked my own company.
