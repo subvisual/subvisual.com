@@ -1,15 +1,18 @@
 ---
-path: /63-deploying-a-crystal-application-to-heroku/
-title: "Deploying a Crystal application to Heroku"
+highlight: false
+path: 63-deploying-a-crystal-application-to-heroku
+title: Deploying a Crystal application to Heroku
+categories:
+  - engineering
 author: luis-zamith
 date: 2015-07-15
 cover: cover.jpg
+intro: >
+  Crystal is a typed, LLVM compiled language that reads (mostly) as Ruby. It's a
+  modern language that comes bundled with support for WebSockets, OAuth and
+  other niceties.
 tags:
   - development
-intro: >
-  Crystal is a typed, LLVM compiled language that reads (mostly) as Ruby. It's
-  a modern language that comes bundled with support for WebSockets, OAuth and
-  other niceties.
 ---
 
 [Crystal](http://crystal-lang.org/) is a typed, LLVM compiled language that
