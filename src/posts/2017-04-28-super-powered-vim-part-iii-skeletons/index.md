@@ -1,8 +1,20 @@
 ---
-path: /135-super-powered-vim-part-iii-skeletons/
+highlight: false
+path: 135-super-powered-vim-part-iii-skeletons
 title: "Super-powered Vim, part III: Skeletons"
+categories:
+  - engineering
 author: miguel-palhas
 date: 2017-04-28
+intro: >-
+  This post is the third of a three-part series. If you're interested, you can
+  start by checking out:
+
+  https://subvisual.co/blog/posts/133-super-powered-vim-part-i-projections 
+
+  and 
+
+  https://subvisual.co/blog/posts/134-super-powered-vim-part-ii-snippets.
 tags:
   - development
   - vim
