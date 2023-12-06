@@ -1,9 +1,16 @@
 ---
-path: /101-subvisual-weekly-5/
+highlight: false
+path: 101-subvisual-weekly-5
 title: "Subvisual Weekly #5"
+categories:
+  - inside-subvisual
 author: gabriel-poca
 date: 2016-08-22
 cover: cover.jpg
+intro: For this weekly, I want to recall how we first started doing code
+  reviews. We were young and striving to follow the great minds in this field.
+  So Miguel and I decided to revisit our old pull requests and read the
+  comments.
 tags:
   - development
   - general
