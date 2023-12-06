@@ -1,12 +1,18 @@
 ---
-path: /109-subvisual-weekly-9/
+highlight: false
+path: 109-subvisual-weekly-9
 title: "Subvisual Weekly #9"
+categories:
+  - inside-subvisual
 author: gabriel-poca
 date: 2016-09-20
 cover: cover.jpg
+intro: I can tell that something's off. Boxes are laying around on the floor,
+  unorganized. People show up at our door asking us to taste food. Phones are
+  ringing all day. And everyone is tense. Everyone but Laura; she's just pulling
+  her hair off.
 tags:
   - community
-intro: "I can tell that something's off. Boxes are laying around on the floor, unorganized. People show up at our door asking us to taste food. Phones are ringing all day. And everyone is tense. Everyone but Laura; she's just pulling her hair off."
 ---
 
 I can tell that something's off. Boxes are laying around on the floor, unorganized. People show up at our door asking us to taste food. Phones are ringing all day. And everyone is tense. Everyone but Laura; she's just pulling her hair off.
