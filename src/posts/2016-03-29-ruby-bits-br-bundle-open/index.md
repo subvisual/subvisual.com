@@ -1,18 +1,21 @@
 ---
-path: /75-ruby-bits-br-bundle-open/
+highlight: false
+path: 75-ruby-bits-br-bundle-open
 title: "Ruby Bits:  Bundle open"
+categories:
+  - engineering
 author: luis-zamith
 date: 2016-03-29
 cover: cover.jpg
+intro: >
+  If you've ever used Ruby you have probably used Bundler through it's command
+  line tool. There's quite a few things you can do with it. There is even a very
+  useful command which will open the code for a specified gem with an editor you
+  can also configure.
 tags:
   - ruby-bits
   - development
   - ruby
-intro: >
-  If you've ever used Ruby you have probably used Bundler through it's command
-  line tool. There's quite a few things you can do with it. There is even a
-  very useful command which will open the code for a specified gem with an
-  editor you can also configure.
 ---
 
 If you've ever used Ruby you have probably used `Bundler` through it's command
