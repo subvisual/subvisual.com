@@ -1,13 +1,17 @@
 ---
-path: /104-subvisual-weekly-7/
+highlight: false
+path: 104-subvisual-weekly-7
 title: "Subvisual Weekly #7"
+categories:
+  - inside-subvisual
 author: fernando-mendes
 date: 2016-09-05
 cover: cover.jpg
+intro: Another week, another weekly. For this edition, Gabriel asked me to talk
+  a bit about my thesis and share what I have been learning and doing so far.
 tags:
   - general
   - community
-intro: "Another week, another weekly. For this edition, Gabriel asked me to talk a bit about my thesis and share what I have been learning and doing so far."
 ---
 
 Another week, another weekly. For this edition, Gabriel asked me to talk a bit about my thesis and share what I have been learning and doing so far.
