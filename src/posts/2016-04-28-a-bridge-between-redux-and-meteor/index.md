@@ -1,13 +1,16 @@
 ---
-path: /79-a-bridge-between-redux-and-meteor/
-title: "A bridge between Redux and Meteor"
+highlight: false
+path: 79-a-bridge-between-redux-and-meteor
+title: A bridge between Redux and Meteor
+categories:
+  - engineering
 author: gabriel-poca
 date: 2016-04-28
-tags:
-  - development
 intro: >
   The purpose of this article is to demonstrate how to use Redux on a Meteor
   application.
+tags:
+  - development
 ---
 
 The purpose of this article is to demonstrate how to use Redux on a Meteor application. You may find it is unnecessarily complex for your application, and that is ok, there are [other options][other-data-loading] for you.
