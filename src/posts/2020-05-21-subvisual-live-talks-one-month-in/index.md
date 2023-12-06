@@ -1,14 +1,17 @@
 ---
-path: /subvisual-live-talks-one-month-in/
+highlight: false
+path: subvisual-live-talks-one-month-in
 title: "Subvisual Live Talks: One Month In"
+categories:
+  - inside-subvisual
 author: fernando-mendes
 date: 2020-05-21
 intro: >
-  About a month ago we began our Subvisual Live Talks. A new and simple
-  concept: streaming weekly conversations with interesting guests and friends.
-  We've been devoting some time to Elixir and now Ruby and we're very happy
-  with how everything's going. However, we've also reached a point where we
-  want to hear from you.
+  About a month ago we began our Subvisual Live Talks. A new and simple concept:
+  streaming weekly conversations with interesting guests and friends. We've been
+  devoting some time to Elixir and now Ruby and we're very happy with how
+  everything's going. However, we've also reached a point where we want to hear
+  from you.
 ---
 
 About [a month ago][subvisual-live-talks-announcement] we began our Subvisual
