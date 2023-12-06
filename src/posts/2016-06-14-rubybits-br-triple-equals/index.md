@@ -1,17 +1,20 @@
 ---
-path: /88-rubybits-br-triple-equals/
+highlight: false
+path: 88-rubybits-br-triple-equals
 title: "RubyBits:  Triple Equals"
+categories:
+  - engineering
 author: luis-zamith
 date: 2016-06-14
 cover: cover.jpg
-tags:
-  - ruby-bits
-  - development
-  - ruby
 intro: >
   If you thought that the === operator was something only JavaScript developers
   had to deal with, you were mistaken. We also have one in Ruby, even though it
   differs immensely in terms of functionality, from its JS counterpart.
+tags:
+  - ruby-bits
+  - development
+  - ruby
 ---
 
 If you thought that the `===` operator was something only JavaScript developers
