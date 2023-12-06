@@ -1,12 +1,18 @@
 ---
-path: /127-stress-and-recovery-cycle/
-title: "Stress and Recovery Cycle"
+highlight: false
+path: 127-stress-and-recovery-cycle
+title: Stress and Recovery Cycle
+categories:
+  - inside-subvisual
 author: roberto-machado
 date: 2017-03-15
 cover: cover.jpg
+intro: This is the second time that I write this text. Naively I deleted the
+  first version, leaving no chance of recovery, which caused me deep
+  frustration. Instead of panicking about this, I took a walk, and a series of
+  deep breaths and here I am writing the second version.
 tags:
   - general
-intro: "This is the second time that I write this text. Naively I deleted the first version, leaving no chance of recovery, which caused me deep frustration. Instead of panicking about this, I took a walk, and a series of deep breaths and here I am writing the second version."
 ---
 
 This is the second time that I write this text. Naively I deleted the first version, leaving no chance of recovery, which caused me deep frustration. Instead of panicking about this, I took a walk, and a series of deep breaths and here I am writing the second version.
