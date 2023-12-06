@@ -1,12 +1,16 @@
 ---
-path: /138-typography-as-base-from-the-content-out/
+highlight: false
+path: 138-typography-as-base-from-the-content-out
 title: "Typography as Base: From the Content Out"
+categories:
+  - design
 author: francisco-baila
 date: 2017-06-06
 cover: cover.jpg
+intro: This blog post was born out of my necessity to find a structure in which
+  I could rely on when designing any kind of web project.
 tags:
   - design
-intro: "This blog post was born out of my necessity to find a structure in which I could rely on when designing any kind of web project."
 ---
 
 This blog post was born out of my necessity to find a structure in which I could rely on when designing any kind of web project.
