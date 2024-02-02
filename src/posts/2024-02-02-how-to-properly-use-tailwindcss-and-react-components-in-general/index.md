@@ -14,6 +14,8 @@ intro: >-
 
   Hopefully not everything on the internet is bad, and there are a bunch of awesome libs out there that help builders move fast, one of them is TailwindCSS.
 ---
+## How to properly use TailwindCss, and react components in general
+
 When you are building a brand new product time is key, and so bootstrapping the development. The good old trick of leveraging from available tools as much as you can still reduces the development time and prevents you from reinventing the wheel. 
 Be intentional about the functionality you are delegating and avoid over-usage of libs.
 
@@ -42,10 +44,12 @@ Now that we agree on the CSS not-framework, let's take a look at this simple but
 It's common with TailwindCSS to have a lot of classes and that is one of the key features, after all, they allow control of the component style.
 
 ```html
-
+<button type="button" class="focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:focus:ring-yellow-900">Yellow</button>
 ```
 
-!\[[Screenshot 2023-10-27 at 17.12.30.png]]
+
+
+![](screenshot-2023-10-27-at-17.12.30.png)
 
 If this is the only button on your app, you're good and you don't need anything else. But that's not what happens in most of the cases. 
 
@@ -56,25 +60,57 @@ And when that time comes, so does the spaghetti monster.
 My first ground rule is to create isolated base components. This not only allows us to isolate the style but also the responsibility! And since every app has buttons, let's create a component for that!
 
 ```tsx
+interface ButtonProps extends HTMLProps<HTMLButtonElement> {
+  component?: ElementType;
+}
 
+export default function Button({...props} : ButtonProps) {
+  return(
+    <button 
+      className="focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:focus:ring-yellow-900"
+      type="button"
+    {...props}/>
+    )
+}
 ```
 
 This would be the basic button of the application and it should grow with the project's design system. 
 
 ```tsx
-
+<Button>Click Me</Button>
 ```
 
 From here, growing is straightforward!  The idea is to add variants as props and render classes accordingly. [Classnames](https://github.com/JedWatson/classnames) is a good ally for this. Alternatively, you can use [dynamic class names](https://tailwindcss.com/docs/content-configuration#dynamic-class-names), but keep in mind not to use string concatenation directly on `className` to create class names as it won't work.
 
 ```tsx
+import classnames from 'classnames';
 
+interface ButtonProps extends HTMLProps<HTMLButtonElement> {
+  variant: 'primary' | 'secondary'
+  component?: ElementType;
+}
+
+export default function Button({variant='primary', ...props} : ButtonProps) {
+  const base = 'font-medium rounded-lg text-sm px-5 py-2.5 focus:ring-2 focus:outline-none'
+  const primary = 'text-white bg-yellow-400 hover:bg-yellow-500  focus:ring-yellow-300 dark:focus:ring-yellow-900';
+  const secondary = 'text-slate-500 bg-slate-50 hover:bg-slate-300 focus:ring-slate-300 focus:ring-2 dark:focus:ring-slate-900'
+  
+  return(
+    <button 
+    className={classnames(base, 
+    primary: variant === 'primary',
+    secondary: variant === 'secondary')
+    type="button"
+    {...props}/>
+    )
+}
 ```
 
 The trick is pretty basic: setting up a `base` style for the component, then defining the specifics of each variant on a separate string, and combining everything. 
 
 ```tsx
-
+<Button variant="primary">Click Me<Button />
+<Button variant="secondary">Click Me<Button />
 ```
 
 There is an interesting detail that I'm 99% sure you missed. The final snippet lost the positioning classes `mr-2 mb-2`. That's the second piece of advice. 
@@ -85,7 +121,33 @@ This simple yet useful abstraction allows one to keep consistency on the app but
 Here's another example, this time for typography!
 
 ```tsx
+interface Props extends Omit<HTMLProps<HTMLHeadingElement>, 'size'> {
+  component?: ElementType;
+  size?: 'sm' | 'base' | 'xl';
+  weight?: 'normal' | 'bold';
+  color?: string;
+}
 
+export default function Typography({
+  component,
+  size = 'base',
+  weight = 'normal',
+  color = 'gray-900',
+  ...props
+}: Props) {
+  const C = component || 'span';
+
+  return (
+    <C
+      {...props}
+      className={classnames(
+        `text-${color}`,
+        `text-${size}`,
+        `font-${weight}`
+      )}
+    />
+  );
+}
 ```
 
 In this example, I extended the `HTMLHeadingElement` excluding the size, which makes it useful for preserving some properties. However, the most interesting part here is how simple it becomes to create a typography component that will ensure that all your text components will follow the same spacing properties, and how easy it becomes for you to control available weights and font sizes! 
@@ -101,11 +163,39 @@ That's right. And that's almost the maximum you can hide classes. There's yet a 
 TailwindCSS offers some workarounds in the documentation but the one I see more utility is abstracting the classes with the `@apply` key. After all, is the one closer to writing CSS as this allows you to apply a bunch of classes to a new CSS class and use that instead of a chunk of classes. Here is how the component button would look like:
 
 ```css
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .button {
+    @apply font-medium rounded-lg text-sm px-5 py-2.5 focus:ring-2 focus:outline-none;
+  }
+  .button-primary {
+    @apply text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-yellow-300 dark:focus:ring-yellow-900;
+  }
+  .button-secondary {
+    @apply text-slate-500 bg-slate-50 hover:bg-slate-300 focus:ring-slate-300 focus:ring-2 dark:focus:ring-slate-900;
+  }
+}
 ```
 
 ```tsx
+import classnames from 'classnames';
 
+interface ButtonProps extends HTMLProps<HTMLButtonElement> {
+  variant: 'primary' | 'secondary'
+  component?: ElementType;
+}
+
+export default function Button({variant='primary', ...props} : ButtonProps) {
+
+  return(
+    <button 
+    className={classnames(`button`, `button-${variant}`)}
+    type="button"
+    {...props}/>
+    )
+}
 ```
 
 I don't see a great advantage of combining both class extraction and react components, instead, I see the greater advantage of this extraction precisely when there's no component abstraction so the CSS classes are applied directly to the element.
@@ -114,11 +204,41 @@ And finally, the way I use to solve my problems when the designer decides not to
 This configuration file allows you to extend the tailwind defaults or create your own theme while keeping the class name style, from color to keyframe animation. 
 
 ```js
-
+module.exports = {
+  // ...
+  theme: {
+    colors: {
+      white: '#FFFFFF',
+      black: '#000000',
+      gray: {
+        0: '#FBFBFB',
+        50: '#F5F5F5',
+        100: '#D9D9D9',
+        200: '#A6A6A6',
+        300: '#595959',
+        900: '#222222',
+      },
+      // ...
+    },
+    //...
+    extend: {
+      keyframes: {
+        shine: {
+          '100%': { backgroundPosition: '100%' }
+        }
+      }
+    }
+  }
+  // ...
+}
 ```
 
 ```html
-
+<div className='w-full h-8 rounded-md
+	bg-gradient-to-r from-gray-50 via-gray-300 to-gray-50
+	bg-repeat-y bg-left-top
+	animate-[shine_1s_ease_infinite]
+	bg-gray-50 bg-opacity-80' />
 ```
 
 And that's it, folks!
