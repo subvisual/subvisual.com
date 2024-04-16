@@ -35,8 +35,6 @@ Your experience with us is designed to meet your needs. We're here to help you i
 
 **Ready to Take the Next Step?**
 
-If you're ready to embark on this journey, visit our website to learn more about our program and how to apply. We look forward to continue welcoming talented people to the Subvisual Academy family!\
-\
-https://jobs.subvisual.com/academy/en
+If you're ready to embark on this journey, visit our [website](https://jobs.subvisual.com/academy/en) to learn more about our program and how to apply. We look forward to continue welcoming talented people to the Subvisual Academy family!
 
 <!-- notionvc: a12c748b-862d-4824-a3ee-94d892b88e87 -->
