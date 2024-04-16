@@ -27,8 +27,7 @@ Engage in impactful projects that challenge and inspire you. Our program provide
 Benefit from the wisdom and support of experienced mentors dedicated to helping you explore your talents and nurture your growth. Drawing from diverse backgrounds, our mentors are committed to empowering your growth and taking firm steps on your professional journey in the tech world.
 
 **Learning to be Flexible:** \
-Embrace the versatility of remote work and asynchronous communication, gaining valuable skills that align with the evolving landscape of modern employment. We recognize the demands of contemporary life and we care to provide the conditions to effectively balance your commitments and passions.
-
+Embrace the versatility of remote work and asynchronous communication, gaining valuable skills that align with the evolving landscape of modern employment. We recognize the demands of contemporary life and we care to provide the conditions to effectively balance your commitments and passions.\
 Learning how to thrive in remote work settings not only enhances your adaptability but also positions you for success in the future of work.
 
 **Tailored Experience:**\
