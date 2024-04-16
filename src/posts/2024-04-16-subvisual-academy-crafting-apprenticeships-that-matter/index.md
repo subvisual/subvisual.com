@@ -1,5 +1,5 @@
 ---
-highlight: false
+highlight: true
 path: Subvisual_Academy_Crafting_Apprenticeships_That_Matter
 title: "Subvisual Academy: Crafting Apprenticeships That Matter "
 categories:
