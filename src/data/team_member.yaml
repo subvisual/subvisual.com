@@ -16,6 +16,16 @@
     linkedin: "https://www.linkedin.com/in/alvarobezerra"
     twitter: "https://twitter.com/alvarorrbezerra"
 
+- key: carolina-strecht
+  name: "Carolina Strecht"
+  initials: CS
+  email: carolina@subvisual.co
+  photo: "../images/team/carolina-strecht.jpg"
+  role: "Developer"
+  social:
+    linkedin: "https://www.linkedin.com/in/cstrecht/"
+    github: "https://github.com/cstrecht"
+
 - key: david-lange
   name: "David Lange"
   initials: DL
@@ -25,7 +35,6 @@
   social:
     linkedin: "https://www.linkedin.com/in/david-lange-silva/"
     github: "https://github.com/davelange"
-
 
 - key: davide-silva
   name: "Davide Silva"
@@ -125,6 +134,16 @@
     dribbble: "https://dribbble.com/jferreiradzn"
     twitter: "https://twitter.com/jferreiradzn"
 
+- key: joao-silva
+  name: "João Silva"
+  initials: JS
+  email: joao.silva@subvisual.co
+  photo: "../images/team/joao-silva.jpg"
+  role: "Developer"
+  social:
+    linkedin: "https://www.linkedin.com/in/jo%C3%A3opedro-silva/"
+    github: "https://github.com/joaop21"
+
 - key: jose-pedro-cabrita
   name: José Pedro Cabrita
   initials: ZP
@@ -132,6 +151,16 @@
   role: Talent Manager
   social:
     linkedin: "https://www.linkedin.com/in/Josepedrocabrita"
+
+- key: jose-resende
+  name: "José Resende"
+  initials: JR
+  email: resende@subvisual.co
+  photo: "../images/team/jose-resende.jpg"
+  role: "Developer"
+  social:
+    linkedin: "https://www.linkedin.com/in/jose-pedro-resende/"
+    github: "https://github.com/ZePedroResende"
 
 - key: laura-esteves
   name: "Laura Esteves"
@@ -146,6 +175,16 @@
   social:
     linkedin: "https://www.linkedin.com/in/lauraesteves"
     medium: "https://medium.com/@laurae.esteves"
+
+- key: luis-torres
+  name: "Luís Torres"
+  initials: LT
+  email: luis.torres@subvisual.co
+  photo: "../images/team/luis-torres.jpg"
+  role: "Developer"
+  social:
+    linkedin: "https://www.linkedin.com/in/luistorres92/"
+    github: "https://github.com/luistorres"
 
 - key: luis-zamith
   name: "Luis Ferreira"
@@ -196,6 +235,26 @@
   social:
     linkedin: https://www.linkedin.com/in/nunohvreis/
     twitter: https://twitter.com/onunoreis
+
+- key: paula-carneiro
+  name: "Paula Carneiro"
+  initials: PC
+  email: paula@subvisual.co
+  photo: "../images/team/paula-carneiro.jpg"
+  role: "Developer"
+  social:
+    linkedin: "https://www.linkedin.com/in/paulacrcarneiro/"
+    github: "https://github.com/paulacarneiro"
+
+- key: pedro-ferreira
+  name: "Pedro Ferreira"
+  initials: PF
+  email: pedro.ferreira@subvisual.co
+  photo: "../images/team/pedro-ferreira.jpg"
+  role: "Developer"
+  social:
+    linkedin: "https://www.linkedin.com/in/pedrom-ferreira/"
+    github: "https://github.com/pferreira101"
 
 - key: roberto-machado
   name: "Roberto Machado"
