@@ -24,7 +24,7 @@ My main focus was the onboarding wizard, a component aimed at guiding users thro
 
 Although I had some experience with React, I refreshed my knowledge and learned new things while working on the project. However, the main challenge was venturing into Rust. It had been a while since I had learned a new programming language and Rust was a long-time interest of mine, so this was the perfect time to try it. Rust combines a lot of concepts from languages I was familiar with, into one well-engineered piece. It sure has a steep learning curve but learning this language was the most rewarding thing I did during my apprenticeship.
 
-During my work on the ETHUI project, I got the opportunity to explore various tools related to blockchain development such as Foundry, Wagmi, and Viem, among others. Additionally, this experience helped me learn Rust and understand the codebase of a web3 product. Although I faced numerous unfamiliar concepts at first, I overcame the challenges and learned a lot from them.
+During my work on the [ETHUI](https://github.com/ethui/ethui) project, I got the opportunity to explore various tools related to blockchain development such as Foundry, Wagmi, and Viem, among others. Additionally, this experience helped me learn Rust and understand the codebase of a web3 product. Although I faced numerous unfamiliar concepts at first, I overcame the challenges and learned a lot from them.
 
 **From Apprentice to Intern**
 
