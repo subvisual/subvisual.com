@@ -12,7 +12,7 @@ intro: A few months ago, I joined Subvisual Academy, which turned out to be an
 ---
 A few months ago, I joined Subvisual Academy, which turned out to be an amazing and out-of-the-box experience. Today, I'm here to share my journey with you, so sit back and learn more about it.
 
-## **Before the apprenticeship**
+### **Before the apprenticeship**
 
 Since I can remember, I’ve been interested in understanding how everything in my surroundings works, so studying Chemistry in university felt like the right path. When I began studying Chemistry, a lot of things started to click in my mind, making me feel like I was meant to be in that field. However, as time went on, and despite my initial enthusiasm, this area didn't provide me with the sense of fulfilment I craved. What once sparked my curiosity started to feel mundane and repetitive. Even the joy of working in the lab lost its luster, especially with the challenges posed by the COVID-19 lockdowns. I felt down at the time, unsure of what to do next and lacking funds to continue my studies, so I made the tough decision to drop out. I would be lying if I said I had everything under control because I hadn’t. However, I didn't want to give up and surrender to defeat. I believed my future was in my own hands, and it was up to me to pursue what truly brought me joy.
 
@@ -20,7 +20,7 @@ During this phase of my life, my friends in IT introduced me to their projects, 
 
 I decided to give it a try and dive into frontend development, entirely self-taught. What did I have to lose? I needed to take the leap. Despite it being a completely unfamiliar territory, the challenge only fuelled my determination to push forward and discover how far could I go.
 
-## Why Subvisual?
+### Why Subvisual?
 
 I stumbled upon Subvisual and saw it as a goal to strive for. This was the first company I met when I started my journey as a developer. I saw it as a company with clear values and culture, one that cared about people, and instantly became a reference for what I was looking for in my professional future. Subvisual shared really cool projects and is focused on a field that I am also very interested in: the web3 world.
 
@@ -28,7 +28,7 @@ I had to try and send my instant application, but I wasn’t selected at the tim
 
 After a couple of months and despite already working in IT, I knew there was still much to learn. I wanted to go deeper into development concepts, explore new areas, and expose myself to different experiences. I applied again for Subvisual, and it was proposed for me to do an apprenticeship with them. Accepting the challenge was a proud moment for me, marking the beginning of a significant step forward in my career because I knew that if I joined this experience, I would grow a lot. I was absolutely over the moon to be here.
 
-## Leaving the comfort zone and confronting the impostor
+### Leaving the comfort zone and confronting the impostor
 
 When the apprenticeship started, I was presented with an open-source web3 project called ethui — a crypto wallet built to speed up developers' workflow.
 
@@ -42,12 +42,10 @@ Beyond the project itself, I had the opportunity to meet both onsite and remote 
 
 My perceptions of the company were solidified throughout these 10 weeks. At the end of the experience, I was invited to join the team!
 
-## Looking forward
+### Looking forward
 
 In just 10 intense yet very enjoyable weeks, my apprenticeship at Subvisual proved to be a game-changer, both professionally and personally. Stepping out of my comfort zone, collaborating with other developers, and confronting imposter syndrome head-on were defining moments. This experience provided a confidence boost, affirming the significance of my contributions and instilling a newfound sense of self-assurance.
 
 I gained skills for thriving in this field: better communication, critical thinking, creativity, and openness. I felt genuinely happy while working on the project and bonding with the team. The weeks flew by, and I found myself fully engaged in my role and it was an easy decision to continue this journey with Subvisual, knowing there's still so much more to come.
 
 In retrospect, every challenge, every moment of doubt, was worth it. The experience not only shaped my technical skills but also fostered personal growth and lasting connections. My apprenticeship was more than what I could have ever imagined — it was a journey of self-discovery and empowerment. These 10 weeks were just the beginning, so I'm excited to see where it takes me next.
-
-<!-- notionvc: 71f03d3e-a92b-436f-a95e-db83c1c96902 -->
