@@ -15,8 +15,6 @@ intro: I start by saying that it's not just at 30 or 40 year old, but at any
   our days as we wish? Is that uncertainty so catastrophic? Is it not worth
   stopping for a moment to think about the direction we want for our life?
 ---
-> In the tech field, the emphasis is not on educational background but on technical and personal skills. It's common to find people with degrees in other areas working in this sector.
-
 I start by saying that it's not just at 30 or 40 year old, but at any point in life when we feel our path should change. Sometimes, we are dominated by the fear of wasting our investment in one area, by the uncertainty of the new path, or simply by the inertia that the daily routine brings. We let these reasonings shape our lives and endure day after day, always imagining what could have been. But is that investment reason enough not to live the rest of our days as we wish? Is that uncertainty so catastrophic? Is it not worth stopping for a moment to think about the direction we want for our life?
 
 Am I saying that changing careers is an easy path? Not at all. It requires a lot of consideration and resilience, whether for the reasons listed above or for all the others that enter the equation. In my case, it was necessary to face many judgments and some financial difficulties. Was it worth it? Yes, very much so.
