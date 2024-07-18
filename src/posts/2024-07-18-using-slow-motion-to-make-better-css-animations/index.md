@@ -27,10 +27,10 @@ Create a CSS variable, then multiply any animation timing value by it: animation
 
 Here's a playground where you can see this in action - try submitting the form with different slow-motion values:
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/davelange_/embed/MWZJoxb?default-tab=" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/davelange_/pen/MWZJoxb">
-  Untitled</a> by David Lange (<a href="https://codepen.io/davelange_">@davelange_</a>)
-  on <a href="https://codepen.io">CodePen</a>.
+<iframe height=“600” style=“width: 100%;” scrolling=“no” title=“Slow motion your transitions and animations” src=“https://codepen.io/davelange_/embed/xxNWpBq?default-tab=result” frameborder=“no” loading=“lazy” allowtransparency=“true” allowfullscreen=“true”>
+  See the Pen <a href=“https://codepen.io/davelange_/pen/xxNWpBq”>
+  Slow motion your transitions and animations</a> by David Lange (<a href=“https://codepen.io/davelange_”>@davelange_</a>)
+  on <a href=“https://codepen.io”>CodePen</a>.
 </iframe>
 
 
