@@ -6,6 +6,7 @@ categories:
   - inside-subvisual
 author: subvisual
 date: 2024-07-24
+cover: save-the-date-twitter.png
 intro: Subvisual is delighted to announce that Alchemy Conf 2025 is officially
   on the horizon! After our first Alchemy Conf was a remote affair due to the
   special circumstances of 2021, we are bringing the finest community experience
@@ -15,7 +16,7 @@ intro: Subvisual is delighted to announce that Alchemy Conf 2025 is officially
 
 This is the premier event for Elixir enthusiasts, developers, and tech professionals to gather, share knowledge, and explore the latest advancements within the ecosystem, so please mark your calendars right now.
 
-![](save-the-date-twitter.png "Save the Date")
+![  ](save-the-date-twitter.png "Save the Date")
 
 # What You Can Expect
 
@@ -51,7 +52,7 @@ Just click here.
 
 Stay tuned for more updates and follow us on social media for the latest news and announcements:
 
-• **Twitter:** \[Twitter Handle]
+• **Twitter:** https://x.com/Alchemy_Conf
 
 • **LinkedIn:** \[LinkedIn Page]
 
