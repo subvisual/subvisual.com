@@ -12,7 +12,7 @@ intro: Subvisual is delighted to announce that Alchemy Conf 2025 is officially
   special circumstances of 2021, we are bringing the finest community experience
   in all of Elixir to real life in Braga, Portugal.
 ---
-**Subvisual** is delighted to announce that Alchemy Conf 2025 is officially on the horizon! After our first Alchemy Conf was a remote affair due to the special circumstances of 2021, we are bringing the finest community experience in all of Elixir to real life in Braga, Portugal.
+Subvisual is delighted to announce that Alchemy Conf 2025 is officially on the horizon! After our first Alchemy Conf was a remote affair due to the special circumstances of 2021, we are bringing the finest community experience in all of Elixir to real life in Braga, Portugal.
 
 This is the premier event for Elixir enthusiasts, developers, and tech professionals to gather, share knowledge, and explore the latest advancements within the ecosystem, so please mark your calendars right now.
 
