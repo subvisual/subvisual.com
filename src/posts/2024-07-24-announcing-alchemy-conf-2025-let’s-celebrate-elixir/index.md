@@ -40,13 +40,13 @@ We are particularly interested in talks that showcase:
 
 • **Contributions to Open-Source Projects in the Elixir Community**
 
-Just head here to find our CFP with all the information you’ll need to submit your proposal, and we’ll get back to you.
+Just head [here](https://www.papercall.io/alchemy-conf-2025) to find our CFP with all the information you’ll need to submit your proposal, and we’ll get back to you.
 
 # Get Your Early Bird Tickets Now!
 
 You won’t want to miss out on this incredible opportunity to be part of the Elixir community’s most anticipated event. Purchase your tickets today and secure your spot at Alchemy Conf 2025 with some pretty great advantages for early birds.
 
-Just click here.
+Just click [here](https://alchemyconf.com/).
 
 **Stay Connected**
 
