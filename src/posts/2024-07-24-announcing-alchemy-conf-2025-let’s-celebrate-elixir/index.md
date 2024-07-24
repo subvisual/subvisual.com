@@ -24,7 +24,7 @@ Alchemy Conf has always been about more than just code – it’s about the stor
 
 You can expect our workshops to be led by seasoned professionals, and our sessions and keynotes to be delivered by Elixir experts from all over the world.
 
-### Call for Proposals: Share Your Elixir Expertise
+## Call for Proposals: Share Your Elixir Expertise
 
 If you identified with the previous paragraph, we want to hear from you. We already have a number of speakers aligned, but our final schedule is open to anyone that’s doing great work in the field. If you have an innovative use of Elixir, a creative project, or a compelling case study, you will have a place on our stage!
 
@@ -42,13 +42,15 @@ We are particularly interested in talks that showcase:
 
 Just head [here](https://www.papercall.io/alchemy-conf-2025) to find our CFP with all the information you’ll need to submit your proposal, and we’ll get back to you.
 
-### Get Your Early Bird Tickets Now!
+## Get Your Early Bird Tickets Now!
 
 You won’t want to miss out on this incredible opportunity to be part of the Elixir community’s most anticipated event. Purchase your tickets today and secure your spot at Alchemy Conf 2025 with some pretty great advantages for early birds.
 
 Just click [here](https://alchemyconf.com/).
 
-**Stay Connected**
+
+
+## **Stay Connected**
 
 Stay tuned for more updates and follow us on social media for the latest news and announcements:
 
