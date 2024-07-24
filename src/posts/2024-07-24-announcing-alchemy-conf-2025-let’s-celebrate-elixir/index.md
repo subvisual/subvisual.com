@@ -18,7 +18,7 @@ This is the premier event for Elixir enthusiasts, developers, and tech professio
 
 ![  ](save-the-date-twitter.png "Save the Date")
 
-# What You Can Expect
+## What You Can Expect
 
 Alchemy Conf has always been about more than just code – it’s about the stories, experiences, and innovations that drive our community forward. Subvisual has hosted a number of other conferences before, and we’ve always made sure to make them diverse and fruitful ([Ruby Conf Portugal](https://youtu.be/AW-gxe_dQD0?si=0dMkK_TQ5oTK6D0P) and [Mirror Conf](https://www.youtube.com/watch?v=PpONHt-n8eY&list=PLUDr1eD6e8RPlIrUMuVUSIcjx0d7I8i43)).
 
@@ -42,13 +42,15 @@ We are particularly interested in talks that showcase:
 
 Just head [here](https://www.papercall.io/alchemy-conf-2025) to find our CFP with all the information you’ll need to submit your proposal, and we’ll get back to you.
 
-# Get Your Early Bird Tickets Now!
+## Get Your Early Bird Tickets Now!
 
 You won’t want to miss out on this incredible opportunity to be part of the Elixir community’s most anticipated event. Purchase your tickets today and secure your spot at Alchemy Conf 2025 with some pretty great advantages for early birds.
 
 Just click [here](https://alchemyconf.com/).
 
-**Stay Connected**
+
+
+## **Stay Connected**
 
 Stay tuned for more updates and follow us on social media for the latest news and announcements:
 
