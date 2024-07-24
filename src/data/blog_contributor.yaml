@@ -50,6 +50,7 @@
 - key: subvisual
   name: The Subvisual Team
   initials: ST
+  photo: "../images/team/subvisual.jpg"
   social:
     facebook: subvisual.co
     instagram: wearesubvisual
