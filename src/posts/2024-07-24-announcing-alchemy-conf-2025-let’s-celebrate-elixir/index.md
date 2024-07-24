@@ -53,7 +53,3 @@ Just click [here](https://alchemyconf.com/).
 Stay tuned for more updates and follow us on social media for the latest news and announcements:
 
 • **Twitter:** https://x.com/Alchemy_Conf
-
-• **LinkedIn:** \[LinkedIn Page]
-
-<!-- notionvc: 34f491d6-1215-41be-8002-86b920fcc01a -->
