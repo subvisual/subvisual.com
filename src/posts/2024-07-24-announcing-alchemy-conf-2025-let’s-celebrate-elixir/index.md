@@ -52,4 +52,5 @@ Just click [here](https://alchemyconf.com/).
 
 Stay tuned for more updates and follow us on social media for the latest news and announcements:
 
-• **Twitter:** https://x.com/Alchemy_Conf
+* **Twitter:** [x.com/Alchemy_Conf](https://x.com/Alchemy_Conf)
+* **LinkedIn**: [linkedin.com/company/wearesubvisual](https://www.linkedin.com/company/wearesubvisual)
