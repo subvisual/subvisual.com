@@ -1,5 +1,5 @@
 ---
-highlight: true
+highlight: false
 path: fast-prototyping-with-elixir
 title: Fast prototyping with Elixir
 categories:
