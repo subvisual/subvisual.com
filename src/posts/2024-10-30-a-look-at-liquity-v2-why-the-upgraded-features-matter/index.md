@@ -12,9 +12,9 @@ intro: Liquity V2 is a bit more than a natural evolution for the protocol. It’
   builders and users alike. It’s a nod towards a community seeking more control,
   transparency, and efficiency.
 ---
-Liquity V2 is a bit more than a natural evolution for the protocol. It’s a thoughtful change, where some subtle changes lead to great implications for builders and users alike. It’s a nod towards a community seeking more control, transparency, and efficiency. Liquity V2 supports multiple collateral types like stETH (Lido) and rETH (Rocket Pool), which allows users to go well beyond traditional ETH. 
+Liquity V2 is a bit more than a natural evolution for the protocol. It’s a thoughtful change, where some subtle changes lead to great implications for builders and users alike. It’s a nod towards a community seeking more control, transparency, and efficiency.
 
-Another remarkable change in Liquity V2 is the introduction of user-set interest rates. Borrowers now have the freedom to define their own rates (within a specific range, set by the protocol, of 0.5 to 1000%), which enables them to better manage costs. Market conditions and personal risk levels will matter, of course, but this design allows users to actively set their own borrowing strategy independently.
+Liquity V2 supports multiple collateral types like stETH (Lido) and rETH (Rocket Pool), which allows users to go well beyond traditional ETH, with another remarkable change being the introduction of user-set interest rates. Borrowers now have the freedom to define their own rates (within a specific range, set by the protocol, of 0.5 to 1000%), which enables them to better manage costs. Market conditions and personal risk levels will matter, of course, but this design allows users to actively set their own borrowing strategy independently.
 
 Redemption and liquidation mechanisms are also improved, making it easier for users to manage their collateral positions. Trove NFTs are a brand new thing, introduced as a way to represent and track individual collateralized debt.
 
