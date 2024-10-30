@@ -20,7 +20,7 @@ Redemption and liquidation mechanisms are also improved, making it easier for us
 
 So, shall we take a look at what kind of impact you can expect on products that use this?
 
-## Multi-Collateral Support
+### Multi-Collateral Support
 
 Liquity V2 enables borrowing against multiple Ethereum-based collateral types, including Lido's staked ETH (stETH), Rocket Pool's staked ETH (rETH), and wrapped ETH (WETH), giving users greater flexibility to align their borrowing strategies with their risk preferences and investment objectives.
 
@@ -44,7 +44,7 @@ Why we like this, in a nutshell:
 
 • **Dynamic competition**: This feature fosters a more competitive environment, as borrowers actively adjust their rates to remain competitive while managing their risks. The result is a more engaged borrower base that actively fine-tunes their positions in response to market changes.
 
-## Improved Liquidation Process
+### Improved Liquidation Process
 
 Liquity V2’s liquidation mechanism has been redesigned to provide greater protection for users while maintaining overall stability. In the event that a borrower’s collateralization ratio drops below a critical threshold, the system automatically triggers a liquidation to prevent under-collateralization with capital from its Stability Pools.
 
@@ -56,7 +56,7 @@ Why we like this, in a nutshell:
 
 • **Stability Pool integration**: Liquidations are offset by the Stability Pools (one for each collateral), where users deposit BOLD to earn rewards and help maintain system stability. When a liquidation occurs, Stability Pool depositors receive collateral in exchange for their BOLD, ensuring that the system remains balanced even in turbulent market conditions.
 
-## Yield Distribution
+### Yield Distribution
 
 Liquity V2 also introduces a more sophisticated yield distribution system, which allocates the interest earned from borrowing across different participants in the ecosystem. A portion of the interest generated from loans is directed to the corresponding Stability Pool, while the remaining yield is distributed to liquidity providers (LPs) through a yield router that incentivizes decentralized exchange (DEX) liquidity pools.
 
@@ -66,7 +66,7 @@ Why we like this, in a nutshell:
 
 • **Liquidity incentives for LPs**: Liquity V2 provides additional rewards to LPs who provide liquidity to DEX pools that support BOLD. This creates a more robust liquidity environment for BOLD, making it easier for users to trade and exchange the stablecoin across DeFi platforms.
 
-# Trove NFTs: What are they?
+## Trove NFTs: What are they?
 
 One of the more interesting features introduced in Liquity V2 is the use of Trove NFTs, a tool designed to provide more transparency and flexibility in managing collateralized debt positions. It’s a powerful and elegant solution for the least captivating parts of DeFi bureaucracy. Trove NFTs serve as a representation of each user’s collateral and debt, enabling users to manage their borrowing positions with greater ease and transparency.
 
@@ -80,13 +80,13 @@ Why we like this, in a nutshell:
 
 • **Batch management**: Trove NFTs can also be grouped into batches, allowing users or managers to oversee multiple Troves at once. Simple, elegant, transparent, and great for institutional investors and large portfolios.
 
-# A Streamlined Liquidation Process
+## A Streamlined Liquidation Process
 
 Another important feature of Trove NFTs is their role in streamlining the liquidation process. In the event that a user’s collateralization ratio falls below the required threshold, the Trove NFT facilitates automatic liquidation, transferring the collateral to the Stability Pool. The use of NFTs simplifies this process by clearly defining the collateral and debt associated with each Trove, making it easier for the protocol to manage liquidations efficiently. It also reduces uncertainty and provides simple protections by gathering all relevant information in the same place, ensuring users are always aware of risk.
 
 Liquity V2 introduces a more robust and efficient liquidation process, which is activated when a user’s collateralization ratio (CR) falls below a certain threshold. In such cases, the system automatically liquidates the Trove to repay the outstanding debt, transferring the collateral to the Stability Pool. In cases where the Stability Pool is insufficient to cover the debt, the collateral and debt are redistributed among other active Troves so as to maintain balance and spread risk out across the system.
 
-## Redemption: Preserving Stability
+### Redemption: Preserving Stability
 
 The redemption mechanism in Liquity V2 allows users to redeem their BOLD stablecoins for a proportional amount of collateral at any time. This feature ensures that BOLD maintains its peg to the U.S. dollar, providing stability across the ecosystem. If BOLD ever falls below its $1 peg, users are incentivized to redeem BOLD for $1 worth of collateral, which brings the stablecoin back into alignment with its intended value.
 
@@ -98,11 +98,11 @@ Why we like this, in a nutshell:
 
 Under severe stress, Liquity V2 introduces urgent redemptions. These are designed to rapidly reduce debt from the affected branch by allowing users to redeem their BOLD without any redemption fees and with a small collateral bonus.
 
-# An Emphasis on Security
+## An Emphasis on Security
 
 The protocol’s resilience, even under challenging market conditions, is one of its strongest features. Here’s how the security structure’s been designed:
 
-## Preventing Frontrunning Attacks
+### Preventing Frontrunning Attacks
 
 Frontrunning is a well-known vulnerability in DeFi systems, where attackers attempt to execute transactions just before an anticipated market change to profit from price differences. In Liquity V2, this issue is mitigated through a number of mechanisms:
 
@@ -110,7 +110,7 @@ Frontrunning is a well-known vulnerability in DeFi systems, where attackers atte
 
 • **Redemption Fees**: Liquity V2 implements a redemption fee structure to dissuade frontrunning. Fees are applied to redemptions, ensuring that even if an attacker tries to exploit price differences, the associated costs would make the attack unprofitable.
 
-## Defense Against Redemption Routing Manipulation
+### Defense Against Redemption Routing Manipulation
 
 Redemption routing, which determines how collateral is distributed during redemptions, can be manipulated. Liquity V2 addresses this risk by ensuring that the distribution of redemptions across collateral types is proportional to their “unbacked” portion—collateral debt not covered by the Stability Pool. This prevents attackers from gaming the system.
 
@@ -120,7 +120,7 @@ Additionally, Liquity V2 ensures that:
 
 • **Protection of System Stability**: Since the redemption mechanism is designed primarily to restore the BOLD peg, any attempts at manipulation would have minimal impact on the protocol’s overall stability.
 
-## Oracle Failure Management
+### Oracle Failure Management
 
 Oracles play a critical role in feeding price data into the Liquity V2 system. In the rare event of an oracle failure, the system has built-in safeguards to prevent large-scale exploits or market distortions:
 
@@ -128,7 +128,7 @@ Oracles play a critical role in feeding price data into the Liquity V2 system. I
 
 • **Collateral Branch Shutdown**: In extreme cases, such as an extended oracle failure or a collapse in collateral prices, Liquity V2 can shut down the affected collateral branch. This halts borrowing operations, freezes interest accrual, and triggers urgent redemptions to quickly reduce the system’s overall debt, preventing a further escalation of risks.
 
-## Batch Delegation and Management Protections
+### Batch Delegation and Management Protections
 
 Liquity V2 introduces batch delegation, allowing users to group their Troves under a single batch manager to streamline operations. While this can be quite convenient, it also requires safeguards to ensure that batch managers act in the best interest of users:
 
@@ -136,7 +136,7 @@ Liquity V2 introduces batch delegation, allowing users to group their Troves und
 
 • **Reputation Incentives for Batch Managers**: Competent batch managers, who demonstrate a consistent ability to manage Troves efficiently, will naturally attract more borrowers, self-regulating an environment where poor managers face fewer participants.
 
-## Minimizing Liquidation Risk
+### Minimizing Liquidation Risk
 
 Liquity V2’s improved liquidation mechanisms are designed to minimize risk for users:
 
@@ -146,15 +146,15 @@ Liquity V2’s improved liquidation mechanisms are designed to minimize risk for
 
 Liquity V2’s security features provide users and investors with confidence in the platform’s ability to remain stable and secure, even under extreme market conditions. By addressing key vulnerabilities such as frontrunning, oracle failures, and liquidation risks, the protocol continues to prioritize safety and reliability for its users.
 
-# Licensing Liquity V2: The Rationale for BUSL
+## Licensing Liquity V2: The Rationale for BUSL
 
 With the launch of V2, Liquity shifts to a Business Source License (BUSL) to encourage structured, intentional expansion. This approach seeks to address challenges from V1’s open-source model, where forks proliferated but often lacked coordination in liquidity and standards, impacting alignment and usability. The BUSL aims to foster “friendly forks,” allowing select teams across EVM-compatible chains to launch unique deployments that support Liquity’s stablecoin vision without dilution.
 
-## Friendly Forks & Ecosystem Expansion
+### Friendly Forks & Ecosystem Expansion
 
 By introducing selective forking under BUSL, Liquity V2 positions itself as a leading solution for on-chain, sovereign stablecoins. Teams can leverage V2’s multi-collateral configurations and user-set interest rates while adhering to Liquity’s standards, enhancing protocol resilience and reducing fragmentation. Investors benefit from a unified, high-quality landscape, where Liquity’s influence extends across DeFi ecosystems with minimized risk of unaligned development.
 
-# In short
+## In short
 
 It’s Subvisual’s view that Liquity V2 is a significant upgrade on the status quo for DeFi. It brings much more to the table than just a few new features—it’s a sober and thought-through rethinking of how we let users engage with their own finances. Its security and system efficiency mean it goes beyond the realm of ideas and actually materializes a new way of doing things.
 
