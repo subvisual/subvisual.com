@@ -6,7 +6,7 @@ categories:
   - product
 author: subvisual
 date: 2024-10-30
-cover: ""
+cover: sbv_thumb_extra.png
 intro: Liquity V2 is a bit more than a natural evolution for the protocol. It’s
   a thoughtful change, where some subtle changes lead to great implications for
   builders and users alike. It’s a nod towards a community seeking more control,
