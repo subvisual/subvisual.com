@@ -3,7 +3,7 @@ highlight: true
 path: a-look-at-liquity-v2
 title: "A Look at Liquity V2: Why the Upgraded Features Matter"
 categories:
-  - engineering
+  - product
 author: subvisual
 date: 2024-10-30
 cover: sbv_thumb_extra.png
