@@ -19,7 +19,7 @@
     "classnames": "^2.3.1",
     "core-js": "^3.18.3",
     "dateformat": "^5.0.3",
-    "gatsby": "^5.0.0",
+    "gatsby": "^5.9.1",
     "gatsby-plugin-feed": "^5.6.0",
     "gatsby-plugin-image": "^3.0.0",
     "gatsby-plugin-json-output": "^1.2.0",
